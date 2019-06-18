@@ -4,25 +4,54 @@
   
   <url>
     <loc>http://blog2.silocitylabs.com/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/post/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/tags/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/post/2019-06-13-ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/tags/linux/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/tags/minimal-pi/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/tags/pi/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/tags/raspberry/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog2.silocitylabs.com/post/2017-03-20-photoswipe-gallery-sample/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog2.silocitylabs.com/post/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog2.silocitylabs.com/tags/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -56,17 +85,6 @@
   <url>
     <loc>http://blog2.silocitylabs.com/tags/math/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog2.silocitylabs.com/post/2016-03-08-code-sample/</loc>
-    <lastmod>2016-03-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog2.silocitylabs.com/tags/code/</loc>
-    <lastmod>2016-03-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

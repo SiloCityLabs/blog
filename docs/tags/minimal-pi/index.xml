@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>minimal pi on SCL Blog</title>
+    <link>http://blog2.silocitylabs.com/tags/minimal-pi/</link>
+    <description>Recent content in minimal pi on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 13 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog2.silocitylabs.com/tags/minimal-pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ultra minimal Raspbian Image for Pi Zero and Zero W</title>
+      <link>http://blog2.silocitylabs.com/post/2019-06-13-ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>http://blog2.silocitylabs.com/post/2019-06-13-ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</guid>
+      <description>&lt;p&gt;The following are two code samples using syntax highlighting.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
