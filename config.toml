@@ -1,7 +1,7 @@
 baseurl = "https://pages.gitlab.io/hugo/"
 contentdir    = "content"
 layoutdir     = "layouts"
-publishdir    = "public"
+publishdir    = "docs"
 title = "SCL Blog"
 canonifyurls  = true
 
