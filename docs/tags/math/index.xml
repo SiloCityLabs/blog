@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>math on SCL Blog</title>
-    <link>https://pages.gitlab.io/hugo/tags/math/</link>
+    <link>http://blog2.silocitylabs.com/tags/math/</link>
     <description>Recent content in math on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
     <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://pages.gitlab.io/hugo/tags/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog2.silocitylabs.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Math Sample</title>
-      <link>https://pages.gitlab.io/hugo/post/2017-03-05-math-sample/</link>
+      <link>http://blog2.silocitylabs.com/post/2017-03-05-math-sample/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>https://pages.gitlab.io/hugo/post/2017-03-05-math-sample/</guid>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>http://blog2.silocitylabs.com/post/2017-03-05-math-sample/</guid>
       <description>&lt;p&gt;KaTeX can be used to generate complex math formulas. It supports in-line math using the &lt;code&gt;\\( ... \\)&lt;/code&gt; delimiters, like this: \( E = mc^2 \). By default, it does &lt;em&gt;not&lt;/em&gt; support in-line delimiters &lt;code&gt;$...$&lt;/code&gt; because those occur too commonly in typical webpages. It supports displayed math using the &lt;code&gt;$$&lt;/code&gt; or &lt;code&gt;\\[...\\]&lt;/code&gt; delimiters, like this:&lt;/p&gt;
 
 &lt;p&gt;Formula 1:

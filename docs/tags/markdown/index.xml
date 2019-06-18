@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>markdown on SCL Blog</title>
-    <link>https://pages.gitlab.io/hugo/tags/markdown/</link>
+    <link>http://blog2.silocitylabs.com/tags/markdown/</link>
     <description>Recent content in markdown on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
     <lastBuildDate>Fri, 20 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://pages.gitlab.io/hugo/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog2.silocitylabs.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Test markdown</title>
-      <link>https://pages.gitlab.io/hugo/post/2015-02-20-test-markdown/</link>
+      <link>http://blog2.silocitylabs.com/post/2015-02-20-test-markdown/</link>
       <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>https://pages.gitlab.io/hugo/post/2015-02-20-test-markdown/</guid>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>http://blog2.silocitylabs.com/post/2015-02-20-test-markdown/</guid>
       <description>You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it&amp;rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.
 Here is some bold text
 Here is a secondary heading Here&amp;rsquo;s a useless table:

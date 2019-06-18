@@ -1,4 +1,4 @@
-baseurl = "https://pages.gitlab.io/hugo/"
+baseurl = "http://blog2.silocitylabs.com/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "docs"
@@ -10,13 +10,13 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-#disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+disqusShortname = "sclblog-1"
+googleAnalytics = "UA-78226868-3"
 
 [Params]
   subtitle = "Official Blog for Silo City Labs LLC"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
+  logo = "android-chrome-256x256.png"
+  favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
@@ -34,25 +34,25 @@ pygmentCodeFences = true
 #  desc = "Hexagon"
 
 [Author]
-  name = "Some Person"
-  email = "youremail@domain.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  gitlab = "username"
-  github = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  keybase = "username"
+  name = "Silo City Labs LLC"
+  email = "team@silocitylabs.com"
+  facebook = "SiloCityLabs"
+  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  #gitlab = "username"
+  #github = "username"
+  twitter = "silocitylabs"
+  #reddit = "username"
+  #linkedin = "username"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  #instagram = "username"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  #spotify = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #keybase = "username"
 
 
 [[menu.main]]
