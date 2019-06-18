@@ -1,19 +1,21 @@
 ---
-title: About me
-subtitle: Why you'd want to hang out with me
+title: About Us
+subtitle: Why you'd want to hang out with us
 comments: false
 ---
 
-My name is The Dude. I have the following qualities:
+We are a group of developers who work together to help one another strive at our fields.
 
-- I rock a great beard
-- I'm extremely loyal to my friends
-- I like bowling
+What we do best:
 
-That rug really tied the room together.
+#### Search Engine Optimization
+Our SEO experts can get your site on google and Bing!
 
-### my history
+#### Web Design
+Our team has the skillset to get you your desired look and function.
 
-To be honest, I'm having some trouble remembering right now, so why don't you
-just watch [my movie](https://en.wikipedia.org/wiki/The_Big_Lebowski) and it
-will answer **all** your questions.
+#### Mobile Apps
+We strive to keep all sites mobile ready and if thats not enough, we also provide Android development
+
+#### Development
+Have your custom system designed for your needs. We specialize in Go, PHP, Java, HTML and many more web and software languages

@@ -3,125 +3,125 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/</loc>
+    <loc>http://blog2.silocitylabs.com/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2017-03-20-photoswipe-gallery-sample/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2017-03-20-photoswipe-gallery-sample/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/</loc>
-    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pages.gitlab.io/hugo/tags/</loc>
+    <loc>http://blog2.silocitylabs.com/post/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/tags/example/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/tags/photoswipe/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/example/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2017-03-07-bigimg-sample/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/photoswipe/</loc>
+    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog2.silocitylabs.com/post/2017-03-07-bigimg-sample/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/tags/bigimg/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/bigimg/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2017-03-05-math-sample/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2017-03-05-math-sample/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/tags/math/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/math/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2016-03-08-code-sample/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2016-03-08-code-sample/</loc>
     <lastmod>2016-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/tags/code/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/code/</loc>
     <lastmod>2016-03-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-02-26-flake-it-till-you-make-it/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-02-26-flake-it-till-you-make-it/</loc>
     <lastmod>2015-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-02-20-test-markdown/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-02-20-test-markdown/</loc>
     <lastmod>2015-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/tags/markdown/</loc>
+    <loc>http://blog2.silocitylabs.com/tags/markdown/</loc>
     <lastmod>2015-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-02-13-hamlet-monologue/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-02-13-hamlet-monologue/</loc>
     <lastmod>2015-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-01-27-dear-diary/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-01-27-dear-diary/</loc>
     <lastmod>2015-01-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-01-19-soccer/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-01-19-soccer/</loc>
     <lastmod>2015-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-01-15-pirates/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-01-15-pirates/</loc>
     <lastmod>2015-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/post/2015-01-04-first-post/</loc>
+    <loc>http://blog2.silocitylabs.com/post/2015-01-04-first-post/</loc>
     <lastmod>2015-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/page/about/</loc>
+    <loc>http://blog2.silocitylabs.com/page/about/</loc>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/categories/</loc>
+    <loc>http://blog2.silocitylabs.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pages.gitlab.io/hugo/page/</loc>
+    <loc>http://blog2.silocitylabs.com/page/</loc>
     <priority>0</priority>
   </url>
   
