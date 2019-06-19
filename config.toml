@@ -37,23 +37,15 @@ googleAnalytics = "UA-78226868-3"
   name = "Silo City Labs LLC"
   email = "team@silocitylabs.com"
   facebook = "SiloCityLabs"
-  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  #gitlab = "username"
-  #github = "username"
+  gitlab = "silo-city-labs-llc"
+  github = "silocitylabs"
   twitter = "silocitylabs"
   #reddit = "username"
-  #linkedin = "username"
-  #xing = "username"
-  #stackoverflow = "users/XXXXXXX/username"
-  #snapchat = "username"
-  #instagram = "username"
-  #youtube = "user/username" # or channel/channelname
-  #soundcloud = "username"
-  #spotify = "username"
-  #bandcamp = "username"
-  #itchio = "username"
-  #keybase = "username"
+  #linkedin = "company/10586208"
+  youtube = "channel/UC9vgzat1SRdQ8NNsCQ6d7cA"
 
+[permalinks]
+  posts = "/post/:year/:month/:day/:slug"
 
 [[menu.main]]
     name = "Blog"
@@ -66,26 +58,26 @@ googleAnalytics = "UA-78226868-3"
     weight = 3
 
 [[menu.main]]
-    identifier = "samples"
-    name = "Samples"
+    identifier = "cat"
+    name = "Categories"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
+    parent = "cat"
+    name = "Official"
+    url = "tags/official/"
     weight = 1
 
 [[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
+    parent = "cat"
+    name = "Side Projects"
+    url = "tags/side-projects/"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
+    parent = "cat"
+    name = "Deals"
+    url = "tags/deals/"
     weight = 3
 
 [[menu.main]]
