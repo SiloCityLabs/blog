@@ -1,6 +1,7 @@
 ---
 title: Ultra minimal Raspbian Image for Pi Zero and Zero W
 date: 2019-06-13
+author: Luis Rodriguez
 tags: ["linux", "minimal pi", "pi", "raspberry"]
 ---
 
