@@ -3,63 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog2.silocitylabs.com/</loc>
+    <loc>https://silocitylabs.com/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/post/</loc>
+    <loc>https://silocitylabs.com/post/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/tags/</loc>
+    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/post/2019-06-13-ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
+    <loc>https://silocitylabs.com/post/2019-06-13-ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/tags/linux/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog2.silocitylabs.com/tags/minimal-pi/</loc>
+    <loc>https://silocitylabs.com/tags/linux/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/tags/pi/</loc>
+    <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/tags/raspberry/</loc>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/page/about/</loc>
-  </url>
-  
-  <url>
-    <loc>http://blog2.silocitylabs.com/categories/</loc>
+    <loc>https://silocitylabs.com/tags/raspberry/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog2.silocitylabs.com/page/</loc>
+    <loc>https://silocitylabs.com/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/page/</loc>
     <priority>0</priority>
   </url>
   

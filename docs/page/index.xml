@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on SCL Blog</title>
-    <link>http://blog2.silocitylabs.com/page/</link>
+    <link>https://silocitylabs.com/page/</link>
     <description>Recent content in Pages on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
     
-	<atom:link href="http://blog2.silocitylabs.com/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://silocitylabs.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Us</title>
-      <link>http://blog2.silocitylabs.com/page/about/</link>
+      <link>https://silocitylabs.com/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>http://blog2.silocitylabs.com/page/about/</guid>
+      <guid>https://silocitylabs.com/page/about/</guid>
       <description>We are a group of developers who work together to help one another strive at our fields.
 What we do best:
 Search Engine Optimization Our SEO experts can get your site on google and Bing!

@@ -1,4 +1,4 @@
-baseurl = "http://blog2.silocitylabs.com/"
+baseurl = "https://silocitylabs.com/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "docs"
