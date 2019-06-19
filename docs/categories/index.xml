@@ -7,9 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 13 Jun 2019 23:30:28 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Side Projects</title>
+      <link>https://silocitylabs.com/categories/side-projects/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/categories/side-projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech Deals</title>
+      <link>https://silocitylabs.com/categories/tech-deals/</link>
+      <pubDate>Thu, 13 Jun 2019 13:31:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/categories/tech-deals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://silocitylabs.com/categories/golang/</link>
+      <pubDate>Thu, 06 Jun 2019 20:00:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Official Business</title>
+      <link>https://silocitylabs.com/categories/official-business/</link>
+      <pubDate>Fri, 15 Dec 2017 01:05:52 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/categories/official-business/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

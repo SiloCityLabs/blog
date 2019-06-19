@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Switching to Linux</title>
+  <meta property="og:title" content="Switching to Linux" />
+  <meta name="twitter:title" content="Switching to Linux" />
+  <meta name="description" content="
+
+I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many other reasons I won&#8217;t begin to rant about. I chose to go with a decently common operating system for better compatibility.
+
+I have gone through the install process and have installed Ubuntu 18.04LTS. For less advanced Linux users you can go with a simpler Linux like Solus which is a little more GUI friendly system.
+
+You can modify ubuntu to your likings using a tool called &#8220;gnome tweaks&#8221; and you can disable animations to speed things up by using a tool called &#8220;dconf-editor&#8221;.
+
+In dconf-editor, browse to org.gnome.desktop.interface and set enable-animations=false.
+
+You can also run this command to disable animations:
+
+gsettings set org.gnome.desktop.interface enable-animations false&lt;br /&gt;
+
+
+You do not need to log out and back in, it should take effect immediately.
+
+After getting all settled and having all my software carried over. I had a few pieces of software that was not compatible and I still needed. Most of my software was available in Ubuntu application store. Everything left is listed below:
+
+
+Chrome
+Steam
+Git -&gt; installed from terminal &#8220;sudo apt install git&#8221;
+Java 10 (64-bit) -&gt; installed from terminal
+AMD Driver
+PC Games, Steam Beta Proton
+SketchUp 2016 -&gt; Windows VM
+Origin
+H&amp;R Block Premium &#43; Efile &#43; State -&gt; Windows VM
+Microsoft office -&gt; libreoffice
+
+
+Ubuntu Get right click new documents back. Here is a link to a couple of templates we made.
+
+To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&#8217;t be used that often so its a compromise I&#8217;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:">
+  <meta property="og:description" content="
+
+I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many other reasons I won&#8217;t begin to rant about. I chose to go with a decently common operating system for better compatibility.
+
+I have gone through the install process and have installed Ubuntu 18.04LTS. For less advanced Linux users you can go with a simpler Linux like Solus which is a little more GUI friendly system.
+
+You can modify ubuntu to your likings using a tool called &#8220;gnome tweaks&#8221; and you can disable animations to speed things up by using a tool called &#8220;dconf-editor&#8221;.
+
+In dconf-editor, browse to org.gnome.desktop.interface and set enable-animations=false.
+
+You can also run this command to disable animations:
+
+gsettings set org.gnome.desktop.interface enable-animations false&lt;br /&gt;
+
+
+You do not need to log out and back in, it should take effect immediately.
+
+After getting all settled and having all my software carried over. I had a few pieces of software that was not compatible and I still needed. Most of my software was available in Ubuntu application store. Everything left is listed below:
+
+
+Chrome
+Steam
+Git -&gt; installed from terminal &#8220;sudo apt install git&#8221;
+Java 10 (64-bit) -&gt; installed from terminal
+AMD Driver
+PC Games, Steam Beta Proton
+SketchUp 2016 -&gt; Windows VM
+Origin
+H&amp;R Block Premium &#43; Efile &#43; State -&gt; Windows VM
+Microsoft office -&gt; libreoffice
+
+
+Ubuntu Get right click new documents back. Here is a link to a couple of templates we made.
+
+To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&#8217;t be used that often so its a compromise I&#8217;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:">
+  <meta name="twitter:description" content="
+
+I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many other reasons I won&#8217;t begin to rant about. I …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2018/12/18/switching-to-linux/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://silocitylabs.com/post/2018/12/18/switching-to-linux/" />
+  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://silocitylabs.com/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/highlight.min.css" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/official-business/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/side-projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://silocitylabs.com/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+            <img class="avatar-img" src="https://silocitylabs.com/android-chrome-256x256.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Switching to Linux</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on December 19, 2018
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p><img class="wp-image-779 alignnone size-full" src="https://blog.silocitylabs.com/wp-content/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png" width="670" height="335" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png 670w, https://blog.silocitylabs.com/wp-content/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625-300x150.png 300w" sizes="(max-width: 670px) 100vw, 670px" /></p>
+
+<p>I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many <a href="https://duckduckgo.com/?q=windows+updates+breaks&amp;atb=v147-1__&amp;t=cros&amp;iar=news&amp;ia=">other reasons</a> I won&#8217;t begin to rant about. I chose to go with a decently common operating system for better compatibility.</p>
+
+<p>I have gone through the <a href="https://linuxhint.com/rufus_bootable_usb_install_ubuntu_18-04_lts/">install process and have installed Ubuntu 18.04LTS</a>. For less advanced Linux users you can go with a simpler Linux like <a href="https://linoxide.com/distros/install-solus-usb/">Solus</a> which is a little more GUI friendly system.</p>
+
+<p>You can modify ubuntu to your likings using a tool called &#8220;gnome tweaks&#8221; and you can disable animations to speed things up by using a tool called &#8220;dconf-editor&#8221;.</p>
+
+<p>In dconf-editor, browse to <strong>org.gnome.desktop.interface</strong> and set <strong>enable-animations=false</strong>.</p>
+
+<p>You can also run this command to disable animations:</p>
+
+<p><code>gsettings set org.gnome.desktop.interface enable-animations false</code><code>&lt;br /&gt;
+</code></p>
+
+<p>You do not need to log out and back in, it should take effect immediately.</p>
+
+<p>After getting all settled and having all my software carried over. I had a few pieces of software that was not compatible and I still needed. Most of my software was available in Ubuntu application store. Everything left is listed below:</p>
+
+<ul>
+<li><a href="http://google.com/chrome">Chrome</a></li>
+<li><a href="https://store.steampowered.com/about/">Steam</a></li>
+<li>Git -&gt; installed from terminal &#8220;sudo apt install git&#8221;</li>
+<li><a href="https://thishosting.rocks/install-java-ubuntu/">Java 10 (64-bit) -&gt; installed from terminal</a></li>
+<li><a href="http://amd.com">AMD Driver</a></li>
+<li><a href="https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561">PC Games, Steam Beta Proton</a></li>
+<li>SketchUp 2016 -&gt; Windows VM</li>
+<li><a href="https://www.pcsteps.com/5110-install-origin-linux-mint-ubuntu-wine/">Origin</a></li>
+<li>H&amp;R Block Premium + Efile + State -&gt; Windows VM</li>
+<li>Microsoft office -&gt; libreoffice</li>
+</ul>
+
+<p>Ubuntu <a href="https://vitux.com/add-new-document-back-to-the-right-click-menu-in-ubuntu-18-04/">Get right click new documents back</a>. Here is a link to a couple of <a href="https://downloads.techreanimate.com/mprryu">templates</a> we made.</p>
+
+<p>To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&#8217;t be used that often so its a compromise I&#8217;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:</p>
+
+<ul>
+<li>Enable bidirectional clipboard and drag and drop in Virtualbox
+
+<ul>
+<li>Disabled UAC &#8211; Annoying in VMs, slight delay in the dialog</li>
+<li>Power options, enabled performance</li>
+<li><a href="https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently/">Turned off Windows defender</a></li>
+<li>Deffered windows updates to 30 days or max</li>
+<li>Disabled firewall, since I will be enabling NAT in VM for Ubuntu to manage firewall</li>
+<li>Disabled Microsoft smart screen</li>
+<li>installed Virtualbox extensions pack</li>
+<li>installed VM guest additions pack</li>
+<li>Disabled sleep in power options</li>
+<li><a href="https://www.itpro.co.uk/operating-systems/26138/how-to-speed-up-windows-10">Performance options &#8211; adjust for best performance</a></li>
+<li>Disabled cortana</li>
+<li>Disabled any windows &#8220;sharing&#8221; data stuff</li>
+<li>Single click shutdown &#8211; &#8220;%windir%\System32\shutdown.exe /s /t 0&#8221;</li>
+<li><a href="https://www.pugetsystems.com/labs/support-software/How-to-disable-Sleep-Mode-or-Hibernation-793/">Disable hibernate</a></li>
+<li><a href="https://www.itpro.co.uk/operating-systems/26138/how-to-speed-up-windows-10">Auto login user</a></li>
+<li>Hide taskbar items, People, cortana, task view</li>
+<li>Made start menu smaller by dragging and removed most icons from right side</li>
+<li>Disable system restore points</li>
+<li><a href="https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems">Disabled system dumps and startup logs</a></li>
+<li>Disabled windows defender in task manager startup items</li>
+<li>Disabled ipv6</li>
+<li>Set static ip using existing ip as baseline (10.0.2.15, 255.255.255.0, 10.0.2.2, DNS Your router ip, 1.1.1.1). Since we will be disabling DHCP service.</li>
+<li>Disabled windows cloud search</li>
+<li>Disabled device history</li>
+<li>Right click Uninstall any apps in start menu you don&#8217;t need</li>
+<li>Indexing options -&gt; removed Users, I won&#8217;t be using this for files. Left start menu alone</li>
+<li><a href="https://tunecomp.net/win10-page-file-disable/">Disable page file, Only do if you have enough memory</a></li>
+<li>set solid background</li>
+<li>set solid taskbar colors and disable transparency</li>
+<li>Turned of windows features:
+
+<ul>
+<li>Internet explorer</li>
+<li>Microsoft print to PDF</li>
+<li>Microsoft XPS document writer</li>
+<li>Powershell 2</li>
+</ul></li>
+<li>Disabled services:
+
+<ul>
+<li>Data usage</li>
+<li>Windows Defender firewall</li>
+</ul></li>
+<li>Manual services
+
+<ul>
+<li>Print Spooler &#8211; I may still need it to print out tax software stuff</li>
+<li>DHCP</li>
+</ul></li>
+<li>Combine start menu folders by right click open file location then drag the shortcuts. Combined Ease of access, powershell and system into one</li>
+<li><a href="https://www.askvg.com/guide-how-to-remove-all-built-in-apps-in-windows-10">Killed windows apps</a> &#8211; Powershell (admin) Run the commands below (copy and Paste) and hit Enter &#8211;
+
+<ul>
+<li>get-appxpackage -allusers *zunemusic* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *3dbuilder* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *alarms* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *communicationsapps* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *camera* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *feedback* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *officehub* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *getstarted* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *skypeapp* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *zunemusic* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *zune* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *maps* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *messaging* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *solitaire* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *wallet* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *connectivitystore* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *bingfinance* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *bing* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *zunevideo* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *bingnews* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *onenote* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *oneconnect* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *people* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *commsphone* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *windowsphone* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *phone* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *photos* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *bingsports* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *sticky* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *sway* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *3d* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *soundrecorder* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *bingweather* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *holographic* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *windowsstore* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *xbox* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *mspaint* | remove-appxpackage</li>
+<li>get-appxpackage -allusers *holographic* | remove-appxpackage</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>Other untested stuff:</p>
+
+<ul>
+<li><a href="https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems">https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems</a></li>
+<li><a href="https://www.reddit.com/r/TronScript/comments/a41xpq/tron_v1073_20181207_fix_disk_space_calculation_in/">https://www.reddit.com/r/TronScript/comments/a41xpq/tron_v1073_20181207_fix_disk_space_calculation_in/</a></li>
+</ul>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://silocitylabs.com/post/2018/12/13/rscm-13101b-and-zoneminder/" data-toggle="tooltip" data-placement="top" title="RSCM-13101B and Zoneminder">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://silocitylabs.com/post/2018/12/23/808/" data-toggle="tooltip" data-placement="top" title="Home hub deal">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://silocitylabs.com/js/main.js"></script>
+<script src="https://silocitylabs.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+

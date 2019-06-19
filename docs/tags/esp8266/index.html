@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>esp8266</title>
+  <meta property="og:title" content="esp8266" />
+  <meta name="twitter:title" content="esp8266" />
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/tags/esp8266/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://silocitylabs.com/tags/esp8266/" />
+  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://silocitylabs.com/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/highlight.min.css" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/official-business/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/side-projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://silocitylabs.com/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+            <img class="avatar-img" src="https://silocitylabs.com/android-chrome-256x256.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  <header class="header-section ">
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>#esp8266</h1>
+              <hr class="small">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2018/01/19/433mhz-testing/">
+                <h2 class="post-title">433mhz testing</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on January 19, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.</p>
+
+<p>&nbsp;</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/q09ws1L-db0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/01/photo_2018-01-19_09-36-09.jpg"><img class="aligncenter size-medium wp-image-324" src="https://blog.silocitylabs.com/wp-content/uploads/2018/01/photo_2018-01-19_09-36-09-300x169.jpg" alt="" width="300" height="169" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/01/photo_2018-01-19_09-36-09-300x169.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/01/photo_2018-01-19_09-36-09-768x432.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/01/photo_2018-01-19_09-36-09-1024x576.jpg 1024w, https://blog.silocitylabs.com/wp-content/uploads/2018/01/photo_2018-01-19_09-36-09.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Update to: <a href="https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/">https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</a></p>
+
+                
+              </div>
+    
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://silocitylabs.com/tags/433mhz">433mhz</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/esp8266">esp8266</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/more-things">more things</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/morethings">morethings</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/security">security</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smart-home">smart home</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                  
+                </span>
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/">
+                <h2 class="post-title">Complete Smart Home Setup</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on December 28, 2017
+              </p>
+              <div class="post-entry">
+                
+                  <p><img class="aligncenter wp-image-230 size-full" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg" alt="" width="907" height="446" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg 907w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881-300x148.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881-768x378.jpg 768w" sizes="(max-width: 907px) 100vw, 907px" /></p>
+
+<p>&nbsp;</p>
+
+<p>I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&#8217;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>The Assistant</strong>:</p>
+
+<p>Google Home and/or Mini manage my random routines that aren&#8217;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2.jpg"><img class="aligncenter size-medium wp-image-211" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2-300x169.jpg" alt="" width="300" height="169" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2-300x169.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2-768x432.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2.jpg 830w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p><strong>Control Center</strong>:</p>
+
+<p>What controls my entire setup and why I chose this hub vs others. My only hub is a <strong>Samsung SmartThings hub</strong>. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?</p>
+                  <a href="https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://silocitylabs.com/tags/433mhz">433mhz</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/energizer">energizer</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/esp8266">esp8266</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/fire-alarm">fire alarm</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/google-home">google home</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/google-home-mini">google home mini</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/hue">hue</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/more-things">more things</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/morethings">morethings</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smart-home">smart home</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smart-light">smart light</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smart-strip">smart strip</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smart-switch">smart switch</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                  
+                </span>
+              
+    
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/06/automated-water-system/">
+                <h2 class="post-title">Automated water system?</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on December 6, 2017
+              </p>
+              <div class="post-entry">
+                
+                  <p>A friend at work asked if I could help solve his issues with his water intake from the well. At first I was like um why? Living in the city I did not know anything about how country side water systems worked. Water pumped from a well has a chance that it may contain too much sulfur making the water smell. He wanted to pull rain water into a tank and use it as primary with the well water as a failsafe.</p>
+
+<p>I am thinking about using a basic ESP8266 along with a couple of water pressure sensors and relays triggering the water pumps he already has. The code should be very simple to write and I already have most of the hardware here minus the sensor.</p>
+                  <a href="https://silocitylabs.com/post/2017/12/06/automated-water-system/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://silocitylabs.com/tags/esp8266">esp8266</a>&nbsp;
+                  
+                </span>
+              
+    
+            </article>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://silocitylabs.com/js/main.js"></script>
+<script src="https://silocitylabs.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+

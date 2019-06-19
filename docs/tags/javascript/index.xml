@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/javascript/</link>
+    <description>Recent content in Javascript on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Wed, 10 Jan 2018 03:17:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blocking exit intent popups</title>
+      <link>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</link>
+      <pubDate>Wed, 10 Jan 2018 03:17:12 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/01/newsletter-popup.jpg&#34;&gt;&lt;img class=&#34;aligncenter wp-image-299 size-full&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34; width=&#34;906&#34; height=&#34;335&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;I hate &amp;#8220;exit intent&amp;#8221; popups. The kind that automatically open when your mouse leaves the page begging &amp;#8220;please don&amp;#8217;t go!&amp;#8221;. They&amp;#8217;re annoying. They&amp;#8217;re irrelevant (I&amp;#8217;m following instructions, not closing). They interrupt the content I&amp;#8217;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

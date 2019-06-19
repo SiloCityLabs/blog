@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>SCL Blog</title>
+  <meta property="og:title" content="SCL Blog" />
+  <meta name="twitter:title" content="SCL Blog" />
+  <meta name="description" content="We are an independent development group based in Buffalo, NY. We work together to help each other out in our fields and open source projects. We live by the name Silo City Labs and work towards a better future for each other.">
+  <meta property="og:description" content="We are an independent development group based in Buffalo, NY. We work together to help each other out in our fields and open source projects. We live by the name Silo City Labs and work towards a better future for each other.">
+  <meta name="twitter:description" content="We are an independent development group based in Buffalo, NY. We work together to help each other out in our fields and open source projects. We live by the name Silo City Labs and work towards a …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://silocitylabs.com/" />
+  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://silocitylabs.com/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/highlight.min.css" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/official-business/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/side-projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://silocitylabs.com/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+            <img class="avatar-img" src="https://silocitylabs.com/android-chrome-256x256.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://silocitylabs.com/img/hexagon.jpg" ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>SCL Blog</h1>
+                  
+                    
+                      <hr class="small">
+                      <span class="page-subheading">Official Blog for Silo City Labs LLC</span>
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>SCL Blog</h1>
+                
+                  
+                    <hr class="small">
+                    <span class="page-subheading">Official Blog for Silo City Labs LLC</span>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+          <div class="well">
+            <p>We are an independent development group based in Buffalo, NY. We work together to help each other out in our fields and open source projects. We live by the name Silo City Labs and work towards a better future for each other.</p>
+
+          </div>
+        
+
+        <div class="posts-list">
+          
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/">
+                <h2 class="post-title">Flashing Merlin to TM-AC1900 or AC68U (Updated for 384 builds)</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on January 1, 2018
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Very few people know that you can save yourself some money by buying a <a href="http://a.tra.li/Smz7">T-mobile router on Amazon</a>. Downside is having to flash it to have the latest firmware free of vulnerabilities. In this guide I will show you how to flash a TM-AC1900 to a RT-AC68U then into merlin custom firmware. I have tested it myself and can confirm that it works.</p>
+
+<p>&nbsp;</p>
+
+<p>Update: Asus began rolling back firmware on the stock setups. They are not providing Merlin with the source for Ai-Mesh so you need to be on stock to use it. I have updated the guide to provide instructions on how to prevent the rollback from happening. You can also use this guide to recover from a rollback.</p>
+                  <a href="https://silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/ac68u">ac68u</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/asus">asus</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/custom-firmware">custom firmware</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/flash">flash</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/merlin">merlin</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/router">router</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/">
+                <h2 class="post-title">Complete Smart Home Setup</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 28, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p><img class="aligncenter wp-image-230 size-full" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg" alt="" width="907" height="446" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg 907w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881-300x148.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881-768x378.jpg 768w" sizes="(max-width: 907px) 100vw, 907px" /></p>
+
+<p>&nbsp;</p>
+
+<p>I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&#8217;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>The Assistant</strong>:</p>
+
+<p>Google Home and/or Mini manage my random routines that aren&#8217;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2.jpg"><img class="aligncenter size-medium wp-image-211" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2-300x169.jpg" alt="" width="300" height="169" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2-300x169.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2-768x432.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/100417-google-home-mini7347-2.jpg 830w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p><strong>Control Center</strong>:</p>
+
+<p>What controls my entire setup and why I chose this hub vs others. My only hub is a <strong>Samsung SmartThings hub</strong>. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?</p>
+                  <a href="https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/433mhz">433mhz</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/energizer">energizer</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/esp8266">esp8266</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/fire-alarm">fire alarm</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/google-home">google home</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/google-home-mini">google home mini</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/hue">hue</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/more-things">more things</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/morethings">morethings</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-home">smart home</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-light">smart light</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-strip">smart strip</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-switch">smart switch</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/">
+                <h2 class="post-title">SmartThings zigbee vs Dome light cover</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 26, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  For Christmas my mother got a full smart home kit. Samsung SmartThings, sengled bulbs, google home. After pluging everything in the hub was having issues. Finding all bulbs in dome covers. I removed the glass from the dome cover and tried again with no luck. Afterwards I removed the bulb from the socket and put it in a lamp. Detected and added to smartthings fine in the lamp. Readded it to the dome cover and it works now!
+                  <a href="https://silocitylabs.com/post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/smart-home">smart home</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-light">smart light</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/">
+                <h2 class="post-title">SmartThings &#43; Vision Micro Switch [Update]</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 18, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/397hvxAjlj4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+                  <a href="https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/samsung">samsung</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-home">smart home</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-light">smart light</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-switch">smart switch</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/vision">vision</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/">
+                <h2 class="post-title">Phone case gamepad WIP</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 18, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p><a href="https://hackaday.io/project/28180"><img class="aligncenter wp-image-167 size-full" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1.jpg" alt="" width="1257" height="478" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w" sizes="(max-width: 1257px) 100vw, 1257px" /></a>Here&#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my <a href="https://hackaday.io/project/28180">HackADay.io project</a>. All project information will be open source and posted on <a href="https://github.com/SiloCityLabs">Github</a>.</p>
+                  <a href="https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/3d-modeling">3d modeling</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/3d-printing">3d printing</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/bluetooth">bluetooth</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/gamepad">gamepad</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/gamepad-case">gamepad case</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/nrf51">nrf51</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smartphone">smartphone</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/">
+                <h2 class="post-title">SmartThings &#43; Vision Micro Switch</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 15, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [<a href="https://blog.silocitylabs.com/post/author/bana0615/">bana0615</a>]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.</p>
+
+<figure id="attachment_71" aria-describedby="caption-attachment-71" style="width: 300px" class="wp-caption alignnone">[<img class="wp-image-71 size-medium" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/419E0PAR7HL-300x300.jpg" alt="" width="300" height="300" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/419E0PAR7HL-300x300.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/419E0PAR7HL-150x150.jpg 150w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/419E0PAR7HL.jpg 500w" sizes="(max-width: 300px) 100vw, 300px" />][2]<figcaption id="caption-attachment-71" class="wp-caption-text">Double Toggle Switch</figcaption></figure>
+                  <a href="https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/samsung">samsung</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-home">smart home</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-light">smart light</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smart-switch">smart switch</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/vision">vision</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/">
+                <h2 class="post-title">3D printed wrist brace WIP</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 15, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p><a href="https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645.jpg"><img class="aligncenter wp-image-93 size-full" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645.jpg" alt="" width="1010" height="513" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645.jpg 1010w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645-300x152.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645-768x390.jpg 768w" sizes="(max-width: 1010px) 100vw, 1010px" /></a></p>
+
+<p>This is a custom 3D printed wrist brace that I&#8217;m working on. I wear wrist braces to sleep for RSI / carpal tunnel but they&#8217;re not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.</p>
+
+<div style="overflow: hidden;">
+  <p>
+    <figure id="attachment_67" aria-describedby="caption-attachment-67" style="width: 400px" class="wp-caption alignright"><a href="https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1.jpg"><img class="wp-image-67" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1-300x212.jpg" alt="" width="400" height="283" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1-300x212.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1-210x150.jpg 210w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1.jpg 660w" sizes="(max-width: 400px) 100vw, 400px" /></a><figcaption id="caption-attachment-67" class="wp-caption-text">3D printed cast I saw online</figcaption></figure>
+  </p>
+  
+  <p>
+    The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.
+  </p>
+</div>
+                  <a href="https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/3d-modeling">3d modeling</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/3d-printing">3d printing</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/wrist-brace">wrist brace</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/15/new-generators-coming-soon/">
+                <h2 class="post-title">New generators coming soon</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 15, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Cant wait to show you what we have in store, new generators coming soon!</p>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/codrcg">codrcg</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/15/ebay-print-bed/">
+                <h2 class="post-title">New print bed</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 15, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>We received our new print bed from <a href="https://www.ebay.com/itm/192342007627">eBay/China</a>. Not a Lokbuild but at least its cheaper. First thing I noticed is that this sheet is thicker than a Lokbuild, 0.6mm thick instead of 0.5. When I followed the steps on calibrating I clicked <del>6</del> 8 times to ensure proper spacing instead of the original 4.</p>
+
+<figure id="attachment_127" aria-describedby="caption-attachment-127" style="width: 169px" class="wp-caption aligncenter">[<img class="wp-image-127 size-medium" src="https://blog.silocitylabs.com/wp-content/uploads/2017/12/img_20171106_1706507253338128094262765-169x300.jpg" alt="" width="169" height="300" srcset="https://blog.silocitylabs.com/wp-content/uploads/2017/12/img_20171106_1706507253338128094262765-169x300.jpg 169w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/img_20171106_1706507253338128094262765-576x1024.jpg 576w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/img_20171106_1706507253338128094262765.jpg 720w" sizes="(max-width: 169px) 100vw, 169px" />][2]<figcaption id="caption-attachment-127" class="wp-caption-text">Before applying pad</figcaption></figure>
+
+<p><strong>Robox Instructions:</strong></p>
+
+<ol>
+<li><p>Launch AutoMaker software and navigate to Calibration button</p></li>
+
+<li><p>Follow instructions until asked to insert paper between nozzles and build plate</p></li>
+
+<li><p>Follow instructions and raise nozzles to point at which paper moves freely between nozzles and build plate</p></li>
+
+<li><p>Set height&nbsp;<del>4</del>&nbsp;<del>6</del> 8 clicks higher than this point (i.e. 0.4 mm)</p></li>
+
+<li><p>Proceed as normal</p></li>
+</ol>
+                  <a href="https://silocitylabs.com/post/2017/12/15/ebay-print-bed/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/3d-printer">3d printer</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/acetone">Acetone</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/robox">robox</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/06/automated-water-system/">
+                <h2 class="post-title">Automated water system?</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on December 6, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>A friend at work asked if I could help solve his issues with his water intake from the well. At first I was like um why? Living in the city I did not know anything about how country side water systems worked. Water pumped from a well has a chance that it may contain too much sulfur making the water smell. He wanted to pull rain water into a tank and use it as primary with the well water as a failsafe.</p>
+
+<p>I am thinking about using a basic ESP8266 along with a couple of water pressure sensors and relays triggering the water pumps he already has. The code should be very simple to write and I already have most of the hardware here minus the sensor.</p>
+                  <a href="https://silocitylabs.com/post/2017/12/06/automated-water-system/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/esp8266">esp8266</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+        </div>
+
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="https://silocitylabs.com/page/4">&larr; Newer Posts</a>
+              </li>
+            
+            
+              <li class="next">
+                <a href="https://silocitylabs.com/page/6">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://silocitylabs.com/js/main.js"></script>
+<script src="https://silocitylabs.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+

@@ -1,8 +1,18 @@
 ---
 title: Ultra minimal Raspbian Image for Pi Zero and Zero W
-date: 2019-06-13
 author: Luis Rodriguez
-tags: ["linux", "minimal pi", "pi", "raspberry"]
+type: post
+date: 2019-06-13T23:30:28+00:00
+url: /post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/
+featured_image: /wp-content/uploads/2019/06/0bdcee8f1e4ed55a4814785aaff9a4bf-150x150.jpg
+categories:
+  - Side Projects
+tags:
+  - linux
+  - minimal
+  - Pi
+  - raspberry
+
 ---
 
 I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.

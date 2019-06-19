@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Dual AC Router Setup for $120</title>
+  <meta property="og:title" content="Dual AC Router Setup for $120" />
+  <meta name="twitter:title" content="Dual AC Router Setup for $120" />
+  <meta name="description" content="I will be using two Custom firmware routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to Merlin custom firmware but its entirely optional. This will work with the stock firmware.">
+  <meta property="og:description" content="I will be using two Custom firmware routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to Merlin custom firmware but its entirely optional. This will work with the stock firmware.">
+  <meta name="twitter:description" content="I will be using two Custom firmware routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2018/02/02/dual-ac-router-setup-for-120/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://silocitylabs.com/post/2018/02/02/dual-ac-router-setup-for-120/" />
+  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://silocitylabs.com/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/highlight.min.css" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/official-business/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/side-projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://silocitylabs.com/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+            <img class="avatar-img" src="https://silocitylabs.com/android-chrome-256x256.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Dual AC Router Setup for $120</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on February 2, 2018
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>I will be using two <a href="https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/">Custom firmware</a> routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to <a href="https://asuswrt.lostrealm.ca/">Merlin custom firmware</a> but its entirely optional. This will work with the stock firmware.</p>
+
+<p>Compatible Devices:</p>
+
+<ul>
+<li><a href="http://a.tra.li/Sx5u">TM-AC1900</a></li>
+<li>RT-N66U</li>
+<li>RT-AC66U</li>
+<li>RT-AC66U_B1 (same firmware as the RT-AC68U)</li>
+<li>RT-AC56U</li>
+<li>RT-AC68U (including revisions C1 and E1)</li>
+<li>RT-AC68P (same firmware as RT-AC68U)</li>
+<li>RT-AC68UF (same firmware as RT-AC68U)</li>
+<li>RT-AC87</li>
+<li>RT-AC3200</li>
+<li>RT-AC88U</li>
+<li>RT-AC3100</li>
+<li>RT-AC5300</li>
+<li>RT-AC1900 (same firmware as RT-AC68U)</li>
+<li>RT-AC1900P (same firmware as RT-AC68U)</li>
+<li>RT-AC86U (starting with version 382.1)</li>
+</ul>
+
+<p>My friends house is so bad at this point his speed drops in half when he moves two rooms over from where the wifi is located. I originally wanted to run it on opposite corners on a vertical plane but he did not want to run ethernet lines up the walls.</p>
+
+<p>My other option was a powerline, but seems I cant find any that run decently yet for his house. A TP-Link AV1000 was only giving him a throughput of 30mbps, so this option was out of the question. My only alternative was to put the routers in the basement on opposite sides of the house like the image below in step 5.</p>
+
+<p>For this setup I am connecting devices that roam the house to the 5ghz ssid (mywifi 5ghz) primary if supported. Then standstill devices like Chromecasts, google home, etc to the old 2.4ghz ssid (mywifi front/rear). You can flip flop this around if you would like. I prefer it this way rather than keeping the names the same because I notice issues with older devices moving around the house not wanting to switch to the closer signal.</p>
+
+<h3 id="step-1-moving-the-modem"><strong>Step 1: Moving the modem.</strong></h3>
+
+<p>Before I get started on the modem setup, I just want to clarify the modem we use. I have a Motorola SURFboard SB6141 and my friend has a SB6121. These modems are cheap on eBay/Amazon and save us from the modem rental fee&#8217;s on our bills. They also act as dedicated devices unlike the router/modem combos given to us by our providers, Thus allowing lower latency connections to the internet.</p>
+
+<p>For this step I attempted to locate a pre-existing line in the basement that I can reroute the splitter to for the modem. We drilled a hole into the side of the house running into the basement but had some issues with spray foam insulation used on the basement. Took 30 mins to carve a hole in the insulation to get the hole for the wire. We reused a old direct-tv line just in case we messed up the first time we had a second try with the main line. It also let us continue to have internet while we were wiring up the cable. After the line was in place we had to reroute the Cable box splitter to use the direct-tv coax we re-used. Once this was set and done, we re-insulated with a spray foam can around the wire.</p>
+
+<h3 id="img-class-aligncenter-size-medium-wp-image-346-src-https-blog-silocitylabs-com-wp-content-uploads-2018-02-20180203-215442-1008x756-300x225-jpg-alt-width-300-height-225-srcset-https-blog-silocitylabs-com-wp-content-uploads-2018-02-20180203-215442-1008x756-300x225-jpg-300w-https-blog-silocitylabs-com-wp-content-uploads-2018-02-20180203-215442-1008x756-768x576-jpg-768w-https-blog-silocitylabs-com-wp-content-uploads-2018-02-20180203-215442-1008x756-jpg-1008w-sizes-max-width-300px-100vw-300px-4"><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215442-1008x756.jpg"><img class="aligncenter size-medium wp-image-346" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215442-1008x756-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215442-1008x756-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215442-1008x756-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215442-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" /></a></h3>
+
+<h3 id="step-2-configuring-the-main-router"><strong>Step 2: Configuring the main router</strong></h3>
+
+<p>With the router in the main corner of the basement near the modem we will be configuring it as a regular router.</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215447-1008x756.jpg"><img class="aligncenter size-medium wp-image-345" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215447-1008x756-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215447-1008x756-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215447-1008x756-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215447-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Network Settings:</strong></p>
+
+<p>Set the main ip as 192.168.1.1, DHCP range to 192.168.1.10 &#8211; 192.168.1.254. Reserving the 1-9 for static stuff like my second router etc.</p>
+
+<p><strong>Wifi settings:</strong></p>
+
+<p>I will set the main wifi name as &#8220;<em>mywifi (front)</em>&#8221; and the 5ghz as &#8220;<em>mywifi 5ghz</em>&#8220;.</p>
+
+<h3 id="step-3-configuring-the-second-router"><strong>Step 3: Configuring the second router</strong></h3>
+
+<p>With a 100ft ethernet cable we will be running the wire along the ceiling to the opposite corner of the basement. Honestly probably did not need 100ft for his setup, at the time of ordering i did not know the length that was needed so I was better safe than sorry to get a 100ft. I attached the router to the header in the basement with 3m Double sided velcro straps. Plug in the ethernet into the port 1 of the main router and the wan port of the second router.</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215505-1008x756.jpg"><img class="aligncenter size-medium wp-image-343" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215505-1008x756-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215505-1008x756-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215505-1008x756-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215505-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p>After this was all in place I stapled all the wires running across to the headers to keep them in place.</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215450-1008x756.jpg"><img class="aligncenter size-medium wp-image-344" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215450-1008x756-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215450-1008x756-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215450-1008x756-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215450-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215501-1008x756.jpg"><img class="aligncenter size-medium wp-image-348" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215501-1008x756-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215501-1008x756-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215501-1008x756-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215501-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Network Settings:</strong></p>
+
+<p>Enable Ap Mode then set the main ip as 192.168.1.2, DNS settings to 10.5.1.1 and 8.8.8.8.</p>
+
+<p><strong>Wifi settings:</strong></p>
+
+<p>I will set the main wifi name as &#8220;<em>mywifi (rear)</em>&#8221; and the 5ghz as &#8220;<em>mywifi 5ghz</em>&#8220;.</p>
+
+<p>&nbsp;</p>
+
+<h3 id="step-4-powerline-for-desktop"><strong>Step 4: Powerline for Desktop</strong></h3>
+
+<p>This was an added step, he didn&#8217;t want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free&#8217;s up more wifi bandwidth for other devices.</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215456-1008x756.jpg"><img class="aligncenter size-medium wp-image-347" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215456-1008x756-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215456-1008x756-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215456-1008x756-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/20180203_215456-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+
+<h3 id="step-5-enjoy-run-some-speed-tests"><strong>Step 5: Enjoy, Run some speed tests</strong></h3>
+
+<p>The best part was getting 118Mb/s in the 2nd floor and kitchen being connected to the front router. Before our results were lower than 30Mb/s on a old single router setup and the backyard coverage was not existent.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://blog.silocitylabs.com/wp-content/uploads/2018/02/Backyard-Speedtests.png"><img class="aligncenter wp-image-339 size-full" src="https://blog.silocitylabs.com/wp-content/uploads/2018/02/Backyard-Speedtests.png" alt="" width="768" height="347" srcset="https://blog.silocitylabs.com/wp-content/uploads/2018/02/Backyard-Speedtests.png 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/02/Backyard-Speedtests-300x136.png 300w" sizes="(max-width: 768px) 100vw, 768px" /></a></p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://www.speedtest.net/result/7027662257.png"><img class="aligncenter" src="http://www.speedtest.net/result/7027662257.png" alt="" width="350" height="200" /></a></p>
+
+<p><a href="http://www.speedtest.net/result/7027666057.png"><img class="aligncenter" src="http://www.speedtest.net/result/7027666057.png" alt="" width="350" height="200" /></a></p>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://silocitylabs.com/post/2018/01/19/433mhz-testing/" data-toggle="tooltip" data-placement="top" title="433mhz testing">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/" data-toggle="tooltip" data-placement="top" title="433MHZ More Things for Smart Things">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://silocitylabs.com/js/main.js"></script>
+<script src="https://silocitylabs.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+

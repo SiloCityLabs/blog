@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>backups on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/backups/</link>
+    <description>Recent content in backups on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Fri, 23 Nov 2018 17:30:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/backups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Secure Backups without the cloud</title>
+      <link>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</link>
+      <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
+      <description>&lt;figure id=&#34;attachment_647&#34; aria-describedby=&#34;caption-attachment-647&#34; style=&#34;width: 678px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-647 size-large&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-1024x768.jpg&#34; alt=&#34;SOLO G3 4TB&#34; width=&#34;678&#34; height=&#34;509&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-1024x768.jpg 1024w, https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01.jpg 1280w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;][1]&lt;figcaption id=&#34;caption-attachment-647&#34; class=&#34;wp-caption-text&#34;&gt;[ioSafe SOLO G3 4TB USB 3.0][2]&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Backup home internet</title>
+      <link>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</link>
+      <pubDate>Sat, 15 Sep 2018 14:12:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</guid>
+      <description>&lt;p&gt;With new most asus routers you can use a feature called dual wan. I have the luxury of having a work provided cell phone I am using for this. Before having that I had a free service called &lt;a href=&#34;https://www.freedompop.com/phone&#34;&gt;freedompop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Use cases (mainly mine):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Watching netflix withouth interuptions.&lt;/li&gt;
+&lt;li&gt;Backup internet for home security system.&lt;/li&gt;
+&lt;li&gt;Anything internet&amp;#8230;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;alignnone size-full wp-image-587&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326.jpg 1920w, https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 4032px) 100vw, 4032px&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

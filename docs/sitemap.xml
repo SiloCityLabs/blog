@@ -4,31 +4,83 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/side-projects/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/tags/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2019-06-13-ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/tags/linux/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/minimal/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/raspberry/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/06/13/free-google-home/</loc>
+    <lastmod>2019-06-13T13:31:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/tech-deals/</loc>
+    <lastmod>2019-06-13T13:31:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/samples/</loc>
     <lastmod>2019-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/samples/manual/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,24 +90,965 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/categories/golang/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/raspberry/</loc>
-    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/post/2019/06/06/what-can-golang-do/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/coding/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/daemons/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/development/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/go/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/golang/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/scripting/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/software/</loc>
+    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/06/01/raspberry-pi-booting-from-usb-on-older-models/</loc>
+    <lastmod>2019-06-02T03:56:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/boot-from-usb/</loc>
+    <lastmod>2019-06-02T03:56:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/os/</loc>
+    <lastmod>2019-06-02T03:56:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/3d/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/3d-printers/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/3d-printing/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/05/31/hobbyist-3d-printer-roundup-of-2019/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/abs/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/comparison/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pla/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/printer/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/resin/</loc>
+    <lastmod>2019-05-31T23:30:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/05/31/google-nest-hub-for-67/</loc>
+    <lastmod>2019-05-31T21:57:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/google-home-hub/</loc>
+    <lastmod>2019-05-31T21:57:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/05/30/cleaning-up-duplicates-on-nas/</loc>
+    <lastmod>2019-05-30T23:30:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/05/30/home-server-setup/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/axis/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/file-share/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/home-server/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ibaby/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/media-server/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/raid/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/security/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/security-cameras/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/speedtest/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/zoneminder/</loc>
+    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</loc>
+    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/usb-c/</loc>
+    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/gamepad/</loc>
+    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/gamepad-case/</loc>
+    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smartphone/</loc>
+    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</loc>
+    <lastmod>2019-02-07T23:30:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/camera/</loc>
+    <lastmod>2019-02-07T23:30:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/security-camera/</loc>
+    <lastmod>2019-02-07T23:30:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/02/02/one-time-use-wd-coupon/</loc>
+    <lastmod>2019-02-03T01:46:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</loc>
+    <lastmod>2019-01-24T23:30:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/internal-network/</loc>
+    <lastmod>2019-01-24T23:30:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/lan/</loc>
+    <lastmod>2019-01-24T23:30:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/wifi/</loc>
+    <lastmod>2019-01-24T23:30:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/17/sandisk-400gb-sale/</loc>
+    <lastmod>2019-01-18T02:54:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/genius/</loc>
+    <lastmod>2019-01-10T23:30:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/</loc>
+    <lastmod>2019-01-10T23:30:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/widecam/</loc>
+    <lastmod>2019-01-10T23:30:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/10/pin-code-lock-83-combo/</loc>
+    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/combo/</loc>
+    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/kwickset/</loc>
+    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/lock/</loc>
+    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pincode/</loc>
+    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/</loc>
+    <lastmod>2019-01-08T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/internet/</loc>
+    <lastmod>2019-01-08T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/spectrum/</loc>
+    <lastmod>2019-01-08T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/05/wd-4tb-32gb-usb/</loc>
+    <lastmod>2019-01-06T04:47:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/01/02/caavo-av-deal/</loc>
+    <lastmod>2019-01-03T01:53:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/28/missed-chance-insignia/</loc>
+    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ebay/</loc>
+    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/google-home/</loc>
+    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/insignia/</loc>
+    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/27/hd-antenna-deal/</loc>
+    <lastmod>2018-12-28T01:50:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</loc>
+    <lastmod>2018-12-27T23:30:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/nightowl/</loc>
+    <lastmod>2018-12-27T23:30:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/27/home-hub-sale/</loc>
+    <lastmod>2018-12-27T18:16:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/23/808/</loc>
+    <lastmod>2018-12-23T16:34:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/google-home-mini/</loc>
+    <lastmod>2018-12-23T16:34:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/hub/</loc>
+    <lastmod>2018-12-23T16:34:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</loc>
+    <lastmod>2018-12-19T00:30:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/steam/</loc>
+    <lastmod>2018-12-19T00:30:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ubuntu/</loc>
+    <lastmod>2018-12-19T00:30:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/12/13/rscm-13101b-and-zoneminder/</loc>
+    <lastmod>2018-12-13T23:30:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ip-camera/</loc>
+    <lastmod>2018-12-13T23:30:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/rosewill/</loc>
+    <lastmod>2018-12-13T23:30:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/</loc>
+    <lastmod>2018-11-28T23:59:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/</loc>
+    <lastmod>2018-11-28T23:59:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/backups/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/cloud/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/fireproof/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/iosafe/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/storage/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/toshiba/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/waterproof/</loc>
+    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</loc>
+    <lastmod>2018-10-28T03:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/wall-mount/</loc>
+    <lastmod>2018-10-28T03:08:14+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/10/11/12v-circuit/</loc>
+    <lastmod>2018-10-11T00:48:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/5v/</loc>
+    <lastmod>2018-10-11T00:48:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/power-supply/</loc>
+    <lastmod>2018-10-11T00:48:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smartthings/</loc>
+    <lastmod>2018-10-11T00:48:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/09/18/infinite-free-small-storage-for-electronics/</loc>
+    <lastmod>2018-09-18T00:32:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/free/</loc>
+    <lastmod>2018-09-18T00:32:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</loc>
+    <lastmod>2018-09-15T14:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/asus/</loc>
+    <lastmod>2018-09-15T14:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/3d-modeling/</loc>
+    <lastmod>2018-08-30T00:09:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</loc>
+    <lastmod>2018-08-30T00:09:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/3d-scanning/</loc>
+    <lastmod>2018-08-30T00:09:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/blender/</loc>
+    <lastmod>2018-08-30T00:09:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/kinect/</loc>
+    <lastmod>2018-08-30T00:09:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/wrist-brace/</loc>
+    <lastmod>2018-08-30T00:09:59+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</loc>
+    <lastmod>2018-07-19T06:36:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smart-car/</loc>
+    <lastmod>2018-07-19T06:36:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/tile/</loc>
+    <lastmod>2018-07-19T06:36:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/tracker/</loc>
+    <lastmod>2018-07-19T06:36:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/tracking/</loc>
+    <lastmod>2018-07-19T06:36:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/04/13/3d-printer-filament-box-done-quick/</loc>
+    <lastmod>2018-04-13T23:14:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/3d-printer/</loc>
+    <lastmod>2018-04-13T23:14:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/dehydrate/</loc>
+    <lastmod>2018-04-13T23:14:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/dehydration/</loc>
+    <lastmod>2018-04-13T23:14:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/dry-filament/</loc>
+    <lastmod>2018-04-13T23:14:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/03/02/changing-dns-settings-for-android-development/</loc>
+    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/android/</loc>
+    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/dns/</loc>
+    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/testing/</loc>
+    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/</loc>
+    <lastmod>2018-02-06T08:50:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/breadboard/</loc>
+    <lastmod>2018-02-06T08:50:09+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/core51822/</loc>
+    <lastmod>2018-02-06T08:50:09+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/esp51822/</loc>
+    <lastmod>2018-02-06T08:50:09+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</loc>
+    <lastmod>2018-02-05T22:30:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/433mhz/</loc>
+    <lastmod>2018-02-05T22:30:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/more-things/</loc>
+    <lastmod>2018-02-05T22:30:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/morethings/</loc>
+    <lastmod>2018-02-05T22:30:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smart-home/</loc>
+    <lastmod>2018-02-05T22:30:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/02/02/dual-ac-router-setup-for-120/</loc>
+    <lastmod>2018-02-02T19:48:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/backyard/</loc>
+    <lastmod>2018-02-02T19:48:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/full-home-wifi/</loc>
+    <lastmod>2018-02-02T19:48:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/router/</loc>
+    <lastmod>2018-02-02T19:48:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</loc>
+    <lastmod>2018-01-19T14:43:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/esp8266/</loc>
+    <lastmod>2018-01-19T14:43:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</loc>
+    <lastmod>2018-01-10T03:17:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/javascript/</loc>
+    <lastmod>2018-01-10T03:17:12+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/userscript/</loc>
+    <lastmod>2018-01-10T03:17:12+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/</loc>
+    <lastmod>2018-01-01T03:07:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ac68u/</loc>
+    <lastmod>2018-01-01T03:07:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/custom-firmware/</loc>
+    <lastmod>2018-01-01T03:07:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/flash/</loc>
+    <lastmod>2018-01-01T03:07:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/merlin/</loc>
+    <lastmod>2018-01-01T03:07:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/energizer/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/fire-alarm/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/hue/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smart-light/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smart-strip/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/smart-switch/</loc>
+    <lastmod>2017-12-28T18:00:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/</loc>
+    <lastmod>2017-12-26T17:55:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</loc>
+    <lastmod>2017-12-18T20:17:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/samsung/</loc>
+    <lastmod>2017-12-18T20:17:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/vision/</loc>
+    <lastmod>2017-12-18T20:17:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</loc>
+    <lastmod>2017-12-18T18:30:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/bluetooth/</loc>
+    <lastmod>2017-12-18T18:30:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/nrf51/</loc>
+    <lastmod>2017-12-18T18:30:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</loc>
+    <lastmod>2017-12-15T19:45:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</loc>
+    <lastmod>2017-12-15T19:21:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/15/new-generators-coming-soon/</loc>
+    <lastmod>2017-12-15T01:05:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/official-business/</loc>
+    <lastmod>2017-12-15T01:05:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/codrcg/</loc>
+    <lastmod>2017-12-15T01:05:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/acetone/</loc>
+    <lastmod>2017-12-15T01:05:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/15/ebay-print-bed/</loc>
+    <lastmod>2017-12-15T01:05:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/robox/</loc>
+    <lastmod>2017-12-15T01:05:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/06/automated-water-system/</loc>
+    <lastmod>2017-12-06T20:20:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/04/phillips-hue-smartthings/</loc>
+    <lastmod>2017-12-04T19:28:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</loc>
+    <lastmod>2017-12-01T01:39:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/zigbee/</loc>
+    <lastmod>2017-12-01T01:39:20+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/page/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
