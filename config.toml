@@ -41,7 +41,7 @@ googleAnalytics = "UA-78226868-3"
   github = "silocitylabs"
   twitter = "silocitylabs"
   #reddit = "username"
-  #linkedin = "company/10586208"
+  linkedin-company = "10586208"
   youtube = "channel/UC9vgzat1SRdQ8NNsCQ6d7cA"
 
 [permalinks]
