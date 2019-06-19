@@ -2,4 +2,4 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^blog.silocitylabs\.com$ [NC]
-RewriteRule ^(.*)$ https://silocitylabs.com [R=301,L]
+RewriteRule ^(.*)$ https://silocitylabs.com/$1 [R=301,L]
