@@ -8,9 +8,17 @@
   <title>Ultra minimal Raspbian Image for Pi Zero and Zero W</title>
   <meta property="og:title" content="Ultra minimal Raspbian Image for Pi Zero and Zero W" />
   <meta name="twitter:title" content="Ultra minimal Raspbian Image for Pi Zero and Zero W" />
-  <meta name="description" content="The following are two code samples using syntax highlighting.">
-  <meta property="og:description" content="The following are two code samples using syntax highlighting.">
-  <meta name="twitter:description" content="The following are two code samples using syntax highlighting.">
+  <meta name="description" content="I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5&#43; seconds.
+
+Install a fresh Raspbian Stretch Lite image into the SD card (source).
+
+Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).">
+  <meta property="og:description" content="I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5&#43; seconds.
+
+Install a fresh Raspbian Stretch Lite image into the SD card (source).
+
+Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).">
+  <meta name="twitter:description" content="I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='http://blog2.silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="http://blog2.silocitylabs.com/android-chrome-256x256.png" />
@@ -160,9 +168,7 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>The following are two code samples using syntax highlighting.</p>
-
-<p>I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.</p>
+        <p>I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.</p>
 
 <p>Install a fresh Raspbian Stretch Lite image into the SD card (source).</p>
 
