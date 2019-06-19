@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SCL Blog</title>
-    <link>http://blog2.silocitylabs.com/categories/</link>
+    <link>https://silocitylabs.com/categories/</link>
     <description>Recent content in Categories on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
     
-	<atom:link href="http://blog2.silocitylabs.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://silocitylabs.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
