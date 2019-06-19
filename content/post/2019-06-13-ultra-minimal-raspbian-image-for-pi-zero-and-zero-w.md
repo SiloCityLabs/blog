@@ -5,16 +5,14 @@ author: Luis Rodriguez
 tags: ["linux", "minimal pi", "pi", "raspberry"]
 ---
 
-The following are two code samples using syntax highlighting.
-
-<!--more-->
-
 I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.
 
 Install a fresh Raspbian Stretch Lite image into the SD card (source).
 
 
 Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).
+
+<!--more-->
 
 ```
 $ mount /dev/sdX /media $ :> /media/ssh $ cat > /media/wpa_supplicant.conf <<"EOF" country=GB ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid="YOUR_SSID" psk="YOUR_PSK" } EOF $ umount /media $ sync
