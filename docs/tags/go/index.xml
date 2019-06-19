@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/go/</link>
+    <description>Recent content in go on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 06 Jun 2019 20:00:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What can golang do?</title>
+      <link>https://silocitylabs.com/post/2019/06/06/what-can-golang-do/</link>
+      <pubDate>Thu, 06 Jun 2019 20:00:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/06/06/what-can-golang-do/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;wp-image-982 size-full aligncenter&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2019/06/1_30aonxlsnayrlhbt0o1lzw8398331545093394431.png&#34; width=&#34;800&#34; height=&#34;533&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2019/06/1_30aonxlsnayrlhbt0o1lzw8398331545093394431.png 800w, https://blog.silocitylabs.com/wp-content/uploads/2019/06/1_30aonxlsnayrlhbt0o1lzw8398331545093394431-300x200.png 300w, https://blog.silocitylabs.com/wp-content/uploads/2019/06/1_30aonxlsnayrlhbt0o1lzw8398331545093394431-768x512.png 768w&#34; sizes=&#34;(max-width: 800px) 100vw, 800px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: rgba(0,0,0,0.84); font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;Nothing makes a developer crazier than a new programming language, right? So, I started learning Go about 6 months ago and &lt;/span&gt;now I am going to share with you my reasons for doing so.&lt;/p&gt;
+
+&lt;h2 id=&#34;companies-using-golang&#34;&gt;Companies using Golang&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.silocitylabs.com/wp-content/uploads/2019/06/Golang-Users.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-997&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2019/06/Golang-Users.png&#34; alt=&#34;&#34; width=&#34;724&#34; height=&#34;515&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2019/06/Golang-Users.png 724w, https://blog.silocitylabs.com/wp-content/uploads/2019/06/Golang-Users-300x213.png 300w, https://blog.silocitylabs.com/wp-content/uploads/2019/06/Golang-Users-210x150.png 210w&#34; sizes=&#34;(max-width: 724px) 100vw, 724px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Google &amp;#8211; Go is designed and supported by Google. Google has one of the largest cloud infrastructures in the world and it is massively scaled.&lt;/p&gt;
+
+&lt;p&gt;Apple &amp;#8211; Big data, analytics, infrastructure software.&lt;/p&gt;
+
+&lt;p&gt;Cloudflare &amp;#8211; Used in infrastructure and other various locations. Has decreased time to first byte by 90%.&lt;/p&gt;
+
+&lt;p&gt;Gitlab &amp;#8211; Handles all RPC calls made by git&lt;/p&gt;
+
+&lt;p&gt;AT&amp;amp;T &amp;#8211; Network management, server applications, web based API&amp;#8217;s&lt;/p&gt;
+
+&lt;p&gt;Netflix &amp;#8211; Caching management&lt;/p&gt;
+
+&lt;p&gt;Tesla &amp;#8211; Server management, enterprise software, production lines.&lt;/p&gt;
+
+&lt;p&gt;SpaceX &amp;#8211; Used in rocket telemetry&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/golang/go/wiki/GoUsers&#34;&gt;list&lt;/a&gt; is over thousands long&lt;/p&gt;
+
+&lt;h2 id=&#34;hardware-limitations&#34;&gt;Hardware limitations&lt;/h2&gt;
+
+&lt;p&gt;7 years ago I had a 4ghz processor with 8 cores. Today my desktop has a 4 core processor with 3.9ghz. You&amp;#8217;re probably looking at these numbers like, &amp;#8220;why did he downgrade?&amp;#8221; I did not. The benchmarks actually put my newer processor ahead by 66% because of multi-threading capabilities.&lt;/p&gt;
+
+&lt;p&gt;Nearly one decade and the hardware has not changed much besides one key thing. Multi-threading, and now possibly even more cores. Everything else has pretty much been steady and slow growth.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

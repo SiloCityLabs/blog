@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>internal network on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/internal-network/</link>
+    <description>Recent content in internal network on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 24 Jan 2019 23:30:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/internal-network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Speed Test internal WiFi</title>
+      <link>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</link>
+      <pubDate>Thu, 24 Jan 2019 23:30:39 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/12/speedtest.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-732&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/12/speedtest.png&#34; alt=&#34;&#34; width=&#34;567&#34; height=&#34;377&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/12/speedtest.png 567w, https://blog.silocitylabs.com/wp-content/uploads/2018/12/speedtest-300x199.png 300w&#34; sizes=&#34;(max-width: 567px) 100vw, 567px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Many have heard the term speed test, the first thing that comes to mind is speedtest.net or google&amp;#8217;s speed test tool. Many don&amp;#8217;t know that speed on your internal network also affects you. When testing internet speed your device sends data to router then out to the internet, what if your router is the issue. Even worse, your device. I will show u a very handy utility I use to make sure everything in my house runs great. Its called &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;iPerf&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

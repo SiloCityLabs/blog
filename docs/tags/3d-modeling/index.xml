@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3d modeling on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/3d-modeling/</link>
+    <description>Recent content in 3d modeling on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/3d-modeling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3d printed wrist brace – WIP instructions</title>
+      <link>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</link>
+      <pubDate>Thu, 30 Aug 2018 00:09:59 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</guid>
+      <description>&lt;p&gt;I won&amp;#8217;t be able to finish &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/&#34;&gt;my wrist brace project&lt;/a&gt; for a while. These instructions are very rough because they&amp;#8217;re not actually finished. &lt;/p&gt;
+
+&lt;p&gt;Post in comments if anything needs clarification.&lt;/p&gt;
+
+&lt;h1 id=&#34;scanning&#34;&gt;Scanning&lt;/h1&gt;
+
+&lt;p&gt;requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windows&lt;/li&gt;
+&lt;li&gt;Kinect (with power adapter)&lt;/li&gt;
+&lt;li&gt;beefy CPU or an NVidia GPU (with CUDA drivers)&lt;/li&gt;
+&lt;li&gt;Kinect for Windows SDK 2.0&lt;/li&gt;
+&lt;li&gt;Skanect software&lt;/li&gt;
+&lt;li&gt;an assistant&lt;/li&gt;
+&lt;li&gt;a small open area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here&amp;#8217;s the Skanect guide I watched:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Phone case gamepad WIP</title>
+      <link>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</link>
+      <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;aligncenter wp-image-167 size-full&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3D printed wrist brace WIP</title>
+      <link>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</link>
+      <pubDate>Fri, 15 Dec 2017 19:21:01 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645.jpg&#34;&gt;&lt;img class=&#34;aligncenter wp-image-93 size-full&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;513&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645.jpg 1010w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645-300x152.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/IMG_20171028_153645-768x390.jpg 768w&#34; sizes=&#34;(max-width: 1010px) 100vw, 1010px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a custom 3D printed wrist brace that I&amp;#8217;m working on. I wear wrist braces to sleep for RSI / carpal tunnel but they&amp;#8217;re not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.&lt;/p&gt;
+
+&lt;div style=&#34;overflow: hidden;&#34;&gt;
+  &lt;p&gt;
+    &lt;figure id=&#34;attachment_67&#34; aria-describedby=&#34;caption-attachment-67&#34; style=&#34;width: 400px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1.jpg&#34;&gt;&lt;img class=&#34;wp-image-67&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1-300x212.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; height=&#34;283&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1-300x212.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1-210x150.jpg 210w, https://blog.silocitylabs.com/wp-content/uploads/2017/12/cast1.jpg 660w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-67&#34; class=&#34;wp-caption-text&#34;&gt;3D printed cast I saw online&lt;/figcaption&gt;&lt;/figure&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>internet on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/internet/</link>
+    <description>Recent content in internet on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Tue, 08 Jan 2019 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to get 400mbps for 3 years @ $44.99</title>
+      <link>https://silocitylabs.com/post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/</link>
+      <pubDate>Tue, 08 Jan 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/</guid>
+      <description>&lt;p&gt;This is the process I found while setting up a new service for my brother at his house. This will only work for new customers. The address has to have no existing connections for this to work.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;#8217;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Backup home internet</title>
+      <link>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</link>
+      <pubDate>Sat, 15 Sep 2018 14:12:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</guid>
+      <description>&lt;p&gt;With new most asus routers you can use a feature called dual wan. I have the luxury of having a work provided cell phone I am using for this. Before having that I had a free service called &lt;a href=&#34;https://www.freedompop.com/phone&#34;&gt;freedompop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Use cases (mainly mine):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Watching netflix withouth interuptions.&lt;/li&gt;
+&lt;li&gt;Backup internet for home security system.&lt;/li&gt;
+&lt;li&gt;Anything internet&amp;#8230;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;alignnone size-full wp-image-587&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326.jpg 1920w, https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/09/20180915_0932318158192643190909326-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 4032px) 100vw, 4032px&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

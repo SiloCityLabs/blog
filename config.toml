@@ -33,7 +33,6 @@ googleAnalytics = "UA-78226868-3"
   gitlab = "silo-city-labs-llc"
   github = "SiloCityLabs/blog"
   twitter = "silocitylabs"
-  #reddit = "username"
   linkedin-company = "10586208"
   youtube = "channel/UC9vgzat1SRdQ8NNsCQ6d7cA"
 
@@ -58,19 +57,19 @@ googleAnalytics = "UA-78226868-3"
 [[menu.main]]
     parent = "cat"
     name = "Official"
-    url = "tags/official/"
+    url = "categories/official-business/"
     weight = 1
 
 [[menu.main]]
     parent = "cat"
     name = "Side Projects"
-    url = "tags/side-projects/"
+    url = "categories/side-projects/"
     weight = 2
 
 [[menu.main]]
     parent = "cat"
     name = "Deals"
-    url = "tags/deals/"
+    url = "categories/tech-deals/"
     weight = 3
 
 [[menu.main]]
