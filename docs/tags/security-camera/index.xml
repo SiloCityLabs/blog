@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>security camera on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/security-camera/</link>
-    <description>Recent content in security camera on SCL Blog</description>
+    <title>Security Camera on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/security-camera/index.xml</link>
+    <description>Recent content in Security Camera on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 07 Feb 2019 23:30:58 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/security-camera/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/security-camera/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Axis 2130 PTZ and Zoneminder</title>
@@ -24,7 +21,21 @@
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
-&lt;p&gt;This camera is very dated, also using a proprietary power adapter, no WiFi and very difficult to setup. Once you are on my network you have full viewing access to my camera. My router fortunately has network isolation so I am able to block access to it except via my server that has zoneminder nvr software installed. Unfortunately you will not be able to control the ptz from Zoneminder directly due to the age of the camera. But you can however give it a fixed position in the web panel it has built in. I would recommend setting its default fixed position after a reboot or power loss.&lt;/p&gt;</description>
+&lt;p&gt;This camera is very dated, also using a proprietary power adapter, no WiFi and very difficult to setup. Once you are on my network you have full viewing access to my camera. My router fortunately has network isolation so I am able to block access to it except via my server that has zoneminder nvr software installed. Unfortunately you will not be able to control the ptz from Zoneminder directly due to the age of the camera. But you can however give it a fixed position in the web panel it has built in. I would recommend setting its default fixed position after a reboot or power loss.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;setup&#34;&gt;Setup:&lt;/h4&gt;
+
+&lt;p&gt;I had to first hook it up to my desktop via an Ethernet cable and send the IP address it would use on my network. By default this camera has no DHCP or static IP enabled. In the &lt;a href=&#34;https://www.axis.com/files/usermanual/2130_um_en.pdf&#34;&gt;manual&lt;/a&gt; you can find out how to send the ARP request to perform this. After you have an IP go to it on your web browser. &lt;a href=&#34;http://youripaddress/&#34;&gt;http://youripaddress/&lt;/a&gt;. You will see the camera start streaming once you have done any first time setup. Head over into Zoneminder and add a new camera with the following details.&lt;/p&gt;
+
+&lt;p&gt;Remote Host Path: /axis-cgi/mjpg/video.cgi?camera=1&amp;amp;1534046539993&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,7 +50,19 @@
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
-&lt;p&gt;Although I have this particular camera, any basic USB webcam will work the same way. The setup for this one was very simple and its the most stable camera out of my whole setup. There however is no nightvision. I counter this by trigger the lights to turn on if motion sensor is tripped.&lt;/p&gt;</description>
+&lt;p&gt;Although I have this particular camera, any basic USB webcam will work the same way. The setup for this one was very simple and its the most stable camera out of my whole setup. There however is no nightvision. I counter this by trigger the lights to turn on if motion sensor is tripped.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;setup&#34;&gt;Setup:&lt;/h4&gt;
+
+&lt;p&gt;This camera was fairly simple to setup, just use the following settings. If you have two of them the index0 will change to index1 in device path:&lt;/p&gt;
+
+&lt;p&gt;Device path: /dev/v4l/by-id/usb-KYE_Systems_Corp._WideCam_320-video-index0&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,7 +77,17 @@
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
-&lt;p&gt;This camera is not listed as officially supporting ONVIF, but it does have it. It barely works so I had to do a workaround to add it in. This camera is a OEM camera, Rosewill just re-branded them. Other models that will most likely work the same way. RSCM-13702B RSCM-13702W RSCM-13101B RSCM-15702 RSCM-121001W&lt;/p&gt;</description>
+&lt;p&gt;This camera is not listed as officially supporting ONVIF, but it does have it. It barely works so I had to do a workaround to add it in. This camera is a OEM camera, Rosewill just re-branded them. Other models that will most likely work the same way. RSCM-13702B RSCM-13702W RSCM-13101B RSCM-15702 RSCM-121001W&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;setup&#34;&gt;Setup:&lt;/h4&gt;
+
+&lt;p&gt;Using the software or app setup the camera for normal streaming first. Afterwards you can add it using the following configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1-3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/2-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

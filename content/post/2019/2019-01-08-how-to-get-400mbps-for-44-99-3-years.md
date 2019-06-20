@@ -1,5 +1,5 @@
 ---
-title: How to get 400mbps for 3 years @ $44.99
+title: How to get 400mbps for 3 years at $44.99
 author: Luis Rodriguez
 type: post
 date: 2019-01-08T22:36:25+00:00

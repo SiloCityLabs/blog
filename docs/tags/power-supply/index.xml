@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>power supply on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/power-supply/</link>
-    <description>Recent content in power supply on SCL Blog</description>
+    <title>Power Supply on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/power-supply/index.xml</link>
+    <description>Recent content in Power Supply on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 11 Oct 2018 00:48:54 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/power-supply/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/power-supply/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>12v circuit for battery backup</title>
@@ -27,7 +24,45 @@
 &lt;li&gt;12v to 5v dc to dc step down.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;</description>
+&lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-618&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg&#34; width=&#34;3000&#34; height=&#34;2284&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-300x228.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-768x585.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-1024x780.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a couple of minutes fiddling with it. I realized the variable resister was bad. I traced the wires and its only being used as a signal voltage not for power source. It was safe for me to use a basic resister in place. 4 tries later i found one in my bin.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-619&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146.jpg&#34; width=&#34;3000&#34; height=&#34;2250&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5.05v is what this resister brought me to. Perfect replacement, time to solder it on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-620&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371.jpg&#34; width=&#34;2960&#34; height=&#34;3000&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371.jpg 1894w, https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371-296x300.jpg 296w, https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371-768x778.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371-1010x1024.jpg 1010w&#34; sizes=&#34;(max-width: 2960px) 100vw, 2960px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-621&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375.jpg&#34; width=&#34;720&#34; height=&#34;1280&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375.jpg 720w, https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375-169x300.jpg 169w, https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375-576x1024.jpg 576w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now lets get it mounted inside my power supply.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-622&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164.jpg&#34; width=&#34;2271&#34; height=&#34;2271&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164.jpg 150w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164-300x300.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164-768x768.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164-1024x1024.jpg 1024w&#34; sizes=&#34;(max-width: 2271px) 100vw, 2271px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-623&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally lets plug in my 5v device. Smartthings hub.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-625&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After mounting this and plugging it in. It reduced the power usage by about 250ma. I was also able to add other devices to the circuit after noticing the smart things hub did not use the power specified on the original adapter.&lt;/p&gt;
+
+&lt;p&gt;Other devices were easy. Everything was running on 12v already so it was a matter of cabling it all together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-626&#34; src=&#34;https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004.jpg&#34; width=&#34;3000&#34; height=&#34;2250&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004.jpg 1920w, https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-627&#34; src=&#34;https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264.jpg 1440w, https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After I had the cables hooked up. I added connectors on the other ends to the devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-628&#34; src=&#34;https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110.jpg 1440w, https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With most of my devices but servers switched over I can begin work on a battery backup system. I will be detailing that in a future blog post.&lt;/p&gt;</description>
     </item>
     
   </channel>

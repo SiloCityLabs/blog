@@ -170,3 +170,4 @@ func loadSettings() {
 
 	fmt.Printf("Starting: %v\n", settings)
 }
+
