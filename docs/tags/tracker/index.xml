@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tracker on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/tracker/</link>
+    <description>Recent content in tracker on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 19 Jul 2018 06:36:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/tracker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reusing Tile as car tracker.</title>
+      <link>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</link>
+      <pubDate>Thu, 19 Jul 2018 06:36:37 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</guid>
+      <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter wp-image-520 size-full&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; width=&#34;231&#34; height=&#34;231&#34; data-temp-aztec-id=&#34;e57c71de-adda-469c-8e36-8f100a97668f&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png 231w, https://blog.silocitylabs.com/wp-content/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095-150x150.png 150w&#34; sizes=&#34;(max-width: 231px) 100vw, 231px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Supplies/Tools needed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pry Tool&lt;/li&gt;
+&lt;li&gt;Hot Glue gun&lt;/li&gt;
+&lt;li&gt;Voltage Meter&lt;/li&gt;
+&lt;li&gt;Dead battery Tile&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Tn1h&#34;&gt;DC to DC Buck Converter&lt;/a&gt; or &lt;a href=&#34;http://a.tra.li/Tqhy&#34;&gt;Linear converter&lt;/a&gt; (see update below)&lt;/li&gt;
+&lt;li&gt;Soldering iron&lt;/li&gt;
+&lt;li&gt;Wire stripper/cutter&lt;/li&gt;
+&lt;li&gt;Drill (optional)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

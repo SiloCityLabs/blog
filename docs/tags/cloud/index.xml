@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/cloud/</link>
+    <description>Recent content in cloud on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Fri, 23 Nov 2018 17:30:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Secure Backups without the cloud</title>
+      <link>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</link>
+      <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
+      <description>&lt;figure id=&#34;attachment_647&#34; aria-describedby=&#34;caption-attachment-647&#34; style=&#34;width: 678px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-647 size-large&#34; src=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-1024x768.jpg&#34; alt=&#34;SOLO G3 4TB&#34; width=&#34;678&#34; height=&#34;509&#34; srcset=&#34;https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-1024x768.jpg 1024w, https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-300x225.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01-768x576.jpg 768w, https://blog.silocitylabs.com/wp-content/uploads/2018/11/22-501-073_R01.jpg 1280w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;][1]&lt;figcaption id=&#34;caption-attachment-647&#34; class=&#34;wp-caption-text&#34;&gt;[ioSafe SOLO G3 4TB USB 3.0][2]&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

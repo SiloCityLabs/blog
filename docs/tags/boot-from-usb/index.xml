@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boot from usb on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/boot-from-usb/</link>
+    <description>Recent content in boot from usb on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Sun, 02 Jun 2019 03:56:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/boot-from-usb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi Booting From USB on older models</title>
+      <link>https://silocitylabs.com/post/2019/06/01/raspberry-pi-booting-from-usb-on-older-models/</link>
+      <pubDate>Sun, 02 Jun 2019 03:56:16 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/06/01/raspberry-pi-booting-from-usb-on-older-models/</guid>
+      <description>Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases to speed up the performance of your pi when using a slow sd card. It can also provide a reliable location where you operating system data resides. Sd cards are prone to data corruption from writes a operating system ussually does.
+&amp;nbsp;
+ Write the latest Raspbian image to an SD card and boot it.</description>
+    </item>
+    
+  </channel>
+</rss>
