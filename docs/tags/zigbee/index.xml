@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zigbee on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/zigbee/</link>
+    <description>Recent content in zigbee on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Fri, 01 Dec 2017 01:39:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/zigbee/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Smart Things 433mhz</title>
+      <link>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</link>
+      <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</guid>
+      <description>Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?
+I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.
+&amp;nbsp;
+Edit: I think I may have made a mistake buying zigbee chips.</description>
+    </item>
+    
+  </channel>
+</rss>

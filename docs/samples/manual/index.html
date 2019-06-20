@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Ultra minimal Raspbian Image for Pi Zero and Zero W</title>
+  <meta property="og:title" content="Ultra minimal Raspbian Image for Pi Zero and Zero W" />
+  <meta name="twitter:title" content="Ultra minimal Raspbian Image for Pi Zero and Zero W" />
+  <meta name="description" content="I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5&#43; seconds.
+
+Install a fresh Raspbian Stretch Lite image into the SD card (source).
+
+Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).">
+  <meta property="og:description" content="I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5&#43; seconds.
+
+Install a fresh Raspbian Stretch Lite image into the SD card (source).
+
+Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).">
+  <meta name="twitter:description" content="I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/samples/manual/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://silocitylabs.com/samples/manual/" />
+  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://silocitylabs.com/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://silocitylabs.com/css/highlight.min.css" />
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/company/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://silocitylabs.com/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+            <img class="avatar-img" src="https://silocitylabs.com/android-chrome-256x256.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="samples-heading">
+              <h1>Ultra minimal Raspbian Image for Pi Zero and Zero W</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.</p>
+
+<p>Install a fresh Raspbian Stretch Lite image into the SD card (source).</p>
+
+<p>Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).</p>
+
+<pre><code>$ mount /dev/sdX /media $ :&gt; /media/ssh $ cat &gt; /media/wpa_supplicant.conf &lt;&lt;&quot;EOF&quot; country=GB ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid=&quot;YOUR_SSID&quot; psk=&quot;YOUR_PSK&quot; } EOF $ umount /media $ sync
+</code></pre>
+
+<h2 id="replacing-openssh-with-dropbear-in-raspbian">Replacing Openssh with dropbear in raspbian</h2>
+
+<h3 id="installation">Installation</h3>
+
+<p>To install on Raspbian, simply run the following two commands on your Pi:</p>
+
+<pre><code>apt update &amp;&amp; apt install dropbear
+</code></pre>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>To enable dropbear, edit the config file with:</p>
+
+<pre><code>nano /etc/default/dropbear
+</code></pre>
+
+<p>and make sure NO_START matches below:</p>
+
+<pre><code>NO_START=0
+</code></pre>
+
+<p>and make sure the following is set:</p>
+
+<pre><code>DROPBEAR_PORT=22
+</code></pre>
+
+<p>22 is the default for SSH, but you can change it if you use another port for SSH(such as 443 or 80 to get around firewalls).</p>
+
+<h3 id="disable-ssh">Disable SSH</h3>
+
+<p>You could just delete the OpenSSH server with</p>
+
+<pre><code>apt-get purge --yes --auto-remove openssh-server
+</code></pre>
+
+<h2 id="cleaning-disk-space">Cleaning Disk Space</h2>
+
+<p>Get rid of some programs, I figured if I need any I will manually add them but for now kill everything for base image.</p>
+
+<pre><code>apt-get purge --yes --auto-remove aptitude aptitude-common apt-listchanges apt-utils blends-tasks xserver-common x11-xfs-utils x11-xserver-utils xinit libsmbclient blt gvfs gvfs-backends gvfs-daemons gvfs-fuse idle idle-python2.7 idle3 libaudio2 libice6 liblightdm-gobject-1-0 libpulse0 libqt4-svg libqtgui4 libsdl-image1.2 libsdl-mixer1.2 libsdl-ttf2.0-0 libsdl1.2debian libsm6 libsmpeg0 libwebkitgtk-1.0-0 libwebkitgtk-3.0-0 libxaw7 libxklavier16 libxmu6 libxss1 libxt6 libxtst6 lightdm lightdm-gtk-greeter lxde lxde-core midori obconf openbox python-pygame python-tk python3-tk scratch tk8.5 wpagui x11-common x11-utils x11-xkb-utils xinit xserver-common xserver-xorg xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-evdev xserver-xorg-input-synaptics xserver-xorg-video-fbdev zenity xserver* x11-common x11-utils x11-xkb-utils x11-xserver-utils xarchiver xauth xkb-data console-setup xinit lightdm libx{composite,cb,cursor,damage,dmcp,ext,font,ft,i,inerama,kbfile,klavier,mu,pm,randr,render,res,t,xf86}* lxde* lx{input,menu-data,panel,polkit,randr,session,session-edit,shortcut,task,terminal} obconf openbox gtk* libgtk* alsa* nano python-pygame python-tk python3-tk scratch tsconf desktop-file-utils cifs-utils samba-common smbclient scratch debian-reference-en dillo idle3 python3-tk idle python-pygame python-tk lightdm gnome-themes-standard gnome-icon-theme raspberrypi-artwork gvfs-backends gvfs-fuse desktop-base lxpolkit netsurf-gtk zenity xdg-utils mupdf gtk2-engines alsa-utils lxde lxtask menu-xdg gksu midori xserver-xorg xinit xserver-xorg-video-fbdev libraspberrypi-dev libraspberrypi-doc dbus-x11 libx11-6 libx11-data libx11-xcb1 x11-common x11-utils lxde-icon-theme gconf-service gconf2-common udhcpd avahi-daemon gcc-arm-linux-gnueabihf sudo geoip-database libgdbm3 libperl5.24 make patch perl perl-modules-5.24 cups* rsync bluez bluez-firmware pi-bluetooth scratch debian-reference-en dillo idle3 python3-tk idle python-pygame python-tk lightdm gnome-themes-standard gnome-icon-theme raspberrypi-artwork gvfs-backends gvfs-fuse desktop-base lxpolkit netsurf-gtk zenity xdg-utils mupdf gtk2-engines alsa-utils lxde lxtask menu-xdg gksu midori xserver-xorg xinit xserver-xorg-video-fbdev libraspberrypi-dev libraspberrypi-doc dbus-x11 libx11-6 libx11-data libx11-xcb1 x11-common x11-utils lxde-icon-theme gconf-service gconf2-common firmware-atheros samba-common plymouth
+</code></pre>
+
+<p>Cleanup any leftover crud</p>
+
+<pre><code>apt-get autoremove --purge
+</code></pre>
+
+<p>Delete the default pi user</p>
+
+<pre><code>deluser pi &amp;&amp; rm -rf /home/pi
+</code></pre>
+
+<p>kill config comments</p>
+
+<pre><code>find . -type f -name &quot;*.conf&quot; |xargs sed -i '\#^//#d'
+</code></pre>
+
+<p>Disable dpkg docs and locale files from installing via apt</p>
+
+<pre><code>cat &gt; /etc/apt/apt.conf.d/80noadditional &lt;&lt;&quot;EOF&quot;
+APT::Install-Recommends &quot;0&quot;;
+APT::Install-Suggests &quot;0&quot;;
+EOF
+
+cat &gt; /etc/dpkg/dpkg.cfg.d/nodoc &lt;&lt;&quot;EOF&quot; path-exclude /usr/share/doc/* path-include /usr/share/doc/*/copyright path-exclude /usr/share/man/* path-exclude /usr/share/groff/* path-exclude /usr/share/info/* path-exclude /usr/share/lintian/* path-exclude /usr/share/linda/* EOF cat &gt; /etc/dpkg/dpkg.cfg.d/nolocale &lt;&lt;&quot;EOF&quot;
+path-exclude /usr/share/locale/*
+EOF
+</code></pre>
+
+<p>Cleanup Logs, docs, useless files</p>
+
+<pre><code>find /usr/share/doc -depth -type f ! -name copyright | xargs rm
+find /usr/share/doc -depth -type f ! -name copyright | xargs rm -f
+find /usr/share/doc -empty | xargs rmdir
+rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/*
+rm -rf /usr/share/lintian/* /usr/share/linda/* /var/cache/man/*
+rm -rf /usr/share/locale/*
+rm -f /var/log/{auth,boot,bootstrap,daemon,kern}.log
+rm -f /var/log/{debug,dmesg,messages,syslog}
+</code></pre>
+
+<p>Disable MOTD for faster ssh connect</p>
+
+<pre><code>cat /dev/null &gt; /etc/motd
+</code></pre>
+
+<p>Disable UART since we wont need it.</p>
+
+<pre><code>systemctl disable hciuart
+</code></pre>
+
+<p>More crud cleaning</p>
+
+<pre><code>apt-get clean
+</code></pre>
+
+<h2 id="other-cleanup-and-optimizations">Other cleanup and optimizations</h2>
+
+<p>Add the following lines to your Pi’s <code>/boot/config.txt</code> file and reboot:</p>
+
+<pre><code># http://rpf.io/configtxt
+#https://www.raspberrypi.org/documentation/configuration/config-txt/overclocking.md
+arm_freq=1100
+
+#initial_turbo=30
+#dtparam=i2c_arm=on
+#dtparam=i2s=on
+#dtparam=spi=on
+
+# Disable stuff
+dtparam=audio=off
+dtoverlay=pi3-disable-bt
+
+# Disable the ACT LED on the Pi Zero.
+dtparam=act_led_trigger=none
+dtparam=act_led_activelow=on
+
+# Disable the splash screen
+disable_splash=1
+ 
+# Overclock the SD Card from 50 to 100MHz
+# This can only be done with at least a UHS Class 1 card
+dtoverlay=sdtweak,overclock_50=100
+ 
+# Set the bootloader delay to 0 seconds. The default is 1s if not specified. 
+boot_delay=0
+ 
+# Overclock the raspberry pi. This voids its warranty. Make sure you have a good power supply.
+force_turbo=1
+</code></pre>
+
+<h3 id="quiet-boot">Quiet boot</h3>
+
+<p>Make the kernel output less verbose by adding the “quiet” flag to the kernel command line in file /boot/cmdline.txt. Make sure to change the PARTUUID if you copy and paste this line directly.</p>
+
+<pre><code>dwc_otg.lpm_enable=0 console=tty1 root=PARTUUID=8b037108-02 rootfstype=ext4 elevator=deadline fsck.repair=no quiet rootwait
+</code></pre>
+
+<h3 id="disabling-some-unneeded-services">Disabling some unneeded services</h3>
+
+<pre><code>systemctl disable dphys-swapfile.service
+systemctl disable apt-daily.service
+systemctl disable apt-daily.timer
+systemctl disable nfs-client.target
+systemctl disable remote-fs.target
+systemctl disable apt-daily-upgrade.timer
+systemctl disable nfs-config.service
+</code></pre>
+
+<p>All I am left with now for memory usage. If anyone has suggestions on how to lower any let me know.</p>
+
+<pre><code>  PID    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND         
+    1    9520   5876   4788 S  0.0  1.3   0:03.50 systemd
+   63   20500   4176   3792 S  0.0  0.9   0:00.83 systemd-journal
+  271   10064   4004   3492 S  0.0  0.9   0:00.02 wpa_supplicant
+  167   17100   3956   3524 S  0.0  0.9   0:00.22 systemd-timesyn
+  219    6816   3796   3440 S  0.0  0.9   0:00.14 systemd-logind
+  207    6396   3368   3000 S  0.0  0.8   0:00.28 dbus-daemon
+   89   14152   3200   2604 S  0.0  0.7   0:00.71 systemd-udevd
+  352    3476   2728   2316 S  0.0  0.6   0:00.13 bash
+  387   22628   2708   2284 S  0.0  0.6   0:00.04 rsyslogd
+  217    5200   2396   2196 S  0.0  0.5   0:00.03 cron
+  345    3868   1900   1780 S  0.0  0.4   0:00.02 agetty
+  351    2828   1816   1648 S  0.0  0.4   0:00.98 dropbear   
+  346    4092   1804   1688 S  0.0  0.4   0:00.03 agetty
+  242    2360   1524   1420 S  0.0  0.3   0:00.00 dropbear
+  332    2780   1508   1192 S  0.0  0.3   0:00.00 dhcpcd
+</code></pre>
+
+<p>My disk usage unfortunately did not get as low as I wanted it.</p>
+
+<pre><code>Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       7.3G  428M  6.6G   7% /
+devtmpfs        213M     0  213M   0% /dev
+tmpfs           217M     0  217M   0% /dev/shm
+tmpfs           217M  5.7M  212M   3% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           217M     0  217M   0% /sys/fs/cgroup
+/dev/mmcblk0p1   44M   22M   22M  51% /boot
+</code></pre>
+
+<p>Startup time</p>
+
+<pre><code>root@pi-b82xxxxxxx:~# systemd-analyze
+Startup finished in 1.334s (kernel) + 16.235s (userspace) = 17.569s
+
+root@pi-b827eb80a9a0:~# systemd-analyze blame
+          9.316s dhcpcd.service
+          4.058s dev-mmcblk0p2.device
+          3.033s networking.service
+          2.242s dropbear.service
+          1.795s systemd-logind.service
+           841ms systemd-journald.service
+           756ms systemd-udev-trigger.service
+           674ms systemd-remount-fs.service
+           601ms rsyslog.service
+           550ms systemd-fsck-root.service
+           537ms systemd-timesyncd.service
+           440ms systemd-fsck@dev-disk-by\x2dpartuuid-8b037108\x2d01.service
+           409ms systemd-udevd.service
+           391ms systemd-rfkill.service
+           313ms systemd-tmpfiles-setup-dev.service
+           309ms sys-kernel-debug.mount
+           306ms systemd-update-utmp.service
+           291ms dev-mqueue.mount
+           286ms systemd-tmpfiles-setup.service
+           285ms fake-hwclock.service
+           270ms kmod-static-nodes.service
+           262ms systemd-sysctl.service
+           249ms systemd-modules-load.service
+           244ms boot.mount
+           237ms systemd-journal-flush.service
+           158ms systemd-random-seed.service
+           126ms sys-kernel-config.mount
+           108ms systemd-user-sessions.service
+            93ms rc-local.service
+            90ms systemd-update-utmp-runlevel.service
+            78ms wifi-country.service
+</code></pre>
+
+<h2 id="download">Download</h2>
+
+<p>I have uploaded the image for download. Up to date as of Jun 13th 2019
+Image: ultra-minimal-pi.img.7z (113MB)
+Username: root
+Password: password</p>
+
+<h2 id="additional-imaging-steps">Additional imaging steps</h2>
+
+<p>So I don’t forget how to do it later for updates</p>
+
+<p>On the pi run</p>
+
+<pre><code>cat /dev/zero &gt; /tmp/zeros; sync; rm /tmp/zeros
+</code></pre>
+
+<p>For the rest I took the sd card and mounted it and imaged it using ubuntu disks utility</p>
+
+<p>Use the following script from the download link to shrink the .img file</p>
+
+<p>The finally compress it into a zip file</p>
+
+<p>Sources:
+<a href="http://himeshp.blogspot.com/2018/08/fast-boot-with-raspberry-pi.html">http://himeshp.blogspot.com/2018/08/fast-boot-with-raspberry-pi.html</a></p>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://silocitylabs.com/js/main.js"></script>
+<script src="https://silocitylabs.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </body>
+</html>
+
