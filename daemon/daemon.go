@@ -154,4 +154,6 @@ func loadSettings() {
 	}
 
 	yaml.Unmarshal(b, &settings)
+
+	fmt.Printf("Starting: %v\n", settings)
 }
