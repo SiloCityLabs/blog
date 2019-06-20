@@ -1,64 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <title>Blocking exit intent popups</title>
-  <meta property="og:title" content="Blocking exit intent popups" />
-  <meta name="twitter:title" content="Blocking exit intent popups" />
-  <meta name="description" content="
-
-&nbsp;
-
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re irrelevant (I&#8217;m following instructions, not closing). They interrupt the content I&#8217;m trying to read. So I made a short Userscript to globally block them.">
-  <meta property="og:description" content="
-
-&nbsp;
-
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re irrelevant (I&#8217;m following instructions, not closing). They interrupt the content I&#8217;m trying to read. So I made a short Userscript to globally block them.">
-  <meta name="twitter:description" content="
-
-&nbsp;
-
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re …">
-  <meta name="author" content="Silo City Labs LLC"/>
-  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
-  <meta name="twitter:image" content="https://silocitylabs.com/android-chrome-256x256.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@silocitylabs" />
-  <meta name="twitter:creator" content="@silocitylabs" />
-  <meta property="og:url" content="https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="SCL Blog" />
-
-  <meta name="generator" content="Hugo 0.55.6" />
-  <link rel="canonical" href="https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/" />
-  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://silocitylabs.com/css/main.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://silocitylabs.com/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://silocitylabs.com/css/highlight.min.css" />
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-78226868-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
-
+  
   <body>
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
@@ -204,6 +146,8 @@ if (!doNotTrack) {
 
 <p>I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re irrelevant (I&#8217;m following instructions, not closing). They interrupt the content I&#8217;m trying to read. So I made a short <a href="https://openuserjs.org/scripts/Maave/Exit_Intent_defuser">Userscript to globally block them</a>.</p>
 
+<p></p>
+
 <figure id="attachment_308" aria-describedby="caption-attachment-308" style="width: 300px" class="wp-caption alignright">[<img class="wp-image-308" src="https://silocitylabs.com/uploads/2018/01/optin-monster-300x213.png" width="300" height="213" srcset="https://silocitylabs.com/uploads/2018/01/optin-monster-300x213.png 300w, https://silocitylabs.com/uploads/2018/01/optin-monster-768x544.png 768w, https://silocitylabs.com/uploads/2018/01/optin-monster-210x150.png 210w, https://silocitylabs.com/uploads/2018/01/optin-monster.png 960w" sizes="(max-width: 300px) 100vw, 300px" />][3]<figcaption id="caption-attachment-308" class="wp-caption-text">Soon to be blocked</figcaption></figure>
 
 <p>Specifically I want to block Ouibounce (<a href="https://carlsednaoui.github.io/ouibounce/">demo</a>) and OptIn Monster (<a href="https://optinmonster.com/features/exit-intent/">demo</a>). Bounce Exchange is another infamous one but I couldn&#8217;t find a demo to test on. <a href="https://ask.metafilter.com/280379/Stop-popping-up-when-Im-about-to-switch-the-tab">This Metafilter topic</a> tipped me off to the main culprits: Javascript&#8217;s mouseleave and mouseout events. So many sites have these popups that it&#8217;s not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.</p>
@@ -239,25 +183,20 @@ if (!doNotTrack) {
         
           <div class="disqus-comments">
             <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
+<script type="text/javascript">
+    var disqus_shortname = 'sclblog-1';
+    var disqus_identifier = 'https:\/\/silocitylabs.com\/post\/2018\/01\/10\/blocking-exit-intent-popups\/';
+    var disqus_title = 'Blocking exit intent popups';
+    var disqus_url = 'https:\/\/silocitylabs.com\/post\/2018\/01\/10\/blocking-exit-intent-popups\/';
+
     (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           </div>
         
       

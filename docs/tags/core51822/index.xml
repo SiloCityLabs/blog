@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>core51822 on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/core51822/</link>
-    <description>Recent content in core51822 on SCL Blog</description>
+    <title>Core51822 on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/core51822/index.xml</link>
+    <description>Recent content in Core51822 on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Tue, 06 Feb 2018 08:50:09 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/core51822/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/core51822/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using laptop IDE cables for 2mm pitch headers</title>
@@ -22,7 +19,31 @@
 
 &lt;figure id=&#34;attachment_358&#34; aria-describedby=&#34;caption-attachment-358&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;[&lt;img class=&#34;wp-image-358&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size-300x255.jpg&#34; width=&#34;300&#34; height=&#34;255&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size-300x255.jpg 300w, https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg 750w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][2]&lt;figcaption id=&#34;caption-attachment-358&#34; class=&#34;wp-caption-text&#34;&gt;2&amp;#215;10 2mm pitch headers, ugh&lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&amp;#8243; (2.54mm) pitch. This makes it incompatible with regular 1&amp;#8243; pitch breadboards. Being double row makes it worse.&lt;/p&gt;</description>
+&lt;p&gt;My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&amp;#8243; (2.54mm) pitch. This makes it incompatible with regular 1&amp;#8243; pitch breadboards. Being double row makes it worse.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;After searching a while I was able to find two compatible cables. First some regular cables that fit the specs &amp;#8211; &lt;a href=&#34;https://www.ebay.com/itm/2/182158682043&#34;&gt;2mm pitch 2&amp;#215;10 IDC connectors&lt;/a&gt;. Second is even cheaper &amp;#8211; &lt;a href=&#34;https://www.newegg.com/Product/Product.aspx?Item=9SIA67055T3504&#34;&gt;44-pin laptop IDE cable&lt;/a&gt;​. I accidentally got the 2 inch cable, I should&amp;#8217;ve got the 8 inch. 8 inch would&amp;#8217;ve given me more wire to play with, enough to save both end of the cable.&lt;/p&gt;
+
+&lt;p&gt;If you buy a longer cable you can simply cut the cable in half and get two 2&amp;#215;24 cables. With the 2&amp;#8243; cable I got I couldn&amp;#8217;t afford shortening the wires any further. I removed the connector from one end by breaking the tabs on the side&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_360&#34; aria-describedby=&#34;caption-attachment-360&#34; style=&#34;width: 281px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-360&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_191933-281x300.jpg&#34; width=&#34;281&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_191933-281x300.jpg 281w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_191933.jpg 485w&#34; sizes=&#34;(max-width: 281px) 100vw, 281px&#34; /&gt;][5]&lt;figcaption id=&#34;caption-attachment-360&#34; class=&#34;wp-caption-text&#34;&gt;Snap off this tab&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Removing the plate revealed the pins on the connector underneath. I popped off both sides to confirm which wire went to which female pin. The pins are mirrored top and bottom row so I can look at the puncture point ( top or bottom) and determine which row it leads to. I could probably read the specs but this was faster.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_205214-Copy.jpg&#34;&gt;&lt;img class=&#34;wp-image-361&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_205214-Copy-300x237.jpg&#34; width=&#34;300&#34; height=&#34;237&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_205214-Copy-300x237.jpg 300w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_205214-Copy-768x608.jpg 768w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_205214-Copy-1024x810.jpg 1024w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_205214-Copy.jpg 1141w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I glued the plate back on one side and fully removed the connector from the other. A few seconds with a hacksaw gave me two connectors. I managed to mangle only a couple columns and was left with 2&amp;#215;10 and 2&amp;#215;11, slightly more than I needed for the core51822&amp;#8217;s 2&amp;#215;9 headers. I superglued the cut ends to keep the plate on.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426.jpg&#34;&gt;&lt;img class=&#34;wp-image-363&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-300x250.jpg&#34; width=&#34;300&#34; height=&#34;250&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-300x250.jpg 300w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-768x640.jpg 768w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-1024x853.jpg 1024w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426.jpg 1272w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I pulled the wire apart in pairs so that each pair is a column, making it easier to handle when breadboarding. The stranded wire isn&amp;#8217;t quite suitable for breadboards so later I soldered a tiny segment of 24AWG wire onto the end.&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_366&#34; aria-describedby=&#34;caption-attachment-366&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-366&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213608-300x127.jpg&#34; width=&#34;300&#34; height=&#34;127&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213608-300x127.jpg 300w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213608-768x326.jpg 768w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213608-1024x434.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][8]&lt;figcaption id=&#34;caption-attachment-366&#34; class=&#34;wp-caption-text&#34;&gt;Done! Breadboard-able&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;End result is a pair of connectors for 2mm pitch header breakout. Conclusion? It works but doesn&amp;#8217;t have much advantage over the regular 2mm pitch IDC connector. I saved $1.50. Do yourself a favor and get a module that uses 1&amp;#8243; headers in the first place.&lt;/p&gt;</description>
     </item>
     
   </channel>
