@@ -51,3 +51,9 @@ id = "youtube"
 url = "https://www.youtube.com/%s"
 title = "Youtube"
 icon = "fab fa-youtube"
+
+[[social_icons]]
+id = "newsletter"
+url = "/%s"
+title = "Newsletter"
+icon = "fa fa-newspaper"
