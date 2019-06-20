@@ -35,6 +35,7 @@ googleAnalytics = "UA-78226868-3"
   twitter = "silocitylabs"
   linkedin-company = "10586208"
   youtube = "channel/UC9vgzat1SRdQ8NNsCQ6d7cA"
+  newsletter = "newsletter"
 
 [permalinks]
   posts = "/post/:year/:month/:day/:slug"
@@ -73,6 +74,13 @@ googleAnalytics = "UA-78226868-3"
     weight = 3
 
 [[menu.main]]
+    parent = "cat"
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 4
+
+[[menu.main]]
+    name = "Newsletter"
+    url = "newsletter"
+    weight = 4
+
