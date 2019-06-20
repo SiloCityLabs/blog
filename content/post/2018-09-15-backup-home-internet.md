@@ -6,7 +6,7 @@ date: 2018-09-15T14:12:00+00:00
 url: /post/2018/09/15/backup-home-internet/
 featured_image: /wp-content/uploads/2018/09/20180915_0943126960527662415391769-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - asus
   - backups

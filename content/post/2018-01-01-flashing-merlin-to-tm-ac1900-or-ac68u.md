@@ -6,7 +6,7 @@ date: 2018-01-01T03:07:34+00:00
 url: /post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/
 featured_image: /wp-content/uploads/2018/01/asus-rt-ac5300-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - ac68u
   - asus

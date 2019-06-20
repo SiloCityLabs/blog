@@ -6,7 +6,7 @@ date: 2019-01-08T22:36:25+00:00
 url: /post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/
 featured_image: /wp-content/uploads/2019/01/photo_2019-01-08_14-31-55-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - internet
   - spectrum

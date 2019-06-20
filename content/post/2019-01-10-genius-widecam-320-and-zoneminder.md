@@ -6,7 +6,7 @@ date: 2019-01-10T23:30:35+00:00
 url: /post/2019/01/10/genius-widecam-320-and-zoneminder/
 featured_image: /wp-content/uploads/2018/08/26-179-100-02-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - Genius
   - security camera

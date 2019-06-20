@@ -6,7 +6,7 @@ date: 2017-12-26T17:55:48+00:00
 url: /post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/
 featured_image: /wp-content/uploads/2017/12/download6930924943770879338-150x150.jpeg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - smart home
   - smart light

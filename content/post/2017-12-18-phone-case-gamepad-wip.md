@@ -6,7 +6,7 @@ date: 2017-12-18T18:30:48+00:00
 url: /post/2017/12/18/phone-case-gamepad-wip/
 featured_image: /wp-content/uploads/2017/12/6371391512533450341-1-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 3d modeling
   - 3d printing

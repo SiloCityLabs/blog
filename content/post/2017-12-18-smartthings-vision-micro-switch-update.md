@@ -6,7 +6,7 @@ date: 2017-12-18T20:17:07+00:00
 url: /post/2017/12/18/smartthings-vision-micro-switch-update/
 featured_image: /wp-content/uploads/2017/12/mvimg_20171224_2042033181531723782315879-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - samsung
   - smart home

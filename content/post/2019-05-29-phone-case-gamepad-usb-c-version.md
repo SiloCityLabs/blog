@@ -6,7 +6,7 @@ date: 2019-05-29T17:19:34+00:00
 url: /post/2019/05/29/phone-case-gamepad-usb-c-version/
 featured_image: /wp-content/uploads/2019/05/featured-image-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - gamepad
   - gamepad case

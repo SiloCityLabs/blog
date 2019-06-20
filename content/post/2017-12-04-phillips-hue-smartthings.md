@@ -6,7 +6,7 @@ date: 2017-12-04T19:28:40+00:00
 url: /post/2017/12/04/phillips-hue-smartthings/
 featured_image: /wp-content/uploads/2017/12/046677455293-APP-global-001-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - hue
   - smart light

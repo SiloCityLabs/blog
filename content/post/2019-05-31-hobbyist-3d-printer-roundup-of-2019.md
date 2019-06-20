@@ -6,7 +6,7 @@ date: 2019-05-31T23:30:40+00:00
 url: /post/2019/05/31/hobbyist-3d-printer-roundup-of-2019/
 featured_image: /wp-content/uploads/2019/05/3D-Printers-oakland-filament-printing-parts-multiple-series1-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 3d
   - 3d printers

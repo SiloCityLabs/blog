@@ -6,7 +6,7 @@ date: 2018-11-23T17:30:03+00:00
 url: /post/2018/11/23/secure-backups-without-the-cloud/
 featured_image: /wp-content/uploads/2018/11/Untitled-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - backups
   - cloud

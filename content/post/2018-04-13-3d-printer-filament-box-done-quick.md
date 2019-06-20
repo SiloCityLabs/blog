@@ -12,7 +12,7 @@ enclosure:
         video/mp4
         
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 3d printer
   - 3d printing

@@ -6,7 +6,7 @@ date: 2019-02-07T23:30:58+00:00
 url: /post/2019/02/07/axis-2130-ptz-and-zoneminder/
 featured_image: /wp-content/uploads/2018/08/41X1FB2KSBL._SY400_-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - axis
   - camera

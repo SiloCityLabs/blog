@@ -6,7 +6,7 @@ date: 2017-12-15T19:45:08+00:00
 url: /post/2017/12/15/smartthings-vision-micro-switch/
 featured_image: /wp-content/uploads/2017/12/419E0PAR7HL-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - samsung
   - smart home

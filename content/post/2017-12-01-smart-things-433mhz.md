@@ -6,7 +6,7 @@ date: 2017-12-01T01:39:20+00:00
 url: /post/2017/12/01/smart-things-433mhz/
 featured_image: /wp-content/uploads/2017/12/download-150x150.jpeg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 433mhz
   - more things

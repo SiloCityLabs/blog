@@ -6,7 +6,7 @@ date: 2019-06-13T23:30:28+00:00
 url: /post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/
 featured_image: /wp-content/uploads/2019/06/0bdcee8f1e4ed55a4814785aaff9a4bf-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - linux
   - minimal

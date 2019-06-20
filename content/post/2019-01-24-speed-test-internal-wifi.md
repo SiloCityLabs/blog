@@ -6,7 +6,7 @@ date: 2019-01-24T23:30:39+00:00
 url: /post/2019/01/24/speed-test-internal-wifi/
 featured_image: /wp-content/uploads/2018/12/speedtest-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - internal network
   - lan
