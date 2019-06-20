@@ -15,12 +15,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
@@ -51,6 +45,12 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -478,23 +478,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2018/12/23/808/</loc>
-    <lastmod>2018-12-23T16:34:52+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/google-home-mini/</loc>
-    <lastmod>2018-12-23T16:34:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/hub/</loc>
-    <lastmod>2018-12-23T16:34:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</loc>
     <lastmod>2018-12-19T00:30:20+00:00</lastmod>
   </url>
@@ -589,6 +572,12 @@
   <url>
     <loc>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</loc>
     <lastmod>2018-10-28T03:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/google-home-mini/</loc>
+    <lastmod>2018-10-28T03:08:14+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
