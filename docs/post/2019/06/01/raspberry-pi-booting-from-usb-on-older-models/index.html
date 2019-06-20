@@ -155,8 +155,34 @@ if (!doNotTrack) {
 
 
   
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://silocitylabs.com/uploads/2019/05/Raspberry-Pi-SD-and-USB.jpg" data-img-desc-1="Pi &#43; USB"></div>
+  
 
-  <header class="header-section ">
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>Raspberry Pi Booting From USB on older models</h1>
+                  
+                  
+                    <span class="post-meta">
+  Posted on June 2, 2019
+  
+</span>
+<span class="post-meta">
+    By Luis Rodriguez
+  </span>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
     
     <div class="intro-header no-img">
       
@@ -171,8 +197,9 @@ if (!doNotTrack) {
   Posted on June 2, 2019
   
 </span>
-
-
+<span class="post-meta">
+    By Luis Rodriguez
+  </span>
                 
             </div>
           </div>
@@ -187,9 +214,7 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p><a href="https://blog.silocitylabs.com/wp-content/uploads/2019/05/Raspberry-Pi-SD-and-USB.jpg"><img class="aligncenter size-full wp-image-963" src="https://blog.silocitylabs.com/wp-content/uploads/2019/05/Raspberry-Pi-SD-and-USB.jpg" alt="" width="918" height="442" srcset="https://blog.silocitylabs.com/wp-content/uploads/2019/05/Raspberry-Pi-SD-and-USB.jpg 918w, https://blog.silocitylabs.com/wp-content/uploads/2019/05/Raspberry-Pi-SD-and-USB-300x144.jpg 300w, https://blog.silocitylabs.com/wp-content/uploads/2019/05/Raspberry-Pi-SD-and-USB-768x370.jpg 768w" sizes="(max-width: 918px) 100vw, 918px" /></a></p>
-
-<p>Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases to speed up the performance of your pi when using a slow sd card. It can also provide a reliable location where you operating system data resides. Sd cards are prone to data corruption from writes a operating system ussually does.</p>
+        <p>Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases to speed up the performance of your pi when using a slow sd card. It can also provide a reliable location where you operating system data resides. Sd cards are prone to data corruption from writes a operating system ussually does.</p>
 
 <p>&nbsp;</p>
 
@@ -206,10 +231,6 @@ if (!doNotTrack) {
 </ol>
 
 <p>If you ever need to boot from a different USB drive or from the SD card, it&#8217;s necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition&#8217;s cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
 
       </article>
 

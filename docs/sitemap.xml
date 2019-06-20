@@ -457,6 +457,11 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/post/2018/12/27/hd-antenna-deal/</loc>
+    <lastmod>2018-12-28T01:50:44+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</loc>
     <lastmod>2018-12-27T23:30:18+00:00</lastmod>
   </url>
@@ -1037,6 +1042,10 @@
   <url>
     <loc>https://silocitylabs.com/page/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/page/team/</loc>
   </url>
   
 </urlset>

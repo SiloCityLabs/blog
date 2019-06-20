@@ -96,6 +96,10 @@ img {
   }
 }
 
+.well {
+  border-radius: 0px;
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
@@ -255,6 +259,11 @@ img {
   }
 }
 
+
+.navbar-custom .navbar-toggle {
+  border-radius: 0px;
+}
+
 /* --- Footer --- */
 
 footer {
@@ -299,7 +308,7 @@ footer .theme-by {
 
 .post-preview {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgb(158, 66, 66);
 }
 
 @media only screen and (min-width: 768px) {
@@ -693,6 +702,10 @@ td.gutter {
 #modalSearch table tr, #modalSearch table tr td, #modalSearch table tr th {
   border:none;
 }
+#modalSearch .modal-content{
+  border-radius: 0px
+}
+
 .reset-box-sizing, .reset-box-sizing *, .reset-box-sizing *:before, .reset-box-sizing *:after,  .gsc-inline-block {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
