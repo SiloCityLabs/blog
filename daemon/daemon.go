@@ -51,27 +51,28 @@ func main() {
 
 // Check to see if the docs folder was updated, if so ignore becouse it was already built
 func checkPush(pullRequest github.PushPayload) {
-	for _, commit := range pullRequest.Commits {
-		for _, file := range commit.Added {
-			fmt.Println("File Added: " + file)
-			if strings.HasPrefix(file, "docs/") {
-				fmt.Println("Doc file, no build needed")
-				return
-			}
+	//Lets only check first commit, just in case of merges
+	commit := pullRequest.Commits[0]
+
+	for _, file := range commit.Added {
+		fmt.Println("File Added: " + file)
+		if strings.HasPrefix(file, "docs/") {
+			fmt.Println("Doc file, no build needed")
+			return
 		}
-		for _, file := range commit.Removed {
-			fmt.Println("File Removed: " + file)
-			if strings.HasPrefix(file, "docs/") {
-				fmt.Println("Doc file, no build needed")
-				return
-			}
+	}
+	for _, file := range commit.Removed {
+		fmt.Println("File Removed: " + file)
+		if strings.HasPrefix(file, "docs/") {
+			fmt.Println("Doc file, no build needed")
+			return
 		}
-		for _, file := range commit.Modified {
-			fmt.Println("File Modified: " + file)
-			if strings.HasPrefix(file, "docs/") {
-				fmt.Println("Doc file, no build needed")
-				return
-			}
+	}
+	for _, file := range commit.Modified {
+		fmt.Println("File Modified: " + file)
+		if strings.HasPrefix(file, "docs/") {
+			fmt.Println("Doc file, no build needed")
+			return
 		}
 	}
 
@@ -170,4 +171,3 @@ func loadSettings() {
 
 	fmt.Printf("Starting: %v\n", settings)
 }
-
