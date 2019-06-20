@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bluetooth on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/bluetooth/index.xml</link>
-    <description>Recent content in Bluetooth on SCL Blog</description>
+    <title>bluetooth on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/bluetooth/</link>
+    <description>Recent content in bluetooth on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Dec 2017 18:30:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Phone case gamepad WIP</title>
@@ -15,37 +18,7 @@
       <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;wp-image-167&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;WHY:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;overflow: hidden;&#34;&gt;
-  &lt;p&gt;
-    &lt;figure id=&#34;attachment_164&#34; aria-describedby=&#34;caption-attachment-164&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png&#34;&gt;&lt;img class=&#34;wp-image-164&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-300x180.png&#34; width=&#34;300&#34; height=&#34;180&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-300x180.png 300w, https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-768x461.png 768w, https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-164&#34; class=&#34;wp-caption-text&#34;&gt;I hate touchscreen controls&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    I want to play action/platformer games on my phone. The straw that broke the camel&amp;#8217;s back was &amp;#8220;Prinny: Can I Really Be the Hero?&amp;#8221; &amp;#8211; I couldn&amp;#8217;t beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;HOW:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;overflow: hidden;&#34;&gt;
-  &lt;p&gt;
-    &lt;figure id=&#34;attachment_165&#34; aria-describedby=&#34;caption-attachment-165&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module.png&#34;&gt;&lt;img class=&#34;wp-image-165&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module-300x202.png&#34; width=&#34;300&#34; height=&#34;202&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module-300x202.png 300w, https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module.png 538w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-165&#34; class=&#34;wp-caption-text&#34;&gt;Bluetooth module for prototyping&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Current plan is an nrf51822 based gamepad in a 3d printed case. Users will be able to 3d print a case for their particular phone and drop in the electronics. When the user gets a new phone, a new case can be made and the electronics transferred.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;INSPIRED BY (R.I.P.):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Xperia Play, OpenPandora., HTC Dream (G1), DS Lite, PSP&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;wp-image-167&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

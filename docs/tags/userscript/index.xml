@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Userscript on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/userscript/index.xml</link>
+    <link>https://silocitylabs.com/tags/userscript/</link>
     <description>Recent content in Userscript on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/userscript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2018 03:17:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/userscript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Blocking exit intent popups</title>
@@ -19,26 +22,7 @@
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;I hate &amp;#8220;exit intent&amp;#8221; popups. The kind that automatically open when your mouse leaves the page begging &amp;#8220;please don&amp;#8217;t go!&amp;#8221;. They&amp;#8217;re annoying. They&amp;#8217;re irrelevant (I&amp;#8217;m following instructions, not closing). They interrupt the content I&amp;#8217;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;figure id=&#34;attachment_308&#34; aria-describedby=&#34;caption-attachment-308&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;[&lt;img class=&#34;wp-image-308&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/optin-monster-300x213.png&#34; width=&#34;300&#34; height=&#34;213&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/optin-monster-300x213.png 300w, https://silocitylabs.com/uploads/2018/01/optin-monster-768x544.png 768w, https://silocitylabs.com/uploads/2018/01/optin-monster-210x150.png 210w, https://silocitylabs.com/uploads/2018/01/optin-monster.png 960w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][3]&lt;figcaption id=&#34;caption-attachment-308&#34; class=&#34;wp-caption-text&#34;&gt;Soon to be blocked&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;Specifically I want to block Ouibounce (&lt;a href=&#34;https://carlsednaoui.github.io/ouibounce/&#34;&gt;demo&lt;/a&gt;) and OptIn Monster (&lt;a href=&#34;https://optinmonster.com/features/exit-intent/&#34;&gt;demo&lt;/a&gt;). Bounce Exchange is another infamous one but I couldn&amp;#8217;t find a demo to test on. &lt;a href=&#34;https://ask.metafilter.com/280379/Stop-popping-up-when-Im-about-to-switch-the-tab&#34;&gt;This Metafilter topic&lt;/a&gt; tipped me off to the main culprits: Javascript&amp;#8217;s mouseleave and mouseout events. So many sites have these popups that it&amp;#8217;s not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.&lt;/p&gt;
-
-&lt;p&gt;While researching I was able to block the modals per-website using uBlock Origin&amp;#8217;s &lt;em&gt;script:inject(&amp;#8230;)&lt;/em&gt;. Specifically the &lt;em&gt;&lt;a href=&#34;https://github.com/uBlockOrigin/uAssets/issues/692#issuecomment-329922065&#34;&gt;addEventListener-defuser.js&lt;/a&gt;&lt;/em&gt; is used in some filters to prevent JS click popups. Unfortunately the script injection intentionally doesn&amp;#8217;t accept wildcards so I can&amp;#8217;t use it globally.&lt;/p&gt;
-
-&lt;p&gt;I made a Userscript to do the same thing and it&amp;#8217;s working for Greasemonkey and Tampermonkey. This runs on &lt;strong&gt;all&lt;/strong&gt; http and https pages and overrides the mouseleave and mouseout events. If some popup still appear try adding _//@run-at document-start_ so that it registers earlier. It will probably break some UIs but it&amp;#8217;s an acceptable tradeoff to me. URLs can be excluded if needed. I don&amp;#8217;t really plan on supporting such a simple script so it&amp;#8217;s &amp;#8220;licensed&amp;#8221; under 0BSD. You&amp;#8217;re free to use, copy, and edit. Have fun:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;EDIT: I&amp;#8217;ve found a few features that broke. Excludes have been added.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;YouTube&amp;#8217;s preview on the seek bar doesn&amp;#8217;t go away.&lt;/li&gt;
-&lt;li&gt;Wikipedia&amp;#8217;s reference hover popup.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;I hate &amp;#8220;exit intent&amp;#8221; popups. The kind that automatically open when your mouse leaves the page begging &amp;#8220;please don&amp;#8217;t go!&amp;#8221;. They&amp;#8217;re annoying. They&amp;#8217;re irrelevant (I&amp;#8217;m following instructions, not closing). They interrupt the content I&amp;#8217;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

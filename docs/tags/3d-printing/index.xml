@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3d Printing on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/3d-printing/index.xml</link>
-    <description>Recent content in 3d Printing on SCL Blog</description>
+    <title>3d printing on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/3d-printing/</link>
+    <description>Recent content in 3d printing on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 May 2019 23:30:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Hobbyist 3d printer roundup of 2019</title>
@@ -19,31 +22,7 @@
 
 &lt;p&gt;We started to try and simplify remote access by using Teamviewer and even went as far as to buy a CEL Root SD card. The CEL Root was even worse than our current methods. This is when we finally had it. We wanted an open source printer with a decent bed, 3rd party parts, and Octoprint support.&lt;/p&gt;
 
-&lt;p&gt;Together me and my team came up with the list of hobby printers under $2000. We&amp;#8217;ll get a decent filament printer now and a small resin printer later.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;We want a printer that:&lt;/p&gt;
-
-&lt;p&gt;-has a larger printer volume (CEL Robox: 210x150x100mm, 3150 m³)&lt;/p&gt;
-
-&lt;p&gt;-uses open source software&lt;/p&gt;
-
-&lt;p&gt;-doesn&amp;#8217;t need significant modification out of the box&lt;/p&gt;
-
-&lt;p&gt;-supports higher temp materials like nylon&lt;/p&gt;
-
-&lt;p&gt;-supports dual-material or can be upgraded&lt;/p&gt;
-
-&lt;p&gt;We ended up choosing the Prusa i3 mk3 filament printer. It had great community support, open source software, Octoprint, high temp material support, excellent price per volume, and double the volume of the next runner up. There&amp;#8217;s a dual material upgrade that we&amp;#8217;ll check out in the future. The Flashforge was the runner up &amp;#8211; it cost $150 more, it&amp;#8217;s a little smaller, and comes with dual material support out of the box.&lt;/p&gt;
-
-&lt;p&gt;We have not made any decision on a resin printer. For the limited material support we did not want to pay over $800 for any of them. Unfortunately the only open source resin printer, the Prusa SL1, surpasses our budget. The Anycubic Photon looks decent though and is popular with the figurine community.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;iframe style=&#34;width: 100%; height: 420px; border: 0;&#34; src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vSemtCvLdcGtrIwtKpap0Ga_aQcG25TXQOzlk9U9uto2AATk715MCw7mFTbkiZ3hBV3hMUNRJtT14pa/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Let us know in the comments below if you know of a printer we can add to this list.&lt;/p&gt;</description>
+&lt;p&gt;Together me and my team came up with the list of hobby printers under $2000. We&amp;#8217;ll get a decent filament printer now and a small resin printer later.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,93 +51,7 @@
 
 &lt;p&gt;Here&amp;#8217;s the Skanect guide I watched:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Optional:&lt;br /&gt;
-Scanning was initially a huge pain in the ass. Moving to much would cause Skanect to fail. My fix was to strap a screen to the back of the Kinect so that my assistant could watch the Skanect UI.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;run VNC server (or RDP or whatever) on the computer&lt;/li&gt;
-&lt;li&gt;use a smartphone and connect to VNC&lt;/li&gt;
-&lt;li&gt;strap the smartphone to the back of the Kinect (I used velcro straps and rubber bands)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now the assistant can watch Skanect while moving around.&lt;/p&gt;
-
-&lt;p&gt;alternative raspi scanner that I have not tried:&lt;br /&gt;
-&lt;a href=&#34;https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/&#34;&gt;https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Scanning requires either a beefy CPU or CUDA acceleration from an NVidia GPU. Slow hardware requires slooowwww movement of the Kinect. Moving too fast will cause the scan to fail.&lt;br /&gt;
-Install Skanect&lt;br /&gt;
-If you have an NVidia card, install CUDA drivers (takes like 20-30min to install)&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/orig-scan-watertight.jpg&#34;&gt;&lt;img class=&#34;wp-image-581 alignright&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-300x169.jpg&#34; width=&#34;300&#34; height=&#34;169&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-768x432.jpg 768w, https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-1024x576.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here&amp;#8217;s what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.&lt;/p&gt;
-
-&lt;p&gt;Skanect scales in meters and I haven&amp;#8217;t figured out how to import/export with Blender properly (you&amp;#8217;re supposed to do it in the scene but it didn&amp;#8217;t work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &amp;#8220;m&amp;#8221; for meters, fix any errors, then save (as STL). Now it&amp;#8217;s scaled.&lt;/p&gt;
-
-&lt;h1 id=&#34;blender&#34;&gt;Blender&lt;/h1&gt;
-
-&lt;p&gt;Blender tutorial. If you&amp;#8217;ve never used Blender then I recommend watching up to part 5 and following along.&lt;br /&gt;
-&lt;a href=&#34;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#34;&gt;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Use your new Blender skills to edit the model. Crop it as needed, fix irregularities, and bisect it.&lt;/p&gt;
-
-&lt;p&gt;Bisect to split the brace down the middle&lt;br /&gt;
-&lt;a href=&#34;https://www.youtube.com/watch?v=UjLaxaLJZK4&#34;&gt;https://www.youtube.com/watch?v=UjLaxaLJZK4&lt;/a&gt;&lt;del&gt;&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/01-wtf.png&#34;&gt;&lt;img class=&#34;wp-image-579 alignright&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/01-wtf-300x144.png&#34; width=&#34;300&#34; height=&#34;144&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/01-wtf-300x144.png 300w, https://silocitylabs.com/uploads/2018/08/01-wtf-768x369.png 768w, https://silocitylabs.com/uploads/2018/08/01-wtf-1024x492.png 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My model had some random garbage points that were sticking off the main model. That required cleanup.&lt;/p&gt;
-
-&lt;p&gt;Clean up garbo:&lt;br /&gt;
--Edit Mode&lt;br /&gt;
--select all&lt;br /&gt;
--Mesh &amp;gt; Cleanup &amp;gt; Degenerate Dissolve&lt;/p&gt;
-
-&lt;p&gt;Time to skeletonize it with modifiers. Were reducing the polys, then wireframing the simplified geometry, then smoothing it to remove hard corners. Switch to object mode. Add these modifiers in order and play around with all the settings.&lt;/p&gt;
-
-&lt;p&gt;decimate&lt;/p&gt;
-
-&lt;p&gt;-adjust the ratio, play with settings&lt;/p&gt;
-
-&lt;p&gt;wireframe&lt;/p&gt;
-
-&lt;p&gt;-uncheck even thickness&lt;br /&gt;
--check boundary&lt;br /&gt;
--adjust thickness&lt;/p&gt;
-
-&lt;p&gt;subdivide (smooth)&lt;/p&gt;
-
-&lt;p&gt;-adjust Views for smoothing&lt;/p&gt;
-
-&lt;p&gt;Here what my model looked like early on. I wireframed it without reducing the polys and it created this fine hole pattern:&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed.png&#34;&gt;&lt;img class=&#34;wp-image-582 aligncenter&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-300x144.png&#34; width=&#34;300&#34; height=&#34;144&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-300x144.png 300w, https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-768x369.png 768w, https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-1024x492.png 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;#8217;s my latest version. This is after bisecting it, and decimate and subdivide modifiers. It&amp;#8217;s basically done, I just have to make it at least 4x thicker because this was too flexible once printed.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/final-ish.jpg&#34;&gt;&lt;img class=&#34;wp-image-583&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/final-ish-300x169.jpg&#34; width=&#34;300&#34; height=&#34;169&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/final-ish-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/08/final-ish-768x432.jpg 768w, https://silocitylabs.com/uploads/2018/08/final-ish-1024x576.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I also have a method for adding holes for velcro straps. It&amp;#8217;s not strictly necessary but it&amp;#8217;ll make the slots line up nicely.&lt;/p&gt;
-
-&lt;p&gt;Boolean Modifier&lt;br /&gt;
-&lt;a href=&#34;https://www.youtube.com/watch?v=pcUe-ab_jQs&#34;&gt;https://www.youtube.com/watch?v=pcUe-ab_jQs&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;-create some cylinders or boxes that pass through the spots you want holes&lt;br /&gt;
--to the arm, add a Boolean Modifier, select Difference, select a cylinder/box&lt;br /&gt;
--hide boxes&lt;br /&gt;
--if it&amp;#8217;s good hit Apply to permanently apply it&lt;br /&gt;
--delete the faces of the beams that are created&lt;/p&gt;
-
-&lt;p&gt;export to STL&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;In the future swap the velcro for a hinge:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.thingiverse.com/thing:1615753&#34;&gt;https://www.thingiverse.com/thing:1615753&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -200,153 +93,7 @@ If you have an NVidia card, install CUDA drivers (takes like 20-30min to install
 &lt;li&gt;Filament Spool Roller &amp;#8211; &lt;a href=&#34;https://www.thingiverse.com/thing:2185015&#34;&gt;https://www.thingiverse.com/thing:2185015&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&#34;preparing-the-feed-strip&#34;&gt;Preparing the Feed Strip:&lt;/h3&gt;
-
-&lt;p&gt;This strip is where the filament goes from dry air to the printer. Drill holes (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;&amp;#8243; Drill Bit) about 2cm apart on a strip of wood. I drilled as many as I could to future proof my design.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191010.jpg&#34;&gt;&lt;img class=&#34;wp-image-450&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191010-1024x585.jpg&#34; width=&#34;678&#34; height=&#34;387&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191010-1024x585.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_191010-300x171.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_191010-768x439.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Bevel the holes to clean up the edge and give the filament room to wiggle (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;#8243; Drill Bit).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_190954.jpg&#34;&gt;&lt;img class=&#34;wp-image-451&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_190954-1024x372.jpg&#34; width=&#34;678&#34; height=&#34;246&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_190954-1024x372.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_190954-300x109.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_190954-768x279.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Sand to prevent splinters and clean up drill shavings.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191335.jpg&#34;&gt;&lt;img class=&#34;wp-image-452&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191335-1024x577.jpg&#34; width=&#34;678&#34; height=&#34;382&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191335-1024x577.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_191335-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_191335-768x433.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Screw in the pneumatic connectors to the bottom of the wood strip. Threading the holes with an M5 bolt made this much easier. If you&amp;#8217;re fancy you could &lt;a href=&#34;https://hackaday.com/2017/07/24/simple-shop-made-taps-for-threading-wood/&#34;&gt;make a real tap from a threaded rod or bolt&lt;/a&gt; but we don&amp;#8217;t have time for that.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_192437.jpg&#34;&gt;&lt;img class=&#34;wp-image-453&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_192437-1024x741.jpg&#34; width=&#34;678&#34; height=&#34;491&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_192437-1024x741.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_192437-300x217.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_192437-768x556.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;We mount it on our shelving with some more M5 bolts. It locks in just like the shelves.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07.jpg&#34;&gt;&lt;img class=&#34;wp-image-454&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-956x1024.jpg&#34; width=&#34;678&#34; height=&#34;726&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-956x1024.jpg 956w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-280x300.jpg 280w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-768x822.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07.jpg 960w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194151.jpg&#34;&gt;&lt;img class=&#34;wp-image-455&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194151-1024x710.jpg&#34; width=&#34;678&#34; height=&#34;470&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194151-1024x710.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_194151-300x208.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_194151-768x532.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&#34;preparing-the-bin&#34;&gt;Preparing the Bin:&lt;/h3&gt;
-
-&lt;p&gt;Drill holes (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;&amp;#8243; Drill Bit) through the bin lid. Clean off any plastic shavings that may be left. Our bin holds 8-10 spools depends on their width.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_193813.jpg&#34;&gt;&lt;img class=&#34;wp-image-456&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_193813-1024x620.jpg&#34; width=&#34;678&#34; height=&#34;411&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_193813-1024x620.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_193813-300x182.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_193813-768x465.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Screw in the pneumatic connectors from the top.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194017.jpg&#34;&gt;&lt;img class=&#34;wp-image-457&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194017-1024x590.jpg&#34; width=&#34;678&#34; height=&#34;391&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194017-1024x590.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_194017-300x173.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_194017-768x443.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;On the underside, use an M5 nut to secure the connectors. The coated nut also helps the filament feed smoothly.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31.jpg&#34;&gt;&lt;img class=&#34;wp-image-471&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-1024x590.jpg&#34; width=&#34;678&#34; height=&#34;391&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-1024x590.jpg 1024w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-300x173.jpg 300w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-768x443.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31.jpg 1280w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Connecting the two together&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;Cut tubing to connect the feed strip and the bin.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194409.jpg&#34;&gt;&lt;img class=&#34;wp-image-458&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194409-768x1024.jpg&#34; width=&#34;678&#34; height=&#34;904&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194409-768x1024.jpg 768w, https://silocitylabs.com/uploads/2018/04/20180403_194409-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/04/20180403_194409.jpg 1440w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Cutting the tube caused some burs that interfered with the filament. Clean up the end with a blade. Slightly widen the end with a round tool (screwdriver, pencil, etc) to help insert the filament.&lt;/p&gt;
-
-&lt;p&gt;Connect the two ends.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194748.jpg&#34;&gt;&lt;img class=&#34;wp-image-459&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194748-707x1024.jpg&#34; width=&#34;678&#34; height=&#34;982&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194748-707x1024.jpg 707w, https://silocitylabs.com/uploads/2018/04/20180403_194748-207x300.jpg 207w, https://silocitylabs.com/uploads/2018/04/20180403_194748-768x1112.jpg 768w, https://silocitylabs.com/uploads/2018/04/20180403_194748.jpg 1326w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Supporting your Reels:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Using the design from &lt;a href=&#34;https://www.thingiverse.com/thing:2185015&#34;&gt;Thingiverse&lt;/a&gt;, print off as many spool rollers as needed. We picked this roller because the two halves are independent, allowing us to use the same rollers for various width spools. Another option is using a rod that goes through the length of the bin, but that would be a nuisance with so many spools. If your bin is only 1 or 2 spools then a rod would be a good choice. I may end up using double sided tape to secure them firmly in place if they move too much.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25.jpg&#34;&gt;&lt;img class=&#34;wp-image-469&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25-668x1024.jpg&#34; width=&#34;668&#34; height=&#34;1024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25-668x1024.jpg 668w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25-196x300.jpg 196w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25.jpg 676w&#34; sizes=&#34;(max-width: 668px) 100vw, 668px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Use a mallet if necessary to fit the bearing into the guide.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23.jpg&#34;&gt;&lt;img class=&#34;wp-image-468&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23.jpg&#34; width=&#34;708&#34; height=&#34;632&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23.jpg 708w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23-300x268.jpg 300w&#34; sizes=&#34;(max-width: 708px) 100vw, 708px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Now that the spools roll freely, push the plastic into the tubing and out the wood strip.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03.jpg&#34;&gt;&lt;img class=&#34;wp-image-460&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03-768x1024.jpg&#34; width=&#34;678&#34; height=&#34;904&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03-768x1024.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03.jpg 960w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Finishing off:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Warning! Not all packets are reusable, please read the instructions for your specific packet.&lt;/p&gt;
-
-&lt;ul class=&#34;a-unordered-list a-vertical a-spacing-none&#34;&gt;
-  &lt;li class=&#34;showHiddenFeatureBullets&#34;&gt;
-    &lt;span class=&#34;a-list-item&#34;&gt;Packet Reactivation:&lt;/span&gt; &lt;ul&gt;
-      &lt;li class=&#34;showHiddenFeatureBullets&#34;&gt;
-        &lt;span class=&#34;a-list-item&#34;&gt;Oven for 2.0 hrs at 200°F&lt;/span&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;span class=&#34;a-list-item&#34;&gt;Oven for 0.5 hrs at 250°F&lt;/span&gt;
-      &lt;/li&gt;
-      &lt;li class=&#34;showHiddenFeatureBullets&#34;&gt;
-        &lt;span class=&#34;a-list-item&#34;&gt;Microwave for About 10 Minutes at DEFROST.&lt;/span&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Bonus: Free packets located in shoe boxes, and other items. I date them and toss them in there. Just trash these after 6 months.
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194038.jpg&#34;&gt;&lt;img class=&#34;wp-image-461&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194038-1024x713.jpg&#34; width=&#34;678&#34; height=&#34;472&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194038-1024x713.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_194038-300x209.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_194038-768x534.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Reel Dehydration:
-
-&lt;ul&gt;
-&lt;li&gt;ABS: 4.0 hrs at 180°F&lt;/li&gt;
-&lt;li&gt;ABS: 6.0 hrs at 160°F&lt;/li&gt;
-&lt;li&gt;PLA: 6.0 hrs 100°F (your oven may not go this low, you can try a &lt;a href=&#34;https://www.amazon.com/gp/product/B0090WOCN0/&#34;&gt;food dehydrator&lt;/a&gt;, untested by us. Let us know in the comments)&lt;/li&gt;
-&lt;li&gt;PLA: 4.0 hrs 105°F (your oven may not go this low, you can try a &lt;a href=&#34;https://www.amazon.com/gp/product/B0090WOCN0/&#34;&gt;food dehydrator&lt;/a&gt;, untested by us. Let us know in the comments)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;More images:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22.jpg&#34;&gt;&lt;img class=&#34;wp-image-467&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-760x1024.jpg&#34; width=&#34;678&#34; height=&#34;914&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-760x1024.jpg 760w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-223x300.jpg 223w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-768x1035.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22.jpg 898w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16.jpg&#34;&gt;&lt;img class=&#34;wp-image-466&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-665x1024.jpg&#34; width=&#34;665&#34; height=&#34;1024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-665x1024.jpg 665w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-195x300.jpg 195w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-768x1182.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16.jpg 798w&#34; sizes=&#34;(max-width: 665px) 100vw, 665px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28.jpg&#34;&gt;&lt;img class=&#34;wp-image-470&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-1024x768.jpg&#34; width=&#34;678&#34; height=&#34;509&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-1024x768.jpg 1024w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28.jpg 1280w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&#34;width: 640px;&#34; class=&#34;wp-video&#34;&gt;
-  &lt;!--[if lt IE 9]&gt;&lt;![endif]--&gt;&lt;video class=&#34;wp-video-shortcode&#34; id=&#34;video-429-1&#34; width=&#34;640&#34; height=&#34;360&#34; preload=&#34;metadata&#34; controls=&#34;controls&#34;&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1&#34; /&gt;
-  
-  &lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4&#34;&gt;uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4&lt;/a&gt;&lt;/video&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -355,37 +102,7 @@ If you have an NVidia card, install CUDA drivers (takes like 20-30min to install
       <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;wp-image-167&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;WHY:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;overflow: hidden;&#34;&gt;
-  &lt;p&gt;
-    &lt;figure id=&#34;attachment_164&#34; aria-describedby=&#34;caption-attachment-164&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png&#34;&gt;&lt;img class=&#34;wp-image-164&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-300x180.png&#34; width=&#34;300&#34; height=&#34;180&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-300x180.png 300w, https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-768x461.png 768w, https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-164&#34; class=&#34;wp-caption-text&#34;&gt;I hate touchscreen controls&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    I want to play action/platformer games on my phone. The straw that broke the camel&amp;#8217;s back was &amp;#8220;Prinny: Can I Really Be the Hero?&amp;#8221; &amp;#8211; I couldn&amp;#8217;t beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;HOW:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;overflow: hidden;&#34;&gt;
-  &lt;p&gt;
-    &lt;figure id=&#34;attachment_165&#34; aria-describedby=&#34;caption-attachment-165&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module.png&#34;&gt;&lt;img class=&#34;wp-image-165&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module-300x202.png&#34; width=&#34;300&#34; height=&#34;202&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module-300x202.png 300w, https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module.png 538w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-165&#34; class=&#34;wp-caption-text&#34;&gt;Bluetooth module for prototyping&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Current plan is an nrf51822 based gamepad in a 3d printed case. Users will be able to 3d print a case for their particular phone and drop in the electronics. When the user gets a new phone, a new case can be made and the electronics transferred.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;INSPIRED BY (R.I.P.):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Xperia Play, OpenPandora., HTC Dream (G1), DS Lite, PSP&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;wp-image-167&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -406,15 +123,7 @@ If you have an NVidia card, install CUDA drivers (takes like 20-30min to install
   &lt;p&gt;
     The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.
   &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;figure id=&#34;attachment_140&#34; aria-describedby=&#34;caption-attachment-140&#34; style=&#34;width: 154px&#34; class=&#34;wp-caption alignright&#34;&gt;[&lt;img class=&#34;wp-image-140&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153636-e1513389166841-154x300.jpg&#34; width=&#34;154&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153636-e1513389166841-154x300.jpg 154w, https://silocitylabs.com/uploads/2017/12/IMG_20171028_153636-e1513389166841.jpg 519w&#34; sizes=&#34;(max-width: 154px) 100vw, 154px&#34; /&gt;][2]&lt;figcaption id=&#34;caption-attachment-140&#34; class=&#34;wp-caption-text&#34;&gt;wrist brace v2&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;figure id=&#34;attachment_76&#34; aria-describedby=&#34;caption-attachment-76&#34; style=&#34;width: 202px&#34; class=&#34;wp-caption alignright&#34;&gt;[&lt;img class=&#34;wp-image-76&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/photo_2017-12-15_14-27-51-1-202x300.jpg&#34; width=&#34;202&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/photo_2017-12-15_14-27-51-1-202x300.jpg 202w, https://silocitylabs.com/uploads/2017/12/photo_2017-12-15_14-27-51-1.jpg 636w&#34; sizes=&#34;(max-width: 202px) 100vw, 202px&#34; /&gt;][3]&lt;figcaption id=&#34;caption-attachment-76&#34; class=&#34;wp-caption-text&#34;&gt;wrist brace v1&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;Here are some pics of the palm sides of the shell. v0.1 being test fit by [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/ldrrp&#34;&gt;ldrrp&lt;/a&gt;] before I picked it up. I made some minor changes to reduce pressure points. v0.2 being test fit on me. Good fit but the skeletonizing caused the brace to be extremely flexible. v0.3 will be substantially thicker.  I&amp;#8217;ll post a full tutorial once I get a usable brace.&lt;/p&gt;</description>
+&lt;/div&gt;</description>
     </item>
     
   </channel>

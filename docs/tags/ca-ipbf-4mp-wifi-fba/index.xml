@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ca Ipbf 4mp Wifi Fba on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/index.xml</link>
-    <description>Recent content in Ca Ipbf 4mp Wifi Fba on SCL Blog</description>
+    <title>ca-ipbf-4mp-wifi-fba on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/</link>
+    <description>Recent content in ca-ipbf-4mp-wifi-fba on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Nov 2018 23:59:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>BV Tech 4MP 2K H.265 IP67 and Zoneminder</title>
@@ -19,25 +22,7 @@
 
 &lt;p&gt;Model: &lt;a href=&#34;https://www.bvsecurity.com/index.php/ca-ipbf-4mp-wifi.html&#34;&gt;ca-ipbf-4mp-wifi-fba&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This problem gave me a few issues I will go over briefly. This was fairly simple once I realized what I was doing wrong. I originally had it plugged in via an Ethernet cable to setup to WiFi like most cameras. But this camera actually just uses the microphone to transmit settings. Once I removed the Ethernet cable everything worked fine. I actually snipped off the Ethernet knowing I wouldn&amp;#8217;t need it, saving space with the clunky cable.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;To get this camera working after much fooling around and talking with support. The old firmware needs to be updated to enable automatic onvif detection. Download the software &lt;a href=&#34;https://www.bvsecurity.com/index.php/software&#34;&gt;SmartPSS&lt;/a&gt; then the &lt;a href=&#34;https://www.bvsecurity.com/index.php/firmware&#34;&gt;firmware &amp;#8220;IP Wifi Bullet Camera&amp;#8221;.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you have configured the device in smartpss, there should be an option to upgrade. Do that and it will show up to zoneminder with the onvif selector.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;You can also configure it manually using the following settings:&lt;/p&gt;
-
-&lt;p&gt;Source Path: rtsp://admin:password@cameraip:554/cam/realmonitor?channel=1&amp;amp;subtype=0&amp;amp;unicast=true&amp;amp;proto=Onvif&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/2-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
+&lt;p&gt;This problem gave me a few issues I will go over briefly. This was fairly simple once I realized what I was doing wrong. I originally had it plugged in via an Ethernet cable to setup to WiFi like most cameras. But this camera actually just uses the microphone to transmit settings. Once I removed the Ethernet cable everything worked fine. I actually snipped off the Ethernet knowing I wouldn&amp;#8217;t need it, saving space with the clunky cable.&lt;/p&gt;</description>
     </item>
     
   </channel>

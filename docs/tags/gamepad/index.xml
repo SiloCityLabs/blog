@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gamepad on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/gamepad/index.xml</link>
-    <description>Recent content in Gamepad on SCL Blog</description>
+    <title>gamepad on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/gamepad/</link>
+    <description>Recent content in gamepad on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/gamepad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 May 2019 17:19:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/gamepad/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Phone case gamepad, USB-C version</title>
@@ -17,23 +20,7 @@
       <guid>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;#8217;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/6769521558992231498.jpg&#34; alt=&#34;cardboard gamepad mockup&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I tried a few mockups and settled on a 2 piece design, with the halves connected by a ribbon cable. The left and right side share the same PCB but have different components attached. The &amp;#8220;main&amp;#8221; side (probably right side) will have most of the components and the USB connector. The &amp;#8220;aux&amp;#8221; side (probably left side) will have just an LED for status indication &amp;#8211; all the button contacts are built into the PCB.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/2320541558989079616.jpg&#34; alt=&#34;SNES gamepad silicone on mockup&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;m using SNES buttons for this version. The contest is for 2sq inches of PCB and only the D-Pad silicone will fit in my 2&amp;#215;1 footprint, so I&amp;#8217;ll use two of them. For future versions I&amp;#8217;ll check out button sets for portables like the GBA, DS, and PSP.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/5843821558996883569.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PCB layout is in the works. I still have rearranging and routing to do. I may have to change USB-C connectors to something that will fit the trace width of OSHpark.&lt;/p&gt;
-
-&lt;p&gt;Follow my &lt;a href=&#34;https://hackaday.io/project/165606-usb-c-gamepad-phone-case&#34;&gt;project on HackADay.io&lt;/a&gt; for finer details and updates! Source code will be available the SiloCityLabs Github soon™. This will be completely open source &amp;#8211; PCB, firmware, and 3d printed case.&lt;/p&gt;</description>
+&lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;#8217;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,37 +29,7 @@
       <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;wp-image-167&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;WHY:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;overflow: hidden;&#34;&gt;
-  &lt;p&gt;
-    &lt;figure id=&#34;attachment_164&#34; aria-describedby=&#34;caption-attachment-164&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png&#34;&gt;&lt;img class=&#34;wp-image-164&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-300x180.png&#34; width=&#34;300&#34; height=&#34;180&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-300x180.png 300w, https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43-768x461.png 768w, https://silocitylabs.com/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-164&#34; class=&#34;wp-caption-text&#34;&gt;I hate touchscreen controls&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    I want to play action/platformer games on my phone. The straw that broke the camel&amp;#8217;s back was &amp;#8220;Prinny: Can I Really Be the Hero?&amp;#8221; &amp;#8211; I couldn&amp;#8217;t beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;HOW:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;overflow: hidden;&#34;&gt;
-  &lt;p&gt;
-    &lt;figure id=&#34;attachment_165&#34; aria-describedby=&#34;caption-attachment-165&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module.png&#34;&gt;&lt;img class=&#34;wp-image-165&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module-300x202.png&#34; width=&#34;300&#34; height=&#34;202&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module-300x202.png 300w, https://silocitylabs.com/uploads/2017/12/HZX-52832-S01A-bluetooth-module.png 538w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;figcaption id=&#34;caption-attachment-165&#34; class=&#34;wp-caption-text&#34;&gt;Bluetooth module for prototyping&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    Current plan is an nrf51822 based gamepad in a 3d printed case. Users will be able to 3d print a case for their particular phone and drop in the electronics. When the user gets a new phone, a new case can be made and the electronics transferred.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;INSPIRED BY (R.I.P.):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Xperia Play, OpenPandora., HTC Dream (G1), DS Lite, PSP&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;&lt;img class=&#34;wp-image-167&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; width=&#34;1257&#34; height=&#34;478&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg 1257w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-300x114.jpg 300w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-768x292.jpg 768w, https://silocitylabs.com/uploads/2017/12/6371391512533450341-1-1024x389.jpg 1024w&#34; sizes=&#34;(max-width: 1257px) 100vw, 1257px&#34; /&gt;&lt;/a&gt;Here&amp;#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

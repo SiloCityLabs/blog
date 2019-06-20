@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ibaby on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/ibaby/index.xml</link>
-    <description>Recent content in Ibaby on SCL Blog</description>
+    <title>ibaby on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/ibaby/</link>
+    <description>Recent content in ibaby on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/ibaby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/ibaby/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Home Server Setup.</title>
@@ -15,144 +18,7 @@
       <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/05/30/home-server-setup/</guid>
-      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;security-camera-software&#34;&gt;Security Camera Software&lt;/h2&gt;
-
-&lt;p&gt;ZoneMinder &amp;#8211; &amp;#8220;A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need.&amp;#8221;&lt;/p&gt;
-
-&lt;h2 id=&#34;my-cameras&#34;&gt;My Cameras&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/&#34;&gt;Axis 2130 PTZ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/&#34;&gt;Rosewill RSCM-13101B&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/&#34;&gt;Nightowl BNC x6&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/&#34;&gt;Genius WideCam 320 Webcam&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/&#34;&gt;BV Tech 4MP 2k&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;onsite-fireproof-sync&#34;&gt;Onsite Fireproof Sync&lt;/h2&gt;
-
-&lt;p&gt;To avoid paying for cloud services I purchased a fireproof hard drive. I set it up to sync with my raid group and its all set. You can view that &lt;a href=&#34;https://blog.silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/&#34;&gt;article here.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;offsite-sync&#34;&gt;Offsite Sync&lt;/h2&gt;
-
-&lt;p&gt;I use offsite sync for the security cameras using rsync and a remote ftp server. Unfortunately it would be too expensive to backup my entire media server to the cloud so I only use it for remote storing the camera footage in the event of a theft.&lt;/p&gt;
-
-&lt;p&gt;To start this you will need an ftp server credentials to use with the following script. After doing so you can just add it to &lt;code&gt;crontab -e&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Crontab file:&lt;/p&gt;
-
-&lt;pre&gt;@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh&lt;/pre&gt;
-
-&lt;p&gt;Script:&lt;/p&gt;
-
-&lt;pre&gt;#!/bin/bash
-HOST=&#39;hostedftp.com&#39;
-USER=&#39;username&#39;
-PASS=&#39;password&#39;
-TARGETFOLDER=&#39;/&#39;
-SOURCEFOLDER=&#39;/var/cache/zoneminder/&#39;
-while inotifywait -qqr &#34;$SOURCEFOLDER&#34;; do
-lftp -f &#34;
-open $HOST
-user $USER $PASS
-lcd $SOURCEFOLDER
-set ftp:ssl-allow no
-mirror --no-symlinks --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
-bye
-&#34;
-done&lt;/pre&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;software-raid&#34;&gt;Software Raid&lt;/h2&gt;
-
-&lt;p&gt;I don&amp;#8217;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the setup I used &lt;a href=&#34;http://a.tra.li/TPzz&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;file-share&#34;&gt;File Share&lt;/h2&gt;
-
-&lt;p&gt;Setting up a file share is fairly simple, First download and install samba&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;apt-get install samba&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Then edit the main configuration file:&lt;/p&gt;
-
-&lt;pre&gt;[global]
-   workgroup = WORKGROUP
-   dns proxy = no
-   log file = /var/log/samba/log.%m
-   max log size = 1000
-   syslog = 0
-   panic action = /usr/share/samba/panic-action %d
-   server role = standalone server
-   passdb backend = tdbsam
-   obey pam restrictions = yes
-   unix password sync = yes
-   passwd program = /usr/bin/passwd %u
-   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
-   pam password change = yes
-   map to guest = bad user
-   usershare allow guests = yes
-   socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=1073741824 SO_SNDBUF=1073741824
-   min protocol = SMB2
-[homes]
-   comment = Home Directories
-   browseable = no
-   read only = no
-   create mask = 0770
-   directory mask = 0770
-   force group = nas
-   valid users = %S
-   writeable = yes
-   path = /mnt/4000/home/%u
-   veto files = /._*/.DS_Store/
-   delete veto files = yes
-[Shared]
-   comment = Shared Family Folder
-   browsable = yes
-   writable = yes
-   guest ok = yes
-   read only = no
-   directory mask = 0770
-   create mask = 0770
-   valid users = ldrrp krystal
-   force group = nas
-   path = /mnt/4000/home/Shared
-   veto files = /._*/.DS_Store/
-   delete veto files = yes
-[security]
-   comment = Security Cameras
-   browseable = yes
-   read only = no
-   create mask = 0755
-   directory mask = 0755
-   valid users = @security
-   writeable = yes
-   path = /var/cache/zoneminder
-   veto files = /._*/.DS_Store/
-   delete veto files = yes
-&lt;/pre&gt;
-
-&lt;p&gt;Then create the groups &amp;#8220;nas&amp;#8221; and &amp;#8220;family&amp;#8221; in linux and add your users to it. There is a guide &lt;a href=&#34;https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/&#34;&gt;here&lt;/a&gt; on that.&lt;/p&gt;
-
-&lt;p&gt;Finally reboot or restart samba &lt;code&gt;systemctl restart samba&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The first time you add a linux user (&lt;code&gt;adduser&lt;/code&gt;) you need to add them to smbpasswd as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo smbpasswd -a &amp;lt;user&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;speedtest-alerts&#34;&gt;Speedtest alerts&lt;/h2&gt;
-
-&lt;p&gt;This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can download the scripts &lt;a href=&#34;https://downloads.techreanimate.com/kzhota&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After downloading them, add a line to your schedule tasks in linux using crontab -e&lt;/p&gt;
-
-&lt;pre&gt;0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php&lt;/pre&gt;</description>
+      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

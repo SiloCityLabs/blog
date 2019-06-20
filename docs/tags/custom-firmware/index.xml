@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Custom Firmware on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/custom-firmware/index.xml</link>
-    <description>Recent content in Custom Firmware on SCL Blog</description>
+    <title>custom firmware on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/custom-firmware/</link>
+    <description>Recent content in custom firmware on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/custom-firmware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2018 03:07:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/custom-firmware/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Flashing Merlin to TM-AC1900 or AC68U (Updated for 384 builds)</title>
@@ -19,221 +22,7 @@
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Update: Asus began rolling back firmware on the stock setups. They are not providing Merlin with the source for Ai-Mesh so you need to be on stock to use it. I have updated the guide to provide instructions on how to prevent the rollback from happening. You can also use this guide to recover from a rollback.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I will be posting soon about my friends dual router setup using two TM-AC1900&amp;#8217;s.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-download-and-install-prerequisites&#34;&gt;1. Download and install Prerequisites:&lt;/h2&gt;
-
-&lt;p&gt;You will need an active internet connection on another device to get the cfe file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.1.&lt;/strong&gt; &lt;strong&gt;Download all the needed files:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://downloads.techreanimate.com/pmafuh&#34;&gt;Download Link&lt;/a&gt; with everything packaged together into a folder named &amp;#8220;router&amp;#8221; (recommended option).&lt;/p&gt;
-
-&lt;p&gt;Install Asus Restore Utility. Everything else packaged will run without installation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Individual links to latest downloads&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz6&#34;&gt;WinSCP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz5&#34;&gt;Putty&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz4&#34;&gt;7zip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://downloads.techreanimate.com/qsnqpu&#34;&gt;Asus Restore Utility&lt;/a&gt; (&lt;a href=&#34;http://a.tra.li/Smz2&#34;&gt;mirror&lt;/a&gt;) (&lt;a href=&#34;http://a.tra.li/Smz3&#34;&gt;Asus website&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://downloads.techreanimate.com/jijryr&#34;&gt;Flash Images AC68U&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz1&#34;&gt;Latest Stock AC68U&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz0&#34;&gt;Latest Merlin Firmware&lt;/a&gt; (&lt;a href=&#34;https://downloads.techreanimate.com/fcgxkf&#34;&gt;mirror&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Install WinSCP, Putty, Asus Restore Utility.&lt;/li&gt;
-&lt;li&gt;Create a folder on your desktop, name it &amp;#8220;router&amp;#8221;.&lt;/li&gt;
-&lt;li&gt;Download Flash Images AC68U and extract it to the newly made router folder. It contains a firmware to downgrade to, a firmware to upgrade to, and mtd-write.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-how-to-flash-ac1900-to-ac68u&#34;&gt;2. How to flash AC1900 to AC68U:&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;2.1. Set static IP for PC&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;start &amp;gt; run &amp;gt; ncpa.cpl &amp;gt; double click Ethernet &amp;gt; properties &amp;gt; IPV4 &amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;IP: 192.168.29.5&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Subnet: Default (255.255.255.0)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Gateway: 192.168.29.1&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled.png&#34;&gt;&lt;img class=&#34;wp-image-415&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled.png&#34; width=&#34;400&#34; height=&#34;455&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled.png 400w, https://silocitylabs.com/uploads/2018/01/Untitled-264x300.png 264w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.2. Place router into Recovery/Restore mode:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;With the router on hold reset button 10 seconds&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Power off router (keep holding reset)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Wait 10 seconds, keep holding reset&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Power on router holding reset for 10 more seconds (this part is very finicky, has to be exactly 10. Anymore or less wont put it into this mode)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.3. Flash the older T-Mobile firmware:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Go to 192.168.29.1 in a web browser&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;If Mini-CFE won’t load use Asus Restore Utility&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled3.png&#34;&gt;&lt;img class=&#34;wp-image-416&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled3.png&#34; width=&#34;640&#34; height=&#34;304&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled3.png 640w, https://silocitylabs.com/uploads/2018/01/Untitled3-300x143.png 300w&#34; sizes=&#34;(max-width: 640px) 100vw, 640px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Flash TM-AC1900_3.0.0.4_376_1703-g0ffdbba.trx from &amp;#8220;Flash Images AC68U&amp;#8221;&lt;/li&gt;
-&lt;li&gt;Wait for reboot 2-5 mins – WiFi lights will turn on when boot is complete&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled2.png&#34;&gt;&lt;img class=&#34;wp-image-417&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled2.png&#34; width=&#34;591&#34; height=&#34;280&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled2.png 591w, https://silocitylabs.com/uploads/2018/01/Untitled2-300x142.png 300w&#34; sizes=&#34;(max-width: 591px) 100vw, 591px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4. Flashing firmware, and cfe file:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log in to router at &lt;a href=&#34;http://192.168.29.1&#34;&gt;http://192.168.29.1&lt;/a&gt; (admin:password or admin:admin)&lt;/li&gt;
-&lt;li&gt;Go to Administration &amp;gt; System &amp;gt; Enable SSH &amp;gt; Yes &amp;gt; Apply&lt;/li&gt;
-&lt;li&gt;Open Putty (ssh) and connect to 192.168.29.1 using a admin:password or admin:admin_
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/7.png&#34;&gt;&lt;img class=&#34;wp-image-422&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/7.png&#34; width=&#34;452&#34; height=&#34;437&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/7.png 452w, https://silocitylabs.com/uploads/2018/01/7-300x290.png 300w&#34; sizes=&#34;(max-width: 452px) 100vw, 452px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Open WinSCP (&lt;em&gt;select SCP as file protocol)&lt;/em&gt; and connect to 192.168.29.1 using a admin:password or admin:admin&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/9.png&#34;&gt;&lt;img class=&#34;wp-image-423&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/9.png&#34; width=&#34;626&#34; height=&#34;423&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/9.png 626w, https://silocitylabs.com/uploads/2018/01/9-300x203.png 300w&#34; sizes=&#34;(max-width: 626px) 100vw, 626px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cat /dev/mtd0 &amp;gt; original_cfe.bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In WinSCP refresh the window on the right side and note that original_cfe.bin is present&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Copy original_cfe.bin to a local drive&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Upload original_cfe.bin to &lt;a href=&#34;https://cfeditor.pipeline.sh/&#34;&gt;https://cfeditor.pipeline.sh/&lt;/a&gt; &amp;gt; Select 1.0.2.0 US (AiMesh for 384+ builds) as Source CFE &amp;gt; Download the new .bin &amp;gt; rename it to new_cfe.bin (Optional, You can check Max for TX power to avoid doing step 5 again)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/10.png&#34;&gt;&lt;img class=&#34;wp-image-421&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/10-1024x562.png&#34; width=&#34;678&#34; height=&#34;372&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/10-1024x562.png 1024w, https://silocitylabs.com/uploads/2018/01/10-300x165.png 300w, https://silocitylabs.com/uploads/2018/01/10-768x421.png 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Upload &lt;strong&gt;new_cfe.bin&lt;/strong&gt; &amp;amp; &lt;strong&gt;mtd-write&lt;/strong&gt; &amp;amp; &lt;strong&gt;FW_RT_AC68U_30043763626.trx &lt;/strong&gt;to router through WinSCP. Files located inside &amp;#8220;Flash Images AC68U&amp;#8221; folder.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;chmod u+x mtd-write&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;./mtd-write new_cfe.bin boot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;mtd-write2 FW_RT_AC68U_30043763626.trx linux&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You may get an error from putty terminal, you can ignore it.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4. NVRAM reset:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Power off router&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Wait 10 seconds&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Press and hold WPS button&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Power up the router and continue to hold WPS button for 15-20 seconds&lt;/em&gt;&lt;del&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;wait for reboot 2-5 mins&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4. Flash Asus stock firmware:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Reset PC IP back to default from steps 2.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled5.png&#34;&gt;&lt;img class=&#34;wp-image-418&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled5.png&#34; width=&#34;400&#34; height=&#34;455&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled5.png 400w, https://silocitylabs.com/uploads/2018/01/Untitled5-264x300.png 264w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log in to router using 192.168.1.1 and the router is now an AC68U with 64MB jffs&lt;/li&gt;
-&lt;li&gt;Under Administration &amp;gt; Firmware Upgrade. upload &lt;strong&gt;FW_RT_AC68U_3.0.0.4.382.18881.trx&lt;/strong&gt; located in the &amp;#8220;Latest Stock AC68U&amp;#8221; folder.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/11.png&#34;&gt;&lt;img class=&#34;wp-image-420&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/11-1024x712.png&#34; width=&#34;678&#34; height=&#34;471&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/11-1024x712.png 1024w, https://silocitylabs.com/uploads/2018/01/11-300x208.png 300w, https://silocitylabs.com/uploads/2018/01/11-768x534.png 768w, https://silocitylabs.com/uploads/2018/01/11.png 1449w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Complete! If you continue, you will be going from stock asus to a custom firmware that will enable hardware acceleration and provide you with more benefits in performance and features.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;3-how-to-flash-ac68u-to-merlin&#34;&gt;3. How to flash AC68U to Merlin:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make sure you are on the latest stock version, older versions use &lt;a href=&#34;https://github.com/RMerl/asuswrt-merlin/wiki/Installation&#34;&gt;different file structures&lt;/a&gt; and may affect this installation.&lt;/li&gt;
-&lt;li&gt;Under Administration &amp;gt; Firmware Upgrade. upload &lt;strong&gt;RT-AC68U_380.69_0.trx&lt;/strong&gt; located in the &amp;#8220;Latest Merlin&amp;#8221; folder.&lt;/li&gt;
-&lt;li&gt;Perform an NVRAM reset from steps 2.4&lt;/li&gt;
-&lt;li&gt;Complete! Its that simple.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;4-ac68u-overclock&#34;&gt;4. AC68U Overclock:&lt;/h2&gt;
-
-&lt;p&gt;The T-Mobile version of the router comes clocked at 800mhz. Overclock it to 1ghz with these instructions (only tested with Merlin build):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make sure to have ssh enabled. Go to Administration &amp;gt; System &amp;gt; Enable SSH &amp;gt; LAN only &amp;gt; Apply&lt;/li&gt;
-&lt;li&gt;Log in to router using putty and type the following commands
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;nvram get clkfreq&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nvram set clkfreq=1000,800&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nvram commit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Reboot&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;5-ac68u-max-tx-power&#34;&gt;5. AC68U Max TX Power:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log in to router using putty&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cat /dev/mtd0 &amp;gt; original_cfe.bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In WinSCP refresh the window on the right side and note that original_cfe.bin is present&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Copy original_cfe.bin to a local drive&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Upload original_cfe.bin to &lt;a href=&#34;https://cfeditor.pipeline.sh/&#34;&gt;https://cfeditor.pipeline.sh/&lt;/a&gt; &amp;gt; Select 1.0.2.0 US as Source CFE &amp;gt; Check Max TX Power &amp;gt; Download the new .bin &amp;gt; rename it to new_cfe.bin&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Upload &lt;strong&gt;new_cfe.bin&lt;/strong&gt; &amp;amp; &lt;strong&gt;mtd-write&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;to router through WinSCP.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;chmod u+x mtd-write&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;./mtd-write new_cfe.bin boot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reboot&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I updated my router firmware to the latest 384 build of Merlin which added mesh networking. I noticed my overclock settings and tx power were reset back to stock settings. After performing the above steps all I had to add to it was to Select 1.0.2.0 US &lt;strong&gt;AiMesh&lt;/strong&gt; as Source CFE for cfeditor.pipeline.sh website for firmware versions 384+&lt;/p&gt;</description>
+&lt;p&gt;Update: Asus began rolling back firmware on the stock setups. They are not providing Merlin with the source for Ai-Mesh so you need to be on stock to use it. I have updated the guide to provide instructions on how to prevent the rollback from happening. You can also use this guide to recover from a rollback.&lt;/p&gt;</description>
     </item>
     
   </channel>

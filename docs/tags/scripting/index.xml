@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scripting on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/scripting/index.xml</link>
-    <description>Recent content in Scripting on SCL Blog</description>
+    <title>scripting on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/scripting/</link>
+    <description>Recent content in scripting on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jun 2019 20:00:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>What can golang do?</title>
@@ -15,167 +18,7 @@
       <pubDate>Thu, 06 Jun 2019 20:00:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/06/06/what-can-golang-do/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: rgba(0,0,0,0.84); font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;Nothing makes a developer crazier than a new programming language, right? So, I started learning Go about 6 months ago and &lt;/span&gt;now I am going to share with you my reasons for doing so.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;companies-using-golang&#34;&gt;Companies using Golang&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/06/golang-users.png&#34; alt=&#34;Golang Users&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Google &amp;#8211; Go is designed and supported by Google. Google has one of the largest cloud infrastructures in the world and it is massively scaled.&lt;/p&gt;
-
-&lt;p&gt;Apple &amp;#8211; Big data, analytics, infrastructure software.&lt;/p&gt;
-
-&lt;p&gt;Cloudflare &amp;#8211; Used in infrastructure and other various locations. Has decreased time to first byte by 90%.&lt;/p&gt;
-
-&lt;p&gt;Gitlab &amp;#8211; Handles all RPC calls made by git&lt;/p&gt;
-
-&lt;p&gt;AT&amp;amp;T &amp;#8211; Network management, server applications, web based API&amp;#8217;s&lt;/p&gt;
-
-&lt;p&gt;Netflix &amp;#8211; Caching management&lt;/p&gt;
-
-&lt;p&gt;Tesla &amp;#8211; Server management, enterprise software, production lines.&lt;/p&gt;
-
-&lt;p&gt;SpaceX &amp;#8211; Used in rocket telemetry&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://github.com/golang/go/wiki/GoUsers&#34;&gt;list&lt;/a&gt; is over thousands long&lt;/p&gt;
-
-&lt;h2 id=&#34;hardware-limitations&#34;&gt;Hardware limitations&lt;/h2&gt;
-
-&lt;p&gt;7 years ago I had a 4ghz processor with 8 cores. Today my desktop has a 4 core processor with 3.9ghz. You&amp;#8217;re probably looking at these numbers like, &amp;#8220;why did he downgrade?&amp;#8221; I did not. The benchmarks actually put my newer processor ahead by 66% because of multi-threading capabilities.&lt;/p&gt;
-
-&lt;p&gt;Nearly one decade and the hardware has not changed much besides one key thing. Multi-threading, and now possibly even more cores. Everything else has pretty much been steady and slow growth.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/06/chart.png&#34; alt=&#34;CPU Chart&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Even multi-threading has its limits. With that said, we fall to software to fix these issues. We must increase efficiency and performance of our software.&lt;/p&gt;
-
-&lt;p&gt;You&amp;#8217;re probably thinking &amp;#8220;well python is the ultimate language for AI.&amp;#8221; Sure it has many existing libraries, but it’s also old and slower. On some benchmarks even 40x slower.&lt;/p&gt;
-
-&lt;h2 id=&#34;go-runs-direct&#34;&gt;Go runs direct&lt;/h2&gt;
-
-&lt;p&gt;No crazy configuration is needed. Compile it for Linux and download any minimal Linux and let it do its thing. You don&amp;#8217;t need any added software on the server it will run on. It&amp;#8217;ll run identical on nearly any hardware. Yes, it even compiles for that Windows server your boss says you need for “compliance&amp;#8217;s.”&lt;/p&gt;
-
-&lt;p&gt;Starting a compiled Go application is as simple as a file transfer and &amp;#8220;./myprogram&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;Go has the benefit of having its own compiler for each architecture. It is not bogged down by a VM like java or a processor like Python or PHP. It is like C/C++ with ease of learning.&lt;/p&gt;
-
-&lt;h2 id=&#34;go-routines&#34;&gt;Go routines&lt;/h2&gt;
-
-&lt;p&gt;This is where the magic happens. Routines help create concurrency you need to speed up your application where others fail.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/06/1_nfojvbkdrkxz0zdbu4ysna1724252319353850356.jpeg&#34; alt=&#34;Go Routines&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Routines in go startup faster and even use less memory to start than other languages like python and java. They can get complicated quickly in other languages but with Go it’s as simple as:&lt;/p&gt;
-
-&lt;pre&gt;go functionName()&lt;/pre&gt;
-
-&lt;p&gt;You could spin up millions of routines before you start having bottlenecks in hardware. Meanwhile Languages like java will start to choke around a couple thousand.&lt;/p&gt;
-
-&lt;p id=&#34;13ea&#34; class=&#34;graf graf--p graf-after--figure&#34; style=&#34;margin: 30px0px0px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;
-  &lt;strong class=&#34;markup--strong markup--p-strong&#34; style=&#34;font-weight: bold;&#34;&gt;Other benefits are :&lt;/strong&gt;
-&lt;/p&gt;
-
-&lt;ul class=&#34;postList&#34; style=&#34;margin: 21px0px0px; padding: 0px; list-style: nonenone; counter-reset: post0; color: rgba(0,0,0,0.84); font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,;&#34;&gt;
-  &lt;li id=&#34;8c31&#34; class=&#34;graf graf--li graf-after--p&#34; style=&#34;margin-left: 30px; margin-bottom: 14px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;
-    Goroutines have grow-able segmented stacks. That means they will use more memory only when needed.
-  &lt;/li&gt;
-  &lt;li id=&#34;d180&#34; class=&#34;graf graf--li graf-after--li&#34; style=&#34;margin-left: 30px; margin-bottom: 14px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;
-    Goroutines have a faster startup time than threads.
-  &lt;/li&gt;
-  &lt;li id=&#34;9f10&#34; class=&#34;graf graf--li graf-after--li&#34; style=&#34;margin-left: 30px; margin-bottom: 14px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;
-    Goroutines come with built-in primitives to communicate safely between themselves (channels).
-  &lt;/li&gt;
-  &lt;li id=&#34;5aae&#34; class=&#34;graf graf--li graf-after--li&#34; style=&#34;margin-left: 30px; margin-bottom: 0px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;
-    Also, goroutines and OS threads do not have 1:1 mapping. A single goroutine can run on multiple threads. Goroutines are multiplexed into small number of OS threads.
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;easy-to-maintain&#34;&gt;Easy to maintain&lt;/h2&gt;
-
-&lt;p&gt;Go is a very easy language to read and maintain. It even has its own linter. It intentionally leaves out some features that make other languages hard to maintain.&lt;/p&gt;
-
-&lt;p&gt;If you look at the chart below. Its right in the middle between ease and speed. But still manages to beat java in both.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/06/1_nlpyi256br71xmbwd1nlfg4271399669979853869.png&#34; alt=&#34;Languages Chart&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Go is a win-win for both situations.&lt;/p&gt;
-
-&lt;p&gt;Have you ever looked at a PHP error file with the giant list of warnings and fatal&amp;#8217;s coming in from your live servers? You think, “how did that happen and why could I not prevent it?”&lt;/p&gt;
-
-&lt;p&gt;Because Go is compiled, it processes all the code on the spot. No more testing for noob issues like missing a semicolon or invalid types. You can&amp;#8217;t compile with these kinds of basic errors. If there is an issue on live it&amp;#8217;s usually data related which can be handled with validation.&lt;/p&gt;
-
-&lt;h2 id=&#34;where-have-i-used-go&#34;&gt;Where have I used go?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I&amp;#8217;ve replaced most of my bash scripts
-
-&lt;ul&gt;
-&lt;li&gt;Easier to write, syntax matches across the board for each flavor of Linux and even osx/windows&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Cloud backups using a &lt;a href=&#34;https://github.com/SiloCityLabs/B2Backup&#34;&gt;little program&lt;/a&gt; I am making for backblaze
-
-&lt;ul&gt;
-&lt;li&gt;Simple&lt;/li&gt;
-&lt;li&gt;Effective&lt;/li&gt;
-&lt;li&gt;Free storage&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Server monitoring daemons
-
-&lt;ul&gt;
-&lt;li&gt;Raid monitoring&lt;/li&gt;
-&lt;li&gt;Proxy testing&lt;/li&gt;
-&lt;li&gt;Up-time monitor&lt;/li&gt;
-&lt;li&gt;Memory monitoring and clearing&lt;/li&gt;
-&lt;li&gt;Permission checking&lt;/li&gt;
-&lt;li&gt;Internet check&lt;/li&gt;
-&lt;li&gt;Telegram/slack notifications&lt;/li&gt;
-&lt;li&gt;Speed-test quality checks&lt;/li&gt;
-&lt;li&gt;Service restarts on failure or even a full system reboot&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Web API&amp;#8217;s
-
-&lt;ul&gt;
-&lt;li&gt;JSON&lt;/li&gt;
-&lt;li&gt;Reading XML&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Big data
-
-&lt;ul&gt;
-&lt;li&gt;Concurrent processing of data and high speeds and large scales.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;IOT software like on raspberry pi
-
-&lt;ul&gt;
-&lt;li&gt;Managing io pins and reading sensor data&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Server management
-
-&lt;ul&gt;
-&lt;li&gt;Cluster reboots&lt;/li&gt;
-&lt;li&gt;Update Rollouts&lt;/li&gt;
-&lt;li&gt;Git hooks push live&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;PHP replacements
-
-&lt;ul&gt;
-&lt;li&gt;Daemons&lt;/li&gt;
-&lt;li&gt;Time to first byte&lt;/li&gt;
-&lt;li&gt;Deadlines for hooks&lt;/li&gt;
-&lt;li&gt;Crawling web pages&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;There are many uses for Go. I personally like to replace all of my bash scripts with it because it&amp;#8217;s so simple to write and use. It has replaced my main use of PHP and I don&amp;#8217;t think I could ever go back. Feel free to comment below. I will also be doing a blog series of tutorials followed by &lt;a href=&#34;https://www.meetup.com/Buffalo-GoLang-Meetup-Group/&#34;&gt;meetup sessions&lt;/a&gt; to discuss each tutorial.&lt;/p&gt;
-
-&lt;p&gt;Presentation &amp;#8220;&lt;a href=&#34;https://silocitylabs.com/uploads/2019/06/What-can-golang-do-for-you.pptx&#34;&gt;What can golang do for you?&amp;#8221;&lt;/a&gt; from our meetup talk&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Make a donation using &lt;a href=&#34;https://cash.me/%24ldrrp/10&#34;&gt;Cash app&lt;/a&gt;, &lt;a href=&#34;https://www.paypal.me/ldrrp/10&#34;&gt;Paypal&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;span style=&#34;color: rgba(0,0,0,0.84); font-family: medium-content-serif-font,Georgia,Cambria,;&#34;&gt;Nothing makes a developer crazier than a new programming language, right? So, I started learning Go about 6 months ago and &lt;/span&gt;now I am going to share with you my reasons for doing so.&lt;/p&gt;</description>
     </item>
     
   </channel>
