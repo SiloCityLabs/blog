@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Storage on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/storage/index.xml</link>
-    <description>Recent content in Storage on SCL Blog</description>
+    <title>storage on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/storage/</link>
+    <description>Recent content in storage on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Nov 2018 17:30:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Secure Backups without the cloud</title>
@@ -17,81 +20,7 @@
       <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/u2yEVUMQyZY&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;﻿&lt;/span&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/Untitled-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&amp;#8217;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;: Linux OS, crontab, rsync, hdparm&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I start off by plugging in my new drive and formatting it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;mkfs.ext4 /dev/sda1&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;After formatting I need to grab the device UUID for use later.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;blkid /dev/sda1
-
-/dev/sda1: UUID=&#34;fbb3b599-0a07-46f5-945d-0dbe6cac7639&#34; TYPE=&#34;ext4&#34; PARTLABEL=&#34;primary&#34; PARTUUID=&#34;c15d00d1-214f-4517-8c2c-8037419ff0d4&#34;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Now I have the UUID, lets move on to crontab. Create two cron tasks using &lt;code&gt;crontab -e&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
-5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
-&lt;/pre&gt;
-
-&lt;p&gt;So according to this &lt;code&gt;5 8 * * 0&lt;/code&gt; would run 8:05 AM every Sunday and &lt;code&gt;0 6 * * *&lt;/code&gt; would run daily at 6 AM. Lets create the first script in the location you selected to save it.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh&lt;/pre&gt;
-
-&lt;p&gt;&lt;pre&gt;#!/bin/bash&lt;/p&gt;
-
-&lt;p&gt;DRIVE_UUID=UUID-HERE&lt;/p&gt;
-
-&lt;p&gt;mount &amp;ndash;uuid $DRIVE_UUID /mnt/fireproof
-rsync –av /mnt/4000/ /mnt/fireproof/
-umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;pre&gt;nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh&lt;/pre&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;pre&gt;#!/bin/bash&lt;/p&gt;
-
-&lt;p&gt;DRIVE_UUID=UUID-HERE&lt;/p&gt;
-
-&lt;p&gt;mount &amp;ndash;uuid $DRIVE_UUID /mnt/fireproof
-rsync –av &amp;ndash;delete /mnt/4000/ /mnt/fireproof/
-umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Last, make sure the directory exists for the mount point, run &lt;code&gt;mkdir /mnt/fireproof&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I know some of you may point out that Linux automatically sleeps drives, but I just want that extra assurance that nothing will be waking it up creating unneeded wear on the drive. Also there will be no delay on this once the backup is complete.&lt;/p&gt;</description>
+&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -104,29 +33,7 @@ hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
 
 &lt;p&gt;Im a little dissapointed in myself for not thinking of it sooner. I tossed about 20 of these in the recycling bin before I realized I could reuse them myself.&lt;/p&gt;
 
-&lt;p&gt;Title is a little deceptive yes, but I still consider them free when you have a source. Baby formula containers!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-606&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2020073946083583409025178.jpg&#34; width=&#34;3000&#34; height=&#34;1687&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2020073946083583409025178.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180917_2020073946083583409025178-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180917_2020073946083583409025178-768x432.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180917_2020073946083583409025178-1024x576.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When You can get yourself a source&amp;#8230; well you have a source! They will feel endless and will just keep on comming. I have racked up quite a decent amount of them. I am able to use them for part storage, office supplies like rubber bands, resistors seperated in ziplocks and much much more.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-607&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019176507213474671005319.jpg&#34; width=&#34;3000&#34; height=&#34;2249&#34; data-temp-aztec-id=&#34;54dafa3e-296d-4aee-a6a0-5c12d7956779&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019176507213474671005319.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180917_2019176507213474671005319-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180917_2019176507213474671005319-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180917_2019176507213474671005319-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To get started you first peel off the paper label.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-611&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2027181551782876727669501.jpg&#34; width=&#34;2998&#34; height=&#34;2249&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2027181551782876727669501.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180917_2027181551782876727669501-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180917_2027181551782876727669501-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180917_2027181551782876727669501-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 2998px) 100vw, 2998px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Clean out the inside with a paper towel. Dont use water since these are made with cardboard.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-612&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2027041640603128543435426.jpg&#34; width=&#34;3000&#34; height=&#34;3000&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2027041640603128543435426.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180917_2027041640603128543435426.jpg 150w, https://silocitylabs.com/uploads/2018/09/20180917_2027041640603128543435426-300x300.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180917_2027041640603128543435426-768x768.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180917_2027041640603128543435426-1024x1024.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Apply a label or sharpie, then stack them away.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-608&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019441725666942943043130.jpg&#34; width=&#34;2250&#34; height=&#34;3000&#34; data-temp-aztec-id=&#34;20cf4cbd-563e-42f2-a7ad-9d73a834829f&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019441725666942943043130.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180917_2019441725666942943043130-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180917_2019441725666942943043130-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 2250px) 100vw, 2250px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You are probably wondering were to get these. Reach out to a pregnant friend or couple i&amp;#8217;m sure they will bag them for you. The other method is do what I did&amp;#8230;. Have a baby&amp;#8230; jk haha. My wifes pregnancy was completly unrelated to this.&lt;/p&gt;</description>
+&lt;p&gt;Title is a little deceptive yes, but I still consider them free when you have a source. Baby formula containers!&lt;/p&gt;</description>
     </item>
     
   </channel>

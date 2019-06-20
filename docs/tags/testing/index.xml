@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Testing on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/testing/index.xml</link>
-    <description>Recent content in Testing on SCL Blog</description>
+    <title>testing on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/testing/</link>
+    <description>Recent content in testing on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Mar 2018 16:29:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Changing DNS settings for Android Development</title>
@@ -21,125 +24,7 @@
 
 &lt;p&gt;This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.&lt;/p&gt;
 
-&lt;p&gt;First I will describe the use case scenario where this is useful:&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Live:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://codrcg.com&#34;&gt;codrcg.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;192.3.206.221&lt;/p&gt;
-
-&lt;p&gt;(public server)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://pastebin.com/raw/63dFFz2C&#34;&gt;https://pastebin.com/raw/63dFFz2C&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Staging / Test:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://codrcg.com&#34;&gt;codrcg.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;10.5.1.143&lt;/p&gt;
-
-&lt;p&gt;(internal server)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://pastebin.com/raw/txav6Yit&#34;&gt;https://pastebin.com/raw/txav6Yit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Local Desktop:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://codrcg.com&#34;&gt;codrcg.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;192.168.1.256&lt;/p&gt;
-
-&lt;p&gt;(static desktop ip)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://pastebin.com/raw/FudTpY1z&#34;&gt;https://pastebin.com/raw/FudTpY1z&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;You&amp;#8217;ll notice for each setup I have created pastebin links to where my hosts file is located, the format is &amp;#8220;ip hostname&amp;#8221; with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use &lt;a href=&#34;http://somewebsite.com/dns-settings/live.txt&#34;&gt;http://somewebsite.com/dns-settings/live.txt&lt;/a&gt;. This allows me to edit without updating my android device.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1 &amp;#8211; Basic application settings:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Download (&lt;a href=&#34;http://a.tra.li/SF9e&#34;&gt;Daedalus&lt;/a&gt;) and open the application.&lt;/li&gt;
-&lt;li&gt;Click on the menu then click &amp;#8220;Servers&amp;#8221;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-15.jpg&#34;&gt;&lt;img class=&#34;wp-image-395&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-15-169x300.jpg&#34; width=&#34;169&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-15-169x300.jpg 169w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-15-576x1024.jpg 576w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-15.jpg 720w&#34; sizes=&#34;(max-width: 169px) 100vw, 169px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Click the add button and add the two google servers &amp;#8220;8.8.8.8&amp;#8221; and &amp;#8220;8.8.4.4&amp;#8221;, You can substitute these for your preferred DNS provider as well.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-33-Copy.jpg&#34;&gt;&lt;img class=&#34;wp-image-398&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-33-Copy-1024x605.jpg&#34; width=&#34;678&#34; height=&#34;401&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-33-Copy-1024x605.jpg 1024w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-33-Copy-300x177.jpg 300w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-33-Copy-768x454.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Activate these dns servers in the menu by clicking on &amp;#8220;Settings&amp;#8221;&lt;/li&gt;
-&lt;li&gt;Then select Google and Google 2 from the settings. Also activate Advance settings and select the two following options in the image below&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32.jpg&#34;&gt;&lt;img class=&#34;wp-image-400&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32-1024x908.jpg&#34; width=&#34;678&#34; height=&#34;601&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32-1024x908.jpg 1024w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32-300x266.jpg 300w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32-768x681.jpg 768w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32.jpg 1444w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2 &amp;#8211; Creating hosts files:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;If you do not have your own server, you can use &lt;a href=&#34;https://pastebin.com&#34;&gt;pastebin.com&lt;/a&gt; to host your hosts files for use in the next steps.&lt;/li&gt;
-&lt;li&gt;Create a &lt;a href=&#34;https://pastebin.com&#34;&gt;pastebin&lt;/a&gt; link for each mode, you can add as many hosts as you need to test like below. Then hit &amp;#8220;Create New Paste&amp;#8221;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/pastebin.png&#34;&gt;&lt;img class=&#34;wp-image-405&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/pastebin-1024x662.png&#34; width=&#34;678&#34; height=&#34;438&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/pastebin-1024x662.png 1024w, https://silocitylabs.com/uploads/2018/03/pastebin-300x194.png 300w, https://silocitylabs.com/uploads/2018/03/pastebin-768x496.png 768w, https://silocitylabs.com/uploads/2018/03/pastebin.png 1154w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Click on the Raw button and copy this link somewhere for later use, Repeat steps for each mode.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/pastebin2.png&#34;&gt;&lt;img class=&#34;wp-image-406&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/pastebin2-1024x518.png&#34; width=&#34;678&#34; height=&#34;343&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/pastebin2-1024x518.png 1024w, https://silocitylabs.com/uploads/2018/03/pastebin2-300x152.png 300w, https://silocitylabs.com/uploads/2018/03/pastebin2-768x389.png 768w, https://silocitylabs.com/uploads/2018/03/pastebin2.png 1154w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3 &amp;#8211; Setting up the rules:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Back to the menu now, Click on &amp;#8220;Rules&amp;#8221;.&lt;/li&gt;
-&lt;li&gt;Add a new rule for each development mode, Live, staging, dev. Filename is not crucial, just make something up.&lt;/li&gt;
-&lt;li&gt;Hit sync rule before leaving to make sure the file is downloaded.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-13-Copy.jpg&#34;&gt;&lt;img class=&#34;wp-image-401&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-13-Copy-1024x605.jpg&#34; width=&#34;678&#34; height=&#34;401&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-13-Copy-1024x605.jpg 1024w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-13-Copy-300x177.jpg 300w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-13-Copy-768x453.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4 &amp;#8211; Activating:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap and activate the mode you wish to be in, You can activate more than one at a time so be careful as this will override one or the other.&lt;/li&gt;
-&lt;li&gt;In the menu go to home, and hit the &amp;#8220;Activate&amp;#8221; button.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08.jpg&#34;&gt;&lt;img class=&#34;wp-image-402&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08-1024x906.jpg&#34; width=&#34;678&#34; height=&#34;600&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08-1024x906.jpg 1024w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08-300x265.jpg 300w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08-768x680.jpg 768w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08.jpg 1442w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 5 &amp;#8211; Testing:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The final setup, lets see if I am hitting my dev server.&lt;/li&gt;
-&lt;li&gt;As you can see in the app below, the short url is no longer short, I now get a full url as the dev server doesnt have an api key to tra.li link shortener.&lt;/li&gt;
-&lt;li&gt;Depending on the use-case it may be difficult to detect which server your hitting, You can go back into Daedalus in the menu and select test. Type your domain name and see if the ip matches your dev server.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-04.jpg&#34;&gt;&lt;img class=&#34;wp-image-403&#34; src=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-04-1024x905.jpg&#34; width=&#34;678&#34; height=&#34;599&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-04-1024x905.jpg 1024w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-04-300x265.jpg 300w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-04-768x679.jpg 768w, https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-04.jpg 1448w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;First I will describe the use case scenario where this is useful:&lt;/p&gt;</description>
     </item>
     
   </channel>

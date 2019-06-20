@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Steam on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/steam/index.xml</link>
-    <description>Recent content in Steam on SCL Blog</description>
+    <title>steam on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/steam/</link>
+    <description>Recent content in steam on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Dec 2018 00:30:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Switching to Linux</title>
@@ -49,112 +52,7 @@
 
 &lt;p&gt;Ubuntu &lt;a href=&#34;https://vitux.com/add-new-document-back-to-the-right-click-menu-in-ubuntu-18-04/&#34;&gt;Get right click new documents back&lt;/a&gt;. Here is a link to a couple of &lt;a href=&#34;https://downloads.techreanimate.com/mprryu&#34;&gt;templates&lt;/a&gt; we made.&lt;/p&gt;
 
-&lt;p&gt;To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&amp;#8217;t be used that often so its a compromise I&amp;#8217;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Enable bidirectional clipboard and drag and drop in Virtualbox&lt;/li&gt;
-&lt;li&gt;Disabled UAC &amp;#8211; Annoying in VMs, slight delay in the dialog&lt;/li&gt;
-&lt;li&gt;Power options, enabled performance&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently/&#34;&gt;Turned off Windows defender&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Deffered windows updates to 30 days or max&lt;/li&gt;
-&lt;li&gt;Disabled firewall, since I will be enabling NAT in VM for Ubuntu to manage firewall&lt;/li&gt;
-&lt;li&gt;Disabled Microsoft smart screen&lt;/li&gt;
-&lt;li&gt;installed Virtualbox extensions pack&lt;/li&gt;
-&lt;li&gt;installed VM guest additions pack&lt;/li&gt;
-&lt;li&gt;Disabled sleep in power options&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.itpro.co.uk/operating-systems/26138/how-to-speed-up-windows-10&#34;&gt;Performance options &amp;#8211; adjust for best performance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Disabled cortana&lt;/li&gt;
-&lt;li&gt;Disabled any windows &amp;#8220;sharing&amp;#8221; data stuff&lt;/li&gt;
-&lt;li&gt;Single click shutdown &amp;#8211; &amp;#8220;%windir%\System32\shutdown.exe /s /t 0&amp;#8221;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.pugetsystems.com/labs/support-software/How-to-disable-Sleep-Mode-or-Hibernation-793/&#34;&gt;Disable hibernate&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.itpro.co.uk/operating-systems/26138/how-to-speed-up-windows-10&#34;&gt;Auto login user&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Hide taskbar items, People, cortana, task view&lt;/li&gt;
-&lt;li&gt;Made start menu smaller by dragging and removed most icons from right side&lt;/li&gt;
-&lt;li&gt;Disable system restore points&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems&#34;&gt;Disabled system dumps and startup logs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Disabled windows defender in task manager startup items&lt;/li&gt;
-&lt;li&gt;Disabled ipv6&lt;/li&gt;
-&lt;li&gt;Set static ip using existing ip as baseline (10.0.2.15, 255.255.255.0, 10.0.2.2, DNS Your router ip, 1.1.1.1). Since we will be disabling DHCP service.&lt;/li&gt;
-&lt;li&gt;Disabled windows cloud search&lt;/li&gt;
-&lt;li&gt;Disabled device history&lt;/li&gt;
-&lt;li&gt;Right click Uninstall any apps in start menu you don&amp;#8217;t need&lt;/li&gt;
-&lt;li&gt;Indexing options -&amp;gt; removed Users, I won&amp;#8217;t be using this for files. Left start menu alone&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tunecomp.net/win10-page-file-disable/&#34;&gt;Disable page file, Only do if you have enough memory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;set solid background&lt;/li&gt;
-&lt;li&gt;set solid taskbar colors and disable transparency&lt;/li&gt;
-&lt;li&gt;Turned of windows features:
-
-&lt;ul&gt;
-&lt;li&gt;Internet explorer&lt;/li&gt;
-&lt;li&gt;Microsoft print to PDF&lt;/li&gt;
-&lt;li&gt;Microsoft XPS document writer&lt;/li&gt;
-&lt;li&gt;Powershell 2&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Disabled services:
-
-&lt;ul&gt;
-&lt;li&gt;Data usage&lt;/li&gt;
-&lt;li&gt;Windows Defender firewall&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Manual services
-
-&lt;ul&gt;
-&lt;li&gt;Print Spooler &amp;#8211; I may still need it to print out tax software stuff&lt;/li&gt;
-&lt;li&gt;DHCP&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Combine start menu folders by right click open file location then drag the shortcuts. Combined Ease of access, powershell and system into one&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.askvg.com/guide-how-to-remove-all-built-in-apps-in-windows-10&#34;&gt;Killed windows apps&lt;/a&gt; &amp;#8211; Powershell (admin) Run the commands below (copy and Paste) and hit Enter &amp;#8211;
-
-&lt;ul&gt;
-&lt;li&gt;get-appxpackage -allusers *zunemusic* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *3dbuilder* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *alarms* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *communicationsapps* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *camera* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *feedback* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *officehub* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *getstarted* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *skypeapp* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *zunemusic* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *zune* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *maps* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *messaging* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *solitaire* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *wallet* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *connectivitystore* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *bingfinance* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *bing* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *zunevideo* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *bingnews* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *onenote* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *oneconnect* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *people* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *commsphone* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *windowsphone* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *phone* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *photos* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *bingsports* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *sticky* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *sway* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *3d* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *soundrecorder* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *bingweather* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *holographic* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *windowsstore* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *xbox* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *mspaint* | remove-appxpackage&lt;/li&gt;
-&lt;li&gt;get-appxpackage -allusers *holographic* | remove-appxpackage&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other untested stuff:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems&#34;&gt;https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/TronScript/comments/a41xpq/tron_v1073_20181207_fix_disk_space_calculation_in/&#34;&gt;https://www.reddit.com/r/TronScript/comments/a41xpq/tron_v1073_20181207_fix_disk_space_calculation_in/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&amp;#8217;t be used that often so its a compromise I&amp;#8217;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:&lt;/p&gt;</description>
     </item>
     
   </channel>

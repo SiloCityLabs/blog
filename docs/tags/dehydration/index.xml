@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dehydration on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/dehydration/index.xml</link>
-    <description>Recent content in Dehydration on SCL Blog</description>
+    <title>dehydration on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/dehydration/</link>
+    <description>Recent content in dehydration on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/dehydration/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Apr 2018 23:14:34 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/dehydration/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>3d Printer Filament box done quick</title>
@@ -48,153 +51,7 @@
 &lt;li&gt;Filament Spool Roller &amp;#8211; &lt;a href=&#34;https://www.thingiverse.com/thing:2185015&#34;&gt;https://www.thingiverse.com/thing:2185015&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&#34;preparing-the-feed-strip&#34;&gt;Preparing the Feed Strip:&lt;/h3&gt;
-
-&lt;p&gt;This strip is where the filament goes from dry air to the printer. Drill holes (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;&amp;#8243; Drill Bit) about 2cm apart on a strip of wood. I drilled as many as I could to future proof my design.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191010.jpg&#34;&gt;&lt;img class=&#34;wp-image-450&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191010-1024x585.jpg&#34; width=&#34;678&#34; height=&#34;387&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191010-1024x585.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_191010-300x171.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_191010-768x439.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Bevel the holes to clean up the edge and give the filament room to wiggle (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;#8243; Drill Bit).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_190954.jpg&#34;&gt;&lt;img class=&#34;wp-image-451&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_190954-1024x372.jpg&#34; width=&#34;678&#34; height=&#34;246&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_190954-1024x372.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_190954-300x109.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_190954-768x279.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Sand to prevent splinters and clean up drill shavings.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191335.jpg&#34;&gt;&lt;img class=&#34;wp-image-452&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191335-1024x577.jpg&#34; width=&#34;678&#34; height=&#34;382&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_191335-1024x577.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_191335-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_191335-768x433.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Screw in the pneumatic connectors to the bottom of the wood strip. Threading the holes with an M5 bolt made this much easier. If you&amp;#8217;re fancy you could &lt;a href=&#34;https://hackaday.com/2017/07/24/simple-shop-made-taps-for-threading-wood/&#34;&gt;make a real tap from a threaded rod or bolt&lt;/a&gt; but we don&amp;#8217;t have time for that.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_192437.jpg&#34;&gt;&lt;img class=&#34;wp-image-453&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_192437-1024x741.jpg&#34; width=&#34;678&#34; height=&#34;491&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_192437-1024x741.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_192437-300x217.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_192437-768x556.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;We mount it on our shelving with some more M5 bolts. It locks in just like the shelves.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07.jpg&#34;&gt;&lt;img class=&#34;wp-image-454&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-956x1024.jpg&#34; width=&#34;678&#34; height=&#34;726&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-956x1024.jpg 956w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-280x300.jpg 280w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07-768x822.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-07.jpg 960w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194151.jpg&#34;&gt;&lt;img class=&#34;wp-image-455&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194151-1024x710.jpg&#34; width=&#34;678&#34; height=&#34;470&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194151-1024x710.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_194151-300x208.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_194151-768x532.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&#34;preparing-the-bin&#34;&gt;Preparing the Bin:&lt;/h3&gt;
-
-&lt;p&gt;Drill holes (&lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;&amp;#8243; Drill Bit) through the bin lid. Clean off any plastic shavings that may be left. Our bin holds 8-10 spools depends on their width.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_193813.jpg&#34;&gt;&lt;img class=&#34;wp-image-456&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_193813-1024x620.jpg&#34; width=&#34;678&#34; height=&#34;411&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_193813-1024x620.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_193813-300x182.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_193813-768x465.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Screw in the pneumatic connectors from the top.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194017.jpg&#34;&gt;&lt;img class=&#34;wp-image-457&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194017-1024x590.jpg&#34; width=&#34;678&#34; height=&#34;391&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194017-1024x590.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_194017-300x173.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_194017-768x443.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;On the underside, use an M5 nut to secure the connectors. The coated nut also helps the filament feed smoothly.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31.jpg&#34;&gt;&lt;img class=&#34;wp-image-471&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-1024x590.jpg&#34; width=&#34;678&#34; height=&#34;391&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-1024x590.jpg 1024w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-300x173.jpg 300w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31-768x443.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-31.jpg 1280w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Connecting the two together&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;Cut tubing to connect the feed strip and the bin.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194409.jpg&#34;&gt;&lt;img class=&#34;wp-image-458&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194409-768x1024.jpg&#34; width=&#34;678&#34; height=&#34;904&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194409-768x1024.jpg 768w, https://silocitylabs.com/uploads/2018/04/20180403_194409-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/04/20180403_194409.jpg 1440w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Cutting the tube caused some burs that interfered with the filament. Clean up the end with a blade. Slightly widen the end with a round tool (screwdriver, pencil, etc) to help insert the filament.&lt;/p&gt;
-
-&lt;p&gt;Connect the two ends.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194748.jpg&#34;&gt;&lt;img class=&#34;wp-image-459&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194748-707x1024.jpg&#34; width=&#34;678&#34; height=&#34;982&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194748-707x1024.jpg 707w, https://silocitylabs.com/uploads/2018/04/20180403_194748-207x300.jpg 207w, https://silocitylabs.com/uploads/2018/04/20180403_194748-768x1112.jpg 768w, https://silocitylabs.com/uploads/2018/04/20180403_194748.jpg 1326w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Supporting your Reels:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Using the design from &lt;a href=&#34;https://www.thingiverse.com/thing:2185015&#34;&gt;Thingiverse&lt;/a&gt;, print off as many spool rollers as needed. We picked this roller because the two halves are independent, allowing us to use the same rollers for various width spools. Another option is using a rod that goes through the length of the bin, but that would be a nuisance with so many spools. If your bin is only 1 or 2 spools then a rod would be a good choice. I may end up using double sided tape to secure them firmly in place if they move too much.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25.jpg&#34;&gt;&lt;img class=&#34;wp-image-469&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25-668x1024.jpg&#34; width=&#34;668&#34; height=&#34;1024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25-668x1024.jpg 668w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25-196x300.jpg 196w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-25.jpg 676w&#34; sizes=&#34;(max-width: 668px) 100vw, 668px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Use a mallet if necessary to fit the bearing into the guide.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23.jpg&#34;&gt;&lt;img class=&#34;wp-image-468&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23.jpg&#34; width=&#34;708&#34; height=&#34;632&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23.jpg 708w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-23-300x268.jpg 300w&#34; sizes=&#34;(max-width: 708px) 100vw, 708px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Now that the spools roll freely, push the plastic into the tubing and out the wood strip.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03.jpg&#34;&gt;&lt;img class=&#34;wp-image-460&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03-768x1024.jpg&#34; width=&#34;678&#34; height=&#34;904&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03-768x1024.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_15-22-03.jpg 960w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Finishing off:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Warning! Not all packets are reusable, please read the instructions for your specific packet.&lt;/p&gt;
-
-&lt;ul class=&#34;a-unordered-list a-vertical a-spacing-none&#34;&gt;
-  &lt;li class=&#34;showHiddenFeatureBullets&#34;&gt;
-    &lt;span class=&#34;a-list-item&#34;&gt;Packet Reactivation:&lt;/span&gt; &lt;ul&gt;
-      &lt;li class=&#34;showHiddenFeatureBullets&#34;&gt;
-        &lt;span class=&#34;a-list-item&#34;&gt;Oven for 2.0 hrs at 200°F&lt;/span&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;span class=&#34;a-list-item&#34;&gt;Oven for 0.5 hrs at 250°F&lt;/span&gt;
-      &lt;/li&gt;
-      &lt;li class=&#34;showHiddenFeatureBullets&#34;&gt;
-        &lt;span class=&#34;a-list-item&#34;&gt;Microwave for About 10 Minutes at DEFROST.&lt;/span&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Bonus: Free packets located in shoe boxes, and other items. I date them and toss them in there. Just trash these after 6 months.
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194038.jpg&#34;&gt;&lt;img class=&#34;wp-image-461&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194038-1024x713.jpg&#34; width=&#34;678&#34; height=&#34;472&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/20180403_194038-1024x713.jpg 1024w, https://silocitylabs.com/uploads/2018/04/20180403_194038-300x209.jpg 300w, https://silocitylabs.com/uploads/2018/04/20180403_194038-768x534.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Reel Dehydration:
-
-&lt;ul&gt;
-&lt;li&gt;ABS: 4.0 hrs at 180°F&lt;/li&gt;
-&lt;li&gt;ABS: 6.0 hrs at 160°F&lt;/li&gt;
-&lt;li&gt;PLA: 6.0 hrs 100°F (your oven may not go this low, you can try a &lt;a href=&#34;https://www.amazon.com/gp/product/B0090WOCN0/&#34;&gt;food dehydrator&lt;/a&gt;, untested by us. Let us know in the comments)&lt;/li&gt;
-&lt;li&gt;PLA: 4.0 hrs 105°F (your oven may not go this low, you can try a &lt;a href=&#34;https://www.amazon.com/gp/product/B0090WOCN0/&#34;&gt;food dehydrator&lt;/a&gt;, untested by us. Let us know in the comments)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;More images:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22.jpg&#34;&gt;&lt;img class=&#34;wp-image-467&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-760x1024.jpg&#34; width=&#34;678&#34; height=&#34;914&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-760x1024.jpg 760w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-223x300.jpg 223w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22-768x1035.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-22.jpg 898w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16.jpg&#34;&gt;&lt;img class=&#34;wp-image-466&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-665x1024.jpg&#34; width=&#34;665&#34; height=&#34;1024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-665x1024.jpg 665w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-195x300.jpg 195w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16-768x1182.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-16.jpg 798w&#34; sizes=&#34;(max-width: 665px) 100vw, 665px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28.jpg&#34;&gt;&lt;img class=&#34;wp-image-470&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-1024x768.jpg&#34; width=&#34;678&#34; height=&#34;509&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-1024x768.jpg 1024w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/04/photo_2018-04-13_16-27-28.jpg 1280w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&#34;width: 640px;&#34; class=&#34;wp-video&#34;&gt;
-  &lt;!--[if lt IE 9]&gt;&lt;![endif]--&gt;&lt;video class=&#34;wp-video-shortcode&#34; id=&#34;video-429-1&#34; width=&#34;640&#34; height=&#34;360&#34; preload=&#34;metadata&#34; controls=&#34;controls&#34;&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;https://silocitylabs.com/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1&#34; /&gt;
-  
-  &lt;a href=&#34;https://silocitylabs.com/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4&#34;&gt;uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4&lt;/a&gt;&lt;/video&gt;
-&lt;/div&gt;</description>
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
     </item>
     
   </channel>

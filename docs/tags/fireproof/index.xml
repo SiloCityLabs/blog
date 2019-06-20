@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fireproof on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/fireproof/index.xml</link>
-    <description>Recent content in Fireproof on SCL Blog</description>
+    <title>fireproof on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/fireproof/</link>
+    <description>Recent content in fireproof on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/fireproof/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Nov 2018 17:30:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/fireproof/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Secure Backups without the cloud</title>
@@ -17,81 +20,7 @@
       <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/u2yEVUMQyZY&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;﻿&lt;/span&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/Untitled-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&amp;#8217;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;: Linux OS, crontab, rsync, hdparm&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I start off by plugging in my new drive and formatting it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;mkfs.ext4 /dev/sda1&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;After formatting I need to grab the device UUID for use later.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;blkid /dev/sda1
-
-/dev/sda1: UUID=&#34;fbb3b599-0a07-46f5-945d-0dbe6cac7639&#34; TYPE=&#34;ext4&#34; PARTLABEL=&#34;primary&#34; PARTUUID=&#34;c15d00d1-214f-4517-8c2c-8037419ff0d4&#34;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Now I have the UUID, lets move on to crontab. Create two cron tasks using &lt;code&gt;crontab -e&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
-5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
-&lt;/pre&gt;
-
-&lt;p&gt;So according to this &lt;code&gt;5 8 * * 0&lt;/code&gt; would run 8:05 AM every Sunday and &lt;code&gt;0 6 * * *&lt;/code&gt; would run daily at 6 AM. Lets create the first script in the location you selected to save it.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh&lt;/pre&gt;
-
-&lt;p&gt;&lt;pre&gt;#!/bin/bash&lt;/p&gt;
-
-&lt;p&gt;DRIVE_UUID=UUID-HERE&lt;/p&gt;
-
-&lt;p&gt;mount &amp;ndash;uuid $DRIVE_UUID /mnt/fireproof
-rsync –av /mnt/4000/ /mnt/fireproof/
-umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;pre&gt;nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh&lt;/pre&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;pre&gt;#!/bin/bash&lt;/p&gt;
-
-&lt;p&gt;DRIVE_UUID=UUID-HERE&lt;/p&gt;
-
-&lt;p&gt;mount &amp;ndash;uuid $DRIVE_UUID /mnt/fireproof
-rsync –av &amp;ndash;delete /mnt/4000/ /mnt/fireproof/
-umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Last, make sure the directory exists for the mount point, run &lt;code&gt;mkdir /mnt/fireproof&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I know some of you may point out that Linux automatically sleeps drives, but I just want that extra assurance that nothing will be waking it up creating unneeded wear on the drive. Also there will be no delay on this once the backup is complete.&lt;/p&gt;</description>
+&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Asus on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/asus/index.xml</link>
-    <description>Recent content in Asus on SCL Blog</description>
+    <title>asus on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/asus/</link>
+    <description>Recent content in asus on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/asus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Sep 2018 14:12:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/asus/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Backup home internet</title>
@@ -27,37 +30,7 @@
 
 &lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;wp-image-587&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 4032px) 100vw, 4032px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There&amp;#8217;s an issue where Android will keep turning off tether if there is slight changes in cable movement or whenever the router reboots. We solve this with automate. We configure automate to keep enabling USB tether every X seconds.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-588&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533.png&#34; width=&#34;1458&#34; height=&#34;1561&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533.png 1458w, https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533-280x300.png 280w, https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533-768x822.png 768w, https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533-956x1024.png 956w&#34; sizes=&#34;(max-width: 1458px) 100vw, 1458px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The root command is optional if you can&amp;#8217;t get USB tether working. Here is the full command.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-596&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704.png&#34; width=&#34;573&#34; height=&#34;573&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704.png 573w, https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704.png 150w, https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704-300x300.png 300w&#34; sizes=&#34;(max-width: 573px) 100vw, 573px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After it&amp;#8217;s enabled, hit play and let it run.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-589&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Place your phone in a convenient spot accessible to great reception.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-590&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698.jpg&#34; width=&#34;3000&#34; height=&#34;2680&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698-300x268.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698-768x686.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698-1024x915.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Head over to your router settings. Under WAN options there is a tab called &amp;#8220;Dual WAN&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-591&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943271850039273880023030.jpg&#34; width=&#34;720&#34; height=&#34;774&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943271850039273880023030.jpg 720w, https://silocitylabs.com/uploads/2018/09/20180915_0943271850039273880023030-279x300.jpg 279w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enable USB tether and Android device.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-592&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943417170682303179420009.jpg&#34; width=&#34;720&#34; height=&#34;540&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943417170682303179420009.jpg 720w, https://silocitylabs.com/uploads/2018/09/20180915_0943417170682303179420009-300x225.jpg 300w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Configure the failover settings how you please.&lt;/p&gt;
-
-&lt;p&gt;You are all set! Your dashboard should look like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-593&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943126960527662415391769.jpg&#34; width=&#34;720&#34; height=&#34;755&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943126960527662415391769.jpg 720w, https://silocitylabs.com/uploads/2018/09/20180915_0943126960527662415391769-286x300.jpg 286w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;wp-image-587&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 4032px) 100vw, 4032px&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,102 +39,7 @@
       <pubDate>Fri, 02 Feb 2018 19:48:02 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/02/dual-ac-router-setup-for-120/</guid>
-      <description>&lt;p&gt;I will be using two &lt;a href=&#34;https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/&#34;&gt;Custom firmware&lt;/a&gt; routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to &lt;a href=&#34;https://asuswrt.lostrealm.ca/&#34;&gt;Merlin custom firmware&lt;/a&gt; but its entirely optional. This will work with the stock firmware.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Compatible Devices:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Sx5u&#34;&gt;TM-AC1900&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;RT-N66U&lt;/li&gt;
-&lt;li&gt;RT-AC66U&lt;/li&gt;
-&lt;li&gt;RT-AC66U_B1 (same firmware as the RT-AC68U)&lt;/li&gt;
-&lt;li&gt;RT-AC56U&lt;/li&gt;
-&lt;li&gt;RT-AC68U (including revisions C1 and E1)&lt;/li&gt;
-&lt;li&gt;RT-AC68P (same firmware as RT-AC68U)&lt;/li&gt;
-&lt;li&gt;RT-AC68UF (same firmware as RT-AC68U)&lt;/li&gt;
-&lt;li&gt;RT-AC87&lt;/li&gt;
-&lt;li&gt;RT-AC3200&lt;/li&gt;
-&lt;li&gt;RT-AC88U&lt;/li&gt;
-&lt;li&gt;RT-AC3100&lt;/li&gt;
-&lt;li&gt;RT-AC5300&lt;/li&gt;
-&lt;li&gt;RT-AC1900 (same firmware as RT-AC68U)&lt;/li&gt;
-&lt;li&gt;RT-AC1900P (same firmware as RT-AC68U)&lt;/li&gt;
-&lt;li&gt;RT-AC86U (starting with version 382.1)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;My friends house is so bad at this point his speed drops in half when he moves two rooms over from where the wifi is located. I originally wanted to run it on opposite corners on a vertical plane but he did not want to run ethernet lines up the walls.&lt;/p&gt;
-
-&lt;p&gt;My other option was a powerline, but seems I cant find any that run decently yet for his house. A TP-Link AV1000 was only giving him a throughput of 30mbps, so this option was out of the question. My only alternative was to put the routers in the basement on opposite sides of the house like the image below in step 5.&lt;/p&gt;
-
-&lt;p&gt;For this setup I am connecting devices that roam the house to the 5ghz ssid (mywifi 5ghz) primary if supported. Then standstill devices like Chromecasts, google home, etc to the old 2.4ghz ssid (mywifi front/rear). You can flip flop this around if you would like. I prefer it this way rather than keeping the names the same because I notice issues with older devices moving around the house not wanting to switch to the closer signal.&lt;/p&gt;
-
-&lt;h3 id=&#34;step-1-moving-the-modem&#34;&gt;&lt;strong&gt;Step 1: Moving the modem.&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;Before I get started on the modem setup, I just want to clarify the modem we use. I have a Motorola SURFboard SB6141 and my friend has a SB6121. These modems are cheap on eBay/Amazon and save us from the modem rental fee&amp;#8217;s on our bills. They also act as dedicated devices unlike the router/modem combos given to us by our providers, Thus allowing lower latency connections to the internet.&lt;/p&gt;
-
-&lt;p&gt;For this step I attempted to locate a pre-existing line in the basement that I can reroute the splitter to for the modem. We drilled a hole into the side of the house running into the basement but had some issues with spray foam insulation used on the basement. Took 30 mins to carve a hole in the insulation to get the hole for the wire. We reused a old direct-tv line just in case we messed up the first time we had a second try with the main line. It also let us continue to have internet while we were wiring up the cable. After the line was in place we had to reroute the Cable box splitter to use the direct-tv coax we re-used. Once this was set and done, we re-insulated with a spray foam can around the wire.&lt;/p&gt;
-
-&lt;h3 id=&#34;img-class-wp-image-346-src-uploads-2018-02-20180203-215442-1008x756-300x225-jpg-width-300-height-225-srcset-uploads-2018-02-20180203-215442-1008x756-300x225-jpg-300w-uploads-2018-02-20180203-215442-1008x756-768x576-jpg-768w-uploads-2018-02-20180203-215442-1008x756-jpg-1008w-sizes-max-width-300px-100vw-300px-4&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-346&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h3 id=&#34;step-2-configuring-the-main-router&#34;&gt;&lt;strong&gt;Step 2: Configuring the main router&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;With the router in the main corner of the basement near the modem we will be configuring it as a regular router.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-345&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Network Settings:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Set the main ip as 192.168.1.1, DHCP range to 192.168.1.10 &amp;#8211; 192.168.1.254. Reserving the 1-9 for static stuff like my second router etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wifi settings:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I will set the main wifi name as &amp;#8220;&lt;em&gt;mywifi (front)&lt;/em&gt;&amp;#8221; and the 5ghz as &amp;#8220;&lt;em&gt;mywifi 5ghz&lt;/em&gt;&amp;#8220;.&lt;/p&gt;
-
-&lt;h3 id=&#34;step-3-configuring-the-second-router&#34;&gt;&lt;strong&gt;Step 3: Configuring the second router&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;With a 100ft ethernet cable we will be running the wire along the ceiling to the opposite corner of the basement. Honestly probably did not need 100ft for his setup, at the time of ordering i did not know the length that was needed so I was better safe than sorry to get a 100ft. I attached the router to the header in the basement with 3m Double sided velcro straps. Plug in the ethernet into the port 1 of the main router and the wan port of the second router.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-343&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After this was all in place I stapled all the wires running across to the headers to keep them in place.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-344&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-348&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Network Settings:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Enable Ap Mode then set the main ip as 192.168.1.2, DNS settings to 10.5.1.1 and 8.8.8.8.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wifi settings:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I will set the main wifi name as &amp;#8220;&lt;em&gt;mywifi (rear)&lt;/em&gt;&amp;#8221; and the 5ghz as &amp;#8220;&lt;em&gt;mywifi 5ghz&lt;/em&gt;&amp;#8220;.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h3 id=&#34;step-4-powerline-for-desktop&#34;&gt;&lt;strong&gt;Step 4: Powerline for Desktop&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;This was an added step, he didn&amp;#8217;t want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free&amp;#8217;s up more wifi bandwidth for other devices.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-347&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;step-5-enjoy-run-some-speed-tests&#34;&gt;&lt;strong&gt;Step 5: Enjoy, Run some speed tests&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;The best part was getting 118Mb/s in the 2nd floor and kitchen being connected to the front router. Before our results were lower than 30Mb/s on a old single router setup and the backyard coverage was not existent.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests.png&#34;&gt;&lt;img class=&#34;wp-image-339&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests.png&#34; width=&#34;768&#34; height=&#34;347&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests.png 768w, https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests-300x136.png 300w&#34; sizes=&#34;(max-width: 768px) 100vw, 768px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.speedtest.net/result/7027662257.png&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;http://www.speedtest.net/result/7027662257.png&#34; width=&#34;350&#34; height=&#34;200&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.speedtest.net/result/7027666057.png&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;http://www.speedtest.net/result/7027666057.png&#34; width=&#34;350&#34; height=&#34;200&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I will be using two &lt;a href=&#34;https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/&#34;&gt;Custom firmware&lt;/a&gt; routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to &lt;a href=&#34;https://asuswrt.lostrealm.ca/&#34;&gt;Merlin custom firmware&lt;/a&gt; but its entirely optional. This will work with the stock firmware.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -174,221 +52,7 @@
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Update: Asus began rolling back firmware on the stock setups. They are not providing Merlin with the source for Ai-Mesh so you need to be on stock to use it. I have updated the guide to provide instructions on how to prevent the rollback from happening. You can also use this guide to recover from a rollback.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I will be posting soon about my friends dual router setup using two TM-AC1900&amp;#8217;s.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-download-and-install-prerequisites&#34;&gt;1. Download and install Prerequisites:&lt;/h2&gt;
-
-&lt;p&gt;You will need an active internet connection on another device to get the cfe file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.1.&lt;/strong&gt; &lt;strong&gt;Download all the needed files:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://downloads.techreanimate.com/pmafuh&#34;&gt;Download Link&lt;/a&gt; with everything packaged together into a folder named &amp;#8220;router&amp;#8221; (recommended option).&lt;/p&gt;
-
-&lt;p&gt;Install Asus Restore Utility. Everything else packaged will run without installation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Individual links to latest downloads&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz6&#34;&gt;WinSCP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz5&#34;&gt;Putty&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz4&#34;&gt;7zip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://downloads.techreanimate.com/qsnqpu&#34;&gt;Asus Restore Utility&lt;/a&gt; (&lt;a href=&#34;http://a.tra.li/Smz2&#34;&gt;mirror&lt;/a&gt;) (&lt;a href=&#34;http://a.tra.li/Smz3&#34;&gt;Asus website&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://downloads.techreanimate.com/jijryr&#34;&gt;Flash Images AC68U&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz1&#34;&gt;Latest Stock AC68U&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Smz0&#34;&gt;Latest Merlin Firmware&lt;/a&gt; (&lt;a href=&#34;https://downloads.techreanimate.com/fcgxkf&#34;&gt;mirror&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Install WinSCP, Putty, Asus Restore Utility.&lt;/li&gt;
-&lt;li&gt;Create a folder on your desktop, name it &amp;#8220;router&amp;#8221;.&lt;/li&gt;
-&lt;li&gt;Download Flash Images AC68U and extract it to the newly made router folder. It contains a firmware to downgrade to, a firmware to upgrade to, and mtd-write.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-how-to-flash-ac1900-to-ac68u&#34;&gt;2. How to flash AC1900 to AC68U:&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;2.1. Set static IP for PC&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;start &amp;gt; run &amp;gt; ncpa.cpl &amp;gt; double click Ethernet &amp;gt; properties &amp;gt; IPV4 &amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;IP: 192.168.29.5&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Subnet: Default (255.255.255.0)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Gateway: 192.168.29.1&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled.png&#34;&gt;&lt;img class=&#34;wp-image-415&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled.png&#34; width=&#34;400&#34; height=&#34;455&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled.png 400w, https://silocitylabs.com/uploads/2018/01/Untitled-264x300.png 264w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.2. Place router into Recovery/Restore mode:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;With the router on hold reset button 10 seconds&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Power off router (keep holding reset)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Wait 10 seconds, keep holding reset&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Power on router holding reset for 10 more seconds (this part is very finicky, has to be exactly 10. Anymore or less wont put it into this mode)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.3. Flash the older T-Mobile firmware:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Go to 192.168.29.1 in a web browser&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;If Mini-CFE won’t load use Asus Restore Utility&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled3.png&#34;&gt;&lt;img class=&#34;wp-image-416&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled3.png&#34; width=&#34;640&#34; height=&#34;304&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled3.png 640w, https://silocitylabs.com/uploads/2018/01/Untitled3-300x143.png 300w&#34; sizes=&#34;(max-width: 640px) 100vw, 640px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Flash TM-AC1900_3.0.0.4_376_1703-g0ffdbba.trx from &amp;#8220;Flash Images AC68U&amp;#8221;&lt;/li&gt;
-&lt;li&gt;Wait for reboot 2-5 mins – WiFi lights will turn on when boot is complete&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled2.png&#34;&gt;&lt;img class=&#34;wp-image-417&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled2.png&#34; width=&#34;591&#34; height=&#34;280&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled2.png 591w, https://silocitylabs.com/uploads/2018/01/Untitled2-300x142.png 300w&#34; sizes=&#34;(max-width: 591px) 100vw, 591px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4. Flashing firmware, and cfe file:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log in to router at &lt;a href=&#34;http://192.168.29.1&#34;&gt;http://192.168.29.1&lt;/a&gt; (admin:password or admin:admin)&lt;/li&gt;
-&lt;li&gt;Go to Administration &amp;gt; System &amp;gt; Enable SSH &amp;gt; Yes &amp;gt; Apply&lt;/li&gt;
-&lt;li&gt;Open Putty (ssh) and connect to 192.168.29.1 using a admin:password or admin:admin_
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/7.png&#34;&gt;&lt;img class=&#34;wp-image-422&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/7.png&#34; width=&#34;452&#34; height=&#34;437&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/7.png 452w, https://silocitylabs.com/uploads/2018/01/7-300x290.png 300w&#34; sizes=&#34;(max-width: 452px) 100vw, 452px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Open WinSCP (&lt;em&gt;select SCP as file protocol)&lt;/em&gt; and connect to 192.168.29.1 using a admin:password or admin:admin&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/9.png&#34;&gt;&lt;img class=&#34;wp-image-423&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/9.png&#34; width=&#34;626&#34; height=&#34;423&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/9.png 626w, https://silocitylabs.com/uploads/2018/01/9-300x203.png 300w&#34; sizes=&#34;(max-width: 626px) 100vw, 626px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cat /dev/mtd0 &amp;gt; original_cfe.bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In WinSCP refresh the window on the right side and note that original_cfe.bin is present&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Copy original_cfe.bin to a local drive&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Upload original_cfe.bin to &lt;a href=&#34;https://cfeditor.pipeline.sh/&#34;&gt;https://cfeditor.pipeline.sh/&lt;/a&gt; &amp;gt; Select 1.0.2.0 US (AiMesh for 384+ builds) as Source CFE &amp;gt; Download the new .bin &amp;gt; rename it to new_cfe.bin (Optional, You can check Max for TX power to avoid doing step 5 again)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/10.png&#34;&gt;&lt;img class=&#34;wp-image-421&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/10-1024x562.png&#34; width=&#34;678&#34; height=&#34;372&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/10-1024x562.png 1024w, https://silocitylabs.com/uploads/2018/01/10-300x165.png 300w, https://silocitylabs.com/uploads/2018/01/10-768x421.png 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Upload &lt;strong&gt;new_cfe.bin&lt;/strong&gt; &amp;amp; &lt;strong&gt;mtd-write&lt;/strong&gt; &amp;amp; &lt;strong&gt;FW_RT_AC68U_30043763626.trx &lt;/strong&gt;to router through WinSCP. Files located inside &amp;#8220;Flash Images AC68U&amp;#8221; folder.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;chmod u+x mtd-write&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;./mtd-write new_cfe.bin boot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;mtd-write2 FW_RT_AC68U_30043763626.trx linux&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You may get an error from putty terminal, you can ignore it.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4. NVRAM reset:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Power off router&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Wait 10 seconds&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Press and hold WPS button&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Power up the router and continue to hold WPS button for 15-20 seconds&lt;/em&gt;&lt;del&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;wait for reboot 2-5 mins&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.4. Flash Asus stock firmware:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Reset PC IP back to default from steps 2.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/Untitled5.png&#34;&gt;&lt;img class=&#34;wp-image-418&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/Untitled5.png&#34; width=&#34;400&#34; height=&#34;455&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/Untitled5.png 400w, https://silocitylabs.com/uploads/2018/01/Untitled5-264x300.png 264w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log in to router using 192.168.1.1 and the router is now an AC68U with 64MB jffs&lt;/li&gt;
-&lt;li&gt;Under Administration &amp;gt; Firmware Upgrade. upload &lt;strong&gt;FW_RT_AC68U_3.0.0.4.382.18881.trx&lt;/strong&gt; located in the &amp;#8220;Latest Stock AC68U&amp;#8221; folder.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/11.png&#34;&gt;&lt;img class=&#34;wp-image-420&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/11-1024x712.png&#34; width=&#34;678&#34; height=&#34;471&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/11-1024x712.png 1024w, https://silocitylabs.com/uploads/2018/01/11-300x208.png 300w, https://silocitylabs.com/uploads/2018/01/11-768x534.png 768w, https://silocitylabs.com/uploads/2018/01/11.png 1449w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Complete! If you continue, you will be going from stock asus to a custom firmware that will enable hardware acceleration and provide you with more benefits in performance and features.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;3-how-to-flash-ac68u-to-merlin&#34;&gt;3. How to flash AC68U to Merlin:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make sure you are on the latest stock version, older versions use &lt;a href=&#34;https://github.com/RMerl/asuswrt-merlin/wiki/Installation&#34;&gt;different file structures&lt;/a&gt; and may affect this installation.&lt;/li&gt;
-&lt;li&gt;Under Administration &amp;gt; Firmware Upgrade. upload &lt;strong&gt;RT-AC68U_380.69_0.trx&lt;/strong&gt; located in the &amp;#8220;Latest Merlin&amp;#8221; folder.&lt;/li&gt;
-&lt;li&gt;Perform an NVRAM reset from steps 2.4&lt;/li&gt;
-&lt;li&gt;Complete! Its that simple.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;4-ac68u-overclock&#34;&gt;4. AC68U Overclock:&lt;/h2&gt;
-
-&lt;p&gt;The T-Mobile version of the router comes clocked at 800mhz. Overclock it to 1ghz with these instructions (only tested with Merlin build):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make sure to have ssh enabled. Go to Administration &amp;gt; System &amp;gt; Enable SSH &amp;gt; LAN only &amp;gt; Apply&lt;/li&gt;
-&lt;li&gt;Log in to router using putty and type the following commands
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;nvram get clkfreq&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nvram set clkfreq=1000,800&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nvram commit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Reboot&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;5-ac68u-max-tx-power&#34;&gt;5. AC68U Max TX Power:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Log in to router using putty&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cat /dev/mtd0 &amp;gt; original_cfe.bin&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In WinSCP refresh the window on the right side and note that original_cfe.bin is present&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Copy original_cfe.bin to a local drive&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Upload original_cfe.bin to &lt;a href=&#34;https://cfeditor.pipeline.sh/&#34;&gt;https://cfeditor.pipeline.sh/&lt;/a&gt; &amp;gt; Select 1.0.2.0 US as Source CFE &amp;gt; Check Max TX Power &amp;gt; Download the new .bin &amp;gt; rename it to new_cfe.bin&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Upload &lt;strong&gt;new_cfe.bin&lt;/strong&gt; &amp;amp; &lt;strong&gt;mtd-write&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;to router through WinSCP.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;chmod u+x mtd-write&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In Putty type:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;./mtd-write new_cfe.bin boot&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reboot&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I updated my router firmware to the latest 384 build of Merlin which added mesh networking. I noticed my overclock settings and tx power were reset back to stock settings. After performing the above steps all I had to add to it was to Select 1.0.2.0 US &lt;strong&gt;AiMesh&lt;/strong&gt; as Source CFE for cfeditor.pipeline.sh website for firmware versions 384+&lt;/p&gt;</description>
+&lt;p&gt;Update: Asus began rolling back firmware on the stock setups. They are not providing Merlin with the source for Ai-Mesh so you need to be on stock to use it. I have updated the guide to provide instructions on how to prevent the rollback from happening. You can also use this guide to recover from a rollback.&lt;/p&gt;</description>
     </item>
     
   </channel>

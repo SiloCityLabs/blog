@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wall Mount on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/wall-mount/index.xml</link>
-    <description>Recent content in Wall Mount on SCL Blog</description>
+    <title>wall mount on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/wall-mount/</link>
+    <description>Recent content in wall mount on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/wall-mount/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Oct 2018 03:08:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/wall-mount/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Wall mounted Google home free</title>
@@ -21,18 +24,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/10/20181027_2304361152181891921713046.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After u have the 3 ties in place. Just plug it in and you should be set.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/10/20181027_2304573395186432420616044.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want a more secure grip for free you can use two methods. Assuming u have common household materials.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Small amount of hot glue where the usb cable is. On the sorrounding, just enought so that you can pull it off if you decide to move it.&lt;/li&gt;
-&lt;li&gt;Use double sided 3M tape behind the mini to secure it to the wall.&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;After u have the 3 ties in place. Just plug it in and you should be set.&lt;/p&gt;</description>
     </item>
     
   </channel>

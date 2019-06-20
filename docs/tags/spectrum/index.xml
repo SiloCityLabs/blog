@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spectrum on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/spectrum/index.xml</link>
-    <description>Recent content in Spectrum on SCL Blog</description>
+    <title>spectrum on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/spectrum/</link>
+    <description>Recent content in spectrum on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/spectrum/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Jan 2019 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/spectrum/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>How to get 400mbps for 3 years at $44.99</title>
@@ -19,19 +22,7 @@
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;#8217;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;
-
-&lt;p&gt;Step 2: Go online 4 days later and enter your address on the website for pricing.&lt;/p&gt;
-
-&lt;p&gt;Step 3: Keep trying step 2 until you see pricing for 400mpbs for 2 years at $44.99 on the website.&lt;/p&gt;
-
-&lt;p&gt;Step 4: Call once you see the pricing on the website 2 days later. Then you will be offered 400mbps for 3 years at $44.99.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;wp-image-878&#34; src=&#34;https://silocitylabs.com/uploads/2019/01/photo_2019-01-08_14-31-55.jpg&#34; width=&#34;350&#34; height=&#34;200&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This infuriates me about their sales tactics. But it seems that every time you leave a trace on their sales it bumps the plan higher and higher. I&amp;#8217;m not sure how high they are willing to go. This promo worked for Buffalo, NY. Let me know in the comments if you have had any success or have found a way to get into this price lock period for existing customers. I&amp;#8217;m eager to get this speed and pricing for my house with 100mpbs.&lt;/p&gt;</description>
+&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;#8217;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resin on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/resin/index.xml</link>
-    <description>Recent content in Resin on SCL Blog</description>
+    <title>resin on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/resin/</link>
+    <description>Recent content in resin on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <atom:link href="https://silocitylabs.com/tags/resin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 May 2019 23:30:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/resin/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Hobbyist 3d printer roundup of 2019</title>
@@ -19,31 +22,7 @@
 
 &lt;p&gt;We started to try and simplify remote access by using Teamviewer and even went as far as to buy a CEL Root SD card. The CEL Root was even worse than our current methods. This is when we finally had it. We wanted an open source printer with a decent bed, 3rd party parts, and Octoprint support.&lt;/p&gt;
 
-&lt;p&gt;Together me and my team came up with the list of hobby printers under $2000. We&amp;#8217;ll get a decent filament printer now and a small resin printer later.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;We want a printer that:&lt;/p&gt;
-
-&lt;p&gt;-has a larger printer volume (CEL Robox: 210x150x100mm, 3150 m³)&lt;/p&gt;
-
-&lt;p&gt;-uses open source software&lt;/p&gt;
-
-&lt;p&gt;-doesn&amp;#8217;t need significant modification out of the box&lt;/p&gt;
-
-&lt;p&gt;-supports higher temp materials like nylon&lt;/p&gt;
-
-&lt;p&gt;-supports dual-material or can be upgraded&lt;/p&gt;
-
-&lt;p&gt;We ended up choosing the Prusa i3 mk3 filament printer. It had great community support, open source software, Octoprint, high temp material support, excellent price per volume, and double the volume of the next runner up. There&amp;#8217;s a dual material upgrade that we&amp;#8217;ll check out in the future. The Flashforge was the runner up &amp;#8211; it cost $150 more, it&amp;#8217;s a little smaller, and comes with dual material support out of the box.&lt;/p&gt;
-
-&lt;p&gt;We have not made any decision on a resin printer. For the limited material support we did not want to pay over $800 for any of them. Unfortunately the only open source resin printer, the Prusa SL1, surpasses our budget. The Anycubic Photon looks decent though and is popular with the figurine community.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;iframe style=&#34;width: 100%; height: 420px; border: 0;&#34; src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vSemtCvLdcGtrIwtKpap0Ga_aQcG25TXQOzlk9U9uto2AATk715MCw7mFTbkiZ3hBV3hMUNRJtT14pa/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Let us know in the comments below if you know of a printer we can add to this list.&lt;/p&gt;</description>
+&lt;p&gt;Together me and my team came up with the list of hobby printers under $2000. We&amp;#8217;ll get a decent filament printer now and a small resin printer later.&lt;/p&gt;</description>
     </item>
     
   </channel>
