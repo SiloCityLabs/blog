@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>Pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>linux</title>
       <link>https://silocitylabs.com/tags/linux/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -36,6 +27,15 @@
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/minimal-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
       <description></description>
     </item>
     
@@ -490,24 +490,6 @@
     </item>
     
     <item>
-      <title>google home mini</title>
-      <link>https://silocitylabs.com/tags/google-home-mini/</link>
-      <pubDate>Sun, 23 Dec 2018 16:34:52 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/google-home-mini/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hub</title>
-      <link>https://silocitylabs.com/tags/hub/</link>
-      <pubDate>Sun, 23 Dec 2018 16:34:52 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/hub/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>steam</title>
       <link>https://silocitylabs.com/tags/steam/</link>
       <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
@@ -612,6 +594,15 @@
       <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/waterproof/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google home mini</title>
+      <link>https://silocitylabs.com/tags/google-home-mini/</link>
+      <pubDate>Sun, 28 Oct 2018 03:08:14 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/google-home-mini/</guid>
       <description></description>
     </item>
     
