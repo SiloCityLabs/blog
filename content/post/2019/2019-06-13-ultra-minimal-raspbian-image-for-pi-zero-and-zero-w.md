@@ -9,8 +9,8 @@ categories:
   - Projects
 tags:
   - linux
-  - minimal
-  - Pi
+  - minimal pi
+  - pi
   - raspberry
 
 ---
