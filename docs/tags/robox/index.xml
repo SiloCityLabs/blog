@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>robox on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/robox/</link>
-    <description>Recent content in robox on SCL Blog</description>
+    <title>Robox on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/robox/index.xml</link>
+    <description>Recent content in Robox on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 15 Dec 2017 01:05:05 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/robox/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/robox/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New print bed</title>
@@ -34,7 +31,23 @@
 &lt;li&gt;&lt;p&gt;Set height&amp;nbsp;&lt;del&gt;4&lt;/del&gt;&amp;nbsp;&lt;del&gt;6&lt;/del&gt; 8 clicks higher than this point (i.e. 0.4 mm)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Proceed as normal&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_15&#34; aria-describedby=&#34;caption-attachment-15&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-15&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/1bdb00e1-a99a-4480-8f61-057144940b66-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/1bdb00e1-a99a-4480-8f61-057144940b66-300x225.jpg 300w, https://silocitylabs.com/uploads/2017/12/1bdb00e1-a99a-4480-8f61-057144940b66-768x576.jpg 768w, https://silocitylabs.com/uploads/2017/12/1bdb00e1-a99a-4480-8f61-057144940b66.jpg 800w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][3]&lt;figcaption id=&#34;caption-attachment-15&#34; class=&#34;wp-caption-text&#34;&gt;Starting a test print now to see how it turns out.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Edit:&lt;/p&gt;
+
+&lt;p style=&#34;text-align: left;&#34;&gt;
+  Turns out that 6 clicks was not enough, I was unable to remove the print without damaging it. Had to rip off the print and clean the sheet with a light dab of acetone. Trying once more with 8 clicks.
+&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_41&#34; aria-describedby=&#34;caption-attachment-41&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption&#34;&gt;[&lt;img class=&#34;wp-image-41&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/ba791e7d-e132-458c-b953-56bfdb93b5cc-300x237.jpg&#34; width=&#34;300&#34; height=&#34;237&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/ba791e7d-e132-458c-b953-56bfdb93b5cc-300x237.jpg 300w, https://silocitylabs.com/uploads/2017/12/ba791e7d-e132-458c-b953-56bfdb93b5cc.jpg 597w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][4]&lt;figcaption id=&#34;caption-attachment-41&#34; class=&#34;wp-caption-text&#34;&gt;Failed Print, Stuck&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure id=&#34;attachment_43&#34; aria-describedby=&#34;caption-attachment-43&#34; style=&#34;width: 225px&#34; class=&#34;wp-caption&#34;&gt;[&lt;img class=&#34;wp-image-43&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/80f87d37-4beb-496d-a536-12245638f77f-225x300.jpg&#34; width=&#34;225&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/80f87d37-4beb-496d-a536-12245638f77f-225x300.jpg 225w, https://silocitylabs.com/uploads/2017/12/80f87d37-4beb-496d-a536-12245638f77f.jpg 600w&#34; sizes=&#34;(max-width: 225px) 100vw, 225px&#34; /&gt;][5]&lt;figcaption id=&#34;caption-attachment-43&#34; class=&#34;wp-caption-text&#34;&gt;Using acetone to clean&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure id=&#34;attachment_42&#34; aria-describedby=&#34;caption-attachment-42&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignleft&#34;&gt;[&lt;img class=&#34;wp-image-42&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/fa6f1568-dc41-44f8-941c-3d11eab22fd9-300x276.jpg&#34; width=&#34;300&#34; height=&#34;276&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/fa6f1568-dc41-44f8-941c-3d11eab22fd9-300x276.jpg 300w, https://silocitylabs.com/uploads/2017/12/fa6f1568-dc41-44f8-941c-3d11eab22fd9.jpg 566w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][6]&lt;figcaption id=&#34;caption-attachment-42&#34; class=&#34;wp-caption-text&#34;&gt;Maybe it removed the roughness, hopefully it works&lt;/figcaption&gt;&lt;/figure&gt;</description>
     </item>
     
   </channel>

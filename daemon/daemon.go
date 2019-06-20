@@ -29,44 +29,54 @@ func main() {
 	hook, _ := github.New(github.Options.Secret(settings.GithubSecret))
 
 	http.HandleFunc("/webhooks", func(w http.ResponseWriter, r *http.Request) {
-		payload, err := hook.Parse(r, github.PushEvent)
+		fmt.Println("Server hit")
+
+		payload, err := hook.Parse(r, github.PushEvent, github.PingEvent)
 		if err != nil {
-			if err == github.ErrEventNotFound {
-				// ok event wasn't one of the ones asked to be parsed
-				fmt.Printf("%+v\n", err.Error())
-			}
+			fmt.Printf("%+v\n", err.Error())
+			return
 		}
+
 		switch payload.(type) {
 
 		case github.PushPayload:
 			fmt.Printf("Build executing...\n")
 			go checkPush(payload.(github.PushPayload))
+		case github.PingPayload:
+			fmt.Printf("Ping ... Pong\n")
 		}
 	})
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":"+settings.Port, nil)
 }
 
 // Check to see if the docs folder was updated, if so ignore becouse it was already built
 func checkPush(pullRequest github.PushPayload) {
 	for _, commit := range pullRequest.Commits {
 		for _, file := range commit.Added {
+			fmt.Println("File Added: " + file)
 			if strings.HasPrefix(file, "docs/") {
+				fmt.Println("Doc file, no build needed")
 				return
 			}
 		}
 		for _, file := range commit.Removed {
+			fmt.Println("File Removed: " + file)
 			if strings.HasPrefix(file, "docs/") {
+				fmt.Println("Doc file, no build needed")
 				return
 			}
 		}
 		for _, file := range commit.Modified {
+			fmt.Println("File Modified: " + file)
 			if strings.HasPrefix(file, "docs/") {
+				fmt.Println("Doc file, no build needed")
 				return
 			}
 		}
 	}
 
 	//Docs hasnt been built. lets do it
+	fmt.Println("Update Site running...")
 	updateSite()
 }
 
@@ -153,5 +163,11 @@ func loadSettings() {
 		log.Fatal(err)
 	}
 
-	yaml.Unmarshal(b, &settings)
+	erryaml := yaml.Unmarshal(b, &settings)
+	if erryaml != nil {
+		log.Fatal(erryaml)
+	}
+
+	fmt.Printf("Starting: %v\n", settings)
 }
+

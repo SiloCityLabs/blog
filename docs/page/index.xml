@@ -2,14 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on SCL Blog</title>
-    <link>https://silocitylabs.com/page/</link>
+    <link>https://silocitylabs.com/page/index.xml</link>
     <description>Recent content in Pages on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    
-	<atom:link href="https://silocitylabs.com/page/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Us</title>
@@ -17,20 +15,38 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/page/about/</guid>
-      <description>We are a group of developers who work together to help one another strive at our fields.
-What we do best:
-Search Engine Optimization Our SEO experts can get your site on google and Bing!
-Web Design Our team has the skillset to get you your desired look and function.
-Mobile Apps We strive to keep all sites mobile ready and if thats not enough, we also provide Android development</description>
+      <description>
+
+&lt;p&gt;We are a group of developers who work together to help one another strive at our fields.&lt;/p&gt;
+
+&lt;p&gt;What we do best:&lt;/p&gt;
+
+&lt;h4 id=&#34;search-engine-optimization&#34;&gt;Search Engine Optimization&lt;/h4&gt;
+
+&lt;p&gt;Our SEO experts can get your site on google and Bing!&lt;/p&gt;
+
+&lt;h4 id=&#34;web-design&#34;&gt;Web Design&lt;/h4&gt;
+
+&lt;p&gt;Our team has the skillset to get you your desired look and function.&lt;/p&gt;
+
+&lt;h4 id=&#34;mobile-apps&#34;&gt;Mobile Apps&lt;/h4&gt;
+
+&lt;p&gt;We strive to keep all sites mobile ready and if thats not enough, we also provide Android development&lt;/p&gt;
+
+&lt;h4 id=&#34;development&#34;&gt;Development&lt;/h4&gt;
+
+&lt;p&gt;Have your custom system designed for your needs. We specialize in Go, PHP, Java, HTML and many more web and software languages&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Newsletter</title>
-      <link>https://silocitylabs.com/newsletter/</link>
+      <link>https://silocitylabs.com/newsletter</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/newsletter/</guid>
-      <description> </description>
+      <guid>https://silocitylabs.com/newsletter</guid>
+      <description>&lt;script type=&#34;text/javascript&#34; src=&#34;//track.techreanimate.com/form/generate.js?id=12&#34;&gt;&lt;/script&gt;
+</description>
     </item>
     
     <item>
@@ -39,10 +55,22 @@ Mobile Apps We strive to keep all sites mobile ready and if thats not enough, we
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/page/team/</guid>
-      <description>Luis Rodriguez Portfolio: http://luisdrodriguez.com/
-LinkedIn: http://tra.li/portfolio-linkedin
-Robert Greene LinkedIn: http://tra.li/portfolio-linkedin
-Andrew Elbaneh LinkedIn: https://www.linkedin.com/in/andrew-elbaneh-7b105445/</description>
+      <description>
+
+&lt;h2 id=&#34;luis-rodriguez&#34;&gt;Luis Rodriguez&lt;/h2&gt;
+
+&lt;p&gt;Portfolio: &lt;a href=&#34;http://luisdrodriguez.com/&#34;&gt;http://luisdrodriguez.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;LinkedIn: &lt;a href=&#34;http://tra.li/portfolio-linkedin&#34;&gt;http://tra.li/portfolio-linkedin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;robert-greene&#34;&gt;Robert Greene&lt;/h2&gt;
+
+&lt;p&gt;LinkedIn: &lt;a href=&#34;http://tra.li/portfolio-linkedin&#34;&gt;http://tra.li/portfolio-linkedin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;andrew-elbaneh&#34;&gt;Andrew Elbaneh&lt;/h2&gt;
+
+&lt;p&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/andrew-elbaneh-7b105445/&#34;&gt;https://www.linkedin.com/in/andrew-elbaneh-7b105445/&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

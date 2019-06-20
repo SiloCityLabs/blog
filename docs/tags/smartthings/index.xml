@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>smartthings on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/smartthings/</link>
-    <description>Recent content in smartthings on SCL Blog</description>
+    <title>Smartthings on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/smartthings/index.xml</link>
+    <description>Recent content in Smartthings on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 11 Oct 2018 00:48:54 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/smartthings/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/smartthings/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>12v circuit for battery backup</title>
@@ -27,7 +24,45 @@
 &lt;li&gt;12v to 5v dc to dc step down.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;</description>
+&lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-618&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg&#34; width=&#34;3000&#34; height=&#34;2284&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-300x228.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-768x585.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-1024x780.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a couple of minutes fiddling with it. I realized the variable resister was bad. I traced the wires and its only being used as a signal voltage not for power source. It was safe for me to use a basic resister in place. 4 tries later i found one in my bin.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-619&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146.jpg&#34; width=&#34;3000&#34; height=&#34;2250&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_130540712520492359021146-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5.05v is what this resister brought me to. Perfect replacement, time to solder it on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-620&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371.jpg&#34; width=&#34;2960&#34; height=&#34;3000&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371.jpg 1894w, https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371-296x300.jpg 296w, https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371-768x778.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1306261392998551278179371-1010x1024.jpg 1010w&#34; sizes=&#34;(max-width: 2960px) 100vw, 2960px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-621&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375.jpg&#34; width=&#34;720&#34; height=&#34;1280&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375.jpg 720w, https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375-169x300.jpg 169w, https://silocitylabs.com/uploads/2018/09/img_20180920_220444_0537308767567549541375-576x1024.jpg 576w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now lets get it mounted inside my power supply.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-622&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164.jpg&#34; width=&#34;2271&#34; height=&#34;2271&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164.jpg 150w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164-300x300.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164-768x768.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1305166070649590962164-1024x1024.jpg 1024w&#34; sizes=&#34;(max-width: 2271px) 100vw, 2271px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-623&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180920_2214577970207237597030836-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally lets plug in my 5v device. Smartthings hub.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-625&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180920_221512239302413423304600-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After mounting this and plugging it in. It reduced the power usage by about 250ma. I was also able to add other devices to the circuit after noticing the smart things hub did not use the power specified on the original adapter.&lt;/p&gt;
+
+&lt;p&gt;Other devices were easy. Everything was running on 12v already so it was a matter of cabling it all together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-626&#34; src=&#34;https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004.jpg&#34; width=&#34;3000&#34; height=&#34;2250&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004.jpg 1920w, https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/10/20180821_223116562343801667564004-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-627&#34; src=&#34;https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264.jpg 1440w, https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/10/20180830_2305024748197710256815264-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After I had the cables hooked up. I added connectors on the other ends to the devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-628&#34; src=&#34;https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110.jpg 1440w, https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/10/20180830_1739504215953853526811110-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With most of my devices but servers switched over I can begin work on a battery backup system. I will be detailing that in a future blog post.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,10 +71,26 @@
       <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</guid>
-      <description>Finally &amp;#8211; off the breadboard and into a working environment. It&amp;#8217;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
-&amp;nbsp;
-  Day 1:
-A few issues. I accidentally flipped the polarities on the siren. I will eventually implement a 12v regulator to up the voltage for the siren for the full 120db power.</description>
+      <description>&lt;p&gt;Finally &amp;#8211; off the breadboard and into a working environment. It&amp;#8217;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/XZ2zcGssKz0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;Day 1:&lt;/p&gt;
+
+&lt;p&gt;A few issues. I accidentally flipped the polarities on the siren. I will eventually implement a 12v regulator to up the voltage for the siren for the full 120db power.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Day 2:&lt;/p&gt;
+
+&lt;p&gt;My cat set off one of the motion sensors at 6AM, activating the siren. I need to adjust the sensitivity or get pet-friendly motion sensors.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -48,11 +99,22 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <pubDate>Fri, 19 Jan 2018 14:43:55 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
-      <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
-&amp;nbsp;
-  
-&amp;nbsp;
-Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
+      <description>&lt;p&gt;I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/q09ws1L-db0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/01/photo_2018-01-19_09-36-09.jpg&#34;&gt;&lt;img class=&#34;wp-image-324&#34; src=&#34;https://silocitylabs.com/uploads/2018/01/photo_2018-01-19_09-36-09-300x169.jpg&#34; width=&#34;300&#34; height=&#34;169&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/01/photo_2018-01-19_09-36-09-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/01/photo_2018-01-19_09-36-09-768x432.jpg 768w, https://silocitylabs.com/uploads/2018/01/photo_2018-01-19_09-36-09-1024x576.jpg 1024w, https://silocitylabs.com/uploads/2018/01/photo_2018-01-19_09-36-09.jpg 1280w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Update to: &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/&#34;&gt;https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -77,7 +139,175 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
+&lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Device compatibility&lt;/strong&gt; &amp;#8211; This hub unlike others will work with any Zigbee and Z-wave certified device out of the box. Other hubs like Phillips hue are more catered to the devices those companies sell. I was even able to add a hue bulb to my hub. The only thing wink has that I would have wanted was the 433mhz range for my security sensors, but they are locked down to a specific brand that is a partner of theirs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open Source Community&lt;/strong&gt; &amp;#8211; None of these hubs have the open source community behind it like the SmartThings. Samsung even has a &lt;a href=&#34;https://github.com/SmartThingsCommunity/&#34;&gt;public github repository&lt;/a&gt; for people to edit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Faster Wifi&lt;/strong&gt; &amp;#8211; This hub ties directly into your router via ethernet. But this isn&amp;#8217;t the main reason, hubless wifi devices may save you the cost of a hub now, but the more you have the more it bogs your main wifi. Even if you seclude them on a separate router, it can still cause interference that slows down your wifi or even lowers your wifi range. Zigbee and Z-wave Devices both operate on separate frequencies that are entirely separate from wifi.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The only downside:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No Apple HomeKit support&lt;/strong&gt; &amp;#8211; HomeKit SDK &lt;a href=&#34;https://community.smartthings.com/t/homekit-intergration/50296/3&#34;&gt;really limits the capabilities&lt;/a&gt; of what a true smart home can do. I have no real need for HomeKit being an Android/Google user though. With all the assistants you can buy out of the box, who really needs HomeKit. Its not like Siri was really useful anyway.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smart Bulbs&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;I personally have a set budget per bulb that I would pay. I would never pay anything above $10/each under any circumstances, color changing or not. My favorite bulb at the moment seems to be the affordable Sengled Classic A19. This bulb has a very nice light output at 800 lumens. I paid just under $7/each on sale, as they very often go on sale on &lt;a href=&#34;https://www.amazon.com/Sengled-Compatible-SmartThings-Requires-Assistant/dp/B01N7I4X94/&#34;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg&#34;&gt;&lt;img class=&#34;wp-image-106&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg&#34; alt=&#34;Sengled Classic A19&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 150w, https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-768x768.jpg 768w, https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 1000w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smart Switch Control&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Why switches vs smart bulbs? Simplicity!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can wire it into a pre-existing wall switch&lt;/li&gt;
+&lt;li&gt;No smart bulb needed &amp;#8211; Great for chandeliers where you have 4-6 bulbs that could be about $40-60 in bulbs vs $26 switch.&lt;/li&gt;
+&lt;li&gt;2 Relay Switch &amp;#8211; Save money where you have two switches on a single plate. Cutting the cost down in half.&lt;/li&gt;
+&lt;li&gt;Easier to use &amp;#8211; No need to tape the wall switch into the always on position.&lt;/li&gt;
+&lt;li&gt;It just makes sense! Mix old tech with the new.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/41vrEw9HFL.jpg&#34;&gt;&lt;img class=&#34;wp-image-72&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/41vrEw9HFL-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/41vrEw9HFL-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/41vrEw9HFL.jpg 150w, https://silocitylabs.com/uploads/2017/12/41vrEw9HFL.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smart Plugs&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;I use these anywhere where I have lamps, automating lighting like in my turtle tank or Christmas lights. These even record power usage so you can place them on appliances like furnaces, 3d printers, etc to monitor power usage over time. &lt;a href=&#34;https://www.amazon.com/Samsung-F-OUT-US-2-SmartThings-Outlet-White/dp/B073GV2PQY/&#34;&gt;Amazon link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/856418004501.jpg&#34;&gt;&lt;img class=&#34;wp-image-208&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/856418004501-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/856418004501-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/856418004501.jpg 150w, https://silocitylabs.com/uploads/2017/12/856418004501-768x768.jpg 768w, https://silocitylabs.com/uploads/2017/12/856418004501.jpg 900w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Added missing switches&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;I have 3 locations in my house that have no wall switch. All 3 have pull strings. Basement lights (x6), back hall, and front hall. I was able to put in place a Sengled smart bulb and a battery smart switch. These switches last up to 10 years on battery and can be placed in a real gang box like any other switch, or double-side taped to the wall to mimic a switch plate. The most affordable switch I found was a Lutron Smart Switch on &lt;a href=&#34;https://www.amazon.com/gp/product/B00KLAXFQ0/&#34;&gt;Amazon.&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_204&#34; aria-describedby=&#34;caption-attachment-204&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-204&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/Wall-Mount-Lutron-Pico-Remote-Control-300x210.jpg&#34; width=&#34;300&#34; height=&#34;210&#34; /&gt;][10]&lt;figcaption id=&#34;caption-attachment-204&#34; class=&#34;wp-caption-text&#34;&gt;Lutron Remote with faux plate&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thermostat&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Nest. There is a little secret most people may not know. You can get one for under $100. My wife said I was not gonna spend more than $100. I saw an opportunity and she said a deal was a deal. Most electric or natural gas providers give incentives for using a nest smart thermostat. I purchased mine for $97, The Nest E. Its not metalic but it works just the same. If you have a complicated AC/Heating system with zones and all that crazy stuff then the E version may not have enough wiring pins. Sign up for an online account to pay your electric bill and sign up for newsletter emails. On holidays they usually send out emails giving you the chance to get these cheap. There&amp;#8217;s also an ongoing &lt;a href=&#34;https://nest.com/energy-partners/national-grid/&#34;&gt;rebate program&lt;/a&gt; online.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/NestE.png&#34;&gt;&lt;img class=&#34;wp-image-210&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/NestE-300x224.png&#34; width=&#34;300&#34; height=&#34;224&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/NestE-300x224.png 300w, https://silocitylabs.com/uploads/2017/12/NestE.png 640w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security Sensors&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;This part is for more experienced users. Using a wireless module I created a mini hub essentially that interfaces 433mhz to Samsung SmartThings. Using an &lt;a href=&#34;https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&amp;amp;ipn=icep&amp;amp;toolid=20004&amp;amp;campid=5338203480&amp;amp;mpre=https%3A%2F%2Fwww.ebay.com%2Fitm%2F272408386985&#34;&gt;ESP8266&lt;/a&gt; with our &lt;a href=&#34;https://github.com/SiloCityLabs/ESP-Smartthings&#34;&gt;open source code&lt;/a&gt; and a &lt;a href=&#34;https://www.ebay.com/itm/401085388270&#34;&gt;wireless 433mhz receiver&lt;/a&gt;, you can add super cheap security sensors from &lt;a href=&#34;https://www.ebay.com/itm/5x-433MHz-Wireless-Door-Sensor-Detector-Magnetic-Monitor-Security-Alarm-US-Stock/152127147328&#34;&gt;ebay&lt;/a&gt;. These sensors usually sell for about $1-2/each and can be purchased in bulk quantities. Other types of sensors include motion sensors, door/window sensors, leak sensors, carbon monoxide sensors and many more. Just search 433mhz on ebay and you will get a bunch of results. Unfortunately I will only use these as a one way signal, I don&amp;#8217;t trust this open frequency to be used to control devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/s-l1600.jpg&#34;&gt;&lt;img class=&#34;wp-image-206&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/s-l1600-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/s-l1600-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/s-l1600.jpg 150w, https://silocitylabs.com/uploads/2017/12/s-l1600-768x768.jpg 768w, https://silocitylabs.com/uploads/2017/12/s-l1600-1024x1024.jpg 1024w, https://silocitylabs.com/uploads/2017/12/s-l1600.jpg 1600w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Automation Rules&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;These are probably the best thing about owning a smart home system. My current rules in places are below:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;At Sunrise: Turn on Turtle Tank UV Light&lt;/li&gt;
+&lt;li&gt;At Sunset: Turn off Turtle Tank UV Light,&lt;/li&gt;
+&lt;li&gt;4 Hours after Sunset: Turn off Turtle tank Heat lamp&lt;/li&gt;
+&lt;li&gt;At 1AM: turn off all designated lights, backyard, basement, etc. Save some $$&lt;/li&gt;
+&lt;li&gt;Arrival: When me or my wife arrive, turn on backyard/driveway lights and entryway light.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Semi-Smart Lock&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Nothing fancy here, just a basic pin code lock by Kwikset. Bluetooth smart locks are &lt;a href=&#34;https://www.youtube.com/watch?v=KrOReHwjCKI&#34;&gt;inevitably hacked&lt;/a&gt;. Wifi devices kill batteries. Nothing really interest me at the moment. I have a a Kwikset 910 pin code lock on both the front and rear entries of the home. Keyless entry along with my push-to-start car means I never see/use keys.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/product_header_electronic.jpg&#34;&gt;&lt;img class=&#34;wp-image-219&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/product_header_electronic-300x182.jpg&#34; width=&#34;300&#34; height=&#34;182&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/product_header_electronic-300x182.jpg 300w, https://silocitylabs.com/uploads/2017/12/product_header_electronic.jpg 400w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Android Auto&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Yea my car. When I arrive I can ask Google to power on my yard lights or turn off all the lights as I am leaving right from my car. No button press needed as Google is always listening. Doesn&amp;#8217;t work for Apple users since SmartThings lacks HomeKit support.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Batteries&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Don&amp;#8217;t cheap out on batteries for any of this stuff. &lt;strong&gt;Energizer&lt;/strong&gt; batteries have proven test results and outlast any other battery. Knockoff batteries are notoriously bad with fake capacity ratings. You don&amp;#8217;t need one of these smart home devices failing leaving you locked out, security-less, or even worse if you have a smart fire alarm.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3-Way Switch&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;The simple solution for this. Using a 1 relay switch on one side. Closing the connection on the other side and placing a fake switch in the panel in place solves this problem. This is in theory. I have yet to test this on my setup yet but it will be coming soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram.jpg&#34;&gt;&lt;img class=&#34;wp-image-235&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram-300x244.jpg&#34; width=&#34;300&#34; height=&#34;244&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram-300x244.jpg 300w, https://silocitylabs.com/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram.jpg 616w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Light Switch Controlling Socket&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;In my mother&amp;#8217;s house she has rooms where the light switch controls an outlet in the wall. This does not always end up very well. They usually get taped in the &lt;em&gt;On&lt;/em&gt; position or just never used because of lamps on the opposite ends of the room.&lt;/p&gt;
+
+&lt;p&gt;Solution: Remote Switches. You can place smart bulbs in the lamps and close the line with a wire nut to keep the outlet always on. Then place a remote switch in the gang box to control your lamps remotely.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Soon to be&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Not in my arsenal yet but these are a few devices I am keeping my eyes on.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Z-Wave fire alarm &amp;#8211; A little out of my budget for this kind of product. On &lt;a href=&#34;https://www.amazon.com/First-Alert-Z-Wave-Detector-Monoxide/dp/B00KMHXFAI/&#34;&gt;Amazon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;security cameras &amp;#8211; Not really sure yet how these work, but they caught my eye. By &lt;a href=&#34;https://www.arlo.com/en-us/default.aspx&#34;&gt;Netgear&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Zigbee smart strip &amp;#8211; Seems cheaper to get a strip vs multiple plugs in some instances. On &lt;a href=&#34;https://www.amazon.com/dp/B00H3RL6JW/&#34;&gt;Amazon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Doorbell &amp;#8211; I&amp;#8217;m in between &lt;a href=&#34;https://shop.ring.com/products/video-doorbell-pro&#34;&gt;Ring Pro&lt;/a&gt; and &lt;a href=&#34;https://aeotec.com/z-wave-doorbell&#34;&gt;Aeotec&lt;/a&gt;. Ring Pro needs an existing wire which I don&amp;#8217;t have.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Total cost&lt;/strong&gt;: (market value)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Sengled-Compatible-SmartThings-Requires-Assistant/dp/B01N7I4X94/&#34;&gt;Smart bulbs&lt;/a&gt; x 7 x $9.99 = $69.92
+
+&lt;ul&gt;
+&lt;li&gt;Often drop by 40% off&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Vision-Z-Wave-Micro-Switch-1-pack/dp/B01GQX1GFC/&#34;&gt;1 relay switch&lt;/a&gt; x 10 x $26.99 = &lt;del&gt;$269.90&lt;/del&gt; $251 (bulk)
+
+&lt;ul&gt;
+&lt;li&gt;Bulk rates available&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Vision-Z-Wave-Micro-Switch-relay/dp/B00R883YKU/&#34;&gt;2 relay switch&lt;/a&gt; x 5 x $29.95 = $149.75
+
+&lt;ul&gt;
+&lt;li&gt;Purchase from alternate sellers to save $7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/dp/B00KLAXFQ0/&#34;&gt;Remote switch&lt;/a&gt; x 3 x $15.91 = $47.73&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.walmart.com/ip/Google-Home-Mini-Chalk/159013183&#34;&gt;Google home mini&lt;/a&gt; x 3 x $29.00 = $87.00
+
+&lt;ul&gt;
+&lt;li&gt;Can often be acquired for free (&lt;a href=&#34;https://learn.arcadiapower.com/dplat/fb/lal/ghm/?utm_source=fb&amp;amp;utm_medium=cpc&amp;amp;utm_campaign=fbq118lalcitydplatghm&#34;&gt;free mini here&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bestbuy.com/site/nest-thermostat-e-white/6051016.p?skuId=6051016&#34;&gt;Nest E&lt;/a&gt; x 1 x $169.90 = $169.00 (free home mini, Offer valid 12/1/17–12/31/17)
+
+&lt;ul&gt;
+&lt;li&gt;Check electric/gas provider for promo offers&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Samsung-SmartThings-Outlet-Works-Amazon/dp/B00MI5V5N6/&#34;&gt;Smart plugs&lt;/a&gt; x 4 x $39.99 = $159.96
+
+&lt;ul&gt;
+&lt;li&gt;Often seen for $25 on sale&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ebay.com/itm/5PCS-Wireless-433MHz-Door-Window-Entry-Alarm-Warning-System-Magnetic-Sensor-A0F5/172301759887&#34;&gt;433mhz Security sensors&lt;/a&gt; x 20 x $2.32 = $46.40&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ebay.com/itm/ESP8266-ESP-12F-WIFI-Microcontroller-802-11N-Module-Arduino-NodeMCU-MicroPython/152766041599&#34;&gt;Esp8266 12F&lt;/a&gt; x 2 x $2.95 = $5.90&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ebay.com/itm/4X-433Mhz-RF-Transmitter-and-Receiver-Module-link-kit-for-Arduino-USA-seller/232298169165&#34;&gt;433mhz receiver&lt;/a&gt; x 2 x $6.95(4) = $6.95&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Kwikset-SmartCode-Electronic-Deadbolt-featuring/dp/B00NT1OX5K/&#34;&gt;kwikset locks 909&lt;/a&gt; x 2 x $81.41 = $162.82&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Energizer-Ultimate-Lithium-Batteries-Count/dp/B071D87WPV/&#34;&gt;Energizer AA batteries&lt;/a&gt; x 8 x $14.99(12) = $14.99
+
+&lt;ul&gt;
+&lt;li&gt;Total Smart home cost at market value: $1171.42&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don&amp;#8217;t get discouraged by the high price tag, You need to keep an eye out for deals. Many of these smart home items go on sale for over 50% off. A great forum I subscribed to is &lt;a href=&#34;https://community.smartthings.com/c/devices-integrations/deals&#34;&gt;SmartThings Deals&lt;/a&gt;, users post deals here all the time. This is how I got my bulbs for less than $7 each. I also received most of my google home mini&amp;#8217;s for free with select offers.&lt;/p&gt;
+
+&lt;p&gt;If you have any other smart home stuff you think should be on this list let me know in the comments.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,7 +316,10 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <pubDate>Tue, 26 Dec 2017 17:55:48 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/</guid>
-      <description>For Christmas my mother got a full smart home kit. Samsung SmartThings, sengled bulbs, google home. After pluging everything in the hub was having issues. Finding all bulbs in dome covers. I removed the glass from the dome cover and tried again with no luck. Afterwards I removed the bulb from the socket and put it in a lamp. Detected and added to smartthings fine in the lamp. Readded it to the dome cover and it works now!</description>
+      <description>&lt;p&gt;For Christmas my mother got a full smart home kit. Samsung SmartThings, sengled bulbs, google home. After pluging everything in the hub was having issues. Finding all bulbs in dome covers. I removed the glass from the dome cover and tried again with no luck. Afterwards I removed the bulb from the socket and put it in a lamp. Detected and added to smartthings fine in the lamp. Readded it to the dome cover and it works now!! Seems all I had to do is add it to the network beforehand so that it joined the zigbee mesh network. Has anyome faced similar issues?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/download6930924943770879338.jpeg&#34;&gt;&lt;img class=&#34;wp-image-192&#34; title=&#34;&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/download6930924943770879338.jpeg&#34; width=&#34;276&#34; height=&#34;276&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/download6930924943770879338.jpeg 276w, https://silocitylabs.com/uploads/2017/12/download6930924943770879338.jpeg 150w&#34; sizes=&#34;(max-width: 276px) 100vw, 276px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -98,9 +331,28 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;
 
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The device has arrived, I got it wired up and working. Bellow I attached the manual and a video of how to setup the device:&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_176&#34; aria-describedby=&#34;caption-attachment-176&#34; style=&#34;width: 678px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-176&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/zl7432us-manual-1024x702.png&#34; width=&#34;678&#34; height=&#34;465&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/zl7432us-manual.png 1024w, https://silocitylabs.com/uploads/2017/12/zl7432us-manual-300x206.png 300w, https://silocitylabs.com/uploads/2017/12/zl7432us-manual-768x527.png 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;][1]&lt;figcaption id=&#34;caption-attachment-176&#34; class=&#34;wp-caption-text&#34;&gt;zl7432us manual&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Installed in [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;] home wall.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg&#34;&gt;&lt;img class=&#34;wp-image-190&#34; title=&#34;Exposed wiring&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg&#34; width=&#34;940&#34; height=&#34;1253&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg 1440w, https://silocitylabs.com/uploads/2017/12/mvimg_20171224_20271185134117357629532-225x300.jpg 225w, https://silocitylabs.com/uploads/2017/12/mvimg_20171224_20271185134117357629532-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 940px) 100vw, 940px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure style=&#34;width: 930px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;size-full wp-image-189&#34; title=&#34;&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg&#34; width=&#34;930&#34; height=&#34;1240&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg 1440w, https://silocitylabs.com/uploads/2017/12/mvimg_20171224_2042033181531723782315879-225x300.jpg 225w, https://silocitylabs.com/uploads/2017/12/mvimg_20171224_2042033181531723782315879-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 930px) 100vw, 930px&#34; /&gt;][4]&lt;figcaption class=&#34;wp-caption-text&#34;&gt;Double gang wall outlet&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is an update to: &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/&#34;&gt;https://blog.silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,7 +363,21 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
-&lt;figure id=&#34;attachment_71&#34; aria-describedby=&#34;caption-attachment-71&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption&#34;&gt;[&lt;img class=&#34;wp-image-71&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg 150w, https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][2]&lt;figcaption id=&#34;caption-attachment-71&#34; class=&#34;wp-caption-text&#34;&gt;Double Toggle Switch&lt;/figcaption&gt;&lt;/figure&gt;</description>
+&lt;figure id=&#34;attachment_71&#34; aria-describedby=&#34;caption-attachment-71&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption&#34;&gt;[&lt;img class=&#34;wp-image-71&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg 150w, https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][2]&lt;figcaption id=&#34;caption-attachment-71&#34; class=&#34;wp-caption-text&#34;&gt;Double Toggle Switch&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Single Switch: &lt;a href=&#34;https://www.amazon.com/Vision-Z-Wave-Micro-Switch-1-pack/dp/B01GQX1GFC/&#34;&gt;Amazon $26.95&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Double Switch (using two in one saves space and money $15/each): &lt;a href=&#34;https://www.amazon.com/Vision-Z-Wave-Micro-Switch-relay/dp/B00R883YKU/&#34;&gt;Amazon $29.95&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_72&#34; aria-describedby=&#34;caption-attachment-72&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption&#34;&gt;[&lt;img class=&#34;wp-image-72&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/41vrEw9HFL-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/41vrEw9HFL-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/41vrEw9HFL.jpg 150w, https://silocitylabs.com/uploads/2017/12/41vrEw9HFL.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][5]&lt;figcaption id=&#34;caption-attachment-72&#34; class=&#34;wp-caption-text&#34;&gt;Vision Relay&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Once it arrives in the mail I will let you know the process I went through to get it working with SmartThings if I can. I noticed that monoprice had this exact same stock image but the product fell of the face of their website. Its most likely the same product which has been reported to work fine with SmartThings. We shall see&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,7 +386,14 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <pubDate>Mon, 04 Dec 2017 19:28:40 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/04/phillips-hue-smartthings/</guid>
-      <description>I&amp;#8217;m not really sure why it started working all of a sudden. I&amp;#8217;m glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols.</description>
+      <description>&lt;p&gt;I&amp;#8217;m not really sure why it started working all of a sudden. I&amp;#8217;m glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols. Talk about perfect timing though.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;figure id=&#34;attachment_105&#34; aria-describedby=&#34;caption-attachment-105&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-105&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/046677455293-APP-global-001-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/046677455293-APP-global-001-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/046677455293-APP-global-001.jpg 150w, https://silocitylabs.com/uploads/2017/12/046677455293-APP-global-001-768x768.jpg 768w, https://silocitylabs.com/uploads/2017/12/046677455293-APP-global-001-1024x1024.jpg 1024w, https://silocitylabs.com/uploads/2017/12/046677455293-APP-global-001.jpg 1250w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][1]&lt;figcaption id=&#34;caption-attachment-105&#34; class=&#34;wp-caption-text&#34;&gt;Hue White&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;figure id=&#34;attachment_106&#34; aria-describedby=&#34;caption-attachment-106&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption aligncenter&#34;&gt;[&lt;img class=&#34;wp-image-106&#34; src=&#34;https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg&#34; width=&#34;300&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg 300w, https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 150w, https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-768x768.jpg 768w, https://silocitylabs.com/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 1000w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][2]&lt;figcaption id=&#34;caption-attachment-106&#34; class=&#34;wp-caption-text&#34;&gt;Sengled Element Classic&lt;/figcaption&gt;&lt;/figure&gt;
+</description>
     </item>
     
     <item>
@@ -129,10 +402,16 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</guid>
-      <description>Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?
-I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.
-&amp;nbsp;
-Edit: I think I may have made a mistake buying zigbee chips.</description>
+      <description>&lt;p&gt;Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?&lt;/p&gt;
+
+&lt;p&gt;I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Edit: I think I may have made a mistake buying zigbee chips. So turns out zwave may have longer battery life compared to zigbee&amp;#8230; shoulda researched more&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>USB-C on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/usb-c/</link>
-    <description>Recent content in USB-C on SCL Blog</description>
+    <title>Usb C on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/usb-c/index.xml</link>
+    <description>Recent content in Usb C on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Wed, 29 May 2019 17:19:34 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/usb-c/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/usb-c/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Phone case gamepad, USB-C version</title>
@@ -20,7 +17,23 @@
       <guid>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;#8217;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;</description>
+&lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;#8217;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/6769521558992231498.jpg&#34; alt=&#34;cardboard gamepad mockup&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I tried a few mockups and settled on a 2 piece design, with the halves connected by a ribbon cable. The left and right side share the same PCB but have different components attached. The &amp;#8220;main&amp;#8221; side (probably right side) will have most of the components and the USB connector. The &amp;#8220;aux&amp;#8221; side (probably left side) will have just an LED for status indication &amp;#8211; all the button contacts are built into the PCB.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/2320541558989079616.jpg&#34; alt=&#34;SNES gamepad silicone on mockup&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m using SNES buttons for this version. The contest is for 2sq inches of PCB and only the D-Pad silicone will fit in my 2&amp;#215;1 footprint, so I&amp;#8217;ll use two of them. For future versions I&amp;#8217;ll check out button sets for portables like the GBA, DS, and PSP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/5843821558996883569.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;PCB layout is in the works. I still have rearranging and routing to do. I may have to change USB-C connectors to something that will fit the trace width of OSHpark.&lt;/p&gt;
+
+&lt;p&gt;Follow my &lt;a href=&#34;https://hackaday.io/project/165606-usb-c-gamepad-phone-case&#34;&gt;project on HackADay.io&lt;/a&gt; for finer details and updates! Source code will be available the SiloCityLabs Github soon™. This will be completely open source &amp;#8211; PCB, firmware, and 3d printed case.&lt;/p&gt;</description>
     </item>
     
   </channel>

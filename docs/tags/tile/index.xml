@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tile on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/tile/</link>
-    <description>Recent content in tile on SCL Blog</description>
+    <title>Tile on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/tile/index.xml</link>
+    <description>Recent content in Tile on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 19 Jul 2018 06:36:37 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/tile/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/tile/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Reusing Tile as car tracker.</title>
@@ -33,7 +30,73 @@
 &lt;li&gt;Soldering iron&lt;/li&gt;
 &lt;li&gt;Wire stripper/cutter&lt;/li&gt;
 &lt;li&gt;Drill (optional)&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we get started I just wanted to add a &lt;strong&gt;warning&lt;/strong&gt;. In this circuit just like most, polarities are very important. I made the mistake of flipping wires and my whole setup overheated and melted the glue. Keep this in mind when testing and before plugging it into your car and before doing the final seal.&lt;/p&gt;
+
+&lt;p&gt;Also note that voltage on a car&amp;#8217;s 12v line varies. With just the battery it&amp;#8217;s around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report &amp;#8220;low battery&amp;#8221; because of the reduced voltage when the car is off. It&amp;#8217;s not an issue.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wire up the tile&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Start by prying open the tile carefully with the intention of resealing it. I already removed the cell battery in the picture below.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-14-1.jpg&#34;&gt;&lt;img class=&#34;wp-image-507&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-14-1.jpg&#34; width=&#34;582&#34; height=&#34;554&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-14-1.jpg 582w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-14-1-300x286.jpg 300w&#34; sizes=&#34;(max-width: 582px) 100vw, 582px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Break off the battery pins and solder on a small length of wire. Reinsert it back into the body of the tile and make sure the wires dont interfere with any plastic.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-12.jpg&#34;&gt;&lt;img class=&#34;wp-image-508&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-12-1024x558.jpg&#34; width=&#34;678&#34; height=&#34;369&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-12-1024x558.jpg 1024w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-12-300x163.jpg 300w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-12-768x418.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Drill or solder a hole at the top of the tile for the wires to exit. Slip the wires through then seal the entire enclosure with some hot glue.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09.jpg&#34;&gt;&lt;img class=&#34;wp-image-510&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09-1024x692.jpg&#34; width=&#34;678&#34; height=&#34;458&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09-1024x692.jpg 1024w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09-300x203.jpg 300w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09-768x519.jpg 768w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09.jpg 1112w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Preparing the DC to DC Converter&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Using a 12v power supply, attach the leads to the converters &amp;#8220;in&amp;#8221; pins and measure the power on the &amp;#8220;out&amp;#8221; pins using a voltage meter. Turn the adjustment until you are close to 3v.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2.jpg&#34;&gt;&lt;img class=&#34;wp-image-511&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2-669x1024.jpg&#34; width=&#34;669&#34; height=&#34;1024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2-669x1024.jpg 669w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2-196x300.jpg 196w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2-768x1176.jpg 768w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2.jpg 836w&#34; sizes=&#34;(max-width: 669px) 100vw, 669px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Glue the bottom of the converter to the tile, then cover the converter in glue to seal it from the elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2.jpg&#34;&gt;&lt;img class=&#34;wp-image-512&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2-1024x642.jpg&#34; width=&#34;678&#34; height=&#34;425&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2-1024x642.jpg 1024w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2-300x188.jpg 300w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2-768x482.jpg 768w, https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2.jpg 1138w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powering the tile&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Where you choose to tie in the tile is up to you. Some options include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Direct battery leads&lt;/li&gt;
+&lt;li&gt;obd II adapter&lt;/li&gt;
+&lt;li&gt;12v power socket&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I already have a dash cam that uses a 12v obdII connector so im just gonna tie it to that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2316209079375938918319396.jpg&#34;&gt;&lt;img class=&#34;wp-image-514&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2316209079375938918319396-960x1024.jpg&#34; width=&#34;678&#34; height=&#34;723&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2316209079375938918319396-960x1024.jpg 960w, https://silocitylabs.com/uploads/2018/07/20180718_2316209079375938918319396-281x300.jpg 281w, https://silocitylabs.com/uploads/2018/07/20180718_2316209079375938918319396-768x819.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I opened it up and located the pins. I soldered on my cables to the 12v pins.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2300467315136001876509913.jpg&#34;&gt;&lt;img class=&#34;wp-image-515&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2300467315136001876509913-890x1024.jpg&#34; width=&#34;678&#34; height=&#34;780&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2300467315136001876509913-890x1024.jpg 890w, https://silocitylabs.com/uploads/2018/07/20180718_2300467315136001876509913-261x300.jpg 261w, https://silocitylabs.com/uploads/2018/07/20180718_2300467315136001876509913-768x884.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once thats all set I closed it back up with a hole drilled for the cables.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2316153822933817977650180.jpg&#34;&gt;&lt;img class=&#34;wp-image-516&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2316153822933817977650180-1024x847.jpg&#34; width=&#34;678&#34; height=&#34;561&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2316153822933817977650180-1024x847.jpg 1024w, https://silocitylabs.com/uploads/2018/07/20180718_2316153822933817977650180-300x248.jpg 300w, https://silocitylabs.com/uploads/2018/07/20180718_2316153822933817977650180-768x635.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Reattached it to my cars obd port and hooked up my dash cam again.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609.jpg&#34;&gt;&lt;img class=&#34;wp-image-517&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609-1018x1024.jpg&#34; width=&#34;678&#34; height=&#34;682&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609-1018x1024.jpg 1018w, https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609.jpg 150w, https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609-298x300.jpg 298w, https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609-768x773.jpg 768w&#34; sizes=&#34;(max-width: 678px) 100vw, 678px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To finish it off. Press the tile button down for 10 seconds to turn it on. Rename your old tile in the app and you should be set.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-518&#34; src=&#34;https://silocitylabs.com/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291-146x300.jpg&#34; width=&#34;146&#34; height=&#34;300&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291-146x300.jpg 146w, https://silocitylabs.com/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291-498x1024.jpg 498w, https://silocitylabs.com/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291.jpg 720w&#34; sizes=&#34;(max-width: 146px) 100vw, 146px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Update:&lt;/p&gt;
+
+&lt;p&gt;Someone on &lt;a href=&#34;https://hackaday.com/2018/07/29/turning-a-tile-into-a-car-tracker/#comment-4796213&#34;&gt;hackaday&lt;/a&gt; mentioned in the &lt;a href=&#34;https://hackaday.com/2018/07/29/turning-a-tile-into-a-car-tracker/#comment-4796213&#34;&gt;comments&lt;/a&gt; that I could save power by using a linear regulator. I will probably be doing this for a motorcycle. If you are interested in trying this I recommend this one.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://a.tra.li/Tqhy&#34;&gt;LD1117V33 Voltage Regulator&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

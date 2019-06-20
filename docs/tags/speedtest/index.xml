@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>speedtest on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/speedtest/</link>
-    <description>Recent content in speedtest on SCL Blog</description>
+    <title>Speedtest on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/speedtest/index.xml</link>
+    <description>Recent content in Speedtest on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/speedtest/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/speedtest/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Home Server Setup.</title>
@@ -18,7 +15,144 @@
       <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/05/30/home-server-setup/</guid>
-      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;security-camera-software&#34;&gt;Security Camera Software&lt;/h2&gt;
+
+&lt;p&gt;ZoneMinder &amp;#8211; &amp;#8220;A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need.&amp;#8221;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-cameras&#34;&gt;My Cameras&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/&#34;&gt;Axis 2130 PTZ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/&#34;&gt;Rosewill RSCM-13101B&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/&#34;&gt;Nightowl BNC x6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/&#34;&gt;Genius WideCam 320 Webcam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/&#34;&gt;BV Tech 4MP 2k&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;onsite-fireproof-sync&#34;&gt;Onsite Fireproof Sync&lt;/h2&gt;
+
+&lt;p&gt;To avoid paying for cloud services I purchased a fireproof hard drive. I set it up to sync with my raid group and its all set. You can view that &lt;a href=&#34;https://blog.silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/&#34;&gt;article here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;offsite-sync&#34;&gt;Offsite Sync&lt;/h2&gt;
+
+&lt;p&gt;I use offsite sync for the security cameras using rsync and a remote ftp server. Unfortunately it would be too expensive to backup my entire media server to the cloud so I only use it for remote storing the camera footage in the event of a theft.&lt;/p&gt;
+
+&lt;p&gt;To start this you will need an ftp server credentials to use with the following script. After doing so you can just add it to &lt;code&gt;crontab -e&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Crontab file:&lt;/p&gt;
+
+&lt;pre&gt;@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh&lt;/pre&gt;
+
+&lt;p&gt;Script:&lt;/p&gt;
+
+&lt;pre&gt;#!/bin/bash
+HOST=&#39;hostedftp.com&#39;
+USER=&#39;username&#39;
+PASS=&#39;password&#39;
+TARGETFOLDER=&#39;/&#39;
+SOURCEFOLDER=&#39;/var/cache/zoneminder/&#39;
+while inotifywait -qqr &#34;$SOURCEFOLDER&#34;; do
+lftp -f &#34;
+open $HOST
+user $USER $PASS
+lcd $SOURCEFOLDER
+set ftp:ssl-allow no
+mirror --no-symlinks --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
+bye
+&#34;
+done&lt;/pre&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;software-raid&#34;&gt;Software Raid&lt;/h2&gt;
+
+&lt;p&gt;I don&amp;#8217;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the setup I used &lt;a href=&#34;http://a.tra.li/TPzz&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;file-share&#34;&gt;File Share&lt;/h2&gt;
+
+&lt;p&gt;Setting up a file share is fairly simple, First download and install samba&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;apt-get install samba&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then edit the main configuration file:&lt;/p&gt;
+
+&lt;pre&gt;[global]
+   workgroup = WORKGROUP
+   dns proxy = no
+   log file = /var/log/samba/log.%m
+   max log size = 1000
+   syslog = 0
+   panic action = /usr/share/samba/panic-action %d
+   server role = standalone server
+   passdb backend = tdbsam
+   obey pam restrictions = yes
+   unix password sync = yes
+   passwd program = /usr/bin/passwd %u
+   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+   pam password change = yes
+   map to guest = bad user
+   usershare allow guests = yes
+   socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=1073741824 SO_SNDBUF=1073741824
+   min protocol = SMB2
+[homes]
+   comment = Home Directories
+   browseable = no
+   read only = no
+   create mask = 0770
+   directory mask = 0770
+   force group = nas
+   valid users = %S
+   writeable = yes
+   path = /mnt/4000/home/%u
+   veto files = /._*/.DS_Store/
+   delete veto files = yes
+[Shared]
+   comment = Shared Family Folder
+   browsable = yes
+   writable = yes
+   guest ok = yes
+   read only = no
+   directory mask = 0770
+   create mask = 0770
+   valid users = ldrrp krystal
+   force group = nas
+   path = /mnt/4000/home/Shared
+   veto files = /._*/.DS_Store/
+   delete veto files = yes
+[security]
+   comment = Security Cameras
+   browseable = yes
+   read only = no
+   create mask = 0755
+   directory mask = 0755
+   valid users = @security
+   writeable = yes
+   path = /var/cache/zoneminder
+   veto files = /._*/.DS_Store/
+   delete veto files = yes
+&lt;/pre&gt;
+
+&lt;p&gt;Then create the groups &amp;#8220;nas&amp;#8221; and &amp;#8220;family&amp;#8221; in linux and add your users to it. There is a guide &lt;a href=&#34;https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/&#34;&gt;here&lt;/a&gt; on that.&lt;/p&gt;
+
+&lt;p&gt;Finally reboot or restart samba &lt;code&gt;systemctl restart samba&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The first time you add a linux user (&lt;code&gt;adduser&lt;/code&gt;) you need to add them to smbpasswd as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo smbpasswd -a &amp;lt;user&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;speedtest-alerts&#34;&gt;Speedtest alerts&lt;/h2&gt;
+
+&lt;p&gt;This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can download the scripts &lt;a href=&#34;https://downloads.techreanimate.com/kzhota&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After downloading them, add a line to your schedule tasks in linux using crontab -e&lt;/p&gt;
+
+&lt;pre&gt;0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -29,11 +163,35 @@
       <guid>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/speedtest.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Many have heard the term speed test, the first thing that comes to mind is speedtest.net or google&amp;#8217;s speed test tool. Many don&amp;#8217;t know that speed on your internal network also affects you. When testing internet speed your device sends data to router then out to the internet, what if your router is the issue. Even worse, your device. I will show u a very handy utility I use to make sure everything in my house runs great. Its called &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;iPerf&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Many have heard the term speed test, the first thing that comes to mind is speedtest.net or google&amp;#8217;s speed test tool. Many don&amp;#8217;t know that speed on your internal network also affects you. When testing internet speed your device sends data to router then out to the internet, what if your router is the issue. Even worse, your device. I will show u a very handy utility I use to make sure everything in my house runs great. Its called &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;iPerf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;When using iPerf its best to test it with a known high performance device as the server. In this case I have connected my phone to 5ghz WiFi and place it next to router. A hard wired device would also be much better as the server as it will have full access to speed without slowing other devices down by hogging the WiFi. Download the app on whatever type of device you are using and set it up like so.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/photo_2018-12-06_11-46-01.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Next step, create a client device using iPerf to connect to the supplied IP on your other device. You may also search for iPerf GUI if you are uncomfortable using command line. Open a terminal window and type the path to iPerf or you can drag it into windows command prompt as well. Follow it with &amp;#8220;-c {ipaddress given by server} -i 1&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1-7.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This is reporting a internal speed of 105Mbits/sec. This could be far higher but its most likely limited by wifi speeds. When testing an old device as the client I get speeds of 12Mbits/sec.&lt;/p&gt;
+
+&lt;p&gt;You can test multiple combinations of devices using iperf. Its supported on many systems and devices listed &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Conclusion:&lt;/p&gt;
+
+&lt;p&gt;There are many factors I can summarize up. Many devices on WiFi basically makes the WiFi share the available speed across them all but sometimes the router is the culprit. Other times it may just be the end devices. Not all devices support high speed WiFi, in fact if you don&amp;#8217;t see a 5ghz network then you most likely are running at a much lower rate. The fastest router money can buy will always be limited if you are using older WiFi signals like 2.4ghz BGN to connect to it. It has the range, but not the speed.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>How to get 400mbps for 3 years @ $44.99</title>
+      <title>How to get 400mbps for 3 years at $44.99</title>
       <link>https://silocitylabs.com/post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/</link>
       <pubDate>Tue, 08 Jan 2019 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
@@ -42,7 +200,19 @@
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;#8217;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;</description>
+&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;#8217;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;
+
+&lt;p&gt;Step 2: Go online 4 days later and enter your address on the website for pricing.&lt;/p&gt;
+
+&lt;p&gt;Step 3: Keep trying step 2 until you see pricing for 400mpbs for 2 years at $44.99 on the website.&lt;/p&gt;
+
+&lt;p&gt;Step 4: Call once you see the pricing on the website 2 days later. Then you will be offered 400mbps for 3 years at $44.99.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-878&#34; src=&#34;https://silocitylabs.com/uploads/2019/01/photo_2019-01-08_14-31-55.jpg&#34; width=&#34;350&#34; height=&#34;200&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This infuriates me about their sales tactics. But it seems that every time you leave a trace on their sales it bumps the plan higher and higher. I&amp;#8217;m not sure how high they are willing to go. This promo worked for Buffalo, NY. Let me know in the comments if you have had any success or have found a way to get into this price lock period for existing customers. I&amp;#8217;m eager to get this speed and pricing for my house with 100mpbs.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,7 +221,102 @@
       <pubDate>Fri, 02 Feb 2018 19:48:02 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/02/dual-ac-router-setup-for-120/</guid>
-      <description>&lt;p&gt;I will be using two &lt;a href=&#34;https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/&#34;&gt;Custom firmware&lt;/a&gt; routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to &lt;a href=&#34;https://asuswrt.lostrealm.ca/&#34;&gt;Merlin custom firmware&lt;/a&gt; but its entirely optional. This will work with the stock firmware.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I will be using two &lt;a href=&#34;https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/&#34;&gt;Custom firmware&lt;/a&gt; routers to get full house coverage on a very old house with thick lead filled walls. The entire project took 6 hours due to some unexpected issues we faced. You can flash any device below as well to &lt;a href=&#34;https://asuswrt.lostrealm.ca/&#34;&gt;Merlin custom firmware&lt;/a&gt; but its entirely optional. This will work with the stock firmware.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Compatible Devices:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Sx5u&#34;&gt;TM-AC1900&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RT-N66U&lt;/li&gt;
+&lt;li&gt;RT-AC66U&lt;/li&gt;
+&lt;li&gt;RT-AC66U_B1 (same firmware as the RT-AC68U)&lt;/li&gt;
+&lt;li&gt;RT-AC56U&lt;/li&gt;
+&lt;li&gt;RT-AC68U (including revisions C1 and E1)&lt;/li&gt;
+&lt;li&gt;RT-AC68P (same firmware as RT-AC68U)&lt;/li&gt;
+&lt;li&gt;RT-AC68UF (same firmware as RT-AC68U)&lt;/li&gt;
+&lt;li&gt;RT-AC87&lt;/li&gt;
+&lt;li&gt;RT-AC3200&lt;/li&gt;
+&lt;li&gt;RT-AC88U&lt;/li&gt;
+&lt;li&gt;RT-AC3100&lt;/li&gt;
+&lt;li&gt;RT-AC5300&lt;/li&gt;
+&lt;li&gt;RT-AC1900 (same firmware as RT-AC68U)&lt;/li&gt;
+&lt;li&gt;RT-AC1900P (same firmware as RT-AC68U)&lt;/li&gt;
+&lt;li&gt;RT-AC86U (starting with version 382.1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My friends house is so bad at this point his speed drops in half when he moves two rooms over from where the wifi is located. I originally wanted to run it on opposite corners on a vertical plane but he did not want to run ethernet lines up the walls.&lt;/p&gt;
+
+&lt;p&gt;My other option was a powerline, but seems I cant find any that run decently yet for his house. A TP-Link AV1000 was only giving him a throughput of 30mbps, so this option was out of the question. My only alternative was to put the routers in the basement on opposite sides of the house like the image below in step 5.&lt;/p&gt;
+
+&lt;p&gt;For this setup I am connecting devices that roam the house to the 5ghz ssid (mywifi 5ghz) primary if supported. Then standstill devices like Chromecasts, google home, etc to the old 2.4ghz ssid (mywifi front/rear). You can flip flop this around if you would like. I prefer it this way rather than keeping the names the same because I notice issues with older devices moving around the house not wanting to switch to the closer signal.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-1-moving-the-modem&#34;&gt;&lt;strong&gt;Step 1: Moving the modem.&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Before I get started on the modem setup, I just want to clarify the modem we use. I have a Motorola SURFboard SB6141 and my friend has a SB6121. These modems are cheap on eBay/Amazon and save us from the modem rental fee&amp;#8217;s on our bills. They also act as dedicated devices unlike the router/modem combos given to us by our providers, Thus allowing lower latency connections to the internet.&lt;/p&gt;
+
+&lt;p&gt;For this step I attempted to locate a pre-existing line in the basement that I can reroute the splitter to for the modem. We drilled a hole into the side of the house running into the basement but had some issues with spray foam insulation used on the basement. Took 30 mins to carve a hole in the insulation to get the hole for the wire. We reused a old direct-tv line just in case we messed up the first time we had a second try with the main line. It also let us continue to have internet while we were wiring up the cable. After the line was in place we had to reroute the Cable box splitter to use the direct-tv coax we re-used. Once this was set and done, we re-insulated with a spray foam can around the wire.&lt;/p&gt;
+
+&lt;h3 id=&#34;img-class-wp-image-346-src-uploads-2018-02-20180203-215442-1008x756-300x225-jpg-width-300-height-225-srcset-uploads-2018-02-20180203-215442-1008x756-300x225-jpg-300w-uploads-2018-02-20180203-215442-1008x756-768x576-jpg-768w-uploads-2018-02-20180203-215442-1008x756-jpg-1008w-sizes-max-width-300px-100vw-300px-4&#34;&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-346&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215442-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;step-2-configuring-the-main-router&#34;&gt;&lt;strong&gt;Step 2: Configuring the main router&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;With the router in the main corner of the basement near the modem we will be configuring it as a regular router.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-345&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215447-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Network Settings:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Set the main ip as 192.168.1.1, DHCP range to 192.168.1.10 &amp;#8211; 192.168.1.254. Reserving the 1-9 for static stuff like my second router etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wifi settings:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I will set the main wifi name as &amp;#8220;&lt;em&gt;mywifi (front)&lt;/em&gt;&amp;#8221; and the 5ghz as &amp;#8220;&lt;em&gt;mywifi 5ghz&lt;/em&gt;&amp;#8220;.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-3-configuring-the-second-router&#34;&gt;&lt;strong&gt;Step 3: Configuring the second router&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;With a 100ft ethernet cable we will be running the wire along the ceiling to the opposite corner of the basement. Honestly probably did not need 100ft for his setup, at the time of ordering i did not know the length that was needed so I was better safe than sorry to get a 100ft. I attached the router to the header in the basement with 3m Double sided velcro straps. Plug in the ethernet into the port 1 of the main router and the wan port of the second router.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-343&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215505-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After this was all in place I stapled all the wires running across to the headers to keep them in place.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-344&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215450-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-348&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215501-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Network Settings:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enable Ap Mode then set the main ip as 192.168.1.2, DNS settings to 10.5.1.1 and 8.8.8.8.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wifi settings:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I will set the main wifi name as &amp;#8220;&lt;em&gt;mywifi (rear)&lt;/em&gt;&amp;#8221; and the 5ghz as &amp;#8220;&lt;em&gt;mywifi 5ghz&lt;/em&gt;&amp;#8220;.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h3 id=&#34;step-4-powerline-for-desktop&#34;&gt;&lt;strong&gt;Step 4: Powerline for Desktop&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;This was an added step, he didn&amp;#8217;t want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free&amp;#8217;s up more wifi bandwidth for other devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756.jpg&#34;&gt;&lt;img class=&#34;wp-image-347&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756-300x225.jpg&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/02/20180203_215456-1008x756.jpg 1008w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;step-5-enjoy-run-some-speed-tests&#34;&gt;&lt;strong&gt;Step 5: Enjoy, Run some speed tests&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The best part was getting 118Mb/s in the 2nd floor and kitchen being connected to the front router. Before our results were lower than 30Mb/s on a old single router setup and the backyard coverage was not existent.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests.png&#34;&gt;&lt;img class=&#34;wp-image-339&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests.png&#34; width=&#34;768&#34; height=&#34;347&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests.png 768w, https://silocitylabs.com/uploads/2018/02/Backyard-Speedtests-300x136.png 300w&#34; sizes=&#34;(max-width: 768px) 100vw, 768px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.speedtest.net/result/7027662257.png&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;http://www.speedtest.net/result/7027662257.png&#34; width=&#34;350&#34; height=&#34;200&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.speedtest.net/result/7027666057.png&#34;&gt;&lt;img class=&#34;aligncenter&#34; src=&#34;http://www.speedtest.net/result/7027666057.png&#34; width=&#34;350&#34; height=&#34;200&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
