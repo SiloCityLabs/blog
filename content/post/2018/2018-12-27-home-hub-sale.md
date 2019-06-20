@@ -11,6 +11,4 @@ tags:
 format: link
 
 ---
-Google Home Hub for $79.20 @ Google Express with code **HOLIDAY18** = **$79.20** . **Shipping is free**. First time express users only
-
-<a class="onebox" href="https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_9213255158323840508_125181302" target="_blank" rel="nofollow noopener">https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_9213255158323840508_125181302</a>
+[Google Home Hub](https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_9213255158323840508_125181302) for $79.20 @ Google Express with code **HOLIDAY18** = **$79.20** . **Shipping is free**. First time express users only
