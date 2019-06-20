@@ -17,6 +17,4 @@ https://store.antennasdirect.com/HD-TV-antennas.html
 
 30% off an HDHomeRun Connect digital tuner. Code: G4PLEX5
 
-[https://shop.silicondust.com/shop/product/hdhomerun-connect-hdhr4-2us/][HDHomeRun CONNECT]
-
 Promo Expires: December 31, 2018 11:59 pm PST.
