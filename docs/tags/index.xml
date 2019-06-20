@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://silocitylabs.com/tags/linux/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -31,29 +40,11 @@
     </item>
     
     <item>
-      <title>pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>raspberry</title>
       <link>https://silocitylabs.com/tags/raspberry/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/raspberry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>minimal pi</title>
-      <link>https://silocitylabs.com/tags/minimal-pi/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/minimal-pi/</guid>
       <description></description>
     </item>
     
