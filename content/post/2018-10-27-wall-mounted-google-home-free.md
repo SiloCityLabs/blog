@@ -6,7 +6,7 @@ date: 2018-10-28T03:08:14+00:00
 url: /post/2018/10/27/wall-mounted-google-home-free/
 featured_image: /wp-content/uploads/2018/10/20181027_2304573395186432420616044-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - google home
   - google home mini

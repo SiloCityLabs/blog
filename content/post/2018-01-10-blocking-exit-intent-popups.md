@@ -6,7 +6,7 @@ date: 2018-01-10T03:17:12+00:00
 url: /post/2018/01/10/blocking-exit-intent-popups/
 featured_image: /wp-content/uploads/2018/01/optin-monster-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - Javascript
   - Userscript

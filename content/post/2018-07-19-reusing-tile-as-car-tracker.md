@@ -6,7 +6,7 @@ date: 2018-07-19T06:36:37+00:00
 url: /post/2018/07/19/reusing-tile-as-car-tracker/
 featured_image: /wp-content/uploads/2018/07/use-your-phone-to-find-your-car-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - smart car
   - tile

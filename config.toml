@@ -57,13 +57,13 @@ googleAnalytics = "UA-78226868-3"
 [[menu.main]]
     parent = "cat"
     name = "Official"
-    url = "categories/official-business/"
+    url = "categories/company/"
     weight = 1
 
 [[menu.main]]
     parent = "cat"
     name = "Side Projects"
-    url = "categories/side-projects/"
+    url = "categories/projects/"
     weight = 2
 
 [[menu.main]]

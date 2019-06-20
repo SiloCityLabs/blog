@@ -6,7 +6,7 @@ date: 2018-12-27T23:30:18+00:00
 url: /post/2018/12/27/nightowl-bnc-and-zoneminder/
 featured_image: /wp-content/uploads/2018/08/images-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - nightowl
   - security cameras

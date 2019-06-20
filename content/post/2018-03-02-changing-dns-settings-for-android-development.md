@@ -6,7 +6,7 @@ date: 2018-03-02T16:29:41+00:00
 url: /post/2018/03/02/changing-dns-settings-for-android-development/
 featured_image: /wp-content/uploads/2018/03/dh4rb6lf2va9ydut1osj-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - android
   - development

@@ -6,7 +6,7 @@ date: 2019-05-30T23:30:44+00:00
 url: /post/2019/05/30/cleaning-up-duplicates-on-nas/
 featured_image: /wp-content/uploads/2019/02/Template_cleanup_icon.svg_-150x150.png
 categories:
-  - Side Projects
+  - Projects
 
 ---
 [<img class="aligncenter size-large wp-image-916" src="https://blog.silocitylabs.com/wp-content/uploads/2019/02/Template_cleanup_icon.svg_-1024x637.png" alt="" width="678" height="422" srcset="https://blog.silocitylabs.com/wp-content/uploads/2019/02/Template_cleanup_icon.svg_-1024x637.png 1024w, https://blog.silocitylabs.com/wp-content/uploads/2019/02/Template_cleanup_icon.svg_-300x187.png 300w, https://blog.silocitylabs.com/wp-content/uploads/2019/02/Template_cleanup_icon.svg_-768x478.png 768w" sizes="(max-width: 678px) 100vw, 678px" />][1]

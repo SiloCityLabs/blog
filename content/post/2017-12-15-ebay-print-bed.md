@@ -6,7 +6,7 @@ date: 2017-12-15T01:05:05+00:00
 url: /post/2017/12/15/ebay-print-bed/
 featured_image: /wp-content/uploads/2017/12/img_20171106_1706507253338128094262765-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 3d printer
   - Acetone

@@ -6,7 +6,7 @@ date: 2018-02-06T08:50:09+00:00
 url: /post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/
 featured_image: /wp-content/uploads/2018/02/IMG_20180203_213426-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - breadboard
   - core51822

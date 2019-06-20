@@ -6,7 +6,7 @@ date: 2018-12-13T23:30:35+00:00
 url: /post/2018/12/13/rscm-13101b-and-zoneminder/
 featured_image: /wp-content/uploads/2018/08/81-147-048-Z01-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - ip camera
   - rosewill

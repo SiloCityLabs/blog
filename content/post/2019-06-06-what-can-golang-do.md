@@ -7,7 +7,7 @@ url: /post/2019/06/06/what-can-golang-do/
 featured_image: /wp-content/uploads/2019/06/1_30aoNxlSnaYrLhBT0O1lzw-150x150.png
 categories:
   - Golang
-  - Side Projects
+  - Projects
 tags:
   - coding
   - daemons

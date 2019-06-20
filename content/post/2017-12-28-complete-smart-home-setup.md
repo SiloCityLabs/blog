@@ -6,7 +6,7 @@ date: 2017-12-28T18:00:51+00:00
 url: /post/2017/12/28/complete-smart-home-setup/
 featured_image: /wp-content/uploads/2017/12/smart-home-2769210_960_720-e1514497002881-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 433mhz
   - energizer

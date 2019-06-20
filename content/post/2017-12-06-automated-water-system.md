@@ -6,7 +6,7 @@ date: 2017-12-06T20:20:16+00:00
 url: /post/2017/12/06/automated-water-system/
 featured_image: /wp-content/uploads/2017/12/water-system-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - esp8266
 

@@ -6,7 +6,7 @@ date: 2018-12-19T00:30:20+00:00
 url: /post/2018/12/18/switching-to-linux/
 featured_image: /wp-content/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - linux
   - steam

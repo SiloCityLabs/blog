@@ -5,7 +5,7 @@ type: post
 date: 2018-08-30T00:09:59+00:00
 url: /post/2018/08/30/3d-printed-wrist-brace-wip-instructions/
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 3d modeling
   - 3d printing

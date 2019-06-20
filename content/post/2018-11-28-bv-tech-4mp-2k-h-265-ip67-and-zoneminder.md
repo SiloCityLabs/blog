@@ -6,7 +6,7 @@ date: 2018-11-28T23:59:23+00:00
 url: /post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/
 featured_image: /wp-content/uploads/2018/11/61qmqoijgvl._sl1000_-1-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - ca-ipbf-4mp-wifi-fba
 

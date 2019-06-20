@@ -6,7 +6,7 @@ date: 2018-02-02T19:48:02+00:00
 url: /post/2018/02/02/dual-ac-router-setup-for-120/
 featured_image: /wp-content/uploads/2018/02/Backyard-Speedtests-150x150.png
 categories:
-  - Side Projects
+  - Projects
 tags:
   - asus
   - backyard

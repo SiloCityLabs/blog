@@ -6,7 +6,7 @@ date: 2018-09-18T00:32:07+00:00
 url: /post/2018/09/18/infinite-free-small-storage-for-electronics/
 featured_image: /wp-content/uploads/2018/09/20180917_2020073946083583409025178-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - free
   - storage

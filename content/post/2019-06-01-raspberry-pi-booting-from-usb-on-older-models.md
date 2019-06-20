@@ -6,7 +6,7 @@ date: 2019-06-02T03:56:16+00:00
 url: /post/2019/06/01/raspberry-pi-booting-from-usb-on-older-models/
 featured_image: /wp-content/uploads/2019/05/Raspberry-Pi-SD-and-USB-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - boot from usb
   - linux

@@ -6,7 +6,7 @@ date: 2017-12-15T19:21:01+00:00
 url: /post/2017/12/15/3d-printed-wrist-brace-wip/
 featured_image: /wp-content/uploads/2017/12/IMG_20171028_153645-150x150.jpg
 categories:
-  - Side Projects
+  - Projects
 tags:
   - 3d modeling
   - 3d printing
