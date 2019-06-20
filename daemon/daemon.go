@@ -8,61 +8,73 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"strings"
 
 	"github.com/go-playground/webhooks/github"
+	"gopkg.in/yaml.v2"
 )
-
-var dir = "../"
 
 func main() {
 
 	daemon := flag.Bool("daemon", true, "bool")
 	flag.Parse()
 
+	loadSettings()
+
 	if *daemon == false {
 		updateSite()
 		return
 	}
 
-	hook, _ := github.New(github.Options.Secret(getSecret()))
+	hook, _ := github.New(github.Options.Secret(settings.GithubSecret))
 
 	http.HandleFunc("/webhooks", func(w http.ResponseWriter, r *http.Request) {
 		payload, err := hook.Parse(r, github.PushEvent)
 		if err != nil {
 			if err == github.ErrEventNotFound {
-				// ok event wasn;t one of the ones asked to be parsed
+				// ok event wasn't one of the ones asked to be parsed
 				fmt.Printf("%+v\n", err.Error())
 			}
 		}
 		switch payload.(type) {
 
 		case github.PushPayload:
-			//pullRequest := payload.(github.PushPayload)
-			//fmt.Printf("%+v\n", pullRequest)
 			fmt.Printf("Build executing...\n")
-
-			go updateSite()
+			go checkPush(payload.(github.PushPayload))
 		}
 	})
 	http.ListenAndServe(":3000", nil)
 }
 
-func getSecret() string {
-	file, err := os.Open("secret.txt")
-	if err != nil {
-		log.Fatal(err)
+// Check to see if the docs folder was updated, if so ignore becouse it was already built
+func checkPush(pullRequest github.PushPayload) {
+	for _, commit := range pullRequest.Commits {
+		for _, file := range commit.Added {
+			if strings.HasPrefix(file, "docs/") {
+				return
+			}
+		}
+		for _, file := range commit.Removed {
+			if strings.HasPrefix(file, "docs/") {
+				return
+			}
+		}
+		for _, file := range commit.Modified {
+			if strings.HasPrefix(file, "docs/") {
+				return
+			}
+		}
 	}
-	defer file.Close()
 
-	b, err := ioutil.ReadAll(file)
-	return string(b)
+	//Docs hasnt been built. lets do it
+	updateSite()
 }
 
 func updateSite() {
 
 	// Git pull
 	cmdPull := exec.Command("git", "pull")
-	cmdPull.Dir = dir
+	cmdPull.Dir = settings.RootPath
 	cmdPull.Stdout = os.Stdout
 	cmdPull.Stderr = os.Stderr
 	if err := cmdPull.Run(); err != nil {
@@ -70,19 +82,20 @@ func updateSite() {
 	}
 
 	// Image api minify
+	//https://github.com/peterhellberg/tinypng
 
 	// Max 1080p image
 
 	// Delete folders to regenerate
-	os.RemoveAll("./docs/page/")
-	os.RemoveAll("./docs/categories/")
-	os.RemoveAll("./docs/post/")
-	os.RemoveAll("./docs/samples/")
-	os.RemoveAll("./docs/tags/")
+	os.RemoveAll(settings.RootPath + "/docs/page/")
+	os.RemoveAll(settings.RootPath + "/docs/categories/")
+	os.RemoveAll(settings.RootPath + "/docs/post/")
+	os.RemoveAll(settings.RootPath + "/docs/samples/")
+	os.RemoveAll(settings.RootPath + "/docs/tags/")
 
 	// Hugo build
 	cmdBuild := exec.Command("hugo")
-	cmdBuild.Dir = dir
+	cmdBuild.Dir = settings.RootPath
 	cmdBuild.Stdout = os.Stdout
 	cmdBuild.Stderr = os.Stderr
 	if err := cmdBuild.Run(); err != nil {
@@ -91,7 +104,7 @@ func updateSite() {
 
 	// Git Add
 	cmdAdd := exec.Command("git", "add", ".")
-	cmdAdd.Dir = dir
+	cmdAdd.Dir = settings.RootPath
 	cmdAdd.Stdout = os.Stdout
 	cmdAdd.Stderr = os.Stderr
 	if err := cmdAdd.Run(); err != nil {
@@ -100,7 +113,7 @@ func updateSite() {
 
 	// Git Commit Message
 	cmdCommit := exec.Command("git", "commit", "-m", "Webhook Rebuild")
-	cmdCommit.Dir = dir
+	cmdCommit.Dir = settings.RootPath
 	cmdCommit.Stdout = os.Stdout
 	cmdCommit.Stderr = os.Stderr
 	if err := cmdCommit.Run(); err != nil {
@@ -109,7 +122,7 @@ func updateSite() {
 
 	// Git push
 	cmdPush := exec.Command("git", "push", "origin", "master")
-	cmdPush.Dir = dir
+	cmdPush.Dir = settings.RootPath
 	cmdPush.Stdout = os.Stdout
 	cmdPush.Stderr = os.Stderr
 	if err := cmdPush.Run(); err != nil {
@@ -117,4 +130,28 @@ func updateSite() {
 	}
 
 	// Newsletter trigger
+}
+
+type Settings struct {
+	GithubSecret string
+	TinyPNGKey   string
+	Port         string
+	RootPath     string
+}
+
+var settings Settings
+
+func loadSettings() {
+	file, err := os.Open("settings.yaml")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	b, err := ioutil.ReadAll(file)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	yaml.Unmarshal(b, &settings)
 }
