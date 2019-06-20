@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blender on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/blender/</link>
+    <link>https://silocitylabs.com/tags/blender/index.xml</link>
     <description>Recent content in Blender on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/blender/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/blender/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>3d printed wrist brace – WIP instructions</title>
@@ -38,7 +35,93 @@
 
 &lt;p&gt;Here&amp;#8217;s the Skanect guide I watched:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Optional:&lt;br /&gt;
+Scanning was initially a huge pain in the ass. Moving to much would cause Skanect to fail. My fix was to strap a screen to the back of the Kinect so that my assistant could watch the Skanect UI.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;run VNC server (or RDP or whatever) on the computer&lt;/li&gt;
+&lt;li&gt;use a smartphone and connect to VNC&lt;/li&gt;
+&lt;li&gt;strap the smartphone to the back of the Kinect (I used velcro straps and rubber bands)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now the assistant can watch Skanect while moving around.&lt;/p&gt;
+
+&lt;p&gt;alternative raspi scanner that I have not tried:&lt;br /&gt;
+&lt;a href=&#34;https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/&#34;&gt;https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Scanning requires either a beefy CPU or CUDA acceleration from an NVidia GPU. Slow hardware requires slooowwww movement of the Kinect. Moving too fast will cause the scan to fail.&lt;br /&gt;
+Install Skanect&lt;br /&gt;
+If you have an NVidia card, install CUDA drivers (takes like 20-30min to install)&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/orig-scan-watertight.jpg&#34;&gt;&lt;img class=&#34;wp-image-581 alignright&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-300x169.jpg&#34; width=&#34;300&#34; height=&#34;169&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-768x432.jpg 768w, https://silocitylabs.com/uploads/2018/08/orig-scan-watertight-1024x576.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here&amp;#8217;s what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.&lt;/p&gt;
+
+&lt;p&gt;Skanect scales in meters and I haven&amp;#8217;t figured out how to import/export with Blender properly (you&amp;#8217;re supposed to do it in the scene but it didn&amp;#8217;t work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &amp;#8220;m&amp;#8221; for meters, fix any errors, then save (as STL). Now it&amp;#8217;s scaled.&lt;/p&gt;
+
+&lt;h1 id=&#34;blender&#34;&gt;Blender&lt;/h1&gt;
+
+&lt;p&gt;Blender tutorial. If you&amp;#8217;ve never used Blender then I recommend watching up to part 5 and following along.&lt;br /&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#34;&gt;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Use your new Blender skills to edit the model. Crop it as needed, fix irregularities, and bisect it.&lt;/p&gt;
+
+&lt;p&gt;Bisect to split the brace down the middle&lt;br /&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=UjLaxaLJZK4&#34;&gt;https://www.youtube.com/watch?v=UjLaxaLJZK4&lt;/a&gt;&lt;del&gt;&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/01-wtf.png&#34;&gt;&lt;img class=&#34;wp-image-579 alignright&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/01-wtf-300x144.png&#34; width=&#34;300&#34; height=&#34;144&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/01-wtf-300x144.png 300w, https://silocitylabs.com/uploads/2018/08/01-wtf-768x369.png 768w, https://silocitylabs.com/uploads/2018/08/01-wtf-1024x492.png 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My model had some random garbage points that were sticking off the main model. That required cleanup.&lt;/p&gt;
+
+&lt;p&gt;Clean up garbo:&lt;br /&gt;
+-Edit Mode&lt;br /&gt;
+-select all&lt;br /&gt;
+-Mesh &amp;gt; Cleanup &amp;gt; Degenerate Dissolve&lt;/p&gt;
+
+&lt;p&gt;Time to skeletonize it with modifiers. Were reducing the polys, then wireframing the simplified geometry, then smoothing it to remove hard corners. Switch to object mode. Add these modifiers in order and play around with all the settings.&lt;/p&gt;
+
+&lt;p&gt;decimate&lt;/p&gt;
+
+&lt;p&gt;-adjust the ratio, play with settings&lt;/p&gt;
+
+&lt;p&gt;wireframe&lt;/p&gt;
+
+&lt;p&gt;-uncheck even thickness&lt;br /&gt;
+-check boundary&lt;br /&gt;
+-adjust thickness&lt;/p&gt;
+
+&lt;p&gt;subdivide (smooth)&lt;/p&gt;
+
+&lt;p&gt;-adjust Views for smoothing&lt;/p&gt;
+
+&lt;p&gt;Here what my model looked like early on. I wireframed it without reducing the polys and it created this fine hole pattern:&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed.png&#34;&gt;&lt;img class=&#34;wp-image-582 aligncenter&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-300x144.png&#34; width=&#34;300&#34; height=&#34;144&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-300x144.png 300w, https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-768x369.png 768w, https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed-1024x492.png 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s my latest version. This is after bisecting it, and decimate and subdivide modifiers. It&amp;#8217;s basically done, I just have to make it at least 4x thicker because this was too flexible once printed.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/08/final-ish.jpg&#34;&gt;&lt;img class=&#34;wp-image-583&#34; src=&#34;https://silocitylabs.com/uploads/2018/08/final-ish-300x169.jpg&#34; width=&#34;300&#34; height=&#34;169&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/08/final-ish-300x169.jpg 300w, https://silocitylabs.com/uploads/2018/08/final-ish-768x432.jpg 768w, https://silocitylabs.com/uploads/2018/08/final-ish-1024x576.jpg 1024w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I also have a method for adding holes for velcro straps. It&amp;#8217;s not strictly necessary but it&amp;#8217;ll make the slots line up nicely.&lt;/p&gt;
+
+&lt;p&gt;Boolean Modifier&lt;br /&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=pcUe-ab_jQs&#34;&gt;https://www.youtube.com/watch?v=pcUe-ab_jQs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;-create some cylinders or boxes that pass through the spots you want holes&lt;br /&gt;
+-to the arm, add a Boolean Modifier, select Difference, select a cylinder/box&lt;br /&gt;
+-hide boxes&lt;br /&gt;
+-if it&amp;#8217;s good hit Apply to permanently apply it&lt;br /&gt;
+-delete the faces of the beams that are created&lt;/p&gt;
+
+&lt;p&gt;export to STL&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;In the future swap the velcro for a hinge:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.thingiverse.com/thing:1615753&#34;&gt;https://www.thingiverse.com/thing:1615753&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
     </item>
     
   </channel>

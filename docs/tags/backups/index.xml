@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>backups on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/backups/</link>
-    <description>Recent content in backups on SCL Blog</description>
+    <title>Backups on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/backups/index.xml</link>
+    <description>Recent content in Backups on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 23 Nov 2018 17:30:03 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/backups/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/backups/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Secure Backups without the cloud</title>
@@ -20,7 +17,81 @@
       <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
+&lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/u2yEVUMQyZY&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;﻿&lt;/span&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/Untitled-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&amp;#8217;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;: Linux OS, crontab, rsync, hdparm&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I start off by plugging in my new drive and formatting it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;mkfs.ext4 /dev/sda1&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;After formatting I need to grab the device UUID for use later.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;blkid /dev/sda1
+
+/dev/sda1: UUID=&#34;fbb3b599-0a07-46f5-945d-0dbe6cac7639&#34; TYPE=&#34;ext4&#34; PARTLABEL=&#34;primary&#34; PARTUUID=&#34;c15d00d1-214f-4517-8c2c-8037419ff0d4&#34;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Now I have the UUID, lets move on to crontab. Create two cron tasks using &lt;code&gt;crontab -e&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
+5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
+&lt;/pre&gt;
+
+&lt;p&gt;So according to this &lt;code&gt;5 8 * * 0&lt;/code&gt; would run 8:05 AM every Sunday and &lt;code&gt;0 6 * * *&lt;/code&gt; would run daily at 6 AM. Lets create the first script in the location you selected to save it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh&lt;/pre&gt;
+
+&lt;p&gt;&lt;pre&gt;#!/bin/bash&lt;/p&gt;
+
+&lt;p&gt;DRIVE_UUID=UUID-HERE&lt;/p&gt;
+
+&lt;p&gt;mount &amp;ndash;uuid $DRIVE_UUID /mnt/fireproof
+rsync –av /mnt/4000/ /mnt/fireproof/
+umount /mnt/fireproof/
+hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;pre&gt;nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;#!/bin/bash&lt;/p&gt;
+
+&lt;p&gt;DRIVE_UUID=UUID-HERE&lt;/p&gt;
+
+&lt;p&gt;mount &amp;ndash;uuid $DRIVE_UUID /mnt/fireproof
+rsync –av &amp;ndash;delete /mnt/4000/ /mnt/fireproof/
+umount /mnt/fireproof/
+hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID&lt;/pre&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Last, make sure the directory exists for the mount point, run &lt;code&gt;mkdir /mnt/fireproof&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I know some of you may point out that Linux automatically sleeps drives, but I just want that extra assurance that nothing will be waking it up creating unneeded wear on the drive. Also there will be no delay on this once the backup is complete.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,7 +112,37 @@
 
 &lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;wp-image-587&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 4032px) 100vw, 4032px&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img class=&#34;wp-image-587&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; width=&#34;4032&#34; height=&#34;3024&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-300x225.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-768x576.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326-1024x768.jpg 1024w&#34; sizes=&#34;(max-width: 4032px) 100vw, 4032px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s an issue where Android will keep turning off tether if there is slight changes in cable movement or whenever the router reboots. We solve this with automate. We configure automate to keep enabling USB tether every X seconds.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-588&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533.png&#34; width=&#34;1458&#34; height=&#34;1561&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533.png 1458w, https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533-280x300.png 280w, https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533-768x822.png 768w, https://silocitylabs.com/uploads/2018/09/20180915_0945388772121150635334533-956x1024.png 956w&#34; sizes=&#34;(max-width: 1458px) 100vw, 1458px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The root command is optional if you can&amp;#8217;t get USB tether working. Here is the full command.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-596&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704.png&#34; width=&#34;573&#34; height=&#34;573&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704.png 573w, https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704.png 150w, https://silocitylabs.com/uploads/2018/09/20180915_094523896414538435102704-300x300.png 300w&#34; sizes=&#34;(max-width: 573px) 100vw, 573px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After it&amp;#8217;s enabled, hit play and let it run.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-589&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968.jpg&#34; width=&#34;3024&#34; height=&#34;4032&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968.jpg 1440w, https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968-225x300.jpg 225w, https://silocitylabs.com/uploads/2018/09/20180915_0930581248984325352199968-768x1024.jpg 768w&#34; sizes=&#34;(max-width: 3024px) 100vw, 3024px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Place your phone in a convenient spot accessible to great reception.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-590&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698.jpg&#34; width=&#34;3000&#34; height=&#34;2680&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698-300x268.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698-768x686.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180915_094244623090915077846698-1024x915.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Head over to your router settings. Under WAN options there is a tab called &amp;#8220;Dual WAN&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-591&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943271850039273880023030.jpg&#34; width=&#34;720&#34; height=&#34;774&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943271850039273880023030.jpg 720w, https://silocitylabs.com/uploads/2018/09/20180915_0943271850039273880023030-279x300.jpg 279w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Enable USB tether and Android device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-592&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943417170682303179420009.jpg&#34; width=&#34;720&#34; height=&#34;540&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943417170682303179420009.jpg 720w, https://silocitylabs.com/uploads/2018/09/20180915_0943417170682303179420009-300x225.jpg 300w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Configure the failover settings how you please.&lt;/p&gt;
+
+&lt;p&gt;You are all set! Your dashboard should look like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;wp-image-593&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943126960527662415391769.jpg&#34; width=&#34;720&#34; height=&#34;755&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0943126960527662415391769.jpg 720w, https://silocitylabs.com/uploads/2018/09/20180915_0943126960527662415391769-286x300.jpg 286w&#34; sizes=&#34;(max-width: 720px) 100vw, 720px&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

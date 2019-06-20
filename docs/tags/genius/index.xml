@@ -2,15 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Genius on SCL Blog</title>
-    <link>https://silocitylabs.com/tags/genius/</link>
+    <link>https://silocitylabs.com/tags/genius/index.xml</link>
     <description>Recent content in Genius on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 10 Jan 2019 23:30:35 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/genius/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://silocitylabs.com/tags/genius/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Genius WideCam 320 and Zoneminder</title>
@@ -24,7 +21,19 @@
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
-&lt;p&gt;Although I have this particular camera, any basic USB webcam will work the same way. The setup for this one was very simple and its the most stable camera out of my whole setup. There however is no nightvision. I counter this by trigger the lights to turn on if motion sensor is tripped.&lt;/p&gt;</description>
+&lt;p&gt;Although I have this particular camera, any basic USB webcam will work the same way. The setup for this one was very simple and its the most stable camera out of my whole setup. There however is no nightvision. I counter this by trigger the lights to turn on if motion sensor is tripped.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;setup&#34;&gt;Setup:&lt;/h4&gt;
+
+&lt;p&gt;This camera was fairly simple to setup, just use the following settings. If you have two of them the index0 will change to index1 in device path:&lt;/p&gt;
+
+&lt;p&gt;Device path: /dev/v4l/by-id/usb-KYE_Systems_Corp._WideCam_320-video-index0&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/1-2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
