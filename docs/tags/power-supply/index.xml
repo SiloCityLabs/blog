@@ -28,7 +28,7 @@
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#34;wp-image-618&#34; src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg&#34; width=&#34;3000&#34; height=&#34;2284&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg 1920w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-300x228.jpg 300w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-768x585.jpg 768w, https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808-1024x780.jpg 1024w&#34; sizes=&#34;(max-width: 3000px) 100vw, 3000px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/09/20180922_1307042277026486571041808.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After a couple of minutes fiddling with it. I realized the variable resister was bad. I traced the wires and its only being used as a signal voltage not for power source. It was safe for me to use a basic resister in place. 4 tries later i found one in my bin.&lt;/p&gt;
 
