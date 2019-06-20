@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Official Business on SCL Blog</title>
-    <link>https://silocitylabs.com/categories/official-business/</link>
-    <description>Recent content in Official Business on SCL Blog</description>
+    <title>company on SCL Blog</title>
+    <link>https://silocitylabs.com/categories/company/</link>
+    <description>Recent content in company on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
     <lastBuildDate>Fri, 15 Dec 2017 01:05:52 +0000</lastBuildDate>
     
-	<atom:link href="https://silocitylabs.com/categories/official-business/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://silocitylabs.com/categories/company/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
