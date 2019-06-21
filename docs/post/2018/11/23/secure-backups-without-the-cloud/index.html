@@ -193,7 +193,10 @@ if (!doNotTrack) {
 
 <p>I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&#8217;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.</p>
 
-<iframe src="https://www.youtube.com/embed/u2yEVUMQyZY" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/u2yEVUMQyZY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 
 <p>During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.</p>
 
@@ -213,17 +216,16 @@ if (!doNotTrack) {
 <li>After formatting I need to grab the device UUID for use later.</li>
 </ul>
 
-<pre>blkid /dev/sda1
-
-/dev/sda1: UUID="fbb3b599-0a07-46f5-945d-0dbe6cac7639" TYPE="ext4" PARTLABEL="primary" PARTUUID="c15d00d1-214f-4517-8c2c-8037419ff0d4"</pre>
+<pre><code class="language-blkid">
+/dev/sda1: UUID=&quot;fbb3b599-0a07-46f5-945d-0dbe6cac7639&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;c15d00d1-214f-4517-8c2c-8037419ff0d4&quot;
+</code></pre>
 
 <ul>
 <li>Now I have the UUID, lets move on to crontab. Create two cron tasks using <code>crontab -e</code></li>
 </ul>
 
-<pre>0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
-5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
-</pre>
+<pre><code class="language-0">5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
+</code></pre>
 
 <p>So according to this <code>5 8 * * 0</code> would run 8:05 AM every Sunday and <code>0 6 * * *</code> would run daily at 6 AM. Lets create the first script in the location you selected to save it.</p>
 
@@ -231,31 +233,31 @@ if (!doNotTrack) {
 <li>This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.</li>
 </ul>
 
-<pre>nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh</pre>
+<p><code>nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh</code></p>
 
-<p><pre>#!/bin/bash</p>
+<pre><code class="language-#!/bin/bash">
+DRIVE_UUID=UUID-HERE
 
-<p>DRIVE_UUID=UUID-HERE</p>
-
-<p>mount &ndash;uuid $DRIVE_UUID /mnt/fireproof
+mount --uuid $DRIVE_UUID /mnt/fireproof
 rsync –av /mnt/4000/ /mnt/fireproof/
 umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID</pre></p>
+hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
+</code></pre>
 
 <ul>
 <li>This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.</li>
 </ul>
 
-<p><pre>nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh</pre></p>
+<p><code>nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh</code></p>
 
-<p><pre>#!/bin/bash</p>
+<pre><code class="language-#!/bin/bash">
+DRIVE_UUID=UUID-HERE
 
-<p>DRIVE_UUID=UUID-HERE</p>
-
-<p>mount &ndash;uuid $DRIVE_UUID /mnt/fireproof
-rsync –av &ndash;delete /mnt/4000/ /mnt/fireproof/
+mount --uuid $DRIVE_UUID /mnt/fireproof
+rsync –av --delete /mnt/4000/ /mnt/fireproof/
 umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID</pre></p>
+hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
+</code></pre>
 
 <ul>
 <li>Last, make sure the directory exists for the mount point, run <code>mkdir /mnt/fireproof</code></li>
