@@ -17,9 +17,9 @@ I&#8217;m not really sure why it started working all of a sudden. I&#8217;m glad
 
 &nbsp;
 
-<figure id="attachment_105" aria-describedby="caption-attachment-105" style="width: 300px" class="wp-caption aligncenter">[<img class="wp-image-105" src="/uploads/2017/12/046677455293-APP-global-001-300x300.jpg" width="300" height="300" srcset="/uploads/2017/12/046677455293-APP-global-001-300x300.jpg 300w, /uploads/2017/12/046677455293-APP-global-001.jpg 150w, /uploads/2017/12/046677455293-APP-global-001-768x768.jpg 768w, /uploads/2017/12/046677455293-APP-global-001-1024x1024.jpg 1024w, /uploads/2017/12/046677455293-APP-global-001.jpg 1250w" sizes="(max-width: 300px) 100vw, 300px" />][1]<figcaption id="caption-attachment-105" class="wp-caption-text">Hue White</figcaption></figure>
+![Hue White](/uploads/2017/12/046677455293-APP-global-001.jpg )
 
-<figure id="attachment_106" aria-describedby="caption-attachment-106" style="width: 300px" class="wp-caption aligncenter">[<img class="wp-image-106" src="/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg" width="300" height="300" srcset="/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg 300w, /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 150w, /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-768x768.jpg 768w, /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 1000w" sizes="(max-width: 300px) 100vw, 300px" />][2]<figcaption id="caption-attachment-106" class="wp-caption-text">Sengled Element Classic</figcaption></figure>
+![Sengled Element Classic](/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg)
 
  [1]: /uploads/2017/12/046677455293-APP-global-001.jpg
  [2]: /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg
