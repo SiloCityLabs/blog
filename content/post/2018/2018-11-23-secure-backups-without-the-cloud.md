@@ -23,17 +23,15 @@ I accidentally stumbled upon this solution while trying to find cloud providers 
 
 <!--more-->
 
-<iframe src="https://www.youtube.com/embed/u2yEVUMQyZY" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
-
+{{< youtube u2yEVUMQyZY >}}
 
 During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.
 
 ![](/uploads/2018/11/Untitled-1.png)
 
+Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&#8217;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.
 
-  Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&#8217;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.
-
-  <strong>Requirements</strong>: Linux OS, crontab, rsync, hdparm
+<strong>Requirements</strong>: Linux OS, crontab, rsync, hdparm
 
 
   * I start off by plugging in my new drive and formatting it.
@@ -42,45 +40,47 @@ During the video you will notice he manages to burn the enclosure under serious 
 
   * After formatting I need to grab the device UUID for use later.
 
-<pre>blkid /dev/sda1
+```blkid /dev/sda1
 
-/dev/sda1: UUID="fbb3b599-0a07-46f5-945d-0dbe6cac7639" TYPE="ext4" PARTLABEL="primary" PARTUUID="c15d00d1-214f-4517-8c2c-8037419ff0d4"</pre>
+/dev/sda1: UUID="fbb3b599-0a07-46f5-945d-0dbe6cac7639" TYPE="ext4" PARTLABEL="primary" PARTUUID="c15d00d1-214f-4517-8c2c-8037419ff0d4"
+```
 
   * Now I have the UUID, lets move on to crontab. Create two cron tasks using `crontab -e`
 
-<pre>0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
+```0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
 5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
-</pre>
+```
 
   So according to this <code>5 8 * * 0</code> would run 8:05 AM every Sunday and <code>0 6 * * *</code> would run daily at 6 AM. Lets create the first script in the location you selected to save it.
 
 
   * This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.
 
-<pre>nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh</pre>
+`nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh`
 
-  <pre>#!/bin/bash
+```#!/bin/bash
 
 DRIVE_UUID=UUID-HERE
 
 mount --uuid $DRIVE_UUID /mnt/fireproof
 rsync –av /mnt/4000/ /mnt/fireproof/
 umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID</pre>
+hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
+```
 
   * This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.
 
-  <pre>nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh</pre>
+  `nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh`
 
-  <pre>#!/bin/bash
+  ```#!/bin/bash
 
 DRIVE_UUID=UUID-HERE
 
 mount --uuid $DRIVE_UUID /mnt/fireproof
 rsync –av --delete /mnt/4000/ /mnt/fireproof/
 umount /mnt/fireproof/
-hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID</pre>
-
+hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
+```
 
   * Last, make sure the directory exists for the mount point, run `mkdir /mnt/fireproof`
 
