@@ -31,15 +31,15 @@ If you buy a longer cable you can simply cut the cable in half and get two 2&#21
 
 Removing the plate revealed the pins on the connector underneath. I popped off both sides to confirm which wire went to which female pin. The pins are mirrored top and bottom row so I can look at the puncture point ( top or bottom) and determine which row it leads to. I could probably read the specs but this was faster.
 
-[<img class="wp-image-361" src="/uploads/2018/02/IMG_20180203_205214-Copy-300x237.jpg" width="300" height="237" srcset="/uploads/2018/02/IMG_20180203_205214-Copy-300x237.jpg 300w, /uploads/2018/02/IMG_20180203_205214-Copy-768x608.jpg 768w, /uploads/2018/02/IMG_20180203_205214-Copy-1024x810.jpg 1024w, /uploads/2018/02/IMG_20180203_205214-Copy.jpg 1141w" sizes="(max-width: 300px) 100vw, 300px" />][6]
+![](/uploads/2018/02/IMG_20180203_205214-Copy-300x237.jpg)
 
 I glued the plate back on one side and fully removed the connector from the other. A few seconds with a hacksaw gave me two connectors. I managed to mangle only a couple columns and was left with 2&#215;10 and 2&#215;11, slightly more than I needed for the core51822&#8217;s 2&#215;9 headers. I superglued the cut ends to keep the plate on.
 
-[<img class="wp-image-363" src="/uploads/2018/02/IMG_20180203_213426-300x250.jpg" width="300" height="250" srcset="/uploads/2018/02/IMG_20180203_213426-300x250.jpg 300w, /uploads/2018/02/IMG_20180203_213426-768x640.jpg 768w, /uploads/2018/02/IMG_20180203_213426-1024x853.jpg 1024w, /uploads/2018/02/IMG_20180203_213426.jpg 1272w" sizes="(max-width: 300px) 100vw, 300px" />][7]
+![](/uploads/2018/02/IMG_20180203_213426.jpg)
 
 I pulled the wire apart in pairs so that each pair is a column, making it easier to handle when breadboarding. The stranded wire isn&#8217;t quite suitable for breadboards so later I soldered a tiny segment of 24AWG wire onto the end.
 
-<figure id="attachment_366" aria-describedby="caption-attachment-366" style="width: 300px" class="wp-caption aligncenter">[<img class="wp-image-366" src="/uploads/2018/02/IMG_20180203_213608-300x127.jpg" width="300" height="127" srcset="/uploads/2018/02/IMG_20180203_213608-300x127.jpg 300w, /uploads/2018/02/IMG_20180203_213608-768x326.jpg 768w, /uploads/2018/02/IMG_20180203_213608-1024x434.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />][8]<figcaption id="caption-attachment-366" class="wp-caption-text">Done! Breadboard-able</figcaption></figure>
+![Done! Breadboard-able](/uploads/2018/02/IMG_20180203_213608-768x326.jpg)
 
 End result is a pair of connectors for 2mm pitch header breakout. Conclusion? It works but doesn&#8217;t have much advantage over the regular 2mm pitch IDC connector. I saved $1.50. Do yourself a favor and get a module that uses 1&#8243; headers in the first place.
 
