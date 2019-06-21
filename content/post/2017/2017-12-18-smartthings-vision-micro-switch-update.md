@@ -26,15 +26,15 @@ The device has arrived, I got it wired up and working. Bellow I attached the man
 
 &nbsp;
 
-<figure id="attachment_176" aria-describedby="caption-attachment-176" style="width: 678px" class="wp-caption aligncenter">[<img class="wp-image-176" src="/uploads/2017/12/zl7432us-manual-1024x702.png" width="678" height="465" srcset="/uploads/2017/12/zl7432us-manual.png 1024w, /uploads/2017/12/zl7432us-manual-300x206.png 300w, /uploads/2017/12/zl7432us-manual-768x527.png 768w" sizes="(max-width: 678px) 100vw, 678px" />][1]<figcaption id="caption-attachment-176" class="wp-caption-text">zl7432us manual</figcaption></figure>
+![zl7432us manual](/uploads/2017/12/zl7432us-manual.png)
 
 &nbsp;
 
 Installed in [[bana0615][2]] home wall.
   
-[<img class="wp-image-190" title="Exposed wiring" src="/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg" width="940" height="1253" srcset="/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg 1440w, /uploads/2017/12/mvimg_20171224_20271185134117357629532-225x300.jpg 225w, /uploads/2017/12/mvimg_20171224_20271185134117357629532-768x1024.jpg 768w" sizes="(max-width: 940px) 100vw, 940px" />][3]
+![](/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg)
 
-<figure style="width: 930px" class="wp-caption aligncenter">[<img class="size-full wp-image-189" title="" src="/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg" width="930" height="1240" srcset="/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg 1440w, /uploads/2017/12/mvimg_20171224_2042033181531723782315879-225x300.jpg 225w, /uploads/2017/12/mvimg_20171224_2042033181531723782315879-768x1024.jpg 768w" sizes="(max-width: 930px) 100vw, 930px" />][4]<figcaption class="wp-caption-text">Double gang wall outlet</figcaption></figure>
+![Double gang wall outlet](/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg)
 
 This is an update to: https://blog.silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/
 
