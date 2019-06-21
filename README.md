@@ -2,11 +2,11 @@
 
 Silo City Labs website using Github Pages.
 
-Learn more about Github Pages at https://pages.github.com and the official [documentation](https://help.github.com/en/categories/github-pages-basics).
+Learn more about Github Pages at https://pages.github.com and the official [documentation](https://help.github.com/en/categories/github-pages-basics). Anyone can create a pull request to publish an article or make a fix based on issues. We just ask that you copy one of the templates in /content/post/samples/. Only admins are allowed to save drafts in the repo.
 
 ---
 
-## Building locally
+## Building locally for Admins
 
 To work locally with this project, you'll have to follow the steps below:
 
@@ -18,7 +18,7 @@ To work locally with this project, you'll have to follow the steps below:
 
 Read more at Hugo's [documentation](https://gohugo.io/overview/introduction/).
 
-### Preview your site
+### Preview your changes
 
 If you clone or download this project to your local computer and run `hugo server`,
 your site can be accessed under `localhost:1313/hugo/`.
