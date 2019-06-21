@@ -23,12 +23,10 @@ I accidentally stumbled upon this solution while trying to find cloud providers 
 
 <!--more-->
 
-<div style="text-align: center;">
-  <iframe src="https://www.youtube.com/embed/u2yEVUMQyZY" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
-</div>
+<iframe src="https://www.youtube.com/embed/u2yEVUMQyZY" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
 
 
-  During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.
+During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.
 
 ![](/uploads/2018/11/Untitled-1.png)
 
