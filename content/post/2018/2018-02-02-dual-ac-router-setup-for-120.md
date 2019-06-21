@@ -50,13 +50,13 @@ Before I get started on the modem setup, I just want to clarify the modem we use
 
 For this step I attempted to locate a pre-existing line in the basement that I can reroute the splitter to for the modem. We drilled a hole into the side of the house running into the basement but had some issues with spray foam insulation used on the basement. Took 30 mins to carve a hole in the insulation to get the hole for the wire. We reused a old direct-tv line just in case we messed up the first time we had a second try with the main line. It also let us continue to have internet while we were wiring up the cable. After the line was in place we had to reroute the Cable box splitter to use the direct-tv coax we re-used. Once this was set and done, we re-insulated with a spray foam can around the wire.
 
-### [<img class="wp-image-346" src="/uploads/2018/02/20180203_215442-1008x756-300x225.jpg" width="300" height="225" srcset="/uploads/2018/02/20180203_215442-1008x756-300x225.jpg 300w, /uploads/2018/02/20180203_215442-1008x756-768x576.jpg 768w, /uploads/2018/02/20180203_215442-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" />][4]
+![](/uploads/2018/02/20180203_215442-1008x756.jpg)
 
 ### **Step 2: Configuring the main router**
 
 With the router in the main corner of the basement near the modem we will be configuring it as a regular router.
 
-[<img class="wp-image-345" src="/uploads/2018/02/20180203_215447-1008x756-300x225.jpg" width="300" height="225" srcset="/uploads/2018/02/20180203_215447-1008x756-300x225.jpg 300w, /uploads/2018/02/20180203_215447-1008x756-768x576.jpg 768w, /uploads/2018/02/20180203_215447-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" />][5]
+![](/uploads/2018/02/20180203_215447-1008x756.jpg)
 
 &nbsp;
 
@@ -74,11 +74,13 @@ I will set the main wifi name as &#8220;_mywifi (front)_&#8221; and the 5ghz as 
 
 With a 100ft ethernet cable we will be running the wire along the ceiling to the opposite corner of the basement. Honestly probably did not need 100ft for his setup, at the time of ordering i did not know the length that was needed so I was better safe than sorry to get a 100ft. I attached the router to the header in the basement with 3m Double sided velcro straps. Plug in the ethernet into the port 1 of the main router and the wan port of the second router.
 
-[<img class="wp-image-343" src="/uploads/2018/02/20180203_215505-1008x756-300x225.jpg" width="300" height="225" srcset="/uploads/2018/02/20180203_215505-1008x756-300x225.jpg 300w, /uploads/2018/02/20180203_215505-1008x756-768x576.jpg 768w, /uploads/2018/02/20180203_215505-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" />][6]
+![](/uploads/2018/02/20180203_215505-1008x756.jpg)
 
 After this was all in place I stapled all the wires running across to the headers to keep them in place.
 
-[<img class="wp-image-344" src="/uploads/2018/02/20180203_215450-1008x756-300x225.jpg" width="300" height="225" srcset="/uploads/2018/02/20180203_215450-1008x756-300x225.jpg 300w, /uploads/2018/02/20180203_215450-1008x756-768x576.jpg 768w, /uploads/2018/02/20180203_215450-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" />][7][<img class="wp-image-348" src="/uploads/2018/02/20180203_215501-1008x756-300x225.jpg" width="300" height="225" srcset="/uploads/2018/02/20180203_215501-1008x756-300x225.jpg 300w, /uploads/2018/02/20180203_215501-1008x756-768x576.jpg 768w, /uploads/2018/02/20180203_215501-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" />][8]
+![](/uploads/2018/02/20180203_215450-1008x756.jpg)
+
+![](/uploads/2018/02/20180203_215501-1008x756.jpg)
 
 &nbsp;
 
@@ -96,7 +98,7 @@ I will set the main wifi name as &#8220;_mywifi (rear)_&#8221; and the 5ghz as &
 
 This was an added step, he didn&#8217;t want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free&#8217;s up more wifi bandwidth for other devices.
 
-[<img class="wp-image-347" src="/uploads/2018/02/20180203_215456-1008x756-300x225.jpg" width="300" height="225" srcset="/uploads/2018/02/20180203_215456-1008x756-300x225.jpg 300w, /uploads/2018/02/20180203_215456-1008x756-768x576.jpg 768w, /uploads/2018/02/20180203_215456-1008x756.jpg 1008w" sizes="(max-width: 300px) 100vw, 300px" />][9]
+![](/uploads/2018/02/20180203_215456-1008x756.jpg)
 
 ### **Step 5: Enjoy, Run some speed tests**
 
@@ -104,13 +106,13 @@ The best part was getting 118Mb/s in the 2nd floor and kitchen being connected t
 
 &nbsp;
 
-[<img class="wp-image-339" src="/uploads/2018/02/Backyard-Speedtests.png" width="768" height="347" srcset="/uploads/2018/02/Backyard-Speedtests.png 768w, /uploads/2018/02/Backyard-Speedtests-300x136.png 300w" sizes="(max-width: 768px) 100vw, 768px" />][10]
+![](/uploads/2018/02/Backyard-Speedtests.png)
 
 &nbsp;
 
-[<img class="aligncenter" src="http://www.speedtest.net/result/7027662257.png" width="350" height="200" />][11]
+![](http://www.speedtest.net/result/7027662257.png)
 
-[<img class="aligncenter" src="http://www.speedtest.net/result/7027666057.png" width="350" height="200" />][12]
+![](http://www.speedtest.net/result/7027666057.png)
 
  [1]: https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/
  [2]: https://asuswrt.lostrealm.ca/
