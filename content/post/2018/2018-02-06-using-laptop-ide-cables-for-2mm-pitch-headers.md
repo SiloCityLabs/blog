@@ -39,7 +39,7 @@ I glued the plate back on one side and fully removed the connector from the othe
 
 I pulled the wire apart in pairs so that each pair is a column, making it easier to handle when breadboarding. The stranded wire isn&#8217;t quite suitable for breadboards so later I soldered a tiny segment of 24AWG wire onto the end.
 
-![Done! Breadboard-able](/uploads/2018/02/IMG_20180203_213608-768x326.jpg)
+![Done! Breadboard-able](/uploads/2018/02/IMG_20180203_213608.jpg)
 
 End result is a pair of connectors for 2mm pitch header breakout. Conclusion? It works but doesn&#8217;t have much advantage over the regular 2mm pitch IDC connector. I saved $1.50. Do yourself a favor and get a module that uses 1&#8243; headers in the first place.
 
