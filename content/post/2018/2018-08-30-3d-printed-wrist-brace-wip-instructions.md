@@ -67,7 +67,7 @@ Use your new Blender skills to edit the model. Crop it as needed, fix irregulari
 Bisect to split the brace down the middle  
 <https://www.youtube.com/watch?v=UjLaxaLJZK4><del></del>
 
-[<img class="wp-image-579 alignright" src="/uploads/2018/08/01-wtf-300x144.png" width="300" height="144" srcset="/uploads/2018/08/01-wtf-300x144.png 300w, /uploads/2018/08/01-wtf-768x369.png 768w, /uploads/2018/08/01-wtf-1024x492.png 1024w" sizes="(max-width: 300px) 100vw, 300px" />][3]
+![](/uploads/2018/08/01-wtf.png)
 
 My model had some random garbage points that were sticking off the main model. That required cleanup.
 
@@ -92,11 +92,13 @@ subdivide (smooth)
 
 -adjust Views for smoothing
 
-Here what my model looked like early on. I wireframed it without reducing the polys and it created this fine hole pattern:[<img class="wp-image-582 aligncenter" src="/uploads/2018/08/07-tada-its-fixed-300x144.png" width="300" height="144" srcset="/uploads/2018/08/07-tada-its-fixed-300x144.png 300w, /uploads/2018/08/07-tada-its-fixed-768x369.png 768w, /uploads/2018/08/07-tada-its-fixed-1024x492.png 1024w" sizes="(max-width: 300px) 100vw, 300px" />][4]
+Here what my model looked like early on. I wireframed it without reducing the polys and it created this fine hole pattern:
+
+![](/uploads/2018/08/07-tada-its-fixed.png)
 
 Here&#8217;s my latest version. This is after bisecting it, and decimate and subdivide modifiers. It&#8217;s basically done, I just have to make it at least 4x thicker because this was too flexible once printed.
 
-[<img class="wp-image-583" src="/uploads/2018/08/final-ish-300x169.jpg" width="300" height="169" srcset="/uploads/2018/08/final-ish-300x169.jpg 300w, /uploads/2018/08/final-ish-768x432.jpg 768w, /uploads/2018/08/final-ish-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />][5]
+![](/uploads/2018/08/final-ish.jpg)
 
 I also have a method for adding holes for velcro straps. It&#8217;s not strictly necessary but it&#8217;ll make the slots line up nicely.
 
