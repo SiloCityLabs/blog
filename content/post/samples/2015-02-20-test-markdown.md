@@ -1,9 +1,16 @@
 ---
-title: Test markdown
-subtitle: Each post also has a subtitle
-date: 2015-02-20
-tags: ["example", "markdown"]
+title: Title here
+author: Some Person
+type: post
+date: 2019-01-10T23:30:35+00:00
+url: /post/2019/01/10/sample-title-format/
 draft: true
+categories:
+  - Projects
+tags:
+  - sample
+  - sample2
+
 ---
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
