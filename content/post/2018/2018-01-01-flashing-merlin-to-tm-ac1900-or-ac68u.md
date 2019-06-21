@@ -63,7 +63,7 @@ Individual links to latest downloads
   * _Subnet: Default (255.255.255.0)_
   * _Gateway: 192.168.29.1_
 
-[<img class="wp-image-415" src="/uploads/2018/01/Untitled.png" width="400" height="455" srcset="/uploads/2018/01/Untitled.png 400w, /uploads/2018/01/Untitled-264x300.png 264w" sizes="(max-width: 400px) 100vw, 400px" />][13]
+![](/uploads/2018/01/Untitled.png)
 
 **2.2. Place router into Recovery/Restore mode:**
 
@@ -78,12 +78,12 @@ Individual links to latest downloads
   
     _If Mini-CFE won’t load use Asus Restore Utility_
 
-[<img class="wp-image-416" src="/uploads/2018/01/Untitled3.png" width="640" height="304" srcset="/uploads/2018/01/Untitled3.png 640w, /uploads/2018/01/Untitled3-300x143.png 300w" sizes="(max-width: 640px) 100vw, 640px" />][14]
+![](/uploads/2018/01/Untitled3.png)
 
   * Flash TM-AC1900\_3.0.0.4\_376_1703-g0ffdbba.trx from &#8220;Flash Images AC68U&#8221;
   * Wait for reboot 2-5 mins – WiFi lights will turn on when boot is complete
 
-[<img class="wp-image-417" src="/uploads/2018/01/Untitled2.png" width="591" height="280" srcset="/uploads/2018/01/Untitled2.png 591w, /uploads/2018/01/Untitled2-300x142.png 300w" sizes="(max-width: 591px) 100vw, 591px" />][15]
+![](/uploads/2018/01/Untitled2.png)
 
 **2.4. Flashing firmware, and cfe file:**
 
@@ -93,11 +93,11 @@ Individual links to latest downloads
   
 _ 
 
-[<img class="wp-image-422" src="/uploads/2018/01/7.png" width="452" height="437" srcset="/uploads/2018/01/7.png 452w, /uploads/2018/01/7-300x290.png 300w" sizes="(max-width: 452px) 100vw, 452px" />][16]
+![](/uploads/2018/01/7.png)
 
   * Open WinSCP (_select SCP as file protocol)_ and connect to 192.168.29.1 using a admin:password or admin:admin
 
-[<img class="wp-image-423" src="/uploads/2018/01/9.png" width="626" height="423" srcset="/uploads/2018/01/9.png 626w, /uploads/2018/01/9-300x203.png 300w" sizes="(max-width: 626px) 100vw, 626px" />][17]
+![](/uploads/2018/01/9.png)
 
   * In putty type:
   
@@ -106,7 +106,7 @@ _
   * Copy original_cfe.bin to a local drive
   * Upload original_cfe.bin to <https://cfeditor.pipeline.sh/> > Select 1.0.2.0 US (AiMesh for 384+ builds) as Source CFE > Download the new .bin > rename it to new_cfe.bin (Optional, You can check Max for TX power to avoid doing step 5 again)
 
-[<img class="wp-image-421" src="/uploads/2018/01/10-1024x562.png" width="678" height="372" srcset="/uploads/2018/01/10-1024x562.png 1024w, /uploads/2018/01/10-300x165.png 300w, /uploads/2018/01/10-768x421.png 768w" sizes="(max-width: 678px) 100vw, 678px" />][18]
+![](/uploads/2018/01/10.png)
 
   * Upload **new_cfe.bin** & **mtd-write** & **FW\_RT\_AC68U_30043763626.trx **to router through WinSCP. Files located inside &#8220;Flash Images AC68U&#8221; folder.
   * In Putty type:
@@ -132,12 +132,12 @@ _
 
   * Reset PC IP back to default from steps 2.1
 
-[<img class="wp-image-418" src="/uploads/2018/01/Untitled5.png" width="400" height="455" srcset="/uploads/2018/01/Untitled5.png 400w, /uploads/2018/01/Untitled5-264x300.png 264w" sizes="(max-width: 400px) 100vw, 400px" />][19]
+![](/uploads/2018/01/Untitled5.png)
 
   * Log in to router using 192.168.1.1 and the router is now an AC68U with 64MB jffs
   * Under Administration > Firmware Upgrade. upload **FW\_RT\_AC68U_3.0.0.4.382.18881.trx** located in the &#8220;Latest Stock AC68U&#8221; folder.
 
-[<img class="wp-image-420" src="/uploads/2018/01/11-1024x712.png" width="678" height="471" srcset="/uploads/2018/01/11-1024x712.png 1024w, /uploads/2018/01/11-300x208.png 300w, /uploads/2018/01/11-768x534.png 768w, /uploads/2018/01/11.png 1449w" sizes="(max-width: 678px) 100vw, 678px" />][20]
+![](/uploads/2018/01/11.png)
 
   * Complete! If you continue, you will be going from stock asus to a custom firmware that will enable hardware acceleration and provide you with more benefits in performance and features.
 
