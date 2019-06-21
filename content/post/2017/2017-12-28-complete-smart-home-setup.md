@@ -84,7 +84,7 @@ I use these anywhere where I have lamps, automating lighting like in my turtle t
 
 I have 3 locations in my house that have no wall switch. All 3 have pull strings. Basement lights (x6), back hall, and front hall. I was able to put in place a Sengled smart bulb and a battery smart switch. These switches last up to 10 years on battery and can be placed in a real gang box like any other switch, or double-side taped to the wall to mimic a switch plate. The most affordable switch I found was a Lutron Smart Switch on [Amazon.][9]
 
-![Lutron Remote with faux plate](/uploads/2017/12/Wall-Mount-Lutron-Pico-Remote-Control-300x210.jpg)
+![Lutron Remote with faux plate](/uploads/2017/12/Wall-Mount-Lutron-Pico-Remote-Control.jpg)
 
 &nbsp;
 
