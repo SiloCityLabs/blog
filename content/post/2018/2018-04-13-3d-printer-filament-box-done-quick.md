@@ -64,27 +64,27 @@ This strip is where the filament goes from dry air to the printer. Drill holes (
 
 Bevel the holes to clean up the edge and give the filament room to wiggle (1/4&#8243; Drill Bit).
 
-[<img class="wp-image-451" src="/uploads/2018/04/20180403_190954-1024x372.jpg" width="678" height="246" srcset="/uploads/2018/04/20180403_190954-1024x372.jpg 1024w, /uploads/2018/04/20180403_190954-300x109.jpg 300w, /uploads/2018/04/20180403_190954-768x279.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][8]
+![](/uploads/2018/04/20180403_190954.jpg)
 
 &nbsp;
 
 Sand to prevent splinters and clean up drill shavings.
 
-[<img class="wp-image-452" src="/uploads/2018/04/20180403_191335-1024x577.jpg" width="678" height="382" srcset="/uploads/2018/04/20180403_191335-1024x577.jpg 1024w, /uploads/2018/04/20180403_191335-300x169.jpg 300w, /uploads/2018/04/20180403_191335-768x433.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][9]
+![](/uploads/2018/04/20180403_191335.jpg)
 
 &nbsp;
 
 Screw in the pneumatic connectors to the bottom of the wood strip. Threading the holes with an M5 bolt made this much easier. If you&#8217;re fancy you could [make a real tap from a threaded rod or bolt][10] but we don&#8217;t have time for that.
 
-[<img class="wp-image-453" src="/uploads/2018/04/20180403_192437-1024x741.jpg" width="678" height="491" srcset="/uploads/2018/04/20180403_192437-1024x741.jpg 1024w, /uploads/2018/04/20180403_192437-300x217.jpg 300w, /uploads/2018/04/20180403_192437-768x556.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][11]
+![](/uploads/2018/04/20180403_192437.jpg)
 
 &nbsp;
 
 We mount it on our shelving with some more M5 bolts. It locks in just like the shelves.
 
-[<img class="wp-image-454" src="/uploads/2018/04/photo_2018-04-13_15-22-07-956x1024.jpg" width="678" height="726" srcset="/uploads/2018/04/photo_2018-04-13_15-22-07-956x1024.jpg 956w, /uploads/2018/04/photo_2018-04-13_15-22-07-280x300.jpg 280w, /uploads/2018/04/photo_2018-04-13_15-22-07-768x822.jpg 768w, /uploads/2018/04/photo_2018-04-13_15-22-07.jpg 960w" sizes="(max-width: 678px) 100vw, 678px" />][12]
+![](/uploads/2018/04/photo_2018-04-13_15-22-07.jpg)
 
-[<img class="wp-image-455" src="/uploads/2018/04/20180403_194151-1024x710.jpg" width="678" height="470" srcset="/uploads/2018/04/20180403_194151-1024x710.jpg 1024w, /uploads/2018/04/20180403_194151-300x208.jpg 300w, /uploads/2018/04/20180403_194151-768x532.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][13]
+![](/uploads/2018/04/20180403_194151.jpg)
 
 &nbsp;
 
@@ -92,19 +92,19 @@ We mount it on our shelving with some more M5 bolts. It locks in just like the s
 
 Drill holes (3/16&#8243; Drill Bit) through the bin lid. Clean off any plastic shavings that may be left. Our bin holds 8-10 spools depends on their width.
 
-[<img class="wp-image-456" src="/uploads/2018/04/20180403_193813-1024x620.jpg" width="678" height="411" srcset="/uploads/2018/04/20180403_193813-1024x620.jpg 1024w, /uploads/2018/04/20180403_193813-300x182.jpg 300w, /uploads/2018/04/20180403_193813-768x465.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][14]
+![](/uploads/2018/04/20180403_193813.jpg)
 
 &nbsp;
 
 Screw in the pneumatic connectors from the top.
 
-[<img class="wp-image-457" src="/uploads/2018/04/20180403_194017-1024x590.jpg" width="678" height="391" srcset="/uploads/2018/04/20180403_194017-1024x590.jpg 1024w, /uploads/2018/04/20180403_194017-300x173.jpg 300w, /uploads/2018/04/20180403_194017-768x443.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][15]
+![](/uploads/2018/04/20180403_194017.jpg)
 
 &nbsp;
 
 On the underside, use an M5 nut to secure the connectors. The coated nut also helps the filament feed smoothly.
 
-[<img class="wp-image-471" src="/uploads/2018/04/photo_2018-04-13_16-27-31-1024x590.jpg" width="678" height="391" srcset="/uploads/2018/04/photo_2018-04-13_16-27-31-1024x590.jpg 1024w, /uploads/2018/04/photo_2018-04-13_16-27-31-300x173.jpg 300w, /uploads/2018/04/photo_2018-04-13_16-27-31-768x443.jpg 768w, /uploads/2018/04/photo_2018-04-13_16-27-31.jpg 1280w" sizes="(max-width: 678px) 100vw, 678px" />][16]
+![](/uploads/2018/04/photo_2018-04-13_16-27-31.jpg)
 
 &nbsp;
 
@@ -120,7 +120,7 @@ Cutting the tube caused some burs that interfered with the filament. Clean up th
 
 Connect the two ends.
 
-[<img class="wp-image-459" src="/uploads/2018/04/20180403_194748-707x1024.jpg" width="678" height="982" srcset="/uploads/2018/04/20180403_194748-707x1024.jpg 707w, /uploads/2018/04/20180403_194748-207x300.jpg 207w, /uploads/2018/04/20180403_194748-768x1112.jpg 768w, /uploads/2018/04/20180403_194748.jpg 1326w" sizes="(max-width: 678px) 100vw, 678px" />][18]
+![](/uploads/2018/04/20180403_194748.jpg)
 
 &nbsp;
 
@@ -128,17 +128,17 @@ Connect the two ends.
 
 Using the design from [Thingiverse][19], print off as many spool rollers as needed. We picked this roller because the two halves are independent, allowing us to use the same rollers for various width spools. Another option is using a rod that goes through the length of the bin, but that would be a nuisance with so many spools. If your bin is only 1 or 2 spools then a rod would be a good choice. I may end up using double sided tape to secure them firmly in place if they move too much.
 
-[<img class="wp-image-469" src="/uploads/2018/04/photo_2018-04-13_16-27-25-668x1024.jpg" width="668" height="1024" srcset="/uploads/2018/04/photo_2018-04-13_16-27-25-668x1024.jpg 668w, /uploads/2018/04/photo_2018-04-13_16-27-25-196x300.jpg 196w, /uploads/2018/04/photo_2018-04-13_16-27-25.jpg 676w" sizes="(max-width: 668px) 100vw, 668px" />][20]
+![](/uploads/2018/04/photo_2018-04-13_16-27-25.jpg)
 
 Use a mallet if necessary to fit the bearing into the guide.
 
-[<img class="wp-image-468" src="/uploads/2018/04/photo_2018-04-13_16-27-23.jpg" width="708" height="632" srcset="/uploads/2018/04/photo_2018-04-13_16-27-23.jpg 708w, /uploads/2018/04/photo_2018-04-13_16-27-23-300x268.jpg 300w" sizes="(max-width: 708px) 100vw, 708px" />][21]
+![](/uploads/2018/04/photo_2018-04-13_16-27-23.jpg)
 
 &nbsp;
 
 Now that the spools roll freely, push the plastic into the tubing and out the wood strip.
 
-[<img class="wp-image-460" src="/uploads/2018/04/photo_2018-04-13_15-22-03-768x1024.jpg" width="678" height="904" srcset="/uploads/2018/04/photo_2018-04-13_15-22-03-768x1024.jpg 768w, /uploads/2018/04/photo_2018-04-13_15-22-03-225x300.jpg 225w, /uploads/2018/04/photo_2018-04-13_15-22-03.jpg 960w" sizes="(max-width: 678px) 100vw, 678px" />][22]
+![](/uploads/2018/04/photo_2018-04-13_15-22-03.jpg)
 
 &nbsp;
 
@@ -167,7 +167,7 @@ Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Wa
 
 &nbsp;
 
-[<img class="wp-image-461" src="/uploads/2018/04/20180403_194038-1024x713.jpg" width="678" height="472" srcset="/uploads/2018/04/20180403_194038-1024x713.jpg 1024w, /uploads/2018/04/20180403_194038-300x209.jpg 300w, /uploads/2018/04/20180403_194038-768x534.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][23]
+![](/uploads/2018/04/20180403_194038.jpg)
 
   * Reel Dehydration: 
       * ABS: 4.0 hrs at 180°F
@@ -179,11 +179,11 @@ Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Wa
 
 More images:
 
-[<img class="wp-image-467" src="/uploads/2018/04/photo_2018-04-13_16-27-22-760x1024.jpg" width="678" height="914" srcset="/uploads/2018/04/photo_2018-04-13_16-27-22-760x1024.jpg 760w, /uploads/2018/04/photo_2018-04-13_16-27-22-223x300.jpg 223w, /uploads/2018/04/photo_2018-04-13_16-27-22-768x1035.jpg 768w, /uploads/2018/04/photo_2018-04-13_16-27-22.jpg 898w" sizes="(max-width: 678px) 100vw, 678px" />][25]
+![](/uploads/2018/04/photo_2018-04-13_16-27-22.jpg)
 
-[<img class="wp-image-466" src="/uploads/2018/04/photo_2018-04-13_16-27-16-665x1024.jpg" width="665" height="1024" srcset="/uploads/2018/04/photo_2018-04-13_16-27-16-665x1024.jpg 665w, /uploads/2018/04/photo_2018-04-13_16-27-16-195x300.jpg 195w, /uploads/2018/04/photo_2018-04-13_16-27-16-768x1182.jpg 768w, /uploads/2018/04/photo_2018-04-13_16-27-16.jpg 798w" sizes="(max-width: 665px) 100vw, 665px" />][26]
+![](/uploads/2018/04/photo_2018-04-13_16-27-16.jpg)
 
-[<img class="wp-image-470" src="/uploads/2018/04/photo_2018-04-13_16-27-28-1024x768.jpg" width="678" height="509" srcset="/uploads/2018/04/photo_2018-04-13_16-27-28-1024x768.jpg 1024w, /uploads/2018/04/photo_2018-04-13_16-27-28-300x225.jpg 300w, /uploads/2018/04/photo_2018-04-13_16-27-28-768x576.jpg 768w, /uploads/2018/04/photo_2018-04-13_16-27-28.jpg 1280w" sizes="(max-width: 678px) 100vw, 678px" />][27]
+![](/uploads/2018/04/photo_2018-04-13_16-27-28.jpg)
 
 <div style="width: 640px;" class="wp-video">
   <!--[if lt IE 9]><![endif]--><video class="wp-video-shortcode" id="video-429-1" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1" />
