@@ -24,7 +24,7 @@ tags:
   - smartthings
 
 ---
-<img class="wp-image-230" src="/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg" width="907" height="446" srcset="/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg 907w, /uploads/2017/12/smart-home-2769210_960_720-e1514497002881-300x148.jpg 300w, /uploads/2017/12/smart-home-2769210_960_720-e1514497002881-768x378.jpg 768w" sizes="(max-width: 907px) 100vw, 907px" />
+![](/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg)
 
 &nbsp;
 
@@ -33,10 +33,10 @@ I wanted to talk about my smart home setup from the ground up. I have many artic
 &nbsp;
 
 **The Assistant**:
-
+r
 Google Home and/or Mini manage my random routines that aren&#8217;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.
 
-[<img class="wp-image-211" src="/uploads/2017/12/100417-google-home-mini7347-2-300x169.jpg" width="300" height="169" srcset="/uploads/2017/12/100417-google-home-mini7347-2-300x169.jpg 300w, /uploads/2017/12/100417-google-home-mini7347-2-768x432.jpg 768w, /uploads/2017/12/100417-google-home-mini7347-2.jpg 830w" sizes="(max-width: 300px) 100vw, 300px" />][1]
+![](/uploads/2017/12/100417-google-home-mini7347-2.jpg)
 
 **Control Center**:
 
@@ -58,7 +58,7 @@ The only downside:
 
 I personally have a set budget per bulb that I would pay. I would never pay anything above $10/each under any circumstances, color changing or not. My favorite bulb at the moment seems to be the affordable Sengled Classic A19. This bulb has a very nice light output at 800 lumens. I paid just under $7/each on sale, as they very often go on sale on [Amazon][4].
 
-[<img class="wp-image-106" src="/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg" alt="Sengled Classic A19" width="300" height="300" srcset="/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-300x300.jpg 300w, /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 150w, /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000-768x768.jpg 768w, /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg 1000w" sizes="(max-width: 300px) 100vw, 300px" />][5]
+![](/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg)[5]
 
 **Smart Switch Control**:
 
@@ -94,7 +94,7 @@ Nest. There is a little secret most people may not know. You can get one for und
 
 &nbsp;
 
-[<img class="wp-image-210" src="/uploads/2017/12/NestE-300x224.png" width="300" height="224" srcset="/uploads/2017/12/NestE-300x224.png 300w, /uploads/2017/12/NestE.png 640w" sizes="(max-width: 300px) 100vw, 300px" />][12]
+![](/uploads/2017/12/NestE.png)
 
 &nbsp;
 
@@ -102,7 +102,7 @@ Nest. There is a little secret most people may not know. You can get one for und
 
 This part is for more experienced users. Using a wireless module I created a mini hub essentially that interfaces 433mhz to Samsung SmartThings. Using an [ESP8266][13] with our [open source code][14] and a [wireless 433mhz receiver][15], you can add super cheap security sensors from [ebay][16]. These sensors usually sell for about $1-2/each and can be purchased in bulk quantities. Other types of sensors include motion sensors, door/window sensors, leak sensors, carbon monoxide sensors and many more. Just search 433mhz on ebay and you will get a bunch of results. Unfortunately I will only use these as a one way signal, I don&#8217;t trust this open frequency to be used to control devices.
 
-[<img class="wp-image-206" src="/uploads/2017/12/s-l1600-300x300.jpg" width="300" height="300" srcset="/uploads/2017/12/s-l1600-300x300.jpg 300w, /uploads/2017/12/s-l1600.jpg 150w, /uploads/2017/12/s-l1600-768x768.jpg 768w, /uploads/2017/12/s-l1600-1024x1024.jpg 1024w, /uploads/2017/12/s-l1600.jpg 1600w" sizes="(max-width: 300px) 100vw, 300px" />][17]
+![](/uploads/2017/12/s-l1600.jpg)
 
 &nbsp;
 
@@ -120,7 +120,7 @@ These are probably the best thing about owning a smart home system. My current r
 
 Nothing fancy here, just a basic pin code lock by Kwikset. Bluetooth smart locks are [inevitably hacked][18]. Wifi devices kill batteries. Nothing really interest me at the moment. I have a a Kwikset 910 pin code lock on both the front and rear entries of the home. Keyless entry along with my push-to-start car means I never see/use keys.
 
-[<img class="wp-image-219" src="/uploads/2017/12/product_header_electronic-300x182.jpg" width="300" height="182" srcset="/uploads/2017/12/product_header_electronic-300x182.jpg 300w, /uploads/2017/12/product_header_electronic.jpg 400w" sizes="(max-width: 300px) 100vw, 300px" />][19]
+![](/uploads/2017/12/product_header_electronic.jpg)
 
 **Android Auto**:
 
@@ -134,7 +134,7 @@ Don&#8217;t cheap out on batteries for any of this stuff. **Energizer** batterie
 
 The simple solution for this. Using a 1 relay switch on one side. Closing the connection on the other side and placing a fake switch in the panel in place solves this problem. This is in theory. I have yet to test this on my setup yet but it will be coming soon.
 
-[<img class="wp-image-235" src="/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram-300x244.jpg" width="300" height="244" srcset="/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram-300x244.jpg 300w, /uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram.jpg 616w" sizes="(max-width: 300px) 100vw, 300px" />][20]
+![](/uploads/2017/12/two-way-light-switch-diagram-or-staircase-wiring-diagram.jpg)
 
 **Light Switch Controlling Socket**:
 
