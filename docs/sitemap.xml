@@ -15,6 +15,12 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/post/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
@@ -45,12 +51,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
