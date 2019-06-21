@@ -58,7 +58,7 @@ Tools:
 
 This strip is where the filament goes from dry air to the printer. Drill holes (3/16&#8243; Drill Bit) about 2cm apart on a strip of wood. I drilled as many as I could to future proof my design.
 
-[<img class="wp-image-450" src="/uploads/2018/04/20180403_191010-1024x585.jpg" width="678" height="387" srcset="/uploads/2018/04/20180403_191010-1024x585.jpg 1024w, /uploads/2018/04/20180403_191010-300x171.jpg 300w, /uploads/2018/04/20180403_191010-768x439.jpg 768w" sizes="(max-width: 678px) 100vw, 678px" />][7]
+![](/uploads/2018/04/20180403_191010.jpg)
 
 &nbsp;
 
@@ -112,7 +112,7 @@ On the underside, use an M5 nut to secure the connectors. The coated nut also he
 
 Cut tubing to connect the feed strip and the bin.
 
-[<img class="wp-image-458" src="/uploads/2018/04/20180403_194409-768x1024.jpg" width="678" height="904" srcset="/uploads/2018/04/20180403_194409-768x1024.jpg 768w, /uploads/2018/04/20180403_194409-225x300.jpg 225w, /uploads/2018/04/20180403_194409.jpg 1440w" sizes="(max-width: 678px) 100vw, 678px" />][17]
+![](/uploads/2018/04/20180403_194409.jpg)
 
 &nbsp;
 
