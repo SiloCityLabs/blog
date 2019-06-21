@@ -49,9 +49,13 @@ Now the assistant can watch Skanect while moving around.
 alternative raspi scanner that I have not tried:  
 <https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/>
 
-Scanning requires either a beefy CPU or CUDA acceleration from an NVidia GPU. Slow hardware requires slooowwww movement of the Kinect. Moving too fast will cause the scan to fail.  
-Install Skanect  
-If you have an NVidia card, install CUDA drivers (takes like 20-30min to install)[<img class="wp-image-581 alignright" src="/uploads/2018/08/orig-scan-watertight-300x169.jpg" width="300" height="169" srcset="/uploads/2018/08/orig-scan-watertight-300x169.jpg 300w, /uploads/2018/08/orig-scan-watertight-768x432.jpg 768w, /uploads/2018/08/orig-scan-watertight-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />][2]
+Scanning requires either a beefy CPU or CUDA acceleration from an NVidia GPU. Slow hardware requires slooowwww movement of the Kinect. Moving too fast will cause the scan to fail.
+
+Install Skanect
+
+If you have an NVidia card, install CUDA drivers (takes like 20-30min to install)
+
+![](/uploads/2018/08/orig-scan-watertight.jpg)
 
 After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here&#8217;s what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.
 
