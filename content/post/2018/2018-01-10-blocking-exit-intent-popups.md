@@ -12,7 +12,7 @@ tags:
   - Userscript
 
 ---
-[<img class="wp-image-299" src="/uploads/2018/01/newsletter-popup-e1515447774854.jpg" alt="Frig off, Randy" width="906" height="335" />][1]
+![Frig off, Randy](/uploads/2018/01/newsletter-popup-e1515447774854.jpg)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ I hate &#8220;exit intent&#8221; popups. The kind that automatically open when y
 
 <!--more-->
 
-<figure id="attachment_308" aria-describedby="caption-attachment-308" style="width: 300px" class="wp-caption alignright">[<img class="wp-image-308" src="/uploads/2018/01/optin-monster-300x213.png" width="300" height="213" srcset="/uploads/2018/01/optin-monster-300x213.png 300w, /uploads/2018/01/optin-monster-768x544.png 768w, /uploads/2018/01/optin-monster-210x150.png 210w, /uploads/2018/01/optin-monster.png 960w" sizes="(max-width: 300px) 100vw, 300px" />][3]<figcaption id="caption-attachment-308" class="wp-caption-text">Soon to be blocked</figcaption></figure>
+![Soon to be blocked](/uploads/2018/01/optin-monster.png)
 
 Specifically I want to block Ouibounce ([demo][4]) and OptIn Monster ([demo][5]). Bounce Exchange is another infamous one but I couldn&#8217;t find a demo to test on. [This Metafilter topic][6] tipped me off to the main culprits: Javascript&#8217;s mouseleave and mouseout events. So many sites have these popups that it&#8217;s not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.
 
