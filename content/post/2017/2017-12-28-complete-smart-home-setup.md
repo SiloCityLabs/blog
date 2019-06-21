@@ -58,7 +58,7 @@ The only downside:
 
 I personally have a set budget per bulb that I would pay. I would never pay anything above $10/each under any circumstances, color changing or not. My favorite bulb at the moment seems to be the affordable Sengled Classic A19. This bulb has a very nice light output at 800 lumens. I paid just under $7/each on sale, as they very often go on sale on [Amazon][4].
 
-![](/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg)[5]
+![](/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg)
 
 **Smart Switch Control**:
 
@@ -70,13 +70,13 @@ Why switches vs smart bulbs? Simplicity!
   * Easier to use &#8211; No need to tape the wall switch into the always on position.
   * It just makes sense! Mix old tech with the new.
 
-[<img class="wp-image-72" src="/uploads/2017/12/41vrEw9HFL-300x300.jpg" width="300" height="300" srcset="/uploads/2017/12/41vrEw9HFL-300x300.jpg 300w, /uploads/2017/12/41vrEw9HFL.jpg 150w, /uploads/2017/12/41vrEw9HFL.jpg 500w" sizes="(max-width: 300px) 100vw, 300px" />][6]
+![](/uploads/2017/12/41vrEw9HFL.jpg)
 
 **Smart Plugs**:
 
 I use these anywhere where I have lamps, automating lighting like in my turtle tank or Christmas lights. These even record power usage so you can place them on appliances like furnaces, 3d printers, etc to monitor power usage over time. [Amazon link][7]
 
-[<img class="wp-image-208" src="/uploads/2017/12/856418004501-300x300.jpg" width="300" height="300" srcset="/uploads/2017/12/856418004501-300x300.jpg 300w, /uploads/2017/12/856418004501.jpg 150w, /uploads/2017/12/856418004501-768x768.jpg 768w, /uploads/2017/12/856418004501.jpg 900w" sizes="(max-width: 300px) 100vw, 300px" />][8]
+![](/uploads/2017/12/856418004501.jpg)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ I use these anywhere where I have lamps, automating lighting like in my turtle t
 
 I have 3 locations in my house that have no wall switch. All 3 have pull strings. Basement lights (x6), back hall, and front hall. I was able to put in place a Sengled smart bulb and a battery smart switch. These switches last up to 10 years on battery and can be placed in a real gang box like any other switch, or double-side taped to the wall to mimic a switch plate. The most affordable switch I found was a Lutron Smart Switch on [Amazon.][9]
 
-<figure id="attachment_204" aria-describedby="caption-attachment-204" style="width: 300px" class="wp-caption aligncenter">[<img class="wp-image-204" src="/uploads/2017/12/Wall-Mount-Lutron-Pico-Remote-Control-300x210.jpg" width="300" height="210" />][10]<figcaption id="caption-attachment-204" class="wp-caption-text">Lutron Remote with faux plate</figcaption></figure>
+![Lutron Remote with faux plate](/uploads/2017/12/Wall-Mount-Lutron-Pico-Remote-Control-300x210.jpg)
 
 &nbsp;
 
