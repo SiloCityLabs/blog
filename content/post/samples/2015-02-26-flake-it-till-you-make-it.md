@@ -1,9 +1,19 @@
 ---
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
-date: 2015-02-26
-bigimg: [{src: "/img/path.jpg", desc: "Path"}]
+author: Luis Rodriguez
+type: post
 draft: true
+date: 2019-01-08T22:36:25+00:00
+url: /post/2019/01/08/flake-image-sample/
+bigimg: [{src: "/img/triangle.jpg", desc: "Triangle"}, {src: "/img/sphere.jpg", desc: "Sphere"}, {src: "/img/hexagon.jpg", desc: "Hexagon"}]
+categories:
+  - Projects
+tags:
+  - example
+  - sample
+  - sample2
+
 ---
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?  
