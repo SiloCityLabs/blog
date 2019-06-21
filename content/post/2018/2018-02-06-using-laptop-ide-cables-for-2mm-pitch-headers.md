@@ -13,9 +13,9 @@ tags:
   - esp51822
 
 ---
-[](/uploads/2018/02/IMG_20180203_213426-Copy.jpg)[1]
+![](/uploads/2018/02/IMG_20180203_213426-Copy.jpg)
 
-[2mm pitch headers, ugh](/uploads/2018/02/Core51822-size.jpg)[2]
+![2mm pitch headers, ugh](/uploads/2018/02/Core51822-size.jpg)
 
 My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&#8243; (2.54mm) pitch. This makes it incompatible with regular 1&#8243; pitch breadboards. Being double row makes it worse.
 
@@ -27,7 +27,7 @@ After searching a while I was able to find two compatible cables. First some reg
 
 If you buy a longer cable you can simply cut the cable in half and get two 2&#215;24 cables. With the 2&#8243; cable I got I couldn&#8217;t afford shortening the wires any further. I removed the connector from one end by breaking the tabs on the side
 
-<figure id="attachment_360" aria-describedby="caption-attachment-360" style="width: 281px" class="wp-caption aligncenter">[<img class="wp-image-360" src="/uploads/2018/02/IMG_20180203_191933-281x300.jpg" width="281" height="300" srcset="/uploads/2018/02/IMG_20180203_191933-281x300.jpg 281w, /uploads/2018/02/IMG_20180203_191933.jpg 485w" sizes="(max-width: 281px) 100vw, 281px" />][5]<figcaption id="caption-attachment-360" class="wp-caption-text">Snap off this tab</figcaption></figure>
+![Snap off this tab](/uploads/2018/02/IMG_20180203_191933.jpg)
 
 Removing the plate revealed the pins on the connector underneath. I popped off both sides to confirm which wire went to which female pin. The pins are mirrored top and bottom row so I can look at the puncture point ( top or bottom) and determine which row it leads to. I could probably read the specs but this was faster.
 
@@ -43,11 +43,8 @@ I pulled the wire apart in pairs so that each pair is a column, making it easier
 
 End result is a pair of connectors for 2mm pitch header breakout. Conclusion? It works but doesn&#8217;t have much advantage over the regular 2mm pitch IDC connector. I saved $1.50. Do yourself a favor and get a module that uses 1&#8243; headers in the first place.
 
- [1]: /uploads/2018/02/IMG_20180203_213426-Copy.jpg
- [2]: /uploads/2018/02/Core51822-size.jpg
  [3]: https://www.ebay.com/itm/2/182158682043
  [4]: https://www.newegg.com/Product/Product.aspx?Item=9SIA67055T3504
- [5]: /uploads/2018/02/IMG_20180203_191933.jpg
  [6]: /uploads/2018/02/IMG_20180203_205214-Copy.jpg
  [7]: /uploads/2018/02/IMG_20180203_213426.jpg
  [8]: /uploads/2018/02/IMG_20180203_213608.jpg
