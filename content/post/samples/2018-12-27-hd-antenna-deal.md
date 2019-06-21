@@ -1,12 +1,15 @@
 ---
 title: Hd antenna deal
-author: Luis Rodriguez
+author: Some Person
 type: post
 date: 2018-12-28T01:50:44+00:00
-url: /post/2018/12/27/hd-antenna-deal/
+url: /post/2018/12/27/hd-antenna-deal-sample/
 categories:
   - Tech Deals
 format: link
+tags:
+  - sample
+  - sample2
 
 ---
 30% off HDTV Antennas through Antennas Direct.
