@@ -15,7 +15,7 @@ googleAnalytics = "UA-78226868-3"
 
 [Params]
   subtitle = "Official Blog for Silo City Labs LLC"
-  logo = "android-chrome-256x256.png"
+  logo = "logo.png"
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
