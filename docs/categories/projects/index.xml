@@ -421,9 +421,9 @@
       <pubDate>Tue, 06 Feb 2018 08:50:09 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34;&gt;&lt;img class=&#34;wp-image-359&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34; width=&#34;1160&#34; height=&#34;371&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg 1160w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy-300x96.jpg 300w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy-768x246.jpg 768w, https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy-1024x328.jpg 1024w&#34; sizes=&#34;(max-width: 1160px) 100vw, 1160px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;[](/uploads/2018/02/IMG_20180203_213426-Copy.jpg)&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34;&gt;1&lt;/a&gt;&lt;/p&gt;
 
-&lt;figure id=&#34;attachment_358&#34; aria-describedby=&#34;caption-attachment-358&#34; style=&#34;width: 300px&#34; class=&#34;wp-caption alignright&#34;&gt;[&lt;img class=&#34;wp-image-358&#34; src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size-300x255.jpg&#34; width=&#34;300&#34; height=&#34;255&#34; srcset=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size-300x255.jpg 300w, https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg 750w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;][2]&lt;figcaption id=&#34;caption-attachment-358&#34; class=&#34;wp-caption-text&#34;&gt;2&amp;#215;10 2mm pitch headers, ugh&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34;&gt;2mm pitch headers, ugh&lt;/a&gt;&lt;a href=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34;&gt;2&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&amp;#8243; (2.54mm) pitch. This makes it incompatible with regular 1&amp;#8243; pitch breadboards. Being double row makes it worse.&lt;/p&gt;</description>
     </item>
