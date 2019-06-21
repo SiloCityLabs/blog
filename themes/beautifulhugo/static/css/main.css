@@ -322,17 +322,6 @@ footer .theme-by {
   border-bottom: 0;
 }
 
-.post-preview a {
-  text-decoration: none;
-  color: #404040;
-}
-
-.post-preview a:focus,
-.post-preview a:hover {
-  text-decoration: none;
-  color: #0085a1;
-}
-
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
