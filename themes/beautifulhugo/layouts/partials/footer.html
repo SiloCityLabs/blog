@@ -35,6 +35,9 @@
             &nbsp;&bull;&nbsp;
             <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
           {{ end }}
+          
+          &nbsp;&bull;&nbsp;
+          Last built on {{ .Site.LastChange.Format "Jan 2, 2006 at 3:04pm (EST)" }}
         </p>
         <p class="credits theme-by text-muted">
           {{ with .Site.Params.commit }}&nbsp;&bull;&nbsp;[<a href="{{.}}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]{{ end }}
