@@ -322,6 +322,16 @@ footer .theme-by {
   border-bottom: 0;
 }
 
+/* override the default bright blue for headers and read-more */
+h2.post-title {
+  text-decoration: none;
+  color: #404040;
+}
+a.post-read-more {
+  text-decoration: none;
+  color: #404040;
+}
+
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
