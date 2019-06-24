@@ -74,11 +74,11 @@ go version
 
 We will start by making a quick hello world to verify that Go and VSCode are both setup properly. During this you will see notifications popup from VSCode to install go plugins for [linting](https://www.google.com/search?q=linter) and autocomplete.
 
-On the first start screen hit the Open folder button and create a folder for your projects under `C:\Users\{username}\Go\src\` (Windows) or `/home/{username}/go/src` (Linux). Inside you will want to add a folder for your hello world project. We will be calling it `hello`. Hit new File and type `hello.go`. Almost emmediately I was presented with a plugin installer for Go.
+On the first start screen hit the Open folder button and create a folder for your projects under `C:\Users\{username}\Go\src\` (Windows) or `/home/{username}/go/src` (Linux). Inside you will want to add a folder for your hello world project. We will be calling it `hello`. Hit new File and type `hello.go`. Almost Immediately I was presented with a plugin installer for Go.
 
 ![Golang Install Plugin](/uploads/2019/06/golang-extension.png)
 
-Moments after it installs it recommends other plugins. I just hit `install all`. This will help you get started with go alot quicker than ussual by adding many features lacking by default in the editor.
+Moments after it installs it recommends other plugins. I just hit `install all`. This will help you get started with go much quicker than ussual by adding many features lacking by default in the editor.
 
 ![Golang Install All](/uploads/2019/06/golang-plugins-all.png)
 
@@ -199,7 +199,7 @@ If you run this your result will be the defaults of string and bool:
 
 ## For Loop
 
-A `for` loop is a repitition structure that allows you to efficiently write a loop that needs to execute a specific amount of times. The syntax is as follows:
+A `for` loop is a repetition structure that allows you to efficiently write a loop that needs to execute a specific amount of times. The syntax is as follows:
 
 ```go
 package main
@@ -244,7 +244,7 @@ var usernames [10] string
 
 ```
 
-You can also initialize an array in Go with a list of items. Go will calculate the size automatically at compile time. Arrays cannot be resized later on but dont worry becouse it provides convinient ways of working with them.
+You can also initialize an array in Go with a list of items. Go will calculate the size automatically at compile time. Arrays cannot be resized later on but dont worry because it provides convenient ways of working with them.
 
 ```go
 var usernames = []string{"gocrazy","gorungo","going2fast"}
@@ -259,9 +259,9 @@ $ go run hello.go
 
 ## Slices
 
-A slice is an abstraction over Go Array. As Go arrays allow you to define type of variables that can hold several data items of the same kind but it does not allow you to increase the size dynamically or get a sub array. It provides many helper functions required on Array and are widely used in Go accross the community.
+A slice is an abstraction over Go Array. As Go arrays allow you to define type of variables that can hold several data items of the same kind but it does not allow you to increase the size dynamically or get a sub array. It provides many helper functions required on Array and are widely used in Go across the community.
 
-To define a slice you can declare it as an array withouth specifying size. You can also use the `make` function to create one.
+To define a slice you can declare it as an array without specifying size. You can also use the `make` function to create one.
 
 ```go
 var numbers []int /* a slice with an unspecified size */
@@ -304,7 +304,7 @@ $ go run hello.go
 
 ## Structure
 
-A `structure` is a user defined type available in Go that allows you to combine data items of different kinds. A struct statement defines a new data type for your proram and binds the name. Once a struct is defined it can be used like any other type. Lets defined one, populate it and print it out.
+A `structure` is a user defined type available in Go that allows you to combine data items of different kinds. A struct statement defines a new data type for your program and binds the name. Once a struct is defined it can be used like any other type. Lets defined one, populate it and print it out.
 
 ```go
 package main
@@ -371,4 +371,4 @@ func main() {
 }
 ```
 
-Running this will result in 3 seperate random phrases every time. You can look at the source for their code on github from the same link to see how their packages work for further documentation.
+Running this will result in 3 separate random phrases every time. You can look at the source for their code on github from the same link to see how their packages work for further documentation.
