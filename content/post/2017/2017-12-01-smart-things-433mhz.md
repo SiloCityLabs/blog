@@ -21,6 +21,6 @@ I also bought a CC2530 chip for zigbee testing, Not sure what im going to do wit
 
 &nbsp;
 
-Edit: I think I may have made a mistake buying zigbee chips. So turns out zwave may have longer battery life compared to zigbee&#8230; shoulda researched more
+Edit: I think I may have made a mistake buying zigbee chips. So turns out zwave may have longer battery life compared to zigbee... shoulda researched more
 
 &nbsp;
