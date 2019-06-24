@@ -19,7 +19,7 @@ This problem gave me a few issues I will go over briefly. This was fairly simple
 
 <!--more-->
 
-To get this camera working after much fooling around and talking with support. The old firmware needs to be updated to enable automatic onvif detection. Download the software [SmartPSS][3] then the [firmware &#8220;IP Wifi Bullet Camera&#8221;.][4]
+To get this camera working after much fooling around and talking with support. The old firmware needs to be updated to enable automatic onvif detection. Download the software [SmartPSS][3] then the [firmware "IP Wifi Bullet Camera".][4]
 
 Once you have configured the device in smartpss, there should be an option to upgrade. Do that and it will show up to zoneminder with the onvif selector.
 

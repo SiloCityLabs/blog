@@ -33,7 +33,7 @@ Supplies/Tools needed:
 
 Before we get started I just wanted to add a **warning**. In this circuit just like most, polarities are very important. I made the mistake of flipping wires and my whole setup overheated and melted the glue. Keep this in mind when testing and before plugging it into your car and before doing the final seal.
 
-Also note that voltage on a car's 12v line varies. With just the battery it's around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report &#8220;low battery&#8221; because of the reduced voltage when the car is off. It's not an issue.
+Also note that voltage on a car's 12v line varies. With just the battery it's around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report "low battery" because of the reduced voltage when the car is off. It's not an issue.
 
 **Wire up the tile**
 
@@ -51,7 +51,7 @@ Drill or solder a hole at the top of the tile for the wires to exit. Slip the wi
 
 **Preparing the DC to DC Converter**
 
-Using a 12v power supply, attach the leads to the converters &#8220;in&#8221; pins and measure the power on the &#8220;out&#8221; pins using a voltage meter. Turn the adjustment until you are close to 3v.
+Using a 12v power supply, attach the leads to the converters "in" pins and measure the power on the "out" pins using a voltage meter. Turn the adjustment until you are close to 3v.
 
 ![](/uploads/2018/07/photo_2018-07-18_23-27-03-2.jpg)
 

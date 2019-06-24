@@ -29,7 +29,7 @@ When using iPerf its best to test it with a known high performance device as the
 
 &nbsp;
 
-Next step, create a client device using iPerf to connect to the supplied IP on your other device. You may also search for iPerf GUI if you are uncomfortable using command line. Open a terminal window and type the path to iPerf or you can drag it into windows command prompt as well. Follow it with &#8220;-c {ipaddress given by server} -i 1&#8221;
+Next step, create a client device using iPerf to connect to the supplied IP on your other device. You may also search for iPerf GUI if you are uncomfortable using command line. Open a terminal window and type the path to iPerf or you can drag it into windows command prompt as well. Follow it with "-c {ipaddress given by server} -i 1"
 
 ![](/uploads/2018/12/1-7.png)
 
