@@ -12,17 +12,17 @@
 
 &nbsp;
 
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re irrelevant (I&#8217;m following instructions, not closing). They interrupt the content I&#8217;m trying to read. So I made a short Userscript to globally block them.">
+I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re irrelevant (I&rsquo;m following instructions, not closing). They interrupt the content I&rsquo;m trying to read. So I made a short Userscript to globally block them.">
   <meta property="og:description" content="
 
 &nbsp;
 
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re irrelevant (I&#8217;m following instructions, not closing). They interrupt the content I&#8217;m trying to read. So I made a short Userscript to globally block them.">
+I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re irrelevant (I&rsquo;m following instructions, not closing). They interrupt the content I&rsquo;m trying to read. So I made a short Userscript to globally block them.">
   <meta name="twitter:description" content="
 
 &nbsp;
 
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re …">
+I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo.png" />
@@ -199,23 +199,23 @@ if (!doNotTrack) {
 
 <p>&nbsp;</p>
 
-<p>I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don&#8217;t go!&#8221;. They&#8217;re annoying. They&#8217;re irrelevant (I&#8217;m following instructions, not closing). They interrupt the content I&#8217;m trying to read. So I made a short <a href="https://openuserjs.org/scripts/Maave/Exit_Intent_defuser">Userscript to globally block them</a>.</p>
+<p>I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re irrelevant (I&rsquo;m following instructions, not closing). They interrupt the content I&rsquo;m trying to read. So I made a short <a href="https://openuserjs.org/scripts/Maave/Exit_Intent_defuser">Userscript to globally block them</a>.</p>
 
 <p><img src="https://silocitylabs.com/uploads/2018/01/optin-monster.png" alt="Soon to be blocked" /></p>
 
-<p>Specifically I want to block Ouibounce (<a href="https://carlsednaoui.github.io/ouibounce/">demo</a>) and OptIn Monster (<a href="https://optinmonster.com/features/exit-intent/">demo</a>). Bounce Exchange is another infamous one but I couldn&#8217;t find a demo to test on. <a href="https://ask.metafilter.com/280379/Stop-popping-up-when-Im-about-to-switch-the-tab">This Metafilter topic</a> tipped me off to the main culprits: Javascript&#8217;s mouseleave and mouseout events. So many sites have these popups that it&#8217;s not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.</p>
+<p>Specifically I want to block Ouibounce (<a href="https://carlsednaoui.github.io/ouibounce/">demo</a>) and OptIn Monster (<a href="https://optinmonster.com/features/exit-intent/">demo</a>). Bounce Exchange is another infamous one but I couldn&rsquo;t find a demo to test on. <a href="https://ask.metafilter.com/280379/Stop-popping-up-when-Im-about-to-switch-the-tab">This Metafilter topic</a> tipped me off to the main culprits: Javascript&rsquo;s mouseleave and mouseout events. So many sites have these popups that it&rsquo;s not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.</p>
 
-<p>While researching I was able to block the modals per-website using uBlock Origin&#8217;s <em>script:inject(&#8230;)</em>. Specifically the <em><a href="https://github.com/uBlockOrigin/uAssets/issues/692#issuecomment-329922065">addEventListener-defuser.js</a></em> is used in some filters to prevent JS click popups. Unfortunately the script injection intentionally doesn&#8217;t accept wildcards so I can&#8217;t use it globally.</p>
+<p>While researching I was able to block the modals per-website using uBlock Origin&rsquo;s <em>script:inject(&hellip;)</em>. Specifically the <em><a href="https://github.com/uBlockOrigin/uAssets/issues/692#issuecomment-329922065">addEventListener-defuser.js</a></em> is used in some filters to prevent JS click popups. Unfortunately the script injection intentionally doesn&rsquo;t accept wildcards so I can&rsquo;t use it globally.</p>
 
-<p>I made a Userscript to do the same thing and it&#8217;s working for Greasemonkey and Tampermonkey. This runs on <strong>all</strong> http and https pages and overrides the mouseleave and mouseout events. If some popup still appear try adding _//@run-at document-start_ so that it registers earlier. It will probably break some UIs but it&#8217;s an acceptable tradeoff to me. URLs can be excluded if needed. I don&#8217;t really plan on supporting such a simple script so it&#8217;s &#8220;licensed&#8221; under 0BSD. You&#8217;re free to use, copy, and edit. Have fun:</p>
+<p>I made a Userscript to do the same thing and it&rsquo;s working for Greasemonkey and Tampermonkey. This runs on <strong>all</strong> http and https pages and overrides the mouseleave and mouseout events. If some popup still appear try adding _//@run-at document-start_ so that it registers earlier. It will probably break some UIs but it&rsquo;s an acceptable tradeoff to me. URLs can be excluded if needed. I don&rsquo;t really plan on supporting such a simple script so it&rsquo;s &ldquo;licensed&rdquo; under 0BSD. You&rsquo;re free to use, copy, and edit. Have fun:</p>
 
 <p><a href="https://openuserjs.org/scripts/Maave/Exit_Intent_defuser">https://openuserjs.org/scripts/Maave/Exit_Intent_defuser</a></p>
 
-<p>EDIT: I&#8217;ve found a few features that broke. Excludes have been added.</p>
+<p>EDIT: I&rsquo;ve found a few features that broke. Excludes have been added.</p>
 
 <ul>
-<li>YouTube&#8217;s preview on the seek bar doesn&#8217;t go away.</li>
-<li>Wikipedia&#8217;s reference hover popup.</li>
+<li>YouTube&rsquo;s preview on the seek bar doesn&rsquo;t go away.</li>
+<li>Wikipedia&rsquo;s reference hover popup.</li>
 </ul>
       </article>
 <div class="clearfix">
@@ -364,7 +364,7 @@ if (!doNotTrack) {
           
           
           &nbsp;&bull;&nbsp;
-          Last built on Jun 24, 2019 at 9:21am (EST)
+          Last built on Jun 24, 2019 at 4:40pm (EST)
         </p>
         <p class="credits theme-by text-muted">
           

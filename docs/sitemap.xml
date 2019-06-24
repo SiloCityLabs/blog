@@ -104,12 +104,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
   </url>
@@ -122,6 +116,12 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
