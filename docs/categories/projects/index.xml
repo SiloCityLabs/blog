@@ -7,17 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Getting Started with Golang</title>
-      <link>https://silocitylabs.com/2019/06/23/getting-started-with-golang/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      <link>https://silocitylabs.com/2019/06/24/getting-started-with-golang/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/2019/06/23/getting-started-with-golang/</guid>
+      <guid>https://silocitylabs.com/2019/06/24/getting-started-with-golang/</guid>
       <description>Go Applications A Go app can vary from 3 to millions of lines of code. They should also be written with one or multiple files with the extension .go You can use any text editor to write a Go program like nano, but our favorite and most supported is Visual Studio Code.
 Setting up a Go Environment For all of our tutorials we will be using VSCode to help us ease into the language.</description>
     </item>
