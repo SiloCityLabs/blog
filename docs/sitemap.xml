@@ -15,7 +15,7 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/2019/06/23/</loc>
+    <loc>https://silocitylabs.com/2019/06/23/getting-started-with-golang/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -75,6 +75,12 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/golang/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/slices/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
