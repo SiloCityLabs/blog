@@ -22,7 +22,7 @@
 
 &lt;p&gt;Model: &lt;a href=&#34;https://www.bvsecurity.com/index.php/ca-ipbf-4mp-wifi.html&#34;&gt;ca-ipbf-4mp-wifi-fba&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This problem gave me a few issues I will go over briefly. This was fairly simple once I realized what I was doing wrong. I originally had it plugged in via an Ethernet cable to setup to WiFi like most cameras. But this camera actually just uses the microphone to transmit settings. Once I removed the Ethernet cable everything worked fine. I actually snipped off the Ethernet knowing I wouldn&amp;#8217;t need it, saving space with the clunky cable.&lt;/p&gt;</description>
+&lt;p&gt;This problem gave me a few issues I will go over briefly. This was fairly simple once I realized what I was doing wrong. I originally had it plugged in via an Ethernet cable to setup to WiFi like most cameras. But this camera actually just uses the microphone to transmit settings. Once I removed the Ethernet cable everything worked fine. I actually snipped off the Ethernet knowing I wouldn&amp;rsquo;t need it, saving space with the clunky cable.&lt;/p&gt;</description>
     </item>
     
   </channel>

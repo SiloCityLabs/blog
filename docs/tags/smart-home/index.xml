@@ -18,7 +18,7 @@
       <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</guid>
-      <description>Finally &amp;#8211; off the breadboard and into a working environment. It&amp;#8217;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
+      <description>Finally - off the breadboard and into a working environment. It&amp;rsquo;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
 &amp;nbsp;
   Day 1:
 A few issues. I accidentally flipped the polarities on the siren. I will eventually implement a 12v regulator to up the voltage for the siren for the full 120db power.</description>
@@ -46,13 +46,13 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;#8217;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
+&lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;rsquo;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The Assistant&lt;/strong&gt;:
 r
-Google Home and/or Mini manage my random routines that aren&amp;#8217;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
+Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
