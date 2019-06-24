@@ -64,7 +64,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 &nbsp;
 
-**Step 1 &#8211; Basic application settings:**
+**Step 1 - Basic application settings:**
 
   * Download ([Daedalus][3]) and open the application.
   * Click on the menu then click "Servers"
@@ -84,7 +84,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 &nbsp;
 
-**Step 2 &#8211; Creating hosts files:**
+**Step 2 - Creating hosts files:**
 
   * If you do not have your own server, you can use [pastebin.com][7] to host your hosts files for use in the next steps.
   * Create a [pastebin][7] link for each mode, you can add as many hosts as you need to test like below. Then hit "Create New Paste"
@@ -97,7 +97,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 ![](/uploads/2018/03/pastebin2.png)
 
-**Step 3 &#8211; Setting up the rules:**
+**Step 3 - Setting up the rules:**
 
   * Back to the menu now, Click on "Rules".
   * Add a new rule for each development mode, Live, staging, dev. Filename is not crucial, just make something up.
@@ -107,7 +107,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 &nbsp;
 
-**Step 4 &#8211; Activating:**
+**Step 4 - Activating:**
 
   * Tap and activate the mode you wish to be in, You can activate more than one at a time so be careful as this will override one or the other.
   * In the menu go to home, and hit the "Activate" button.
@@ -116,7 +116,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 &nbsp;
 
-**Step 5 &#8211; Testing:**
+**Step 5 - Testing:**
 
   * The final setup, lets see if I am hitting my dev server.
   * As you can see in the app below, the short url is no longer short, I now get a full url as the dev server doesnt have an api key to tra.li link shortener.

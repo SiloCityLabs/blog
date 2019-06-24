@@ -23,7 +23,7 @@ My core51822 module has caused me a bit of headache. The headers are 2.00mm pitc
 
 &nbsp;
 
-After searching a while I was able to find two compatible cables. First some regular cables that fit the specs &#8211; [2mm pitch 2&#215;10 IDC connectors][3]. Second is even cheaper &#8211; [44-pin laptop IDE cable][4]​. I accidentally got the 2 inch cable, I should've got the 8 inch. 8 inch would've given me more wire to play with, enough to save both end of the cable.
+After searching a while I was able to find two compatible cables. First some regular cables that fit the specs - [2mm pitch 2&#215;10 IDC connectors][3]. Second is even cheaper - [44-pin laptop IDE cable][4]​. I accidentally got the 2 inch cable, I should've got the 8 inch. 8 inch would've given me more wire to play with, enough to save both end of the cable.
 
 If you buy a longer cable you can simply cut the cable in half and get two 2&#215;24 cables. With the 2" cable I got I couldn't afford shortening the wires any further. I removed the connector from one end by breaking the tabs on the side
 

@@ -23,7 +23,7 @@ Remember my [Bluetooth gamepad project][1]? It's time for a USB-C version. I sta
 
 ![cardboard gamepad mockup](/uploads/2019/05/6769521558992231498.jpg)
 
-I tried a few mockups and settled on a 2 piece design, with the halves connected by a ribbon cable. The left and right side share the same PCB but have different components attached. The "main" side (probably right side) will have most of the components and the USB connector. The "aux" side (probably left side) will have just an LED for status indication &#8211; all the button contacts are built into the PCB.
+I tried a few mockups and settled on a 2 piece design, with the halves connected by a ribbon cable. The left and right side share the same PCB but have different components attached. The "main" side (probably right side) will have most of the components and the USB connector. The "aux" side (probably left side) will have just an LED for status indication - all the button contacts are built into the PCB.
 
 ![SNES gamepad silicone on mockup](/uploads/2019/05/2320541558989079616.jpg)
 
@@ -33,7 +33,7 @@ I'm using SNES buttons for this version. The contest is for 2sq inches of PCB an
 
 PCB layout is in the works. I still have rearranging and routing to do. I may have to change USB-C connectors to something that will fit the trace width of OSHpark.
 
-Follow my [project on HackADay.io][6] for finer details and updates! Source code will be available the SiloCityLabs Github soon™. This will be completely open source &#8211; PCB, firmware, and 3d printed case.
+Follow my [project on HackADay.io][6] for finer details and updates! Source code will be available the SiloCityLabs Github soon™. This will be completely open source - PCB, firmware, and 3d printed case.
 
  [1]: https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/
  [2]: https://hackaday.io/contest/163267-flexible-pcb-concept-contest

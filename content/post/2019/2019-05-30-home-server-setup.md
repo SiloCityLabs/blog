@@ -26,7 +26,7 @@ Today I will talk about my server setup by request. I setup my server originally
 
 ## Security Camera Software
 
-ZoneMinder &#8211; "A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need."
+ZoneMinder - "A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need."
 
 ## My Cameras
 
