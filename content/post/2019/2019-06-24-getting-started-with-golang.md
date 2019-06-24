@@ -2,8 +2,8 @@
 title: Getting Started with Golang
 author: Luis Rodriguez
 type: post
-date: 2019-06-23
-url: /2019/06/23/getting-started-with-golang
+date: 2019-06-24
+url: /2019/06/24/getting-started-with-golang
 categories:
   - Projects
   - Golang
