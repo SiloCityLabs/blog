@@ -30,7 +30,7 @@ Double Switch (using two in one saves space and money $15/each): [Amazon $29.95]
 
 &nbsp;
 
-Once it arrives in the mail I will let you know the process I went through to get it working with SmartThings if I can. I noticed that monoprice had this exact same stock image but the product fell of the face of their website. Its most likely the same product which has been reported to work fine with SmartThings. We shall see&#8230;
+Once it arrives in the mail I will let you know the process I went through to get it working with SmartThings if I can. I noticed that monoprice had this exact same stock image but the product fell of the face of their website. Its most likely the same product which has been reported to work fine with SmartThings. We shall see...
 
 &nbsp;
 

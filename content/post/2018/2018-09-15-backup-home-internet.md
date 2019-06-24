@@ -19,7 +19,7 @@ Use cases (mainly mine):
 
   * Watching netflix withouth interuptions.
   * Backup internet for home security system.
-  * Anything internet&#8230;
+  * Anything internet...
 
 To start off we plugin a cell phone to the routers usb port.
 

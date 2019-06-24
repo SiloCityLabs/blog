@@ -22,7 +22,7 @@ Title is a little deceptive yes, but I still consider them free when you have a 
 
 ![](/uploads/2018/09/20180917_2020073946083583409025178.jpg)
 
-When You can get yourself a source&#8230; well you have a source! They will feel endless and will just keep on comming. I have racked up quite a decent amount of them. I am able to use them for part storage, office supplies like rubber bands, resistors seperated in ziplocks and much much more.
+When You can get yourself a source... well you have a source! They will feel endless and will just keep on comming. I have racked up quite a decent amount of them. I am able to use them for part storage, office supplies like rubber bands, resistors seperated in ziplocks and much much more.
 
 ![](/uploads/2018/09/20180917_2019176507213474671005319.jpg)
 
@@ -38,4 +38,4 @@ Apply a label or sharpie, then stack them away.
 
 ![](/uploads/2018/09/20180917_2019441725666942943043130.jpg)
 
-You are probably wondering were to get these. Reach out to a pregnant friend or couple i'm sure they will bag them for you. The other method is do what I did&#8230;. Have a baby&#8230; jk haha. My wifes pregnancy was completly unrelated to this.
+You are probably wondering were to get these. Reach out to a pregnant friend or couple i'm sure they will bag them for you. The other method is do what I did.... Have a baby... jk haha. My wifes pregnancy was completly unrelated to this.
