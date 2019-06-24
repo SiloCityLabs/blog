@@ -16,7 +16,7 @@ tags:
 
 &nbsp;
 
-I hate &#8220;exit intent&#8221; popups. The kind that automatically open when your mouse leaves the page begging &#8220;please don't go!&#8221;. They're annoying. They're irrelevant (I'm following instructions, not closing). They interrupt the content I'm trying to read. So I made a short [Userscript to globally block them][2].
+I hate "exit intent" popups. The kind that automatically open when your mouse leaves the page begging "please don't go!". They're annoying. They're irrelevant (I'm following instructions, not closing). They interrupt the content I'm trying to read. So I made a short [Userscript to globally block them][2].
 
 <!--more-->
 
@@ -26,7 +26,7 @@ Specifically I want to block Ouibounce ([demo][4]) and OptIn Monster ([demo][5]
 
 While researching I was able to block the modals per-website using uBlock Origin's _script:inject(...)_. Specifically the _[addEventListener-defuser.js][7]_ is used in some filters to prevent JS click popups. Unfortunately the script injection intentionally doesn't accept wildcards so I can't use it globally.
 
-I made a Userscript to do the same thing and it's working for Greasemonkey and Tampermonkey. This runs on **all** http and https pages and overrides the mouseleave and mouseout events. If some popup still appear try adding _//@run-at document-start_ so that it registers earlier. It will probably break some UIs but it's an acceptable tradeoff to me. URLs can be excluded if needed. I don't really plan on supporting such a simple script so it's &#8220;licensed&#8221; under 0BSD. You're free to use, copy, and edit. Have fun:
+I made a Userscript to do the same thing and it's working for Greasemonkey and Tampermonkey. This runs on **all** http and https pages and overrides the mouseleave and mouseout events. If some popup still appear try adding _//@run-at document-start_ so that it registers earlier. It will probably break some UIs but it's an acceptable tradeoff to me. URLs can be excluded if needed. I don't really plan on supporting such a simple script so it's "licensed" under 0BSD. You're free to use, copy, and edit. Have fun:
 
 [https://openuserjs.org/scripts/Maave/Exit\_Intent\_defuser][2]
 

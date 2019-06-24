@@ -66,7 +66,7 @@ Set the main ip as 192.168.1.1, DHCP range to 192.168.1.10 &#8211; 192.168.1.254
 
 **Wifi settings:**
 
-I will set the main wifi name as &#8220;_mywifi (front)_&#8221; and the 5ghz as &#8220;_mywifi 5ghz_&#8220;.
+I will set the main wifi name as "_mywifi (front)_" and the 5ghz as "_mywifi 5ghz_".
 
 ### 
 
@@ -90,7 +90,7 @@ Enable Ap Mode then set the main ip as 192.168.1.2, DNS settings to 10.5.1.1 and
 
 **Wifi settings:**
 
-I will set the main wifi name as &#8220;_mywifi (rear)_&#8221; and the 5ghz as &#8220;_mywifi 5ghz_&#8220;.
+I will set the main wifi name as "_mywifi (rear)_" and the 5ghz as "_mywifi 5ghz_".
 
 &nbsp;
 

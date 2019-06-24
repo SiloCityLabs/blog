@@ -59,7 +59,7 @@ If you have an NVidia card, install CUDA drivers (takes like 20-30min to install
 
 After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here's what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.
 
-Skanect scales in meters and I haven't figured out how to import/export with Blender properly (you're supposed to do it in the scene but it didn't work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &#8220;m&#8221; for meters, fix any errors, then save (as STL). Now it's scaled.
+Skanect scales in meters and I haven't figured out how to import/export with Blender properly (you're supposed to do it in the scene but it didn't work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the "m" for meters, fix any errors, then save (as STL). Now it's scaled.
 
 # Blender
 

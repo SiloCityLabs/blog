@@ -24,7 +24,7 @@ These are just about every cheap camera sold in store. You can buy these at home
 
 #### Setup:
 
-The PCI Card I used was &#8220;Hauppauge 649000-02&#8221;. It sells on ebay for around $20 and has 4 inputs. Something to look out for in these cards, If you have one main chip on the card with 4 inputs it will likely degrade the frames per camera. Something with one chip for 2 inputs would be ideal. 8 Input cards with 4 chips would be ideal but unrealistic in price. I compromised with 4 input cards and bought two of them.
+The PCI Card I used was "Hauppauge 649000-02". It sells on ebay for around $20 and has 4 inputs. Something to look out for in these cards, If you have one main chip on the card with 4 inputs it will likely degrade the frames per camera. Something with one chip for 2 inputs would be ideal. 8 Input cards with 4 chips would be ideal but unrealistic in price. I compromised with 4 input cards and bought two of them.
 
 Due to the name change of the pci card and the colons in the path, you will need to make a symlink to point to it. As you can see in the image my /camera/pci0 points to the path to the device.
 

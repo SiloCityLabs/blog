@@ -60,22 +60,22 @@ https://pastebin.com/raw/FudTpY1z
 
 &nbsp;
 
-You'll notice for each setup I have created pastebin links to where my hosts file is located, the format is &#8220;ip hostname&#8221; with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use http://somewebsite.com/dns-settings/live.txt. This allows me to edit without updating my android device.
+You'll notice for each setup I have created pastebin links to where my hosts file is located, the format is "ip hostname" with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use http://somewebsite.com/dns-settings/live.txt. This allows me to edit without updating my android device.
 
 &nbsp;
 
 **Step 1 &#8211; Basic application settings:**
 
   * Download ([Daedalus][3]) and open the application.
-  * Click on the menu then click &#8220;Servers&#8221;
+  * Click on the menu then click "Servers"
 
 ![](/uploads/2018/03/photo_2018-03-02_10-35-15.jpg)
 
-  * Click the add button and add the two google servers &#8220;8.8.8.8&#8221; and &#8220;8.8.4.4&#8221;, You can substitute these for your preferred DNS provider as well.
+  * Click the add button and add the two google servers "8.8.8.8" and "8.8.4.4", You can substitute these for your preferred DNS provider as well.
 
 ![](/uploads/2018/03/photo_2018-03-02_10-35-33-Copy.jpg)
 
-  * Activate these dns servers in the menu by clicking on &#8220;Settings&#8221;
+  * Activate these dns servers in the menu by clicking on "Settings"
   * Then select Google and Google 2 from the settings. Also activate Advance settings and select the two following options in the image below
 
 ![](/uploads/2018/03/photo_2018-03-02_10-35-32.jpg)
@@ -87,7 +87,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 **Step 2 &#8211; Creating hosts files:**
 
   * If you do not have your own server, you can use [pastebin.com][7] to host your hosts files for use in the next steps.
-  * Create a [pastebin][7] link for each mode, you can add as many hosts as you need to test like below. Then hit &#8220;Create New Paste&#8221;
+  * Create a [pastebin][7] link for each mode, you can add as many hosts as you need to test like below. Then hit "Create New Paste"
 
 &nbsp;
 
@@ -99,7 +99,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 **Step 3 &#8211; Setting up the rules:**
 
-  * Back to the menu now, Click on &#8220;Rules&#8221;.
+  * Back to the menu now, Click on "Rules".
   * Add a new rule for each development mode, Live, staging, dev. Filename is not crucial, just make something up.
   * Hit sync rule before leaving to make sure the file is downloaded.
 
@@ -110,7 +110,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 **Step 4 &#8211; Activating:**
 
   * Tap and activate the mode you wish to be in, You can activate more than one at a time so be careful as this will override one or the other.
-  * In the menu go to home, and hit the &#8220;Activate&#8221; button.
+  * In the menu go to home, and hit the "Activate" button.
 
 ![](/uploads/2018/03/photo_2018-03-02_10-35-08.jpg)
 

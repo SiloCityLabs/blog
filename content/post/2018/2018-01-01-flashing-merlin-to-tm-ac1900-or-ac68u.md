@@ -32,7 +32,7 @@ You will need an active internet connection on another device to get the cfe fil
 
 **1.1.** **Download all the needed files:**
 
-[Download Link][2] with everything packaged together into a folder named &#8220;router&#8221; (recommended option).
+[Download Link][2] with everything packaged together into a folder named "router" (recommended option).
 
 Install Asus Restore Utility. Everything else packaged will run without installation.
 
@@ -49,7 +49,7 @@ Individual links to latest downloads
   * [Latest Merlin Firmware][11] ([mirror][12])
 
   1. Install WinSCP, Putty, Asus Restore Utility.
-  2. Create a folder on your desktop, name it &#8220;router&#8221;.
+  2. Create a folder on your desktop, name it "router".
   3. Download Flash Images AC68U and extract it to the newly made router folder. It contains a firmware to downgrade to, a firmware to upgrade to, and mtd-write.
 
 &nbsp;
@@ -80,7 +80,7 @@ Individual links to latest downloads
 
 ![](/uploads/2018/01/Untitled3.png)
 
-  * Flash TM-AC1900\_3.0.0.4\_376_1703-g0ffdbba.trx from &#8220;Flash Images AC68U&#8221;
+  * Flash TM-AC1900\_3.0.0.4\_376_1703-g0ffdbba.trx from "Flash Images AC68U"
   * Wait for reboot 2-5 mins – WiFi lights will turn on when boot is complete
 
 ![](/uploads/2018/01/Untitled2.png)
@@ -108,7 +108,7 @@ _
 
 ![](/uploads/2018/01/10.png)
 
-  * Upload **new_cfe.bin** & **mtd-write** & **FW\_RT\_AC68U_30043763626.trx **to router through WinSCP. Files located inside &#8220;Flash Images AC68U&#8221; folder.
+  * Upload **new_cfe.bin** & **mtd-write** & **FW\_RT\_AC68U_30043763626.trx **to router through WinSCP. Files located inside "Flash Images AC68U" folder.
   * In Putty type:
   
     `chmod u+x mtd-write`
@@ -135,7 +135,7 @@ _
 ![](/uploads/2018/01/Untitled5.png)
 
   * Log in to router using 192.168.1.1 and the router is now an AC68U with 64MB jffs
-  * Under Administration > Firmware Upgrade. upload **FW\_RT\_AC68U_3.0.0.4.382.18881.trx** located in the &#8220;Latest Stock AC68U&#8221; folder.
+  * Under Administration > Firmware Upgrade. upload **FW\_RT\_AC68U_3.0.0.4.382.18881.trx** located in the "Latest Stock AC68U" folder.
 
 ![](/uploads/2018/01/11.png)
 
@@ -144,7 +144,7 @@ _
 ## 3. How to flash AC68U to Merlin:
 
   * Make sure you are on the latest stock version, older versions use [different file structures][21] and may affect this installation.
-  * Under Administration > Firmware Upgrade. upload **RT-AC68U\_380.69\_0.trx** located in the &#8220;Latest Merlin&#8221; folder.
+  * Under Administration > Firmware Upgrade. upload **RT-AC68U\_380.69\_0.trx** located in the "Latest Merlin" folder.
   * Perform an NVRAM reset from steps 2.4
   * Complete! Its that simple.
 

@@ -38,8 +38,8 @@ Supplies:
 Tools:
 
   * Power Drill
-  * 5mm or 3/16&#8243; Drill Bit
-  * 1/4&#8243; Drill bit or larger
+  * 5mm or 3/16" Drill Bit
+  * 1/4" Drill bit or larger
   * Sander/Sandpaper (optional)
   * Rubber Mallet, Optional but makes it easier to fit bearings
   * Oven
@@ -56,13 +56,13 @@ Tools:
 
 ### Preparing the Feed Strip:
 
-This strip is where the filament goes from dry air to the printer. Drill holes (3/16&#8243; Drill Bit) about 2cm apart on a strip of wood. I drilled as many as I could to future proof my design.
+This strip is where the filament goes from dry air to the printer. Drill holes (3/16" Drill Bit) about 2cm apart on a strip of wood. I drilled as many as I could to future proof my design.
 
 ![](/uploads/2018/04/20180403_191010.jpg)
 
 &nbsp;
 
-Bevel the holes to clean up the edge and give the filament room to wiggle (1/4&#8243; Drill Bit).
+Bevel the holes to clean up the edge and give the filament room to wiggle (1/4" Drill Bit).
 
 ![](/uploads/2018/04/20180403_190954.jpg)
 
@@ -90,7 +90,7 @@ We mount it on our shelving with some more M5 bolts. It locks in just like the s
 
 ### Preparing the Bin:
 
-Drill holes (3/16&#8243; Drill Bit) through the bin lid. Clean off any plastic shavings that may be left. Our bin holds 8-10 spools depends on their width.
+Drill holes (3/16" Drill Bit) through the bin lid. Clean off any plastic shavings that may be left. Our bin holds 8-10 spools depends on their width.
 
 ![](/uploads/2018/04/20180403_193813.jpg)
 

@@ -48,7 +48,7 @@ The [list](https://github.com/golang/go/wiki/GoUsers) is over thousands long
 
 ## Hardware limitations
 
-7 years ago I had a 4ghz processor with 8 cores. Today my desktop has a 4 core processor with 3.9ghz. You're probably looking at these numbers like, &#8220;why did he downgrade?&#8221; I did not. The benchmarks actually put my newer processor ahead by 66% because of multi-threading capabilities.
+7 years ago I had a 4ghz processor with 8 cores. Today my desktop has a 4 core processor with 3.9ghz. You're probably looking at these numbers like, "why did he downgrade?" I did not. The benchmarks actually put my newer processor ahead by 66% because of multi-threading capabilities.
 
 Nearly one decade and the hardware has not changed much besides one key thing. Multi-threading, and now possibly even more cores. Everything else has pretty much been steady and slow growth.
 
@@ -56,13 +56,13 @@ Nearly one decade and the hardware has not changed much besides one key thing. M
 
 Even multi-threading has its limits. With that said, we fall to software to fix these issues. We must increase efficiency and performance of our software.
 
-You're probably thinking &#8220;well python is the ultimate language for AI.&#8221; Sure it has many existing libraries, but it’s also old and slower. On some benchmarks even 40x slower.
+You're probably thinking "well python is the ultimate language for AI." Sure it has many existing libraries, but it’s also old and slower. On some benchmarks even 40x slower.
 
 ## Go runs direct
 
 No crazy configuration is needed. Compile it for Linux and download any minimal Linux and let it do its thing. You don't need any added software on the server it will run on. It'll run identical on nearly any hardware. Yes, it even compiles for that Windows server your boss says you need for “compliance's.”
 
-Starting a compiled Go application is as simple as a file transfer and &#8220;./myprogram&#8221;
+Starting a compiled Go application is as simple as a file transfer and "./myprogram"
 
 Go has the benefit of having its own compiler for each architecture. It is not bogged down by a VM like java or a processor like Python or PHP. It is like C/C++ with ease of learning.
 
@@ -151,7 +151,7 @@ Because Go is compiled, it processes all the code on the spot. No more testing f
 
 There are many uses for Go. I personally like to replace all of my bash scripts with it because it's so simple to write and use. It has replaced my main use of PHP and I don't think I could ever go back. Feel free to comment below. I will also be doing a blog series of tutorials followed by [meetup sessions](https://www.meetup.com/Buffalo-GoLang-Meetup-Group/) to discuss each tutorial.
 
-Presentation &#8220;[What can golang do for you?&#8221;](/uploads/2019/06/What-can-golang-do-for-you.pptx) from our meetup talk
+Presentation "[What can golang do for you?"](/uploads/2019/06/What-can-golang-do-for-you.pptx) from our meetup talk
 
 &nbsp;
 

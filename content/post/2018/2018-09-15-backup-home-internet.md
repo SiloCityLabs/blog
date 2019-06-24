@@ -41,7 +41,7 @@ Place your phone in a convenient spot accessible to great reception.
 
 ![](/uploads/2018/09/20180915_094244623090915077846698.jpg)
 
-Head over to your router settings. Under WAN options there is a tab called &#8220;Dual WAN&#8221;.
+Head over to your router settings. Under WAN options there is a tab called "Dual WAN".
 
 ![](/uploads/2018/09/20180915_0943271850039273880023030.jpg)
 

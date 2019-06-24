@@ -19,7 +19,7 @@ I have just about had it with Windows updates being forced on me. Graphics drive
 
 I have gone through the [install process and have installed Ubuntu 18.04LTS][2]. For less advanced Linux users you can go with a simpler Linux like [Solus][3] which is a little more GUI friendly system.
 
-You can modify ubuntu to your likings using a tool called &#8220;gnome tweaks&#8221; and you can disable animations to speed things up by using a tool called &#8220;dconf-editor&#8221;.
+You can modify ubuntu to your likings using a tool called "gnome tweaks" and you can disable animations to speed things up by using a tool called "dconf-editor".
 
 In dconf-editor, browse to **org.gnome.desktop.interface** and set **enable-animations=false**.
 
@@ -34,7 +34,7 @@ After getting all settled and having all my software carried over. I had a few p
 
   * [Chrome][4]
   * [Steam][5]
-  * Git -> installed from terminal &#8220;sudo apt install git&#8221;
+  * Git -> installed from terminal "sudo apt install git"
   * [Java 10 (64-bit) -> installed from terminal][6]
   * [AMD Driver][7]
   * [PC Games, Steam Beta Proton][8]
@@ -61,8 +61,8 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
   * Disabled sleep in power options
   * [Performance options &#8211; adjust for best performance][13]
   * Disabled cortana
-  * Disabled any windows &#8220;sharing&#8221; data stuff
-  * Single click shutdown &#8211; &#8220;%windir%\System32\shutdown.exe /s /t 0&#8221;
+  * Disabled any windows "sharing" data stuff
+  * Single click shutdown &#8211; "%windir%\System32\shutdown.exe /s /t 0"
   * [Disable hibernate][14]
   * [Auto login user][13]
   * Hide taskbar items, People, cortana, task view

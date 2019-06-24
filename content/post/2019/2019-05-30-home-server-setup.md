@@ -26,7 +26,7 @@ Today I will talk about my server setup by request. I setup my server originally
 
 ## Security Camera Software
 
-ZoneMinder &#8211; &#8220;A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need.&#8221;
+ZoneMinder &#8211; "A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need."
 
 ## My Cameras
 
@@ -139,7 +139,7 @@ Then edit the main configuration file:
    delete veto files = yes
 </pre>
 
-Then create the groups &#8220;nas&#8221; and &#8220;family&#8221; in linux and add your users to it. There is a guide [here][9] on that.
+Then create the groups "nas" and "family" in linux and add your users to it. There is a guide [here][9] on that.
 
 Finally reboot or restart samba `systemctl restart samba`
 

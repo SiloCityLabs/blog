@@ -17,7 +17,7 @@ tags:
 
 ![2mm pitch headers, ugh](/uploads/2018/02/Core51822-size.jpg)
 
-My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&#8243; (2.54mm) pitch. This makes it incompatible with regular 1&#8243; pitch breadboards. Being double row makes it worse.
+My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1" (2.54mm) pitch. This makes it incompatible with regular 1" pitch breadboards. Being double row makes it worse.
 
 <!--more-->
 
@@ -25,7 +25,7 @@ My core51822 module has caused me a bit of headache. The headers are 2.00mm pitc
 
 After searching a while I was able to find two compatible cables. First some regular cables that fit the specs &#8211; [2mm pitch 2&#215;10 IDC connectors][3]. Second is even cheaper &#8211; [44-pin laptop IDE cable][4]​. I accidentally got the 2 inch cable, I should've got the 8 inch. 8 inch would've given me more wire to play with, enough to save both end of the cable.
 
-If you buy a longer cable you can simply cut the cable in half and get two 2&#215;24 cables. With the 2&#8243; cable I got I couldn't afford shortening the wires any further. I removed the connector from one end by breaking the tabs on the side
+If you buy a longer cable you can simply cut the cable in half and get two 2&#215;24 cables. With the 2" cable I got I couldn't afford shortening the wires any further. I removed the connector from one end by breaking the tabs on the side
 
 ![Snap off this tab](/uploads/2018/02/IMG_20180203_191933.jpg)
 
@@ -41,7 +41,7 @@ I pulled the wire apart in pairs so that each pair is a column, making it easier
 
 ![Done! Breadboard-able](/uploads/2018/02/IMG_20180203_213608.jpg)
 
-End result is a pair of connectors for 2mm pitch header breakout. Conclusion? It works but doesn't have much advantage over the regular 2mm pitch IDC connector. I saved $1.50. Do yourself a favor and get a module that uses 1&#8243; headers in the first place.
+End result is a pair of connectors for 2mm pitch header breakout. Conclusion? It works but doesn't have much advantage over the regular 2mm pitch IDC connector. I saved $1.50. Do yourself a favor and get a module that uses 1" headers in the first place.
 
  [3]: https://www.ebay.com/itm/2/182158682043
  [4]: https://www.newegg.com/Product/Product.aspx?Item=9SIA67055T3504
