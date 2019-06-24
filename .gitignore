@@ -47,3 +47,6 @@ Temporary Items
 
 daemon/settings.yaml
 daemon/nohup.out
+
+# IntelliJ IDE
+.idea/
