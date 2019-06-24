@@ -4,36 +4,101 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <loc>https://silocitylabs.com/2019/06/23/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/golang/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/array/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/beginner/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/functions/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/git/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/go/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/golang/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/struct/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/tutorial/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/vscode/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -73,12 +138,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/categories/golang/</loc>
-    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/06/06/what-can-golang-do/</loc>
     <lastmod>2019-06-06T20:00:28+00:00</lastmod>
   </url>
@@ -97,18 +156,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/development/</loc>
-    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/go/</loc>
-    <lastmod>2019-06-06T20:00:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/golang/</loc>
     <lastmod>2019-06-06T20:00:28+00:00</lastmod>
     <priority>0</priority>
   </url>
