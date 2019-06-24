@@ -46,7 +46,7 @@ Tools:
 
 3D Prints
 
-  * Filament Spool Roller &#8211; <https://www.thingiverse.com/thing:2185015>
+  * Filament Spool Roller - <https://www.thingiverse.com/thing:2185015>
 
 &nbsp;
 

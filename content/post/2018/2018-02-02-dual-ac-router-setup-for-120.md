@@ -62,7 +62,7 @@ With the router in the main corner of the basement near the modem we will be con
 
 **Network Settings:**
 
-Set the main ip as 192.168.1.1, DHCP range to 192.168.1.10 &#8211; 192.168.1.254. Reserving the 1-9 for static stuff like my second router etc.
+Set the main ip as 192.168.1.1, DHCP range to 192.168.1.10 - 192.168.1.254. Reserving the 1-9 for static stuff like my second router etc.
 
 **Wifi settings:**
 

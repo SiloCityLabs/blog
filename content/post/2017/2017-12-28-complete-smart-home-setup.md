@@ -44,13 +44,13 @@ What controls my entire setup and why I chose this hub vs others. My only hub is
 
 <!--more-->
 
-  * **Device compatibility** &#8211; This hub unlike others will work with any Zigbee and Z-wave certified device out of the box. Other hubs like Phillips hue are more catered to the devices those companies sell. I was even able to add a hue bulb to my hub. The only thing wink has that I would have wanted was the 433mhz range for my security sensors, but they are locked down to a specific brand that is a partner of theirs.
-  * **Open Source Community** &#8211; None of these hubs have the open source community behind it like the SmartThings. Samsung even has a [public github repository][2] for people to edit.
-  * **Faster Wifi** &#8211; This hub ties directly into your router via ethernet. But this isn't the main reason, hubless wifi devices may save you the cost of a hub now, but the more you have the more it bogs your main wifi. Even if you seclude them on a separate router, it can still cause interference that slows down your wifi or even lowers your wifi range. Zigbee and Z-wave Devices both operate on separate frequencies that are entirely separate from wifi.
+  * **Device compatibility** - This hub unlike others will work with any Zigbee and Z-wave certified device out of the box. Other hubs like Phillips hue are more catered to the devices those companies sell. I was even able to add a hue bulb to my hub. The only thing wink has that I would have wanted was the 433mhz range for my security sensors, but they are locked down to a specific brand that is a partner of theirs.
+  * **Open Source Community** - None of these hubs have the open source community behind it like the SmartThings. Samsung even has a [public github repository][2] for people to edit.
+  * **Faster Wifi** - This hub ties directly into your router via ethernet. But this isn't the main reason, hubless wifi devices may save you the cost of a hub now, but the more you have the more it bogs your main wifi. Even if you seclude them on a separate router, it can still cause interference that slows down your wifi or even lowers your wifi range. Zigbee and Z-wave Devices both operate on separate frequencies that are entirely separate from wifi.
 
 The only downside:
 
-  * **No Apple HomeKit support** &#8211; HomeKit SDK [really limits the capabilities][3] of what a true smart home can do. I have no real need for HomeKit being an Android/Google user though. With all the assistants you can buy out of the box, who really needs HomeKit. Its not like Siri was really useful anyway.
+  * **No Apple HomeKit support** - HomeKit SDK [really limits the capabilities][3] of what a true smart home can do. I have no real need for HomeKit being an Android/Google user though. With all the assistants you can buy out of the box, who really needs HomeKit. Its not like Siri was really useful anyway.
 
 &nbsp;
 
@@ -65,9 +65,9 @@ I personally have a set budget per bulb that I would pay. I would never pay anyt
 Why switches vs smart bulbs? Simplicity!
 
   * You can wire it into a pre-existing wall switch
-  * No smart bulb needed &#8211; Great for chandeliers where you have 4-6 bulbs that could be about $40-60 in bulbs vs $26 switch.
-  * 2 Relay Switch &#8211; Save money where you have two switches on a single plate. Cutting the cost down in half.
-  * Easier to use &#8211; No need to tape the wall switch into the always on position.
+  * No smart bulb needed - Great for chandeliers where you have 4-6 bulbs that could be about $40-60 in bulbs vs $26 switch.
+  * 2 Relay Switch - Save money where you have two switches on a single plate. Cutting the cost down in half.
+  * Easier to use - No need to tape the wall switch into the always on position.
   * It just makes sense! Mix old tech with the new.
 
 ![](/uploads/2017/12/41vrEw9HFL.jpg)
@@ -146,10 +146,10 @@ Solution: Remote Switches. You can place smart bulbs in the lamps and close the 
 
 Not in my arsenal yet but these are a few devices I am keeping my eyes on.
 
-  * Z-Wave fire alarm &#8211; A little out of my budget for this kind of product. On [Amazon][21]
-  * security cameras &#8211; Not really sure yet how these work, but they caught my eye. By [Netgear][22]
-  * Zigbee smart strip &#8211; Seems cheaper to get a strip vs multiple plugs in some instances. On [Amazon][23]
-  * Doorbell &#8211; I'm in between [Ring Pro][24] and [Aeotec][25]. Ring Pro needs an existing wire which I don't have.
+  * Z-Wave fire alarm - A little out of my budget for this kind of product. On [Amazon][21]
+  * security cameras - Not really sure yet how these work, but they caught my eye. By [Netgear][22]
+  * Zigbee smart strip - Seems cheaper to get a strip vs multiple plugs in some instances. On [Amazon][23]
+  * Doorbell - I'm in between [Ring Pro][24] and [Aeotec][25]. Ring Pro needs an existing wire which I don't have.
 
 **Total cost**: (market value)
 

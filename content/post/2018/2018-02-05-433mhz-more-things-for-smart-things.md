@@ -15,7 +15,7 @@ tags:
   - smartthings
 
 ---
-Finally &#8211; off the breadboard and into a working environment. It's currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
+Finally - off the breadboard and into a working environment. It's currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
 
 &nbsp;
 

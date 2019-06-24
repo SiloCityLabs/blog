@@ -38,7 +38,7 @@ We want a printer that:
   
 -supports dual-material or can be upgraded
 
-We ended up choosing the Prusa i3 mk3 filament printer. It had great community support, open source software, Octoprint, high temp material support, excellent price per volume, and double the volume of the next runner up. There's a dual material upgrade that we'll check out in the future. The Flashforge was the runner up &#8211; it cost $150 more, it's a little smaller, and comes with dual material support out of the box.
+We ended up choosing the Prusa i3 mk3 filament printer. It had great community support, open source software, Octoprint, high temp material support, excellent price per volume, and double the volume of the next runner up. There's a dual material upgrade that we'll check out in the future. The Flashforge was the runner up - it cost $150 more, it's a little smaller, and comes with dual material support out of the box.
 
 We have not made any decision on a resin printer. For the limited material support we did not want to pay over $800 for any of them. Unfortunately the only open source resin printer, the Prusa SL1, surpasses our budget. The Anycubic Photon looks decent though and is popular with the figurine community.
 

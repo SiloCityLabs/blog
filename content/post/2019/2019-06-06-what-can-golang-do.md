@@ -28,21 +28,21 @@ tags:
 
 ![Golang Users](/uploads/2019/06/golang-users.png)
 
-Google &#8211; Go is designed and supported by Google. Google has one of the largest cloud infrastructures in the world and it is massively scaled.
+Google - Go is designed and supported by Google. Google has one of the largest cloud infrastructures in the world and it is massively scaled.
 
-Apple &#8211; Big data, analytics, infrastructure software.
+Apple - Big data, analytics, infrastructure software.
 
-Cloudflare &#8211; Used in infrastructure and other various locations. Has decreased time to first byte by 90%.
+Cloudflare - Used in infrastructure and other various locations. Has decreased time to first byte by 90%.
 
-Gitlab &#8211; Handles all RPC calls made by git
+Gitlab - Handles all RPC calls made by git
 
-AT&T &#8211; Network management, server applications, web based API's
+AT&T - Network management, server applications, web based API's
 
-Netflix &#8211; Caching management
+Netflix - Caching management
 
-Tesla &#8211; Server management, enterprise software, production lines.
+Tesla - Server management, enterprise software, production lines.
 
-SpaceX &#8211; Used in rocket telemetry
+SpaceX - Used in rocket telemetry
 
 The [list](https://github.com/golang/go/wiki/GoUsers) is over thousands long
 

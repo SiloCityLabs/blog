@@ -50,7 +50,7 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
 <!--more-->
 
   * Enable bidirectional clipboard and drag and drop in Virtualbox
-  * Disabled UAC &#8211; Annoying in VMs, slight delay in the dialog
+  * Disabled UAC - Annoying in VMs, slight delay in the dialog
   * Power options, enabled performance
   * [Turned off Windows defender][12]
   * Deffered windows updates to 30 days or max
@@ -59,10 +59,10 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
   * installed Virtualbox extensions pack
   * installed VM guest additions pack
   * Disabled sleep in power options
-  * [Performance options &#8211; adjust for best performance][13]
+  * [Performance options - adjust for best performance][13]
   * Disabled cortana
   * Disabled any windows "sharing" data stuff
-  * Single click shutdown &#8211; "%windir%\System32\shutdown.exe /s /t 0"
+  * Single click shutdown - "%windir%\System32\shutdown.exe /s /t 0"
   * [Disable hibernate][14]
   * [Auto login user][13]
   * Hide taskbar items, People, cortana, task view
@@ -88,10 +88,10 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
       * Data usage
       * Windows Defender firewall
   * Manual services 
-      * Print Spooler &#8211; I may still need it to print out tax software stuff
+      * Print Spooler - I may still need it to print out tax software stuff
       * DHCP
   * Combine start menu folders by right click open file location then drag the shortcuts. Combined Ease of access, powershell and system into one
-  * [Killed windows apps][17] &#8211; Powershell (admin) Run the commands below (copy and Paste) and hit Enter &#8211; 
+  * [Killed windows apps][17] - Powershell (admin) Run the commands below (copy and Paste) and hit Enter - 
       * get-appxpackage -allusers \*zunemusic\* | remove-appxpackage
       * get-appxpackage -allusers \*3dbuilder\* | remove-appxpackage
       * get-appxpackage -allusers \*alarms\* | remove-appxpackage

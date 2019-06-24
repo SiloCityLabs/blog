@@ -27,7 +27,7 @@ Here's my primary project, a phone case gamepad. This has been on the backburner
 
 ![I hate touchscreen controls](/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png)
 
-I want to play action/platformer games on my phone. The straw that broke the camel's back was "Prinny: Can I Really Be the Hero?" &#8211; I couldn't beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
+I want to play action/platformer games on my phone. The straw that broke the camel's back was "Prinny: Can I Really Be the Hero?" - I couldn't beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
 
 **HOW:**
 
