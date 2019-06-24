@@ -17,6 +17,7 @@ tags:
   - git
   - golang
   - array
+  - slices
 
 ---
 
