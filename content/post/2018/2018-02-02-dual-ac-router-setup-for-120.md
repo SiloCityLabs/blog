@@ -46,7 +46,7 @@ For this setup I am connecting devices that roam the house to the 5ghz ssid (myw
 
 ### **Step 1: Moving the modem.**
 
-Before I get started on the modem setup, I just want to clarify the modem we use. I have a Motorola SURFboard SB6141 and my friend has a SB6121. These modems are cheap on eBay/Amazon and save us from the modem rental fee&#8217;s on our bills. They also act as dedicated devices unlike the router/modem combos given to us by our providers, Thus allowing lower latency connections to the internet.
+Before I get started on the modem setup, I just want to clarify the modem we use. I have a Motorola SURFboard SB6141 and my friend has a SB6121. These modems are cheap on eBay/Amazon and save us from the modem rental fee's on our bills. They also act as dedicated devices unlike the router/modem combos given to us by our providers, Thus allowing lower latency connections to the internet.
 
 For this step I attempted to locate a pre-existing line in the basement that I can reroute the splitter to for the modem. We drilled a hole into the side of the house running into the basement but had some issues with spray foam insulation used on the basement. Took 30 mins to carve a hole in the insulation to get the hole for the wire. We reused a old direct-tv line just in case we messed up the first time we had a second try with the main line. It also let us continue to have internet while we were wiring up the cable. After the line was in place we had to reroute the Cable box splitter to use the direct-tv coax we re-used. Once this was set and done, we re-insulated with a spray foam can around the wire.
 
@@ -96,7 +96,7 @@ I will set the main wifi name as &#8220;_mywifi (rear)_&#8221; and the 5ghz as &
 
 ### **Step 4: Powerline for Desktop**
 
-This was an added step, he didn&#8217;t want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free&#8217;s up more wifi bandwidth for other devices.
+This was an added step, he didn't want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free's up more wifi bandwidth for other devices.
 
 ![](/uploads/2018/02/20180203_215456-1008x756.jpg)
 

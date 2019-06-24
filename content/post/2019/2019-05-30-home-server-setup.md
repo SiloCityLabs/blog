@@ -73,7 +73,7 @@ done</pre>
 
 ## Software Raid
 
-I don&#8217;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the setup I used [here][8].
+I don't want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the setup I used [here][8].
 
 ## File Share
 

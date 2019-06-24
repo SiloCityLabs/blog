@@ -60,7 +60,7 @@ https://pastebin.com/raw/FudTpY1z
 
 &nbsp;
 
-You&#8217;ll notice for each setup I have created pastebin links to where my hosts file is located, the format is &#8220;ip hostname&#8221; with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use http://somewebsite.com/dns-settings/live.txt. This allows me to edit without updating my android device.
+You'll notice for each setup I have created pastebin links to where my hosts file is located, the format is &#8220;ip hostname&#8221; with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use http://somewebsite.com/dns-settings/live.txt. This allows me to edit without updating my android device.
 
 &nbsp;
 

@@ -15,7 +15,7 @@ tags:
 ---
 ![](/uploads/2017/12/IMG_20171028_153645.jpg)
 
-This is a custom 3D printed wrist brace that I&#8217;m working on. I wear wrist braces to sleep for RSI / carpal tunnel but they&#8217;re not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.
+This is a custom 3D printed wrist brace that I'm working on. I wear wrist braces to sleep for RSI / carpal tunnel but they're not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.
 
 
 ![3D printed cast I saw online](/uploads/2017/12/cast1.jpg)
@@ -28,7 +28,7 @@ The design was inspired by this 3D printed cast I saw online. I scanned my arm 
 
 ![wrist brace v1](/uploads/2017/12/photo_2017-12-15_14-27-51-1.jpg)
 
-Here are some pics of the palm sides of the shell. v0.1 being test fit by [[ldrrp][4]] before I picked it up. I made some minor changes to reduce pressure points. v0.2 being test fit on me. Good fit but the skeletonizing caused the brace to be extremely flexible. v0.3 will be substantially thicker.  I&#8217;ll post a full tutorial once I get a usable brace.
+Here are some pics of the palm sides of the shell. v0.1 being test fit by [[ldrrp][4]] before I picked it up. I made some minor changes to reduce pressure points. v0.2 being test fit on me. Good fit but the skeletonizing caused the brace to be extremely flexible. v0.3 will be substantially thicker.  I'll post a full tutorial once I get a usable brace.
 
  [1]: /uploads/2017/12/IMG_20171028_153645.jpg
  [2]: /uploads/2017/12/IMG_20171028_153636-e1513389166841.jpg

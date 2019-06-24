@@ -36,7 +36,7 @@ Cloudflare &#8211; Used in infrastructure and other various locations. Has decre
 
 Gitlab &#8211; Handles all RPC calls made by git
 
-AT&T &#8211; Network management, server applications, web based API&#8217;s
+AT&T &#8211; Network management, server applications, web based API's
 
 Netflix &#8211; Caching management
 
@@ -48,7 +48,7 @@ The [list](https://github.com/golang/go/wiki/GoUsers) is over thousands long
 
 ## Hardware limitations
 
-7 years ago I had a 4ghz processor with 8 cores. Today my desktop has a 4 core processor with 3.9ghz. You&#8217;re probably looking at these numbers like, &#8220;why did he downgrade?&#8221; I did not. The benchmarks actually put my newer processor ahead by 66% because of multi-threading capabilities.
+7 years ago I had a 4ghz processor with 8 cores. Today my desktop has a 4 core processor with 3.9ghz. You're probably looking at these numbers like, &#8220;why did he downgrade?&#8221; I did not. The benchmarks actually put my newer processor ahead by 66% because of multi-threading capabilities.
 
 Nearly one decade and the hardware has not changed much besides one key thing. Multi-threading, and now possibly even more cores. Everything else has pretty much been steady and slow growth.
 
@@ -56,11 +56,11 @@ Nearly one decade and the hardware has not changed much besides one key thing. M
 
 Even multi-threading has its limits. With that said, we fall to software to fix these issues. We must increase efficiency and performance of our software.
 
-You&#8217;re probably thinking &#8220;well python is the ultimate language for AI.&#8221; Sure it has many existing libraries, but it’s also old and slower. On some benchmarks even 40x slower.
+You're probably thinking &#8220;well python is the ultimate language for AI.&#8221; Sure it has many existing libraries, but it’s also old and slower. On some benchmarks even 40x slower.
 
 ## Go runs direct
 
-No crazy configuration is needed. Compile it for Linux and download any minimal Linux and let it do its thing. You don&#8217;t need any added software on the server it will run on. It&#8217;ll run identical on nearly any hardware. Yes, it even compiles for that Windows server your boss says you need for “compliance&#8217;s.”
+No crazy configuration is needed. Compile it for Linux and download any minimal Linux and let it do its thing. You don't need any added software on the server it will run on. It'll run identical on nearly any hardware. Yes, it even compiles for that Windows server your boss says you need for “compliance's.”
 
 Starting a compiled Go application is as simple as a file transfer and &#8220;./myprogram&#8221;
 
@@ -108,13 +108,13 @@ If you look at the chart below. Its right in the middle between ease and speed. 
 
 Go is a win-win for both situations.
 
-Have you ever looked at a PHP error file with the giant list of warnings and fatal&#8217;s coming in from your live servers? You think, “how did that happen and why could I not prevent it?”
+Have you ever looked at a PHP error file with the giant list of warnings and fatal's coming in from your live servers? You think, “how did that happen and why could I not prevent it?”
 
-Because Go is compiled, it processes all the code on the spot. No more testing for noob issues like missing a semicolon or invalid types. You can&#8217;t compile with these kinds of basic errors. If there is an issue on live it&#8217;s usually data related which can be handled with validation.
+Because Go is compiled, it processes all the code on the spot. No more testing for noob issues like missing a semicolon or invalid types. You can't compile with these kinds of basic errors. If there is an issue on live it's usually data related which can be handled with validation.
 
 ## Where have I used go?
 
-  * I&#8217;ve replaced most of my bash scripts 
+  * I've replaced most of my bash scripts 
       * Easier to write, syntax matches across the board for each flavor of Linux and even osx/windows
   * Cloud backups using a [little program](https://github.com/SiloCityLabs/B2Backup) I am making for backblaze 
       * Simple
@@ -130,7 +130,7 @@ Because Go is compiled, it processes all the code on the spot. No more testing f
       * Telegram/slack notifications
       * Speed-test quality checks
       * Service restarts on failure or even a full system reboot
-  * Web API&#8217;s 
+  * Web API's 
       * JSON
       * Reading XML
   * Big data 
@@ -149,7 +149,7 @@ Because Go is compiled, it processes all the code on the spot. No more testing f
 
 ## Summary
 
-There are many uses for Go. I personally like to replace all of my bash scripts with it because it&#8217;s so simple to write and use. It has replaced my main use of PHP and I don&#8217;t think I could ever go back. Feel free to comment below. I will also be doing a blog series of tutorials followed by [meetup sessions](https://www.meetup.com/Buffalo-GoLang-Meetup-Group/) to discuss each tutorial.
+There are many uses for Go. I personally like to replace all of my bash scripts with it because it's so simple to write and use. It has replaced my main use of PHP and I don't think I could ever go back. Feel free to comment below. I will also be doing a blog series of tutorials followed by [meetup sessions](https://www.meetup.com/Buffalo-GoLang-Meetup-Group/) to discuss each tutorial.
 
 Presentation &#8220;[What can golang do for you?&#8221;](/uploads/2019/06/What-can-golang-do-for-you.pptx) from our meetup talk
 

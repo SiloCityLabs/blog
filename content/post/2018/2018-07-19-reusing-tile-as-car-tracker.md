@@ -33,7 +33,7 @@ Supplies/Tools needed:
 
 Before we get started I just wanted to add a **warning**. In this circuit just like most, polarities are very important. I made the mistake of flipping wires and my whole setup overheated and melted the glue. Keep this in mind when testing and before plugging it into your car and before doing the final seal.
 
-Also note that voltage on a car&#8217;s 12v line varies. With just the battery it&#8217;s around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report &#8220;low battery&#8221; because of the reduced voltage when the car is off. It&#8217;s not an issue.
+Also note that voltage on a car's 12v line varies. With just the battery it's around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report &#8220;low battery&#8221; because of the reduced voltage when the car is off. It's not an issue.
 
 **Wire up the tile**
 

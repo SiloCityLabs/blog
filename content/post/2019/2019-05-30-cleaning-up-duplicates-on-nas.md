@@ -51,7 +51,7 @@ I will be getting rid of the phone backup copy because I like to know this is pa
 <pre>/mnt/4000/home/Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1428.JPG
 /mnt/4000/home/Shared/Pictures/2016/IMG_1428.JPG</pre>
 
-This one however ill keep the phone backup copy so that I don&#8217;t make a messy folder inside of 2016
+This one however ill keep the phone backup copy so that I don't make a messy folder inside of 2016
 
 &nbsp;
 

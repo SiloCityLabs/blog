@@ -28,13 +28,13 @@ tags:
 
 &nbsp;
 
-I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&#8217;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.
+I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don't have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.
 
 &nbsp;
 
 **The Assistant**:
 r
-Google Home and/or Mini manage my random routines that aren&#8217;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.
+Google Home and/or Mini manage my random routines that aren't part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.
 
 ![](/uploads/2017/12/100417-google-home-mini7347-2.jpg)
 
@@ -46,7 +46,7 @@ What controls my entire setup and why I chose this hub vs others. My only hub is
 
   * **Device compatibility** &#8211; This hub unlike others will work with any Zigbee and Z-wave certified device out of the box. Other hubs like Phillips hue are more catered to the devices those companies sell. I was even able to add a hue bulb to my hub. The only thing wink has that I would have wanted was the 433mhz range for my security sensors, but they are locked down to a specific brand that is a partner of theirs.
   * **Open Source Community** &#8211; None of these hubs have the open source community behind it like the SmartThings. Samsung even has a [public github repository][2] for people to edit.
-  * **Faster Wifi** &#8211; This hub ties directly into your router via ethernet. But this isn&#8217;t the main reason, hubless wifi devices may save you the cost of a hub now, but the more you have the more it bogs your main wifi. Even if you seclude them on a separate router, it can still cause interference that slows down your wifi or even lowers your wifi range. Zigbee and Z-wave Devices both operate on separate frequencies that are entirely separate from wifi.
+  * **Faster Wifi** &#8211; This hub ties directly into your router via ethernet. But this isn't the main reason, hubless wifi devices may save you the cost of a hub now, but the more you have the more it bogs your main wifi. Even if you seclude them on a separate router, it can still cause interference that slows down your wifi or even lowers your wifi range. Zigbee and Z-wave Devices both operate on separate frequencies that are entirely separate from wifi.
 
 The only downside:
 
@@ -90,7 +90,7 @@ I have 3 locations in my house that have no wall switch. All 3 have pull strings
 
 **Thermostat**:
 
-Nest. There is a little secret most people may not know. You can get one for under $100. My wife said I was not gonna spend more than $100. I saw an opportunity and she said a deal was a deal. Most electric or natural gas providers give incentives for using a nest smart thermostat. I purchased mine for $97, The Nest E. Its not metalic but it works just the same. If you have a complicated AC/Heating system with zones and all that crazy stuff then the E version may not have enough wiring pins. Sign up for an online account to pay your electric bill and sign up for newsletter emails. On holidays they usually send out emails giving you the chance to get these cheap. There&#8217;s also an ongoing [rebate program][11] online.
+Nest. There is a little secret most people may not know. You can get one for under $100. My wife said I was not gonna spend more than $100. I saw an opportunity and she said a deal was a deal. Most electric or natural gas providers give incentives for using a nest smart thermostat. I purchased mine for $97, The Nest E. Its not metalic but it works just the same. If you have a complicated AC/Heating system with zones and all that crazy stuff then the E version may not have enough wiring pins. Sign up for an online account to pay your electric bill and sign up for newsletter emails. On holidays they usually send out emails giving you the chance to get these cheap. There's also an ongoing [rebate program][11] online.
 
 &nbsp;
 
@@ -100,7 +100,7 @@ Nest. There is a little secret most people may not know. You can get one for und
 
 **Security Sensors**:
 
-This part is for more experienced users. Using a wireless module I created a mini hub essentially that interfaces 433mhz to Samsung SmartThings. Using an [ESP8266][13] with our [open source code][14] and a [wireless 433mhz receiver][15], you can add super cheap security sensors from [ebay][16]. These sensors usually sell for about $1-2/each and can be purchased in bulk quantities. Other types of sensors include motion sensors, door/window sensors, leak sensors, carbon monoxide sensors and many more. Just search 433mhz on ebay and you will get a bunch of results. Unfortunately I will only use these as a one way signal, I don&#8217;t trust this open frequency to be used to control devices.
+This part is for more experienced users. Using a wireless module I created a mini hub essentially that interfaces 433mhz to Samsung SmartThings. Using an [ESP8266][13] with our [open source code][14] and a [wireless 433mhz receiver][15], you can add super cheap security sensors from [ebay][16]. These sensors usually sell for about $1-2/each and can be purchased in bulk quantities. Other types of sensors include motion sensors, door/window sensors, leak sensors, carbon monoxide sensors and many more. Just search 433mhz on ebay and you will get a bunch of results. Unfortunately I will only use these as a one way signal, I don't trust this open frequency to be used to control devices.
 
 ![](/uploads/2017/12/s-l1600.jpg)
 
@@ -124,11 +124,11 @@ Nothing fancy here, just a basic pin code lock by Kwikset. Bluetooth smart locks
 
 **Android Auto**:
 
-Yea my car. When I arrive I can ask Google to power on my yard lights or turn off all the lights as I am leaving right from my car. No button press needed as Google is always listening. Doesn&#8217;t work for Apple users since SmartThings lacks HomeKit support.
+Yea my car. When I arrive I can ask Google to power on my yard lights or turn off all the lights as I am leaving right from my car. No button press needed as Google is always listening. Doesn't work for Apple users since SmartThings lacks HomeKit support.
 
 **Batteries**:
 
-Don&#8217;t cheap out on batteries for any of this stuff. **Energizer** batteries have proven test results and outlast any other battery. Knockoff batteries are notoriously bad with fake capacity ratings. You don&#8217;t need one of these smart home devices failing leaving you locked out, security-less, or even worse if you have a smart fire alarm.
+Don't cheap out on batteries for any of this stuff. **Energizer** batteries have proven test results and outlast any other battery. Knockoff batteries are notoriously bad with fake capacity ratings. You don't need one of these smart home devices failing leaving you locked out, security-less, or even worse if you have a smart fire alarm.
 
 **3-Way Switch**:
 
@@ -138,7 +138,7 @@ The simple solution for this. Using a 1 relay switch on one side. Closing the co
 
 **Light Switch Controlling Socket**:
 
-In my mother&#8217;s house she has rooms where the light switch controls an outlet in the wall. This does not always end up very well. They usually get taped in the _On_ position or just never used because of lamps on the opposite ends of the room.
+In my mother's house she has rooms where the light switch controls an outlet in the wall. This does not always end up very well. They usually get taped in the _On_ position or just never used because of lamps on the opposite ends of the room.
 
 Solution: Remote Switches. You can place smart bulbs in the lamps and close the line with a wire nut to keep the outlet always on. Then place a remote switch in the gang box to control your lamps remotely.
 
@@ -149,7 +149,7 @@ Not in my arsenal yet but these are a few devices I am keeping my eyes on.
   * Z-Wave fire alarm &#8211; A little out of my budget for this kind of product. On [Amazon][21]
   * security cameras &#8211; Not really sure yet how these work, but they caught my eye. By [Netgear][22]
   * Zigbee smart strip &#8211; Seems cheaper to get a strip vs multiple plugs in some instances. On [Amazon][23]
-  * Doorbell &#8211; I&#8217;m in between [Ring Pro][24] and [Aeotec][25]. Ring Pro needs an existing wire which I don&#8217;t have.
+  * Doorbell &#8211; I'm in between [Ring Pro][24] and [Aeotec][25]. Ring Pro needs an existing wire which I don't have.
 
 **Total cost**: (market value)
 
@@ -173,7 +173,7 @@ Not in my arsenal yet but these are a few devices I am keeping my eyes on.
   * [Energizer AA batteries][37] x 8 x $14.99(12) = $14.99 
       * Total Smart home cost at market value: $1171.42
 
-Don&#8217;t get discouraged by the high price tag, You need to keep an eye out for deals. Many of these smart home items go on sale for over 50% off. A great forum I subscribed to is [SmartThings Deals][38], users post deals here all the time. This is how I got my bulbs for less than $7 each. I also received most of my google home mini&#8217;s for free with select offers.
+Don't get discouraged by the high price tag, You need to keep an eye out for deals. Many of these smart home items go on sale for over 50% off. A great forum I subscribed to is [SmartThings Deals][38], users post deals here all the time. This is how I got my bulbs for less than $7 each. I also received most of my google home mini's for free with select offers.
 
 If you have any other smart home stuff you think should be on this list let me know in the comments.
 

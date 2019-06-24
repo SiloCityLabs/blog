@@ -30,4 +30,4 @@ Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases
 
 5. Reboot. The Pi should be running from the USB drive.
 
-If you ever need to boot from a different USB drive or from the SD card, it&#8217;s necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition&#8217;s cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.
+If you ever need to boot from a different USB drive or from the SD card, it's necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition's cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.

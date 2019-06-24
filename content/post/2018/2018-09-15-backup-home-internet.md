@@ -25,15 +25,15 @@ To start off we plugin a cell phone to the routers usb port.
 
 ![](/uploads/2018/09/20180915_0932318158192643190909326.jpg)
 
-<!--more-->There&#8217;s an issue where Android will keep turning off tether if there is slight changes in cable movement or whenever the router reboots. We solve this with automate. We configure automate to keep enabling USB tether every X seconds.
+<!--more-->There's an issue where Android will keep turning off tether if there is slight changes in cable movement or whenever the router reboots. We solve this with automate. We configure automate to keep enabling USB tether every X seconds.
 
 ![](/uploads/2018/09/20180915_0945388772121150635334533.png)
 
-The root command is optional if you can&#8217;t get USB tether working. Here is the full command.
+The root command is optional if you can't get USB tether working. Here is the full command.
 
 ![](/uploads/2018/09/20180915_094523896414538435102704.png)
 
-After it&#8217;s enabled, hit play and let it run.
+After it's enabled, hit play and let it run.
 
 ![](/uploads/2018/09/20180915_0930581248984325352199968.jpg)
 
