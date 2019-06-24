@@ -37,8 +37,10 @@ googleAnalytics = "UA-78226868-3"
   youtube = "channel/UC9vgzat1SRdQ8NNsCQ6d7cA"
   newsletter = "newsletter"
 
-[permalinks]
-  posts = "/post/:year/:month/:day/:slug"
+[taxonomies]
+  author = "author"
+  tag = "tags"
+  category = "categories"
 
 [[menu.main]]
     name = "Blog"
