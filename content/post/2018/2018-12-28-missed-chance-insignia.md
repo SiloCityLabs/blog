@@ -15,7 +15,7 @@ format: link
 ---
 Missed chances, try again
   
-Insignia Voice Smart Bluetooth Speaker with Built-in Google Assistant for 15% off, That&#8217;s $21.24 before tax. Even without the coupon code its a steal for the msrp price.
+Insignia Voice Smart Bluetooth Speaker with Built-in Google Assistant for 15% off, That's $21.24 before tax. Even without the coupon code its a steal for the msrp price.
 
 https://www.ebay.com/itm/362512306852
 

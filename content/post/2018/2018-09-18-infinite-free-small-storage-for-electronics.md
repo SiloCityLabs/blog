@@ -38,4 +38,4 @@ Apply a label or sharpie, then stack them away.
 
 ![](/uploads/2018/09/20180917_2019441725666942943043130.jpg)
 
-You are probably wondering were to get these. Reach out to a pregnant friend or couple i&#8217;m sure they will bag them for you. The other method is do what I did&#8230;. Have a baby&#8230; jk haha. My wifes pregnancy was completly unrelated to this.
+You are probably wondering were to get these. Reach out to a pregnant friend or couple i'm sure they will bag them for you. The other method is do what I did&#8230;. Have a baby&#8230; jk haha. My wifes pregnancy was completly unrelated to this.

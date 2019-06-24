@@ -24,7 +24,7 @@ Update: Asus began rolling back firmware on the stock setups. They are not provi
 
 <!--more-->
 
-I will be posting soon about my friends dual router setup using two TM-AC1900&#8217;s.
+I will be posting soon about my friends dual router setup using two TM-AC1900's.
 
 ## 1. Download and install Prerequisites:
 

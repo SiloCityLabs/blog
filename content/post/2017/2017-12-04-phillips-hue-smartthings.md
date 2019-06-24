@@ -13,7 +13,7 @@ tags:
   - smartthings
 
 ---
-I&#8217;m not really sure why it started working all of a sudden. I&#8217;m glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols. Talk about perfect timing though.
+I'm not really sure why it started working all of a sudden. I'm glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols. Talk about perfect timing though.
 
 &nbsp;
 

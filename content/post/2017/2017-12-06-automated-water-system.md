@@ -35,7 +35,7 @@ Other possible features, Smart apps, Rain notification reminders to tell the use
 
 &nbsp;
 
-I will be testing this in small scale with two fish pumps, and 3 milk gallons of water to simulate the water sources and main tank. The larger scale version would have 500+ gallon tanks, don&#8217;t want to wait for that to fill up. Just waiting for my friend to send me some startup funds to try this out.
+I will be testing this in small scale with two fish pumps, and 3 milk gallons of water to simulate the water sources and main tank. The larger scale version would have 500+ gallon tanks, don't want to wait for that to fill up. Just waiting for my friend to send me some startup funds to try this out.
 
 &nbsp;
 

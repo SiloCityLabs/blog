@@ -15,7 +15,7 @@ tags:
 ---
 ![](/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png)
 
-I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many [other reasons][1] I won&#8217;t begin to rant about. I chose to go with a decently common operating system for better compatibility.
+I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many [other reasons][1] I won't begin to rant about. I chose to go with a decently common operating system for better compatibility.
 
 I have gone through the [install process and have installed Ubuntu 18.04LTS][2]. For less advanced Linux users you can go with a simpler Linux like [Solus][3] which is a little more GUI friendly system.
 
@@ -45,7 +45,7 @@ After getting all settled and having all my software carried over. I had a few p
 
 Ubuntu [Get right click new documents back][10]. Here is a link to a couple of [templates][11] we made.
 
-To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&#8217;t be used that often so its a compromise I&#8217;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:
+To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won't be used that often so its a compromise I'm willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:
 
 <!--more-->
 
@@ -74,8 +74,8 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
   * Set static ip using existing ip as baseline (10.0.2.15, 255.255.255.0, 10.0.2.2, DNS Your router ip, 1.1.1.1). Since we will be disabling DHCP service.
   * Disabled windows cloud search
   * Disabled device history
-  * Right click Uninstall any apps in start menu you don&#8217;t need
-  * Indexing options -> removed Users, I won&#8217;t be using this for files. Left start menu alone
+  * Right click Uninstall any apps in start menu you don't need
+  * Indexing options -> removed Users, I won't be using this for files. Left start menu alone
   * [Disable page file, Only do if you have enough memory][16]
   * set solid background
   * set solid taskbar colors and disable transparency

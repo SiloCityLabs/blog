@@ -21,9 +21,9 @@ tags:
   - dry filament
 
 ---
-Keep your filament dry! Filament used for 3d printers will absorb moisture from the air and damp filament prints very poorly. With Buffalo&#8217;s high humidity and our printer being run in a basement, we absolutely need a dry box for our spools. We ordered parts ahead of time, slammed this box together in an afternoon, and then baked our spools to rid them of moisture.
+Keep your filament dry! Filament used for 3d printers will absorb moisture from the air and damp filament prints very poorly. With Buffalo's high humidity and our printer being run in a basement, we absolutely need a dry box for our spools. We ordered parts ahead of time, slammed this box together in an afternoon, and then baked our spools to rid them of moisture.
 
-We&#8217;re using a large plastic bin for storage, teflon tubing to run from the box to the printer, and pneumatic connectors to ensure the filament feeds smoothly into the tubing without snagging. A large pack of silica gel keeps the box dry over time. Our basement also has an additional air dehumidifier that we keep at 50% to prevent mold growing on our wood/mdf surfaces.
+We're using a large plastic bin for storage, teflon tubing to run from the box to the printer, and pneumatic connectors to ensure the filament feeds smoothly into the tubing without snagging. A large pack of silica gel keeps the box dry over time. Our basement also has an additional air dehumidifier that we keep at 50% to prevent mold growing on our wood/mdf surfaces.
 
 Supplies:
 
@@ -74,7 +74,7 @@ Sand to prevent splinters and clean up drill shavings.
 
 &nbsp;
 
-Screw in the pneumatic connectors to the bottom of the wood strip. Threading the holes with an M5 bolt made this much easier. If you&#8217;re fancy you could [make a real tap from a threaded rod or bolt][10] but we don&#8217;t have time for that.
+Screw in the pneumatic connectors to the bottom of the wood strip. Threading the holes with an M5 bolt made this much easier. If you're fancy you could [make a real tap from a threaded rod or bolt][10] but we don't have time for that.
 
 ![](/uploads/2018/04/20180403_192437.jpg)
 

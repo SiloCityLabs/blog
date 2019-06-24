@@ -22,7 +22,7 @@ When we first entered 3d printing we started off quickly printing many and many 
 
 We started to try and simplify remote access by using Teamviewer and even went as far as to buy a CEL Root SD card. The CEL Root was even worse than our current methods. This is when we finally had it. We wanted an open source printer with a decent bed, 3rd party parts, and Octoprint support.
 
-Together me and my team came up with the list of hobby printers under $2000. We&#8217;ll get a decent filament printer now and a small resin printer later.
+Together me and my team came up with the list of hobby printers under $2000. We'll get a decent filament printer now and a small resin printer later.
 
 <!--more-->
 
@@ -32,13 +32,13 @@ We want a printer that:
   
 -uses open source software
   
--doesn&#8217;t need significant modification out of the box
+-doesn't need significant modification out of the box
   
 -supports higher temp materials like nylon
   
 -supports dual-material or can be upgraded
 
-We ended up choosing the Prusa i3 mk3 filament printer. It had great community support, open source software, Octoprint, high temp material support, excellent price per volume, and double the volume of the next runner up. There&#8217;s a dual material upgrade that we&#8217;ll check out in the future. The Flashforge was the runner up &#8211; it cost $150 more, it&#8217;s a little smaller, and comes with dual material support out of the box.
+We ended up choosing the Prusa i3 mk3 filament printer. It had great community support, open source software, Octoprint, high temp material support, excellent price per volume, and double the volume of the next runner up. There's a dual material upgrade that we'll check out in the future. The Flashforge was the runner up &#8211; it cost $150 more, it's a little smaller, and comes with dual material support out of the box.
 
 We have not made any decision on a resin printer. For the limited material support we did not want to pay over $800 for any of them. Unfortunately the only open source resin printer, the Prusa SL1, surpasses our budget. The Anycubic Photon looks decent though and is popular with the figurine community.
 

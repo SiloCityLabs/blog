@@ -15,7 +15,7 @@ tags:
   - wrist brace
 
 ---
-I won&#8217;t be able to finish [my wrist brace project][1] for a while. These instructions are very rough because they&#8217;re not actually finished. 
+I won't be able to finish [my wrist brace project][1] for a while. These instructions are very rough because they're not actually finished. 
 
 Post in comments if anything needs clarification.
 
@@ -31,7 +31,7 @@ requirements:
   * an assistant
   * a small open area
 
-Here&#8217;s the Skanect guide I watched:
+Here's the Skanect guide I watched:
 
 <https://www.youtube.com/watch?v=_cKb3oEM47E>
 
@@ -57,13 +57,13 @@ If you have an NVidia card, install CUDA drivers (takes like 20-30min to install
 
 ![](/uploads/2018/08/orig-scan-watertight.jpg)
 
-After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here&#8217;s what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.
+After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here's what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.
 
-Skanect scales in meters and I haven&#8217;t figured out how to import/export with Blender properly (you&#8217;re supposed to do it in the scene but it didn&#8217;t work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &#8220;m&#8221; for meters, fix any errors, then save (as STL). Now it&#8217;s scaled.
+Skanect scales in meters and I haven't figured out how to import/export with Blender properly (you're supposed to do it in the scene but it didn't work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &#8220;m&#8221; for meters, fix any errors, then save (as STL). Now it's scaled.
 
 # Blender
 
-Blender tutorial. If you&#8217;ve never used Blender then I recommend watching up to part 5 and following along.  
+Blender tutorial. If you've never used Blender then I recommend watching up to part 5 and following along.  
 <https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P>
 
 Use your new Blender skills to edit the model. Crop it as needed, fix irregularities, and bisect it.
@@ -100,11 +100,11 @@ Here what my model looked like early on. I wireframed it without reducing the po
 
 ![](/uploads/2018/08/07-tada-its-fixed.png)
 
-Here&#8217;s my latest version. This is after bisecting it, and decimate and subdivide modifiers. It&#8217;s basically done, I just have to make it at least 4x thicker because this was too flexible once printed.
+Here's my latest version. This is after bisecting it, and decimate and subdivide modifiers. It's basically done, I just have to make it at least 4x thicker because this was too flexible once printed.
 
 ![](/uploads/2018/08/final-ish.jpg)
 
-I also have a method for adding holes for velcro straps. It&#8217;s not strictly necessary but it&#8217;ll make the slots line up nicely.
+I also have a method for adding holes for velcro straps. It's not strictly necessary but it'll make the slots line up nicely.
 
 Boolean Modifier  
 <https://www.youtube.com/watch?v=pcUe-ab_jQs>
@@ -112,7 +112,7 @@ Boolean Modifier
 -create some cylinders or boxes that pass through the spots you want holes  
 -to the arm, add a Boolean Modifier, select Difference, select a cylinder/box  
 -hide boxes  
--if it&#8217;s good hit Apply to permanently apply it  
+-if it's good hit Apply to permanently apply it  
 -delete the faces of the beams that are created
 
 export to STL

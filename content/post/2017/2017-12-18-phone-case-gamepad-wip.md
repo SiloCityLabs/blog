@@ -19,7 +19,7 @@ tags:
 ---
 [![](/uploads/2017/12/6371391512533450341-1.jpg)](https://hackaday.io/Maave)
 
-Here&#8217;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&#8217;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my [HackADay.io project][1]. All project information will be open source and posted on [Github][2].
+Here's my primary project, a phone case gamepad. This has been on the backburner for a while and I'm finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my [HackADay.io project][1]. All project information will be open source and posted on [Github][2].
 
 <!--more-->
 
@@ -27,7 +27,7 @@ Here&#8217;s my primary project, a phone case gamepad. This has been on the back
 
 ![I hate touchscreen controls](/uploads/2017/12/Screenshot_2013-12-20-09-39-43.png)
 
-I want to play action/platformer games on my phone. The straw that broke the camel&#8217;s back was &#8220;Prinny: Can I Really Be the Hero?&#8221; &#8211; I couldn&#8217;t beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
+I want to play action/platformer games on my phone. The straw that broke the camel's back was &#8220;Prinny: Can I Really Be the Hero?&#8221; &#8211; I couldn't beat a boss because my fingers kept missing the intangible touchscreen controls. I want a gamepad that is compact to carry, comfortable to hold, and works with multiple phones.
 
 **HOW:**
 
