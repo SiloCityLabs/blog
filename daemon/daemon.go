@@ -103,6 +103,7 @@ func updateSite() {
 	os.RemoveAll(settings.RootPath + "/docs/post/")
 	os.RemoveAll(settings.RootPath + "/docs/samples/")
 	os.RemoveAll(settings.RootPath + "/docs/tags/")
+	os.RemoveAll(settings.RootPath + "/docs/author/")
 
 	// Hugo build
 	cmdBuild := exec.Command("hugo")
