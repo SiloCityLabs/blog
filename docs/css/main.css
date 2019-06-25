@@ -309,7 +309,7 @@ footer .theme-by {
 
 .post-preview {
   padding: 20px 0;
-  border-bottom: 1px solid rgb(158, 66, 66);
+  border-bottom: 1px solid black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -324,6 +324,10 @@ footer .theme-by {
 
 /* override the default bright blue for headers and read-more */
 h2.post-title {
+  text-decoration: none;
+  color: #404040;
+}
+.post-title {
   text-decoration: none;
   color: #404040;
 }
