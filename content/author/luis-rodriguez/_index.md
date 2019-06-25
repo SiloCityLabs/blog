@@ -7,9 +7,9 @@ photo: '/upload/authors/luis.png'
 
 <ul class="list-inline text-center">
     <li>
-    <a href="portfolio" title="Portfolio" style="color: #404040;">
+    <a href="/author/luis-rodriguez/portfolio" title="Portfolio" style="color: #404040;">
         <span class="fa-stack fa-lg">
-        <i class="fas fa-user-circle fa-stack-2x"></i>
+            <i class="fas fa-user-circle fa-stack-2x"></i>
         </span>
     </a>
     </li>
@@ -47,5 +47,5 @@ As a self-employed software developer right out of school, I developed websites 
 Although I only have an Associate’s Degree I don’t feel that it limits my ability to create great programs and websites. I would someday like to pursue a bachelors but the ROI just isnt there for it.
 
 ___
-## [Portfolio / Resume](portfolio)
+## [Portfolio / Resume](/author/luis-rodriguez/portfolio)
 
