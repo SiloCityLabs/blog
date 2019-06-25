@@ -7,6 +7,13 @@ photo: '/upload/authors/luis.png'
 
 <ul class="list-inline text-center">
     <li>
+    <a href="portfolio" title="Portfolio" style="color: #404040;">
+        <span class="fa-stack fa-lg">
+        <i class="fas fa-user-circle fa-stack-2x"></i>
+        </span>
+    </a>
+    </li>
+    <li>
     <a href="mailto:luis@silocitylabs.com" title="Email me" style="color: #404040;">
         <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
