@@ -9,6 +9,12 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/author/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/categories/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -23,6 +29,11 @@
     <loc>https://silocitylabs.com/categories/golang/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -353,6 +364,12 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/author/maave/</loc>
+    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/tags/smartphone/</loc>
     <lastmod>2019-05-29T17:19:34+00:00</lastmod>
     <priority>0</priority>
@@ -507,23 +524,6 @@
   <url>
     <loc>https://silocitylabs.com/post/2018/12/27/hd-antenna-deal/</loc>
     <lastmod>2018-12-28T01:50:44+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/2018/12/27/hd-antenna-deal-sample/</loc>
-    <lastmod>2018-12-28T01:50:44+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/sample/</loc>
-    <lastmod>2018-12-28T01:50:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/sample2/</loc>
-    <lastmod>2018-12-28T01:50:44+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1091,6 +1091,15 @@
   
   <url>
     <loc>https://silocitylabs.com/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/portfolio/</loc>
   </url>
   
   <url>
