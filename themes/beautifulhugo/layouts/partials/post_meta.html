@@ -9,5 +9,5 @@
   {{- end }}
 </span>
 <span class="post-meta">
-    By {{ .Params.Author }}
-  </span>
+    By <a href="{{ $.Site.LanguagePrefix }}/author/{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
+</span>
