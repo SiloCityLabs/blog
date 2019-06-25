@@ -1,8 +1,8 @@
-
 ---
 title: Luis Rodriguez
 comments: false
 photo: '/upload/authors/luis.png'
+url: /author/luis-rodriguez/portfolio/
 ---
 
 ## Portfolio
