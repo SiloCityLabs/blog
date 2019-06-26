@@ -187,6 +187,8 @@ img {
 
 .navbar-custom.top-nav-short .avatar-container{
   opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
 
 .navbar-custom.top-nav-expanded .avatar-container  {
