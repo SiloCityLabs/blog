@@ -160,6 +160,15 @@ img {
   }
 }
 
+/* fade out when the logo overlaps the buttons */
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+	.navbar-custom .avatar-container {
+		opacity: 0;
+		visibility: hidden !important;
+		transition: visibility 0.5s, opacity 0.5s ease-in-out;
+	}
+}
+
 .navbar-custom .avatar-container {
   opacity: 1;
   position: absolute;
