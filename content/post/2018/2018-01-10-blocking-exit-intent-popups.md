@@ -16,7 +16,7 @@ tags:
 
 &nbsp;
 
-I hate "exit intent" popups. The kind that automatically open when your mouse leaves the page begging "please don't go!". They're annoying. They're irrelevant (I'm following instructions, not closing). They interrupt the content I'm trying to read. So I made a short [Userscript to globally block them][2].
+I hate "exit intent" popups. The kind that automatically open when your mouse leaves the page begging "please don't go!". They're annoying. They're irrelevant (I'm often following a tutorial, not closing the tab). They interrupt the content I'm trying to read. So I made a short [Userscript to globally block them][2].
 
 <!--more-->
 
