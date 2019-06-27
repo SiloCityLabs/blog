@@ -373,6 +373,6 @@ func main() {
 
 Running this will result in 3 separate random phrases every time. You can look at the source for their code on github from the same link to see how their packages work for further documentation.
 
-## Homework
+## Excercise
 
 Try writing a go program by searching how to open a txt file. With a list in the file then println it out to the screen. We can help you review your code at our [meetup sessions](https://www.meetup.com/Buffalo-GoLang-Meetup-Group/).
