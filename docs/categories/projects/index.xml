@@ -481,7 +481,7 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
-&lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;rdquo;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m following instructions, not closing). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;rdquo;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
