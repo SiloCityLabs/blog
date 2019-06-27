@@ -706,6 +706,9 @@ td.code pre {
 td.gutter {
   padding-top: 3px;
 }
+code {
+  word-break: break-word;
+}
 
 /* --- Social media sharing section --- */
 
