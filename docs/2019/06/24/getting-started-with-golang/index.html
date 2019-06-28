@@ -517,6 +517,62 @@ func main() {
 
 <p>Try writing a go program by searching how to open a txt file. With a list in the file then println it out to the screen. We can help you review your code at our <a href="https://www.meetup.com/Buffalo-GoLang-Meetup-Group/">meetup sessions</a>.</p>
 
+<p>Example created from the meetup:</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;log&quot;
+)
+
+func main() {
+	dat, err := ioutil.ReadFile(&quot;list.txt&quot;)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	fmt.Print(string(dat))
+}
+</code></pre>
+
+<p>Second Example from meetup with data manipulation:</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;os&quot;
+	&quot;strconv&quot;
+	&quot;strings&quot;
+)
+
+func main() {
+	dat, err := ioutil.ReadFile(&quot;list.txt&quot;)
+	if err != nil {
+		fmt.Println(err.Error())
+		os.Exit(1)
+	}
+
+	listDataArray := strings.Split(string(dat), &quot;\n&quot;)
+
+	listDataArrayNew := append(listDataArray, &quot;newitem&quot;)
+	listDataArrayNew = append(listDataArrayNew, &quot;newitem&quot;)
+
+	for i := 0; i &lt; 10; i++ {
+		listDataArrayNew = append(listDataArrayNew, &quot;newitem &quot;+strconv.Itoa(i))
+	}
+
+	listCombined := strings.Join(listDataArrayNew, &quot;\n&quot;)
+
+	fmt.Print(listDataArrayNew)
+	ioutil.WriteFile(&quot;list.txt&quot;, []byte(listCombined), 0755)
+
+}
+</code></pre>
+
       </article>
 <div class="clearfix">
 <div class="pull-right">
@@ -660,7 +716,7 @@ func main() {
           
           
           &nbsp;&bull;&nbsp;
-          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Jun 27, 2019 at 3:35pm (EST)</a>
+          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Jun 28, 2019 at 8:43am (EST)</a>
         </p>
         <p class="credits theme-by text-muted">
           
