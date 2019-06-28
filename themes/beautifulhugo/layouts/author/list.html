@@ -36,12 +36,12 @@
           <ul class="pager main-pager">
             {{ if .Paginator.HasPrev }}
               <li class="previous">
-                <a href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}#article-section">&larr; {{ i18n "newerPosts" }}</a>
+                <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}#article-section">&larr; {{ i18n "newerPosts" }}</a>
               </li>
             {{ end }}
             {{ if .Paginator.HasNext }}
               <li class="next">
-                <a href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}#article-section">{{ i18n "olderPosts" }} &rarr;</a>
+                <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}#article-section">{{ i18n "olderPosts" }} &rarr;</a>
               </li>
             {{ end }}
           </ul>

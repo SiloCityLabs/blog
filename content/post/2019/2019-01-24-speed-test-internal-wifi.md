@@ -37,7 +37,7 @@ Next step, create a client device using iPerf to connect to the supplied IP on y
 
 This is reporting a internal speed of 105Mbits/sec. This could be far higher but its most likely limited by wifi speeds. When testing an old device as the client I get speeds of 12Mbits/sec.
 
-You can test multiple combinations of devices using iperf. Its supported on many systems and devices listed [here][2].
+You can test multiple combinations of devices using iperf. Its [supported on many systems and devices listed][2].
 
 Conclusion:
 
