@@ -13,17 +13,17 @@
   <meta name="twitter:description" content="Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://silocitylabs.com/logo.png" />
-  <meta name="twitter:image" content="https://silocitylabs.com/logo.png" />
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@silocitylabs" />
   <meta name="twitter:creator" content="@silocitylabs" />
   <meta property="og:url" content="https://silocitylabs.com/post/2019/05/30/home-server-setup/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SCL Blog" />
-
+  
   <link rel="canonical" href="https://silocitylabs.com/post/2019/05/30/home-server-setup/" />
-  <link rel="alternate" href="https://silocitylabs.com/index.xml" type="application/rss+xml" title="SCL Blog">
+  <link rel="https://silocitylabs.com/amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2019/05/30/home-server-setup/">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   
@@ -32,7 +32,9 @@
   
   <link rel="stylesheet" href="https://silocitylabs.com/css/bundle.min.css" />
   
-
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+  
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -114,7 +116,7 @@ if (!doNotTrack) {
       <div class="avatar-img-border">
         
           <a title="SCL Blog" href="https://silocitylabs.com/">
-            <img class="avatar-img" src="https://silocitylabs.com/logo.png" alt="SCL Blog" />
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
           </a>
         
       </div>
@@ -238,7 +240,7 @@ done</pre>
 
 <h2 id="software-raid">Software Raid</h2>
 
-<p>I don&rsquo;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the setup I used <a href="http://a.tra.li/TPzz">here</a>.</p>
+<p>I don&rsquo;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the <a href="http://a.tra.li/TPzz">setup I used</a>.</p>
 
 <h2 id="file-share">File Share</h2>
 
@@ -304,7 +306,7 @@ done</pre>
    delete veto files = yes
 </pre>
 
-<p>Then create the groups &ldquo;nas&rdquo; and &ldquo;family&rdquo; in linux and add your users to it. There is a guide <a href="https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/">here</a> on that.</p>
+<p>Then create the groups &ldquo;nas&rdquo; and &ldquo;family&rdquo; in linux and add your users to it. There is a <a href="https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/">guide</a> on that.</p>
 
 <p>Finally reboot or restart samba <code>systemctl restart samba</code></p>
 
@@ -316,7 +318,7 @@ done</pre>
 
 <h2 id="speedtest-alerts">Speedtest alerts</h2>
 
-<p>This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can download the scripts <a href="https://downloads.techreanimate.com/kzhota">here</a></p>
+<p>This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can <a href="https://downloads.techreanimate.com/kzhota">download the scripts</a></p>
 
 <p>After downloading them, add a line to your schedule tasks in linux using crontab -e</p>
 
@@ -469,7 +471,7 @@ done</pre>
           
           
           &nbsp;&bull;&nbsp;
-          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Jun 28, 2019 at 1:59pm (EST)</a>
+          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Jun 28, 2019 at 4:42pm (EST)</a>
         </p>
         <p class="credits theme-by text-muted">
           
