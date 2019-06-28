@@ -230,7 +230,7 @@ The result of the code will be
 10
 ```
 
-You can see more loop examples [here](https://gobyexample.com/for).
+You can see more [loop examples](https://gobyexample.com/for).
 
 ## Arrays
 

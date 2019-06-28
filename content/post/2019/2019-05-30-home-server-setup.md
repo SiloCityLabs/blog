@@ -73,7 +73,7 @@ done</pre>
 
 ## Software Raid
 
-I don't want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the setup I used [here][8].
+I don't want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the [setup I used][8].
 
 ## File Share
 
@@ -139,7 +139,7 @@ Then edit the main configuration file:
    delete veto files = yes
 </pre>
 
-Then create the groups "nas" and "family" in linux and add your users to it. There is a guide [here][9] on that.
+Then create the groups "nas" and "family" in linux and add your users to it. There is a [guide][9] on that.
 
 Finally reboot or restart samba `systemctl restart samba`
 
@@ -151,7 +151,7 @@ The first time you add a linux user (`adduser`) you need to add them to smbpassw
 
 ## Speedtest alerts
 
-This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can download the scripts [here][10]
+This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can [download the scripts][10]
 
 After downloading them, add a line to your schedule tasks in linux using crontab -e
 

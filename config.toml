@@ -15,7 +15,7 @@ googleAnalytics = "UA-78226868-3"
 
 [Params]
   subtitle = "Official Blog for Silo City Labs LLC"
-  logo = "logo.png"
+  logo = "logo/144x144.png"
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
@@ -41,6 +41,9 @@ googleAnalytics = "UA-78226868-3"
   author = "author"
   tag = "tags"
   category = "categories"
+
+[outputs]
+  page = ["HTML", "AMP"]
 
 [[menu.main]]
     name = "Blog"
