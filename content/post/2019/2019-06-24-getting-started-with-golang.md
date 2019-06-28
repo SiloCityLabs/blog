@@ -376,3 +376,61 @@ Running this will result in 3 separate random phrases every time. You can look a
 ## Excercise
 
 Try writing a go program by searching how to open a txt file. With a list in the file then println it out to the screen. We can help you review your code at our [meetup sessions](https://www.meetup.com/Buffalo-GoLang-Meetup-Group/).
+
+Example created from the meetup:
+
+```go
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+)
+
+func main() {
+	dat, err := ioutil.ReadFile("list.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+
+	fmt.Print(string(dat))
+}
+```
+
+Second Example from meetup with data manipulation:
+
+```go
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"os"
+	"strconv"
+	"strings"
+)
+
+func main() {
+	dat, err := ioutil.ReadFile("list.txt")
+	if err != nil {
+		fmt.Println(err.Error())
+		os.Exit(1)
+	}
+
+	listDataArray := strings.Split(string(dat), "\n")
+
+	listDataArrayNew := append(listDataArray, "newitem")
+	listDataArrayNew = append(listDataArrayNew, "newitem")
+
+	for i := 0; i < 10; i++ {
+		listDataArrayNew = append(listDataArrayNew, "newitem "+strconv.Itoa(i))
+	}
+
+	listCombined := strings.Join(listDataArrayNew, "\n")
+
+	fmt.Print(listDataArrayNew)
+	ioutil.WriteFile("list.txt", []byte(listCombined), 0755)
+
+}
+```
