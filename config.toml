@@ -11,7 +11,7 @@ metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 disqusShortname = "sclblog-1"
-googleAnalytics = "UA-78226868-3"
+googleAnalytics = "UA-78226868-1"
 
 [Params]
   subtitle = "Official Blog for Silo City Labs LLC"
