@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/security/</link>
+    <description>Recent content in security on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Home Server Setup.</title>
+      <link>https://silocitylabs.com/post/2019/05/30/home-server-setup/</link>
+      <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/05/30/home-server-setup/</guid>
+      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>433mhz testing</title>
+      <link>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</link>
+      <pubDate>Fri, 19 Jan 2018 14:43:55 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
+      <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
+&amp;nbsp;
+   &amp;nbsp;
+Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
+    </item>
+    
+  </channel>
+</rss>
