@@ -147,7 +147,7 @@ func main() {
 	fmt.Println(functionName("Hello ", "Again"))
 }
 
-func functionName(parameter1 string, param2 string) (returned string) {
+func functionName(parameter1 string, param2 string) string {
 	// Body of the function, code goes here.
 	return parameter1 + param2
 }
