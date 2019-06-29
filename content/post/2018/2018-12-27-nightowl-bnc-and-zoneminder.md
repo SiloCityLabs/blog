@@ -28,7 +28,7 @@ The PCI Card I used was "Hauppauge 649000-02". It sells on ebay for around $20 a
 
 Due to the name change of the pci card and the colons in the path, you will need to make a symlink to point to it. As you can see in the image my /camera/pci0 points to the path to the device.
 
-{{< image src="uploads/2018/12/1-4.png" alt="">}}
+{{< image src="/uploads/2018/12/1-4.png" alt="">}}
 
 &nbsp;
 
