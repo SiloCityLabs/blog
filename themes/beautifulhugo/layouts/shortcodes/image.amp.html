@@ -1,10 +1,20 @@
-{{ $ampImg := imageConfig (print "static" (.Get "src")) }}
+{{ $imgPath := (print "static" (.Get "src")) }}
 
-{{ if .Get "caption" }}
-    <figure>
-        <amp-img src="{{.Get "src" }}" alt="{{.Get "alt" }}" height="{{ $ampImg.Height }}" width="{{ $ampImg.Width }}" layout="responsive"></amp-img>
-        <figcaption>{{.Get "caption" }}</figcaption>
-    </figure>
+{{ if hasPrefix (.Get "src") "http"}}
+    {{ $imgPath = (.Get "src") }}
+{{ end }}
+
+{{ if (fileExists $imgPath) -}}
+    {{ $imgData := imageConfig $imgPath }}
+
+    {{ if .Get "caption" }}
+        <figure>
+            <amp-img src="{{.Get "src" }}" alt="{{.Get "alt" }}" height="{{ $imgData.Height }}" width="{{ $imgData.Width }}" layout="responsive"></amp-img>
+            <figcaption>{{.Get "caption" }}</figcaption>
+        </figure>
+    {{ else }}
+        <amp-img src="{{.Get "src" }}" alt="{{.Get "alt" }}" height="{{ $imgData.Height }}" width="{{ $imgData.Width }}" layout="responsive"></amp-img>
+    {{ end }}
 {{ else }}
-    <amp-img src="{{.Get "src" }}" alt="{{.Get "alt" }}" height="{{ $ampImg.Height }}" width="{{ $ampImg.Width }}" layout="responsive"></amp-img>
+    {{ errorf "Specified file at %s not found. Cannot Generate AMP tag" $imgPath }}
 {{ end }}

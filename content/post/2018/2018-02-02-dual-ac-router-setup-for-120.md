@@ -110,19 +110,10 @@ The best part was getting 118Mb/s in the 2nd floor and kitchen being connected t
 
 &nbsp;
 
-{{< image src="http://www.speedtest.net/result/7027662257.png" alt="">}}
+{{< image src="/uploads/2018/02/7027662257.png" alt="">}}
 
-{{< image src="http://www.speedtest.net/result/7027666057.png" alt="">}}
+{{< image src="/uploads/2018/02/7027666057.png" alt="">}}
 
  [1]: https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/
  [2]: https://asuswrt.lostrealm.ca/
  [3]: http://a.tra.li/Sx5u
- [4]: /uploads/2018/02/20180203_215442-1008x756.jpg
- [5]: /uploads/2018/02/20180203_215447-1008x756.jpg
- [6]: /uploads/2018/02/20180203_215505-1008x756.jpg
- [7]: /uploads/2018/02/20180203_215450-1008x756.jpg
- [8]: /uploads/2018/02/20180203_215501-1008x756.jpg
- [9]: /uploads/2018/02/20180203_215456-1008x756.jpg
- [10]: /uploads/2018/02/Backyard-Speedtests.png
- [11]: http://www.speedtest.net/result/7027662257.png
- [12]: http://www.speedtest.net/result/7027666057.png

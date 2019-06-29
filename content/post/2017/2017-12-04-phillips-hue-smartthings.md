@@ -17,9 +17,6 @@ I'm not really sure why it started working all of a sudden. I'm glad I did not b
 
 &nbsp;
 
-{{< image src="/uploads/2017/12/046677455293-APP-global-001.jpg " alt="Hue White">}}
+{{< image src="/uploads/2017/12/046677455293-APP-global-001.jpg" alt="Hue White">}}
 
 {{< image src="/uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg" alt="Sengled Element Classic">}}
-
- [1]: /uploads/2017/12/046677455293-APP-global-001.jpg
- [2]: /uploads/2017/12/sengled-led-bulbs-e11-g13w-64_1000.jpg
