@@ -36,7 +36,7 @@
   <!-- Links and stylesheets -->
   <link rel="canonical" href="{{ .Permalink | absLangURL }}" />
   {{ range .AlternativeOutputFormats -}}
-    <link rel="{{ .Rel | absLangURL }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end -}}
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
