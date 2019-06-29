@@ -26,7 +26,7 @@ tags:
 
 ## Companies using Golang
 
-![Golang Users](/uploads/2019/06/golang-users.png)
+{{< image src="/uploads/2019/06/golang-users.png" alt="Golang Users">}}
 
 Google - Go is designed and supported by Google. Google has one of the largest cloud infrastructures in the world and it is massively scaled.
 
@@ -52,7 +52,7 @@ The [list](https://github.com/golang/go/wiki/GoUsers) is over thousands long
 
 Nearly one decade and the hardware has not changed much besides one key thing. Multi-threading, and now possibly even more cores. Everything else has pretty much been steady and slow growth.
 
-![CPU Chart](/uploads/2019/06/chart.png)
+{{< image src="/uploads/2019/06/chart.png" alt="CPU Chart">}}
 
 Even multi-threading has its limits. With that said, we fall to software to fix these issues. We must increase efficiency and performance of our software.
 
@@ -70,7 +70,7 @@ Go has the benefit of having its own compiler for each architecture. It is not b
 
 This is where the magic happens. Routines help create concurrency you need to speed up your application where others fail.
 
-![Go Routines](/uploads/2019/06/1_nfojvbkdrkxz0zdbu4ysna1724252319353850356.jpeg)
+{{< image src="/uploads/2019/06/1_nfojvbkdrkxz0zdbu4ysna1724252319353850356.jpeg" alt="Go Routines">}}
 
 Routines in go startup faster and even use less memory to start than other languages like python and java. They can get complicated quickly in other languages but with Go it’s as simple as:
 
@@ -104,7 +104,7 @@ Go is a very easy language to read and maintain. It even has its own linter. It 
 If you look at the chart below. Its right in the middle between ease and speed. But still manages to beat java in both.
 
 
-![Languages Chart](/uploads/2019/06/1_nlpyi256br71xmbwd1nlfg4271399669979853869.png)
+{{< image src="/uploads/2019/06/1_nlpyi256br71xmbwd1nlfg4271399669979853869.png" alt="Languages Chart">}}
 
 Go is a win-win for both situations.
 

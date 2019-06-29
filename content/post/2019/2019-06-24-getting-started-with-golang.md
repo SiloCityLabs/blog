@@ -76,11 +76,11 @@ We will start by making a quick hello world to verify that Go and VSCode are bot
 
 On the first start screen hit the Open folder button and create a folder for your projects under `C:\Users\{username}\Go\src\` (Windows) or `/home/{username}/go/src` (Linux). Inside you will want to add a folder for your hello world project. We will be calling it `hello`. Hit new File and type `hello.go`. Almost Immediately I was presented with a plugin installer for Go.
 
-![Golang Install Plugin](/uploads/2019/06/golang-extension.png)
+{{< image src="/uploads/2019/06/golang-extension.png" alt="Golang Install Plugin" caption="VSCode Install Plugin">}}
 
 Moments after it installs it recommends other plugins. I just hit `install all`. This will help you get started with go much quicker than ussual by adding many features lacking by default in the editor.
 
-![Golang Install All](/uploads/2019/06/golang-plugins-all.png)
+{{< image src="/uploads/2019/06/golang-plugins-all.png" alt="Golang Install All">}}
 
 ## Packages
 

@@ -16,7 +16,7 @@ tags:
 ---
 ### Axis 2130 PTZ and Zoneminder
 
-![](/uploads/2018/08/41X1FB2KSBL._SY400_.jpg)
+{{< image src="/uploads/2018/08/41X1FB2KSBL._SY400_.jpg" alt="">}}
 
 #### Details:
 
@@ -32,8 +32,8 @@ Remote Host Path: /axis-cgi/mjpg/video.cgi?camera=1&1534046539993
 
 &nbsp;
 
-![](/uploads/2018/12/1.png)
+{{< image src="/uploads/2018/12/1.png" alt="">}}
 
-![](/uploads/2018/12/2.png)
+{{< image src="/uploads/2018/12/2.png" alt="">}}
 
  [2]: https://www.axis.com/files/usermanual/2130_um_en.pdf

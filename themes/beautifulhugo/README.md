@@ -1,6 +1,6 @@
 # Beautiful Hugo - A port of Beautiful Jekyll Theme
 
-![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
+{{< image src="Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
 
 ## Installation
 

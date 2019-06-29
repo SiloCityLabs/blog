@@ -17,7 +17,7 @@ I am thinking about using a basic ESP8266 along with a couple of water pressure 
 
 <!--more-->
 
-![Prototype Diagram](/uploads/2017/12/water-system.png)
+{{< image src="/uploads/2017/12/water-system.png" alt="Prototype Diagram">}}
 
 1: Insert water sensor into an empty main tank, Get the zero point of water pressure.
 

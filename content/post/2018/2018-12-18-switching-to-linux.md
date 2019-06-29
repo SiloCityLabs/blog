@@ -13,7 +13,7 @@ tags:
   - ubuntu
 
 ---
-![](/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png)
+{{< image src="/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png" alt="">}}
 
 I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many [other reasons][1] I won't begin to rant about. I chose to go with a decently common operating system for better compatibility.
 

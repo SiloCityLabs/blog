@@ -50,13 +50,13 @@ Before I get started on the modem setup, I just want to clarify the modem we use
 
 For this step I attempted to locate a pre-existing line in the basement that I can reroute the splitter to for the modem. We drilled a hole into the side of the house running into the basement but had some issues with spray foam insulation used on the basement. Took 30 mins to carve a hole in the insulation to get the hole for the wire. We reused a old direct-tv line just in case we messed up the first time we had a second try with the main line. It also let us continue to have internet while we were wiring up the cable. After the line was in place we had to reroute the Cable box splitter to use the direct-tv coax we re-used. Once this was set and done, we re-insulated with a spray foam can around the wire.
 
-![](/uploads/2018/02/20180203_215442-1008x756.jpg)
+{{< image src="/uploads/2018/02/20180203_215442-1008x756.jpg" alt="">}}
 
 ### **Step 2: Configuring the main router**
 
 With the router in the main corner of the basement near the modem we will be configuring it as a regular router.
 
-![](/uploads/2018/02/20180203_215447-1008x756.jpg)
+{{< image src="/uploads/2018/02/20180203_215447-1008x756.jpg" alt="">}}
 
 &nbsp;
 
@@ -74,13 +74,13 @@ I will set the main wifi name as "_mywifi (front)_" and the 5ghz as "_mywifi 5gh
 
 With a 100ft ethernet cable we will be running the wire along the ceiling to the opposite corner of the basement. Honestly probably did not need 100ft for his setup, at the time of ordering i did not know the length that was needed so I was better safe than sorry to get a 100ft. I attached the router to the header in the basement with 3m Double sided velcro straps. Plug in the ethernet into the port 1 of the main router and the wan port of the second router.
 
-![](/uploads/2018/02/20180203_215505-1008x756.jpg)
+{{< image src="/uploads/2018/02/20180203_215505-1008x756.jpg" alt="">}}
 
 After this was all in place I stapled all the wires running across to the headers to keep them in place.
 
-![](/uploads/2018/02/20180203_215450-1008x756.jpg)
+{{< image src="/uploads/2018/02/20180203_215450-1008x756.jpg" alt="">}}
 
-![](/uploads/2018/02/20180203_215501-1008x756.jpg)
+{{< image src="/uploads/2018/02/20180203_215501-1008x756.jpg" alt="">}}
 
 &nbsp;
 
@@ -98,7 +98,7 @@ I will set the main wifi name as "_mywifi (rear)_" and the 5ghz as "_mywifi 5ghz
 
 This was an added step, he didn't want to use wifi for his main machine. I attached it to the second router via ethernet and wired it to the outlet near the header and stapled it all up. Very simple, and proved to be an upside. Speed tests showed less latency on this because the electric lines in the basement have less of a length to get directly to the upstairs powerline. Also free's up more wifi bandwidth for other devices.
 
-![](/uploads/2018/02/20180203_215456-1008x756.jpg)
+{{< image src="/uploads/2018/02/20180203_215456-1008x756.jpg" alt="">}}
 
 ### **Step 5: Enjoy, Run some speed tests**
 
@@ -106,13 +106,13 @@ The best part was getting 118Mb/s in the 2nd floor and kitchen being connected t
 
 &nbsp;
 
-![](/uploads/2018/02/Backyard-Speedtests.png)
+{{< image src="/uploads/2018/02/Backyard-Speedtests.png" alt="">}}
 
 &nbsp;
 
-![](http://www.speedtest.net/result/7027662257.png)
+{{< image src="http://www.speedtest.net/result/7027662257.png" alt="">}}
 
-![](http://www.speedtest.net/result/7027666057.png)
+{{< image src="http://www.speedtest.net/result/7027666057.png" alt="">}}
 
  [1]: https://blog.silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/
  [2]: https://asuswrt.lostrealm.ca/

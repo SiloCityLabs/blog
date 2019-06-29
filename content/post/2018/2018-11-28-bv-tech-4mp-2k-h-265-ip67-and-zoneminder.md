@@ -11,7 +11,7 @@ tags:
   - ca-ipbf-4mp-wifi-fba
 
 ---
-![](/uploads/2018/11/61qmqoijgvl._sl1000_.jpg)
+{{< image src="/uploads/2018/11/61qmqoijgvl._sl1000_.jpg" alt="">}}
 
 Model: [ca-ipbf-4mp-wifi-fba][2]
 
@@ -29,9 +29,9 @@ You can also configure it manually using the following settings:
 
 Source Path: rtsp://admin:password@cameraip:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
 
-![](/uploads/2018/11/2.png)
+{{< image src="/uploads/2018/11/2.png" alt="">}}
 
-![](/uploads/2018/11/2-1.png)
+{{< image src="/uploads/2018/11/2-1.png" alt="">}}
 
 &nbsp;
 

@@ -17,7 +17,7 @@ tags:
   - waterproof
 
 ---
-![ioSafe SOLO G3 4TB USB 3.0](/uploads/2018/11/22-501-073_R01.jpg)
+{{< image src="/uploads/2018/11/22-501-073_R01.jpg" alt="ioSafe SOLO G3 4TB USB 3.0">}}
 
 I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB's worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.
 
@@ -27,7 +27,7 @@ I accidentally stumbled upon this solution while trying to find cloud providers 
 
 During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.
 
-![](/uploads/2018/11/Untitled-1.png)
+{{< image src="/uploads/2018/11/Untitled-1.png" alt="">}}
 
 Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba's die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.
 

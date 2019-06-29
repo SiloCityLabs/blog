@@ -58,33 +58,33 @@ Tools:
 
 This strip is where the filament goes from dry air to the printer. Drill holes (3/16" Drill Bit) about 2cm apart on a strip of wood. I drilled as many as I could to future proof my design.
 
-![](/uploads/2018/04/20180403_191010.jpg)
+{{< image src="/uploads/2018/04/20180403_191010.jpg" alt="">}}
 
 &nbsp;
 
 Bevel the holes to clean up the edge and give the filament room to wiggle (1/4" Drill Bit).
 
-![](/uploads/2018/04/20180403_190954.jpg)
+{{< image src="/uploads/2018/04/20180403_190954.jpg" alt="">}}
 
 &nbsp;
 
 Sand to prevent splinters and clean up drill shavings.
 
-![](/uploads/2018/04/20180403_191335.jpg)
+{{< image src="/uploads/2018/04/20180403_191335.jpg" alt="">}}
 
 &nbsp;
 
 Screw in the pneumatic connectors to the bottom of the wood strip. Threading the holes with an M5 bolt made this much easier. If you're fancy you could [make a real tap from a threaded rod or bolt][10] but we don't have time for that.
 
-![](/uploads/2018/04/20180403_192437.jpg)
+{{< image src="/uploads/2018/04/20180403_192437.jpg" alt="">}}
 
 &nbsp;
 
 We mount it on our shelving with some more M5 bolts. It locks in just like the shelves.
 
-![](/uploads/2018/04/photo_2018-04-13_15-22-07.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_15-22-07.jpg" alt="">}}
 
-![](/uploads/2018/04/20180403_194151.jpg)
+{{< image src="/uploads/2018/04/20180403_194151.jpg" alt="">}}
 
 &nbsp;
 
@@ -92,19 +92,19 @@ We mount it on our shelving with some more M5 bolts. It locks in just like the s
 
 Drill holes (3/16" Drill Bit) through the bin lid. Clean off any plastic shavings that may be left. Our bin holds 8-10 spools depends on their width.
 
-![](/uploads/2018/04/20180403_193813.jpg)
+{{< image src="/uploads/2018/04/20180403_193813.jpg" alt="">}}
 
 &nbsp;
 
 Screw in the pneumatic connectors from the top.
 
-![](/uploads/2018/04/20180403_194017.jpg)
+{{< image src="/uploads/2018/04/20180403_194017.jpg" alt="">}}
 
 &nbsp;
 
 On the underside, use an M5 nut to secure the connectors. The coated nut also helps the filament feed smoothly.
 
-![](/uploads/2018/04/photo_2018-04-13_16-27-31.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_16-27-31.jpg" alt="">}}
 
 &nbsp;
 
@@ -112,7 +112,7 @@ On the underside, use an M5 nut to secure the connectors. The coated nut also he
 
 Cut tubing to connect the feed strip and the bin.
 
-![](/uploads/2018/04/20180403_194409.jpg)
+{{< image src="/uploads/2018/04/20180403_194409.jpg" alt="">}}
 
 &nbsp;
 
@@ -120,7 +120,7 @@ Cutting the tube caused some burs that interfered with the filament. Clean up th
 
 Connect the two ends.
 
-![](/uploads/2018/04/20180403_194748.jpg)
+{{< image src="/uploads/2018/04/20180403_194748.jpg" alt="">}}
 
 &nbsp;
 
@@ -128,17 +128,17 @@ Connect the two ends.
 
 Using the design from [Thingiverse][19], print off as many spool rollers as needed. We picked this roller because the two halves are independent, allowing us to use the same rollers for various width spools. Another option is using a rod that goes through the length of the bin, but that would be a nuisance with so many spools. If your bin is only 1 or 2 spools then a rod would be a good choice. I may end up using double sided tape to secure them firmly in place if they move too much.
 
-![](/uploads/2018/04/photo_2018-04-13_16-27-25.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_16-27-25.jpg" alt="">}}
 
 Use a mallet if necessary to fit the bearing into the guide.
 
-![](/uploads/2018/04/photo_2018-04-13_16-27-23.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_16-27-23.jpg" alt="">}}
 
 &nbsp;
 
 Now that the spools roll freely, push the plastic into the tubing and out the wood strip.
 
-![](/uploads/2018/04/photo_2018-04-13_15-22-03.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_15-22-03.jpg" alt="">}}
 
 &nbsp;
 
@@ -167,7 +167,7 @@ Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Wa
 
 &nbsp;
 
-![](/uploads/2018/04/20180403_194038.jpg)
+{{< image src="/uploads/2018/04/20180403_194038.jpg" alt="">}}
 
   * Reel Dehydration: 
       * ABS: 4.0 hrs at 180°F
@@ -179,11 +179,11 @@ Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Wa
 
 More images:
 
-![](/uploads/2018/04/photo_2018-04-13_16-27-22.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_16-27-22.jpg" alt="">}}
 
-![](/uploads/2018/04/photo_2018-04-13_16-27-16.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_16-27-16.jpg" alt="">}}
 
-![](/uploads/2018/04/photo_2018-04-13_16-27-28.jpg)
+{{< image src="/uploads/2018/04/photo_2018-04-13_16-27-28.jpg" alt="">}}
 
 <div style="width: 640px;" class="wp-video">
   <!--[if lt IE 9]><![endif]--><video class="wp-video-shortcode" id="video-429-1" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1" />

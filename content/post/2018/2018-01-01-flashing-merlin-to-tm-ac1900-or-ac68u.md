@@ -63,7 +63,7 @@ Individual links to latest downloads
   * _Subnet: Default (255.255.255.0)_
   * _Gateway: 192.168.29.1_
 
-![](/uploads/2018/01/Untitled.png)
+{{< image src="/uploads/2018/01/Untitled.png" alt="">}}
 
 **2.2. Place router into Recovery/Restore mode:**
 
@@ -78,12 +78,12 @@ Individual links to latest downloads
   
     _If Mini-CFE won’t load use Asus Restore Utility_
 
-![](/uploads/2018/01/Untitled3.png)
+{{< image src="/uploads/2018/01/Untitled3.png" alt="">}}
 
   * Flash TM-AC1900\_3.0.0.4\_376_1703-g0ffdbba.trx from "Flash Images AC68U"
   * Wait for reboot 2-5 mins – WiFi lights will turn on when boot is complete
 
-![](/uploads/2018/01/Untitled2.png)
+{{< image src="/uploads/2018/01/Untitled2.png" alt="">}}
 
 **2.4. Flashing firmware, and cfe file:**
 
@@ -93,11 +93,11 @@ Individual links to latest downloads
   
 _ 
 
-![](/uploads/2018/01/7.png)
+{{< image src="/uploads/2018/01/7.png" alt="">}}
 
   * Open WinSCP (_select SCP as file protocol)_ and connect to 192.168.29.1 using a admin:password or admin:admin
 
-![](/uploads/2018/01/9.png)
+{{< image src="/uploads/2018/01/9.png" alt="">}}
 
   * In putty type:
   
@@ -106,7 +106,7 @@ _
   * Copy original_cfe.bin to a local drive
   * Upload original_cfe.bin to <https://cfeditor.pipeline.sh/> > Select 1.0.2.0 US (AiMesh for 384+ builds) as Source CFE > Download the new .bin > rename it to new_cfe.bin (Optional, You can check Max for TX power to avoid doing step 5 again)
 
-![](/uploads/2018/01/10.png)
+{{< image src="/uploads/2018/01/10.png" alt="">}}
 
   * Upload **new_cfe.bin** & **mtd-write** & **FW\_RT\_AC68U_30043763626.trx **to router through WinSCP. Files located inside "Flash Images AC68U" folder.
   * In Putty type:
@@ -132,12 +132,12 @@ _
 
   * Reset PC IP back to default from steps 2.1
 
-![](/uploads/2018/01/Untitled5.png)
+{{< image src="/uploads/2018/01/Untitled5.png" alt="">}}
 
   * Log in to router using 192.168.1.1 and the router is now an AC68U with 64MB jffs
   * Under Administration > Firmware Upgrade. upload **FW\_RT\_AC68U_3.0.0.4.382.18881.trx** located in the "Latest Stock AC68U" folder.
 
-![](/uploads/2018/01/11.png)
+{{< image src="/uploads/2018/01/11.png" alt="">}}
 
   * Complete! If you continue, you will be going from stock asus to a custom firmware that will enable hardware acceleration and provide you with more benefits in performance and features.
 

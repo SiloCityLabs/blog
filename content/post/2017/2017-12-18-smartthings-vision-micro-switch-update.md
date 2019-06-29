@@ -26,15 +26,15 @@ The device has arrived, I got it wired up and working. Bellow I attached the man
 
 &nbsp;
 
-![zl7432us manual](/uploads/2017/12/zl7432us-manual.png)
+{{< image src="/uploads/2017/12/zl7432us-manual.png" alt="zl7432us manual">}}
 
 &nbsp;
 
 Installed in [[bana0615][2]] home wall.
   
-![](/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg)
+{{< image src="/uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg" alt="">}}
 
-![Double gang wall outlet](/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg)
+{{< image src="/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg" alt="Double gang wall outlet">}}
 
 This is an update to: https://blog.silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/
 

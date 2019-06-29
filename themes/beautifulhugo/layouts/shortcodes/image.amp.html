@@ -1,0 +1,10 @@
+{{ $ampImg := imageConfig (print "static" (.Get "src")) }}
+
+{{ if .Get "caption" }}
+    <figure>
+        <amp-img src="{{.Get "src" }}" alt="{{.Get "alt" }}" height="{{ $ampImg.Height }}" width="{{ $ampImg.Width }}" layout="responsive"></amp-img>
+        <figcaption>{{.Get "caption" }}</figcaption>
+    </figure>
+{{ else }}
+    <amp-img src="{{.Get "src" }}" alt="{{.Get "alt" }}" height="{{ $ampImg.Height }}" width="{{ $ampImg.Width }}" layout="responsive"></amp-img>
+{{ end }}

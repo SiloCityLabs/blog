@@ -23,36 +23,36 @@ Use cases (mainly mine):
 
 To start off we plugin a cell phone to the routers usb port.
 
-![](/uploads/2018/09/20180915_0932318158192643190909326.jpg)
+{{< image src="/uploads/2018/09/20180915_0932318158192643190909326.jpg" alt="">}}
 
 <!--more-->There's an issue where Android will keep turning off tether if there is slight changes in cable movement or whenever the router reboots. We solve this with automate. We configure automate to keep enabling USB tether every X seconds.
 
-![](/uploads/2018/09/20180915_0945388772121150635334533.png)
+{{< image src="/uploads/2018/09/20180915_0945388772121150635334533.png" alt="">}}
 
 The root command is optional if you can't get USB tether working. Here is the full command.
 
-![](/uploads/2018/09/20180915_094523896414538435102704.png)
+{{< image src="/uploads/2018/09/20180915_094523896414538435102704.png" alt="">}}
 
 After it's enabled, hit play and let it run.
 
-![](/uploads/2018/09/20180915_0930581248984325352199968.jpg)
+{{< image src="/uploads/2018/09/20180915_0930581248984325352199968.jpg" alt="">}}
 
 Place your phone in a convenient spot accessible to great reception.
 
-![](/uploads/2018/09/20180915_094244623090915077846698.jpg)
+{{< image src="/uploads/2018/09/20180915_094244623090915077846698.jpg" alt="">}}
 
 Head over to your router settings. Under WAN options there is a tab called "Dual WAN".
 
-![](/uploads/2018/09/20180915_0943271850039273880023030.jpg)
+{{< image src="/uploads/2018/09/20180915_0943271850039273880023030.jpg" alt="">}}
 
 Enable USB tether and Android device.
 
-![](/uploads/2018/09/20180915_0943417170682303179420009.jpg)
+{{< image src="/uploads/2018/09/20180915_0943417170682303179420009.jpg" alt="">}}
 
 Configure the failover settings how you please.
 
 You are all set! Your dashboard should look like this.
 
-![](/uploads/2018/09/20180915_0943126960527662415391769.jpg)
+{{< image src="/uploads/2018/09/20180915_0943126960527662415391769.jpg" alt="">}}
 
  [1]: https://www.freedompop.com/phone

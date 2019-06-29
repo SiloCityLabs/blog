@@ -17,13 +17,13 @@ I wanted to wall mount my google home mini for the kitchen since there is not re
 
 You can use zip ties or bread bag ties to secure the cable in a loop like below.
 
-![](/uploads/2018/10/20181027_2304361152181891921713046.jpg)
+{{< image src="/uploads/2018/10/20181027_2304361152181891921713046.jpg" alt="">}}
 
 After u have the 3 ties in place. Just plug it in and you should be set.
 
 <!--more-->
 
-![](/uploads/2018/10/20181027_2304573395186432420616044.jpg)
+{{< image src="/uploads/2018/10/20181027_2304573395186432420616044.jpg" alt="">}}
 
 If you want a more secure grip for free you can use two methods. Assuming u have common household materials.
 

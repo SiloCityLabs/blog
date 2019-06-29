@@ -16,7 +16,7 @@ tags:
 ---
 ### Genius 32200318100 WideCam 320 USB and Zoneminder
 
-![](/uploads/2018/08/26-179-100-02.jpg)
+{{< image src="/uploads/2018/08/26-179-100-02.jpg" alt="">}}
 
 #### Details:
 
@@ -30,6 +30,6 @@ This camera was fairly simple to setup, just use the following settings. If you 
 
 Device path: /dev/v4l/by-id/usb-KYE\_Systems\_Corp.\_WideCam\_320-video-index0
 
-![](/uploads/2018/12/1-1.png)
+{{< image src="/uploads/2018/12/1-1.png" alt="">}}
 
-![](/uploads/2018/12/1-2.png)
+{{< image src="/uploads/2018/12/1-2.png" alt="">}}
