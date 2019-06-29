@@ -41,15 +41,6 @@ hr.small {
   border-radius: 3px;
 }
 
-.main-content {
-  padding-top: 80px;
-}
-@media only screen and (min-width: 768px) {
-  .main-content {
-    padding-top: 130px;
-  }
-}
-
 .main-explain-area {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 15px inherit;
