@@ -108,9 +108,8 @@ func updateSite() {
 	// Hugo build
 	cmdBuild := exec.Command("hugo")
 	cmdBuild.Dir = settings.RootPath
-	cmdBuild.Stdout = os.Stdout
-	cmdBuild.Stderr = os.Stderr
-	if err := cmdBuild.Run(); err != nil {
+	out, err := cmdBuild.CombinedOutput()
+	if err != nil {
 		fmt.Printf("cmdBuild.Run() failed with %s\n", err)
 	}
 
@@ -124,7 +123,7 @@ func updateSite() {
 	}
 
 	// Git Commit Message
-	cmdCommit := exec.Command("git", "commit", "-m", "Webhook Rebuild")
+	cmdCommit := exec.Command("git", "commit", "-m", string(out))
 	cmdCommit.Dir = settings.RootPath
 	cmdCommit.Stdout = os.Stdout
 	cmdCommit.Stderr = os.Stderr
