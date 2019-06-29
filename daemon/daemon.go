@@ -123,7 +123,7 @@ func updateSite() {
 	}
 
 	// Git Commit Message
-	cmdCommit := exec.Command("git", "commit", "-m", string(out))
+	cmdCommit := exec.Command("git", "commit", "-m", "Webhook rebuild\n"+string(out))
 	cmdCommit.Dir = settings.RootPath
 	cmdCommit.Stdout = os.Stdout
 	cmdCommit.Stderr = os.Stderr
