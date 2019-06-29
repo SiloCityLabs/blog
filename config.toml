@@ -43,6 +43,7 @@ googleAnalytics = "UA-78226868-1"
   category = "categories"
 
 [outputs]
+  home = ["HTML", "RSS"]
   page = ["HTML", "AMP"]
 
 [[menu.main]]
