@@ -55,7 +55,7 @@ Install Skanect
 
 If you have an NVidia card, install CUDA drivers (takes like 20-30min to install)
 
-![](/uploads/2018/08/orig-scan-watertight.jpg)
+{{< image src="/uploads/2018/08/orig-scan-watertight.jpg" alt="">}}
 
 After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here's what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.
 
@@ -71,7 +71,7 @@ Use your new Blender skills to edit the model. Crop it as needed, fix irregulari
 Bisect to split the brace down the middle  
 <https://www.youtube.com/watch?v=UjLaxaLJZK4><del></del>
 
-![](/uploads/2018/08/01-wtf.png)
+{{< image src="/uploads/2018/08/01-wtf.png" alt="">}}
 
 My model had some random garbage points that were sticking off the main model. That required cleanup.
 
@@ -98,11 +98,11 @@ subdivide (smooth)
 
 Here what my model looked like early on. I wireframed it without reducing the polys and it created this fine hole pattern:
 
-![](/uploads/2018/08/07-tada-its-fixed.png)
+{{< image src="/uploads/2018/08/07-tada-its-fixed.png" alt="">}}
 
 Here's my latest version. This is after bisecting it, and decimate and subdivide modifiers. It's basically done, I just have to make it at least 4x thicker because this was too flexible once printed.
 
-![](/uploads/2018/08/final-ish.jpg)
+{{< image src="/uploads/2018/08/final-ish.jpg" alt="">}}
 
 I also have a method for adding holes for velcro straps. It's not strictly necessary but it'll make the slots line up nicely.
 

@@ -16,7 +16,7 @@ tags:
 ---
 Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.
 
-![](/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png)
+{{< image src="/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png" alt="">}}
 
 Supplies/Tools needed:
 
@@ -39,25 +39,25 @@ Also note that voltage on a car's 12v line varies. With just the battery it's ar
 
 Start by prying open the tile carefully with the intention of resealing it. I already removed the cell battery in the picture below.
 
-![](/uploads/2018/07/photo_2018-07-18_23-27-14-1.jpg)
+{{< image src="/uploads/2018/07/photo_2018-07-18_23-27-14-1.jpg" alt="">}}
 
 Break off the battery pins and solder on a small length of wire. Reinsert it back into the body of the tile and make sure the wires dont interfere with any plastic.
 
-![](/uploads/2018/07/photo_2018-07-18_23-27-12.jpg)
+{{< image src="/uploads/2018/07/photo_2018-07-18_23-27-12.jpg" alt="">}}
 
 Drill or solder a hole at the top of the tile for the wires to exit. Slip the wires through then seal the entire enclosure with some hot glue.
 
-![](/uploads/2018/07/photo_2018-07-18_23-27-09.jpg)
+{{< image src="/uploads/2018/07/photo_2018-07-18_23-27-09.jpg" alt="">}}
 
 **Preparing the DC to DC Converter**
 
 Using a 12v power supply, attach the leads to the converters "in" pins and measure the power on the "out" pins using a voltage meter. Turn the adjustment until you are close to 3v.
 
-![](/uploads/2018/07/photo_2018-07-18_23-27-03-2.jpg)
+{{< image src="/uploads/2018/07/photo_2018-07-18_23-27-03-2.jpg" alt="">}}
 
 Glue the bottom of the converter to the tile, then cover the converter in glue to seal it from the elements.
 
-![](/uploads/2018/07/photo_2018-07-18_23-27-00-2.jpg)
+{{< image src="/uploads/2018/07/photo_2018-07-18_23-27-00-2.jpg" alt="">}}
 
 **Powering the tile**
 
@@ -69,23 +69,23 @@ Where you choose to tie in the tile is up to you. Some options include:
 
 I already have a dash cam that uses a 12v obdII connector so im just gonna tie it to that.
 
-![](/uploads/2018/07/20180718_2316209079375938918319396.jpg)
+{{< image src="/uploads/2018/07/20180718_2316209079375938918319396.jpg" alt="">}}
 
 I opened it up and located the pins. I soldered on my cables to the 12v pins.
 
-![](/uploads/2018/07/20180718_2300467315136001876509913.jpg)
+{{< image src="/uploads/2018/07/20180718_2300467315136001876509913.jpg" alt="">}}
 
 Once thats all set I closed it back up with a hole drilled for the cables.
 
-![](/uploads/2018/07/20180718_2316153822933817977650180.jpg)
+{{< image src="/uploads/2018/07/20180718_2316153822933817977650180.jpg" alt="">}}
 
 Reattached it to my cars obd port and hooked up my dash cam again.
 
-![](/uploads/2018/07/20180718_2322341355435456704761609.jpg)
+{{< image src="/uploads/2018/07/20180718_2322341355435456704761609.jpg" alt="">}}
 
 To finish it off. Press the tile button down for 10 seconds to turn it on. Rename your old tile in the app and you should be set.
 
-![](/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291.jpg)
+{{< image src="/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291.jpg" alt="">}}
 
 Update:
 

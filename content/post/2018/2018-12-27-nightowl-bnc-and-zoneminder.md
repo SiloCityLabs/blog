@@ -14,7 +14,7 @@ tags:
 
 ---
 ### Nightowl BNC
-![](/uploads/2018/08/images.jpg)
+{{< image src="/uploads/2018/08/images.jpg" alt="">}}
 
 #### Details:
 
@@ -28,16 +28,16 @@ The PCI Card I used was "Hauppauge 649000-02". It sells on ebay for around $20 a
 
 Due to the name change of the pci card and the colons in the path, you will need to make a symlink to point to it. As you can see in the image my /camera/pci0 points to the path to the device.
 
-![](uploads/2018/12/1-4.png)
+{{< image src="uploads/2018/12/1-4.png" alt="">}}
 
 &nbsp;
 
 You can see I have all the cameras pointing to it as the source.
 
-![](/uploads/2018/12/1-5.png)
+{{< image src="/uploads/2018/12/1-5.png" alt="">}}
 
 With the following settings for this pci card.
 
-![](/uploads/2018/12/1-6.png)
+{{< image src="/uploads/2018/12/1-6.png" alt="">}}
 
-![](/uploads/2018/12/2-2.png)
+{{< image src="/uploads/2018/12/2-2.png" alt="">}}

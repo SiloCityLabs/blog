@@ -12,7 +12,7 @@ tags:
   - Userscript
 
 ---
-![Frig off, Randy](/uploads/2018/01/newsletter-popup-e1515447774854.jpg)
+{{< image src="/uploads/2018/01/newsletter-popup-e1515447774854.jpg" alt="Frig off, Randy">}}
 
 &nbsp;
 
@@ -20,7 +20,7 @@ I hate "exit intent" popups. The kind that automatically open when your mouse le
 
 <!--more-->
 
-![Soon to be blocked](/uploads/2018/01/optin-monster.png)
+{{< image src="/uploads/2018/01/optin-monster.png" alt="Soon to be blocked">}}
 
 Specifically I want to block Ouibounce ([demo][4]) and OptIn Monster ([demo][5]). Bounce Exchange is another infamous one but I couldn't find a demo to test on. [This Metafilter topic][6] tipped me off to the main culprits: Javascript's mouseleave and mouseout events. So many sites have these popups that it's not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.
 

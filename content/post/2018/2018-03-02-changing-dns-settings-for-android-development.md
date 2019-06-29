@@ -14,7 +14,7 @@ tags:
   - testing
 
 ---
-![](/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg)
+{{< image src="/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg" alt="">}}
 
 &nbsp;
 
@@ -69,16 +69,16 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
   * Download ([Daedalus][3]) and open the application.
   * Click on the menu then click "Servers"
 
-![](/uploads/2018/03/photo_2018-03-02_10-35-15.jpg)
+{{< image src="/uploads/2018/03/photo_2018-03-02_10-35-15.jpg" alt="">}}
 
   * Click the add button and add the two google servers "8.8.8.8" and "8.8.4.4", You can substitute these for your preferred DNS provider as well.
 
-![](/uploads/2018/03/photo_2018-03-02_10-35-33-Copy.jpg)
+{{< image src="/uploads/2018/03/photo_2018-03-02_10-35-33-Copy.jpg" alt="">}}
 
   * Activate these dns servers in the menu by clicking on "Settings"
   * Then select Google and Google 2 from the settings. Also activate Advance settings and select the two following options in the image below
 
-![](/uploads/2018/03/photo_2018-03-02_10-35-32.jpg)
+{{< image src="/uploads/2018/03/photo_2018-03-02_10-35-32.jpg" alt="">}}
 
 &nbsp;
 
@@ -91,11 +91,11 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
 
 &nbsp;
 
-![](/uploads/2018/03/pastebin.png)
+{{< image src="/uploads/2018/03/pastebin.png" alt="">}}
 
   * Click on the Raw button and copy this link somewhere for later use, Repeat steps for each mode.
 
-![](/uploads/2018/03/pastebin2.png)
+{{< image src="/uploads/2018/03/pastebin2.png" alt="">}}
 
 **Step 3 - Setting up the rules:**
 
@@ -103,7 +103,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
   * Add a new rule for each development mode, Live, staging, dev. Filename is not crucial, just make something up.
   * Hit sync rule before leaving to make sure the file is downloaded.
 
-![](/uploads/2018/03/photo_2018-03-02_10-35-13-Copy.jpg)
+{{< image src="/uploads/2018/03/photo_2018-03-02_10-35-13-Copy.jpg" alt="">}}
 
 &nbsp;
 
@@ -112,7 +112,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
   * Tap and activate the mode you wish to be in, You can activate more than one at a time so be careful as this will override one or the other.
   * In the menu go to home, and hit the "Activate" button.
 
-![](/uploads/2018/03/photo_2018-03-02_10-35-08.jpg)
+{{< image src="/uploads/2018/03/photo_2018-03-02_10-35-08.jpg" alt="">}}
 
 &nbsp;
 
@@ -122,7 +122,7 @@ You'll notice for each setup I have created pastebin links to where my hosts fil
   * As you can see in the app below, the short url is no longer short, I now get a full url as the dev server doesnt have an api key to tra.li link shortener.
   * Depending on the use-case it may be difficult to detect which server your hitting, You can go back into Daedalus in the menu and select test. Type your domain name and see if the ip matches your dev server.
 
-![](/uploads/2018/03/photo_2018-03-02_10-35-04.jpg)
+{{< image src="/uploads/2018/03/photo_2018-03-02_10-35-04.jpg" alt="">}}
 
  [1]: /uploads/2018/03/ezgif-1-6db60a8e39-1.jpg
  [2]: http://codrcg.com

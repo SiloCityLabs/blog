@@ -18,7 +18,7 @@ tags:
 ---
 I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [[bana0615][1]]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.
 
-![Double Toggle Switch](/uploads/2017/12/419E0PAR7HL.jpg)
+{{< image src="/uploads/2017/12/419E0PAR7HL.jpg" alt="Double Toggle Switch">}}
 
 <!--more-->
 
@@ -26,7 +26,7 @@ Single Switch: [Amazon $26.95][3]
 
 Double Switch (using two in one saves space and money $15/each): [Amazon $29.95][4]
 
-![Vision Relay](/uploads/2017/12/41vrEw9HFL.jpg)
+{{< image src="/uploads/2017/12/41vrEw9HFL.jpg" alt="Vision Relay">}}
 
 &nbsp;
 

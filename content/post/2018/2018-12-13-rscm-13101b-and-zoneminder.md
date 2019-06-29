@@ -16,7 +16,7 @@ tags:
 ---
 ### Rosewill SHIELDeye RSCM-13101B and Zoneminder
 
-![](/uploads/2018/08/81-147-048-Z01.jpg)
+{{< image src="/uploads/2018/08/81-147-048-Z01.jpg" alt="">}}
 
 #### Details:
 
@@ -28,6 +28,6 @@ This camera is not listed as officially supporting ONVIF, but it does have it. I
 
 Using the software or app setup the camera for normal streaming first. Afterwards you can add it using the following configuration.
 
-![](/uploads/2018/12/1-3.png)
+{{< image src="/uploads/2018/12/1-3.png" alt="">}}
 
-![](/uploads/2018/12/2-1.png)
+{{< image src="/uploads/2018/12/2-1.png" alt="">}}
