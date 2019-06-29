@@ -1987,16 +1987,16 @@ input[type="button"].btn-block {
   margin-left: auto;
 }
 .pull-right {
-  float: right !important;
+  float: right;
 }
 .pull-left {
-  float: left !important;
+  float: left;
 }
 .hide {
-  display: none !important;
+  display: none;
 }
 .show {
-  display: block !important;
+  display: block;
 }
 .invisible {
   visibility: hidden;
@@ -2009,75 +2009,28 @@ input[type="button"].btn-block {
   border: 0;
 }
 .hidden {
-  display: none !important;
+  display: none;
 }
 .affix {
   position: fixed;
 }
 @media (max-width: 767px) {
   .hidden-xs {
-    display: none !important;
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm {
-    display: none !important;
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
-    display: none !important;
+    display: none;
   }
 }
 @media (min-width: 1200px) {
   .hidden-lg {
-    display: none !important;
-  }
-}
-.visible-print {
-  display: none !important;
-}
-@media print {
-  .visible-print {
-    display: block !important;
-  }
-  table.visible-print {
-    display: table !important;
-  }
-  tr.visible-print {
-    display: table-row !important;
-  }
-  th.visible-print,
-  td.visible-print {
-    display: table-cell !important;
-  }
-}
-.visible-print-block {
-  display: none !important;
-}
-@media print {
-  .visible-print-block {
-    display: block !important;
-  }
-}
-.visible-print-inline {
-  display: none !important;
-}
-@media print {
-  .visible-print-inline {
-    display: inline !important;
-  }
-}
-.visible-print-inline-block {
-  display: none !important;
-}
-@media print {
-  .visible-print-inline-block {
-    display: inline-block !important;
-  }
-}
-@media print {
-  .hidden-print {
-    display: none !important;
+    display: none;
   }
 }
