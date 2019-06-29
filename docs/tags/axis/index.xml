@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>axis on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/axis/</link>
+    <description>Recent content in axis on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/axis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Home Server Setup.</title>
+      <link>https://silocitylabs.com/post/2019/05/30/home-server-setup/</link>
+      <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/05/30/home-server-setup/</guid>
+      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Axis 2130 PTZ and Zoneminder</title>
+      <link>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</link>
+      <pubDate>Thu, 07 Feb 2019 23:30:58 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</guid>
+      <description>&lt;h3 id=&#34;axis-2130-ptz-and-zoneminder&#34;&gt;Axis 2130 PTZ and Zoneminder&lt;/h3&gt;
+
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/41X1FB2KSBL._SY400_.jpg&#34; alt=&#34;&#34; height=&#34;400&#34; width=&#34;429&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
+
+&lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
+
+&lt;p&gt;This camera is very dated, also using a proprietary power adapter, no WiFi and very difficult to setup. Once you are on my network you have full viewing access to my camera. My router fortunately has network isolation so I am able to block access to it except via my server that has zoneminder nvr software installed. Unfortunately you will not be able to control the ptz from Zoneminder directly due to the age of the camera. But you can however give it a fixed position in the web panel it has built in. I would recommend setting its default fixed position after a reboot or power loss.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
