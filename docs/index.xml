@@ -110,7 +110,9 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34; height=&#34;309&#34; width=&#34;1749&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;rsquo;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;</description>
     </item>
@@ -123,7 +125,16 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <guid>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;axis-2130-ptz-and-zoneminder&#34;&gt;Axis 2130 PTZ and Zoneminder&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/08/41X1FB2KSBL._SY400_.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/41X1FB2KSBL._SY400_.jpg&#34; alt=&#34;&#34; height=&#34;400&#34; width=&#34;429&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
@@ -146,7 +157,9 @@ bag3q9t4o</description>
       <pubDate>Thu, 24 Jan 2019 23:30:39 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/speedtest.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/12/speedtest.png&#34; alt=&#34;&#34; height=&#34;377&#34; width=&#34;567&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;Many have heard the term speed test, the first thing that comes to mind is speedtest.net or google&amp;rsquo;s speed test tool. Many don&amp;rsquo;t know that speed on your internal network also affects you. When testing internet speed your device sends data to router then out to the internet, what if your router is the issue. Even worse, your device. I will show u a very handy utility I use to make sure everything in my house runs great. Its called &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;iPerf&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
@@ -168,7 +181,16 @@ bag3q9t4o</description>
       <guid>https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;genius-32200318100-widecam-320-usb-and-zoneminder&#34;&gt;Genius 32200318100 WideCam 320 USB and Zoneminder&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/08/26-179-100-02.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/26-179-100-02.jpg&#34; alt=&#34;&#34; height=&#34;480&#34; width=&#34;640&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
@@ -251,7 +273,16 @@ Promo Expires: December 31, 2018 11:59 pm PST.</description>
       <guid>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;nightowl-bnc&#34;&gt;Nightowl BNC&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34; height=&#34;251&#34; width=&#34;201&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
@@ -274,7 +305,9 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34; height=&#34;335&#34; width=&#34;670&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many &lt;a href=&#34;https://duckduckgo.com/?q=windows+updates+breaks&amp;amp;atb=v147-1__&amp;amp;t=cros&amp;amp;iar=news&amp;amp;ia=&#34;&gt;other reasons&lt;/a&gt; I won&amp;rsquo;t begin to rant about. I chose to go with a decently common operating system for better compatibility.&lt;/p&gt;
 
@@ -319,7 +352,16 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <guid>https://silocitylabs.com/post/2018/12/13/rscm-13101b-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;rosewill-shieldeye-rscm-13101b-and-zoneminder&#34;&gt;Rosewill SHIELDeye RSCM-13101B and Zoneminder&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/08/81-147-048-Z01.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/81-147-048-Z01.jpg&#34; alt=&#34;&#34; height=&#34;480&#34; width=&#34;640&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 
@@ -332,7 +374,9 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <pubDate>Wed, 28 Nov 2018 23:59:23 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/61qmqoijgvl._sl1000_.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/11/61qmqoijgvl._sl1000_.jpg&#34; alt=&#34;&#34; height=&#34;1000&#34; width=&#34;1000&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;Model: &lt;a href=&#34;https://www.bvsecurity.com/index.php/ca-ipbf-4mp-wifi.html&#34;&gt;ca-ipbf-4mp-wifi-fba&lt;/a&gt;&lt;/p&gt;
 
@@ -345,7 +389,9 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34; height=&#34;960&#34; width=&#34;1280&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;rsquo;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
     </item>
@@ -360,7 +406,16 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
 
 &lt;p&gt;You can use zip ties or bread bag ties to secure the cable in a loop like below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/10/20181027_2304361152181891921713046.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/10/20181027_2304361152181891921713046.jpg&#34; alt=&#34;&#34; height=&#34;1920&#34; width=&#34;1439&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;After u have the 3 ties in place. Just plug it in and you should be set.&lt;/p&gt;</description>
     </item>
@@ -389,7 +444,9 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <pubDate>Tue, 18 Sep 2018 00:32:07 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/09/18/infinite-free-small-storage-for-electronics/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019313975750998363509017.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019313975750998363509017.jpg&#34; alt=&#34;&#34; height=&#34;1440&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;Im a little dissapointed in myself for not thinking of it sooner. I tossed about 20 of these in the recycling bin before I realized I could reuse them myself.&lt;/p&gt;
 
@@ -414,7 +471,14 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
 
 &lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; alt=&#34;&#34; height=&#34;1440&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
     
     <item>
@@ -454,7 +518,16 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <guid>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</guid>
       <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34; height=&#34;231&#34; width=&#34;231&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;Supplies/Tools needed:&lt;/p&gt;
 
@@ -518,7 +591,9 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <pubDate>Fri, 02 Mar 2018 16:29:41 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/03/02/changing-dns-settings-for-android-development/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg&#34; alt=&#34;&#34; height=&#34;395&#34; width=&#34;728&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
@@ -533,9 +608,20 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
       <pubDate>Tue, 06 Feb 2018 08:50:09 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34; alt=&#34;&#34; height=&#34;371&#34; width=&#34;1160&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34; alt=&#34;2mm pitch headers, ugh&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34; alt=&#34;2mm pitch headers, ugh&#34; height=&#34;638&#34; width=&#34;750&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&amp;rdquo; (2.54mm) pitch. This makes it incompatible with regular 1&amp;rdquo; pitch breadboards. Being double row makes it worse.&lt;/p&gt;</description>
     </item>
@@ -569,7 +655,7 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
       <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
 &amp;nbsp;
-  &amp;nbsp;
+   &amp;nbsp;
 Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
     </item>
     
@@ -579,7 +665,9 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <pubDate>Wed, 10 Jan 2018 03:17:12 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34; height=&#34;335&#34; width=&#34;906&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
@@ -605,7 +693,9 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; height=&#34;446&#34; width=&#34;907&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
@@ -617,7 +707,16 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
 r
 Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; height=&#34;467&#34; width=&#34;830&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 
@@ -653,7 +752,16 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/Maave&#34;&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/Maave&#34;&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34; height=&#34;478&#34; width=&#34;1257&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;rsquo;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
@@ -666,7 +774,14 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; /&gt;&lt;/p&gt;</description>
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; height=&#34;500&#34; width=&#34;500&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
     
     <item>
@@ -675,11 +790,22 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <pubDate>Fri, 15 Dec 2017 19:21:01 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34; height=&#34;513&#34; width=&#34;1010&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;This is a custom 3D printed wrist brace that I&amp;rsquo;m working on. I wear wrist braces to sleep for RSI / carpal tunnel but they&amp;rsquo;re not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/cast1.jpg&#34; alt=&#34;3D printed cast I saw online&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/cast1.jpg&#34; alt=&#34;3D printed cast I saw online&#34; height=&#34;467&#34; width=&#34;660&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.&lt;/p&gt;</description>
     </item>
@@ -701,7 +827,16 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <guid>https://silocitylabs.com/post/2017/12/15/ebay-print-bed/</guid>
       <description>&lt;p&gt;We received our new print bed from &lt;a href=&#34;https://www.ebay.com/itm/192342007627&#34;&gt;eBay/China&lt;/a&gt;. Not a Lokbuild but at least its cheaper. First thing I noticed is that this sheet is thicker than a Lokbuild, 0.6mm thick instead of 0.5. When I followed the steps on calibrating I clicked &lt;del&gt;6&lt;/del&gt; 8 times to ensure proper spacing instead of the original 4.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://silocitylabs.com/uploads/2017/12/img_20171106_1706507253338128094262765.jpg&#34; alt=&#34;Before applying pad&#34; /&gt;&lt;/p&gt;
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/img_20171106_1706507253338128094262765.jpg&#34; alt=&#34;Before applying pad&#34; height=&#34;1280&#34; width=&#34;720&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
 
 &lt;p&gt;&lt;strong&gt;Robox Instructions:&lt;/strong&gt;&lt;/p&gt;
 

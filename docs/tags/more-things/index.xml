@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>more things on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/more-things/</link>
+    <description>Recent content in more things on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Mon, 05 Feb 2018 22:30:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/more-things/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>433MHZ More Things for Smart Things</title>
+      <link>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</link>
+      <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</guid>
+      <description>Finally - off the breadboard and into a working environment. It&amp;rsquo;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
+&amp;nbsp;
+  Day 1:
+A few issues. I accidentally flipped the polarities on the siren. I will eventually implement a 12v regulator to up the voltage for the siren for the full 120db power.</description>
+    </item>
+    
+    <item>
+      <title>433mhz testing</title>
+      <link>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</link>
+      <pubDate>Fri, 19 Jan 2018 14:43:55 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
+      <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
+&amp;nbsp;
+   &amp;nbsp;
+Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
+    </item>
+    
+    <item>
+      <title>Complete Smart Home Setup</title>
+      <link>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</link>
+      <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; height=&#34;446&#34; width=&#34;907&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;rsquo;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Assistant&lt;/strong&gt;:
+r
+Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
+
+
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; height=&#34;467&#34; width=&#34;830&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
+
+
+&lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Smart Things 433mhz</title>
+      <link>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</link>
+      <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</guid>
+      <description>Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?
+I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.
+&amp;nbsp;
+Edit: I think I may have made a mistake buying zigbee chips.</description>
+    </item>
+    
+  </channel>
+</rss>
