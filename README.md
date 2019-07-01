@@ -22,3 +22,18 @@ Read more at Hugo's [documentation](https://gohugo.io/overview/introduction/).
 
 If you clone or download this project to your local computer and run `hugo server`,
 your site can be accessed under `localhost:1313/hugo/`.
+
+
+### Setup
+
+Install to `/opt/blog/`
+
+Enable service `systemctl link /opt/blog/daemon/blog.service`
+
+Copy settings file and edit
+
+`cp settings.default.yaml settings.yaml`
+
+Start Service `systemctl start blog`
+
+Make sure port forwarding is handled on your routers
