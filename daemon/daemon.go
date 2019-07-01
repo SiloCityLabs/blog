@@ -53,32 +53,51 @@ func main() {
 func checkPush(pullRequest github.PushPayload) {
 	//Lets only check first commit, just in case of merges
 	commit := pullRequest.Commits[0]
+	noBuild := false
+	restart := false
 
 	for _, file := range commit.Added {
 		fmt.Println("File Added: " + file)
 		if strings.HasPrefix(file, "docs/") {
-			fmt.Println("Doc file, no build needed")
-			return
+			noBuild = true
 		}
 	}
 	for _, file := range commit.Removed {
 		fmt.Println("File Removed: " + file)
 		if strings.HasPrefix(file, "docs/") {
-			fmt.Println("Doc file, no build needed")
-			return
+			noBuild = true
 		}
 	}
 	for _, file := range commit.Modified {
 		fmt.Println("File Modified: " + file)
 		if strings.HasPrefix(file, "docs/") {
-			fmt.Println("Doc file, no build needed")
-			return
+			noBuild = true
 		}
+		if strings.Contains(file, "daemon.run") {
+			restart = true
+		}
+	}
+
+	if noBuild {
+		fmt.Println("Doc file, no build needed")
+		return
 	}
 
 	//Docs hasnt been built. lets do it
 	fmt.Println("Update Site running...")
 	updateSite()
+
+	if restart {
+		fmt.Println("New Daemon build, restarting")
+
+		cmdPull := exec.Command("systemctl", "restart", "blog")
+		cmdPull.Dir = settings.RootPath
+		cmdPull.Stdout = os.Stdout
+		cmdPull.Stderr = os.Stderr
+		if err := cmdPull.Run(); err != nil {
+			fmt.Printf("cmdPull.Run() failed with %s\n", err)
+		}
+	}
 }
 
 func updateSite() {
