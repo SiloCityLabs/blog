@@ -185,11 +185,10 @@ More images:
 
 {{< image src="/uploads/2018/04/photo_2018-04-13_16-27-28.jpg" alt="">}}
 
-<div style="width: 640px;" class="wp-video">
-  <!--[if lt IE 9]><![endif]--><video class="wp-video-shortcode" id="video-429-1" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1" />
-  
-  <a href="/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4">uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4</a></video>
-</div>
+<video class="wp-video-shortcode" id="video-429-1" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1" />
+
+{{< youtube oh7aWo-rnNs >}}
+
 
  [1]: https://www.amazon.com/dp/B00KL7VQ7S/
  [2]: https://www.amazon.com/gp/product/B019PZ5MY4/
