@@ -27,7 +27,6 @@ Step 4: Call once you see the pricing on the website 2 days later. Then you will
 
 &nbsp;
 
-
-<img class="wp-image-878" src="/uploads/2019/01/photo_2019-01-08_14-31-55.jpg" width="350" height="200" />
+{{< image src="/uploads/2019/01/photo_2019-01-08_14-31-55.jpg" alt="">}}
 
 This infuriates me about their sales tactics. But it seems that every time you leave a trace on their sales it bumps the plan higher and higher. I'm not sure how high they are willing to go. This promo worked for Buffalo, NY. Let me know in the comments if you have had any success or have found a way to get into this price lock period for existing customers. I'm eager to get this speed and pricing for my house with 100mpbs.
