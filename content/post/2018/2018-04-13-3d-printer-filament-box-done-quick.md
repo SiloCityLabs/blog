@@ -185,8 +185,6 @@ More images:
 
 {{< image src="/uploads/2018/04/photo_2018-04-13_16-27-28.jpg" alt="">}}
 
-<video class="wp-video-shortcode" id="video-429-1" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="/uploads/2018/04/322df4bd-d4f5-4efa-a450-fedb8ea670b8.mp4?_=1" />
-
 {{< youtube oh7aWo-rnNs >}}
 
 
@@ -196,24 +194,6 @@ More images:
  [4]: https://www.amazon.com/dp/B009ITFXDI/
  [5]: https://www.amazon.com/gp/product/B00NX3LKY6/
  [6]: https://www.amazon.com/gp/product/B06XKMV1HV/
- [7]: /uploads/2018/04/20180403_191010.jpg
- [8]: /uploads/2018/04/20180403_190954.jpg
- [9]: /uploads/2018/04/20180403_191335.jpg
  [10]: https://hackaday.com/2017/07/24/simple-shop-made-taps-for-threading-wood/
- [11]: /uploads/2018/04/20180403_192437.jpg
- [12]: /uploads/2018/04/photo_2018-04-13_15-22-07.jpg
- [13]: /uploads/2018/04/20180403_194151.jpg
- [14]: /uploads/2018/04/20180403_193813.jpg
- [15]: /uploads/2018/04/20180403_194017.jpg
- [16]: /uploads/2018/04/photo_2018-04-13_16-27-31.jpg
- [17]: /uploads/2018/04/20180403_194409.jpg
- [18]: /uploads/2018/04/20180403_194748.jpg
  [19]: https://www.thingiverse.com/thing:2185015
- [20]: /uploads/2018/04/photo_2018-04-13_16-27-25.jpg
- [21]: /uploads/2018/04/photo_2018-04-13_16-27-23.jpg
- [22]: /uploads/2018/04/photo_2018-04-13_15-22-03.jpg
- [23]: /uploads/2018/04/20180403_194038.jpg
  [24]: https://www.amazon.com/gp/product/B0090WOCN0/
- [25]: /uploads/2018/04/photo_2018-04-13_16-27-22.jpg
- [26]: /uploads/2018/04/photo_2018-04-13_16-27-16.jpg
- [27]: /uploads/2018/04/photo_2018-04-13_16-27-28.jpg
