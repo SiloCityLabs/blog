@@ -146,24 +146,12 @@ Now that the spools roll freely, push the plastic into the tubing and out the wo
 
 Adding your Silica Gel Desiccant Packet. I recook mine about every 6 months. Warning! Not all packets are reusable, please read the instructions for your specific packet.
 
-<ul class="a-unordered-list a-vertical a-spacing-none">
-  <li class="showHiddenFeatureBullets">
-    <span class="a-list-item">Packet Reactivation:</span> <ul>
-      <li class="showHiddenFeatureBullets">
-        <span class="a-list-item">Oven for 2.0 hrs at 200°F</span>
-      </li>
-      <li>
-        <span class="a-list-item">Oven for 0.5 hrs at 250°F</span>
-      </li>
-      <li class="showHiddenFeatureBullets">
-        <span class="a-list-item">Microwave for About 10 Minutes at DEFROST.</span>
-      </li>
-      <li>
-        Bonus: Free packets located in shoe boxes, and other items. I date them and toss them in there. Just trash these after 6 months.
-      </li>
-    </ul>
-  </li>
-</ul>
+**Packet Reactivation:**
+ - Oven for 2.0 hrs at 200°F
+ - Oven for 0.5 hrs at 250°F
+ - Microwave for About 10 Minutes at DEFROST.
+ - Bonus: Free packets located in shoe boxes, and other items. I date them and toss them in there. Just trash these after 6 months.
+
 
 &nbsp;
 
@@ -184,6 +172,8 @@ More images:
 {{< image src="/uploads/2018/04/photo_2018-04-13_16-27-16.jpg" alt="">}}
 
 {{< image src="/uploads/2018/04/photo_2018-04-13_16-27-28.jpg" alt="">}}
+
+&nbsp;
 
 {{< youtube oh7aWo-rnNs >}}
 

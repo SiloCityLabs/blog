@@ -44,6 +44,6 @@ We have not made any decision on a resin printer. For the limited material suppo
 
 &nbsp;
 
-<iframe style="width: 100%; height: 420px; border: 0;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSemtCvLdcGtrIwtKpap0Ga_aQcG25TXQOzlk9U9uto2AATk715MCw7mFTbkiZ3hBV3hMUNRJtT14pa/pubhtml?gid=0&single=true&widget=true&headers=false"></iframe>
+{{< iframe width="750px" height="420px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSemtCvLdcGtrIwtKpap0Ga_aQcG25TXQOzlk9U9uto2AATk715MCw7mFTbkiZ3hBV3hMUNRJtT14pa/pubhtml?gid=0&single=true&widget=true&headers=false" >}}
 
 Let us know in the comments below if you know of a printer we can add to this list.

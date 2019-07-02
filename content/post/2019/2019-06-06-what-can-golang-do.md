@@ -20,7 +20,7 @@ tags:
 
 ---
 
-<span style="color: rgba(0,0,0,0.84); font-family: medium-content-serif-font,Georgia,Cambria,;">Nothing makes a developer crazier than a new programming language, right? So, I started learning Go about 6 months ago and </span>now I am going to share with you my reasons for doing so.
+Nothing makes a developer crazier than a new programming language, right? So, I started learning Go about 6 months ago and now I am going to share with you my reasons for doing so.
 
 <!--more-->
 
@@ -74,28 +74,16 @@ This is where the magic happens. Routines help create concurrency you need to sp
 
 Routines in go startup faster and even use less memory to start than other languages like python and java. They can get complicated quickly in other languages but with Go it’s as simple as:
 
-<pre>go functionName()</pre>
+```go functionName()```
 
 You could spin up millions of routines before you start having bottlenecks in hardware. Meanwhile Languages like java will start to choke around a couple thousand.
 
-<p id="13ea" class="graf graf--p graf-after--figure" style="margin: 30px0px0px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;">
-  <strong class="markup--strong markup--p-strong" style="font-weight: bold;">Other benefits are :</strong>
-</p>
+**Other benefits are:**
 
-<ul class="postList" style="margin: 21px0px0px; padding: 0px; list-style: nonenone; counter-reset: post0; color: rgba(0,0,0,0.84); font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,;">
-  <li id="8c31" class="graf graf--li graf-after--p" style="margin-left: 30px; margin-bottom: 14px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;">
-    Goroutines have grow-able segmented stacks. That means they will use more memory only when needed.
-  </li>
-  <li id="d180" class="graf graf--li graf-after--li" style="margin-left: 30px; margin-bottom: 14px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;">
-    Goroutines have a faster startup time than threads.
-  </li>
-  <li id="9f10" class="graf graf--li graf-after--li" style="margin-left: 30px; margin-bottom: 14px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;">
-    Goroutines come with built-in primitives to communicate safely between themselves (channels).
-  </li>
-  <li id="5aae" class="graf graf--li graf-after--li" style="margin-left: 30px; margin-bottom: 0px; --x-height-multiplier: 0.375; --baseline-multiplier: 0.17; font-family: medium-content-serif-font,Georgia,Cambria,;">
-    Also, goroutines and OS threads do not have 1:1 mapping. A single goroutine can run on multiple threads. Goroutines are multiplexed into small number of OS threads.
-  </li>
-</ul>
+ - Goroutines have grow-able segmented stacks. That means they will use more memory only when needed.
+ - Goroutines have a faster startup time than threads.
+ - Goroutines come with built-in primitives to communicate safely between themselves (channels).
+ - Also, goroutines and OS threads do not have 1:1 mapping. A single goroutine can run on multiple threads. Goroutines are multiplexed into small number of OS threads.
 
 ## Easy to maintain
 
