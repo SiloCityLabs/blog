@@ -133,8 +133,8 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
 
 Other untested stuff:
 
-  * https://www.inteset.com/how-to-strip-down-windows-10-for-kiosks-digital-signage-and-other-special-purpose-systems
-  * https://www.reddit.com/r/TronScript/comments/a41xpq/tron\_v1073\_20181207\_fix\_disk\_space\_calculation_in/
+  * http://a.tra.li/Uftj
+  * http://a.tra.li/Ufti
 
  [1]: https://duckduckgo.com/?q=windows+updates+breaks&atb=v147-1__&t=cros&iar=news&ia=
  [2]: https://linuxhint.com/rufus_bootable_usb_install_ubuntu_18-04_lts/
