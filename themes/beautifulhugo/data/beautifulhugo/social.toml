@@ -2,58 +2,58 @@
 id = "email"
 url = "mailto:%s"
 title = "Email me"
-icon = "fas fa-envelope"
+icon = "icon-mail"
 
 [[social_icons]]
 id = "facebook"
 url = "https://www.facebook.com/%s"
 title = "Facebook"
-icon = "fab fa-facebook"
+icon = "icon-facebook"
 
 [[social_icons]]
 id = "gitlab"
 url = "https://gitlab.com/%s"
 title = "GitLab"
-icon = "fab fa-gitlab"
+icon = "icon-gitlab"
 
 [[social_icons]]
 id = "github"
 url = "https://github.com/%s"
 title = "GitHub"
-icon = "fab fa-github"
+icon = "icon-github"
 
 [[social_icons]]
 id = "twitter"
 url = "https://twitter.com/%s"
 title = "Twitter"
-icon = "fab fa-twitter"
+icon = "icon-twitter"
 
 [[social_icons]]
 id = "reddit"
 url = "https://reddit.com/u/%s"
 title = "Reddit"
-icon = "fab fa-reddit-alien"
+icon = "icon-reddit-alien"
 
 [[social_icons]]
 id = "linkedin"
 url = "https://linkedin.com/in/%s"
 title = "LinkedIn"
-icon = "fab fa-linkedin"
+icon = "icon-linkedin"
 
 [[social_icons]]
 id = "linkedin-company"
 url = "https://linkedin.com/company/%s"
 title = "LinkedIn"
-icon = "fab fa-linkedin"
+icon = "icon-linkedin"
 
 [[social_icons]]
 id = "youtube"
 url = "https://www.youtube.com/%s"
 title = "Youtube"
-icon = "fab fa-youtube"
+icon = "icon-youtube-play"
 
 [[social_icons]]
 id = "newsletter"
 url = "/%s"
 title = "Newsletter"
-icon = "fa fa-newspaper"
+icon = "icon-newspaper"

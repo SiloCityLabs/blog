@@ -8,32 +8,25 @@ photo: '/upload/authors/luis.png'
 <ul class="list-inline text-center">
     <li>
     <a href="/author/luis-rodriguez/portfolio" title="Portfolio" style="color: #404040;">
-        <span class="fa-stack fa-lg">
-            <i class="fas fa-user-circle fa-stack-2x"></i>
+        <span class="icon-stack icon-lg">
+            <i class="icon icon-circle icon-stack-2x"></i>
+            <i class="icon icon-folder icon-stack-1x icon-inverse"></i>
         </span>
     </a>
     </li>
     <li>
     <a href="mailto:luis@silocitylabs.com" title="Email me" style="color: #404040;">
-        <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+        <span class="icon-stack icon-lg">
+        <i class="icon icon-circle icon-stack-2x"></i>
+        <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
         </span>
     </a>
     </li>
     <li>
     <a href="http://tra.li/portfolio-linkedin" title="LinkedIn" style="color: #404040;">
-        <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-        </span>
-    </a>
-    </li>
-    <li>
-    <a href="http://tra.li/portfolio-hackerrank" title="Youtube" style="color: #404040;">
-        <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-heading fa-stack-1x fa-inverse"></i>
+        <span class="icon-stack icon-lg">
+        <i class="icon icon-circle icon-stack-2x"></i>
+        <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
         </span>
     </a>
     </li>

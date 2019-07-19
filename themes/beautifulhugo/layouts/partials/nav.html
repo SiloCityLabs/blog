@@ -55,7 +55,7 @@
         {{ if isset .Site.Params "gcse" }}
           <li>
             <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;" onclick="setTimeout( function(){ document.getElementById('gsc-i-id1').focus(); }, 400);">
-              <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+              <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="icon icon-search"></span>
             </a>
           </li>
         {{ end }}
@@ -66,6 +66,7 @@
       <div class="avatar-img-border">
         {{ if isset .Site.Params "logo" }}
           <a title="{{ .Site.Title }}" href="{{ "" | absLangURL }}">
+              <!--<i class="icon icon-silocitylabs avatar-img"></i>-->
             <img class="avatar-img" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
           </a>
         {{ end }}
