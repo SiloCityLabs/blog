@@ -69,7 +69,7 @@ ___
  - Studied computer hardware and troubleshooting computers and electronics
 
 
-<div class="text-center"><a href="http://tra.li/portfolio-resume" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="fa fa-file-word" aria-hidden="true"></i> Download</a></div>
+<div class="text-center"><a href="http://tra.li/portfolio-resume" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download</a></div>
 
 ___
 ## Goals

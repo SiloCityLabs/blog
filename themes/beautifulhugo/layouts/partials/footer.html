@@ -7,9 +7,9 @@
             {{- if isset $.Site.Author .id }}
               <li>
                 <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="{{ .icon }} fa-stack-1x fa-inverse"></i>
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon {{ .icon }} icon-stack-1x icon-inverse"></i>
                   </span>
                 </a>
               </li>
@@ -18,9 +18,9 @@
           {{ if .Site.Params.rss }}
           <li>
             <a href="{{ "index.xml" | absLangURL }}" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
               </span>
             </a>
           </li>
@@ -47,12 +47,11 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
 {{ $jsmain := resources.Get "js/main.js" }}
 {{ $jshighlight := resources.Get "js/highlight.min.js" }}
-{{ $jssall := slice $jsmain $jshighlight | resources.Concat "js/bundle.js" | resources.Minify }}
+{{ $jsnativebs := resources.Get "js/bootstrap-native-v4.min.js" }}
+
+{{ $jssall := slice $jsnativebs $jsmain $jshighlight | resources.Concat "js/bundle.js" | resources.Minify }}
 <script src="{{ $jssall.Permalink | absURL }}"></script>
 
 <script> hljs.initHighlightingOnLoad(); </script>
