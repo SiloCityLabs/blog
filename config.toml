@@ -24,7 +24,7 @@ googleAnalytics = "UA-78226868-1"
   gcse = "006156681959470562953:oxkwuulite0"
 
 [[Params.bigimg]]
-  src = "img/hexagon.jpg"
+  src = "img/sphere.jpg"
 
 [Author]
   name = "Silo City Labs LLC"
