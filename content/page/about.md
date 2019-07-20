@@ -19,3 +19,11 @@ We strive to keep all sites mobile ready and if thats not enough, we also provid
 
 #### Development
 Have your custom system designed for your needs. We specialize in Go, PHP, Java, HTML and many more web and software languages
+
+Who we are:
+
+[Luis Rodriguez](/author/luis-rodriguez)
+
+[Robert Greene](/author/maave)
+
+[Andrew Elbaneh](/author/andrew-elbaneh)
