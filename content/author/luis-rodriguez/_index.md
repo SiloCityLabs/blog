@@ -34,7 +34,7 @@ photo: '/upload/authors/luis.png'
     <a href="https://stackoverflow.com/users/1263788/ldrrp" title="Stack Overflow" style="color: #404040;">
         <span class="icon-stack icon-lg">
         <i class="icon icon-circle icon-stack-2x"></i>
-        <i class="icon icon-stack-overflow icon-stack-1x icon-inverse"></i>
+        <i class="icon icon-stackoverflow icon-stack-1x icon-inverse"></i>
         </span>
     </a>
     </li>
