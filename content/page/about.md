@@ -22,7 +22,7 @@ Have your custom system designed for your needs. We specialize in Go, PHP, Java,
 
 ## Who we are:
 
-[Luis Rodriguez](/author/luis-rodriguez)
+[Luis Rodriguez](/author/luis-rodriguez) - Software Engineer
 
 [Robert Greene](/author/maave)
 
