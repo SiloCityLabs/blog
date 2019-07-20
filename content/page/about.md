@@ -24,6 +24,6 @@ Have your custom system designed for your needs. We specialize in Go, PHP, Java,
 
 [Luis Rodriguez](/author/luis-rodriguez) - Software Engineer
 
-[Robert Greene](/author/maave)
+[Robert Greene](/author/maave) - Full Stack Developer
 
-[Andrew Elbaneh](/author/andrew-elbaneh)
+[Andrew Elbaneh](/author/andrew-elbaneh) - Full Stack Developer
