@@ -30,6 +30,14 @@ photo: '/upload/authors/luis.png'
         </span>
     </a>
     </li>
+    <li>
+    <a href="https://stackoverflow.com/users/1263788/ldrrp" title="Stack Overflow" style="color: #404040;">
+        <span class="icon-stack icon-lg">
+        <i class="icon icon-circle icon-stack-2x"></i>
+        <i class="icon icon-stack-overflow icon-stack-1x icon-inverse"></i>
+        </span>
+    </a>
+    </li>
 </ul>
 
 ___
