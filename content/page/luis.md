@@ -14,7 +14,7 @@ ___
 
 #### EXPERIENCE
 
-**The Buffalo News** _Software Engineer_, April 2018 – Present
+**The Buffalo News** _Software Engineer_, April 2018 – Jul 2019
 
  - Managing a team of developers on Android and iOS applications as well as developing the necessary API's needed for both applications.
  - Working on PHP and other Web applications to manage and distribute content to the end users.
