@@ -106,7 +106,7 @@ ___
  - Software Programming, PC Repair, Hardware Modifications
  - Developed software used in many projects
 
-**Foodorder** _Software Developer,_ February 2013 – December 2015
+**Foodorder** _Software Developer_, February 2013 – December 2015
 
  - Managed a small team of developers
  - Successful creation of cluster load balancing server to handle client load
@@ -114,12 +114,12 @@ ___
 
 #### EDUCATION
 
-**Associates Degree**  at  _ITT Technical Institute_,**2011 - 2013**
+**Associates Degree**  at  _ITT Technical Institute_, **2011 - 2013**
 
  - Perfect Attendance, GPA of 3.5
  - Hands on experience setting up Microsoft windows active direct as well as creating Group policies, managing DNS servers, creating Read-only domain controllers, and many more features that come with active directory
 
-**Computer Science Diploma** at  _Hutchinson Central Technical H.S._,**2008 - 2011**
+**Computer Science Diploma** at  _Hutchinson Central Technical H.S._, **2008 - 2011**
 
  - Succeeded in classes for C++, JavaScript and html
  - Studied computer hardware and troubleshooting computers and electronics
@@ -156,7 +156,7 @@ ___
  - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
  - [ATTO Technology Website redesign](/post/projects/atto-com/)
  - [RDNS XSS Looking Glass](/post/projects/lg-xss-cve/)
- - [4 Letter domain aquisition]()
+ - [4 Letter domain acquisition](/post/projects/atto-com-acquisition)
 
 
 <!--
@@ -175,7 +175,6 @@ buffalonews.com
 other client sites
 blog seo score
 Mautic Advanced Integration
-Acquisition of atto.com
 Pardot Migration
 Mautic
 Pixelmon Gaming
