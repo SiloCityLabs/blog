@@ -63,7 +63,7 @@ ___
 
 As a self-employed software developer right out of school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
 
-With my Associate’s Degree and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the ROI just isnt there for it yet.
+With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the ROI just isnt there for it yet.
 
 ___
 ## Resume
