@@ -7,10 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2019 22:36:25 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>api</title>
+      <link>https://silocitylabs.com/tags/api/</link>
+      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>geo</title>
+      <link>https://silocitylabs.com/tags/geo/</link>
+      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/geo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://silocitylabs.com/tags/golang/</link>
+      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>luis-portfolio</title>
+      <link>https://silocitylabs.com/tags/luis-portfolio/</link>
+      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/luis-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cidr</title>
+      <link>https://silocitylabs.com/tags/cidr/</link>
+      <pubDate>Tue, 25 Jun 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/cidr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ip</title>
+      <link>https://silocitylabs.com/tags/ip/</link>
+      <pubDate>Tue, 25 Jun 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/ip/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>array</title>
@@ -58,15 +112,6 @@
     </item>
     
     <item>
-      <title>golang</title>
-      <link>https://silocitylabs.com/tags/golang/</link>
-      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>slices</title>
       <link>https://silocitylabs.com/tags/slices/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
@@ -103,15 +148,6 @@
     </item>
     
     <item>
-      <title>Pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>linux</title>
       <link>https://silocitylabs.com/tags/linux/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -126,6 +162,15 @@
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/minimal-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
       <description></description>
     </item>
     

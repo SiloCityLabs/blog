@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geo on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/geo/</link>
+    <description>Recent content in geo on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Mon, 22 Jul 2019 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/geo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geo Location Micro API Service</title>
+      <link>https://silocitylabs.com/post/projects/geo-api-service/</link>
+      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/geo-api-service/</guid>
+      <description>&lt;p&gt;A micro api drop in service written in golang, Designed to quickly integrate into any system for any project. Uses very little resources and can handle millions of requests per second. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/geo.bntech.io&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
+
+&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
