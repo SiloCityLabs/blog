@@ -157,22 +157,32 @@ ___
  - [ATTO Technology Website redesign](/post/projects/atto-com/)
 
 
-<!-- https://github.com/SiloCityLabs/B2Backup -->
-<!-- https://github.com/SiloCityLabs/monitor-daemon -->
-<!-- megatouchmods.com -->
-<!-- atto report generator -->
-<!-- buffalo news paywall -->
-<!-- Nexmo php lib -->
-<!-- utf encode pro -->
-<!-- go wireless -->
-<!-- go pi data -->
-<!-- luisdrodriguez.com carryover -->
-<!-- atto.com -->
-<!-- voipsupply.com -->
-<!-- buffalonews.com -->
-<!-- other client sites -->
-<!-- linkedin projects carryover -->
-<!-- blog seo score -->
+<!--
+https://github.com/SiloCityLabs/B2Backup
+https://github.com/SiloCityLabs/monitor-daemon
+megatouchmods.com
+atto report generator
+buffalo news paywall
+Nexmo php lib
+utf encode pro
+go wireless
+go pi data
+luisdrodriguez.com carryover
+atto.com
+voipsupply.com
+buffalonews.com
+other client sites
+linkedin projects carryover
+blog seo score
+Mautic Advanced Integration
+Acquisition of atto.com
+Pardot Migration
+Mautic
+Looking Glass - Jan 2015 - RDNS XSS disclosed as described here http://tra.li/looking-glass
+Pixelmon Gaming
+Pixelmonmod
+Repair Sign
+-->
 
 
 [See more projects here](/tags/luis-portfolio)
