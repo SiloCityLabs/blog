@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2019 22:36:25 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Geo Location Micro API Service</title>
+      <link>https://silocitylabs.com/post/projects/geo-api-service/</link>
+      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/geo-api-service/</guid>
+      <description>&lt;p&gt;A micro api drop in service written in golang, Designed to quickly integrate into any system for any project. Uses very little resources and can handle millions of requests per second. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/geo.bntech.io&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
+
+&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Golang IP Formatting Package</title>
+      <link>https://silocitylabs.com/post/projects/ipformat/</link>
+      <pubDate>Tue, 25 Jun 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/ipformat/</guid>
+      <description>&lt;p&gt;Package written in Golang to process and format ip Addresses to and from ipv4/ipv6. Can also take ranges in cidr notation. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/ipFormat&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
+
+&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Getting Started with Golang</title>
@@ -894,18 +916,6 @@ Edit: I think I may have made a mistake buying zigbee chips.</description>
 What we do best: Search Engine Optimization Our SEO experts can get your site on google and Bing!
 Web Design Our team has the skillset to get you your desired look and function.
 Mobile Apps We strive to keep all sites mobile ready and if thats not enough, we also provide Android development</description>
-    </item>
-    
-    <item>
-      <title>Luis Rodriguez</title>
-      <link>https://silocitylabs.com/author/luis-rodriguez/portfolio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/author/luis-rodriguez/portfolio/</guid>
-      <description>Portfolio Projects and images coming soon!
-Resume EXPERIENCE The Buffalo News Software Engineer, April 2018 – Present
- Managing a team of developers on Android and iOS applications as well as developing the necessary API&amp;rsquo;s needed for both applications. Working on PHP and other Web applications to manage and distribute content to the end users.  The Buffalo News Mobile Android Developer, Aug 2017 – Apr 2018
- Developing Android applications to work alongside developed php web applications  ATTO Technology Web/SEO Marketing coordinator, March 2015 – February 2017</description>
     </item>
     
     <item>

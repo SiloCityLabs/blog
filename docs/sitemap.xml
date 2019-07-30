@@ -4,19 +4,88 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/geo-api-service/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/api/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/geo/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/golang/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/luis-portfolio/</loc>
+    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/ipformat/</loc>
+    <lastmod>2019-06-25T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/cidr/</loc>
+    <lastmod>2019-06-25T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ip/</loc>
+    <lastmod>2019-06-25T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -27,29 +96,6 @@
   
   <url>
     <loc>https://silocitylabs.com/categories/golang/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -85,12 +131,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/golang/</loc>
-    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/slices/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -115,12 +155,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
   </url>
@@ -133,6 +167,12 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1094,10 +1134,6 @@
   
   <url>
     <loc>https://silocitylabs.com/author/andrew-elbaneh/</loc>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/portfolio/</loc>
   </url>
   
   <url>
