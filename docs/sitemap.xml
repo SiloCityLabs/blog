@@ -725,6 +725,29 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/post/projects/buffalonews/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/buffalo-news/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/domain/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</loc>
     <lastmod>2018-09-15T14:12:00+00:00</lastmod>
   </url>
@@ -960,12 +983,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
-    <lastmod>2018-01-01T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/codrcg/</loc>
     <lastmod>2018-01-01T22:36:25+00:00</lastmod>
     <priority>0</priority>
@@ -1186,12 +1203,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/atto/</loc>
-    <lastmod>2016-07-20T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/domain/</loc>
     <lastmod>2016-07-20T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
