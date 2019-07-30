@@ -158,6 +158,7 @@ ___
  - [RDNS XSS Looking Glass](/post/projects/lg-xss-cve/)
  - [4 Letter domain acquisition](/post/projects/atto-com-acquisition)
  - [CODRCG PHP Website and Android App](/post/projects/codrcg-com)
+ - [PHP HTML JSON Minifier](/post/projects/php-json-html-minify)
 
 
 <!--
@@ -172,15 +173,13 @@ utf encode pro
 go wireless
 go pi data
 voipsupply.com
-buffalonews.com
-other client sites
 blog seo score
 Mautic Advanced Integration
 Pardot Migration
 Mautic
 Pixelmon Gaming
 Pixelmonmod
-Repair Sign
+other client sites
 -->
 
 

@@ -11,6 +11,7 @@ tags:
   - php
   - wrapper
   - api
+  - dns
 
 ---
 This is a wrapper library for the ClouDNS API to be used by PHP applications. It tries to ease the integration of the API into your applications by handling all interactions with API and providing a simple interface to interact with. The entire projects [source code](https://gitlab.com/silo-city-labs-llc/cloudns-api-php) is posted on gitlab.

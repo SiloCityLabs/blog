@@ -10,6 +10,10 @@ tags:
   - luis-portfolio
   - maave-portfolio
   - colocrossing
+  - php
+  - networking
+  - datacenter
+  - sysadmin
 
 ---
 

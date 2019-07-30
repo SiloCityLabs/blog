@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>PHP Mysqli DB Class</title>
+  <meta property="og:title" content="PHP Mysqli DB Class" />
+  <meta name="twitter:title" content="PHP Mysqli DB Class" />
+  <meta name="description" content="A class written to simplify the use oh mysqli in php. Uses similar concepts to other db classes built into other frameworks. Download the file here or look at the code below.">
+  <meta property="og:description" content="A class written to simplify the use oh mysqli in php. Uses similar concepts to other db classes built into other frameworks. Download the file here or look at the code below.">
+  <meta name="twitter:description" content="A class written to simplify the use oh mysqli in php. Uses similar concepts to other db classes built into other frameworks. Download the file here or look at the code below.">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/projects/db-class-php/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/projects/db-class-php/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/projects/db-class-php/">
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://silocitylabs.com/css/bundle.min.css" />
+  
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/company/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+                  <a href="https://silocitylabs.com/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://silocitylabs.com/newsletter">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;" onclick="setTimeout( function(){ document.getElementById('gsc-i-id1').focus(); }, 400);">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>PHP Mysqli DB Class</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on September 15, 2015
+  
+</span>
+<span class="post-meta">
+    By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>A class written to simplify the use oh mysqli in php. Uses similar concepts to other db classes built into other frameworks. <a href="https://downloads.techreanimate.com/auowdk">Download the file here</a> or look at the code below.</p>
+
+<pre><code class="language-php">&lt;?php
+	class Database{ 
+		public $host     = DB_HOST;
+		public $database = DB_DATABASE;
+		public $username = DB_USER;
+		public $password = DB_PASSWORD;
+		public $link    = 0;
+		public $result  = 0;
+		public $record   = array();
+		public $row;
+		public $errNo    = 0;
+		public $error    = &quot;&quot;;
+	    
+		/* Call connection method upon constructing
+		 * Pass in true if you want a second connection object
+		 * Example:
+		 * 		$db2 = new Database(true);
+		 * 		$db2-&gt;database = $config['MC_DB_Username'];
+		 * 		$db2-&gt;username = $config['MC_DB_Username'];
+		 * 		$db2-&gt;password = $config['MC_DB_Password'];
+		 * 		$db2-&gt;host = $config['MC_DB_Host'];
+		 * 		$db2-&gt;createConnection();
+		 * */
+		public function __construct($noconnect = false){
+			if(!$noconnect){
+				$this-&gt;createConnection(); 
+			}
+		}
+
+		/* Connection to the database */
+		public function createConnection(){ 
+	        if( 0 == $this-&gt;link ) 
+	            $this-&gt;link=mysqli_connect( $this-&gt;host, $this-&gt;username, $this-&gt;password );
+			if( !$this-&gt;link ) 
+	   			$this-&gt;stopExec( &quot;Trying to connect.... Result: failed&quot; );
+			if( !mysqli_select_db($this-&gt;link,$this-&gt;database)) 
+	            $this-&gt;stopExec( &quot;Cannot use database &quot;.$this-&gt;database );
+		} 
+	
+		/* Execute query string */
+	 	public function query($queryString,$echo = false,$exit = true){
+	 		if($echo == true){ echo &quot;&lt;br&gt;&quot;.htmlspecialchars($queryString).&quot;&lt;br&gt;&quot;; } 
+			$this-&gt;result = mysqli_query($this-&gt;link, $queryString);
+			$this-&gt;row = 0; 
+			$this-&gt;errNo = mysqli_errno($this-&gt;link);
+			$this-&gt;error = mysqli_error($this-&gt;link);
+			if(!$this-&gt;result){
+				$this-&gt;stopExec( &quot;Invalid SQL String: &quot;.$queryString , $exit );
+			}else{
+				if(IS_DEV){
+					global $clean;
+					$newlink = mysqli_connect( $this-&gt;host, $this-&gt;username, $this-&gt;password );
+					mysqli_select_db($newlink,$this-&gt;database);
+					mysqli_query($newlink, &quot;INSERT INTO `ServerLog`(`Message`)VALUES('&quot;.$clean-&gt;UserInput($queryString).&quot;')&quot;);
+				}
+			}
+			return $this-&gt;result; /* return the resource id of query. You can either then call fetchRecord method. */
+	    } 
+	 
+		public function fetchRecord($type = 1, $result = null){
+			/* Get from specific result */
+			if($result != null){
+				$this-&gt;result = $result;
+			}
+			
+			if(is_bool($this-&gt;result)){
+				return &quot;boolean given, check query&quot;;
+			}
+			 
+			/* 1 --&gt; for array 2 --&gt; for object */
+			if($type == 1){
+				$record = mysqli_fetch_array($this-&gt;result); /*return array */
+			}else{
+				$record = mysqli_fetch_object($this-&gt;result); /*return object */
+			}
+	  
+			return $record;
+		}
+		
+		/* Stop the execution of query when there's an error */
+		public function stopExec($msg,$exit){ 
+			serverlog(&quot;[MySQL Error][&quot;.$this-&gt;errNo.&quot;] &quot;.$this-&gt;error.&quot; Message: &quot;.$msg,'crucial');
+			if($exit){
+				header('Location: http://'.SYS_URL_PATH.'/error.php?code=10');
+			}
+			
+			exit();
+		} 
+	 
+		/* Get the number of row */
+		public function numRows($result = null){
+			if($result != null){
+				return mysqli_num_rows($result);
+			}else{
+				return mysqli_num_rows($this-&gt;result);
+			}
+			
+		}
+		
+		/* Get the the last insert id */
+		public function lastID(){
+			return mysqli_insert_id($this-&gt;link);
+		}
+		
+		public function real_escape_string($str){
+			return mysqli_real_escape_string($this-&gt;link,$str);
+		}
+	}
+
+</code></pre>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/projects/db-class-php.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/projects/db-class-php.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/projects/lg-xss-cve/" data-toggle="tooltip" data-placement="top" title="RDNS XSS On Industry Standard Looking Glass">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/projects/php-json-html-minify/" data-toggle="tooltip" data-placement="top" title="PHP JSON HTML Minify">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Jul 30, 2019 at 5:36pm (EST)</a>
+        </p>
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+  </body>
+</html>
+

@@ -742,7 +742,25 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/tags/css/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/tags/domain/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/html/</loc>
+    <lastmod>2018-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/php/</loc>
     <lastmod>2018-09-15T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1197,6 +1215,24 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/tags/datacenter/</loc>
+    <lastmod>2016-09-04T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/networking/</loc>
+    <lastmod>2016-09-04T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/sysadmin/</loc>
+    <lastmod>2016-09-04T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/post/projects/atto-com-acquisition/</loc>
     <lastmod>2016-07-20T22:36:25+00:00</lastmod>
   </url>
@@ -1216,6 +1252,34 @@
   <url>
     <loc>https://silocitylabs.com/post/projects/atto-com/</loc>
     <lastmod>2015-09-15T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/php-json-html-minify/</loc>
+    <lastmod>2015-09-15T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/db-class-php/</loc>
+    <lastmod>2015-09-15T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/json/</loc>
+    <lastmod>2015-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/mysqli/</loc>
+    <lastmod>2015-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/output-buffer/</loc>
+    <lastmod>2015-09-15T22:36:25+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -1259,14 +1323,25 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/php/</loc>
+    <loc>https://silocitylabs.com/tags/wrapper/</loc>
     <lastmod>2015-01-16T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/wrapper/</loc>
-    <lastmod>2015-01-16T22:36:25+00:00</lastmod>
+    <loc>https://silocitylabs.com/post/projects/repair-sign/</loc>
+    <lastmod>2013-10-04T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/java/</loc>
+    <lastmod>2013-10-04T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/minecraft/</loc>
+    <lastmod>2013-10-04T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
