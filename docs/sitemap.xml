@@ -155,12 +155,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
   </url>
@@ -173,6 +167,12 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -955,6 +955,29 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/post/projects/codrcg-com/</loc>
+    <lastmod>2018-01-01T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
+    <lastmod>2018-01-01T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/codrcg/</loc>
+    <lastmod>2018-01-01T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/maave-portfolio/</loc>
+    <lastmod>2018-01-01T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/post/2018/01/01/flashing-merlin-to-tm-ac1900-or-ac68u/</loc>
     <lastmod>2018-01-01T03:07:34+00:00</lastmod>
   </url>
@@ -1079,12 +1102,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/codrcg/</loc>
-    <lastmod>2017-12-15T01:05:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/categories/company/</loc>
     <lastmod>2017-12-15T01:05:52+00:00</lastmod>
     <priority>0</priority>
@@ -1131,18 +1148,6 @@
   <url>
     <loc>https://silocitylabs.com/post/projects/wise-guys/</loc>
     <lastmod>2016-09-05T22:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
-    <lastmod>2016-09-05T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/maave-portfolio/</loc>
-    <lastmod>2016-09-05T22:36:25+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

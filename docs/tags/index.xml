@@ -148,15 +148,6 @@
     </item>
     
     <item>
-      <title>Pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>linux</title>
       <link>https://silocitylabs.com/tags/linux/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -171,6 +162,15 @@
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/minimal-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
       <description></description>
     </item>
     
@@ -1039,6 +1039,33 @@
     </item>
     
     <item>
+      <title>andrew-portfolio</title>
+      <link>https://silocitylabs.com/tags/andrew-portfolio/</link>
+      <pubDate>Mon, 01 Jan 2018 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/andrew-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>codrcg</title>
+      <link>https://silocitylabs.com/tags/codrcg/</link>
+      <pubDate>Mon, 01 Jan 2018 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/codrcg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maave-portfolio</title>
+      <link>https://silocitylabs.com/tags/maave-portfolio/</link>
+      <pubDate>Mon, 01 Jan 2018 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/maave-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ac68u</title>
       <link>https://silocitylabs.com/tags/ac68u/</link>
       <pubDate>Mon, 01 Jan 2018 03:07:34 +0000</pubDate>
@@ -1165,15 +1192,6 @@
     </item>
     
     <item>
-      <title>codrcg</title>
-      <link>https://silocitylabs.com/tags/codrcg/</link>
-      <pubDate>Fri, 15 Dec 2017 01:05:52 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/codrcg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Acetone</title>
       <link>https://silocitylabs.com/tags/acetone/</link>
       <pubDate>Fri, 15 Dec 2017 01:05:05 +0000</pubDate>
@@ -1197,24 +1215,6 @@
       <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/zigbee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>andrew-portfolio</title>
-      <link>https://silocitylabs.com/tags/andrew-portfolio/</link>
-      <pubDate>Mon, 05 Sep 2016 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/andrew-portfolio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maave-portfolio</title>
-      <link>https://silocitylabs.com/tags/maave-portfolio/</link>
-      <pubDate>Mon, 05 Sep 2016 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/maave-portfolio/</guid>
       <description></description>
     </item>
     
