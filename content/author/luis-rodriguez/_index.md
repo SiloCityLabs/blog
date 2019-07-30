@@ -155,9 +155,11 @@ ___
  - [Golang ipformatting ipv6 package](/post/projects/ipformat/)
  - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
  - [ATTO Technology Website redesign](/post/projects/atto-com/)
+ - [RDNS XSS Looking Glass](/post/projects/lg-xss-cve/)
 
 
 <!--
+luisdrodriguez.com carryover
 https://github.com/SiloCityLabs/B2Backup
 https://github.com/SiloCityLabs/monitor-daemon
 megatouchmods.com
@@ -167,18 +169,14 @@ Nexmo php lib
 utf encode pro
 go wireless
 go pi data
-luisdrodriguez.com carryover
-atto.com
 voipsupply.com
 buffalonews.com
 other client sites
-linkedin projects carryover
 blog seo score
 Mautic Advanced Integration
 Acquisition of atto.com
 Pardot Migration
 Mautic
-Looking Glass - Jan 2015 - RDNS XSS disclosed as described here http://tra.li/looking-glass
 Pixelmon Gaming
 Pixelmonmod
 Repair Sign
