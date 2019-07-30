@@ -63,7 +63,7 @@ ___
 
 As a self-employed software developer right out of school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
 
-Although I only have an Associate’s Degree I don’t feel that it limits my ability to create great programs and websites. I would someday like to pursue a bachelors but the ROI just isnt there for it.
+With my Associate’s Degree and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the ROI just isnt there for it yet.
 
 ___
 ## Resume
@@ -152,10 +152,11 @@ ___
 
  - [Open Source Blog](https://github.com/SiloCityLabs/blog)
  - [Golang Geo Service API](/post/projects/geo-api-service/)
- - [Golang ipformatting ipv6 package](/post/projects/ipformat/)
+ - [Golang IP formatting ipv6 package](/post/projects/ipformat/)
  - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
  - [ATTO Technology Website redesign](/post/projects/atto-com/)
  - [RDNS XSS Looking Glass](/post/projects/lg-xss-cve/)
+ - [4 Letter domain aquisition]()
 
 
 <!--
