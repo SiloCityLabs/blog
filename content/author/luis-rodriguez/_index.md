@@ -135,6 +135,23 @@ ___
  - [Golang Geo Service API](/post/projects/geo-api-service/)
  - [Golang ipformatting ipv6 package](/post/projects/ipformat/)
  - [Open Source Blog](https://github.com/SiloCityLabs/blog)
+ - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
+
+<!-- https://github.com/SiloCityLabs/B2Backup -->
+<!-- https://github.com/SiloCityLabs/monitor-daemon -->
+<!-- megatouchmods.com -->
+<!-- atto report generator -->
+<!-- buffalo news paywall -->
+<!-- Nexmo php lib -->
+<!-- utf encode pro -->
+<!-- go wireless -->
+<!-- go pi data -->
+<!-- luisdrodriguez.com carryover -->
+<!-- atto.com -->
+<!-- voipsupply.com -->
+<!-- buffalonews.com -->
+<!-- other client sites -->
+<!-- linkedin projects carryover -->
 
 
 [See more projects here](/tags/luis-portfolio)
