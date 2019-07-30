@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>output-buffer on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/output-buffer/</link>
+    <description>Recent content in output-buffer on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Tue, 15 Sep 2015 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/output-buffer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP JSON HTML Minify</title>
+      <link>https://silocitylabs.com/post/projects/php-json-html-minify/</link>
+      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/php-json-html-minify/</guid>
+      <description>&lt;p&gt;Both of these functions are designed to be used with ob_start() and process the output before its sent to the user. You can also include caching into this to reduce overhead for static pages. It takes the output of the page and makes the content up to 50% smaller in size by removing unused comments and whitespace in code. &lt;a href=&#34;https://downloads.techreanimate.com/auowdk&#34;&gt;Download the file here&lt;/a&gt; or look at the code below.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
