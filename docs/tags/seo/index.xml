@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>seo on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/seo/</link>
+    <description>Recent content in seo on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Tue, 15 Sep 2015 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ATTO Technology SEO Redesign</title>
+      <link>https://silocitylabs.com/post/projects/atto-com/</link>
+      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/atto-com/</guid>
+      <description>&lt;p&gt;I was hired for this company to perform SEO, shortly after google had scheduled the release of a new search algorithm that would reduce views on pages that were not mobile complaint. ATTO got the effect of this with a 50% drop in traffic in a matter of days. A website with over a million views a month it needed to be overhauled. I was tasked with a complete redesign on the website and its 800+ pages. I monitored and improved SEO on the pages over time as well as slowly gained back that 50% loss in traffic.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

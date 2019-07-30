@@ -6,14 +6,14 @@ photo: '/upload/authors/luis.png'
 ---
 
 <ul class="list-inline text-center">
-    <li>
-    <a href="/author/luis-rodriguez/portfolio" title="Portfolio" style="color: #404040;">
+    <!--<li>
+    <a href="tel:17166989236" title="Call me" style="color: #404040;">
         <span class="icon-stack icon-lg">
-            <i class="icon icon-circle icon-stack-2x"></i>
-            <i class="icon icon-folder icon-stack-1x icon-inverse"></i>
+        <i class="icon icon-circle icon-stack-2x"></i>
+        <i class="icon icon-phone icon-stack-1x icon-inverse"></i>
         </span>
     </a>
-    </li>
+    </li>-->
     <li>
     <a href="mailto:luis@silocitylabs.com" title="Email me" style="color: #404040;">
         <span class="icon-stack icon-lg">
@@ -38,6 +38,24 @@ photo: '/upload/authors/luis.png'
         </span>
     </a>
     </li>
+    <li>
+    <a href="https://github.com/ldrrp" title="Github" style="color: #404040;">
+        <span class="icon-stack icon-lg">
+        <i class="icon icon-circle icon-stack-2x"></i>
+        <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+        </span>
+    </a>
+    </li>
+</ul>
+
+___
+<ul class="list-inline text-center">
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#skills">Skils</a></li>
+    <li><a href="#projects-code-samples">Projects</a></li>
+    <li><a href="#article-section">Articles</a></li>
 </ul>
 
 ___
@@ -132,10 +150,12 @@ ___
 ___
 ## Projects / Code Samples
 
+ - [Open Source Blog](https://github.com/SiloCityLabs/blog)
  - [Golang Geo Service API](/post/projects/geo-api-service/)
  - [Golang ipformatting ipv6 package](/post/projects/ipformat/)
- - [Open Source Blog](https://github.com/SiloCityLabs/blog)
  - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
+ - [ATTO Technology Website redesign](/post/projects/atto-com/)
+
 
 <!-- https://github.com/SiloCityLabs/B2Backup -->
 <!-- https://github.com/SiloCityLabs/monitor-daemon -->
@@ -152,6 +172,7 @@ ___
 <!-- buffalonews.com -->
 <!-- other client sites -->
 <!-- linkedin projects carryover -->
+<!-- blog seo score -->
 
 
 [See more projects here](/tags/luis-portfolio)
