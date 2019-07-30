@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/php/</link>
+    <description>Recent content in php on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Fri, 16 Jan 2015 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ClouDNS API Library</title>
+      <link>https://silocitylabs.com/post/projects/cloudns-api-php/</link>
+      <pubDate>Fri, 16 Jan 2015 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/cloudns-api-php/</guid>
+      <description>&lt;p&gt;This is a wrapper library for the ClouDNS API to be used by PHP applications. It tries to ease the integration of the API into your applications by handling all interactions with API and providing a simple interface to interact with. The entire projects &lt;a href=&#34;https://gitlab.com/silo-city-labs-llc/cloudns-api-php&#34;&gt;source code&lt;/a&gt; is posted on gitlab.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

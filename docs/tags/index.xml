@@ -148,6 +148,15 @@
     </item>
     
     <item>
+      <title>Pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://silocitylabs.com/tags/linux/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -162,15 +171,6 @@
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/minimal-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
       <description></description>
     </item>
     
@@ -1197,6 +1197,24 @@
       <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/zigbee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://silocitylabs.com/tags/php/</link>
+      <pubDate>Fri, 16 Jan 2015 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wrapper</title>
+      <link>https://silocitylabs.com/tags/wrapper/</link>
+      <pubDate>Fri, 16 Jan 2015 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/wrapper/</guid>
       <description></description>
     </item>
     
