@@ -52,7 +52,7 @@ ___
 <ul class="list-inline text-center">
     <li><a href="#about">About</a></li>
     <li><a href="#resume">Resume</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#skills">Skills & Certifications</a></li>
     <li><a href="#projects-code-samples">Projects</a></li>
     <li><a href="#article-section">Articles</a></li>
 </ul>
@@ -113,12 +113,13 @@ ___
 
 #### EDUCATION
 
-**Associates Degree**  at  _ITT Technical Institute_, **2011 - 2013**
+**[Associates Degree](/uploads/luis-portfolio/certifications/itt-diploma.jpg)**  at  _ITT Technical Institute_, **2011 - 2013**
 
- - Perfect Attendance, GPA of 3.5
+ - Perfect Attendance, GPA of 3.5 [Transcripts](/uploads/luis-portfolio/certifications/transcripts.pdf)
+ - Highest Honors [2013](/uploads/luis-portfolio/certifications/itt-high-honors-sum-13.jpg), [2012](/uploads/luis-portfolio/certifications/itt-honors-sum-12.jpg), [2011](/uploads/luis-portfolio/certifications/itt-honors-fall-11.jpg), [2011](/uploads/luis-portfolio/certifications/itt-honors-win-11.jpg), [Graduated Honors](/uploads/luis-portfolio/certifications/itt-honors-graduate.jpg)
  - Hands on experience setting up Microsoft windows active direct as well as creating Group policies, managing DNS servers, creating Read-only domain controllers, and many more features that come with active directory
 
-**Computer Science Diploma** at  _Hutchinson Central Technical H.S._, **2008 - 2011**
+**[Computer Science Diploma](/uploads/luis-portfolio/certifications/hutch-tech-diploma.jpg)** at  _Hutchinson Central Technical H.S._, **2008 - 2011**
 
  - Succeeded in classes for C++, JavaScript and html
  - Studied computer hardware and troubleshooting computers and electronics
@@ -130,7 +131,13 @@ ___
 ## Skills
 
 
-**Linux**, **Golang**, Operating Systems, Networking, Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Customer Service, Data Center, Java, Windows,  **MySQL**,  **HTML**, Integration, Databases,  **System Administration**,  **SQL**,  **JavaScript**, Visio, Project Management, Business Analysis, MSSQL, Program Management, XML, Security, Agile Workflows, SharePoint, IIS, Android Development, Penetration Testing,  **SEO Audits**, Pardot, Mautic, Hubspot, Salesforce, Magento, Bigcommerce, SEOmoz, Google Adwords,  **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **PHP**
+**Linux**, **Golang**, Operating Systems, [Cisco Network Certified](/uploads/luis-portfolio/certifications/cisco-network-support-cert.jpg), Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Customer Service, Data Center, Java, Windows,  **[MySQL Certified](/uploads/luis-portfolio/certifications/mysql-cert.jpg)**,  **HTML**, Integration, Databases,  **System Administration**,  **SQL**,  **[JavaScript Certified](/uploads/luis-portfolio/certifications/js-master-cert.jpg)**, Visio, Project Management, Business Analysis, MSSQL, Program Management, XML, Security, Agile Workflows, SharePoint, IIS, Android Development, Penetration Testing,  **SEO Audits**, Pardot, Mautic, Hubspot, Salesforce, Magento, Bigcommerce, SEOmoz, Google Adwords,  **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **[PHP Certified](/uploads/luis-portfolio/certifications/php-cert.jpg)**, [101 WPM Certified](/uploads/luis-portfolio/certifications/101wpm-cert.jpg), [InDesign Certified](/uploads/luis-portfolio/certifications/InDesignCS5.5-cert.jpg)
+
+#### Other Accolades:
+
+[UB Mice Completion and Award Winner](/uploads/luis-portfolio/certifications/ub-mice.jpg) - A course that teaches about business and entrepreneurship. We worked in teams and presented a business plan in 10 groups where the team I was in was selected as the winner.
+
+[PHP Certification Exam Writing Opportunity](/uploads/luis-portfolio/certifications/certification-exam-writter.pdf) - After completing my PHP certifications with a high score I was emailed about an opportunity to help in writing the next PHP certification for the next version of PHP. This goes along with my JS Certification having Masters emblem for scoring in the top 10% worldwide.
 
 ___
 ## Projects / Code Samples
