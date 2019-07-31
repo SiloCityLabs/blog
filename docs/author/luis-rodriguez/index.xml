@@ -7,21 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Mon, 22 Jul 2019 22:36:25 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Jun 2019 22:36:25 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/author/luis-rodriguez/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Geo Location Micro API Service</title>
-      <link>https://silocitylabs.com/post/projects/geo-api-service/</link>
-      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/geo-api-service/</guid>
-      <description>&lt;p&gt;A micro api drop in service written in golang, Designed to quickly integrate into any system for any project. Uses very little resources and can handle millions of requests per second. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/geo.bntech.io&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
-
-&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Golang IP Formatting Package</title>
@@ -463,15 +452,6 @@ https://express.google.com/product/Google-Home-Hub-Chalk/17323774654914999725_92
     </item>
     
     <item>
-      <title>Buffalonews.com</title>
-      <link>https://silocitylabs.com/post/projects/buffalonews/</link>
-      <pubDate>Sat, 15 Sep 2018 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/buffalonews/</guid>
-      <description>&lt;p&gt;During my time working for the buffalo news I made many changes to the website. I handled and wrote the mobile api for applications to pull data for the website. I also made visual changes on the website including new styles, layout changes and more. I assisted staff on making changes required in a fashionable time. Other tasks included following up with customers about specific issues for troubleshooting. We used php as the main language for a system powered by wordpress. Also optimized and wrote code for wordpress plugins and other integrations.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Backup home internet</title>
       <link>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</link>
       <pubDate>Sat, 15 Sep 2018 14:12:00 +0000</pubDate>
@@ -622,19 +602,6 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
 &amp;nbsp;
    &amp;nbsp;
 Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
-    </item>
-    
-    <item>
-      <title>COD Random Class Generator</title>
-      <link>https://silocitylabs.com/post/projects/codrcg-com/</link>
-      <pubDate>Mon, 01 Jan 2018 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/codrcg-com/</guid>
-      <description>&lt;p&gt;COD RCG is a random class generator that random generates classes for anyone who plays call of duty to enjoy. This provides new enjoyment for the game e.g. it may choose a gun the player has never used.  It also brings more challenge because you never know what you’re going to get as a class, it could be good or it could put you at a huge disadvantage, but that’s where the fun comes in trying to win and do well in the game when you’re using this crazy class that you normally would not. We launched this website less than a week after call of duty came out. I created my own algorithms to randomly create a class based on the “create a class” system used in Call of Duty. It was a challenge because there are tons of possible class possibilities that can be created. So once I finished that I then had to go and make sure all the gun, attachment, camos, equipment, perks and score streaks were all named correctly. This site and app has been pretty popular with over 25,000,000 views and over 5,000,000 classes generated. The Android app has over 50k installs&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://codrcg.com&#34;&gt;Website Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.techreanimate.blackops3&#34;&gt;Android App Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -802,24 +769,6 @@ Edit: I think I may have made a mistake buying zigbee chips.</description>
     </item>
     
     <item>
-      <title>Zips Wiseguys Pizzeria Website</title>
-      <link>https://silocitylabs.com/post/projects/wise-guys/</link>
-      <pubDate>Mon, 05 Sep 2016 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/wise-guys/</guid>
-      <description>&lt;p&gt;This restaurant has had multiple locations open all under one new mobile compliant website.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Colocrossing Client and Admin control panel</title>
-      <link>https://silocitylabs.com/post/projects/colocrossing-panel/</link>
-      <pubDate>Sun, 04 Sep 2016 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/colocrossing-panel/</guid>
-      <description>&lt;p&gt;A highly advanced control panel that manages multiple datacenters across the country. This control panel has management features such as users, switches, routers, virtual machines, DDOS mitigation, port monitoring, billing, support tickets, sales and many more things. The panel grew more and more everyday become fully automated in every aspect of a datacenter technicians work.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>ATTO.com Domain Acquisition</title>
       <link>https://silocitylabs.com/post/projects/atto-com-acquisition/</link>
       <pubDate>Wed, 20 Jul 2016 22:36:25 +0000</pubDate>
@@ -839,24 +788,6 @@ You can checkout the other contributors for refferences.</description>
     </item>
     
     <item>
-      <title>PHP JSON HTML Minify</title>
-      <link>https://silocitylabs.com/post/projects/php-json-html-minify/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/php-json-html-minify/</guid>
-      <description>&lt;p&gt;Both of these functions are designed to be used with ob_start() and process the output before its sent to the user. You can also include caching into this to reduce overhead for static pages. It takes the output of the page and makes the content up to 50% smaller in size by removing unused comments and whitespace in code. &lt;a href=&#34;https://downloads.techreanimate.com/auowdk&#34;&gt;Download the file here&lt;/a&gt; or look at the code below.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PHP Mysqli DB Class</title>
-      <link>https://silocitylabs.com/post/projects/db-class-php/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/db-class-php/</guid>
-      <description>&lt;p&gt;A class written to simplify the use oh mysqli in php. Uses similar concepts to other db classes built into other frameworks. &lt;a href=&#34;https://downloads.techreanimate.com/auowdk&#34;&gt;Download the file here&lt;/a&gt; or look at the code below.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>RDNS XSS On Industry Standard Looking Glass</title>
       <link>https://silocitylabs.com/post/projects/lg-xss-cve/</link>
       <pubDate>Wed, 21 Jan 2015 22:36:25 +0000</pubDate>
@@ -872,17 +803,6 @@ You can checkout the other contributors for refferences.</description>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/cloudns-api-php/</guid>
       <description>&lt;p&gt;This is a wrapper library for the ClouDNS API to be used by PHP applications. It tries to ease the integration of the API into your applications by handling all interactions with API and providing a simple interface to interact with. The entire projects &lt;a href=&#34;https://gitlab.com/silo-city-labs-llc/cloudns-api-php&#34;&gt;source code&lt;/a&gt; is posted on gitlab.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Java Plugin Minecraft RepairSigns</title>
-      <link>https://silocitylabs.com/post/projects/repair-sign/</link>
-      <pubDate>Fri, 04 Oct 2013 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/post/projects/repair-sign/</guid>
-      <description>&lt;p&gt;Written in java for minecraft this plugin was created to improve user gameplay. With close to 10k downloads and hundreds of active servers using it. You can checkout the old &lt;a href=&#34;https://dev.bukkit.org/projects/repairsign&#34;&gt;plugin page here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The RepairSign plugin provides easy to use repair locations to help improve the user experience from a general perspective. Before making the purchase you can check trough an invoice station how much its going to cost and get a detailed list of all prices for each item. You can even go as far as to change the default pricing for all items in the config. To repair or get estimate left click signs.&lt;/p&gt;</description>
     </item>
     
   </channel>
