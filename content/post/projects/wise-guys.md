@@ -1,6 +1,5 @@
 ---
 title: Zips Wiseguys Pizzeria Website
-author: Luis Rodriguez
 type: post
 date: 2016-09-05T22:36:25+00:00
 comments: false

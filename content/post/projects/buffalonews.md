@@ -1,6 +1,5 @@
 ---
 title: Buffalonews.com
-author: Luis Rodriguez
 type: post
 date: 2018-09-15T22:36:25+00:00
 comments: false

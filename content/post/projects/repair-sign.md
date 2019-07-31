@@ -1,6 +1,5 @@
 ---
 title: Java Plugin Minecraft RepairSigns
-author: Luis Rodriguez
 type: post
 date: 2013-10-04T22:36:25+00:00
 comments: false

@@ -1,6 +1,5 @@
 ---
 title: Colocrossing Client and Admin control panel
-author: Luis Rodriguez
 type: post
 date: 2016-09-04T22:36:25+00:00
 comments: false
