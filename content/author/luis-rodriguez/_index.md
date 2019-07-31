@@ -101,7 +101,7 @@ ___
 
 **Silo City Labs** _Partner_,  October 2010 - Present
 
- - Maintained great customer satisfaction trough timely work
+ - Maintained great customer satisfaction by providing timely work
  - Software Programming, PC Repair, Hardware Modifications
  - Developed software used in many projects
 
