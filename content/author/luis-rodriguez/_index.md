@@ -52,8 +52,7 @@ ___
 <ul class="list-inline text-center">
     <li><a href="#about">About</a></li>
     <li><a href="#resume">Resume</a></li>
-    <li><a href="#goals">Goals</a></li>
-    <li><a href="#skills">Skils</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#projects-code-samples">Projects</a></li>
     <li><a href="#article-section">Articles</a></li>
 </ul>
@@ -128,24 +127,10 @@ ___
 <div class="text-center"><a href="http://tra.li/portfolio-resume" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download</a></div>
 
 ___
-## Goals
-
-##### WORK PHILOSOPHY
- - Anything can be achieved by setting goals and a positive attitude.
- - Value teamwork and communication as important factors of life.
- - Always set high standards for myself.
- - Competition is always a healthy part of the workplace.
-
-##### 1-2 YEAR GOALS
- - Further my career in Western New York
- - Further the Golang community in Buffalo and increase awareness.
-
-___
 ## Skills
 
 
 **Linux**, **Golang**, Operating Systems, Networking, Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Customer Service, Data Center, Java, Windows,  **MySQL**,  **HTML**, Integration, Databases,  **System Administration**,  **SQL**,  **JavaScript**, Visio, Project Management, Business Analysis, MSSQL, Program Management, XML, Security, Agile Workflows, SharePoint, IIS, Android Development, Penetration Testing,  **SEO Audits**, Pardot, Mautic, Hubspot, Salesforce, Magento, Bigcommerce, SEOmoz, Google Adwords,  **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **PHP**
-
 
 ___
 ## Projects / Code Samples
