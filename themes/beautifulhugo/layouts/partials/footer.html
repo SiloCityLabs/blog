@@ -48,10 +48,11 @@
 </footer>
 
 {{ $jsmain := resources.Get "js/main.js" }}
+{{ $jslazy := resources.Get "js/lazyload.js" }}
 {{ $jshighlight := resources.Get "js/highlight.min.js" }}
 {{ $jsnativebs := resources.Get "js/bootstrap-native-v4.min.js" }}
 
-{{ $jssall := slice $jsnativebs $jsmain $jshighlight | resources.Concat "js/bundle.js" | resources.Minify }}
+{{ $jssall := slice $jsnativebs $jshighlight $jslazy $jsmain  | resources.Concat "js/bundle.js" | resources.Minify }}
 <script src="{{ $jssall.Permalink | absURL }}"></script>
 
 <script> hljs.initHighlightingOnLoad(); </script>
