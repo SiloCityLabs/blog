@@ -6,14 +6,14 @@ photo: '/upload/authors/luis.png'
 ---
 
 <ul class="list-inline text-center">
-    <!--<li>
+    <li>
     <a href="tel:17166989236" title="Call me" style="color: #404040;">
         <span class="icon-stack icon-lg">
         <i class="icon icon-circle icon-stack-2x"></i>
         <i class="icon icon-phone icon-stack-1x icon-inverse"></i>
         </span>
     </a>
-    </li>-->
+    </li>
     <li>
     <a href="mailto:luis@silocitylabs.com" title="Email me" style="color: #404040;">
         <span class="icon-stack icon-lg">
