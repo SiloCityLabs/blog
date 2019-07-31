@@ -21,9 +21,6 @@ import (
 
 func main() {
 
-	rebuildFontello()
-	os.Exit(1)
-
 	daemon := flag.Bool("daemon", true, "bool")
 	flag.Parse()
 
