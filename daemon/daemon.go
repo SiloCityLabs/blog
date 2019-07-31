@@ -1,13 +1,18 @@
 package main
 
 import (
+	"archive/zip"
+	"bytes"
 	"flag"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
+	"mime/multipart"
 	"net/http"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 
 	"github.com/go-playground/webhooks/github"
@@ -15,6 +20,9 @@ import (
 )
 
 func main() {
+
+	rebuildFontello()
+	os.Exit(1)
 
 	daemon := flag.Bool("daemon", true, "bool")
 	flag.Parse()
@@ -55,6 +63,7 @@ func checkPush(pullRequest github.PushPayload) {
 	commit := pullRequest.Commits[0]
 	noBuild := false
 	restart := false
+	fontello := false
 
 	for _, file := range commit.Added {
 		fmt.Println("File Added: " + file)
@@ -76,11 +85,19 @@ func checkPush(pullRequest github.PushPayload) {
 		if strings.Contains(file, "daemon.run") {
 			restart = true
 		}
+		if strings.Contains(file, "fontello-config.json") {
+			fontello = true
+		}
 	}
 
 	if noBuild {
 		fmt.Println("Doc file, no build needed")
 		return
+	}
+
+	//Rebuild fontello
+	if fontello {
+		rebuildFontello()
 	}
 
 	//Docs hasnt been built. lets do it
@@ -98,6 +115,92 @@ func checkPush(pullRequest github.PushPayload) {
 			fmt.Printf("cmdPull.Run() failed with %s\n", err)
 		}
 	}
+}
+
+func rebuildFontello() {
+	url := "http://fontello.com/"
+
+	//Upload config file
+	request, err := newfileUploadRequest(url, map[string]string{}, "config", "../themes/beautifulhugo/static/css/fontello-config.json")
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	client := &http.Client{}
+	resp, err := client.Do(request)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	defer resp.Body.Close()
+	bodyData, _ := ioutil.ReadAll(resp.Body)
+	token := string(bodyData)
+
+	//Lets download this file now
+	out, _ := os.Create("/tmp/fontello-" + token + ".zip")
+	defer out.Close()
+
+	resp2, _ := http.Get(url + token + "/get")
+	defer resp2.Body.Close()
+
+	io.Copy(out, resp2.Body)
+
+	//unzip Loop trhough and grab the files we need
+	files, err := Unzip("/tmp/fontello-"+token+".zip", "/tmp/fontello-"+token)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+
+	//Delete the zip file, dont need it anymore
+	os.Remove("/tmp/fontello-" + token + ".zip")
+
+	for _, file := range files {
+
+		if strings.Contains(file, "fontello-embedded.css") {
+			os.Rename(file, "../themes/beautifulhugo/static/css/fontello-embedded.css")
+		}
+
+		if strings.Contains(file, "fontello.eot") {
+			os.Rename(file, "../themes/beautifulhugo/static/font/fontello.eot")
+		}
+
+		if strings.Contains(file, "fontello.svg") {
+			os.Rename(file, "../themes/beautifulhugo/static/font/fontello.svg")
+		}
+	}
+
+	//Delete the folder, dont need it anymore
+	os.RemoveAll("/tmp/fontello-" + token)
+}
+
+// Creates a new file upload http request with optional extra params
+func newfileUploadRequest(uri string, params map[string]string, paramName, path string) (*http.Request, error) {
+	file, err := os.Open(path)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+
+	body := &bytes.Buffer{}
+	writer := multipart.NewWriter(body)
+	part, err := writer.CreateFormFile(paramName, filepath.Base(path))
+	if err != nil {
+		return nil, err
+	}
+	_, err = io.Copy(part, file)
+
+	for key, val := range params {
+		_ = writer.WriteField(key, val)
+	}
+	err = writer.Close()
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("POST", uri, body)
+	req.Header.Set("Content-Type", writer.FormDataContentType())
+	return req, err
 }
 
 func updateSite() {
@@ -189,4 +292,62 @@ func loadSettings() {
 	}
 
 	fmt.Printf("Starting: %v\n", settings)
+}
+
+// Unzip will decompress a zip archive, moving all files and folders
+// within the zip file (parameter 1) to an output directory (parameter 2).
+func Unzip(src string, dest string) ([]string, error) {
+
+	var filenames []string
+
+	r, err := zip.OpenReader(src)
+	if err != nil {
+		return filenames, err
+	}
+	defer r.Close()
+
+	for _, f := range r.File {
+
+		// Store filename/path for returning and using later on
+		fpath := filepath.Join(dest, f.Name)
+
+		// Check for ZipSlip. More Info: http://bit.ly/2MsjAWE
+		if !strings.HasPrefix(fpath, filepath.Clean(dest)+string(os.PathSeparator)) {
+			return filenames, fmt.Errorf("%s: illegal file path", fpath)
+		}
+
+		filenames = append(filenames, fpath)
+
+		if f.FileInfo().IsDir() {
+			// Make Folder
+			os.MkdirAll(fpath, os.ModePerm)
+			continue
+		}
+
+		// Make File
+		if err = os.MkdirAll(filepath.Dir(fpath), os.ModePerm); err != nil {
+			return filenames, err
+		}
+
+		outFile, err := os.OpenFile(fpath, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, f.Mode())
+		if err != nil {
+			return filenames, err
+		}
+
+		rc, err := f.Open()
+		if err != nil {
+			return filenames, err
+		}
+
+		_, err = io.Copy(outFile, rc)
+
+		// Close the file without defer to close before next iteration of loop
+		outFile.Close()
+		rc.Close()
+
+		if err != nil {
+			return filenames, err
+		}
+	}
+	return filenames, nil
 }
