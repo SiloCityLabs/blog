@@ -3,6 +3,7 @@ title: One time use wd coupon
 author: Luis Rodriguez
 type: post
 date: 2019-02-03T01:46:48+00:00
+expiryDate: 2019-02-14T22:36:25+00:00
 url: /post/2019/02/02/one-time-use-wd-coupon/
 categories:
   - Tech Deals

@@ -3,6 +3,7 @@ title: Caavo av deal
 author: Luis Rodriguez
 type: post
 date: 2019-01-03T01:53:53+00:00
+expiryDate: 2019-01-14T22:36:25+00:00
 url: /post/2019/01/02/caavo-av-deal/
 categories:
   - Tech Deals

@@ -3,6 +3,7 @@ title: Home hub sale
 author: Luis Rodriguez
 type: post
 date: 2018-12-27T18:16:38+00:00
+expiryDate: 2018-12-30T22:36:25+00:00
 url: /post/2018/12/27/home-hub-sale/
 categories:
   - Tech Deals
