@@ -300,17 +300,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2019/05/31/google-nest-hub-for-67/</loc>
-    <lastmod>2019-05-31T21:57:08+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/google-home-hub/</loc>
-    <lastmod>2019-05-31T21:57:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/05/30/cleaning-up-duplicates-on-nas/</loc>
     <lastmod>2019-05-30T23:30:44+00:00</lastmod>
   </url>
@@ -432,11 +421,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2019/02/02/one-time-use-wd-coupon/</loc>
-    <lastmod>2019-02-03T01:46:48+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</loc>
     <lastmod>2019-01-24T23:30:39+00:00</lastmod>
   </url>
@@ -460,11 +444,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2019/01/17/sandisk-400gb-sale/</loc>
-    <lastmod>2019-01-18T02:54:23+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/genius/</loc>
     <lastmod>2019-01-10T23:30:35+00:00</lastmod>
     <priority>0</priority>
@@ -478,35 +457,6 @@
   <url>
     <loc>https://silocitylabs.com/tags/widecam/</loc>
     <lastmod>2019-01-10T23:30:35+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/2019/01/10/pin-code-lock-83-combo/</loc>
-    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/combo/</loc>
-    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/kwickset/</loc>
-    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/lock/</loc>
-    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/pincode/</loc>
-    <lastmod>2019-01-10T13:16:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -528,44 +478,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2019/01/05/wd-4tb-32gb-usb/</loc>
-    <lastmod>2019-01-06T04:47:51+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/2019/01/02/caavo-av-deal/</loc>
-    <lastmod>2019-01-03T01:53:53+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/2018/12/28/missed-chance-insignia/</loc>
-    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/ebay/</loc>
-    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/google-home/</loc>
-    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/insignia/</loc>
-    <lastmod>2018-12-28T19:40:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/2018/12/27/hd-antenna-deal/</loc>
-    <lastmod>2018-12-28T01:50:44+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</loc>
     <lastmod>2018-12-27T23:30:18+00:00</lastmod>
   </url>
@@ -574,11 +486,6 @@
     <loc>https://silocitylabs.com/tags/nightowl/</loc>
     <lastmod>2018-12-27T23:30:18+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/2018/12/27/home-hub-sale/</loc>
-    <lastmod>2018-12-27T18:16:38+00:00</lastmod>
   </url>
   
   <url>
@@ -676,6 +583,12 @@
   <url>
     <loc>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</loc>
     <lastmod>2018-10-28T03:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/google-home/</loc>
+    <lastmod>2018-10-28T03:08:14+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
