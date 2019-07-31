@@ -1,6 +1,7 @@
 ---
 title: Geo Location Micro API Service
 type: post
+author: Luis Rodriguez
 date: 2019-07-22T22:36:25+00:00
 comments: false
 categories:
