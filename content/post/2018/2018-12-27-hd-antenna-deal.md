@@ -3,6 +3,7 @@ title: Hd antenna deal
 author: Luis Rodriguez
 type: post
 date: 2018-12-28T01:50:44+00:00
+expiryDate: 2018-12-30T22:36:25+00:00
 url: /post/2018/12/27/hd-antenna-deal/
 categories:
   - Tech Deals

@@ -3,6 +3,7 @@ title: Missed chance insignia
 author: Luis Rodriguez
 type: post
 date: 2018-12-28T19:40:52+00:00
+expiryDate: 2018-12-30T22:36:25+00:00
 url: /post/2018/12/28/missed-chance-insignia/
 categories:
   - Tech Deals
