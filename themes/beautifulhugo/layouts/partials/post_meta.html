@@ -8,6 +8,8 @@
     &nbsp;&bull;&nbsp; {{ i18n "translationsLabel" }}{{ $linksOutput }}
   {{- end }}
 </span>
+{{ if (isset .Params "author") }}
 <span class="post-meta">
-    By <a href="{{ $.Site.LanguagePrefix }}/author/{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
+  By <a href="{{ $.Site.LanguagePrefix }}/author/{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
 </span>
+{{ end }}
