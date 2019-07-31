@@ -147,7 +147,6 @@ ___
 
 
 <!--
-luisdrodriguez.com carryover
 https://github.com/SiloCityLabs/B2Backup
 https://github.com/SiloCityLabs/monitor-daemon
 megatouchmods.com

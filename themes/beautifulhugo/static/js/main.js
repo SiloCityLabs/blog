@@ -69,6 +69,10 @@ var main = {
     //   fakeMenu.remove();
     // }      
 
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+
     // show the big header image  
     main.initImgs();
   },
