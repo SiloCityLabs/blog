@@ -125,13 +125,13 @@ ___
  - Highest Honors [2013](/uploads/luis-portfolio/certifications/itt-high-honors-sum-13.jpg), [2012](/uploads/luis-portfolio/certifications/itt-honors-sum-12.jpg), [2011](/uploads/luis-portfolio/certifications/itt-honors-fall-11.jpg), [2011](/uploads/luis-portfolio/certifications/itt-honors-win-11.jpg), [Graduated Honors](/uploads/luis-portfolio/certifications/itt-honors-graduate.jpg)
  - Hands on experience setting up Microsoft windows active direct as well as creating Group policies, managing DNS servers, creating Read-only domain controllers, and many more features that come with active directory
 
-**[Computer Science Diploma](/uploads/luis-portfolio/certifications/hutch-tech-diploma.jpg)** at  _Hutchinson Central Technical H.S._, **2008 - 2011**
+**[Computer Science Diploma](/uploads/luis-portfolio/certifications/hutch-tech-diploma.jpg)** at  _Hutchinson Central Technical H.S._, **2007 - 2011**
 
  - Succeeded in classes for C++, JavaScript and html
  - Studied computer hardware and troubleshooting computers and electronics
 
 
-<div class="text-center"><a href="http://tra.li/portfolio-resume" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-pdf" aria-hidden="true"></i> Download</a></div>
+<div class="text-center"><a href="http://tra.li/portfolio-resume" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download Resume</a></div>
 
 ___
 ## Skills
