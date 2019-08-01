@@ -60,9 +60,9 @@ ___
 ___
 ## About
 
-As a self-employed software developer right out of school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
+As a self-employed software developer right out of high school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
 
-With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the ROI just isnt there for it yet.
+With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the return on investment just isnt there for it yet.
 
 ___
 ## Resume
@@ -77,6 +77,11 @@ ___
 **The Buffalo News** _Mobile Android Developer_, Aug 2017 – Apr 2018
 
  - Developing Android applications to work alongside developed php web applications
+
+**VOIP Supply** _Web Developer_, Feb 2017 – May 2018
+
+ - Assisting the team in migrating platforms from magento to big commerce
+ - Troubleshooting and resolving php issues on the magento platform
 
 **ATTO Technology** _Web/SEO Marketing coordinator_, March 2015 – February 2017
 
