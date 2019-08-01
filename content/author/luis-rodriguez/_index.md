@@ -73,10 +73,11 @@ ___
 
  - Managing a team of developers on Android and iOS applications as well as developing the necessary API's needed for both applications.
  - Working on PHP and other Web applications to manage and distribute content to the end users.
+ - Integrating [kafka](/post/projects/kafka-cheat-sheet), elastic search, zookeeper and custom Golang software to process real time data with over 1TB of data in storage for just a few months.
 
 **The Buffalo News** _Mobile Android Developer_, Aug 2017 – Apr 2018
 
- - Developing Android applications to work alongside developed php web applications
+ - Developing [Android applications](/tags/android/) to work alongside developed php web applications
 
 **VOIP Supply** _Web Developer_, Feb 2017 – May 2018
 
