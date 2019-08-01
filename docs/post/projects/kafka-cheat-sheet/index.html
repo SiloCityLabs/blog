@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Kafka Cheat Sheet</title>
+  <meta property="og:title" content="Kafka Cheat Sheet" />
+  <meta name="twitter:title" content="Kafka Cheat Sheet" />
+  <meta name="description" content="Throughout my time working with kafkas I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have …">
+  <meta property="og:description" content="Throughout my time working with kafkas I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have …">
+  <meta name="twitter:description" content="Throughout my time working with kafkas I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/projects/kafka-cheat-sheet/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/projects/kafka-cheat-sheet/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/projects/kafka-cheat-sheet/">
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://silocitylabs.com/css/bundle.min.css" />
+  
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/company/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+                  <a href="https://silocitylabs.com/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://silocitylabs.com/newsletter">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;" onclick="setTimeout( function(){ document.getElementById('gsc-i-id1').focus(); }, 400);">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Kafka Cheat Sheet</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on August 1, 2019
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Throughout my time working with kafkas I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under <code>/opt/kafka</code> and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip&rsquo;s.</p>
+
+<h2 id="kafka">Kafka</h2>
+
+<h3 id="kafka-commands">Kafka Commands</h3>
+
+<p><strong>Create Main topic</strong></p>
+
+<p><code>/opt/kafka/bin/kafka-topics.sh --create --zookeeper XXX.XXX.XXX.XXX:2181, XXX.XXX.XXX.XXX:2181 --replication-factor 3 --partitions 1 --topic {{topic name}}</code></p>
+
+<p><strong>List all topics</strong></p>
+
+<p><code>/opt/kafka/bin/kafka-topics.sh --list --zookeeper XXX.XXX.XXX.XXX:2181, XXX.XXX.XXX.XXX:2181</code></p>
+
+<p><strong>Delete topic</strong></p>
+
+<p><code>/opt/kafka/bin/kafka-topics.sh --zookeeper XXX.XXX.XXX.XXX:2181, XXX.XXX.XXX.XXX:2181 --delete --topic {{topic name}}</code></p>
+
+<p><strong>Describe Topic</strong></p>
+
+<p><code>/opt/kafka/bin/kafka-topics.sh --describe --zookeeper XXX.XXX.XXX.XXX:2181, XXX.XXX.XXX.XXX:2181 --topic {{topic name}}</code></p>
+
+<p><strong>Alter Topic</strong></p>
+
+<p><code>/opt/kafka/bin/kafka-topics.sh --zookeeper XXX.XXX.XXX.XXX:2181, XXX.XXX.XXX.XXX:2181 --alter --topic {{topic name}} --replication-factor 3</code></p>
+
+<p><strong>Console Consumer</strong></p>
+
+<p><code>/opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server XXX.XXX.XXX.XXX:9092, XXX.XXX.XXX.XXX:9092 --topic {{topic name}} --from-beginning</code></p>
+
+<p><strong>Create main stream</strong></p>
+
+<pre><code class="language-SQL">CREATE STREAM {{topic name}} (api BIGINT, type INT, page VARCHAR, cid VARCHAR, cip VARCHAR, exception INT, extra VARCHAR, date VARCHAR, time BIGINT) WITH (KAFKA_TOPIC='{{topic name}}', VALUE_FORMAT='JSON', TIMESTAMP='time');
+</code></pre>
+
+<h2 id="zookeeper">Zookeeper</h2>
+
+<p><a href="https://gist.github.com/ursuad/e5b8542024a15e4db601f34906b30bb5">https://gist.github.com/ursuad/e5b8542024a15e4db601f34906b30bb5</a>
+<a href="https://gist.github.com/sahilsk/a4d9d989fa4763c1abcbaec028f8346e">https://gist.github.com/sahilsk/a4d9d989fa4763c1abcbaec028f8346e</a></p>
+
+<h2 id="other">Other</h2>
+
+<p><strong>latency test command</strong></p>
+
+<pre><code class="language-sh">curl -X GET \
+  http:// XXX.XXX.XXX.XXX:3000/ip \
+  -H 'Accept: */*' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'X-IP: XXX.XXX.XXX.XXX ' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache' \
+  -s -o /dev/null -w '%{time_total}'
+</code></pre>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/projects/kafka-cheat-sheet.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/projects/kafka-cheat-sheet.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/projects/geo-api-service/" data-toggle="tooltip" data-placement="top" title="Geo Location Micro API Service">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Aug 1, 2019 at 9:33am (EST)</a>
+        </p>
+        <p class="credits theme-by text-muted">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+  </body>
+</html>
+
