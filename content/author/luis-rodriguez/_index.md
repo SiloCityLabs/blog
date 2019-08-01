@@ -157,6 +157,9 @@ ___
  - [4 Letter domain acquisition](/post/projects/atto-com-acquisition)
  - [CODRCG PHP Website and Android App](/post/projects/codrcg-com)
  - [PHP HTML JSON Minifier](/post/projects/php-json-html-minify)
+ - [Android - Buffalo News](/post/projects/android-buffalonews)
+ - [Android - BN Blitz](/post/projects/android-bn-blitz)
+ - [Android - BN Hockey](/post/projects/android-bnhockey)
 
 
 <!--
