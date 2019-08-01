@@ -25,6 +25,7 @@ Whether it's severe weather, breaking news or sports scores and entertainment ne
 
 You can also read paper copies of The Buffalo News through our [Addon application](/post/projects/android-buffalonews-addon) that integrates seamlessly with the main application.
 
+<!--more-->
 
 Features:
 
@@ -50,8 +51,6 @@ Technologies used:
  - Build Types ([BN Blitz](/post/projects/android-bn-blitz))
 
 [Play Store Link](https://play.google.com/store/apps/details?id=com.whiz.buffalo)
-
-<!--more-->
 
 {{< image src="/uploads/luis-portfolio/android-buffalonews1.jpg" alt="Buffalonews App">}}
 &nbsp;

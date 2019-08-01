@@ -21,6 +21,7 @@ tags:
 
 Built from scratch and a team of 1. You can read paper copies of The Buffalo News through our Addon application that integrates seamlessly with the main application. The applications have internal authentication that happens between applications. The user does not even know he is bouncing between applications.
 
+<!--more-->
 
 Features:
 
@@ -45,8 +46,6 @@ Technologies used:
  - Build Types ([BN Blitz](/post/projects/android-bn-blitz))
 
 [Play Store Link](https://play.google.com/store/apps/details?id=com.buffalonews.eedition.addon)
-
-<!--more-->
 
 {{< image src="/uploads/luis-portfolio/android-buffalonews-addon1.jpg" alt="Buffalonews App">}}
 &nbsp;
