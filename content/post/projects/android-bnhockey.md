@@ -28,6 +28,8 @@ This app presents all of The Buffalo News’ coverage of the Sabres and league i
 
 The depth of The News’ staff is unmatched. John Vogl has been covering the Sabres since 2002-03. The award-winning writer is the Buffalo chapter chairman for the Professional Hockey Writers’ Association. Mike Harrington, a Canisius College graduate who began his career as a News reporter in 1987, has been covering the Sabres since 2007. He is a member of the Professional Hockey Writers' Association. Amy Moritz, a native of Lockport, joined The News' Sabres beat in 2013.
 
+<!--more-->
+
 Technologies used:
 
  - Java
@@ -35,8 +37,6 @@ Technologies used:
  - Flavours
 
 [Play Store Link](https://play.google.com/store/apps/details?id=com.buffalonews.hockey)
-
-<!--more-->
 
 {{< image src="/uploads/luis-portfolio/bnhockey.jpg" alt="BN Hockey App">}}
 &nbsp;

@@ -21,6 +21,7 @@ Built from scratch and a team of 1. This app integrates build types and flavours
 
 The News’ team has you covered, from training camp to the draft – and every snap in between. Mark Gaughan, Jerry Sullivan, Tim Graham and Jay Skurski lead the coverage with breaking updates and in-depth analysis through daily blogs posts, stories and columns. Plus, video reports and exclusive photos from every game. On game day, get real-time reports from The News’ writers at the game.
 
+<!--more-->
 
 Features:
 
@@ -46,7 +47,6 @@ Technologies used:
 
 [Play Store Link](https://play.google.com/store/apps/details?id=com.buffalonews.blitz)
 
-<!--more-->
 
 {{< image src="/uploads/luis-portfolio/blitz1.jpg" alt="Buffalonews App">}}
 &nbsp;
