@@ -155,6 +155,12 @@
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
+    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
   </url>
@@ -167,12 +173,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/minimal-pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -783,14 +783,70 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/2018/03/02/changing-dns-settings-for-android-development/</loc>
-    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
+    <loc>https://silocitylabs.com/post/projects/android-bnhockey/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/android-bn-blitz/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/android-buffalonews/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/android-buffalonews-addon/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/addon/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/tags/android/</loc>
-    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/hockey/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/java/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/json/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/sdk/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/xml/</loc>
+    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2018/03/02/changing-dns-settings-for-android-development/</loc>
+    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
   </url>
   
   <url>
@@ -1183,12 +1239,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/json/</loc>
-    <lastmod>2015-09-15T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/mysqli/</loc>
     <lastmod>2015-09-15T22:36:25+00:00</lastmod>
     <priority>0</priority>
@@ -1249,12 +1299,6 @@
   <url>
     <loc>https://silocitylabs.com/post/projects/repair-sign/</loc>
     <lastmod>2013-10-04T22:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/java/</loc>
-    <lastmod>2013-10-04T22:36:25+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
