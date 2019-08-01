@@ -1,5 +1,6 @@
 ---
 title: Kafka Cheat Sheet
+author: Luis Rodriguez
 type: post
 date: 2019-08-01T08:36:25+00:00
 comments: false
