@@ -1,5 +1,5 @@
 ---
-title: Android - The Buffalo News Addon
+title: Android - Buffalo News Addon
 author: Luis Rodriguez
 type: post
 date: 2018-03-21T22:36:25+00:00
