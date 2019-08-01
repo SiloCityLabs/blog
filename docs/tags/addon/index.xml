@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>addon on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/addon/</link>
+    <description>Recent content in addon on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Wed, 21 Mar 2018 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/addon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android - The Buffalo News Addon</title>
+      <link>https://silocitylabs.com/post/projects/android-buffalonews-addon/</link>
+      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/android-buffalonews-addon/</guid>
+      <description>&lt;p&gt;Built from scratch and a team of 1. You can read paper copies of The Buffalo News through our Addon application that integrates seamlessly with the main application. The applications have internal authentication that happens between applications. The user does not even know he is bouncing between applications.&lt;/p&gt;
+
+&lt;p&gt;Features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Local News&lt;/li&gt;
+&lt;li&gt;Video and Photo Galleries&lt;/li&gt;
+&lt;li&gt;Business News&lt;/li&gt;
+&lt;li&gt;Sports News&lt;/li&gt;
+&lt;li&gt;National News&lt;/li&gt;
+&lt;li&gt;Entertainment News&lt;/li&gt;
+&lt;li&gt;Weather&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Technologies used:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;JSON&lt;/li&gt;
+&lt;li&gt;XML&lt;/li&gt;
+&lt;li&gt;API&lt;/li&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;li&gt;WebViews&lt;/li&gt;
+&lt;li&gt;BN Paywall&lt;/li&gt;
+&lt;li&gt;Flavours&lt;/li&gt;
+&lt;li&gt;Build Types (&lt;a href=&#34;https://silocitylabs.com/post/projects/android-bn-blitz&#34;&gt;BN Blitz&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.buffalonews.eedition.addon&#34;&gt;Play Store Link&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
