@@ -1,5 +1,5 @@
 ---
-title: Android - The Buffalo News
+title: Android - BN Blitz
 author: Luis Rodriguez
 type: post
 date: 2018-03-21T22:36:25+00:00
