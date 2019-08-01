@@ -62,7 +62,7 @@ ___
 
 As a self-employed software developer right out of high school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
 
-With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the return on investment just isnt there for it yet.
+With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the return on investment just isn't there for it yet.
 
 ___
 ## Resume
@@ -93,7 +93,7 @@ ___
 
 **Colocrossing** _Systems Administrator/Software Developer_,  May 2014 – March 2015
 
- - Programming code for a custom control panel to manage and simplify multiple system administrators and data center technician’s tasks
+ - Programming code for a custom [control panel](/post/projects/colocrossing-panel/) to manage and simplify multiple system administrators and data center technician’s tasks
  - Monitoring network traffic across multiple data centers
  - Supporting customers with server related issues
  - Setting up network settings and switches for servers
@@ -116,6 +116,7 @@ ___
  - Successful creation of cluster load balancing server to handle client load
  - Wrote over 3 Million lines of code as a team with documentation
 
+&nbsp;
 #### EDUCATION
 
 **[Associates Degree](/uploads/luis-portfolio/certifications/itt-diploma.jpg)**  at  _ITT Technical Institute_, **2011 - 2013**
