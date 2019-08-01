@@ -161,26 +161,4 @@ ___
  - [Android - BN Blitz](/post/projects/android-bn-blitz)
  - [Android - BN Hockey](/post/projects/android-bnhockey)
 
-
-<!--
-https://github.com/SiloCityLabs/B2Backup
-https://github.com/SiloCityLabs/monitor-daemon
-megatouchmods.com
-atto report generator
-buffalo news paywall
-Nexmo php lib
-utf encode pro
-go wireless
-go pi data
-voipsupply.com
-blog seo score
-Mautic Advanced Integration
-Pardot Migration
-Mautic
-Pixelmon Gaming
-Pixelmonmod
-other client sites
--->
-
-
 [See more projects here](/tags/luis-portfolio)
