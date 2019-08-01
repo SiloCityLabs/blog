@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Mon, 22 Jul 2019 22:36:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Aug 2019 08:36:25 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cheat-sheet</title>
+      <link>https://silocitylabs.com/tags/cheat-sheet/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/cheat-sheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://silocitylabs.com/tags/cli/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>commands</title>
+      <link>https://silocitylabs.com/tags/commands/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/commands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kafka</title>
+      <link>https://silocitylabs.com/tags/kafka/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>luis-portfolio</title>
+      <link>https://silocitylabs.com/tags/luis-portfolio/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/luis-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sh</title>
+      <link>https://silocitylabs.com/tags/sh/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://silocitylabs.com/tags/shell/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://silocitylabs.com/tags/terminal/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zookeeper</title>
+      <link>https://silocitylabs.com/tags/zookeeper/</link>
+      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/zookeeper/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>api</title>
@@ -36,15 +117,6 @@
       <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>luis-portfolio</title>
-      <link>https://silocitylabs.com/tags/luis-portfolio/</link>
-      <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/luis-portfolio/</guid>
       <description></description>
     </item>
     

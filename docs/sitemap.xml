@@ -4,18 +4,95 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/projects/kafka-cheat-sheet/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/cheat-sheet/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/cli/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/commands/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/kafka/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/luis-portfolio/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/sh/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/shell/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/terminal/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/zookeeper/</loc>
+    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/</loc>
     <lastmod>2019-07-22T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -28,24 +105,6 @@
   <url>
     <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
     <lastmod>2019-07-22T22:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/</loc>
-    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -62,12 +121,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/golang/</loc>
-    <lastmod>2019-07-22T22:36:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/luis-portfolio/</loc>
     <lastmod>2019-07-22T22:36:25+00:00</lastmod>
     <priority>0</priority>
   </url>
