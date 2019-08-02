@@ -161,5 +161,7 @@ ___
  - [Android - Buffalo News](/post/projects/android-buffalonews)
  - [Android - BN Blitz](/post/projects/android-bn-blitz)
  - [Android - BN Hockey](/post/projects/android-bnhockey)
+ - [Android - CODRCG](/post/projects/android-codrcg)
+ - [Android - Flappy Dino](/post/projects/android-flappy-dino)
 
 [See more projects here](/tags/luis-portfolio)
