@@ -18,7 +18,7 @@
       <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/kafka-cheat-sheet/</guid>
-      <description>&lt;p&gt;Throughout my time working with kafkas I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under &lt;code&gt;/opt/kafka&lt;/code&gt; and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip&amp;rsquo;s.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Throughout my time working with kafka I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under &lt;code&gt;/opt/kafka&lt;/code&gt; and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -558,6 +558,45 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/android-buffalonews-addon/</guid>
       <description>&lt;p&gt;Built from scratch and a team of 1. You can read paper copies of The Buffalo News through our Addon application that integrates seamlessly with the main application. The applications have internal authentication that happens between applications. The user does not even know he is bouncing between applications.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android - COD Random Class Generator</title>
+      <link>https://silocitylabs.com/post/projects/android-codrcg/</link>
+      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/android-codrcg/</guid>
+      <description>&lt;p&gt;&amp;ldquo;BO3 Random Class Generator&amp;rdquo; is now &amp;ldquo;COD Random Class Generator&amp;rdquo;. We&amp;rsquo;ve updated and upgraded the app to support generators for multiple games including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Infinite Warfare&lt;/li&gt;
+&lt;li&gt;Black Ops 2&lt;/li&gt;
+&lt;li&gt;Black Ops 3&lt;/li&gt;
+&lt;li&gt;Modern Warfare&lt;/li&gt;
+&lt;li&gt;Modern Warfare 2&lt;/li&gt;
+&lt;li&gt;Modern Warfare 3 (Coming Soon!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A handy utility to generate random classes for multiple Call of Duty games. This adds a new level of fun to the game by generating random classes for you to try out and enjoy. Create classes and combinations that you may not have thought of yourself. Challenge yourself and friends with strange combinations and learn to use gear that you may otherwise ignore.&lt;/p&gt;
+
+&lt;p&gt;For desktop use checkout our website &lt;a href=&#34;https://codrcg.com/&#34;&gt;https://codrcg.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android - Flappy Dino</title>
+      <link>https://silocitylabs.com/post/projects/android-flappy-dino/</link>
+      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/android-flappy-dino/</guid>
+      <description>&lt;p&gt;Build using both Native java code and Game maker studio. This game was a trial of gaming for us. We wanted to push our bounds and get better at Android.&lt;/p&gt;
+
+&lt;p&gt;Navigate your flying dinosaur through treacherous obstacles and go for a high score!&lt;/p&gt;
+
+&lt;p&gt;-Collect eggs to purchase future upgrades.
+-Share your high scores with friends.&lt;/p&gt;
+
+&lt;p&gt;Dinos include:
+-Blue Pteranodon&lt;/p&gt;</description>
     </item>
     
     <item>

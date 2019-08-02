@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Throughout my time working with kafkas I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under `/opt/kafka` and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip's.
+Throughout my time working with kafka I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under `/opt/kafka` and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip's.
 
 <!--more-->
 
