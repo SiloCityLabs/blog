@@ -167,6 +167,44 @@ if (!doNotTrack) {
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/">
+                <h2 class="post-title">Quick Monitor and Restart in Golang</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on August 14, 2019
+              </p>
+              <div class="post-entry">
+                
+                  Go Applications On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.
+Run it like so after compiling to a binary
+nohup ./restart &amp;  The code
+package main import ( &quot;fmt&quot; &quot;io/ioutil&quot; &quot;log&quot; &quot;os/exec&quot; &quot;runtime&quot; &quot;strconv&quot; &quot;strings&quot; &quot;time&quot; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.
+                  <a href="https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://silocitylabs.com/tags/go">go</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/tutorial">tutorial</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/monitor">monitor</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/service">service</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/golang">golang</a>&nbsp;
+                  
+                </span>
+              
+    
+            </article>
+          
+            <article class="post-preview">
               <a href="https://silocitylabs.com/post/projects/kafka-cheat-sheet/">
                 <h2 class="post-title">Kafka Cheat Sheet</h2>
     
@@ -502,27 +540,6 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
     
             </article>
           
-            <article class="post-preview">
-              <a href="https://silocitylabs.com/post/2019/05/30/cleaning-up-duplicates-on-nas/">
-                <h2 class="post-title">Cleaning up duplicates on NAS</h2>
-    
-                
-              </a>
-    
-              <p class="post-meta">
-                Posted on May 30, 2019
-              </p>
-              <div class="post-entry">
-                
-                  <p>Over the last year me and my wife have been using the network server more frequently from its <a href="https://blog.silocitylabs.com/post/2019/02/21/home-server-setup/">initial install and setup</a>. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.</p>
-                  <a href="https://silocitylabs.com/post/2019/05/30/cleaning-up-duplicates-on-nas/" class="post-read-more">[Read More]</a>
-                
-              </div>
-    
-              
-    
-            </article>
-          
         </div>
         
           <ul class="pager main-pager">
@@ -630,7 +647,7 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
           
           
           &nbsp;&bull;&nbsp;
-          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Aug 2, 2019 at 4:40pm (EST)</a>
+          <a href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on Aug 14, 2019 at 11:54pm (EST)</a>
         </p>
         <p class="credits theme-by text-muted">
           
