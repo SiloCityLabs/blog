@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 01 Aug 2019 08:36:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/author/luis-rodriguez/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quick Monitor and Restart in Golang</title>
+      <link>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</guid>
+      <description>Go Applications On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.
+Run it like so after compiling to a binary
+nohup ./restart &amp;amp;  The code
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os/exec&amp;quot; &amp;quot;runtime&amp;quot; &amp;quot;strconv&amp;quot; &amp;quot;strings&amp;quot; &amp;quot;time&amp;quot; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.</description>
+    </item>
     
     <item>
       <title>Kafka Cheat Sheet</title>
