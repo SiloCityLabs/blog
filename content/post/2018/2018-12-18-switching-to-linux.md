@@ -25,8 +25,7 @@ In dconf-editor, browse to **org.gnome.desktop.interface** and set **enable-a
 
 You can also run this command to disable animations:
   
-`gsettings set org.gnome.desktop.interface enable-animations false``<br />
-` 
+`gsettings set org.gnome.desktop.interface enable-animations false` 
 
 You do not need to log out and back in, it should take effect immediately.
 
