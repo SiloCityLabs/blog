@@ -260,8 +260,7 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
 
 &lt;p&gt;You can also run this command to disable animations:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;gsettings set org.gnome.desktop.interface enable-animations false&lt;/code&gt;&lt;code&gt;&amp;lt;br /&amp;gt;
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gsettings set org.gnome.desktop.interface enable-animations false&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;You do not need to log out and back in, it should take effect immediately.&lt;/p&gt;
 
