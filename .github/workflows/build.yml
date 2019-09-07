@@ -1,0 +1,55 @@
+name: Go
+on:
+  push:
+    paths:
+    - '*'        # Run workflow for all file paths
+    - '!/docs/*' # Don't run workflow when files are only in the /docs directory
+    branches:
+      - master
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+
+    - name: Set up Go 1.13
+      uses: actions/setup-go@v1
+      with:
+        go-version: 1.13
+      id: go
+
+    - name: Check out code into the Go module directory
+      env:
+        advice.detachedHead: false
+      uses: actions/checkout@v1
+
+    - name: Get dependencies
+      run: |
+        go get -v -t -d ./...
+        if [ -f Gopkg.toml ]; then
+            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+            dep ensure
+        fi
+
+    - name: Install Hugo
+      run: snap install hugo ## apt-get is behind 0.44 < 0.58
+
+    - name: Checkout Master
+      run: git checkout master
+
+    - name: Run Build Program
+      run: go run build/build.go
+
+    - name: Commit Changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_EMAIL: ${{ secrets.EMAIL }}
+      run: |
+        git config --global user.email "$GITHUB_EMAIL"
+        git config --global user.name "Github Actions"
+        git add .
+        git commit -m "New build"
+        git remote set-url origin https://${{GITHUB_ACTOR}}:$GITHUB_TOKEN@github.com/${{GITHUB_REPOSITORY}}.git
+        git push origin master
