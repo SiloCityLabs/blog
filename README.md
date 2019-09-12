@@ -21,4 +21,3 @@ To work locally with this project, you'll have to follow the steps below:
 4. Add content
 
 Read more at Hugo's [documentation](https://gohugo.io/overview/introduction/).
-
