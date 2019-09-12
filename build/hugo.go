@@ -32,5 +32,5 @@ func buildSite() {
 		log.Fatalf("cmdBuild.Run() failed with %s\n", err.Error())
 	}
 
-	fmt.Println(output)
+	fmt.Println(string(output))
 }
