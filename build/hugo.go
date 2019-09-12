@@ -2,11 +2,18 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"os/exec"
+	"path/filepath"
 )
 
 func buildSite() {
+
+	dir, errwd := os.Getwd()
+	if errwd != nil {
+		log.Fatal(errwd)
+	}
 
 	// Delete folders to regenerate
 	os.RemoveAll("../docs/page/")
@@ -19,10 +26,11 @@ func buildSite() {
 
 	// Hugo build
 	cmdBuild := exec.Command("hugo")
-	cmdBuild.Dir = "../"
-	_, err := cmdBuild.CombinedOutput()
+	cmdBuild.Dir, _ = filepath.Abs(dir + "/../")
+	output, err := cmdBuild.CombinedOutput()
 	if err != nil {
-		fmt.Printf("cmdBuild.Run() failed with %s\n", err)
+		log.Fatalf("cmdBuild.Run() failed with %s\n", err.Error())
 	}
 
+	fmt.Println(output)
 }
