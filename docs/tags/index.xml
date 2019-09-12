@@ -238,15 +238,6 @@
     </item>
     
     <item>
-      <title>Pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>linux</title>
       <link>https://silocitylabs.com/tags/linux/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -261,6 +252,15 @@
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/minimal-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
       <description></description>
     </item>
     
@@ -499,15 +499,6 @@
     </item>
     
     <item>
-      <title>USB-C</title>
-      <link>https://silocitylabs.com/tags/usb-c/</link>
-      <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/usb-c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>gamepad</title>
       <link>https://silocitylabs.com/tags/gamepad/</link>
       <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
@@ -531,6 +522,15 @@
       <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/smartphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>USB-C</title>
+      <link>https://silocitylabs.com/tags/usb-c/</link>
+      <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/usb-c/</guid>
       <description></description>
     </item>
     
