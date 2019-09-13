@@ -34,7 +34,7 @@ jobs:
         fi
 
     - name: Install Hugo
-      run: sudo snap install hugo --channel=0.57.2/stable ## apt-get is behind 0.44 < 0.58
+      run: sudo snap install hugo --channel=0.57.2/stable --classic ## apt-get is behind 0.44 < 0.58
 
     - name: Checkout Master
       run: git checkout master
