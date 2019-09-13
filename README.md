@@ -22,6 +22,7 @@ To work locally with this project, you'll have to follow the steps below:
 
 ## Github Actions
 
+We use github actions to make it easy for anyone to fork this repo withouth making a standalone daemon. Our action is set to run on push and once a month.
 See our build script inside workflows for github actions.
 
 
