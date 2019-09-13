@@ -21,6 +21,7 @@ To work locally with this project, you'll have to follow the steps below:
 4. Add content
 
 ## Github Actions
+
 See our build script inside workflows for github actions.
 
 Read more at Hugo's [documentation](https://gohugo.io/overview/introduction/).
