@@ -24,5 +24,6 @@ To work locally with this project, you'll have to follow the steps below:
 
 See our build script inside workflows for github actions.
 
+
 Read more at Hugo's [documentation](https://gohugo.io/overview/introduction/).
 
