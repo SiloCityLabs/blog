@@ -39,7 +39,7 @@ jobs:
       run: |
         curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_[^extended].*_Linux-64bit\.deb" | cut -d ":" -f 2,3 | tr -d \" | wget -qi -
         package="$(find . -name "*Linux-64bit.deb")"
-        su dpkg -i $package
+        sudo dpkg -i $package
         which hugo
         hugo version
 
