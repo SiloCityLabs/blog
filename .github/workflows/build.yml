@@ -36,7 +36,12 @@ jobs:
         fi
 
     - name: Install Hugo
-      run: sudo snap install hugo ## apt-get is behind 0.44 < 0.58
+      run: |
+        curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_[^extended].*_Linux-64bit\.deb" | cut -d ":" -f 2,3 | tr -d \" | wget -qi -
+        package="$(find . -name "*Linux-64bit.deb")"
+        dpkg -i $package
+        which hugo
+        hugo version
 
     - name: Checkout Master
       run: git checkout master
@@ -48,7 +53,7 @@ jobs:
 
     - name: Commit Changes
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.LDRRP_BLOG_ACCESS_TOKEN }}
         GITHUB_EMAIL: ${GITHUB_ACTOR}@users.noreply.github.com
         GITHUB_ACTOR: ${{ github.actor }}
         GITHUB_REPOSITORY: ${{ github.repository }}
@@ -57,5 +62,5 @@ jobs:
         git config --global user.name "Github Actions"
         git add .
         git commit -m "New build"
-        git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
+        git remote set-url origin https://ldrrp:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
         git push origin master
