@@ -4,18 +4,93 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://silocitylabs.com/tags/adb/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/android/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/09/26/installing-nano-android/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/nano/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/root/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/shell/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/su/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2019-09-26T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/internet/</loc>
+    <lastmod>2019-09-26T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2019/09/26/opt-out-of-spectrum-spam/</loc>
+    <lastmod>2019-09-26T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/spam/</loc>
+    <lastmod>2019-09-26T22:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/spectrum/</loc>
+    <lastmod>2019-09-26T22:36:25+00:00</lastmod>
   </url>
   
   <url>
@@ -34,22 +109,7 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/monitor/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -60,11 +120,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/service/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -105,11 +160,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/sh/</loc>
-    <lastmod>2019-08-01T08:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/shell/</loc>
     <lastmod>2019-08-01T08:36:25+00:00</lastmod>
   </url>
   
@@ -464,16 +514,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/internet/</loc>
-    <lastmod>2019-01-08T22:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/spectrum/</loc>
-    <lastmod>2019-01-08T22:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/nightowl/</loc>
     <lastmod>2018-12-27T23:30:18+00:00</lastmod>
   </url>
@@ -740,11 +780,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/addon/</loc>
-    <lastmod>2018-03-21T22:36:25+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/android/</loc>
     <lastmod>2018-03-21T22:36:25+00:00</lastmod>
   </url>
   

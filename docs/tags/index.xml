@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2019 23:30:40 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>adb</title>
+      <link>https://silocitylabs.com/tags/adb/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/adb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://silocitylabs.com/tags/android/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nano</title>
+      <link>https://silocitylabs.com/tags/nano/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/nano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>root</title>
+      <link>https://silocitylabs.com/tags/root/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/root/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://silocitylabs.com/tags/shell/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>su</title>
+      <link>https://silocitylabs.com/tags/su/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/su/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internet</title>
+      <link>https://silocitylabs.com/tags/internet/</link>
+      <pubDate>Thu, 26 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spam</title>
+      <link>https://silocitylabs.com/tags/spam/</link>
+      <pubDate>Thu, 26 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/spam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spectrum</title>
+      <link>https://silocitylabs.com/tags/spectrum/</link>
+      <pubDate>Thu, 26 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/spectrum/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>go</title>
@@ -108,15 +189,6 @@
       <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/sh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shell</title>
-      <link>https://silocitylabs.com/tags/shell/</link>
-      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/shell/</guid>
       <description></description>
     </item>
     
@@ -598,24 +670,6 @@
     </item>
     
     <item>
-      <title>internet</title>
-      <link>https://silocitylabs.com/tags/internet/</link>
-      <pubDate>Tue, 08 Jan 2019 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/internet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spectrum</title>
-      <link>https://silocitylabs.com/tags/spectrum/</link>
-      <pubDate>Tue, 08 Jan 2019 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/spectrum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>nightowl</title>
       <link>https://silocitylabs.com/tags/nightowl/</link>
       <pubDate>Thu, 27 Dec 2018 23:30:18 +0000</pubDate>
@@ -981,15 +1035,6 @@
       <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/addon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>android</title>
-      <link>https://silocitylabs.com/tags/android/</link>
-      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/android/</guid>
       <description></description>
     </item>
     

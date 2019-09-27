@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2019 23:30:40 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Installing nano text editor on Android</title>
+      <link>https://silocitylabs.com/post/2019/09/26/installing-nano-android/</link>
+      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/09/26/installing-nano-android/</guid>
+      <description>&lt;p&gt;After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.&lt;/p&gt;
+
+&lt;p&gt;I found a way using a couple of online sources to get it going. You will need to be on a rooted device.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Opt out of spectrum SPAM</title>
+      <link>https://silocitylabs.com/post/2019/09/26/opt-out-of-spectrum-spam/</link>
+      <pubDate>Thu, 26 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2019/09/26/opt-out-of-spectrum-spam/</guid>
+      <description>Recently I discovered a way to opt out of all spectrum spam mail, calls, door to door salesmen. I have filled out the form and will wait patiently for my spam to stop. Hopefully my mailbox will be empty in the comming weeks.
+To opt out of all spam online, mail etc just click the link below:
+https://www.spectrum.com/policies/your-privacy-rights-opt-out?cid=sms:PrivacyOptOut</description>
+    </item>
     
     <item>
       <title>Quick Monitor and Restart in Golang</title>
