@@ -42,6 +42,7 @@ jobs:
         sudo dpkg -i $package
         which hugo
         hugo version
+        rm -rf *.deb
 
     - name: Checkout Master
       run: git checkout master
