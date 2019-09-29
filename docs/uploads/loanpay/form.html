@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      &nbsp;
+
+      <form class="form-horizontal">
+        <div id="loans"></div>
+        <input id="loanCount" type="hidden" value="0"/>
+        <div class="form-group row">
+          <div class="col-xs-offset-4 col-xs-8">
+              <div class="btn btn-success" onclick="addLoan()">+ Add a loan</div> <div id="submitLoans" class="btn btn-primary" onclick="submitLoans()">Calculate</div>
+          </div>
+        </div>
+      </form>
+
+    </div><!-- /.container -->
+
+    <script src="wasm_exec.js"></script>
+    <script>
+      var loans = 0;
+      var loanCount = 0;
+
+      function addLoan() {
+        if(loanCount >= 8){
+          alert("Sorry, only 8 loans max, we will be optimizing the site later for 9+ loans");
+          return;
+        }
+
+        loans++;
+        loanCount++;
+        console.log("Add a loan clicked ["+loans+"]");
+        document.getElementById("loanCount").value = loanCount;
+
+        const div = document.createElement('div');
+        div.className = 'row';
+        div.innerHTML = `
+            <h3>Loan #`+loans+`</h3>
+            <div class="form-group">
+              <label for="loan_`+loans+`_name" class="control-label col-xs-4">Name</label>
+              <div class="col-xs-8">
+                <input id="loan_`+loans+`_name" name="loan_`+loans+`_name" type="text" required="required" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="loan_`+loans+`_rate" class="control-label col-xs-4">Interest Rate</label>
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <input id="loan_`+loans+`_rate" name="loan_`+loans+`_rate" type="number" required="required" class="form-control">
+                  <div class="input-group-addon">%</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="loan_`+loans+`_bal" class="control-label col-xs-4">Balance</label>
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input id="loan_`+loans+`_bal" name="loan_`+loans+`_bal" type="text" required="required" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="loan_`+loans+`_min" class="control-label col-xs-4">Minimum Payment</label>
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input id="loan_`+loans+`_min" name="loan_`+loans+`_min" type="text" required="required" class="form-control">
+                </div>
+              </div>
+            </div>
+  
+            <div class="btn btn-danger pull-right" onclick="removeLoan(this)">- Remove</div>
+        `;
+
+        document.getElementById('loans').appendChild(div);
+      }
+      addLoan();//Add first loan
+
+      function removeLoan(input) {
+        loanCount--;
+        console.log("Remove a loan clicked ["+loanCount+"]");
+        document.getElementById("loanCount").value = loanCount;
+        document.getElementById('loans').removeChild(input.parentNode);
+
+        if(loanCount == 0) { loans = 0; }
+      }
+
+      function submitLoans(input){
+        document.getElementById("submitLoans").setAttribute("disabled", "true");
+
+        //Validations here
+        if(loanCount <= 1){
+          addLoan()
+          document.getElementById("submitLoans").removeAttribute("disabled");
+          alert("Need at least 2 loans to run the calculations")
+          return
+        }
+
+        //Parse all loan inputs into json
+
+        //get output and spit out to screen
+
+        // const go = new Go();
+        // WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
+        //   go.run(result.instance);
+        // });
+
+        // var xhr = new XMLHttpRequest();
+        // xhr.open("POST", 'http://google.com', true);
+        // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        // xhr.onreadystatechange = function() { // Call a function when the state changes.
+        //     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                
+        //     }
+        // }
+        // xhr.send("foo=bar&lorem=ipsum");
+        // xhr.send(new Int8Array()); 
+        // xhr.send(document);
+      }
+    </script>
+  </body>
+</html>
