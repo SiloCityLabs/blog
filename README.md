@@ -27,6 +27,3 @@ See our build script inside workflows for github actions.
 
 
 Read more at Hugo's [documentation](https://gohugo.io/overview/introduction/).
-
-
-
