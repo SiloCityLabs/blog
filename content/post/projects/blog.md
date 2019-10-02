@@ -42,6 +42,8 @@ Now that the theme is useable we decided to import some articles. We use a wordp
 
 Some of the custom html on the pages did not carry over as markdown. We began hacking away that html and converting it to markdown format. This only took less than a few days with the use of regex and pattern search.
 
+[Wordpress to Hugo Export](https://downloads.techreanimate.com/toxlbb)
+
 ### Tweaking the theme
 
 The theme had gotten us to basically where we were visually with wordpress. A basic blog site where users can read our posts and we can share the great knowledge we have learned. 
