@@ -14,7 +14,7 @@ tags:
 
 ---
 
-A class written to simplify the use oh mysqli in php. Uses similar concepts to other db classes built into other frameworks. [Download the file here](https://downloads.techreanimate.com/auowdk) or look at the code below.
+A class written to simplify the use of mysqli in php. Uses similar concepts to other db classes built into other frameworks. [Download the file here](https://downloads.techreanimate.com/auowdk) or look at the code below.
 
 <!--more-->
 

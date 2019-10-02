@@ -100,13 +100,22 @@
 
         //Validations here
         if(loanCount <= 1){
-          addLoan()
+          addLoan();
           document.getElementById("submitLoans").removeAttribute("disabled");
-          alert("Need at least 2 loans to run the calculations")
-          return
+          alert("Need at least 2 loans to run the calculations");
+          return;
         }
 
         //Parse all loan inputs into json
+        var i;
+        for (i = 1; i < loans+1; i++) {
+          loanArray[i]["name"] = document.getElementById("loan_"+i+"_name").value;
+          loanArray[i]["rate"] = document.getElementById("loan_"+i+"_rate").value;
+          loanArray[i]["bal"] = document.getElementById("loan_"+i+"_bal").value;
+          loanArray[i]["min"] = document.getElementById("loan_"+i+"_min").value;
+        }
+
+        console.log(loanArray)
 
         //get output and spit out to screen
 

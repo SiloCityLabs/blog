@@ -68,12 +68,18 @@ ___
 ## Resume
 
 #### EXPERIENCE
+**NDA - Technology Company** _Software Engineer_, Aug 2019 – Present
 
-**The Buffalo News** _Software Engineer_, April 2018 – Jul 2019
+ - Developing custom kiosk software for Android systems
+ - Compiling Android from source for custom Android hardware to be used in client environments
+ - Developing digital signage software for Android systems
+ - NDA and company policies prevent me from listing the name of the company
 
- - Managing a team of developers on Android and iOS applications as well as developing the necessary API's needed for both applications.
- - Working on PHP and other Web applications to manage and distribute content to the end users.
- - Integrating [kafka](/post/projects/kafka-cheat-sheet), elastic search, zookeeper and custom Golang software to process real time data with over 1TB of data in storage for just a few months.
+**The Buffalo News** _Software Engineer_, April 2018 – Aug 2019
+
+ - Managing a team of developers on Android and iOS applications as well as developing the necessary API's needed for both applications
+ - Working on PHP and other Web applications to manage and distribute content to the end users
+ - Integrating [Kafka](/post/projects/kafka-cheat-sheet), Elasticsearch, Zookeeper and custom Golang software to process real time data with over 1TB of data in storage for just a few months
 
 **The Buffalo News** _Mobile Android Developer_, Aug 2017 – Apr 2018
 
@@ -81,8 +87,8 @@ ___
 
 **VOIP Supply** _Web Developer_, Feb 2017 – May 2018
 
- - Assisting the team in migrating platforms from magento to big commerce
- - Troubleshooting and resolving php issues on the magento platform
+ - Assisting the team in migrating platforms from Magento to big commerce
+ - Troubleshooting and resolving php issues on the Magento platform
 
 **ATTO Technology** _Web/SEO Marketing coordinator_, March 2015 – February 2017
 
@@ -149,7 +155,7 @@ ___
 ___
 ## Projects / Code Samples
 
- - [Open Source Blog](https://github.com/SiloCityLabs/blog)
+ - [Open Source Blog](/post/projects/blog)
  - [Golang Geo Service API](/post/projects/geo-api-service/)
  - [Golang IP formatting ipv6 package](/post/projects/ipformat/)
  - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
