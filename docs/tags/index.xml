@@ -94,6 +94,51 @@
     </item>
     
     <item>
+      <title>hugo</title>
+      <link>https://silocitylabs.com/tags/hugo/</link>
+      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>luis-portfolio</title>
+      <link>https://silocitylabs.com/tags/luis-portfolio/</link>
+      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/luis-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robert-portfolio</title>
+      <link>https://silocitylabs.com/tags/robert-portfolio/</link>
+      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/robert-portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seo</title>
+      <link>https://silocitylabs.com/tags/seo/</link>
+      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/seo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wordpress</title>
+      <link>https://silocitylabs.com/tags/wordpress/</link>
+      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>go</title>
       <link>https://silocitylabs.com/tags/go/</link>
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
@@ -171,15 +216,6 @@
       <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/kafka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>luis-portfolio</title>
-      <link>https://silocitylabs.com/tags/luis-portfolio/</link>
-      <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/luis-portfolio/</guid>
       <description></description>
     </item>
     
@@ -1462,15 +1498,6 @@
     </item>
     
     <item>
-      <title>seo</title>
-      <link>https://silocitylabs.com/tags/seo/</link>
-      <pubDate>Wed, 20 Jul 2016 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/seo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>arcade</title>
       <link>https://silocitylabs.com/tags/arcade/</link>
       <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
@@ -1494,15 +1521,6 @@
       <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/gateway/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://silocitylabs.com/tags/hugo/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/hugo/</guid>
       <description></description>
     </item>
     
@@ -1534,29 +1552,11 @@
     </item>
     
     <item>
-      <title>robert-portfolio</title>
-      <link>https://silocitylabs.com/tags/robert-portfolio/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/robert-portfolio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>sms</title>
       <link>https://silocitylabs.com/tags/sms/</link>
       <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/sms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wordpress</title>
-      <link>https://silocitylabs.com/tags/wordpress/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/wordpress/</guid>
       <description></description>
     </item>
     
