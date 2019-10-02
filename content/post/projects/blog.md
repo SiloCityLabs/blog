@@ -64,7 +64,7 @@ The biggest seo change we made that actually does not reflect the seo score for 
 
 If you know AMP its a quick way for viewers to get articles by disabling much of the bottlenecks in todays websites.
 
-Adding amp was quite a task, in doing so we ended up applying some of those modifications to our main website as well. We reduced the user of bootstrap submodules and shrunk the size of our css/js. We also ended up ditching jquery on the main website with the help of a library called bootstrap native which you can [read more about at sitepoint](https://www.sitepoint.com/use-bootstrap-components-without-jquery/).
+Adding amp was quite a task, in doing so we ended up applying some of those modifications to our main website as well. We reduced the user of bootstrap submodules and shrunk the size of our css/js. We ditched jQuery on the main website with the help of a library called [Bootstrap Native](https://www.sitepoint.com/use-bootstrap-components-without-jquery/). Our theme also had a few instances of jQuery that were fairly easy to convert to plain JS.
 
 You can see our amp support by prefixing /amp/ to any post url. For example [AMP: Installing nano text editor on Android](https://silocitylabs.com/amp/post/2019/09/26/installing-nano-android/)
 
