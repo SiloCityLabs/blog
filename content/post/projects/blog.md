@@ -1,7 +1,7 @@
 ---
 title: Silocitylabs Blog
 type: post
-date: 2015-09-15T22:36:25+00:00
+date: 2019-09-15T22:36:25+00:00
 comments: false
 categories:
   - Projects
