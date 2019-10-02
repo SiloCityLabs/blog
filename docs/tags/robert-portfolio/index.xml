@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robert-portfolio on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/robert-portfolio/</link>
+    <description>Recent content in robert-portfolio on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Tue, 15 Sep 2015 22:36:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/robert-portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Silocitylabs Blog</title>
+      <link>https://silocitylabs.com/post/projects/blog/</link>
+      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/projects/blog/</guid>
+      <description>&lt;figure&gt;
+            &lt;amp-img src=&#34;https://silocitylabs.com/uploads/luis-portfolio/blog.png&#34; alt=&#34;Blog website&#34; height=&#34;940&#34; width=&#34;1354&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+            &lt;figcaption&gt;The blog when this article was written.&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    
+
+
+&lt;p&gt;The Issue:&lt;/p&gt;
+
+&lt;p&gt;Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress unfortunately is not very good with performance on high traffic websites.&lt;/p&gt;
+
+&lt;p&gt;The Solution:&lt;/p&gt;
+
+&lt;p&gt;We decided to try out a static site generator called hugo. After migrating we noticed extreme performance improvements. We made some more adjustments while the project was hot and decided to host on github public repo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
