@@ -4,7 +4,11 @@ on:
     - cron:  '0 0 1 * *'
   push:
     paths:
-    - '**'        # Run workflow for all file paths
+    - '*'        # Run workflow for all file paths
+    - 'build/**'
+    - 'content/**'
+    - 'static/**'
+    - 'themes/**'
     - '!/docs/*' # Don't run workflow when files are only in the /docs directory
     branches:
       - master
