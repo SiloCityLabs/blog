@@ -3,6 +3,7 @@ title: Luis Rodriguez
 subtitle: Software Engineer - Databases - Linux Administrator
 comments: false
 photo: '/upload/authors/luis.png'
+adsense: false
 ---
 
 <ul class="list-inline text-center">
