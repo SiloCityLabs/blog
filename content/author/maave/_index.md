@@ -3,6 +3,7 @@ title: Maave
 subtitle: Software Engineer - Does stuff
 comments: false
 photo: '/upload/authors/maave.png'
+adsense: false
 ---
 
 [//]: # (todo: add social media icons via fonts)
