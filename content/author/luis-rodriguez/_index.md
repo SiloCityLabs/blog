@@ -77,9 +77,9 @@ ___
 
 **The Buffalo News** _Software Engineer_, April 2018 – Aug 2019
 
+ - Integrating [Kafka](/post/projects/kafka-cheat-sheet), Elasticsearch, Zookeeper and custom Golang software to process real time data with over 1TB of data in storage for just a few months
  - Managing a team of developers on Android and iOS applications as well as developing the necessary API's needed for both applications
  - Working on PHP and other Web applications to manage and distribute content to the end users
- - Integrating [Kafka](/post/projects/kafka-cheat-sheet), Elasticsearch, Zookeeper and custom Golang software to process real time data with over 1TB of data in storage for just a few months
 
 **The Buffalo News** _Mobile Android Developer_, Aug 2017 – Apr 2018
 
@@ -156,14 +156,14 @@ ___
 ## Projects / Code Samples
 
  - [Open Source Blog](/post/projects/blog)
- - [Golang Geo Service API](/post/projects/geo-api-service/)
- - [Golang IP formatting ipv6 package](/post/projects/ipformat/)
- - [PHP CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
- - [ATTO Technology Website redesign](/post/projects/atto-com/)
- - [RDNS XSS Looking Glass](/post/projects/lg-xss-cve/)
- - [4 Letter domain acquisition](/post/projects/atto-com-acquisition)
- - [CODRCG PHP Website and Android App](/post/projects/codrcg-com)
- - [PHP HTML JSON Minifier](/post/projects/php-json-html-minify)
+ - [Golang - Geo Service API](/post/projects/geo-api-service/)
+ - [Golang - IP formatting ipv6 package](/post/projects/ipformat/)
+ - [PHP - CloudNS API Wrapper Class](/post/projects/cloudns-api-php/)
+ - [PHP - ATTO Technology Website redesign](/post/projects/atto-com/)
+ - [PHP - RDNS XSS Looking Glass](/post/projects/lg-xss-cve/)
+ - [DevOps - 4 Letter domain acquisition](/post/projects/atto-com-acquisition)
+ - [PHP/Android - CODRCG Website and App](/post/projects/codrcg-com)
+ - [PHP - HTML JSON Minifier](/post/projects/php-json-html-minify)
  - [Android - Buffalo News](/post/projects/android-buffalonews)
  - [Android - BN Blitz](/post/projects/android-bn-blitz)
  - [Android - BN Hockey](/post/projects/android-bnhockey)
