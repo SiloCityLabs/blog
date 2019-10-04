@@ -71,10 +71,14 @@
 </script>
 {{ end }}
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-6882852717412296",
-          enable_page_level_ads: true
-     });
-</script>
+{{ if (.Params.adsense) | or (and (or (not (isset .Params "adsense")) (eq .Params.adsense nil)) (.Site.Params.adsense)) }}
+  {{ if .Site.googleAds }}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({
+			  google_ad_client: "{{ .Site.googleAds }}",
+			  enable_page_level_ads: true
+		 });
+	</script>
+  {{ end }}
+{{ end }}
