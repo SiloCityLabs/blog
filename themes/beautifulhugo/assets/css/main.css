@@ -744,6 +744,9 @@ code {
 }
 
 /* --- Google Custom Search Engine Popup --- */
+#modalSearch {
+  outline: none;
+}
 #modalSearch table tr, #modalSearch table tr td, #modalSearch table tr th {
   border:none;
 }
