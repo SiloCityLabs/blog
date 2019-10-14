@@ -47,6 +47,14 @@ adsense: false
         </span>
     </a>
     </li>
+    <li>
+    <a href="http://tra.li/portfolio-resume" title="Portfolio Download" style="color: #404040;">
+        <span class="icon-stack icon-lg">
+        <i class="icon icon-circle icon-stack-2x"></i>
+        <i class="icon icon-file-word icon-stack-1x icon-inverse"></i>
+        </span>
+    </a>
+    </li>
 </ul>
 
 ___
