@@ -139,9 +139,9 @@
     {
       "uid": "0e429f02ef994341bd086b75bf8b0578",
       "css": "thingiverse",
-      "code": 59394,
+      "code": 59398,
       "src": "custom_icons",
-      "selected": false,
+      "selected": true,
       "svg": {
         "path": "M500 40C246.2 40 40 246.2 40 500S246.2 960 500 960 960 753.8 960 500 753.8 40 500 40ZM500 80C732.2 80 920 267.8 920 500S732.2 920 500 920 80 732.2 80 500 267.8 80 500 80ZM320 300V420H440V760H560V420H680V300H320Z",
         "width": 1000
@@ -149,6 +149,12 @@
       "search": [
         "thingiverse"
       ]
+    },
+    {
+      "uid": "310ffd629da85142bc8669f010556f2d",
+      "css": "file-word",
+      "code": 61890,
+      "src": "fontawesome"
     }
   ]
 }

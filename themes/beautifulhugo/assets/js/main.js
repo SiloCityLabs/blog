@@ -7,6 +7,13 @@ var main = {
     var navbar = document.querySelector('.navbar');
     var main_navbar = document.querySelector('#main-navbar');
     var navlinks = document.querySelectorAll('.navlinks-parent');
+    var searchBtn = document.querySelector('#searchBtn');
+    
+    // Search bar
+    searchBtn.addEventListener('click', function (e) {
+      //TODO: close navbar
+      setTimeout( function(){ document.getElementById('gsc-i-id1').focus(); }, 400);
+    });
 
     // Shorten the navbar after scrolling a little bit down
     var prevScrollpos = window.pageYOffset;
