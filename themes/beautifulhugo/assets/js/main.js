@@ -8,6 +8,7 @@ var main = {
     var main_navbar = document.querySelector('#main-navbar');
     var navlinks = document.querySelectorAll('.navlinks-parent');
     var searchBtn = document.querySelector('#searchBtn');
+    var gitFooter = document.querySelector('#gitBuild');
     
     // Search bar
     searchBtn.addEventListener('click', function (e) {
@@ -55,6 +56,12 @@ var main = {
 
     // show the big header image  
     main.initImgs();
+
+    fetch(`https://api.github.com/repos/SiloCityLabs/blog/commits`).then(function(response) {
+      return response.json();
+    }).then(function(commits) {
+      gitFooter.innerHTML = "Last built on " + new Date(commits[0].commit.author.date);
+    });
   },
   
   initImgs : function() {
