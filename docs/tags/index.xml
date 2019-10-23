@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SCL Blog</title>
@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 26 Sep 2019 23:30:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 22:36:25 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>arm</title>
+      <link>https://silocitylabs.com/tags/arm/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arm_64</title>
+      <link>https://silocitylabs.com/tags/arm_64/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/arm_64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>https://silocitylabs.com/tags/aws/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>benchmark</title>
+      <link>https://silocitylabs.com/tags/benchmark/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/benchmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>comparison</title>
+      <link>https://silocitylabs.com/tags/comparison/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/comparison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internet</title>
+      <link>https://silocitylabs.com/tags/internet/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://silocitylabs.com/tags/performance/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>x86_64</title>
+      <link>https://silocitylabs.com/tags/x86_64/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/x86_64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xeon</title>
+      <link>https://silocitylabs.com/tags/xeon/</link>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/xeon/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>adb</title>
@@ -63,15 +144,6 @@
       <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/su/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>internet</title>
-      <link>https://silocitylabs.com/tags/internet/</link>
-      <pubDate>Thu, 26 Sep 2019 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/internet/</guid>
       <description></description>
     </item>
     
@@ -477,15 +549,6 @@
       <pubDate>Fri, 31 May 2019 23:30:40 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/abs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>comparison</title>
-      <link>https://silocitylabs.com/tags/comparison/</link>
-      <pubDate>Fri, 31 May 2019 23:30:40 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/comparison/</guid>
       <description></description>
     </item>
     
