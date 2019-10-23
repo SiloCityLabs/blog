@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Author on SCL Blog</title>
@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 26 Sep 2019 23:30:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 22:36:25 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/author/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Luis Rodriguez</title>
       <link>https://silocitylabs.com/author/luis-rodriguez/</link>
-      <pubDate>Thu, 26 Sep 2019 23:30:40 +0000</pubDate>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/author/luis-rodriguez/</guid>
       <description>About Resume Skills &amp; Certifications Projects Articles  About As a self-employed software developer right out of high school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in.</description>
