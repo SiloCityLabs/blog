@@ -89,6 +89,7 @@ ___
  - Integrating [Kafka](/post/projects/kafka-cheat-sheet), Elasticsearch, Zookeeper and custom Golang software to process real time data with over 1TB of data in storage for just a few months
  - Managing a team of developers on Android and iOS applications as well as developing the necessary API's needed for both applications
  - Working on PHP and other Web applications to manage and distribute content to the end users
+ - Setup and integration of various AWS services including lambda, kafka, EC2, S3, SNS and more.
 
 **The Buffalo News** _Mobile Android Developer_, Aug 2017 – Apr 2018
 
