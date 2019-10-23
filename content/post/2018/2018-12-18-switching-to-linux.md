@@ -48,6 +48,8 @@ To get the Windows-only software running I installed Virtualbox and installed Wi
 
 <!--more-->
 
+You can do much of the following using [w10privacy.exe](https://www.winprivacy.de/english-home/)
+
   * Enable bidirectional clipboard and drag and drop in Virtualbox
   * Disabled UAC - Annoying in VMs, slight delay in the dialog
   * Power options, enabled performance
