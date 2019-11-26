@@ -1,6 +1,6 @@
 ---
-title: Robert Greene
-subtitle: Software Engineer - Does stuff
+title: Robert Hanson
+subtitle: Software Engineer
 comments: false
 photo: '/upload/authors/maave.png'
 adsense: false
@@ -71,15 +71,22 @@ ___
 #### EXPERIENCE
 **CSS Health** _Software Engineer_, May 2019 – Nov 2019
 
- - PHP software development
+ - Software development: medication therapy management software
+ - PHP, AngularJS, HTML, MySQL
+ - Git, Jira
 
-**PoolSupplies.com** _Software Developer_, Sep 2017 – Apr 2019
+**PoolSupplies.com** _Software Engineer_, Sep 2017 – Apr 2019
 
- - PHP software development
+ - Software development: e-commerce website and backend employee tools
+ - PHP, AngularJS, HTML, MySQL
+ - Git, Basecamp
  
 **Colocrossing** _Datacenter Technician_,  May 2014 – Mar 2015
 
- - Troubleshoot Linux, Windows, and ESXi issues. Troubleshoot networking issues. Assemble, install, and configure servers. Cable, airflow, and cabinet management.
+ - Assemble, install, and configure servers. 
+ - Troubleshoot Linux, Windows, and ESXi issues. 
+ - Configure and troubleshoot networking issues.
+ - Cable, airflow, and cabinet management.
 
 **Silo City Labs** _Partner_,  Oct 2010 - Present
 
@@ -92,20 +99,19 @@ ___
  - Successful creation of cluster load balancing server to handle client load
  - Wrote over 3 Million lines of code as a team with documentation
 
-**Dash's Market** _Produce Stocker_, Sep 2013 – Aug 2014
 
- - Perform Daily Tasks
-
-&nbsp;
 #### EDUCATION
 
-**_Rochester Institute of Technology_, **2010 - 2013**
+**Computer Science** at _Rochester Institute of Technology_, **2010 - 2013**
+- Major in Computer Science
+- Studied programming languages, common programming patterns, and team-based development
+- Studied Python, Java, C++, and MIPS Assembly
 
-**Computer Science Diploma** at  _Hutchinson Central Technical H.S._, **2007 - 2011**
+**Computer Science** at  _Hutchinson Central Technical H.S._, **2007 - 2011**
 
- - Majored in computer engineering. Studied electronics, programming, and networking.
- - Succeeded in classes for C++, JavaScript and html
- - Built a remote controlled robot for ECC's Tech Wars. The robot was a flat hexagon shape with two spiked arms sticking out of the sides. Two wheels on the sides and roller ball bearings on the front and back allowed the robot to spin rapidly about the center.
+ - Majored in Computer Science. Studied electronics, programming, and networking.
+ - Studied C++, JavaScript and HTML
+ - Built a remote controlled robot for ECC's Tech Wars.
 
 
 <div class="text-center"><a href="" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download Resume</a></div>
@@ -114,7 +120,7 @@ ___
 ## Skills
 
 
-**Linux**, **Golang**, Operating Systems, Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Customer Service, Data Center, Java, Windows,  **MySQL**,  **HTML**, Integration, Databases,  **System Administration**,  **SQL**,  **[JavaScript Certified](/uploads/maave-portfolio/certifications/js-master-cert.jpg)**, Program Management, XML, Security, Agile Workflows, **Android Development**, Penetration Testing, **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **[PHP Certified](/uploads/maave-portfolio/certifications/php-cert.jpg)**
+**Linux**, Operating Systems, Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Data Center, Java, Windows,  **MySQL**,  **HTML**,  **AngularJS**, Databases,  **System Administration**, **[JavaScript Certified](/uploads/maave-portfolio/certifications/js-master-cert.jpg)**, Program Management, XML, Security, Agile Workflows, **Android Development**, Penetration Testing, **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **[PHP Certified](/uploads/maave-portfolio/certifications/php-cert.jpg)**
 
 #### Other Accolades:
 
