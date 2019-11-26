@@ -40,7 +40,7 @@ adsense: false
     </a>
     </li>
     <li>
-    <a href="" title="Portfolio Download" style="color: #404040;">
+    <a href="https://docs.google.com/document/export?format=pdf&id=1BV8jYUJMYOKCLxwG7CG6_d8NNrvVugvY9Hxalk2atL0&includes_info_params=true" title="Portfolio Download" style="color: #404040;">
         <span class="icon-stack icon-lg">
         <i class="icon icon-circle icon-stack-2x"></i>
         <i class="icon icon-file-word icon-stack-1x icon-inverse"></i>
@@ -115,13 +115,13 @@ ___
  - Built a remote controlled robot for ECC's Tech Wars.
 
 
-<div class="text-center"><a href="" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download Resume</a></div>
+<div class="text-center"><a href="https://docs.google.com/document/export?format=pdf&id=1BV8jYUJMYOKCLxwG7CG6_d8NNrvVugvY9Hxalk2atL0&includes_info_params=true" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download Resume</a></div>
 
 ___
 ## Skills
 
 
-**Linux**, Operating Systems, Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Data Center, Java, Windows,  **MySQL**,  **HTML**,  **AngularJS**, Databases,  **System Administration**, **[JavaScript Certified](/uploads/maave-portfolio/certifications/js-master-cert.jpg)**, Program Management, XML, Security, Agile Workflows, **Android Development**, Penetration Testing, **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **[PHP Certified](/uploads/maave-portfolio/certifications/php-cert.jpg)**
+**Linux**, Operating Systems, Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Data Center, Java, Windows,  **MySQL**,  **HTML**,  **AngularJS**, Databases,  **System Administration**, **[JavaScript Certified](/uploads/maave-portfolio/certifications/js-cert.jpg)**, Program Management, XML, Security, Agile Workflows, **Android Development**, Penetration Testing, **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **PHP Certified**
 
 #### Other Accolades:
 
@@ -130,4 +130,9 @@ UB Mice Completion and Award Winner - A course that teaches about business and e
 ___
 ## Projects / Code Samples
 
-Coming Soon
+ - [Open Source Blog](/post/projects/blog)
+ - [PHP/Android - CODRCG Website and App](/post/projects/codrcg-com)
+ - [PHP - Colocrossing Control Panel](/post/projects/colocrossing-panel/)
+ - [Android - Flappy Dino](/post/projects/android-flappy-dino)
+ 
+[See more projects here](/tags/maave-portfolio)
