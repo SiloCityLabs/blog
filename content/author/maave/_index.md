@@ -72,7 +72,7 @@ ___
 **CSS Health** _Software Engineer_, May 2019 – Nov 2019
 
  - Software development: medication therapy management software
- - PHP, AngularJS, HTML, MySQL
+ - PHP, AngularJS, HTML, MySQL, NetSuite
  - Git, Jira
 
 **PoolSupplies.com** _Software Engineer_, Sep 2017 – Apr 2019
@@ -81,7 +81,7 @@ ___
  - PHP, AngularJS, HTML, MySQL
  - Git, Basecamp
  
-**Colocrossing** _Datacenter Technician_,  May 2014 – Mar 2015
+**Colocrossing** _Datacenter Technician_,  May 2014 – Sept 2017
 
  - Assemble, install, and configure servers. 
  - Troubleshoot Linux, Windows, and ESXi issues. 
@@ -103,6 +103,7 @@ ___
 #### EDUCATION
 
 **Computer Science** at _Rochester Institute of Technology_, **2010 - 2013**
+
 - Major in Computer Science
 - Studied programming languages, common programming patterns, and team-based development
 - Studied Python, Java, C++, and MIPS Assembly
