@@ -62,7 +62,7 @@ ___
 
 ## About
 
-Makes stuff, breaks stuff, always complains that ____ could be better.
+Make stuff, break stuff.
 
 Follow the development of my open source gamepad for phones here on the blog or on [Hackaday.io](https://hackaday.io/project/165606-usb-c-gamepad-phone-case)
 ___
