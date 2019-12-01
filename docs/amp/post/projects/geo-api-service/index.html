@@ -82,13 +82,8 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>A micro api drop in service written in golang, Designed to quickly integrate into any system for any project. Uses very little resources and can handle millions of requests per second. The entire projects <a href="https://github.com/SiloCityLabs/geo.bntech.io">source code</a> is posted on github.</p>
-
 <p>You can include a package written for Golang projects to quickly get started with a simple function.</p>
-
-<p><code>
-go get github.com/silocitylabs/geo.bntech.io/geo
-</code></p>
-
+<p><code>go get github.com/silocitylabs/geo.bntech.io/geo</code></p>
 <pre><code>// Service url, IP to lookup, Attempts
 results := geo.GetIPData(&quot;http://127.0.0.1:3000&quot;, &quot;4.4.4.4&quot;, 3)
 

@@ -19,14 +19,11 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/10/11/12v-circuit/</guid>
       <description>&lt;p&gt;My goal is to eventually run everything off a battery backup circuit. Most common systems run on a 12v battery. To start im start off with a few basic things and getting everything running from 12v.&lt;/p&gt;
-
 &lt;p&gt;Items needed:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;12v power supply&lt;/li&gt;
 &lt;li&gt;12v to 5v dc to dc step down.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;</description>
     </item>
     
@@ -36,9 +33,8 @@
       <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</guid>
-      <description>Finally - off the breadboard and into a working environment. It&amp;rsquo;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
-&amp;nbsp;
-  Day 1:
+      <description>Finally - off the breadboard and into a working environment. It&#39;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
+   Day 1:
 A few issues. I accidentally flipped the polarities on the siren. I will eventually implement a 12v regulator to up the voltage for the siren for the full 120db power.</description>
     </item>
     
@@ -49,9 +45,7 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
       <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
-&amp;nbsp;
-   &amp;nbsp;
-Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
+     Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
     </item>
     
     <item>
@@ -63,17 +57,12 @@ Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</
       <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; height=&#34;446&#34; width=&#34;907&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
     
 
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;rsquo;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&#39;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Assistant&lt;/strong&gt;:
 r
-Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
-
+Google Home and/or Mini manage my random routines that aren&#39;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
 
 
 
@@ -84,9 +73,7 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
         &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; height=&#34;467&#34; width=&#34;830&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
     
 
-
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
-
 &lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
     </item>
     
@@ -106,7 +93,6 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
       <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
     &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;</description>
@@ -125,7 +111,6 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
 
 
 
-
     
         &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; height=&#34;500&#34; width=&#34;500&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
@@ -136,7 +121,7 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <pubDate>Mon, 04 Dec 2017 19:28:40 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/04/phillips-hue-smartthings/</guid>
-      <description>I&amp;rsquo;m not really sure why it started working all of a sudden. I&amp;rsquo;m glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols.</description>
+      <description>I&#39;m not really sure why it started working all of a sudden. I&#39;m glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols.</description>
     </item>
     
     <item>
@@ -147,8 +132,7 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <guid>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</guid>
       <description>Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?
 I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.
-&amp;nbsp;
-Edit: I think I may have made a mistake buying zigbee chips.</description>
+ Edit: I think I may have made a mistake buying zigbee chips.</description>
     </item>
     
   </channel>

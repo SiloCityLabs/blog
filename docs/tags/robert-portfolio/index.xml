@@ -24,13 +24,9 @@
         &lt;/figure&gt;
     
 
-
 &lt;p&gt;The Issue:&lt;/p&gt;
-
 &lt;p&gt;Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress unfortunately is not very good with performance on high traffic websites.&lt;/p&gt;
-
 &lt;p&gt;The Solution:&lt;/p&gt;
-
 &lt;p&gt;We decided to try out a static site generator called hugo. After migrating we noticed extreme performance improvements. We made some more adjustments while the project was hot and decided to host on github public repo.&lt;/p&gt;</description>
     </item>
     

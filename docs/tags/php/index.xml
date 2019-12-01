@@ -28,9 +28,7 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/codrcg-com/</guid>
       <description>&lt;p&gt;COD RCG is a random class generator that random generates classes for anyone who plays call of duty to enjoy. This provides new enjoyment for the game e.g. it may choose a gun the player has never used.  It also brings more challenge because you never know what you’re going to get as a class, it could be good or it could put you at a huge disadvantage, but that’s where the fun comes in trying to win and do well in the game when you’re using this crazy class that you normally would not. We launched this website less than a week after call of duty came out. I created my own algorithms to randomly create a class based on the “create a class” system used in Call of Duty. It was a challenge because there are tons of possible class possibilities that can be created. So once I finished that I then had to go and make sure all the gun, attachment, camos, equipment, perks and score streaks were all named correctly. This site and app has been pretty popular with over 25,000,000 views and over 5,000,000 classes generated. The Android app has over 50k installs&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://codrcg.com&#34;&gt;Website Link&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.techreanimate.blackops3&#34;&gt;Android App Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -68,7 +66,6 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/megatouchmods/</guid>
       <description>&lt;p&gt;A website designed to host documentation for an arcade company that went bankrupt. I manage and run this website on my own, Open source the website on github using github actions to automatically build and deploy changes made to the repository.&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://megatouchmods.com&#34;&gt;megatouchmods.com&lt;/a&gt;
 &lt;a href=&#34;https://github.com/SiloCityLabs/megatouchmods.com&#34;&gt;github source code&lt;/a&gt;&lt;/p&gt;</description>
     </item>
@@ -100,9 +97,7 @@
       <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/luis-portfolio/pixelmon.jpg&#34; alt=&#34;Pixelmon Mod&#34; height=&#34;994&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
     
 
-
 &lt;p&gt;In my time working with Pixelmon team I played a role of working with multiple parts of the team due to my vast experience developing. Pixelmon was a hybrid game mode with minecraft and pokemon mixed in an open world game.&lt;/p&gt;
-
 &lt;p&gt;Unfortunately the game faced some pushback including dmca takedown notice from Nintendo themselves which resulted in all development ending. The game had user created content that was similar to the real game pokemon but created by hand as to avoid copyright infringement. It seems that Nintendo still carried on with the takedown however.&lt;/p&gt;</description>
     </item>
     

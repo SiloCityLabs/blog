@@ -82,13 +82,9 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and <a href="https://www.zoneminder.com/">zoneminder</a>.</p>
-
 <h2 id="security-camera-software">Security Camera Software</h2>
-
 <p>ZoneMinder - &ldquo;A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need.&rdquo;</p>
-
 <h2 id="my-cameras">My Cameras</h2>
-
 <ul>
 <li><a href="https://blog.silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/">Axis 2130 PTZ</a></li>
 <li><a href="https://blog.silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/">Rosewill RSCM-13101B</a></li>
@@ -96,127 +92,34 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <li><a href="https://blog.silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/">Genius WideCam 320 Webcam</a></li>
 <li><a href="https://blog.silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/">BV Tech 4MP 2k</a></li>
 </ul>
-
 <h2 id="onsite-fireproof-sync">Onsite Fireproof Sync</h2>
-
 <p>To avoid paying for cloud services I purchased a fireproof hard drive. I set it up to sync with my raid group and its all set. You can view that <a href="https://blog.silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/">article here.</a></p>
-
 <h2 id="offsite-sync">Offsite Sync</h2>
-
 <p>I use offsite sync for the security cameras using rsync and a remote ftp server. Unfortunately it would be too expensive to backup my entire media server to the cloud so I only use it for remote storing the camera footage in the event of a theft.</p>
-
 <p>To start this you will need an ftp server credentials to use with the following script. After doing so you can just add it to <code>crontab -e</code></p>
-
 <p>Crontab file:</p>
-
-<pre>@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh</pre>
-
+<!-- raw HTML omitted -->
 <p>Script:</p>
-
-<pre>#!/bin/bash
-HOST='hostedftp.com'
-USER='username'
-PASS='password'
-TARGETFOLDER='/'
-SOURCEFOLDER='/var/cache/zoneminder/'
-while inotifywait -qqr "$SOURCEFOLDER"; do
-lftp -f "
-open $HOST
-user $USER $PASS
-lcd $SOURCEFOLDER
-set ftp:ssl-allow no
-mirror --no-symlinks --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
-bye
-"
-done</pre>
-
-<p>&nbsp;</p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p> </p>
 <h2 id="software-raid">Software Raid</h2>
-
-<p>I don&rsquo;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the <a href="http://a.tra.li/TPzz">setup I used</a>.</p>
-
+<p>I don't want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the <a href="http://a.tra.li/TPzz">setup I used</a>.</p>
 <h2 id="file-share">File Share</h2>
-
 <p>Setting up a file share is fairly simple, First download and install samba</p>
-
 <p><code>apt-get install samba</code></p>
-
 <p>Then edit the main configuration file:</p>
-
-<pre>[global]
-   workgroup = WORKGROUP
-   dns proxy = no
-   log file = /var/log/samba/log.%m
-   max log size = 1000
-   syslog = 0
-   panic action = /usr/share/samba/panic-action %d
-   server role = standalone server
-   passdb backend = tdbsam
-   obey pam restrictions = yes
-   unix password sync = yes
-   passwd program = /usr/bin/passwd %u
-   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
-   pam password change = yes
-   map to guest = bad user
-   usershare allow guests = yes
-   socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=1073741824 SO_SNDBUF=1073741824
-   min protocol = SMB2
-[homes]
-   comment = Home Directories
-   browseable = no
-   read only = no
-   create mask = 0770
-   directory mask = 0770
-   force group = nas
-   valid users = %S
-   writeable = yes
-   path = /mnt/4000/home/%u
-   veto files = /._*/.DS_Store/
-   delete veto files = yes
-[Shared]
-   comment = Shared Family Folder
-   browsable = yes
-   writable = yes
-   guest ok = yes
-   read only = no
-   directory mask = 0770
-   create mask = 0770
-   valid users = ldrrp krystal
-   force group = nas
-   path = /mnt/4000/home/Shared
-   veto files = /._*/.DS_Store/
-   delete veto files = yes
-[security]
-   comment = Security Cameras
-   browseable = yes
-   read only = no
-   create mask = 0755
-   directory mask = 0755
-   valid users = @security
-   writeable = yes
-   path = /var/cache/zoneminder
-   veto files = /._*/.DS_Store/
-   delete veto files = yes
-</pre>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>Then create the groups &ldquo;nas&rdquo; and &ldquo;family&rdquo; in linux and add your users to it. There is a <a href="https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/">guide</a> on that.</p>
-
 <p>Finally reboot or restart samba <code>systemctl restart samba</code></p>
-
 <p><strong>EDIT:</strong></p>
-
 <p>The first time you add a linux user (<code>adduser</code>) you need to add them to smbpasswd as well.</p>
-
 <p><code>sudo smbpasswd -a &lt;user&gt;</code></p>
-
 <h2 id="speedtest-alerts">Speedtest alerts</h2>
-
 <p>This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can <a href="https://downloads.techreanimate.com/kzhota">download the scripts</a></p>
-
 <p>After downloading them, add a line to your schedule tasks in linux using crontab -e</p>
-
-<pre>0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php</pre>
+<!-- raw HTML omitted -->
       </article>
 
       <div class="clearfix">

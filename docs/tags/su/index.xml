@@ -19,7 +19,6 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/09/26/installing-nano-android/</guid>
       <description>&lt;p&gt;After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.&lt;/p&gt;
-
 &lt;p&gt;I found a way using a couple of online sources to get it going. You will need to be on a rooted device.&lt;/p&gt;</description>
     </item>
     
