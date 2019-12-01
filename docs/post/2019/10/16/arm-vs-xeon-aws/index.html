@@ -190,14 +190,9 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<p>The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare their performance using golang tests. The entire test cost me $0.68 using a quick spot instance.</p>
-
+        <p>The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare their performance using golang tests. The entire test cost me $0.68 using a quick spot instance.</p>
 <p>The comparison was done on two very similar instances of aws servers. On paper they would almost seem to function the same but arm was just a few cents more, but lets take a look on how they performed.</p>
-
 <h3 id="linux-amd64-xeon">Linux AMD64 (xeon)</h3>
-
 <pre><code>BenchmarkSprint-2       20000000                74.8 ns/op             5 B/op          1 allocs/op
 BenchmarkConcat-2       20000000                86.6 ns/op            16 B/op          1 allocs/op
 BenchmarkMath-2         10000000               131 ns/op              16 B/op          2 allocs/op
@@ -214,10 +209,7 @@ BenchmarkMd5-2           2000000               664 ns/op              80 B/op   
 BenchmarkSha1-2          2000000               742 ns/op             112 B/op          3 allocs/op
 BenchmarkSha256-2        2000000               975 ns/op             144 B/op          3 allocs/op
 BenchmarkUUIDv4-2        1000000              1643 ns/op             160 B/op          4 allocs/op
-</code></pre>
-
-<h3 id="linux-arm64">Linux ARM64</h3>
-
+</code></pre><h3 id="linux-arm64">Linux ARM64</h3>
 <pre><code>BenchmarkSprint-2       10000000               144 ns/op               5 B/op          1 allocs/op
 BenchmarkConcat-2       10000000               180 ns/op              16 B/op          1 allocs/op
 BenchmarkMath-2          5000000               270 ns/op              16 B/op          2 allocs/op
@@ -234,12 +226,8 @@ BenchmarkMd5-2           1000000              1147 ns/op              80 B/op   
 BenchmarkSha1-2          1000000              1189 ns/op             112 B/op          3 allocs/op
 BenchmarkSha256-2        1000000              1393 ns/op             144 B/op          3 allocs/op
 BenchmarkUUIDv4-2         500000              2541 ns/op             160 B/op          4 allocs/op
-</code></pre>
-
-<p>As you can see arm actually performed much slower on most operations. Not even a negligable amount to compensate for the network speed gain you would get from using arm.</p>
-
-<h3 id="install-script-run-sh">Install script (run.sh)</h3>
-
+</code></pre><p>As you can see arm actually performed much slower on most operations. Not even a negligable amount to compensate for the network speed gain you would get from using arm.</p>
+<h3 id="install-script-runsh">Install script (run.sh)</h3>
 <pre><code>#!/bin/bash
 
 add-apt-repository ppa:gophers/archive
@@ -268,10 +256,7 @@ echo 'Running benchmarks on disk' &gt;&gt; results.txt
 echo '' &gt;&gt; results.txt
 
 hdparm -Tt /dev/xvda1 &gt;&gt; results.txt
-</code></pre>
-
-<h3 id="test-script-sprint-test-go">Test script (sprint_test.go)</h3>
-
+</code></pre><h3 id="test-script-sprinttestgo">Test script (sprint_test.go)</h3>
 <pre><code>package benchmark
 
 import (
@@ -419,10 +404,7 @@ func BenchmarkUUIDv4(b *testing.B) {
 		fmt.Sprintf(&quot;%x\n&quot;, uuidv4)
 	}
 }
-</code></pre>
-
-<h3 id="other-test-file-test-json">Other test file (test.json)</h3>
-
+</code></pre><h3 id="other-test-file-testjson">Other test file (test.json)</h3>
 <pre><code>{
   &quot;page&quot;: 1,
   &quot;fruits&quot;: [
@@ -442,9 +424,7 @@ func BenchmarkUUIDv4(b *testing.B) {
     &quot;non&quot;
   ]
 }
-</code></pre>
-
-<p>With that being said, I dont think I would be switching to arm anytime soon. The only good reason to use it would be for static file hosting but it would be much cheaper to use an s3 bucket or something similar.</p>
+</code></pre><p>With that being said, I dont think I would be switching to arm anytime soon. The only good reason to use it would be for static file hosting but it would be much cheaper to use an s3 bucket or something similar.</p>
 
       </article>
 

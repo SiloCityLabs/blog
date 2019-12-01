@@ -78,25 +78,22 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>A class written to simplify the use of the nexmo api gateway for SMS messaging. This class was a fork from another repository with new gateway endpoints added and adding an entirely new service for automated phone calls with a tts engine. <a href="https://gitlab.com/silo-city-labs-llc/Nexmo-PHP-lib">Download the file here</a> or look at the code below.</p>
-
 <h3 id="quick-examples">Quick Examples</h3>
-
-<p>1) Sending an SMS</p>
-
+<ol>
+<li>Sending an SMS</li>
+</ol>
 <pre><code>$sms = new NexmoMessage('account_key', 'account_secret');
 $sms-&gt;sendText( '+447234567890', 'MyApp', 'Hello world!' );
-</code></pre>
-
-<p>2) Recieving SMS</p>
-
+</code></pre><ol start="2">
+<li>Recieving SMS</li>
+</ol>
 <pre><code>$sms = new NexmoMessage('account_key', 'account_secret');
 if ($sms-&gt;inboundText()) {
     $sms-&gt;reply('You said: ' . $sms-&gt;text);
 }
-</code></pre>
-
-<p>3) Recieving a message receipt</p>
-
+</code></pre><ol start="3">
+<li>Recieving a message receipt</li>
+</ol>
 <pre><code>$receipt = new NexmoReceipt();
 if ($receipt-&gt;exists()) {
     switch ($receipt-&gt;status) {
@@ -110,10 +107,9 @@ if ($receipt-&gt;exists()) {
             break;
     }
 }
-</code></pre>
-
-<p>4) List purchased numbers on your account</p>
-
+</code></pre><ol start="4">
+<li>List purchased numbers on your account</li>
+</ol>
 <pre><code>$account = new NexmoAccount('account_key', 'account_secret');
 $numbers = $account-&gt;numbersList();
 </code></pre>

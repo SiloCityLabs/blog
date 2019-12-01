@@ -78,101 +78,96 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Both of these functions are designed to be used with ob_start() and process the output before its sent to the user. You can also include caching into this to reduce overhead for static pages. It takes the output of the page and makes the content up to 50% smaller in size by removing unused comments and whitespace in code. <a href="https://downloads.techreanimate.com/auowdk">Download the file here</a> or look at the code below.</p>
-
 <p>HTML minify function</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 
-<pre><code class="language-php">&lt;?php
+	<span class="cm">/*
+</span><span class="cm">	 * Warning: do not call this in main includes, only in base of html pages
+</span><span class="cm">	 * Does not work with css, js, json. only html
+</span><span class="cm">	 * 
+</span><span class="cm">	 * Must be called like this ob_start(&#34;sanitize_page&#34;);
+</span><span class="cm">	 */</span>
 
-	/*
-	 * Warning: do not call this in main includes, only in base of html pages
-	 * Does not work with css, js, json. only html
-	 * 
-	 * Must be called like this ob_start(&quot;sanitize_page&quot;);
-	 */
-
-	function sanitize_page($buffer) {
-		if(IS_DEV){
-			return $buffer;
-		}else{
-			$search = array(
-				'/\&gt;[^\S ]+/s', /*strip whitespaces after tags, except space */
-				'/[^\S ]+\&lt;/s', /*strip whitespaces before tags, except space */
-				'/(\s)+/s' /* shorten multiple whitespace sequences */
-			);
+	<span class="k">function</span> <span class="nf">sanitize_page</span><span class="p">(</span><span class="nv">$buffer</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="nx">IS_DEV</span><span class="p">){</span>
+			<span class="k">return</span> <span class="nv">$buffer</span><span class="p">;</span>
+		<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+			<span class="nv">$search</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+				<span class="s1">&#39;/\&gt;[^\S ]+/s&#39;</span><span class="p">,</span> <span class="cm">/*strip whitespaces after tags, except space */</span>
+				<span class="s1">&#39;/[^\S ]+\&lt;/s&#39;</span><span class="p">,</span> <span class="cm">/*strip whitespaces before tags, except space */</span>
+				<span class="s1">&#39;/(\s)+/s&#39;</span> <span class="cm">/* shorten multiple whitespace sequences */</span>
+			<span class="p">);</span>
 			
-			$replace = array('&gt;','&lt;','\\1');
+			<span class="nv">$replace</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;&gt;&#39;</span><span class="p">,</span><span class="s1">&#39;&lt;&#39;</span><span class="p">,</span><span class="s1">&#39;\\1&#39;</span><span class="p">);</span>
 			
-			return preg_replace($search, $replace, $buffer);
-		}
+			<span class="k">return</span> <span class="nx">preg_replace</span><span class="p">(</span><span class="nv">$search</span><span class="p">,</span> <span class="nv">$replace</span><span class="p">,</span> <span class="nv">$buffer</span><span class="p">);</span>
+		<span class="p">}</span>
 		
-	}
-</code></pre>
+	<span class="p">}</span>
+</code></pre></div><p>Json Minify Function</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 
-<p>Json Minify Function</p>
-
-<pre><code class="language-php">&lt;?php
-
-	/*
-	 * Warning: do not call this in main includes, only in base of html pages
-	 * Does not work with css, js, html. only json
-	 * 
-	 * Must be called like this ob_start(&quot;json_minify&quot;);
-	 */
+	<span class="cm">/*
+</span><span class="cm">	 * Warning: do not call this in main includes, only in base of html pages
+</span><span class="cm">	 * Does not work with css, js, html. only json
+</span><span class="cm">	 * 
+</span><span class="cm">	 * Must be called like this ob_start(&#34;json_minify&#34;);
+</span><span class="cm">	 */</span>
 	
-	function json_minify($json) {
-		if(IS_DEV){
-			$tokenizer = &quot;/\&quot;|(\/\*)|(\*\/)|(\/\/)|\n|\r/&quot;;
-			$in_string = false;
-			$in_multiline_comment = false;
-			$in_singleline_comment = false;
-			$tmp; $tmp2; $new_str = array(); $ns = 0; $from = 0; $lc; $rc; $lastIndex = 0;
+	<span class="k">function</span> <span class="nf">json_minify</span><span class="p">(</span><span class="nv">$json</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="nx">IS_DEV</span><span class="p">){</span>
+			<span class="nv">$tokenizer</span> <span class="o">=</span> <span class="s2">&#34;/</span><span class="se">\&#34;</span><span class="s2">|(\/\*)|(\*\/)|(\/\/)|</span><span class="se">\n</span><span class="s2">|</span><span class="se">\r</span><span class="s2">/&#34;</span><span class="p">;</span>
+			<span class="nv">$in_string</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+			<span class="nv">$in_multiline_comment</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+			<span class="nv">$in_singleline_comment</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+			<span class="nv">$tmp</span><span class="p">;</span> <span class="nv">$tmp2</span><span class="p">;</span> <span class="nv">$new_str</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span> <span class="nv">$ns</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$from</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$lc</span><span class="p">;</span> <span class="nv">$rc</span><span class="p">;</span> <span class="nv">$lastIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 		
-			while (preg_match($tokenizer,$json,$tmp,PREG_OFFSET_CAPTURE,$lastIndex)) {
-				$tmp = $tmp[0];
-				$lastIndex = $tmp[1] + strlen($tmp[0]);
-				$lc = substr($json,0,$lastIndex - strlen($tmp[0]));
-				$rc = substr($json,$lastIndex);
-				if (!$in_multiline_comment &amp;&amp; !$in_singleline_comment) {
-					$tmp2 = substr($lc,$from);
-					if (!$in_string) {
-						$tmp2 = preg_replace(&quot;/(\n|\r|\s)*/&quot;,&quot;&quot;,$tmp2);
-					}
-					$new_str[] = $tmp2;
-				}
-				$from = $lastIndex;
+			<span class="k">while</span> <span class="p">(</span><span class="nx">preg_match</span><span class="p">(</span><span class="nv">$tokenizer</span><span class="p">,</span><span class="nv">$json</span><span class="p">,</span><span class="nv">$tmp</span><span class="p">,</span><span class="nx">PREG_OFFSET_CAPTURE</span><span class="p">,</span><span class="nv">$lastIndex</span><span class="p">))</span> <span class="p">{</span>
+				<span class="nv">$tmp</span> <span class="o">=</span> <span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+				<span class="nv">$lastIndex</span> <span class="o">=</span> <span class="nv">$tmp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">strlen</span><span class="p">(</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+				<span class="nv">$lc</span> <span class="o">=</span> <span class="nx">substr</span><span class="p">(</span><span class="nv">$json</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nv">$lastIndex</span> <span class="o">-</span> <span class="nx">strlen</span><span class="p">(</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]));</span>
+				<span class="nv">$rc</span> <span class="o">=</span> <span class="nx">substr</span><span class="p">(</span><span class="nv">$json</span><span class="p">,</span><span class="nv">$lastIndex</span><span class="p">);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_singleline_comment</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nv">$tmp2</span> <span class="o">=</span> <span class="nx">substr</span><span class="p">(</span><span class="nv">$lc</span><span class="p">,</span><span class="nv">$from</span><span class="p">);</span>
+					<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$in_string</span><span class="p">)</span> <span class="p">{</span>
+						<span class="nv">$tmp2</span> <span class="o">=</span> <span class="nx">preg_replace</span><span class="p">(</span><span class="s2">&#34;/(</span><span class="se">\n</span><span class="s2">|</span><span class="se">\r</span><span class="s2">|\s)*/&#34;</span><span class="p">,</span><span class="s2">&#34;&#34;</span><span class="p">,</span><span class="nv">$tmp2</span><span class="p">);</span>
+					<span class="p">}</span>
+					<span class="nv">$new_str</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$tmp2</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="nv">$from</span> <span class="o">=</span> <span class="nv">$lastIndex</span><span class="p">;</span>
 		
-				if ($tmp[0] == &quot;\&quot;&quot; &amp;&amp; !$in_multiline_comment &amp;&amp; !$in_singleline_comment) {
-					preg_match(&quot;/(\\\\)*$/&quot;,$lc,$tmp2);
-					if (!$in_string || !$tmp2 || (strlen($tmp2[0]) % 2) == 0) {	/* start of string with &quot;, or unescaped &quot; character found to end string */
-						$in_string = !$in_string;
-					}
-					$from--; /* include &quot; character in next catch */
-					$rc = substr($json,$from);
-				}
-				else if ($tmp[0] == &quot;/*&quot; &amp;&amp; !$in_string &amp;&amp; !$in_multiline_comment &amp;&amp; !$in_singleline_comment) {
-					$in_multiline_comment = true;
-				}
-				else if ($tmp[0] == &quot;*/&quot; &amp;&amp; !$in_string &amp;&amp; $in_multiline_comment &amp;&amp; !$in_singleline_comment) {
-					$in_multiline_comment = false;
-				}
-				else if ($tmp[0] == &quot;//&quot; &amp;&amp; !$in_string &amp;&amp; !$in_multiline_comment &amp;&amp; !$in_singleline_comment) {
-					$in_singleline_comment = true;
-				}
-				else if (($tmp[0] == &quot;\n&quot; || $tmp[0] == &quot;\r&quot;) &amp;&amp; !$in_string &amp;&amp; !$in_multiline_comment &amp;&amp; $in_singleline_comment) {
-					$in_singleline_comment = false;
-				}
-				else if (!$in_multiline_comment &amp;&amp; !$in_singleline_comment &amp;&amp; !(preg_match(&quot;/\n|\r|\s/&quot;,$tmp[0]))) {
-					$new_str[] = $tmp[0];
-				}
-			}
-			$new_str[] = $rc;
-			return implode(&quot;&quot;,$new_str);
-		}else{
-			return $json;
-		}
-	}
-?&gt;
-</code></pre>
+				<span class="k">if</span> <span class="p">(</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="se">\&#34;</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_singleline_comment</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nx">preg_match</span><span class="p">(</span><span class="s2">&#34;/(</span><span class="se">\\\\</span><span class="s2">)*$/&#34;</span><span class="p">,</span><span class="nv">$lc</span><span class="p">,</span><span class="nv">$tmp2</span><span class="p">);</span>
+					<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$in_string</span> <span class="o">||</span> <span class="o">!</span><span class="nv">$tmp2</span> <span class="o">||</span> <span class="p">(</span><span class="nx">strlen</span><span class="p">(</span><span class="nv">$tmp2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>	<span class="cm">/* start of string with &#34;, or unescaped &#34; character found to end string */</span>
+						<span class="nv">$in_string</span> <span class="o">=</span> <span class="o">!</span><span class="nv">$in_string</span><span class="p">;</span>
+					<span class="p">}</span>
+					<span class="nv">$from</span><span class="o">--</span><span class="p">;</span> <span class="cm">/* include &#34; character in next catch */</span>
+					<span class="nv">$rc</span> <span class="o">=</span> <span class="nx">substr</span><span class="p">(</span><span class="nv">$json</span><span class="p">,</span><span class="nv">$from</span><span class="p">);</span>
+				<span class="p">}</span>
+				<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;/*&#34;</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_string</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_singleline_comment</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nv">$in_multiline_comment</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;*/&#34;</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_string</span> <span class="o">&amp;&amp;</span> <span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_singleline_comment</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nv">$in_multiline_comment</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;//&#34;</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_string</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_singleline_comment</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nv">$in_singleline_comment</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="k">else</span> <span class="k">if</span> <span class="p">((</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">||</span> <span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="se">\r</span><span class="s2">&#34;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_string</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="nv">$in_singleline_comment</span><span class="p">)</span> <span class="p">{</span>
+					<span class="nv">$in_singleline_comment</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$in_multiline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$in_singleline_comment</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">(</span><span class="nx">preg_match</span><span class="p">(</span><span class="s2">&#34;/</span><span class="se">\n</span><span class="s2">|</span><span class="se">\r</span><span class="s2">|\s/&#34;</span><span class="p">,</span><span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span> <span class="p">{</span>
+					<span class="nv">$new_str</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+			<span class="nv">$new_str</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$rc</span><span class="p">;</span>
+			<span class="k">return</span> <span class="nx">implode</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">,</span><span class="nv">$new_str</span><span class="p">);</span>
+		<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+			<span class="k">return</span> <span class="nv">$json</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>
       </article>
 
       <div class="clearfix">

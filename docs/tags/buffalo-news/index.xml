@@ -28,7 +28,6 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/android-bn-blitz/</guid>
       <description>&lt;p&gt;Built from scratch and a team of 1. This app integrates build types and flavours to quickly create another version of the application. The code base for both &lt;a href=&#34;https://silocitylabs.com/post/projects/android-buffalonews&#34;&gt;The Buffalo News&lt;/a&gt; and BN Blitz app are one in the same with simple changes that change how they work in a single config file. This was designed to be allowed to integrate into wordpress api and resold to other news orginizations.&lt;/p&gt;
-
 &lt;p&gt;The News’ team has you covered, from training camp to the draft – and every snap in between. Mark Gaughan, Jerry Sullivan, Tim Graham and Jay Skurski lead the coverage with breaking updates and in-depth analysis through daily blogs posts, stories and columns. Plus, video reports and exclusive photos from every game. On game day, get real-time reports from The News’ writers at the game.&lt;/p&gt;</description>
     </item>
     
@@ -39,13 +38,9 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/android-bnhockey/</guid>
       <description>&lt;p&gt;This application incorporates a Android Webview for display the website as an application.&lt;/p&gt;
-
 &lt;p&gt;The News’ team has you covered, from preseason to the draft – and every puck drop in between. John Vogl, Mike Harrington, Amy Moritz, Bucky Gleason and Jerry Sullivan lead the coverage with breaking news updates and in-depth analysis through daily blog posts, articles and columns. Plus, video reports and exclusive photos from every game. On game nights, get real-time reports from The News’ writers at the rink.&lt;/p&gt;
-
 &lt;p&gt;And The News’ coverage goes beyond Pegulaville. From the Cup final to the Scouting Combine, The News’ writers are on the ground at the biggest events of the year to take you inside what’s happening with your team and the league.&lt;/p&gt;
-
 &lt;p&gt;This app presents all of The Buffalo News’ coverage of the Sabres and league in a format that is optimized for fans on the go. In addition to current articles and blog updates, you will have access to photo galleries, stats and the best of The News’ Sabres archive.&lt;/p&gt;
-
 &lt;p&gt;The depth of The News’ staff is unmatched. John Vogl has been covering the Sabres since 2002-03. The award-winning writer is the Buffalo chapter chairman for the Professional Hockey Writers’ Association. Mike Harrington, a Canisius College graduate who began his career as a News reporter in 1987, has been covering the Sabres since 2007. He is a member of the Professional Hockey Writers&amp;rsquo; Association. Amy Moritz, a native of Lockport, joined The News&amp;rsquo; Sabres beat in 2013.&lt;/p&gt;</description>
     </item>
     
@@ -65,11 +60,8 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/android-buffalonews/</guid>
       <description>&lt;p&gt;Built from scratch and a team of 1. Get the latest local news, sports and weather wherever you go with The Buffalo News Android Mobile application.&lt;/p&gt;
-
 &lt;p&gt;Buffalo News makes viewing and sharing the news easy. With a few clicks, you can read and watch the latest news or share it with family and friends by e-mail or post to Twitter and Facebook.&lt;/p&gt;
-
-&lt;p&gt;Whether it&amp;rsquo;s severe weather, breaking news or sports scores and entertainment news, The Buffalo News application keeps you in-the-know while you&amp;rsquo;re on-the-go.&lt;/p&gt;
-
+&lt;p&gt;Whether it&#39;s severe weather, breaking news or sports scores and entertainment news, The Buffalo News application keeps you in-the-know while you&#39;re on-the-go.&lt;/p&gt;
 &lt;p&gt;You can also read paper copies of The Buffalo News through our &lt;a href=&#34;https://silocitylabs.com/post/projects/android-buffalonews-addon&#34;&gt;Addon application&lt;/a&gt; that integrates seamlessly with the main application.&lt;/p&gt;</description>
     </item>
     

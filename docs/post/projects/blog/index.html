@@ -13,27 +13,21 @@
         The blog when this article was written.
     
 
-
 The Issue:
-
 Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress …">
   <meta property="og:description" content="
         
         The blog when this article was written.
     
 
-
 The Issue:
-
 Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress …">
   <meta name="twitter:description" content="
         
         The blog when this article was written.
     
 
-
 The Issue:
-
 Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -215,67 +209,36 @@ if (!doNotTrack) {
         <figcaption>The blog when this article was written.</figcaption>
     </figure>
 
-
 <p>The Issue:</p>
-
 <p>Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress unfortunately is not very good with performance on high traffic websites.</p>
-
 <p>The Solution:</p>
-
 <p>We decided to try out a static site generator called hugo. After migrating we noticed extreme performance improvements. We made some more adjustments while the project was hot and decided to host on github public repo.</p>
-
-<p>Below you can see all the steps I took to move from Wordpress to Hugo + github pages and I went from a <sup>45</sup>&frasl;<sub>100</sub> seo score to currently now a <sup>98</sup>&frasl;<sub>100</sub> seo score on both mobile and desktop.</p>
-
+<p>Below you can see all the steps I took to move from Wordpress to Hugo + github pages and I went from a 45/100 seo score to currently now a 98/100 seo score on both mobile and desktop.</p>
 <h3 id="setting-up-hugo-with-a-base-theme">Setting up hugo with a base theme</h3>
-
 <p>This was probably the simplest part of the entire project. Anyone can grab a theme right off of the Hugo website and get started. I decided not to make a custom theme but to just grab a bootstrap theme, Afterall bootstrap is most websites on the internet.</p>
-
 <p>Download <a href="https://themes.gohugo.io/beautifulhugo/">the theme</a></p>
-
 <p>After I grabbed the theme me and a friend started hacking away at all the bloat it had. Removing useless css and js like a js math symbols we knew we would never use.</p>
-
 <h3 id="export-wordpress-articles">Export wordpress articles</h3>
-
 <p>Now that the theme is useable we decided to import some articles. We use a wordpress plugin to convert and export all the github pages to Markdown. It did a really good job at it but we still had to do some further tweaking.</p>
-
 <p>Some of the custom html on the pages did not carry over as markdown. We began hacking away that html and converting it to markdown format. This only took less than a few days with the use of regex and pattern search.</p>
-
 <p><a href="https://downloads.techreanimate.com/toxlbb">Wordpress to Hugo Export</a></p>
-
 <h3 id="tweaking-the-theme">Tweaking the theme</h3>
-
 <p>The theme had gotten us to basically where we were visually with wordpress. A basic blog site where users can read our posts and we can share the great knowledge we have learned.</p>
-
 <p>We wanted more now. We saw how great it was performing and decided we could improve it even more. Just by looking at our closed github issues you can see some of the <a href="https://github.com/SiloCityLabs/blog/issues?q=is%3Aissue+is%3Aclosed">changes we made</a>.</p>
-
 <p>We added custom tags for better generated pages and made some quick seo changes. Little stuff here and there mostly.</p>
-
 <h3 id="comments-system">Comments system</h3>
-
 <p>A static site generated came with one major problem. No comments on my pages. After a bit of researching I found a service called <a href="https://disqus.com/">Disqus</a> which is used by many major news orginizations and blogs. Its a universal login comment system that works with a simple js snippet.</p>
-
 <p>It has some flaws that prevent us from getting 1 extra seo point on Google Pageinsights but its entirely worth it. We can enable and disable disqus by adding <code>comments: false</code> to any markdown page allowing us to turn it off for pages like About and Newsletter.</p>
-
 <h3 id="adding-amp-support">Adding AMP support</h3>
-
 <p>The biggest seo change we made that actually does not reflect the seo score for page insights was adding AMP support to our website.</p>
-
 <p>If you know AMP its a quick way for viewers to get articles by disabling much of the bottlenecks in todays websites.</p>
-
 <p>Adding amp was quite a task, in doing so we ended up applying some of those modifications to our main website as well. We reduced the user of bootstrap submodules and shrunk the size of our css/js. We ditched jQuery on the main website with the help of a library called <a href="https://www.sitepoint.com/use-bootstrap-components-without-jquery/">Bootstrap Native</a>. Our theme also had a few instances of jQuery that were fairly easy to convert to plain JS.</p>
-
 <p>You can see our amp support by prefixing /amp/ to any post url. For example <a href="https://silocitylabs.com/amp/post/2019/09/26/installing-nano-android/">AMP: Installing nano text editor on Android</a></p>
-
 <h3 id="lazy-load">Lazy load</h3>
-
 <p>To further increase seo we took our custom markdown tag for hugo and added lazy load to images. This took our seo up by 4-5 points on Google pageinsights.</p>
-
 <p>We took that and added it right to our main.js file to keep it consolidated.</p>
-
-<h3 id="minify-and-combine-css-js">Minify and Combine CSS/JS</h3>
-
+<h3 id="minify-and-combine-cssjs">Minify and Combine CSS/JS</h3>
 <p>Hugo has a great built in feature that I beleive every hugo powered site should have enabled. I am honestly not sure why the theme did not have this done already. The setup was very easy. We took our files and combined the output withouth touching the files themselves. Just edit your templete like so:</p>
-
 <pre><code>{{ $jsmain := resources.Get &quot;js/main.js&quot; }}
 {{ $jslazy := resources.Get &quot;js/lazyload.js&quot; }}
 {{ $jshighlight := resources.Get &quot;js/highlight.min.js&quot; }}
@@ -283,27 +246,21 @@ if (!doNotTrack) {
 
 {{ $jssall := slice $jsnativebs $jshighlight $jslazy $jsmain  | resources.Concat &quot;js/bundle.js&quot; | resources.Minify }}
 &lt;script src=&quot;{{ $jssall.Permalink | absURL }}&quot;&gt;&lt;/script&gt;
-</code></pre>
-
-<h3 id="setup-github-actions-auto-deploy">Setup github actions auto deploy</h3>
-
+</code></pre><h3 id="setup-github-actions-auto-deploy">Setup github actions auto deploy</h3>
 <p>Github has granted our team Beta access to github actions wich allowed us to take our webhooks listener daemon and move it to a simpler build program. You can checkout the <a href="https://github.com/SiloCityLabs/blog/blob/master/.github/workflows/build.yml">build instructions here</a>.</p>
-
-<p>Outline as follows:
- 1. Sets up ubuntu
- 2. Installs Go
- 3. Installs Hugo
- 4. Checks out Repo
- 5. Runs Build Program
- 6. Commit Changes back to repo
- 7. Auto deployed using github pages.</p>
-
-<h3 id="re-enable-ads">Re-enable Ads</h3>
-
+<p>Outline as follows:</p>
+<ol>
+<li>Sets up ubuntu</li>
+<li>Installs Go</li>
+<li>Installs Hugo</li>
+<li>Checks out Repo</li>
+<li>Runs Build Program</li>
+<li>Commit Changes back to repo</li>
+<li>Auto deployed using github pages.</li>
+</ol>
+<h3 id="reenable-ads">Re-enable Ads</h3>
 <p>At this point we felt comfortable with the site, its seo score and decided it was time to turn ads back on. We left this for the end to keep our seo score free of troublesome ads while we improved what we could. We kept it simple and used Google Autoads script and allowed it to put ads where it would like.</p>
-
 <h3 id="future-stuff">Future stuff</h3>
-
 <p>We plan on taking the golang <a href="https://github.com/SiloCityLabs/blog/tree/master/build">build</a> program and integrating it with newsletter and other more intense tasks that were normall handled by a few wordpress plugins. They will run when github actions auto deploys. You can checkout all our progress on <a href="https://github.com/SiloCityLabs/blog/issues">github issues page</a></p>
       </article>
 

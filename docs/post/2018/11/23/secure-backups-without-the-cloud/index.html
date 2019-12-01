@@ -10,16 +10,13 @@
   <meta name="twitter:title" content="Secure Backups without the cloud" />
   <meta name="description" content="
 
-
-I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&rsquo;s worth of NAS backups. With every single cloud solution being out of price range for the size …">
+I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&#39;s worth of NAS backups. With every single cloud solution being out of price range for the size data I …">
   <meta property="og:description" content="
 
-
-I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&rsquo;s worth of NAS backups. With every single cloud solution being out of price range for the size …">
+I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&#39;s worth of NAS backups. With every single cloud solution being out of price range for the size data I …">
   <meta name="twitter:description" content="
 
-
-I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&rsquo;s worth of NAS backups. With every single cloud solution being out of price range for the size …">
+I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&#39;s worth of NAS backups. With every single cloud solution being out of price range for the size data I …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
@@ -201,78 +198,55 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg" alt="ioSafe SOLO G3 4TB USB 3.0"/>
 
-
-<p>I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&rsquo;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.</p>
-
+<p>I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB's worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
     <iframe src="//www.youtube.com/embed/u2yEVUMQyZY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
 <p>During the video you will notice he manages to burn the enclosure under serious fire directly for a bit. There are also other videos of ioSafe products under direct flames for extended periods of time and direct water blasts from the fire department after. Here we have the drive pulled out from the crisp enclosure.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/11/Untitled-1.png" alt=""/>
 
-
-<p>Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&rsquo;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.</p>
-
-<p><strong>Requirements</strong>: Linux OS, crontab, rsync, hdparm</p>
-
+<p>Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba's die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.</p>
+<p><!-- raw HTML omitted -->Requirements<!-- raw HTML omitted -->: Linux OS, crontab, rsync, hdparm</p>
 <ul>
 <li>I start off by plugging in my new drive and formatting it.</li>
 </ul>
-
-<pre>mkfs.ext4 /dev/sda1</pre>
-
+<!-- raw HTML omitted -->
 <ul>
-<li><p>After formatting I need to grab the device UUID for use later.</p>
-
-<pre><code class="language-blkid">
-/dev/sda1: UUID=&quot;fbb3b599-0a07-46f5-945d-0dbe6cac7639&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;c15d00d1-214f-4517-8c2c-8037419ff0d4&quot;
-</code></pre></li>
-
-<li><p>Now I have the UUID, lets move on to crontab. Create two cron tasks using <code>crontab -e</code></p>
-
-<pre><code class="language-0">5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
-</code></pre></li>
+<li>After formatting I need to grab the device UUID for use later.</li>
 </ul>
-
-<p>So according to this <code>5 8 * * 0</code> would run 8:05 AM every Sunday and <code>0 6 * * *</code> would run daily at 6 AM. Lets create the first script in the location you selected to save it.</p>
-
+<pre><code class="language-blkid" data-lang="blkid">
+/dev/sda1: UUID=&quot;fbb3b599-0a07-46f5-945d-0dbe6cac7639&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;c15d00d1-214f-4517-8c2c-8037419ff0d4&quot;
+</code></pre><ul>
+<li>Now I have the UUID, lets move on to crontab. Create two cron tasks using <code>crontab -e</code></li>
+</ul>
+<pre><code class="language-0" data-lang="0">5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
+</code></pre><p>So according to this <!-- raw HTML omitted -->5 8 * * 0<!-- raw HTML omitted --> would run 8:05 AM every Sunday and <!-- raw HTML omitted -->0 6 * * *<!-- raw HTML omitted --> would run daily at 6 AM. Lets create the first script in the location you selected to save it.</p>
 <ul>
 <li>This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.</li>
 </ul>
-
 <p><code>nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh</code></p>
-
-<pre><code class="language-#!/bin/bash">
+<pre><code class="language-#!/bin/bash" data-lang="#!/bin/bash">
 DRIVE_UUID=UUID-HERE
 
 mount --uuid $DRIVE_UUID /mnt/fireproof
 rsync –av /mnt/4000/ /mnt/fireproof/
 umount /mnt/fireproof/
 hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.</li>
 </ul>
-
 <p><code>nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh</code></p>
-
-<pre><code class="language-#!/bin/bash">
+<pre><code class="language-#!/bin/bash" data-lang="#!/bin/bash">
 DRIVE_UUID=UUID-HERE
 
 mount --uuid $DRIVE_UUID /mnt/fireproof
 rsync –av --delete /mnt/4000/ /mnt/fireproof/
 umount /mnt/fireproof/
 hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>Last, make sure the directory exists for the mount point, run <code>mkdir /mnt/fireproof</code></li>
 </ul>
-
 <p>I know some of you may point out that Linux automatically sleeps drives, but I just want that extra assurance that nothing will be waking it up creating unneeded wear on the drive. Also there will be no delay on this once the backup is complete.</p>
       </article>
 

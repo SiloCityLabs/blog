@@ -9,13 +9,10 @@
   <meta property="og:title" content="Installing nano text editor on Android" />
   <meta name="twitter:title" content="Installing nano text editor on Android" />
   <meta name="description" content="After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.
-
 I found a way using a couple of online sources to get it going. You …">
   <meta property="og:description" content="After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.
-
 I found a way using a couple of online sources to get it going. You …">
   <meta name="twitter:description" content="After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.
-
 I found a way using a couple of online sources to get it going. You …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -197,11 +194,8 @@ if (!doNotTrack) {
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.</p>
-
 <p>I found a way using a couple of online sources to get it going. You will need to be on a rooted device.</p>
-
 <p>Download and extract the <a href="https://downloads.techreanimate.com/mjksau">nanoforandroid.zip</a> to your desktop the run the following commands:</p>
-
 <pre><code>adb push nanoforandroid /mnt/sdcard/Download
 adb shell
 su
@@ -214,9 +208,7 @@ chmod 755 /system/xbin/nano
 chmod 755 /system/etc/profile
 export TERMINFO=/system/etc/terminfo
 export TERM=linux
-</code></pre>
-
-<p>After this you will have a working copy of nano you can use right away. Unfortunately most setups dont have init.d to automatically export the enviormental variables needed so you will need to run the last two lines above every time you reboot. Alternative is to add the lines to a startup shell script somewhere on your system. For example I have one located inside of <code>/system/bin/rootsudaemon.sh</code>.</p>
+</code></pre><p>After this you will have a working copy of nano you can use right away. Unfortunately most setups dont have init.d to automatically export the enviormental variables needed so you will need to run the last two lines above every time you reboot. Alternative is to add the lines to a startup shell script somewhere on your system. For example I have one located inside of <code>/system/bin/rootsudaemon.sh</code>.</p>
       </article>
 
       <div class="clearfix">
