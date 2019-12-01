@@ -8,15 +8,15 @@
   <title>3d printed wrist brace – WIP instructions</title>
   <meta property="og:title" content="3d printed wrist brace – WIP instructions" />
   <meta name="twitter:title" content="3d printed wrist brace – WIP instructions" />
-  <meta name="description" content="I won&rsquo;t be able to finish my wrist brace project for a while. These instructions are very rough because they&rsquo;re not actually finished. 
-
-Post in comments if anything needs clarification. …">
-  <meta property="og:description" content="I won&rsquo;t be able to finish my wrist brace project for a while. These instructions are very rough because they&rsquo;re not actually finished. 
-
-Post in comments if anything needs clarification. …">
-  <meta name="twitter:description" content="I won&rsquo;t be able to finish my wrist brace project for a while. These instructions are very rough because they&rsquo;re not actually finished. 
-
-Post in comments if anything needs clarification. …">
+  <meta name="description" content="I won&#39;t be able to finish my wrist brace project for a while. These instructions are very rough because they&#39;re not actually finished. 
+Post in comments if anything needs clarification.
+Scanning …">
+  <meta property="og:description" content="I won&#39;t be able to finish my wrist brace project for a while. These instructions are very rough because they&#39;re not actually finished. 
+Post in comments if anything needs clarification.
+Scanning …">
+  <meta name="twitter:description" content="I won&#39;t be able to finish my wrist brace project for a while. These instructions are very rough because they&#39;re not actually finished. 
+Post in comments if anything needs clarification.
+Scanning …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
@@ -196,14 +196,10 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>I won&rsquo;t be able to finish <a href="https://blog.silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/">my wrist brace project</a> for a while. These instructions are very rough because they&rsquo;re not actually finished. </p>
-
+        <p>I won't be able to finish <a href="https://blog.silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/">my wrist brace project</a> for a while. These instructions are very rough because they're not actually finished. </p>
 <p>Post in comments if anything needs clarification.</p>
-
 <h1 id="scanning">Scanning</h1>
-
 <p>requirements:</p>
-
 <ul>
 <li>Windows</li>
 <li>Kinect (with power adapter)</li>
@@ -213,108 +209,70 @@ if (!doNotTrack) {
 <li>an assistant</li>
 <li>a small open area</li>
 </ul>
-
-<p>Here&rsquo;s the Skanect guide I watched:</p>
-
+<p>Here's the Skanect guide I watched:</p>
 <p><a href="https://www.youtube.com/watch?v=_cKb3oEM47E">https://www.youtube.com/watch?v=_cKb3oEM47E</a></p>
-
-<p>Optional:<br />
+<p>Optional:<br>
 Scanning was initially a huge pain in the ass. Moving to much would cause Skanect to fail. My fix was to strap a screen to the back of the Kinect so that my assistant could watch the Skanect UI.</p>
-
 <ul>
 <li>run VNC server (or RDP or whatever) on the computer</li>
 <li>use a smartphone and connect to VNC</li>
 <li>strap the smartphone to the back of the Kinect (I used velcro straps and rubber bands)</li>
 </ul>
-
 <p>Now the assistant can watch Skanect while moving around.</p>
-
-<p>alternative raspi scanner that I have not tried:<br />
+<p>alternative raspi scanner that I have not tried:<br>
 <a href="https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/">https://www.slashgear.com/raspberry-pi-2-kinect-make-for-a-handy-3d-scanner-06391772/</a></p>
-
 <p>Scanning requires either a beefy CPU or CUDA acceleration from an NVidia GPU. Slow hardware requires slooowwww movement of the Kinect. Moving too fast will cause the scan to fail.</p>
-
 <p>Install Skanect</p>
-
 <p>If you have an NVidia card, install CUDA drivers (takes like 20-30min to install)</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/08/orig-scan-watertight.jpg" alt=""/>
 
-
-<p>After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here&rsquo;s what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.</p>
-
-<p>Skanect scales in meters and I haven&rsquo;t figured out how to import/export with Blender properly (you&rsquo;re supposed to do it in the scene but it didn&rsquo;t work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &ldquo;m&rdquo; for meters, fix any errors, then save (as STL). Now it&rsquo;s scaled.</p>
-
+<p>After scanning you can do some basic editing in Skanect. Make the model watertight and do a rough crop. You can edit more in Blender later. Here's what my original scan looks like after making it watertight. There was a small indent that I had to fix in Blender.</p>
+<p>Skanect scales in meters and I haven't figured out how to import/export with Blender properly (you're supposed to do it in the scene but it didn't work for me). After editing your model in Blender, export the STL, open in Windows 3d Builder, select the &ldquo;m&rdquo; for meters, fix any errors, then save (as STL). Now it's scaled.</p>
 <h1 id="blender">Blender</h1>
-
-<p>Blender tutorial. If you&rsquo;ve never used Blender then I recommend watching up to part 5 and following along.<br />
+<p>Blender tutorial. If you've never used Blender then I recommend watching up to part 5 and following along.<br>
 <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P">https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P</a></p>
-
 <p>Use your new Blender skills to edit the model. Crop it as needed, fix irregularities, and bisect it.</p>
-
-<p>Bisect to split the brace down the middle<br />
-<a href="https://www.youtube.com/watch?v=UjLaxaLJZK4">https://www.youtube.com/watch?v=UjLaxaLJZK4</a><del></del></p>
-
+<p>Bisect to split the brace down the middle<br>
+<a href="https://www.youtube.com/watch?v=UjLaxaLJZK4">https://www.youtube.com/watch?v=UjLaxaLJZK4</a><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/08/01-wtf.png" alt=""/>
 
-
 <p>My model had some random garbage points that were sticking off the main model. That required cleanup.</p>
-
-<p>Clean up garbo:<br />
--Edit Mode<br />
--select all<br />
+<p>Clean up garbo:<br>
+-Edit Mode<br>
+-select all<br>
 -Mesh &gt; Cleanup &gt; Degenerate Dissolve</p>
-
 <p>Time to skeletonize it with modifiers. Were reducing the polys, then wireframing the simplified geometry, then smoothing it to remove hard corners. Switch to object mode. Add these modifiers in order and play around with all the settings.</p>
-
 <p>decimate</p>
-
 <p>-adjust the ratio, play with settings</p>
-
 <p>wireframe</p>
-
-<p>-uncheck even thickness<br />
--check boundary<br />
+<p>-uncheck even thickness<br>
+-check boundary<br>
 -adjust thickness</p>
-
 <p>subdivide (smooth)</p>
-
 <p>-adjust Views for smoothing</p>
-
 <p>Here what my model looked like early on. I wireframed it without reducing the polys and it created this fine hole pattern:</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/08/07-tada-its-fixed.png" alt=""/>
 
-
-<p>Here&rsquo;s my latest version. This is after bisecting it, and decimate and subdivide modifiers. It&rsquo;s basically done, I just have to make it at least 4x thicker because this was too flexible once printed.</p>
-
+<p>Here's my latest version. This is after bisecting it, and decimate and subdivide modifiers. It's basically done, I just have to make it at least 4x thicker because this was too flexible once printed.</p>
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/08/final-ish.jpg" alt=""/>
 
-
-<p>I also have a method for adding holes for velcro straps. It&rsquo;s not strictly necessary but it&rsquo;ll make the slots line up nicely.</p>
-
-<p>Boolean Modifier<br />
+<p>I also have a method for adding holes for velcro straps. It's not strictly necessary but it'll make the slots line up nicely.</p>
+<p>Boolean Modifier<br>
 <a href="https://www.youtube.com/watch?v=pcUe-ab_jQs">https://www.youtube.com/watch?v=pcUe-ab_jQs</a></p>
-
-<p>-create some cylinders or boxes that pass through the spots you want holes<br />
--to the arm, add a Boolean Modifier, select Difference, select a cylinder/box<br />
--hide boxes<br />
--if it&rsquo;s good hit Apply to permanently apply it<br />
+<p>-create some cylinders or boxes that pass through the spots you want holes<br>
+-to the arm, add a Boolean Modifier, select Difference, select a cylinder/box<br>
+-hide boxes<br>
+-if it's good hit Apply to permanently apply it<br>
 -delete the faces of the beams that are created</p>
-
 <p>export to STL</p>
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p>In the future swap the velcro for a hinge:</p>
-
 <p><a href="https://www.thingiverse.com/thing:1615753">https://www.thingiverse.com/thing:1615753</a></p>
-
-<p>&nbsp;</p>
+<p> </p>
       </article>
 
       <div class="clearfix">

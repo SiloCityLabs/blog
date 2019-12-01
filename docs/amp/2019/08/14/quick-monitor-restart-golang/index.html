@@ -81,90 +81,81 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<h2 id="go-applications">Go Applications</h2>
-
+        <h2 id="go-applications">Go Applications</h2>
 <p>On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.</p>
-
 <p>Run it like so after compiling to a binary</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nohup ./restart <span class="p">&amp;</span>
+</code></pre></div><p>The code</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
-<pre><code class="language-bash">nohup ./restart &amp;
-</code></pre>
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&#34;fmt&#34;</span>
+	<span class="s">&#34;io/ioutil&#34;</span>
+	<span class="s">&#34;log&#34;</span>
+	<span class="s">&#34;os/exec&#34;</span>
+	<span class="s">&#34;runtime&#34;</span>
+	<span class="s">&#34;strconv&#34;</span>
+	<span class="s">&#34;strings&#34;</span>
+	<span class="s">&#34;time&#34;</span>
+<span class="p">)</span>
 
-<p>The code</p>
+<span class="kd">func</span> <span class="nf">getCPUSample</span><span class="p">(</span><span class="p">)</span> <span class="p">(</span><span class="nx">idle</span><span class="p">,</span> <span class="nx">total</span> <span class="kt">uint64</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">contents</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="s">&#34;/proc/stat&#34;</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="k">return</span>
+	<span class="p">}</span>
+	<span class="nx">lines</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">contents</span><span class="p">)</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+	<span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">line</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">lines</span> <span class="p">{</span>
+		<span class="nx">fields</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">Fields</span><span class="p">(</span><span class="nx">line</span><span class="p">)</span>
+		<span class="k">if</span> <span class="nx">fields</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#34;cpu&#34;</span> <span class="p">{</span>
+			<span class="nx">numFields</span> <span class="o">:=</span> <span class="nb">len</span><span class="p">(</span><span class="nx">fields</span><span class="p">)</span>
+			<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="nx">numFields</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+				<span class="nx">val</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">ParseUint</span><span class="p">(</span><span class="nx">fields</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+				<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+					<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Error: &#34;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">fields</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+				<span class="p">}</span>
+				<span class="nx">total</span> <span class="o">+=</span> <span class="nx">val</span> <span class="c1">// tally up all the numbers to get total ticks
+</span><span class="c1"></span>				<span class="k">if</span> <span class="nx">i</span> <span class="o">==</span> <span class="mi">4</span> <span class="p">{</span>  <span class="c1">// idle is the 5th field in the cpu line
+</span><span class="c1"></span>					<span class="nx">idle</span> <span class="p">=</span> <span class="nx">val</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+			<span class="k">return</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">return</span>
+<span class="p">}</span>
 
-<pre><code class="language-go">package main
+<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
 
-import (
-	&quot;fmt&quot;
-	&quot;io/ioutil&quot;
-	&quot;log&quot;
-	&quot;os/exec&quot;
-	&quot;runtime&quot;
-	&quot;strconv&quot;
-	&quot;strings&quot;
-	&quot;time&quot;
-)
+	<span class="c1">// Check every 30 seconds
+</span><span class="c1"></span>	<span class="k">for</span> <span class="p">{</span>
+		<span class="nx">time</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="mi">30</span> <span class="o">*</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
 
-func getCPUSample() (idle, total uint64) {
-	contents, err := ioutil.ReadFile(&quot;/proc/stat&quot;)
-	if err != nil {
-		return
-	}
-	lines := strings.Split(string(contents), &quot;\n&quot;)
-	for _, line := range lines {
-		fields := strings.Fields(line)
-		if fields[0] == &quot;cpu&quot; {
-			numFields := len(fields)
-			for i := 1; i &lt; numFields; i++ {
-				val, err := strconv.ParseUint(fields[i], 10, 64)
-				if err != nil {
-					fmt.Println(&quot;Error: &quot;, i, fields[i], err)
-				}
-				total += val // tally up all the numbers to get total ticks
-				if i == 4 {  // idle is the 5th field in the cpu line
-					idle = val
-				}
-			}
-			return
-		}
-	}
-	return
-}
+		<span class="nx">idle0</span><span class="p">,</span> <span class="nx">total0</span> <span class="o">:=</span> <span class="nf">getCPUSample</span><span class="p">(</span><span class="p">)</span>
+		<span class="nx">time</span><span class="p">.</span><span class="nf">Sleep</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
+		<span class="nx">idle1</span><span class="p">,</span> <span class="nx">total1</span> <span class="o">:=</span> <span class="nf">getCPUSample</span><span class="p">(</span><span class="p">)</span>
 
-func main() {
+		<span class="nx">idleTicks</span> <span class="o">:=</span> <span class="nb">float64</span><span class="p">(</span><span class="nx">idle1</span> <span class="o">-</span> <span class="nx">idle0</span><span class="p">)</span>
+		<span class="nx">totalTicks</span> <span class="o">:=</span> <span class="nb">float64</span><span class="p">(</span><span class="nx">total1</span> <span class="o">-</span> <span class="nx">total0</span><span class="p">)</span>
+		<span class="nx">cpuUsage</span> <span class="o">:=</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="nx">totalTicks</span> <span class="o">-</span> <span class="nx">idleTicks</span><span class="p">)</span> <span class="o">/</span> <span class="nx">totalTicks</span>
 
-	// Check every 30 seconds
-	for {
-		time.Sleep(30 * time.Second)
+		<span class="k">if</span> <span class="nx">cpuUsage</span> <span class="p">&gt;</span> <span class="mi">50</span> <span class="p">{</span>
 
-		idle0, total0 := getCPUSample()
-		time.Sleep(3 * time.Second)
-		idle1, total1 := getCPUSample()
+			<span class="nx">cmd</span> <span class="o">:=</span> <span class="nx">exec</span><span class="p">.</span><span class="nf">Command</span><span class="p">(</span><span class="s">&#34;sudo&#34;</span><span class="p">,</span> <span class="s">&#34;pm2&#34;</span><span class="p">,</span> <span class="s">&#34;restart&#34;</span><span class="p">,</span> <span class="s">&#34;all&#34;</span><span class="p">)</span>
+			<span class="k">if</span> <span class="nx">runtime</span><span class="p">.</span><span class="nx">GOOS</span> <span class="o">==</span> <span class="s">&#34;windows&#34;</span> <span class="p">{</span>
+				<span class="nx">cmd</span> <span class="p">=</span> <span class="nx">exec</span><span class="p">.</span><span class="nf">Command</span><span class="p">(</span><span class="s">&#34;tasklist&#34;</span><span class="p">)</span>
+			<span class="p">}</span>
+			<span class="nx">err</span> <span class="o">:=</span> <span class="nx">cmd</span><span class="p">.</span><span class="nf">Run</span><span class="p">(</span><span class="p">)</span>
+			<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+				<span class="nx">log</span><span class="p">.</span><span class="nf">Fatalf</span><span class="p">(</span><span class="s">&#34;cmd.Run() failed with %s\n&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+			<span class="p">}</span>
 
-		idleTicks := float64(idle1 - idle0)
-		totalTicks := float64(total1 - total0)
-		cpuUsage := 100 * (totalTicks - idleTicks) / totalTicks
+			<span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;CPU usage is %f%%\n&#34;</span><span class="p">,</span> <span class="nx">cpuUsage</span><span class="p">)</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
 
-		if cpuUsage &gt; 50 {
-
-			cmd := exec.Command(&quot;sudo&quot;, &quot;pm2&quot;, &quot;restart&quot;, &quot;all&quot;)
-			if runtime.GOOS == &quot;windows&quot; {
-				cmd = exec.Command(&quot;tasklist&quot;)
-			}
-			err := cmd.Run()
-			if err != nil {
-				log.Fatalf(&quot;cmd.Run() failed with %s\n&quot;, err)
-			}
-
-			fmt.Printf(&quot;CPU usage is %f%%\n&quot;, cpuUsage)
-		}
-	}
-
-}
-</code></pre>
-
+<span class="p">}</span>
+</code></pre></div>
       </article>
 
       <div class="clearfix">

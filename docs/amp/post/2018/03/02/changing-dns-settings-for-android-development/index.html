@@ -11,24 +11,21 @@
   <meta name="description" content="
     
 
-
-&nbsp;
-
-This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required. …">
+ 
+This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.
+First I …">
   <meta property="og:description" content="
     
 
-
-&nbsp;
-
-This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required. …">
+ 
+This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.
+First I …">
   <meta name="twitter:description" content="
     
 
-
-&nbsp;
-
-This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required. …">
+ 
+This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.
+First I …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
@@ -102,55 +99,30 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
         <amp-img src="https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg" alt="" height="395" width="728" layout="responsive"></amp-img>
     
 
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p>This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.</p>
-
 <p>First I will describe the use case scenario where this is useful:</p>
-
 <p><strong>Live:</strong></p>
-
 <p><a href="http://codrcg.com">codrcg.com</a></p>
-
 <p>192.3.206.221</p>
-
 <p>(public server)</p>
-
 <p><a href="https://pastebin.com/raw/63dFFz2C">https://pastebin.com/raw/63dFFz2C</a></p>
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p><strong>Staging / Test:</strong></p>
-
 <p><a href="http://codrcg.com">codrcg.com</a></p>
-
 <p>10.5.1.143</p>
-
 <p>(internal server)</p>
-
 <p><a href="https://pastebin.com/raw/txav6Yit">https://pastebin.com/raw/txav6Yit</a></p>
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p><strong>Local Desktop:</strong></p>
-
 <p><a href="http://codrcg.com">codrcg.com</a></p>
-
 <p>192.168.1.256</p>
-
 <p>(static desktop ip)</p>
-
 <p><a href="https://pastebin.com/raw/FudTpY1z">https://pastebin.com/raw/FudTpY1z</a></p>
-
-<p>&nbsp;</p>
-
-<p>You&rsquo;ll notice for each setup I have created pastebin links to where my hosts file is located, the format is &ldquo;ip hostname&rdquo; with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use <a href="http://somewebsite.com/dns-settings/live.txt">http://somewebsite.com/dns-settings/live.txt</a>. This allows me to edit without updating my android device.</p>
-
-<p>&nbsp;</p>
-
+<p> </p>
+<p>You'll notice for each setup I have created pastebin links to where my hosts file is located, the format is &ldquo;ip hostname&rdquo; with one per line, just like a windows /etc/hosts file. You will need this in a later step for access to your settings. If you have a web server for static links, that will be even better but optional, I use <a href="http://somewebsite.com/dns-settings/live.txt">http://somewebsite.com/dns-settings/live.txt</a>. This allows me to edit without updating my android device.</p>
+<p> </p>
 <p><strong>Step 1 - Basic application settings:</strong></p>
-
 <ul>
 <li>Download (<a href="http://a.tra.li/SF9e">Daedalus</a>) and open the application.</li>
 <li>Click on the menu then click &ldquo;Servers&rdquo;</li>
@@ -161,11 +133,9 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-15.jpg" alt="" height="1280" width="720" layout="responsive"></amp-img>
     
-
 
 <ul>
 <li>Click the add button and add the two google servers &ldquo;8.8.8.8&rdquo; and &ldquo;8.8.4.4&rdquo;, You can substitute these for your preferred DNS provider as well.</li>
@@ -176,11 +146,9 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-33-Copy.jpg" alt="" height="1135" width="1920" layout="responsive"></amp-img>
     
-
 
 <ul>
 <li>Activate these dns servers in the menu by clicking on &ldquo;Settings&rdquo;</li>
@@ -192,25 +160,18 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-32.jpg" alt="" height="1280" width="1444" layout="responsive"></amp-img>
     
 
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
+<p> </p>
+<p> </p>
 <p><strong>Step 2 - Creating hosts files:</strong></p>
-
 <ul>
 <li>If you do not have your own server, you can use <a href="https://pastebin.com">pastebin.com</a> to host your hosts files for use in the next steps.</li>
 <li>Create a <a href="https://pastebin.com">pastebin</a> link for each mode, you can add as many hosts as you need to test like below. Then hit &ldquo;Create New Paste&rdquo;</li>
 </ul>
-
-<p>&nbsp;</p>
-
+<p> </p>
 
 
 
@@ -221,11 +182,9 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
         <amp-img src="https://silocitylabs.com/uploads/2018/03/pastebin.png" alt="" height="746" width="1154" layout="responsive"></amp-img>
     
 
-
 <ul>
 <li>Click on the Raw button and copy this link somewhere for later use, Repeat steps for each mode.</li>
 </ul>
-
 
 
 
@@ -236,9 +195,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
         <amp-img src="https://silocitylabs.com/uploads/2018/03/pastebin2.png" alt="" height="584" width="1154" layout="responsive"></amp-img>
     
 
-
 <p><strong>Step 3 - Setting up the rules:</strong></p>
-
 <ul>
 <li>Back to the menu now, Click on &ldquo;Rules&rdquo;.</li>
 <li>Add a new rule for each development mode, Live, staging, dev. Filename is not crucial, just make something up.</li>
@@ -250,16 +207,12 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-13-Copy.jpg" alt="" height="1134" width="1920" layout="responsive"></amp-img>
     
 
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p><strong>Step 4 - Activating:</strong></p>
-
 <ul>
 <li>Tap and activate the mode you wish to be in, You can activate more than one at a time so be careful as this will override one or the other.</li>
 <li>In the menu go to home, and hit the &ldquo;Activate&rdquo; button.</li>
@@ -270,22 +223,17 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/03/photo_2018-03-02_10-35-08.jpg" alt="" height="1276" width="1442" layout="responsive"></amp-img>
     
 
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p><strong>Step 5 - Testing:</strong></p>
-
 <ul>
 <li>The final setup, lets see if I am hitting my dev server.</li>
 <li>As you can see in the app below, the short url is no longer short, I now get a full url as the dev server doesnt have an api key to tra.li link shortener.</li>
 <li>Depending on the use-case it may be difficult to detect which server your hitting, You can go back into Daedalus in the menu and select test. Type your domain name and see if the ip matches your dev server.</li>
 </ul>
-
 
 
 

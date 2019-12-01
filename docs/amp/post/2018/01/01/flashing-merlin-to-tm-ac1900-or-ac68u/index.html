@@ -82,27 +82,16 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Very few people know that you can save yourself some money by buying a <a href="http://a.tra.li/Smz7">T-mobile router on Amazon</a>. Downside is having to flash it to have the latest firmware free of vulnerabilities. In this guide I will show you how to flash a TM-AC1900 to a RT-AC68U then into merlin custom firmware. I have tested it myself and can confirm that it works.</p>
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p>Update: Asus began rolling back firmware on the stock setups. They are not providing Merlin with the source for Ai-Mesh so you need to be on stock to use it. I have updated the guide to provide instructions on how to prevent the rollback from happening. You can also use this guide to recover from a rollback.</p>
-
-<p>I will be posting soon about my friends dual router setup using two TM-AC1900&rsquo;s.</p>
-
+<p>I will be posting soon about my friends dual router setup using two TM-AC1900's.</p>
 <h2 id="1-download-and-install-prerequisites">1. Download and install Prerequisites:</h2>
-
 <p>You will need an active internet connection on another device to get the cfe file.</p>
-
 <p><strong>1.1.</strong> <strong>Download all the needed files:</strong></p>
-
 <p><a href="https://downloads.techreanimate.com/pmafuh">Download Link</a> with everything packaged together into a folder named &ldquo;router&rdquo; (recommended option).</p>
-
 <p>Install Asus Restore Utility. Everything else packaged will run without installation.</p>
-
 <p><strong>OR</strong></p>
-
 <p>Individual links to latest downloads</p>
-
 <ul>
 <li><a href="http://a.tra.li/Smz6">WinSCP</a></li>
 <li><a href="http://a.tra.li/Smz5">Putty</a></li>
@@ -112,19 +101,14 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <li><a href="http://a.tra.li/Smz1">Latest Stock AC68U</a></li>
 <li><a href="http://a.tra.li/Smz0">Latest Merlin Firmware</a> (<a href="https://downloads.techreanimate.com/fcgxkf">mirror</a>)</li>
 </ul>
-
 <ol>
 <li>Install WinSCP, Putty, Asus Restore Utility.</li>
 <li>Create a folder on your desktop, name it &ldquo;router&rdquo;.</li>
 <li>Download Flash Images AC68U and extract it to the newly made router folder. It contains a firmware to downgrade to, a firmware to upgrade to, and mtd-write.</li>
 </ol>
-
-<p>&nbsp;</p>
-
+<p> </p>
 <h2 id="2-how-to-flash-ac1900-to-ac68u">2. How to flash AC1900 to AC68U:</h2>
-
 <p><strong>2.1. Set static IP for PC</strong>:</p>
-
 <ul>
 <li><em>start &gt; run &gt; ncpa.cpl &gt; double click Ethernet &gt; properties &gt; IPV4 &gt;</em></li>
 <li><em>IP: 192.168.29.5</em></li>
@@ -137,29 +121,24 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/01/Untitled.png" alt="" height="455" width="400" layout="responsive"></amp-img>
     
 
-
 <p><strong>2.2. Place router into Recovery/Restore mode:</strong></p>
-
 <ul>
 <li><em>With the router on hold reset button 10 seconds</em></li>
 <li><em>Power off router (keep holding reset)</em></li>
 <li><em>Wait 10 seconds, keep holding reset</em></li>
 <li><em>Power on router holding reset for 10 more seconds (this part is very finicky, has to be exactly 10. Anymore or less wont put it into this mode)</em></li>
 </ul>
-
 <p><strong>2.3. Flash the older T-Mobile firmware:</strong></p>
-
 <ul>
-<li><p>Go to 192.168.29.1 in a web browser</p>
-
-<p><em>If Mini-CFE won’t load use Asus Restore Utility</em></p></li>
+<li>
+<p>Go to 192.168.29.1 in a web browser</p>
+<p><em>If Mini-CFE won’t load use Asus Restore Utility</em></p>
+</li>
 </ul>
-
 
 
 
@@ -169,7 +148,6 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     
         <amp-img src="https://silocitylabs.com/uploads/2018/01/Untitled3.png" alt="" height="304" width="640" layout="responsive"></amp-img>
     
-
 
 <ul>
 <li>Flash TM-AC1900_3.0.0.4_376_1703-g0ffdbba.trx from &ldquo;Flash Images AC68U&rdquo;</li>
@@ -181,23 +159,17 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/01/Untitled2.png" alt="" height="280" width="591" layout="responsive"></amp-img>
     
 
-
 <p><strong>2.4. Flashing firmware, and cfe file:</strong></p>
-
 <ul>
-<li>Log in to router at <a href="http://192.168.29.1">http://192.168.29.1</a> (admin:password or admin:admin)</li>
+<li>Log in to router at http://192.168.29.1 (admin:password or admin:admin)</li>
 <li>Go to Administration &gt; System &gt; Enable SSH &gt; Yes &gt; Apply</li>
-<li>Open Putty (ssh) and connect to 192.168.29.1 using a admin:password or admin:admin_
-<br /></li>
+<li>Open Putty (ssh) and connect to 192.168.29.1 using a admin:password or admin:admin_</li>
 </ul>
-
 <p>_</p>
-
 
 
 
@@ -208,11 +180,9 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
         <amp-img src="https://silocitylabs.com/uploads/2018/01/7.png" alt="" height="437" width="452" layout="responsive"></amp-img>
     
 
-
 <ul>
 <li>Open WinSCP (<em>select SCP as file protocol)</em> and connect to 192.168.29.1 using a admin:password or admin:admin</li>
 </ul>
-
 
 
 
@@ -223,19 +193,21 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
         <amp-img src="https://silocitylabs.com/uploads/2018/01/9.png" alt="" height="423" width="626" layout="responsive"></amp-img>
     
 
-
 <ul>
-<li><p>In putty type:</p>
-
-<p><code>cat /dev/mtd0 &gt; original_cfe.bin</code></p></li>
-
-<li><p>In WinSCP refresh the window on the right side and note that original_cfe.bin is present</p></li>
-
-<li><p>Copy original_cfe.bin to a local drive</p></li>
-
-<li><p>Upload original_cfe.bin to <a href="https://cfeditor.pipeline.sh/">https://cfeditor.pipeline.sh/</a> &gt; Select 1.0.2.0 US (AiMesh for 384+ builds) as Source CFE &gt; Download the new .bin &gt; rename it to new_cfe.bin (Optional, You can check Max for TX power to avoid doing step 5 again)</p></li>
+<li>
+<p>In putty type:</p>
+<p><code>cat /dev/mtd0 &gt; original_cfe.bin</code></p>
+</li>
+<li>
+<p>In WinSCP refresh the window on the right side and note that original_cfe.bin is present</p>
+</li>
+<li>
+<p>Copy original_cfe.bin to a local drive</p>
+</li>
+<li>
+<p>Upload original_cfe.bin to <a href="https://cfeditor.pipeline.sh/">https://cfeditor.pipeline.sh/</a> &gt; Select 1.0.2.0 US (AiMesh for 384+ builds) as Source CFE &gt; Download the new .bin &gt; rename it to new_cfe.bin (Optional, You can check Max for TX power to avoid doing step 5 again)</p>
+</li>
 </ul>
-
 
 
 
@@ -246,37 +218,35 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
         <amp-img src="https://silocitylabs.com/uploads/2018/01/10.png" alt="" height="1054" width="1920" layout="responsive"></amp-img>
     
 
-
 <ul>
-<li>Upload <strong>new_cfe.bin</strong> &amp; <strong>mtd-write</strong> &amp; <strong>FW_RT_AC68U_30043763626.trx </strong>to router through WinSCP. Files located inside &ldquo;Flash Images AC68U&rdquo; folder.</li>
-
-<li><p>In Putty type:</p>
-
-<p><code>chmod u+x mtd-write</code></p></li>
-
-<li><p>In Putty type:</p>
-
-<p><code>./mtd-write new_cfe.bin boot</code></p></li>
-
-<li><p>In Putty type:</p>
-
-<p><code>mtd-write2 FW_RT_AC68U_30043763626.trx linux</code></p></li>
-
-<li><p>You may get an error from putty terminal, you can ignore it.</p></li>
+<li>
+<p>Upload <strong>new_cfe.bin</strong> &amp; <strong>mtd-write</strong> &amp; **FW_RT_AC68U_30043763626.trx **to router through WinSCP. Files located inside &ldquo;Flash Images AC68U&rdquo; folder.</p>
+</li>
+<li>
+<p>In Putty type:</p>
+<p><code>chmod u+x mtd-write</code></p>
+</li>
+<li>
+<p>In Putty type:</p>
+<p><code>./mtd-write new_cfe.bin boot</code></p>
+</li>
+<li>
+<p>In Putty type:</p>
+<p><code>mtd-write2 FW_RT_AC68U_30043763626.trx linux</code></p>
+</li>
+<li>
+<p>You may get an error from putty terminal, you can ignore it.</p>
+</li>
 </ul>
-
 <p><strong>2.4. NVRAM reset:</strong></p>
-
 <ul>
 <li><em>Power off router</em></li>
 <li><em>Wait 10 seconds</em></li>
 <li><em>Press and hold WPS button</em></li>
-<li><em>Power up the router and continue to hold WPS button for 15-20 seconds</em><del></del></li>
+<li>_Power up the router and continue to hold WPS button for 15-20 seconds_<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
 <li>wait for reboot 2-5 mins</li>
 </ul>
-
 <p><strong>2.4. Flash Asus stock firmware:</strong></p>
-
 <ul>
 <li>Reset PC IP back to default from steps 2.1</li>
 </ul>
@@ -286,11 +256,9 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/01/Untitled5.png" alt="" height="455" width="400" layout="responsive"></amp-img>
     
-
 
 <ul>
 <li>Log in to router using 192.168.1.1 and the router is now an AC68U with 64MB jffs</li>
@@ -302,73 +270,68 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
 
-
     
         <amp-img src="https://silocitylabs.com/uploads/2018/01/11.png" alt="" height="1007" width="1449" layout="responsive"></amp-img>
     
 
-
 <ul>
 <li>Complete! If you continue, you will be going from stock asus to a custom firmware that will enable hardware acceleration and provide you with more benefits in performance and features.</li>
 </ul>
-
 <h2 id="3-how-to-flash-ac68u-to-merlin">3. How to flash AC68U to Merlin:</h2>
-
 <ul>
 <li>Make sure you are on the latest stock version, older versions use <a href="https://github.com/RMerl/asuswrt-merlin/wiki/Installation">different file structures</a> and may affect this installation.</li>
 <li>Under Administration &gt; Firmware Upgrade. upload <strong>RT-AC68U_380.69_0.trx</strong> located in the &ldquo;Latest Merlin&rdquo; folder.</li>
 <li>Perform an NVRAM reset from steps 2.4</li>
 <li>Complete! Its that simple.</li>
 </ul>
-
 <h2 id="4-ac68u-overclock">4. AC68U Overclock:</h2>
-
 <p>The T-Mobile version of the router comes clocked at 800mhz. Overclock it to 1ghz with these instructions (only tested with Merlin build):</p>
-
 <ul>
 <li>Make sure to have ssh enabled. Go to Administration &gt; System &gt; Enable SSH &gt; LAN only &gt; Apply</li>
 <li>Log in to router using putty and type the following commands
-
 <ul>
 <li><code>nvram get clkfreq</code></li>
 <li><code>nvram set clkfreq=1000,800</code></li>
 <li><code>nvram commit</code></li>
-</ul></li>
+</ul>
+</li>
 <li>Reboot</li>
 </ul>
-
 <h2 id="5-ac68u-max-tx-power">5. AC68U Max TX Power:</h2>
-
 <ul>
-<li>Log in to router using putty</li>
-
-<li><p>In putty type:</p>
-
-<p><code>cat /dev/mtd0 &gt; original_cfe.bin</code></p></li>
-
-<li><p>In WinSCP refresh the window on the right side and note that original_cfe.bin is present</p></li>
-
-<li><p>Copy original_cfe.bin to a local drive</p></li>
-
-<li><p>Upload original_cfe.bin to <a href="https://cfeditor.pipeline.sh/">https://cfeditor.pipeline.sh/</a> &gt; Select 1.0.2.0 US as Source CFE &gt; Check Max TX Power &gt; Download the new .bin &gt; rename it to new_cfe.bin</p></li>
-
-<li><p>Upload <strong>new_cfe.bin</strong> &amp; <strong>mtd-write</strong><strong> </strong>to router through WinSCP.</p></li>
-
-<li><p>In Putty type:</p>
-
-<p><code>chmod u+x mtd-write</code></p></li>
-
-<li><p>In Putty type:</p>
-
-<p><code>./mtd-write new_cfe.bin boot</code></p></li>
-
-<li><p>Reboot</p></li>
+<li>
+<p>Log in to router using putty</p>
+</li>
+<li>
+<p>In putty type:</p>
+<p><code>cat /dev/mtd0 &gt; original_cfe.bin</code></p>
+</li>
+<li>
+<p>In WinSCP refresh the window on the right side and note that original_cfe.bin is present</p>
+</li>
+<li>
+<p>Copy original_cfe.bin to a local drive</p>
+</li>
+<li>
+<p>Upload original_cfe.bin to <a href="https://cfeditor.pipeline.sh/">https://cfeditor.pipeline.sh/</a> &gt; Select 1.0.2.0 US as Source CFE &gt; Check Max TX Power &gt; Download the new .bin &gt; rename it to new_cfe.bin</p>
+</li>
+<li>
+<p>Upload <strong>new_cfe.bin</strong> &amp; <strong>mtd-write</strong>** **to router through WinSCP.</p>
+</li>
+<li>
+<p>In Putty type:</p>
+<p><code>chmod u+x mtd-write</code></p>
+</li>
+<li>
+<p>In Putty type:</p>
+<p><code>./mtd-write new_cfe.bin boot</code></p>
+</li>
+<li>
+<p>Reboot</p>
+</li>
 </ul>
-
-<p>&nbsp;</p>
-
+<p> </p>
 <p><strong>Edit:</strong></p>
-
 <p>I updated my router firmware to the latest 384 build of Merlin which added mesh networking. I noticed my overclock settings and tx power were reset back to stock settings. After performing the above steps all I had to add to it was to Select 1.0.2.0 US <strong>AiMesh</strong> as Source CFE for cfeditor.pipeline.sh website for firmware versions 384+</p>
       </article>
 

@@ -192,12 +192,9 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <p>Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.</p>
 
-
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png" alt=""/>
 
-
 <p>Supplies/Tools needed:</p>
-
 <ul>
 <li>Pry Tool</li>
 <li>Hot Glue gun</li>
@@ -208,89 +205,59 @@ if (!doNotTrack) {
 <li>Wire stripper/cutter</li>
 <li>Drill (optional)</li>
 </ul>
-
 <p>Before we get started I just wanted to add a <strong>warning</strong>. In this circuit just like most, polarities are very important. I made the mistake of flipping wires and my whole setup overheated and melted the glue. Keep this in mind when testing and before plugging it into your car and before doing the final seal.</p>
-
-<p>Also note that voltage on a car&rsquo;s 12v line varies. With just the battery it&rsquo;s around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report &ldquo;low battery&rdquo; because of the reduced voltage when the car is off. It&rsquo;s not an issue.</p>
-
+<p>Also note that voltage on a car's 12v line varies. With just the battery it's around ~12v. With the car on and the alternator running it gets up to ~14v. The Tile may report &ldquo;low battery&rdquo; because of the reduced voltage when the car is off. It's not an issue.</p>
 <p><strong>Wire up the tile</strong></p>
-
 <p>Start by prying open the tile carefully with the intention of resealing it. I already removed the cell battery in the picture below.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-14-1.jpg" alt=""/>
 
-
 <p>Break off the battery pins and solder on a small length of wire. Reinsert it back into the body of the tile and make sure the wires dont interfere with any plastic.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-12.jpg" alt=""/>
 
-
 <p>Drill or solder a hole at the top of the tile for the wires to exit. Slip the wires through then seal the entire enclosure with some hot glue.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-09.jpg" alt=""/>
 
-
 <p><strong>Preparing the DC to DC Converter</strong></p>
-
 <p>Using a 12v power supply, attach the leads to the converters &ldquo;in&rdquo; pins and measure the power on the &ldquo;out&rdquo; pins using a voltage meter. Turn the adjustment until you are close to 3v.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-03-2.jpg" alt=""/>
 
-
 <p>Glue the bottom of the converter to the tile, then cover the converter in glue to seal it from the elements.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/photo_2018-07-18_23-27-00-2.jpg" alt=""/>
 
-
 <p><strong>Powering the tile</strong></p>
-
 <p>Where you choose to tie in the tile is up to you. Some options include:</p>
-
 <ul>
 <li>Direct battery leads</li>
 <li>obd II adapter</li>
 <li>12v power socket</li>
 </ul>
-
 <p>I already have a dash cam that uses a 12v obdII connector so im just gonna tie it to that.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/20180718_2316209079375938918319396.jpg" alt=""/>
 
-
 <p>I opened it up and located the pins. I soldered on my cables to the 12v pins.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/20180718_2300467315136001876509913.jpg" alt=""/>
 
-
 <p>Once thats all set I closed it back up with a hole drilled for the cables.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/20180718_2316153822933817977650180.jpg" alt=""/>
 
-
 <p>Reattached it to my cars obd port and hooked up my dash cam again.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/20180718_2322341355435456704761609.jpg" alt=""/>
 
-
 <p>To finish it off. Press the tile button down for 10 seconds to turn it on. Rename your old tile in the app and you should be set.</p>
-
 
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/07/screenshot_20180718-225107_tile5373044240499341291.jpg" alt=""/>
 
-
 <p>Update:</p>
-
 <p>Someone on <a href="https://hackaday.com/2018/07/29/turning-a-tile-into-a-car-tracker/#comment-4796213">hackaday</a> mentioned in the <a href="https://hackaday.com/2018/07/29/turning-a-tile-into-a-car-tracker/#comment-4796213">comments</a> that I could save power by using a linear regulator. I will probably be doing this for a motorcycle. If you are interested in trying this I recommend this one.</p>
-
 <p><a href="http://a.tra.li/Tqhy">LD1117V33 Voltage Regulator</a></p>
       </article>
 

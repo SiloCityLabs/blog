@@ -19,7 +19,6 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/09/26/installing-nano-android/</guid>
       <description>&lt;p&gt;After a while of playing around with my build.prop file in Android I needed a way to edit faster using a text editor via adb shell.&lt;/p&gt;
-
 &lt;p&gt;I found a way using a couple of online sources to get it going. You will need to be on a rooted device.&lt;/p&gt;</description>
     </item>
     
@@ -29,7 +28,7 @@
       <pubDate>Thu, 01 Aug 2019 08:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/kafka-cheat-sheet/</guid>
-      <description>&lt;p&gt;Throughout my time working with kafka I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under &lt;code&gt;/opt/kafka&lt;/code&gt; and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip&amp;rsquo;s.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Throughout my time working with kafka I have developed great software to use with it. But while the software did many things there are other things I still resorted to this cheat sheet for. I have put together this list of commands which I will keep updated here as I find new links and commands that help. My kafka installtion was under &lt;code&gt;/opt/kafka&lt;/code&gt; and you will need to change this to your path you installed kafka too. You can also create a symlink and just copy paste commands as they are after changing ip&#39;s.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -187,117 +187,116 @@ if (!doNotTrack) {
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>A class written to simplify the use of mysqli in php. Uses similar concepts to other db classes built into other frameworks. <a href="https://downloads.techreanimate.com/auowdk">Download the file here</a> or look at the code below.</p>
-
-<pre><code class="language-php">&lt;?php
-	class Database{ 
-		public $host     = DB_HOST;
-		public $database = DB_DATABASE;
-		public $username = DB_USER;
-		public $password = DB_PASSWORD;
-		public $link    = 0;
-		public $result  = 0;
-		public $record   = array();
-		public $row;
-		public $errNo    = 0;
-		public $error    = &quot;&quot;;
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+	<span class="k">class</span> <span class="nc">Database</span><span class="p">{</span> 
+		<span class="k">public</span> <span class="nv">$host</span>     <span class="o">=</span> <span class="nx">DB_HOST</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$database</span> <span class="o">=</span> <span class="nx">DB_DATABASE</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$username</span> <span class="o">=</span> <span class="nx">DB_USER</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$password</span> <span class="o">=</span> <span class="nx">DB_PASSWORD</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$link</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$result</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$record</span>   <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+		<span class="k">public</span> <span class="nv">$row</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$errNo</span>    <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="k">public</span> <span class="nv">$error</span>    <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 	    
-		/* Call connection method upon constructing
-		 * Pass in true if you want a second connection object
-		 * Example:
-		 * 		$db2 = new Database(true);
-		 * 		$db2-&gt;database = $config['MC_DB_Username'];
-		 * 		$db2-&gt;username = $config['MC_DB_Username'];
-		 * 		$db2-&gt;password = $config['MC_DB_Password'];
-		 * 		$db2-&gt;host = $config['MC_DB_Host'];
-		 * 		$db2-&gt;createConnection();
-		 * */
-		public function __construct($noconnect = false){
-			if(!$noconnect){
-				$this-&gt;createConnection(); 
-			}
-		}
+		<span class="cm">/* Call connection method upon constructing
+</span><span class="cm">		 * Pass in true if you want a second connection object
+</span><span class="cm">		 * Example:
+</span><span class="cm">		 * 		$db2 = new Database(true);
+</span><span class="cm">		 * 		$db2-&gt;database = $config[&#39;MC_DB_Username&#39;];
+</span><span class="cm">		 * 		$db2-&gt;username = $config[&#39;MC_DB_Username&#39;];
+</span><span class="cm">		 * 		$db2-&gt;password = $config[&#39;MC_DB_Password&#39;];
+</span><span class="cm">		 * 		$db2-&gt;host = $config[&#39;MC_DB_Host&#39;];
+</span><span class="cm">		 * 		$db2-&gt;createConnection();
+</span><span class="cm">		 * */</span>
+		<span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$noconnect</span> <span class="o">=</span> <span class="k">false</span><span class="p">){</span>
+			<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$noconnect</span><span class="p">){</span>
+				<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">createConnection</span><span class="p">();</span> 
+			<span class="p">}</span>
+		<span class="p">}</span>
 
-		/* Connection to the database */
-		public function createConnection(){ 
-	        if( 0 == $this-&gt;link ) 
-	            $this-&gt;link=mysqli_connect( $this-&gt;host, $this-&gt;username, $this-&gt;password );
-			if( !$this-&gt;link ) 
-	   			$this-&gt;stopExec( &quot;Trying to connect.... Result: failed&quot; );
-			if( !mysqli_select_db($this-&gt;link,$this-&gt;database)) 
-	            $this-&gt;stopExec( &quot;Cannot use database &quot;.$this-&gt;database );
-		} 
+		<span class="cm">/* Connection to the database */</span>
+		<span class="k">public</span> <span class="k">function</span> <span class="nf">createConnection</span><span class="p">(){</span> 
+	        <span class="k">if</span><span class="p">(</span> <span class="mi">0</span> <span class="o">==</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span> <span class="p">)</span> 
+	            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="o">=</span><span class="nx">mysqli_connect</span><span class="p">(</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">host</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">username</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">password</span> <span class="p">);</span>
+			<span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span> <span class="p">)</span> 
+	   			<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">stopExec</span><span class="p">(</span> <span class="s2">&#34;Trying to connect.... Result: failed&#34;</span> <span class="p">);</span>
+			<span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">mysqli_select_db</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="p">,</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">database</span><span class="p">))</span> 
+	            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">stopExec</span><span class="p">(</span> <span class="s2">&#34;Cannot use database &#34;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">database</span> <span class="p">);</span>
+		<span class="p">}</span> 
 	
-		/* Execute query string */
-	 	public function query($queryString,$echo = false,$exit = true){
-	 		if($echo == true){ echo &quot;&lt;br&gt;&quot;.htmlspecialchars($queryString).&quot;&lt;br&gt;&quot;; } 
-			$this-&gt;result = mysqli_query($this-&gt;link, $queryString);
-			$this-&gt;row = 0; 
-			$this-&gt;errNo = mysqli_errno($this-&gt;link);
-			$this-&gt;error = mysqli_error($this-&gt;link);
-			if(!$this-&gt;result){
-				$this-&gt;stopExec( &quot;Invalid SQL String: &quot;.$queryString , $exit );
-			}else{
-				if(IS_DEV){
-					global $clean;
-					$newlink = mysqli_connect( $this-&gt;host, $this-&gt;username, $this-&gt;password );
-					mysqli_select_db($newlink,$this-&gt;database);
-					mysqli_query($newlink, &quot;INSERT INTO `ServerLog`(`Message`)VALUES('&quot;.$clean-&gt;UserInput($queryString).&quot;')&quot;);
-				}
-			}
-			return $this-&gt;result; /* return the resource id of query. You can either then call fetchRecord method. */
-	    } 
+		<span class="cm">/* Execute query string */</span>
+	 	<span class="k">public</span> <span class="k">function</span> <span class="nf">query</span><span class="p">(</span><span class="nv">$queryString</span><span class="p">,</span><span class="nv">$echo</span> <span class="o">=</span> <span class="k">false</span><span class="p">,</span><span class="nv">$exit</span> <span class="o">=</span> <span class="k">true</span><span class="p">){</span>
+	 		<span class="k">if</span><span class="p">(</span><span class="nv">$echo</span> <span class="o">==</span> <span class="k">true</span><span class="p">){</span> <span class="k">echo</span> <span class="s2">&#34;&lt;br&gt;&#34;</span><span class="o">.</span><span class="nx">htmlspecialchars</span><span class="p">(</span><span class="nv">$queryString</span><span class="p">)</span><span class="o">.</span><span class="s2">&#34;&lt;br&gt;&#34;</span><span class="p">;</span> <span class="p">}</span> 
+			<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="p">,</span> <span class="nv">$queryString</span><span class="p">);</span>
+			<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+			<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errNo</span> <span class="o">=</span> <span class="nx">mysqli_errno</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="p">);</span>
+			<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">error</span> <span class="o">=</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">){</span>
+				<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">stopExec</span><span class="p">(</span> <span class="s2">&#34;Invalid SQL String: &#34;</span><span class="o">.</span><span class="nv">$queryString</span> <span class="p">,</span> <span class="nv">$exit</span> <span class="p">);</span>
+			<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+				<span class="k">if</span><span class="p">(</span><span class="nx">IS_DEV</span><span class="p">){</span>
+					<span class="k">global</span> <span class="nv">$clean</span><span class="p">;</span>
+					<span class="nv">$newlink</span> <span class="o">=</span> <span class="nx">mysqli_connect</span><span class="p">(</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">host</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">username</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">password</span> <span class="p">);</span>
+					<span class="nx">mysqli_select_db</span><span class="p">(</span><span class="nv">$newlink</span><span class="p">,</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">database</span><span class="p">);</span>
+					<span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$newlink</span><span class="p">,</span> <span class="s2">&#34;INSERT INTO `ServerLog`(`Message`)VALUES(&#39;&#34;</span><span class="o">.</span><span class="nv">$clean</span><span class="o">-&gt;</span><span class="na">UserInput</span><span class="p">(</span><span class="nv">$queryString</span><span class="p">)</span><span class="o">.</span><span class="s2">&#34;&#39;)&#34;</span><span class="p">);</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+			<span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">;</span> <span class="cm">/* return the resource id of query. You can either then call fetchRecord method. */</span>
+	    <span class="p">}</span> 
 	 
-		public function fetchRecord($type = 1, $result = null){
-			/* Get from specific result */
-			if($result != null){
-				$this-&gt;result = $result;
-			}
+		<span class="k">public</span> <span class="k">function</span> <span class="nf">fetchRecord</span><span class="p">(</span><span class="nv">$type</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">$result</span> <span class="o">=</span> <span class="k">null</span><span class="p">){</span>
+			<span class="cm">/* Get from specific result */</span>
+			<span class="k">if</span><span class="p">(</span><span class="nv">$result</span> <span class="o">!=</span> <span class="k">null</span><span class="p">){</span>
+				<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span> <span class="o">=</span> <span class="nv">$result</span><span class="p">;</span>
+			<span class="p">}</span>
 			
-			if(is_bool($this-&gt;result)){
-				return &quot;boolean given, check query&quot;;
-			}
+			<span class="k">if</span><span class="p">(</span><span class="nx">is_bool</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">)){</span>
+				<span class="k">return</span> <span class="s2">&#34;boolean given, check query&#34;</span><span class="p">;</span>
+			<span class="p">}</span>
 			 
-			/* 1 --&gt; for array 2 --&gt; for object */
-			if($type == 1){
-				$record = mysqli_fetch_array($this-&gt;result); /*return array */
-			}else{
-				$record = mysqli_fetch_object($this-&gt;result); /*return object */
-			}
+			<span class="cm">/* 1 --&gt; for array 2 --&gt; for object */</span>
+			<span class="k">if</span><span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+				<span class="nv">$record</span> <span class="o">=</span> <span class="nx">mysqli_fetch_array</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">);</span> <span class="cm">/*return array */</span>
+			<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+				<span class="nv">$record</span> <span class="o">=</span> <span class="nx">mysqli_fetch_object</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">);</span> <span class="cm">/*return object */</span>
+			<span class="p">}</span>
 	  
-			return $record;
-		}
+			<span class="k">return</span> <span class="nv">$record</span><span class="p">;</span>
+		<span class="p">}</span>
 		
-		/* Stop the execution of query when there's an error */
-		public function stopExec($msg,$exit){ 
-			serverlog(&quot;[MySQL Error][&quot;.$this-&gt;errNo.&quot;] &quot;.$this-&gt;error.&quot; Message: &quot;.$msg,'crucial');
-			if($exit){
-				header('Location: http://'.SYS_URL_PATH.'/error.php?code=10');
-			}
+		<span class="cm">/* Stop the execution of query when there&#39;s an error */</span>
+		<span class="k">public</span> <span class="k">function</span> <span class="nf">stopExec</span><span class="p">(</span><span class="nv">$msg</span><span class="p">,</span><span class="nv">$exit</span><span class="p">){</span> 
+			<span class="nx">serverlog</span><span class="p">(</span><span class="s2">&#34;[MySQL Error][&#34;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errNo</span><span class="o">.</span><span class="s2">&#34;] &#34;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">error</span><span class="o">.</span><span class="s2">&#34; Message: &#34;</span><span class="o">.</span><span class="nv">$msg</span><span class="p">,</span><span class="s1">&#39;crucial&#39;</span><span class="p">);</span>
+			<span class="k">if</span><span class="p">(</span><span class="nv">$exit</span><span class="p">){</span>
+				<span class="nx">header</span><span class="p">(</span><span class="s1">&#39;Location: http://&#39;</span><span class="o">.</span><span class="nx">SYS_URL_PATH</span><span class="o">.</span><span class="s1">&#39;/error.php?code=10&#39;</span><span class="p">);</span>
+			<span class="p">}</span>
 			
-			exit();
-		} 
+			<span class="k">exit</span><span class="p">();</span>
+		<span class="p">}</span> 
 	 
-		/* Get the number of row */
-		public function numRows($result = null){
-			if($result != null){
-				return mysqli_num_rows($result);
-			}else{
-				return mysqli_num_rows($this-&gt;result);
-			}
+		<span class="cm">/* Get the number of row */</span>
+		<span class="k">public</span> <span class="k">function</span> <span class="nf">numRows</span><span class="p">(</span><span class="nv">$result</span> <span class="o">=</span> <span class="k">null</span><span class="p">){</span>
+			<span class="k">if</span><span class="p">(</span><span class="nv">$result</span> <span class="o">!=</span> <span class="k">null</span><span class="p">){</span>
+				<span class="k">return</span> <span class="nx">mysqli_num_rows</span><span class="p">(</span><span class="nv">$result</span><span class="p">);</span>
+			<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+				<span class="k">return</span> <span class="nx">mysqli_num_rows</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">);</span>
+			<span class="p">}</span>
 			
-		}
+		<span class="p">}</span>
 		
-		/* Get the the last insert id */
-		public function lastID(){
-			return mysqli_insert_id($this-&gt;link);
-		}
+		<span class="cm">/* Get the the last insert id */</span>
+		<span class="k">public</span> <span class="k">function</span> <span class="nf">lastID</span><span class="p">(){</span>
+			<span class="k">return</span> <span class="nx">mysqli_insert_id</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="p">);</span>
+		<span class="p">}</span>
 		
-		public function real_escape_string($str){
-			return mysqli_real_escape_string($this-&gt;link,$str);
-		}
-	}
+		<span class="k">public</span> <span class="k">function</span> <span class="nf">real_escape_string</span><span class="p">(</span><span class="nv">$str</span><span class="p">){</span>
+			<span class="k">return</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">link</span><span class="p">,</span><span class="nv">$str</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
 
-</code></pre>
+</code></pre></div>
       </article>
 
       <div class="clearfix">

@@ -20,8 +20,8 @@
       <guid>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</guid>
       <description>Go Applications On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.
 Run it like so after compiling to a binary
-nohup ./restart &amp;amp;  The code
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os/exec&amp;quot; &amp;quot;runtime&amp;quot; &amp;quot;strconv&amp;quot; &amp;quot;strings&amp;quot; &amp;quot;time&amp;quot; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.</description>
+nohup ./restart &amp;amp; The code
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;runtime&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;time&amp;#34; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.</description>
     </item>
     
   </channel>
