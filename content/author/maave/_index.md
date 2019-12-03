@@ -57,7 +57,7 @@ ___
     <li><a href="#projects-code-samples">Projects</a></li>
     <li><a href="#article-section">Articles</a></li>
 </ul>
-
+ 
 ___
 
 ## About
