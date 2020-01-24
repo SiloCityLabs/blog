@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Wed, 16 Oct 2019 22:36:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 00:57:15 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/author/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Luis Rodriguez</title>
       <link>https://silocitylabs.com/author/luis-rodriguez/</link>
-      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate>
+      <pubDate>Fri, 24 Jan 2020 00:57:15 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/author/luis-rodriguez/</guid>
       <description>About As a self-employed software developer right out of high school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
@@ -41,7 +41,7 @@ Follow the development of my open source gamepad for phones here on the blog or 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/author/andrew-elbaneh/</guid>
-      <description>About I am a software developer that mostly specializes in web development, but I know many other programming languages. I&#39;m willing to learn any new languages that will help further my career because I love programming. Right now I work with Techreanimate. I love working with a team because they can help turn a good idea into a great idea. We made a content management system, it has since been converted into our framework called TRA-Framework and we have used this for many of our projects.</description>
+      <description>About I am a software developer that mostly specializes in web development, but I know many other programming languages. I&amp;rsquo;m willing to learn any new languages that will help further my career because I love programming. Right now I work with Techreanimate. I love working with a team because they can help turn a good idea into a great idea. We made a content management system, it has since been converted into our framework called TRA-Framework and we have used this for many of our projects.</description>
     </item>
     
   </channel>
