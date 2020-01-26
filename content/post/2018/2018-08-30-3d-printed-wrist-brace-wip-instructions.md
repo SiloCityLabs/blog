@@ -63,8 +63,8 @@ Skanect scales in meters and I haven't figured out how to import/export with Ble
 
 # Blender
 
-Blender tutorial. If you've never used Blender then I recommend watching up to part 5 and following along.  
-<https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P>
+Blender tutorial. If you've never used Blender then I recommend watching up to part 5 and following along. This is a great beginner tutorial for the latest Blender 2.8 GUI.
+<https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U>
 
 Use your new Blender skills to edit the model. Crop it as needed, fix irregularities, and bisect it.
 
