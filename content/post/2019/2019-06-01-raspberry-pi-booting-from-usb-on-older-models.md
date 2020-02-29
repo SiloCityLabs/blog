@@ -24,7 +24,7 @@ Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases
 
 2. Write the latest Raspbian image to a USB drive and plug it into the Pi.
 
-3. Run blkid to determine the PARTUUID of the USB drive.
+3. Run `blkid` to determine the PARTUUID of the USB drive.
 
 4. Edit /boot/cmdline.txt and change root=PARTUUID=xxxxxxxx to match the PARTUUID of the USB drive.
 
