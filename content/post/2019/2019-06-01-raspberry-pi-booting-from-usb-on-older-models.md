@@ -31,3 +31,24 @@ Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases
 5. Reboot. The Pi should be running from the USB drive.
 
 If you ever need to boot from a different USB drive or from the SD card, it's necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition's cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.
+
+
+Update: 02-29-2020
+
+It seems that the partuuid is not automaticaly regenerating on the latest raspbian image. To fix this we will need to generate a new UUID manually.
+
+After the first boot find your usb drive, for example /dev/sda
+
+The partition we want to regenerate is partition #2
+
+```
+apt install gdisk
+sgdisk --partition-guid=1:R /dev/sda2
+```
+
+Now reboot and run `blkid`. Instead of using PARTUUID wil will switch this over to UUID.
+
+Edit /boot/cmdline.txt and change `root=PARTUUID=xxxxxxxx` to match the UUID of the usb drive partition like this `root=UUID=xxxxxxxx`
+
+One laat reboot and you will be all set.
+
