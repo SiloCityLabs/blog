@@ -18,7 +18,8 @@
       <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34; height=&#34;309&#34; width=&#34;1749&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;rsquo;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;</description>
     </item>
@@ -52,10 +53,18 @@
       <pubDate>Tue, 06 Feb 2018 08:50:09 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34; alt=&#34;&#34; height=&#34;371&#34; width=&#34;1160&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34; alt=&#34;2mm pitch headers, ugh&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34; alt=&#34;2mm pitch headers, ugh&#34; height=&#34;638&#34; width=&#34;750&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&amp;rdquo; (2.54mm) pitch. This makes it incompatible with regular 1&amp;rdquo; pitch breadboards. Being double row makes it worse.&lt;/p&gt;</description>
     </item>
@@ -66,7 +75,8 @@
       <pubDate>Wed, 10 Jan 2018 03:17:12 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34; height=&#34;335&#34; width=&#34;906&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;quot;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
@@ -79,7 +89,14 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/Maave&#34;&gt;
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34; height=&#34;478&#34; width=&#34;1257&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;rsquo;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
@@ -90,11 +107,19 @@
       <pubDate>Fri, 15 Dec 2017 19:21:01 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34; height=&#34;513&#34; width=&#34;1010&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;This is a custom 3D printed wrist brace that I&amp;rsquo;m working on. I wear wrist braces to sleep for RSI / carpal tunnel but they&amp;rsquo;re not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/cast1.jpg&#34; alt=&#34;3D printed cast I saw online&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/cast1.jpg&#34; alt=&#34;3D printed cast I saw online&#34; height=&#34;467&#34; width=&#34;660&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.&lt;/p&gt;</description>
     </item>
