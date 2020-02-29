@@ -130,6 +130,15 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 </li>
 </ol>
 <p>If you ever need to boot from a different USB drive or from the SD card, it&rsquo;s necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition&rsquo;s cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.</p>
+<p>Update: 02-29-2020</p>
+<p>It seems that the partuuid is not automaticaly regenerating on the latest raspbian image. To fix this we will need to generate a new UUID manually.</p>
+<p>After the first boot find your usb drive, for example /dev/sda</p>
+<p>The partition we want to regenerate is partition #2</p>
+<pre><code>apt install gdisk
+sgdisk --partition-guid=1:R /dev/sda2
+</code></pre><p>Now reboot and run <code>blkid</code>. Instead of using PARTUUID wil will switch this over to UUID.</p>
+<p>Edit /boot/cmdline.txt and change <code>root=PARTUUID=xxxxxxxx</code> to match the UUID of the usb drive partition like this <code>root=UUID=xxxxxxxx</code></p>
+<p>One laat reboot and you will be all set.</p>
 
       </article>
 
