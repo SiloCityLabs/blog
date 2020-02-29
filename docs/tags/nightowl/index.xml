@@ -20,7 +20,14 @@
       <guid>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;nightowl-bnc&#34;&gt;Nightowl BNC&lt;/h3&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34; height=&#34;251&#34; width=&#34;201&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;These are just about every cheap camera sold in store. You can buy these at home depot, walmart, and other retailers. Your best bet is craigslist you can get them for like $10 each. They use a basic analog signal you can hookup to a TV with the right connector. The main connector is called a BNC connector. The downside to these cameras is that they usually cap out at 720p. You will also need a PCI or usb device to hook it up to your server. Unless you already have these cameras laying around, I WOULD NOT RECOMMEND this setup for purchase. Its cheaper to get a 1080p camera on amazon for $20 with less wiring and no pci card.&lt;/p&gt;</description>
