@@ -138,8 +138,13 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 sgdisk --partition-guid=1:R /dev/sda2
 </code></pre><p>Now reboot and run <code>blkid</code>. Instead of using PARTUUID wil will switch this over to UUID.</p>
 <p>Edit /boot/cmdline.txt and change <code>root=PARTUUID=xxxxxxxx</code> to match the UUID of the usb drive partition like this <code>root=UUID=xxxxxxxx</code></p>
-<p>One laat reboot and you will be all set.</p>
-
+<p>One last reboot and you will be all set.</p>
+<p>Other methods you can try:</p>
+<pre><code>root=UUID=xxxxxxxx
+root=PTUUID=xxxxxxxx
+root=PARTUUID=xxxxxxxx
+root=/dev/sda2
+</code></pre>
       </article>
 
       <div class="clearfix">
