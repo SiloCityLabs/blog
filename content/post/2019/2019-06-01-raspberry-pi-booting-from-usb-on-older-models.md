@@ -50,5 +50,14 @@ Now reboot and run `blkid`. Instead of using PARTUUID wil will switch this over 
 
 Edit /boot/cmdline.txt and change `root=PARTUUID=xxxxxxxx` to match the UUID of the usb drive partition like this `root=UUID=xxxxxxxx`
 
-One laat reboot and you will be all set.
+One last reboot and you will be all set.
 
+
+Other methods you can try:
+
+```
+root=UUID=xxxxxxxx
+root=PTUUID=xxxxxxxx
+root=PARTUUID=xxxxxxxx
+root=/dev/sda2
+```
