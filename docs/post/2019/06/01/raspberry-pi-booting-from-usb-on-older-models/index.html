@@ -224,38 +224,60 @@ if (!doNotTrack) {
         <p>Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases to speed up the performance of your pi when using a slow sd card. It can also provide a reliable location where you operating system data resides. Sd cards are prone to data corruption from writes a operating system ussually does.</p>
 <p> </p>
 <ol>
-<li>
-<p>Write the latest Raspbian image to an SD card and boot it.</p>
+<li>Write the latest Raspbian image to an SD card and boot it.</li>
+<li>Write the latest Raspbian image to a USB drive and plug it into the Pi.</li>
+<li>Boot the raspberry pi and ssh into it.</li>
+<li>Get the UUID of your device with <code>sudo blkid</code>
+<ol>
+<li>If you have duplicate UUID on your devices (most likely) you can run the following command on the usb drive to regenerate the UUID:
+<ol>
+<li><code>sudo apt install gdisk</code></li>
+<li><code>sudo sgdisk --partition-guid=1:R /dev/sda2</code></li>
+</ol>
 </li>
-<li>
-<p>Write the latest Raspbian image to a USB drive and plug it into the Pi.</p>
+</ol>
 </li>
-<li>
-<p>Run <code>blkid</code> to determine the PARTUUID of the USB drive.</p>
+<li>Create initramfs <code>mkinitramfs -o /boot/initrd</code></li>
+<li>Add initramfs <code>nano /boot/config.txt</code></li>
+</ol>
+<pre><code>initramfs initrd
+</code></pre><ol start="6">
+<li>Add <code>rootdelay=5</code> (or <code>rootdelay=10</code> if your drive takes longer to spin up) to <code>/boot/cmdline.txt</code></li>
+<li>Change <code>root=</code> to use the new device id, you can use any of the following methods
+<ol>
+<li><code>root=UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333</code> (best way, most reliable)</li>
+<li><code>root=PTUUID=XXXXXXXXX</code></li>
+<li><code>root=PARTUUID=XXXX-XXXXX</code></li>
+<li><code>root=/dev/sda2</code> (not recomended)</li>
+</ol>
 </li>
+</ol>
+<pre><code>dwc_otg.lpm_enable=0 console=tty1 root=UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 rootfstype=ext4 elevator=deadline rootwait rootdelay=5
+</code></pre><ol start="8">
+<li>change to UUID or whichever option you used above to <code>/etc/fstab</code></li>
+</ol>
+<pre><code>proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults          0       2
+#/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
+UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 /     ext4    defaults,noatime       0 1
+</code></pre><ol start="9">
 <li>
-<p>Edit /boot/cmdline.txt and change root=PARTUUID=xxxxxxxx to match the PARTUUID of the USB drive.</p>
+<p>Optinally if you have a higher power device you can increase the output power of usb by adding <code>max_usb_current=1</code> to the <code>/boot/config.txt</code> file.</p>
 </li>
 <li>
 <p>Reboot. The Pi should be running from the USB drive.</p>
 </li>
+<li>
+<p>Bonus: You can gain some usable space by mounting the sd card and usb drive on a linux machine and deleting the unused partitions on those devices.</p>
+<ol>
+<li>Delete root partition on sd card</li>
+<li>Expand boot partition on sd card</li>
+<li>Delete boot partition on usb drive</li>
+<li>Expand root partition on sd card</li>
 </ol>
-<p>If you ever need to boot from a different USB drive or from the SD card, it&rsquo;s necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition&rsquo;s cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.</p>
-<p>Update: 02-29-2020</p>
-<p>It seems that the partuuid is not automaticaly regenerating on the latest raspbian image. To fix this we will need to generate a new UUID manually.</p>
-<p>After the first boot find your usb drive, for example /dev/sda</p>
-<p>The partition we want to regenerate is partition #2</p>
-<pre><code>apt install gdisk
-sgdisk --partition-guid=1:R /dev/sda2
-</code></pre><p>Now reboot and run <code>blkid</code>. Instead of using PARTUUID wil will switch this over to UUID.</p>
-<p>Edit /boot/cmdline.txt and change <code>root=PARTUUID=xxxxxxxx</code> to match the UUID of the usb drive partition like this <code>root=UUID=xxxxxxxx</code></p>
-<p>One last reboot and you will be all set.</p>
-<p>Other methods you can try:</p>
-<pre><code>root=UUID=xxxxxxxx
-root=PTUUID=xxxxxxxx
-root=PARTUUID=xxxxxxxx
-root=/dev/sda2
-</code></pre>
+</li>
+</ol>
+
       </article>
 
       <div class="clearfix">

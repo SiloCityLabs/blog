@@ -238,6 +238,9 @@ rm -f /var/log/{auth,boot,bootstrap,daemon,kern}.log
 rm -f /var/log/{debug,dmesg,messages,syslog}
 </code></pre><p>Disable MOTD for faster ssh connect</p>
 <pre><code>cat /dev/null &gt; /etc/motd
+</code></pre><p>Disable HDMI</p>
+<p>Add the following to <code>/etc/rc.local</code> to disable hdmi on startup saving about 25mA of power usage.</p>
+<pre><code>/usr/bin/tvservice -o
 </code></pre><p>Disable UART since we wont need it.</p>
 <pre><code>systemctl disable hciuart
 </code></pre><p>More crud cleaning</p>
