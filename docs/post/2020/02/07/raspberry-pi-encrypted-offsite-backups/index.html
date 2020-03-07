@@ -222,10 +222,12 @@ if (!doNotTrack) {
 <h3 id="prerequisites">Prerequisites</h3>
 <p>Before you get going you will need to install Rasbian on a micro sd card. For my setup I <a href="https://silocitylabs.com/post/2019/06/01/raspberry-pi-booting-from-usb-on-older-models/">installed it on a USB drive</a> as well which is entirely optional for reliability. You may want to <a href="https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/">minimize your setup</a>, just skip the part about wifi.</p>
 <h4 id="hardware">Hardware:</h4>
-<p>Raspberry Pi Model B with Raspian on SD card
-16GB Sandisk USB with Raspbian
-4TB Western Digital My Passport Ultra USB3 Hard Drive
-HooToo Powered USB3 Hub (optional)</p>
+<ul>
+<li>Raspberry Pi Model B with Raspian on SD card</li>
+<li>16GB Sandisk USB with Raspbian</li>
+<li>4TB Western Digital My Passport Ultra USB3 Hard Drive</li>
+<li>HooToo Powered USB3 Hub (optional)</li>
+</ul>
 <p>USB hard drives are great however becouse they dont use external power bricks you may see some issues if your pi cant provide enough power. You can try this hub to power both the Pi and the HDD.</p>
 <h3 id="setup-drive">Setup drive</h3>
 <h4 id="install-cryptsetup-to-encrypt-drives">Install cryptsetup to encrypt drives.</h4>
@@ -266,15 +268,15 @@ Syncing disks.
 <pre><code>sudo cryptsetup -v -y -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random luksFormat /dev/sdb1
 </code></pre><p>The options of the command are as follows:</p>
 <ul>
-<li>-v = verbose</li>
-<li>-y = verify passphrase</li>
-<li>-c = cipher used</li>
-<li>-s = key size used</li>
-<li>-h = hash used</li>
-<li>-i = number of ms to spend passphrase processing</li>
-<li>&ndash;use-random = which random number generator to use</li>
-<li>luksFormat = initialize the partition and set a passphrase</li>
-<li>/dev/sdb1 = partition to encrypt</li>
+<li><code>-v</code> = verbose</li>
+<li><code>-y</code> = verify passphrase</li>
+<li><code>-c</code> = cipher used</li>
+<li><code>-s</code> = key size used</li>
+<li><code>-h</code> = hash used</li>
+<li><code>-i</code> = number of ms to spend passphrase processing</li>
+<li><code>--use-random</code> = which random number generator to use</li>
+<li><code>luksFormat</code> = initialize the partition and set a passphrase</li>
+<li><code>/dev/sdb1</code> = partition to encrypt</li>
 </ul>
 <p>Optionally you can <a href="https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery">backup the luks header</a>.</p>
 <h4 id="add-secondary-passphrase-for-stdin-use">Add secondary passphrase for stdin use</h4>
@@ -344,7 +346,8 @@ EOF
 
 </code></pre><p>Now lets make this run once a week on sunday at midnight with <code>crontab -e</code></p>
 <pre><code>0 0 * * 0 remote-backup.sh
-</code></pre>
+</code></pre><p>Now you are all set for weekly backups. You can add more cronjobs to delete data weekly or do nightly backups as well. If you have any edits feel free to hit the edit button on the bottom of the article or leave a comment.</p>
+
       </article>
 
       <div class="clearfix">
