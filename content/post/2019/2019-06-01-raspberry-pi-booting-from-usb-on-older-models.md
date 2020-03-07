@@ -25,6 +25,9 @@ Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases
  2. Write the latest Raspbian image to a USB drive and plug it into the Pi.
  3. Boot the raspberry pi and ssh into it.
  4. Get the UUID of your device with `sudo blkid`
+    1. If you have duplicate UUID on your devices (most likely) you can run the following command on the usb drive to regenerate the UUID:
+       1. `sudo apt install gdisk`
+       2. `sudo sgdisk --partition-guid=1:R /dev/sda2`
  5. Create initramfs `mkinitramfs -o /boot/initrd`
  6. Add initramfs `nano /boot/config.txt`
    
