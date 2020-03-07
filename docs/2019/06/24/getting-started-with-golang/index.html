@@ -226,7 +226,7 @@ if (!doNotTrack) {
 <p>Every go program is made from packages, Lets start a program using package main like all other programs.</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	
 <span class="p">}</span>
 
@@ -235,8 +235,8 @@ if (!doNotTrack) {
 
 <span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">()</span>
 <span class="p">}</span>
 
 </code></pre></div><h2 id="imports">Imports</h2>
@@ -259,9 +259,9 @@ if (!doNotTrack) {
 
 <span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">)</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nf">functionName</span><span class="p">(</span><span class="s">&#34;Hello &#34;</span><span class="p">,</span> <span class="s">&#34;Again&#34;</span><span class="p">)</span><span class="p">)</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nf">functionName</span><span class="p">(</span><span class="s">&#34;Hello &#34;</span><span class="p">,</span> <span class="s">&#34;Again&#34;</span><span class="p">))</span>
 <span class="p">}</span>
 
 <span class="kd">func</span> <span class="nf">functionName</span><span class="p">(</span><span class="nx">parameter1</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">param2</span> <span class="kt">string</span><span class="p">)</span> <span class="kt">string</span> <span class="p">{</span>
@@ -284,7 +284,7 @@ Hello Again
 
 <span class="kd">var</span> <span class="nx">golang</span><span class="p">,</span> <span class="nx">keys</span><span class="p">,</span> <span class="nx">passwords</span> <span class="kt">bool</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">x</span> <span class="kt">int</span>
 
   <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">golang</span><span class="p">,</span> <span class="nx">keys</span><span class="p">,</span> <span class="nx">passwords</span><span class="p">)</span>
@@ -297,7 +297,7 @@ Hello Again
 
 <span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="kd">var</span> <span class="nx">sum</span> <span class="kt">int</span>
 	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
 		<span class="nx">sum</span> <span class="o">+=</span> <span class="nx">i</span>
@@ -322,15 +322,15 @@ Hello Again
 <span class="kd">var</span> <span class="nx">usernames</span> <span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="kt">string</span>
 
 </code></pre></div><p>You can also initialize an array in Go with a list of items. Go will calculate the size automatically at compile time. Arrays cannot be resized later on but dont worry because it provides convenient ways of working with them.</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">usernames</span> <span class="p">=</span> <span class="p">[</span><span class="p">]</span><span class="kt">string</span><span class="p">{</span><span class="s">&#34;gocrazy&#34;</span><span class="p">,</span><span class="s">&#34;gorungo&#34;</span><span class="p">,</span><span class="s">&#34;going2fast&#34;</span><span class="p">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">usernames</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&#34;gocrazy&#34;</span><span class="p">,</span><span class="s">&#34;gorungo&#34;</span><span class="p">,</span><span class="s">&#34;going2fast&#34;</span><span class="p">}</span>
 </code></pre></div><p>Lets spit out usernames and see our result:</p>
 <pre><code>$ go run hello.go
 [gocrazy gorungo going2fast]
 </code></pre><h2 id="slices">Slices</h2>
 <p>A slice is an abstraction over Go Array. As Go arrays allow you to define type of variables that can hold several data items of the same kind but it does not allow you to increase the size dynamically or get a sub array. It provides many helper functions required on Array and are widely used in Go across the community.</p>
 <p>To define a slice you can declare it as an array without specifying size. You can also use the <code>make</code> function to create one.</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">numbers</span> <span class="p">[</span><span class="p">]</span><span class="kt">int</span> <span class="cm">/* a slice with an unspecified size */</span>
-<span class="nx">numbers2</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="p">[</span><span class="p">]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="cm">/* a slice of length 5 and capacity 5 */</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">numbers</span> <span class="p">[]</span><span class="kt">int</span> <span class="cm">/* a slice with an unspecified size */</span>
+<span class="nx">numbers2</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="cm">/* a slice of length 5 and capacity 5 */</span>
 </code></pre></div><p>An array has a fixed size. A slice, on the other hand, is a dynamically-sized, flexible view into the elements of an array. In practice, slices are much more common than arrays.</p>
 <p>The type []T is a slice with elements of type T.</p>
 <p>This expression creates a slice of the first five elements of the array a:</p>
@@ -340,11 +340,11 @@ Hello Again
 
 <span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">primes</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="kt">int</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">}</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">primes</span><span class="p">)</span>
 
-	<span class="kd">var</span> <span class="nx">s</span> <span class="p">[</span><span class="p">]</span><span class="kt">int</span> <span class="p">=</span> <span class="nx">primes</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+	<span class="kd">var</span> <span class="nx">s</span> <span class="p">[]</span><span class="kt">int</span> <span class="p">=</span> <span class="nx">primes</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div><p>The result below:</p>
@@ -362,7 +362,7 @@ Hello Again
 	<span class="nx">Port</span>     <span class="kt">string</span>
 <span class="p">}</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">mywebsite</span> <span class="o">:=</span> <span class="nx">settings</span><span class="p">{</span><span class="s">&#34;silocitylabs.com&#34;</span><span class="p">,</span> <span class="s">&#34;80&#34;</span><span class="p">}</span>
 	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">mywebsite</span><span class="p">)</span>
 
@@ -389,17 +389,17 @@ Hello Again
 	<span class="s">&#34;github.com/tjarratt/babble&#34;</span>
 <span class="p">)</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">babbler</span> <span class="o">:=</span> <span class="nx">babble</span><span class="p">.</span><span class="nf">NewBabbler</span><span class="p">(</span><span class="p">)</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">babbler</span><span class="p">.</span><span class="nf">Babble</span><span class="p">(</span><span class="p">)</span><span class="p">)</span> <span class="c1">// excessive-yak-shaving (or other phrase)
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">babbler</span> <span class="o">:=</span> <span class="nx">babble</span><span class="p">.</span><span class="nf">NewBabbler</span><span class="p">()</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">babbler</span><span class="p">.</span><span class="nf">Babble</span><span class="p">())</span> <span class="c1">// excessive-yak-shaving (or other phrase)
 </span><span class="c1"></span>
 	<span class="c1">// optionally set your own separator
 </span><span class="c1"></span>	<span class="nx">babbler</span><span class="p">.</span><span class="nx">Separator</span> <span class="p">=</span> <span class="s">&#34; &#34;</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">babbler</span><span class="p">.</span><span class="nf">Babble</span><span class="p">(</span><span class="p">)</span><span class="p">)</span> <span class="c1">// &#34;hello world&#34; (or other phrase)
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">babbler</span><span class="p">.</span><span class="nf">Babble</span><span class="p">())</span> <span class="c1">// &#34;hello world&#34; (or other phrase)
 </span><span class="c1"></span>
 	<span class="c1">// optionally set the number of words you want
 </span><span class="c1"></span>	<span class="nx">babbler</span><span class="p">.</span><span class="nx">Count</span> <span class="p">=</span> <span class="mi">1</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">babbler</span><span class="p">.</span><span class="nf">Babble</span><span class="p">(</span><span class="p">)</span><span class="p">)</span> <span class="c1">// antibiomicrobrial (or other word)
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">babbler</span><span class="p">.</span><span class="nf">Babble</span><span class="p">())</span> <span class="c1">// antibiomicrobrial (or other word)
 </span><span class="c1"></span><span class="p">}</span>
 </code></pre></div><p>Running this will result in 3 separate random phrases every time. You can look at the source for their code on github from the same link to see how their packages work for further documentation.</p>
 <h2 id="excercise">Excercise</h2>
@@ -413,13 +413,13 @@ Hello Again
 	<span class="s">&#34;log&#34;</span>
 <span class="p">)</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">dat</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="s">&#34;list.txt&#34;</span><span class="p">)</span>
 	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
 		<span class="nx">log</span><span class="p">.</span><span class="nf">Panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
 	<span class="p">}</span>
 
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">dat</span><span class="p">)</span><span class="p">)</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">dat</span><span class="p">))</span>
 <span class="p">}</span>
 </code></pre></div><p>Second Example from meetup with data manipulation:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
@@ -432,26 +432,26 @@ Hello Again
 	<span class="s">&#34;strings&#34;</span>
 <span class="p">)</span>
 
-<span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">dat</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nf">ReadFile</span><span class="p">(</span><span class="s">&#34;list.txt&#34;</span><span class="p">)</span>
 	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nf">Error</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
+		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nf">Error</span><span class="p">())</span>
 		<span class="nx">os</span><span class="p">.</span><span class="nf">Exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 	<span class="p">}</span>
 
-	<span class="nx">listDataArray</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">dat</span><span class="p">)</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+	<span class="nx">listDataArray</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">dat</span><span class="p">),</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
 
 	<span class="nx">listDataArrayNew</span> <span class="o">:=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">listDataArray</span><span class="p">,</span> <span class="s">&#34;newitem&#34;</span><span class="p">)</span>
 	<span class="nx">listDataArrayNew</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">listDataArrayNew</span><span class="p">,</span> <span class="s">&#34;newitem&#34;</span><span class="p">)</span>
 
 	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
-		<span class="nx">listDataArrayNew</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">listDataArrayNew</span><span class="p">,</span> <span class="s">&#34;newitem &#34;</span><span class="o">+</span><span class="nx">strconv</span><span class="p">.</span><span class="nf">Itoa</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span><span class="p">)</span>
+		<span class="nx">listDataArrayNew</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">listDataArrayNew</span><span class="p">,</span> <span class="s">&#34;newitem &#34;</span><span class="o">+</span><span class="nx">strconv</span><span class="p">.</span><span class="nf">Itoa</span><span class="p">(</span><span class="nx">i</span><span class="p">))</span>
 	<span class="p">}</span>
 
 	<span class="nx">listCombined</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">Join</span><span class="p">(</span><span class="nx">listDataArrayNew</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
 
 	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="nx">listDataArrayNew</span><span class="p">)</span>
-	<span class="nx">ioutil</span><span class="p">.</span><span class="nf">WriteFile</span><span class="p">(</span><span class="s">&#34;list.txt&#34;</span><span class="p">,</span> <span class="p">[</span><span class="p">]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">listCombined</span><span class="p">)</span><span class="p">,</span> <span class="mo">0755</span><span class="p">)</span>
+	<span class="nx">ioutil</span><span class="p">.</span><span class="nf">WriteFile</span><span class="p">(</span><span class="s">&#34;list.txt&#34;</span><span class="p">,</span> <span class="p">[]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">listCombined</span><span class="p">),</span> <span class="mo">0755</span><span class="p">)</span>
 
 <span class="p">}</span>
 </code></pre></div>
