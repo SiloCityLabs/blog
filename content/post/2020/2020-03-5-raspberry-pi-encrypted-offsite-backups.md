@@ -2,7 +2,7 @@
 title: Turn an Old Raspberry pi into an offsite backup
 author: Luis Rodriguez
 type: post
-date: 2020-02-7T00:57:15+00:00
+date: 2020-02-07T00:57:15+00:00
 url: /post/2020/02/07/raspberry-pi-encrypted-offsite-backups
 draft: true
 categories:
