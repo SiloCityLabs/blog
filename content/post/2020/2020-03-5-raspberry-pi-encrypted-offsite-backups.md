@@ -39,7 +39,7 @@ Who in the world is gonna host my raspberry pi that I can trust? Are they gonna 
 
 #### Trust?
 
-We dont actually need to trust them all that much, They dont need any passwords and we dont even risk out data becouse we plan on using encryption.
+We dont actually need to trust them all that much, They dont need any passwords and we dont even risk our data becouse we plan on using encryption.
 
 #### Electric?
 
