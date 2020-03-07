@@ -13,6 +13,7 @@ tags:
   - linux
   - os
   - Pi
+  - raspberry
 
 ---
 
@@ -20,14 +21,42 @@ Booting from USB is easy on a Pi1, Pi2, or Pi3. This can be useful in mamy cases
 
 &nbsp;
 
-1. Write the latest Raspbian image to an SD card and boot it.
+ 1. Write the latest Raspbian image to an SD card and boot it.
+ 2. Write the latest Raspbian image to a USB drive and plug it into the Pi.
+ 3. Boot the raspberry pi and ssh into it.
+ 4. Get the UUID of your device with `sudo blkid`
+ 5. Create initramfs `mkinitramfs -o /boot/initrd`
+ 6. Add initramfs `nano /boot/config.txt`
+   
+```
+initramfs initrd
+```
+ 6. Add `rootdelay=5` (or `rootdelay=10` if your drive takes longer to spin up) to `/boot/cmdline.txt`
+ 7. Change `root=` to use the new device id, you can use any of the following methods
+    1. `root=UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333` (best way, most reliable)
+    2. `root=PTUUID=XXXXXXXXX`
+    3. `root=PARTUUID=XXXX-XXXXX`
+    4. `root=/dev/sda2` (not recomended)
 
-2. Write the latest Raspbian image to a USB drive and plug it into the Pi.
+```
+dwc_otg.lpm_enable=0 console=tty1 root=UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 rootfstype=ext4 elevator=deadline rootwait rootdelay=5
+```
 
-3. Run blkid to determine the PARTUUID of the USB drive.
+ 8. change to UUID or whichever option you used above to `/etc/fstab`
 
-4. Edit /boot/cmdline.txt and change root=PARTUUID=xxxxxxxx to match the PARTUUID of the USB drive.
+```
+proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults          0       2
+#/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
+UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 /     ext4    defaults,noatime       0 1
+```
 
-5. Reboot. The Pi should be running from the USB drive.
+ 9. Optinally if you have a higher power device you can increase the output power of usb by adding `max_usb_current=1` to the `/boot/config.txt` file.
 
-If you ever need to boot from a different USB drive or from the SD card, it's necessary to FIRST mount the boot partition of the SD card (/dev/mmcblk0p1) and edit the boot partition's cmdline.txt so that root=PARTUUID=xxxxxxxx matches the device you wish to boot from.
+ 10. Reboot. The Pi should be running from the USB drive.
+
+ 11. Bonus: You can gain some usable space by mounting the sd card and usb drive on a linux machine and deleting the unused partitions on those devices.
+     1.  Delete root partition on sd card
+     2.  Expand boot partition on sd card
+     3.  Delete boot partition on usb drive
+     4.  Expand root partition on sd card

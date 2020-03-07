@@ -112,6 +112,14 @@ Disable MOTD for faster ssh connect
 cat /dev/null > /etc/motd
 ```
 
+Disable HDMI
+
+Add the following to `/etc/rc.local` to disable hdmi on startup saving about 25mA of power usage.
+
+```
+/usr/bin/tvservice -o
+```
+
 Disable UART since we wont need it.
 
 ```
