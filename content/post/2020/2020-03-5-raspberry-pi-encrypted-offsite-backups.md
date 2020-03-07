@@ -69,10 +69,10 @@ Before you get going you will need to install Rasbian on a micro sd card. For my
 
 #### Hardware:
 
-Raspberry Pi Model B with Raspian on SD card
-16GB Sandisk USB with Raspbian
-4TB Western Digital My Passport Ultra USB3 Hard Drive
-HooToo Powered USB3 Hub (optional)
+ - Raspberry Pi Model B with Raspian on SD card
+ - 16GB Sandisk USB with Raspbian
+ - 4TB Western Digital My Passport Ultra USB3 Hard Drive
+ - HooToo Powered USB3 Hub (optional)
 
 USB hard drives are great however becouse they dont use external power bricks you may see some issues if your pi cant provide enough power. You can try this hub to power both the Pi and the HDD.
 
@@ -137,15 +137,15 @@ sudo cryptsetup -v -y -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random l
 
 The options of the command are as follows:
 
- - -v = verbose
- - -y = verify passphrase
- - -c = cipher used
- - -s = key size used
- - -h = hash used
- - -i = number of ms to spend passphrase processing
- - --use-random = which random number generator to use
- - luksFormat = initialize the partition and set a passphrase
- - /dev/sdb1 = partition to encrypt
+ - `-v` = verbose
+ - `-y` = verify passphrase
+ - `-c` = cipher used
+ - `-s` = key size used
+ - `-h` = hash used
+ - `-i` = number of ms to spend passphrase processing
+ - `--use-random` = which random number generator to use
+ - `luksFormat` = initialize the partition and set a passphrase
+ - `/dev/sdb1` = partition to encrypt
 
 Optionally you can [backup the luks header](https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery).
 
@@ -269,3 +269,5 @@ Now lets make this run once a week on sunday at midnight with `crontab -e`
 ```
 0 0 * * 0 remote-backup.sh
 ```
+
+Now you are all set for weekly backups. You can add more cronjobs to delete data weekly or do nightly backups as well. If you have any edits feel free to hit the edit button on the bottom of the article or leave a comment.
