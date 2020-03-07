@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Turn an Old Raspberry pi into an offsite backup</title>
+  <meta property="og:title" content="Turn an Old Raspberry pi into an offsite backup" />
+  <meta name="twitter:title" content="Turn an Old Raspberry pi into an offsite backup" />
+  <meta name="description" content="Why? Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.
+Although im set on a disaster …">
+  <meta property="og:description" content="Why? Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.
+Although im set on a disaster …">
+  <meta name="twitter:description" content="Why? Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.
+Although im set on a disaster …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/">
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://silocitylabs.com/css/bundle.min.css" />
+  
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/company/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+                  <a href="https://silocitylabs.com/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://silocitylabs.com/newsletter">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Turn an Old Raspberry pi into an offsite backup</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on February 7, 2020
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h3 id="why">Why?</h3>
+<p>Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.</p>
+<p>Although im set on a disaster level there are a few things that can be an issue with onsite backups. Especially with my drive being plugged in all the time.</p>
+<ul>
+<li>Theft, Although it is &ldquo;theft resistant&rdquo; the metal they want me to bolt down isnt very strong at all. Anyone with half a brain can break it in about 1 minute with all the tools I have down there.</li>
+<li>Hackers, In recent times most of these hacks have targeted user data by encrypting the entire set of data and holding it hostage for bitcoin.</li>
+<li>Accidents, They happen all the time to people. Commands like <code>rm -rf ./*</code> or even formatting the wrong partition. Lets just not set ourselves up for failure.</li>
+</ul>
+<h3 id="how">How?</h3>
+<p>Who in the world is gonna host my raspberry pi that I can trust? Are they gonna try and charge me for electric? Are they going to want an internet fee? Will I slow down the wifi?</p>
+<h4 id="trust">Trust?</h4>
+<p>We dont actually need to trust them all that much, They dont need any passwords and we dont even risk out data becouse we plan on using encryption.</p>
+<h4 id="electric">Electric?</h4>
+<p>The raspberry pi is device that runs on arm, luckly smartphones also run on arm which makes them ideal for super low power usage. By stripping down a raspberry pi we can get the power usage so low that they wont even care about the half dollar its going to cost them montly. Toss them a $20 and call yourselves even for like 3-4 years.</p>
+<p>The Math:</p>
+<p>Currently my setup consists of idle usage of about 800mah with two USB drives attached and a micro sd card. You could probably go lower by eliminating the second usb but i dont really trust the micro sd card I attached to long live, also its 2gb haha.</p>
+<p>800mah * 5v = 4w
+4w * 24hrs * 30 days = 2880wh/month
+2880wh * $0.15/kw = $0.43/Month</p>
+<h4 id="internet">Internet?</h4>
+<p>As long as your not daily downloading extremely large amounts of data daily then you should be fine. I dont backup my media library, I can get those back easy. What i do backup is my nextcloud setup with all my personal family photos/videos and documents on my server.</p>
+<p>To avoid hogging the network I set the backup to run daily at a time that I know they wont be on, like 4AM.</p>
+<h4 id="wifi">Wifi?</h4>
+<p>You should avoid wifi at all costs, You will increase your power usage and theres more benefit to using ethernet for reliability.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before you get going you will need to install Rasbian on a micro sd card. For my setup I <a href="https://silocitylabs.com/post/2019/06/01/raspberry-pi-booting-from-usb-on-older-models/">installed it on a USB drive</a> as well which is entirely optional for reliability. You may want to <a href="https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/">minimize your setup</a>, just skip the part about wifi.</p>
+<h4 id="hardware">Hardware:</h4>
+<p>Raspberry Pi Model B with Raspian on SD card
+16GB Sandisk USB with Raspbian
+4TB Western Digital My Passport Ultra USB3 Hard Drive
+HooToo Powered USB3 Hub (optional)</p>
+<p>USB hard drives are great however becouse they dont use external power bricks you may see some issues if your pi cant provide enough power. You can try this hub to power both the Pi and the HDD.</p>
+<h3 id="setup-drive">Setup drive</h3>
+<h4 id="install-cryptsetup-to-encrypt-drives">Install cryptsetup to encrypt drives.</h4>
+<pre><code>pi@raspberrypi ~ $ sudo apt-get install cryptsetup
+</code></pre><h4 id="find-your-disk">Find your disk</h4>
+<p>Find the /dev identifier of the HDD partition you want to encrypt, on my system, it&rsquo;s /dev/sdb1. Note that this output is from running the command after I&rsquo;ve configured the encrypted partition.</p>
+<pre><code>pi@raspberrypi ~ $ lsblk
+NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sdb                       8:0    0   3.6T  0 disk  
+</code></pre><h4 id="create-partition">Create partition</h4>
+<p>Start by creating a partition with fdisk.</p>
+<pre><code>sudo fdisk /dev/sdb
+</code></pre><ol>
+<li>Press <code>n</code> option to create a new partition</li>
+<li>Press <code>p</code> for a primary partition.</li>
+<li>Press <code>1</code> to  edit the first partition</li>
+<li>Press <code>ENTER</code> twice to use the defaults for first and last sectors</li>
+<li>Press <code>w</code> to save changes to disk</li>
+<li>Press <code>q</code> to quit</li>
+</ol>
+<p>It will look similar to this:</p>
+<pre><code>Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1): 1
+First sector (2048-3906916350, default 2048): 
+Last sector, +sectors or +size{K,M,G,T,P} (2048-3906916350, default 3906916350): 
+
+Created a new partition 1 of type 'Linux' and of size 4.3 TiB.
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+</code></pre><h4 id="encrypt-the-partition">Encrypt the partition</h4>
+<pre><code>sudo cryptsetup -v -y -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random luksFormat /dev/sdb1
+</code></pre><p>The options of the command are as follows:</p>
+<ul>
+<li>-v = verbose</li>
+<li>-y = verify passphrase</li>
+<li>-c = cipher used</li>
+<li>-s = key size used</li>
+<li>-h = hash used</li>
+<li>-i = number of ms to spend passphrase processing</li>
+<li>&ndash;use-random = which random number generator to use</li>
+<li>luksFormat = initialize the partition and set a passphrase</li>
+<li>/dev/sdb1 = partition to encrypt</li>
+</ul>
+<p>Optionally you can <a href="https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery">backup the luks header</a>.</p>
+<h4 id="add-secondary-passphrase-for-stdin-use">Add secondary passphrase for stdin use</h4>
+<p>To use luks remotely we will need to add a secondary key to the luksheader.</p>
+<pre><code>sudo cryptsetup luksAddKey /dev/sdb1
+</code></pre><h4 id="format-the-volume">Format the volume</h4>
+<p>Mount the luks device and format the volume</p>
+<pre><code>sudo cryptsetup luksOpen /dev/sdb1 volume01
+sudo mkfs.ext4 /dev/mapper/volume01
+</code></pre><h4 id="mounting-the-volume">Mounting the volume</h4>
+<p>You can mount it anywhere but for this setup we will mount it to <code>/mnt/raid</code></p>
+<pre><code>sudo mkdir -p /mnt/raid
+sudo mount /dev/mapper/volume01 /mnt/raid
+</code></pre><p>You should now be able to see it under <code>df -h</code></p>
+<h4 id="unmount-and-close">Unmount and close</h4>
+<pre><code>sudo umount /mnt/drive01
+sudo cryptsetup luksClose /dev/mapper/volume01
+</code></pre><h3 id="ddns">DDNS</h3>
+<p>Create a script file with the following but change <code>your.domain.name</code> and the ddns update url with your own.</p>
+<p><code>nano ddns.sh</code></p>
+<pre><code>#!/bin/bash
+
+IP_NS=$(dig +short your.domain.name)
+IP_WAN=$(curl -ks http://checkip.amazonaws.com/)
+
+if [[ &quot;$IP_NS&quot; == &quot;$IP_WAN&quot; ]]; then
+    echo &quot;No IP update required. ($IP_WAN)&quot;
+else
+    echo &quot;IP has changed&quot;
+    curl -ks https://dnsprovider.com?key=sometokentochangeip
+fi
+</code></pre><p>Now add the script to your crontab after making it executable</p>
+<pre><code>chmod +x ddns.sh
+crontab -e
+</code></pre><pre><code>*/10 * * * * /path/to/ddns.sh
+</code></pre><h3 id="upnp-port-forwarding">upnp port forwarding</h3>
+<p>Becouse some routers dont allow ports below 1024 to be mounted we will just be opening up ssh to another port. View a <a href="https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/">more detailed writeup</a> on how to run this on ethernet connect.</p>
+<pre><code>sudo apt install miniupnpc
+</code></pre><p>You can change port 1080 to anything you desire, it is recommended to keep it above 1024 for some routers that dont allow numbers below that.</p>
+<p><code>nano upnp.sh</code></p>
+<pre><code>#!/bin/bash
+ip=$($upnpc -l | grep &quot;Local LAN ip address&quot; | cut -d: -f2)
+
+upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
+</code></pre><p>I will just be adding this on bootup with <code>crontab -e</code></p>
+<pre><code>@reboot upnp.sh
+</code></pre><h3 id="script-mounting">Script mounting</h3>
+<p>Now on your remote client create a script to start the backups</p>
+<p><code>nano remote-backup.sh</code></p>
+<pre><code>#!/bin/bash
+
+#Mount the drive
+sshpass -p &quot;password&quot; ssh pi@yourdomainname.com &lt;&lt; EOF
+ CRYPTPASS='passphrase to descrypt drive'
+ echo $CRYPTPASS | cryptsetup luksOpen /dev/sdb1 volume01 -d=-
+ mount /dev/mapper/volume01 /mnt/raid
+EOF
+
+#run rsync
+sshpass -p &quot;password&quot; rsync -a -P -e ssh /mnt/raid pi@yourdomainhere.com:/mnt/raid
+
+#unmount the drive
+sshpass -p &quot;password&quot; ssh pi@yourdomainname.com &lt;&lt; EOF
+ umount /mnt/raid
+ cryptsetup luksClose /dev/mapper/volume01
+EOF
+
+</code></pre><p>Now lets make this run once a week on sunday at midnight with <code>crontab -e</code></p>
+<pre><code>0 0 * * 0 remote-backup.sh
+</code></pre>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2020/2020-03-5-raspberry-pi-encrypted-offsite-backups.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2020/2020-03-5-raspberry-pi-encrypted-offsite-backups.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/" data-toggle="tooltip" data-placement="top" title="Recover AMLogic Android boxes everytime">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

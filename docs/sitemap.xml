@@ -4,37 +4,112 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/amlogic/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+    <loc>https://silocitylabs.com/tags/all-in-one/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/backups/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/cloud/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/encryption/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/home-server/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/iot/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/nas/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/offsite/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/pi/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/raspberry/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/server/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/ssh/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/upnp/</loc>
+    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/amlogic/</loc>
     <lastmod>2020-01-24T00:57:15+00:00</lastmod>
   </url>
   
@@ -95,11 +170,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/s922x1/</loc>
-    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2020-01-24T00:57:15+00:00</lastmod>
   </url>
   
@@ -389,16 +459,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/pi/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/raspberry/</loc>
-    <lastmod>2019-06-13T23:30:28+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</loc>
     <lastmod>2019-06-13T23:30:28+00:00</lastmod>
   </url>
@@ -505,11 +565,6 @@
   
   <url>
     <loc>https://silocitylabs.com/tags/file-share/</loc>
-    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/home-server/</loc>
     <lastmod>2019-05-30T23:30:33+00:00</lastmod>
   </url>
   
@@ -686,16 +741,6 @@
   <url>
     <loc>https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/</loc>
     <lastmod>2018-11-28T23:59:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/backups/</loc>
-    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/tags/cloud/</loc>
-    <lastmod>2018-11-23T17:30:03+00:00</lastmod>
   </url>
   
   <url>
