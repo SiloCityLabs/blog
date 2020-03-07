@@ -18,7 +18,8 @@
       <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2019/05/2560301558990512124-1.jpg&#34; alt=&#34;Pads&#34; height=&#34;309&#34; width=&#34;1749&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;Remember my &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/&#34;&gt;Bluetooth gamepad project&lt;/a&gt;? It&amp;rsquo;s time for a USB-C version. I started with Bluetooth because I thought it would be easier to support multiple phones. However &lt;a href=&#34;https://hackaday.io/contest/163267-flexible-pcb-concept-contest&#34;&gt;Hackaday and OSHPark are holding a flex PCB contest&lt;/a&gt;. This is a good material to make a gamepad with, and the perfect material for a gamepad that is supposed to resize.&lt;/p&gt;</description>
     </item>
