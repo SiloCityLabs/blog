@@ -49,9 +49,9 @@ The Math:
 
 Currently my setup consists of idle usage of about 800mah with two USB drives attached and a micro sd card. You could probably go lower by eliminating the second usb but i dont really trust the micro sd card I attached to long live, also its 2gb haha.
 
-800mah * 5v = 4w
-4w * 24hrs * 30 days = 2880wh/month
-2880wh * $0.15/kw = $0.43/Month
+ - 800mah * 5v = 4w
+ - 4w * 24hrs * 30 days = 2880wh/month
+ - 2880wh * $0.15/kw = $0.43/Month
 
 #### Internet?
 
