@@ -7,10 +7,127 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 24 Jan 2020 00:57:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 00:57:15 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>all-in-one</title>
+      <link>https://silocitylabs.com/tags/all-in-one/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/all-in-one/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backups</title>
+      <link>https://silocitylabs.com/tags/backups/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/backups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://silocitylabs.com/tags/cloud/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>encryption</title>
+      <link>https://silocitylabs.com/tags/encryption/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>home server</title>
+      <link>https://silocitylabs.com/tags/home-server/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/home-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iot</title>
+      <link>https://silocitylabs.com/tags/iot/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nas</title>
+      <link>https://silocitylabs.com/tags/nas/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/nas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>offsite</title>
+      <link>https://silocitylabs.com/tags/offsite/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/offsite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pi</title>
+      <link>https://silocitylabs.com/tags/pi/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry</title>
+      <link>https://silocitylabs.com/tags/raspberry/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/raspberry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://silocitylabs.com/tags/server/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://silocitylabs.com/tags/ssh/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>upnp</title>
+      <link>https://silocitylabs.com/tags/upnp/</link>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/upnp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>amlogic</title>
@@ -544,24 +661,6 @@
     </item>
     
     <item>
-      <title>Pi</title>
-      <link>https://silocitylabs.com/tags/pi/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry</title>
-      <link>https://silocitylabs.com/tags/raspberry/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/raspberry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>coding</title>
       <link>https://silocitylabs.com/tags/coding/</link>
       <pubDate>Thu, 06 Jun 2019 20:00:28 +0000</pubDate>
@@ -711,15 +810,6 @@
       <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/file-share/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>home server</title>
-      <link>https://silocitylabs.com/tags/home-server/</link>
-      <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/home-server/</guid>
       <description></description>
     </item>
     
@@ -936,24 +1026,6 @@
       <pubDate>Wed, 28 Nov 2018 23:59:23 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/ca-ipbf-4mp-wifi-fba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>backups</title>
-      <link>https://silocitylabs.com/tags/backups/</link>
-      <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/backups/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cloud</title>
-      <link>https://silocitylabs.com/tags/cloud/</link>
-      <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/cloud/</guid>
       <description></description>
     </item>
     
