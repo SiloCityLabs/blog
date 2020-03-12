@@ -221,28 +221,45 @@ upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
 <p>You can have it run when ethernet is up with the following command</p>
 <pre><code>sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
 </code></pre><h3 id="script-mounting">Script mounting</h3>
-<p>Now on your remote client create a script to start the backups</p>
+<p>Install some utilities needed for this script and make sure you have at least tried to ssh once to <a href="https://askubuntu.com/questions/278328/how-to-acquire-a-remote-host-fingerprint-that-is-not-in-known-hosts">grab the fingerprint</a></p>
+<pre><code>apt install sshpass
+</code></pre><p>Now on your remote client create a script to start the backups</p>
 <p><code>nano remote-backup.sh</code></p>
 <pre><code>#!/bin/bash
 
-#Mount the drive
-sshpass -p &quot;password&quot; ssh pi@yourdomainname.com &lt;&lt; EOF
- CRYPTPASS='passphrase to descrypt drive'
- echo $CRYPTPASS | cryptsetup luksOpen /dev/sdb1 volume01 -d=-
- mount /dev/mapper/volume01 /mnt/raid
+#Use blkid to find this for your device
+DRIVE_UUID=5bced688-7fa8-48b8-ad59-d63fe8aa14d5
+
+#Device credentials
+HOST=&quot;raspberrypi.rodriguez.systems&quot;
+USERNAME=&quot;pi&quot;
+PASSWORD=&quot;&quot;
+
+#keyfile string used to decrypt drive
+PASSPHRASE=''
+
+#Path on local to backup to remote with trailing slash
+BACKUP_PATH=&quot;/mnt/raid/home/&quot;
+
+echo &quot;Connecting to pi&quot;
+sshpass -p $PASSWORD ssh $USERNAME@$HOST &lt;&lt; EOF
+ echo &quot;Mounting drive&quot;
+ sudo mkdir /mnt/backup
+ echo '$PASSPHRASE' | sudo cryptsetup luksOpen /dev/disk/by-uuid/$DRIVE_UUID volume01 -d=-
+ sudo mount /dev/mapper/volume01 /mnt/backup
+ sudo chmod 777 /mnt/backup
 EOF
 
-#run rsync
-sshpass -p &quot;password&quot; rsync -a -P -e ssh /mnt/raid pi@yourdomainhere.com:/mnt/raid
+echo &quot;Run rsync&quot;
+sshpass -p $PASSWORD rsync -avzr --delete -P -e ssh $BACKUP_PATH $USERNAME@$HOST:/mnt/backup/
 
-#unmount the drive
-sshpass -p &quot;password&quot; ssh pi@yourdomainname.com &lt;&lt; EOF
- umount /mnt/raid
- cryptsetup luksClose /dev/mapper/volume01
+echo &quot;Unmount the drive&quot;
+sshpass -p $PASSWORD ssh $USERNAME@$HOST &lt;&lt; EOF
+ sudo umount /mnt/backup
+ sudo cryptsetup luksClose /dev/mapper/volume01
 EOF
-
 </code></pre><p>Now lets make this run once a week on sunday at midnight with <code>crontab -e</code></p>
-<pre><code>0 0 * * 0 remote-backup.sh
+<pre><code>0 0 * * 0 /path/to/remote-backup.sh
 </code></pre><p>Now you are all set for weekly backups. You can add more cronjobs to delete data weekly or do nightly backups as well. If you have any edits feel free to hit the edit button on the bottom of the article or leave a comment.</p>
 
       </article>
