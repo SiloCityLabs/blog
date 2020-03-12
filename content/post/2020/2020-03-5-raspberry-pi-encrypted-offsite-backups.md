@@ -306,4 +306,6 @@ Now lets make this run once a week on sunday at midnight with `crontab -e`
 0 0 * * 0 /path/to/remote-backup.sh
 ```
 
+Save your passphrase and keyfile somewhere safe, Lastpass, Fireproof safe, the cloud. Just remember that if your local copy goes away or you get robbed you will need that key to decrypt the remote copy.
+
 Now you are all set for weekly backups. You can add more cronjobs to delete data weekly or do nightly backups as well. If you have any edits feel free to hit the edit button on the bottom of the article or leave a comment.
