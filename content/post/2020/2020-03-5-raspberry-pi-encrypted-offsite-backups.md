@@ -149,12 +149,12 @@ The options of the command are as follows:
 
 Optionally you can [backup the luks header](https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery).
 
-#### Add secondary passphrase for stdin use
+#### Add secondary keyfile for stdin use
 
-To use luks remotely we will need to add a secondary key to the luksheader.
+To use luks remotely we will need to add a keyfile to the luksheader. `nano keyfile` and put a random key in here, it can even be the same as your passphrase.
 
 ```
-sudo cryptsetup luksAddKey /dev/sdb1
+sudo cryptsetup luksAddKey /dev/sdb1 keyfile
 ```
 
 #### Format the volume
