@@ -19,9 +19,10 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/blog/</guid>
       <description>&lt;figure&gt;
-        &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/luis-portfolio/blog.png&#34; alt=&#34;Blog website&#34;/&gt;
-        &lt;figcaption&gt;The blog when this article was written.&lt;/figcaption&gt;
-    &lt;/figure&gt;
+            &lt;amp-img src=&#34;https://silocitylabs.com/uploads/luis-portfolio/blog.png&#34; alt=&#34;Blog website&#34; height=&#34;940&#34; width=&#34;1354&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+            &lt;figcaption&gt;The blog when this article was written.&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    
 
 &lt;p&gt;The Issue:&lt;/p&gt;
 &lt;p&gt;Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress unfortunately is not very good with performance on high traffic websites.&lt;/p&gt;
@@ -236,7 +237,8 @@ You can checkout the other contributors for refferences.</description>
       <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/pixelmon/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/luis-portfolio/pixelmon.jpg&#34; alt=&#34;Pixelmon Mod&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/luis-portfolio/pixelmon.jpg&#34; alt=&#34;Pixelmon Mod&#34; height=&#34;994&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;In my time working with Pixelmon team I played a role of working with multiple parts of the team due to my vast experience developing. Pixelmon was a hybrid game mode with minecraft and pokemon mixed in an open world game.&lt;/p&gt;
 &lt;p&gt;Unfortunately the game faced some pushback including dmca takedown notice from Nintendo themselves which resulted in all development ending. The game had user created content that was similar to the real game pokemon but created by hand as to avoid copyright infringement. It seems that Nintendo still carried on with the takedown however.&lt;/p&gt;</description>

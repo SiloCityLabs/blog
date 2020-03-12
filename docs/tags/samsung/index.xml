@@ -32,7 +32,13 @@
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34;/&gt;</description>
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; height=&#34;500&#34; width=&#34;500&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
     
   </channel>

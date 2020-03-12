@@ -30,7 +30,7 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
       <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
-    Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
+     Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
     </item>
     
     <item>
@@ -39,7 +39,8 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; height=&#34;446&#34; width=&#34;907&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;rsquo;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
@@ -48,7 +49,14 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
 r
 Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; height=&#34;467&#34; width=&#34;830&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
