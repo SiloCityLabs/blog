@@ -190,7 +190,7 @@ sudo cryptsetup luksClose /dev/mapper/volume01
 <p>You will need to install some utilities for this.</p>
 <pre><code>apt install curl dnsutils
 </code></pre><p>Create a script file with the following but change <code>your.domain.name</code> and the ddns update url with your own.</p>
-<p><code>nano ddns.sh</code></p>
+<p><code>nano /home/pi/ddns.sh</code></p>
 <pre><code>#!/bin/bash
 
 IP_NS=$(dig +short your.domain.name)
@@ -203,21 +203,21 @@ else
     curl -ks https://dnsprovider.com?key=sometokentochangeip
 fi
 </code></pre><p>Now add the script to your crontab after making it executable</p>
-<pre><code>chmod +x ddns.sh
+<pre><code>chmod +x /home/pi/ddns.sh
 crontab -e
-</code></pre><pre><code>*/10 * * * * /path/to/ddns.sh
+</code></pre><pre><code>*/10 * * * * /home/pi/ddns.sh
 </code></pre><p>You can also have it run when ethernet is up with the following command</p>
 <pre><code>sudo ln -s /home/pi/ddns.sh /etc/network/if-up.d/ddns
 </code></pre><h3 id="upnp-port-forwarding">upnp port forwarding</h3>
 <p>Becouse some routers dont allow ports below 1024 to be mounted we will just be opening up ssh to another port. View a <a href="https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/">more detailed writeup</a> on how to run this on ethernet connect.</p>
 <pre><code>sudo apt install miniupnpc
 </code></pre><p>You can change port 1080 to anything you desire, it is recommended to keep it above 1024 for some routers that dont allow numbers below that.</p>
-<p><code>nano upnp.sh</code></p>
+<p><code>nano /home/pi/upnp.sh</code></p>
 <pre><code>#!/bin/bash
 ip=$(upnpc -l | grep &quot;Local LAN ip address&quot; | cut -d: -f2)
 
 upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
-</code></pre><p><code>chmod +x upnp.sh</code></p>
+</code></pre><p><code>chmod +x /home/pi/upnp.sh</code></p>
 <p>You can have it run when ethernet is up with the following command</p>
 <pre><code>sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
 </code></pre><h3 id="script-mounting">Script mounting</h3>
