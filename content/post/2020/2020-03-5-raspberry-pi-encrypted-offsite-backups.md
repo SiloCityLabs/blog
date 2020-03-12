@@ -255,34 +255,55 @@ sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
 
 ### Script mounting
 
+Install some utilities needed for this script and make sure you have at least tried to ssh once to [grab the fingerprint](https://askubuntu.com/questions/278328/how-to-acquire-a-remote-host-fingerprint-that-is-not-in-known-hosts)
+
+```
+apt install sshpass
+```
+
 Now on your remote client create a script to start the backups
 
 `nano remote-backup.sh`
 ```
 #!/bin/bash
 
-#Mount the drive
-sshpass -p "password" ssh pi@yourdomainname.com << EOF
- CRYPTPASS='passphrase to descrypt drive'
- echo $CRYPTPASS | cryptsetup luksOpen /dev/sdb1 volume01 -d=-
- mount /dev/mapper/volume01 /mnt/raid
+#Use blkid to find this for your device
+DRIVE_UUID=5bced688-7fa8-48b8-ad59-d63fe8aa14d5
+
+#Device credentials
+HOST="raspberrypi.rodriguez.systems"
+USERNAME="pi"
+PASSWORD=""
+
+#keyfile string used to decrypt drive
+PASSPHRASE=''
+
+#Path on local to backup to remote with trailing slash
+BACKUP_PATH="/mnt/raid/home/"
+
+echo "Connecting to pi"
+sshpass -p $PASSWORD ssh $USERNAME@$HOST << EOF
+ echo "Mounting drive"
+ sudo mkdir /mnt/backup
+ echo '$PASSPHRASE' | sudo cryptsetup luksOpen /dev/disk/by-uuid/$DRIVE_UUID volume01 -d=-
+ sudo mount /dev/mapper/volume01 /mnt/backup
+ sudo chmod 777 /mnt/backup
 EOF
 
-#run rsync
-sshpass -p "password" rsync -a -P -e ssh /mnt/raid pi@yourdomainhere.com:/mnt/raid
+echo "Run rsync"
+sshpass -p $PASSWORD rsync -avzr --delete -P -e ssh $BACKUP_PATH $USERNAME@$HOST:/mnt/backup/
 
-#unmount the drive
-sshpass -p "password" ssh pi@yourdomainname.com << EOF
- umount /mnt/raid
- cryptsetup luksClose /dev/mapper/volume01
+echo "Unmount the drive"
+sshpass -p $PASSWORD ssh $USERNAME@$HOST << EOF
+ sudo umount /mnt/backup
+ sudo cryptsetup luksClose /dev/mapper/volume01
 EOF
-
 ```
 
 Now lets make this run once a week on sunday at midnight with `crontab -e`
 
 ```
-0 0 * * 0 remote-backup.sh
+0 0 * * 0 /path/to/remote-backup.sh
 ```
 
 Now you are all set for weekly backups. You can add more cronjobs to delete data weekly or do nightly backups as well. If you have any edits feel free to hit the edit button on the bottom of the article or leave a comment.
