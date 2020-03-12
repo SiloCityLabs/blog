@@ -186,7 +186,9 @@ sudo mount /dev/mapper/volume01 /mnt/raid
 <pre><code>sudo umount /mnt/drive01
 sudo cryptsetup luksClose /dev/mapper/volume01
 </code></pre><h3 id="ddns">DDNS</h3>
-<p>Create a script file with the following but change <code>your.domain.name</code> and the ddns update url with your own.</p>
+<p>You will need to install some utilities for this.</p>
+<pre><code>apt install curl dnsutils
+</code></pre><p>Create a script file with the following but change <code>your.domain.name</code> and the ddns update url with your own.</p>
 <p><code>nano ddns.sh</code></p>
 <pre><code>#!/bin/bash
 
@@ -196,13 +198,14 @@ IP_WAN=$(curl -ks http://checkip.amazonaws.com/)
 if [[ &quot;$IP_NS&quot; == &quot;$IP_WAN&quot; ]]; then
     echo &quot;No IP update required. ($IP_WAN)&quot;
 else
-    echo &quot;IP has changed&quot;
+    echo &quot;IP has changed from ($IP_WAN) to ($IP_NS)&quot;
     curl -ks https://dnsprovider.com?key=sometokentochangeip
 fi
 </code></pre><p>Now add the script to your crontab after making it executable</p>
 <pre><code>chmod +x ddns.sh
 crontab -e
-</code></pre><pre><code>*/10 * * * * /path/to/ddns.sh
+</code></pre><pre><code>@reboot /path/to/ddns.sh
+*/10 * * * * /path/to/ddns.sh
 </code></pre><h3 id="upnp-port-forwarding">upnp port forwarding</h3>
 <p>Becouse some routers dont allow ports below 1024 to be mounted we will just be opening up ssh to another port. View a <a href="https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/">more detailed writeup</a> on how to run this on ethernet connect.</p>
 <pre><code>sudo apt install miniupnpc
@@ -212,8 +215,9 @@ crontab -e
 ip=$($upnpc -l | grep &quot;Local LAN ip address&quot; | cut -d: -f2)
 
 upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
-</code></pre><p>I will just be adding this on bootup with <code>crontab -e</code></p>
-<pre><code>@reboot upnp.sh
+</code></pre><p><code>chmod +x upnp.sh</code></p>
+<p>I will just be adding this on bootup with <code>crontab -e</code></p>
+<pre><code>@reboot /path/to/upnp.sh
 </code></pre><h3 id="script-mounting">Script mounting</h3>
 <p>Now on your remote client create a script to start the backups</p>
 <p><code>nano remote-backup.sh</code></p>
