@@ -157,6 +157,8 @@ To use luks remotely we will need to add a keyfile to the luksheader. `nano keyf
 sudo cryptsetup luksAddKey /dev/sdb1 keyfile
 ```
 
+Dont forget to delete that keyfile otherwise your setup will be exposed. `rm keyfile`
+
 #### Format the volume
 
 Mount the luks device and format the volume
@@ -217,8 +219,13 @@ crontab -e
 ```
 
 ```
-@reboot /path/to/ddns.sh
 */10 * * * * /path/to/ddns.sh
+```
+
+You can also have it run when ethernet is up with the following command
+
+```
+sudo ln -s /home/pi/ddns.sh /etc/network/if-up.d/ddns
 ```
 
 ### upnp port forwarding
@@ -234,16 +241,16 @@ You can change port 1080 to anything you desire, it is recommended to keep it ab
 `nano upnp.sh`
 ```
 #!/bin/bash
-ip=$($upnpc -l | grep "Local LAN ip address" | cut -d: -f2)
+ip=$(upnpc -l | grep "Local LAN ip address" | cut -d: -f2)
 
 upnpc -e "Backups" -a $ip 22 1080 TCP
 ```
 `chmod +x upnp.sh`
 
-I will just be adding this on bootup with `crontab -e`
+You can have it run when ethernet is up with the following command
 
 ```
-@reboot /path/to/upnp.sh
+sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
 ```
 
 ### Script mounting
