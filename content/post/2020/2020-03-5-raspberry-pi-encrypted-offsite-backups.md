@@ -196,7 +196,7 @@ apt install curl dnsutils
 
 Create a script file with the following but change `your.domain.name` and the ddns update url with your own.
 
-`nano ddns.sh`
+`nano /home/pi/ddns.sh`
 ```
 #!/bin/bash
 
@@ -214,12 +214,12 @@ fi
 Now add the script to your crontab after making it executable
 
 ```
-chmod +x ddns.sh
+chmod +x /home/pi/ddns.sh
 crontab -e
 ```
 
 ```
-*/10 * * * * /path/to/ddns.sh
+*/10 * * * * /home/pi/ddns.sh
 ```
 
 You can also have it run when ethernet is up with the following command
@@ -238,14 +238,14 @@ sudo apt install miniupnpc
 
 You can change port 1080 to anything you desire, it is recommended to keep it above 1024 for some routers that dont allow numbers below that.
 
-`nano upnp.sh`
+`nano /home/pi/upnp.sh`
 ```
 #!/bin/bash
 ip=$(upnpc -l | grep "Local LAN ip address" | cut -d: -f2)
 
 upnpc -e "Backups" -a $ip 22 1080 TCP
 ```
-`chmod +x upnp.sh`
+`chmod +x /home/pi/upnp.sh`
 
 You can have it run when ethernet is up with the following command
 
