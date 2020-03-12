@@ -279,9 +279,9 @@ Syncing disks.
 <li><code>/dev/sdb1</code> = partition to encrypt</li>
 </ul>
 <p>Optionally you can <a href="https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery">backup the luks header</a>.</p>
-<h4 id="add-secondary-passphrase-for-stdin-use">Add secondary passphrase for stdin use</h4>
-<p>To use luks remotely we will need to add a secondary key to the luksheader.</p>
-<pre><code>sudo cryptsetup luksAddKey /dev/sdb1
+<h4 id="add-secondary-keyfile-for-stdin-use">Add secondary keyfile for stdin use</h4>
+<p>To use luks remotely we will need to add a keyfile to the luksheader. <code>nano keyfile</code> and put a random key in here, it can even be the same as your passphrase.</p>
+<pre><code>sudo cryptsetup luksAddKey /dev/sdb1 keyfile
 </code></pre><h4 id="format-the-volume">Format the volume</h4>
 <p>Mount the luks device and format the volume</p>
 <pre><code>sudo cryptsetup luksOpen /dev/sdb1 volume01
