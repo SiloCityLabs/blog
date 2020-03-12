@@ -271,7 +271,7 @@ Now on your remote client create a script to start the backups
 DRIVE_UUID=5bced688-7fa8-48b8-ad59-d63fe8aa14d5
 
 #Device credentials
-HOST="raspberrypi.rodriguez.systems"
+HOST="raspberrypi.yourdomain.com"
 USERNAME="pi"
 PASSWORD=""
 
