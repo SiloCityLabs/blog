@@ -186,6 +186,12 @@ sudo cryptsetup luksClose /dev/mapper/volume01
 
 ### DDNS
 
+You will need to install some utilities for this.
+
+```
+apt install curl dnsutils
+```
+
 Create a script file with the following but change `your.domain.name` and the ddns update url with your own.
 
 `nano ddns.sh`
@@ -198,7 +204,7 @@ IP_WAN=$(curl -ks http://checkip.amazonaws.com/)
 if [[ "$IP_NS" == "$IP_WAN" ]]; then
     echo "No IP update required. ($IP_WAN)"
 else
-    echo "IP has changed"
+    echo "IP has changed from ($IP_WAN) to ($IP_NS)"
     curl -ks https://dnsprovider.com?key=sometokentochangeip
 fi
 ```
@@ -211,6 +217,7 @@ crontab -e
 ```
 
 ```
+@reboot /path/to/ddns.sh
 */10 * * * * /path/to/ddns.sh
 ```
 
@@ -231,11 +238,12 @@ ip=$($upnpc -l | grep "Local LAN ip address" | cut -d: -f2)
 
 upnpc -e "Backups" -a $ip 22 1080 TCP
 ```
+`chmod +x upnp.sh`
 
 I will just be adding this on bootup with `crontab -e`
 
 ```
-@reboot upnp.sh
+@reboot /path/to/upnp.sh
 ```
 
 ### Script mounting
