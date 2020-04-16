@@ -36,18 +36,22 @@ Some of you may notice something you will immediately not like, TOSHIBA. I reach
 
   * I start off by plugging in my new drive and formatting it.
 
-<pre>mkfs.ext4 /dev/sda1</pre>
+```
+mkfs.ext4 /dev/sda1
+```
 
   * After formatting I need to grab the device UUID for use later.
 
-```blkid /dev/sda1
+```
+blkid /dev/sda1
 
 /dev/sda1: UUID="fbb3b599-0a07-46f5-945d-0dbe6cac7639" TYPE="ext4" PARTLABEL="primary" PARTUUID="c15d00d1-214f-4517-8c2c-8037419ff0d4"
 ```
 
   * Now I have the UUID, lets move on to crontab. Create two cron tasks using `crontab -e`
 
-```0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
+```
+0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
 5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
 ```
 
@@ -58,7 +62,8 @@ Some of you may notice something you will immediately not like, TOSHIBA. I reach
 
 `nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh`
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 DRIVE_UUID=UUID-HERE
 
@@ -72,7 +77,8 @@ hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
 
   `nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh`
 
-  ```#!/bin/bash
+```
+#!/bin/bash
 
 DRIVE_UUID=UUID-HERE
 
