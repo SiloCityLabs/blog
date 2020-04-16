@@ -231,7 +231,7 @@ if (!doNotTrack) {
 </code></pre><h3 id="installation-onfedora">Installation on <strong>Fedora</strong></h3>
 <pre><code>dnf install fdupes
 </code></pre><p>After installing, we can move onto the next step. Run this command to get a list of all the duplicates.</p>
-<pre><code>fdupes -r /mnt/4000/home &amp;gt; dupes.txt
+<pre><code>fdupes -r /mnt/4000/home &gt; dupes.txt
 </code></pre><p>Open this file up in a text editor and start hacking away. Delete all the lines of the files you wish to keep. Also delete any blank lines separating them. One example here:</p>
 <pre><code>/mnt/4000/home/Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1622.JPG
 /mnt/4000/home/Shared/Pictures/2016/pets/IMG_1622.JPG
@@ -240,7 +240,7 @@ if (!doNotTrack) {
 /mnt/4000/home/Shared/Pictures/2016/IMG_1428.JPG
 </code></pre><p>This one however ill keep the phone backup copy so that I don&rsquo;t make a messy folder inside of 2016</p>
 <p>Now that we are done editing our list, lets run the command on the list we want to delete.</p>
-<pre><code>while IFS= read -r file ; do rm -- &quot;$file&quot; ; done &amp;lt; dupes.txt
+<pre><code>while IFS= read -r file ; do rm -- &quot;$file&quot; ; done &lt; dupes.txt
 </code></pre><p>You may have to do this a few times to get any you missed.</p>
 <p>Now that we have cleaned up all duplicates. We will be moving onto the next step. Finding empty files and folders.</p>
 <p>Find all empty files</p>
