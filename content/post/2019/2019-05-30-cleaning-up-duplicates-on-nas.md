@@ -40,7 +40,7 @@ dnf install fdupes
 After installing, we can move onto the next step. Run this command to get a list of all the duplicates.
 
 ```
-fdupes -r /mnt/4000/home &gt; dupes.txt
+fdupes -r /mnt/4000/home > dupes.txt
 ```
 
 Open this file up in a text editor and start hacking away. Delete all the lines of the files you wish to keep. Also delete any blank lines separating them. One example here:
@@ -62,7 +62,7 @@ This one however ill keep the phone backup copy so that I don't make a messy fol
 Now that we are done editing our list, lets run the command on the list we want to delete.
 
 ```
-while IFS= read -r file ; do rm -- "$file" ; done &lt; dupes.txt
+while IFS= read -r file ; do rm -- "$file" ; done < dupes.txt
 ```
 
 You may have to do this a few times to get any you missed.
