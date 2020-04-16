@@ -42,7 +42,14 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/Maave&#34;&gt;
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34; height=&#34;478&#34; width=&#34;1257&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;rsquo;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
@@ -53,11 +60,19 @@
       <pubDate>Fri, 15 Dec 2017 19:21:01 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34; height=&#34;513&#34; width=&#34;1010&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;This is a custom 3D printed wrist brace that I&amp;rsquo;m working on. I wear wrist braces to sleep for RSI / carpal tunnel but they&amp;rsquo;re not ideal. The fabric construction is hot, sweaty, and not supportive around the knuckle area of the hand. The velcro is noisy, sticks to bedding and lint, and is wearing out over time. I want something rigid, breathable, and quiet.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/cast1.jpg&#34; alt=&#34;3D printed cast I saw online&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/cast1.jpg&#34; alt=&#34;3D printed cast I saw online&#34; height=&#34;467&#34; width=&#34;660&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.&lt;/p&gt;</description>
     </item>

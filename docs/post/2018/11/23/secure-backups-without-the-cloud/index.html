@@ -211,22 +211,25 @@ if (!doNotTrack) {
 <ul>
 <li>I start off by plugging in my new drive and formatting it.</li>
 </ul>
-<!-- raw HTML omitted -->
-<ul>
+<pre><code>mkfs.ext4 /dev/sda1
+</code></pre><ul>
 <li>After formatting I need to grab the device UUID for use later.</li>
 </ul>
-<pre><code class="language-blkid" data-lang="blkid">
+<pre><code>blkid /dev/sda1
+
 /dev/sda1: UUID=&quot;fbb3b599-0a07-46f5-945d-0dbe6cac7639&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;primary&quot; PARTUUID=&quot;c15d00d1-214f-4517-8c2c-8037419ff0d4&quot;
 </code></pre><ul>
 <li>Now I have the UUID, lets move on to crontab. Create two cron tasks using <code>crontab -e</code></li>
 </ul>
-<pre><code class="language-0" data-lang="0">5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
+<pre><code>0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
+5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
 </code></pre><p>So according to this <!-- raw HTML omitted -->5 8 * * 0<!-- raw HTML omitted --> would run 8:05 AM every Sunday and <!-- raw HTML omitted -->0 6 * * *<!-- raw HTML omitted --> would run daily at 6 AM. Lets create the first script in the location you selected to save it.</p>
 <ul>
 <li>This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.</li>
 </ul>
 <p><code>nano /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh</code></p>
-<pre><code class="language-#!/bin/bash" data-lang="#!/bin/bash">
+<pre><code>#!/bin/bash
+
 DRIVE_UUID=UUID-HERE
 
 mount --uuid $DRIVE_UUID /mnt/fireproof
@@ -237,7 +240,8 @@ hdparm -Y /dev/disk/by-uuid/$DRIVE_UUID
 <li>This script will mount the drive, sync any new files or changed files, it will also delete any deleted files. Great for recovering a deleted file before sunday rolls around, then un-mount it and force it to sleep.</li>
 </ul>
 <p><code>nano /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh</code></p>
-<pre><code class="language-#!/bin/bash" data-lang="#!/bin/bash">
+<pre><code>#!/bin/bash
+
 DRIVE_UUID=UUID-HERE
 
 mount --uuid $DRIVE_UUID /mnt/fireproof
