@@ -48,11 +48,14 @@ To start this you will need an ftp server credentials to use with the following 
 
 Crontab file:
 
-<pre>@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh</pre>
+```
+@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh
+```
 
 Script:
 
-<pre>#!/bin/bash
+```
+#!/bin/bash
 HOST='hostedftp.com'
 USER='username'
 PASS='password'
@@ -67,7 +70,8 @@ set ftp:ssl-allow no
 mirror --no-symlinks --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
 bye
 "
-done</pre>
+done
+```
 
 &nbsp;
 
@@ -83,7 +87,8 @@ Setting up a file share is fairly simple, First download and install samba
 
 Then edit the main configuration file:
 
-<pre>[global]
+```
+[global]
    workgroup = WORKGROUP
    dns proxy = no
    log file = /var/log/samba/log.%m
@@ -137,7 +142,7 @@ Then edit the main configuration file:
    path = /var/cache/zoneminder
    veto files = /._*/.DS_Store/
    delete veto files = yes
-</pre>
+```
 
 Then create the groups "nas" and "family" in linux and add your users to it. There is a [guide][9] on that.
 
@@ -155,7 +160,9 @@ This one was very simple, I made a simple script in php to send me alerts when m
 
 After downloading them, add a line to your schedule tasks in linux using crontab -e
 
-<pre>0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php</pre>
+```
+0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php
+```
 
  [1]: https://www.zoneminder.com/
  [2]: https://blog.silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/
