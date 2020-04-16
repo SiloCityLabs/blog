@@ -18,7 +18,8 @@
       <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; height=&#34;446&#34; width=&#34;907&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;rsquo;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
@@ -27,7 +28,14 @@
 r
 Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; height=&#34;467&#34; width=&#34;830&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
@@ -53,7 +61,13 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34;/&gt;</description>
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; height=&#34;500&#34; width=&#34;500&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
     
   </channel>
