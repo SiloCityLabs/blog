@@ -15,7 +15,7 @@ tags:
 ---
 {{< image src="/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png" alt="">}}
 
-I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many [other reasons][1] I won't begin to rant about. I chose to go with a decently common operating system for better compatibility.
+I have just about had it with [Windows updates](https://www.softwarehow.com/fix-windows-stuck-checking-updates/) being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many [other reasons][1] I won't begin to rant about. I chose to go with a decently common operating system for better compatibility.
 
 I have gone through the [install process and have installed Ubuntu 18.04LTS][2]. For less advanced Linux users you can go with a simpler Linux like [Solus][3] which is a little more GUI friendly system.
 
