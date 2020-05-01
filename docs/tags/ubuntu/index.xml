@@ -18,7 +18,8 @@
       <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34; height=&#34;335&#34; width=&#34;670&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many &lt;a href=&#34;https://duckduckgo.com/?q=windows+updates+breaks&amp;amp;atb=v147-1__&amp;amp;t=cros&amp;amp;iar=news&amp;amp;ia=&#34;&gt;other reasons&lt;/a&gt; I won&amp;rsquo;t begin to rant about. I chose to go with a decently common operating system for better compatibility.&lt;/p&gt;
 &lt;p&gt;I have gone through the &lt;a href=&#34;https://linuxhint.com/rufus_bootable_usb_install_ubuntu_18-04_lts/&#34;&gt;install process and have installed Ubuntu 18.04LTS&lt;/a&gt;. For less advanced Linux users you can go with a simpler Linux like &lt;a href=&#34;https://linoxide.com/distros/install-solus-usb/&#34;&gt;Solus&lt;/a&gt; which is a little more GUI friendly system.&lt;/p&gt;

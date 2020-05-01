@@ -172,7 +172,14 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <guid>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;axis-2130-ptz-and-zoneminder&#34;&gt;Axis 2130 PTZ and Zoneminder&lt;/h3&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/08/41X1FB2KSBL._SY400_.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/41X1FB2KSBL._SY400_.jpg&#34; alt=&#34;&#34; height=&#34;400&#34; width=&#34;429&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;This camera is very dated, also using a proprietary power adapter, no WiFi and very difficult to setup. Once you are on my network you have full viewing access to my camera. My router fortunately has network isolation so I am able to block access to it except via my server that has zoneminder nvr software installed. Unfortunately you will not be able to control the ptz from Zoneminder directly due to the age of the camera. But you can however give it a fixed position in the web panel it has built in. I would recommend setting its default fixed position after a reboot or power loss.&lt;/p&gt;</description>
@@ -184,7 +191,8 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Thu, 24 Jan 2019 23:30:39 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/12/speedtest.png&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/12/speedtest.png&#34; alt=&#34;&#34; height=&#34;377&#34; width=&#34;567&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;Many have heard the term speed test, the first thing that comes to mind is speedtest.net or google&amp;rsquo;s speed test tool. Many don&amp;rsquo;t know that speed on your internal network also affects you. When testing internet speed your device sends data to router then out to the internet, what if your router is the issue. Even worse, your device. I will show u a very handy utility I use to make sure everything in my house runs great. Its called &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;iPerf&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
@@ -197,7 +205,14 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <guid>https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;genius-32200318100-widecam-320-usb-and-zoneminder&#34;&gt;Genius 32200318100 WideCam 320 USB and Zoneminder&lt;/h3&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/08/26-179-100-02.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/26-179-100-02.jpg&#34; alt=&#34;&#34; height=&#34;480&#34; width=&#34;640&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;Although I have this particular camera, any basic USB webcam will work the same way. The setup for this one was very simple and its the most stable camera out of my whole setup. There however is no nightvision. I counter this by trigger the lights to turn on if motion sensor is tripped.&lt;/p&gt;</description>
@@ -222,7 +237,14 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <guid>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;nightowl-bnc&#34;&gt;Nightowl BNC&lt;/h3&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34; height=&#34;251&#34; width=&#34;201&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;These are just about every cheap camera sold in store. You can buy these at home depot, walmart, and other retailers. Your best bet is craigslist you can get them for like $10 each. They use a basic analog signal you can hookup to a TV with the right connector. The main connector is called a BNC connector. The downside to these cameras is that they usually cap out at 720p. You will also need a PCI or usb device to hook it up to your server. Unless you already have these cameras laying around, I WOULD NOT RECOMMEND this setup for purchase. Its cheaper to get a 1080p camera on amazon for $20 with less wiring and no pci card.&lt;/p&gt;</description>
@@ -234,7 +256,8 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34; height=&#34;335&#34; width=&#34;670&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;I have just about had it with Windows updates being forced on me. Graphics drivers breaking. My settings getting reset every time I get on and many &lt;a href=&#34;https://duckduckgo.com/?q=windows+updates+breaks&amp;amp;atb=v147-1__&amp;amp;t=cros&amp;amp;iar=news&amp;amp;ia=&#34;&gt;other reasons&lt;/a&gt; I won&amp;rsquo;t begin to rant about. I chose to go with a decently common operating system for better compatibility.&lt;/p&gt;
 &lt;p&gt;I have gone through the &lt;a href=&#34;https://linuxhint.com/rufus_bootable_usb_install_ubuntu_18-04_lts/&#34;&gt;install process and have installed Ubuntu 18.04LTS&lt;/a&gt;. For less advanced Linux users you can go with a simpler Linux like &lt;a href=&#34;https://linoxide.com/distros/install-solus-usb/&#34;&gt;Solus&lt;/a&gt; which is a little more GUI friendly system.&lt;/p&gt;
@@ -268,7 +291,14 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <guid>https://silocitylabs.com/post/2018/12/13/rscm-13101b-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;rosewill-shieldeye-rscm-13101b-and-zoneminder&#34;&gt;Rosewill SHIELDeye RSCM-13101B and Zoneminder&lt;/h3&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/08/81-147-048-Z01.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/08/81-147-048-Z01.jpg&#34; alt=&#34;&#34; height=&#34;480&#34; width=&#34;640&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;This camera is not listed as officially supporting ONVIF, but it does have it. It barely works so I had to do a workaround to add it in. This camera is a OEM camera, Rosewill just re-branded them. Other models that will most likely work the same way. RSCM-13702B RSCM-13702W RSCM-13101B RSCM-15702 RSCM-121001W&lt;/p&gt;</description>
@@ -280,7 +310,8 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Wed, 28 Nov 2018 23:59:23 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/11/61qmqoijgvl._sl1000_.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/11/61qmqoijgvl._sl1000_.jpg&#34; alt=&#34;&#34; height=&#34;1000&#34; width=&#34;1000&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;Model: &lt;a href=&#34;https://www.bvsecurity.com/index.php/ca-ipbf-4mp-wifi.html&#34;&gt;ca-ipbf-4mp-wifi-fba&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This problem gave me a few issues I will go over briefly. This was fairly simple once I realized what I was doing wrong. I originally had it plugged in via an Ethernet cable to setup to WiFi like most cameras. But this camera actually just uses the microphone to transmit settings. Once I removed the Ethernet cable everything worked fine. I actually snipped off the Ethernet knowing I wouldn&amp;rsquo;t need it, saving space with the clunky cable.&lt;/p&gt;</description>
@@ -292,7 +323,8 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Fri, 23 Nov 2018 17:30:03 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/11/22-501-073_R01.jpg&#34; alt=&#34;ioSafe SOLO G3 4TB USB 3.0&#34; height=&#34;960&#34; width=&#34;1280&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;I accidentally stumbled upon this solution while trying to find cloud providers to backup my 2TB&amp;rsquo;s worth of NAS backups. With every single cloud solution being out of price range for the size data I needed I had to look elsewhere. I came across the ioSafe Solo G3 enclosure. It boasts about being safe in every way possible, Fire Proof, Water Proof, and Theft Proof. I almost considered it too good to be true, seemed legit enough after watching some YouTube videos.&lt;/p&gt;</description>
     </item>
@@ -306,7 +338,14 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <description>&lt;p&gt;I wanted to wall mount my google home mini for the kitchen since there is not really a nice place to set it down. I also didnt want to pay for a mount or 3d print anything.&lt;/p&gt;
 &lt;p&gt;You can use zip ties or bread bag ties to secure the cable in a loop like below.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/10/20181027_2304361152181891921713046.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/10/20181027_2304361152181891921713046.jpg&#34; alt=&#34;&#34; height=&#34;1920&#34; width=&#34;1439&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;After u have the 3 ties in place. Just plug it in and you should be set.&lt;/p&gt;</description>
     </item>
@@ -332,7 +371,8 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Tue, 18 Sep 2018 00:32:07 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/09/18/infinite-free-small-storage-for-electronics/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019313975750998363509017.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/09/20180917_2019313975750998363509017.jpg&#34; alt=&#34;&#34; height=&#34;1440&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;Im a little dissapointed in myself for not thinking of it sooner. I tossed about 20 of these in the recycling bin before I realized I could reuse them myself.&lt;/p&gt;
 &lt;p&gt;Title is a little deceptive yes, but I still consider them free when you have a source. Baby formula containers!&lt;/p&gt;</description>
@@ -353,7 +393,13 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
 &lt;/ul&gt;
 &lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; alt=&#34;&#34;/&gt;</description>
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; alt=&#34;&#34; height=&#34;1440&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
     
     <item>
@@ -364,7 +410,14 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <guid>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</guid>
       <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34; height=&#34;231&#34; width=&#34;231&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;Supplies/Tools needed:&lt;/p&gt;
 &lt;ul&gt;
@@ -463,7 +516,8 @@ Setting up a Go Environment For all of our tutorials we will be using VSCode to 
       <pubDate>Fri, 02 Mar 2018 16:29:41 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/03/02/changing-dns-settings-for-android-development/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg&#34; alt=&#34;&#34; height=&#34;395&#34; width=&#34;728&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.&lt;/p&gt;
@@ -497,7 +551,7 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
       <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
-    Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
+     Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
     </item>
     
     <item>
@@ -517,7 +571,8 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
-      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34;/&gt;
+      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34; height=&#34;446&#34; width=&#34;907&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;I wanted to talk about my smart home setup from the ground up. I have many articles describing my setup in pieces but not everyone gets an entire overview of everything I have setup here. I don&amp;rsquo;t have a mansion or anything fancy like built in sprinkler/irrigation, so this will be more catered to your average city home.&lt;/p&gt;
@@ -526,7 +581,14 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
 r
 Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of a automation rule. Going to the basement to do laundry, or going to sleep at random times. I can just send a command and google home will handle it. Link your SmartThings account and Google Home together for best results. Give all your devices aliases to make it easier to command via Google. I want one located in every central room of the house, Kitchen, Living room, Master Bedroom.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/100417-google-home-mini7347-2.jpg&#34; alt=&#34;&#34; height=&#34;467&#34; width=&#34;830&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
@@ -561,7 +623,13 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34;/&gt;</description>
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; height=&#34;500&#34; width=&#34;500&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
     
     <item>
@@ -581,7 +649,14 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
       <guid>https://silocitylabs.com/post/2017/12/15/ebay-print-bed/</guid>
       <description>&lt;p&gt;We received our new print bed from &lt;a href=&#34;https://www.ebay.com/itm/192342007627&#34;&gt;eBay/China&lt;/a&gt;. Not a Lokbuild but at least its cheaper. First thing I noticed is that this sheet is thicker than a Lokbuild, 0.6mm thick instead of 0.5. When I followed the steps on calibrating I clicked &lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt; 8 times to ensure proper spacing instead of the original 4.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/img_20171106_1706507253338128094262765.jpg&#34; alt=&#34;Before applying pad&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/img_20171106_1706507253338128094262765.jpg&#34; alt=&#34;Before applying pad&#34; height=&#34;1280&#34; width=&#34;720&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;&lt;strong&gt;Robox Instructions:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
