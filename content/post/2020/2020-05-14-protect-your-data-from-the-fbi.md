@@ -1,6 +1,6 @@
 ---
 title: Protect your data from the FBI
-author: Maave
+author: maave
 type: post
 date: 2020-05-14T18:01:00+00:00
 url: /post/2020/05/14/protect-your-data-from-the-fbi/
@@ -43,12 +43,6 @@ You can [clear chrome automatically](http://www.psdtolive.com/how-to-automatical
 ### Clear Firefox
 
 Check back later for more instructions on this, You can also take a [look here for now](https://support.mozilla.org/en-US/kb/delete-browsing-search-download-history-firefox).
-
-
-
-
-
-
 
 
 
