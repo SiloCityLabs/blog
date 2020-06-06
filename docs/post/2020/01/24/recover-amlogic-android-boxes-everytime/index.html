@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Recover AMLogic Android boxes everytime</title>
+  <meta property="og:title" content="Recover AMLogic Android boxes everytime" />
+  <meta name="twitter:title" content="Recover AMLogic Android boxes everytime" />
+  <meta name="description" content="Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully …">
+  <meta property="og:description" content="Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully …">
+  <meta name="twitter:description" content="Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully …">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2020/01/24/recover-amlogic-android-boxes-everytime/">
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://silocitylabs.com/css/bundle.min.css" />
+  
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/company/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+                  <a href="https://silocitylabs.com/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://silocitylabs.com/newsletter">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Recover AMLogic Android boxes everytime</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on January 24, 2020
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully brick one of these units permanently. I will start off with the basics and work my way up to the more advanced methods.</p>
+<p>Disclosure:
+Everything in this document was sourced from somewhere online. If you want original links please ask me if I havent already posted them in one of the Image Source links. This document does NOT contain any proprietary knowledge that wasnt already sourced from the internet.</p>
+<h3 id="recover-method-1-reset-button">Recover method 1: Reset button</h3>
+<p>Yes I know, very basic and im sure most of you have tried it. However some may not know that the reset button has dual purpose and is also hidden cleverly behind the &ldquo;AV&rdquo; or &ldquo;IR&rdquo; port on some of these boxes. Feel free to shove a paperclip carefully to not miss the button and hit a component. Try it first while its unplugged so you can get the hang of it and not short anything out internally live. You have to hold it down for about 3-4 seconds to trigger recovery.</p>
+<p>
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/reset.jpg" alt="x96 max reset button"/>
+
+<a href="https://thesimplicitypost.com/all-methods-custom-rom-install/">Image Source</a></p>
+<h3 id="recover-method-2-amlogic-burn-tool">Recover method 2: AMLogic Burn tool</h3>
+<p>Find a downloadable image for your specific device out in the wild. You can also try banggood.com product pages ussually seem to post download links. Then download the <a href="https://downloads.techreanimate.com/kifuob">usb burn tool 2.1.7.3</a></p>
+<p>Go to File -&gt; import image, Select your image, Hit Start, and finally plugin your device.</p>
+<p>It will pickup automatically. You can also hold the reset button if it does not.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/burn_tool.jpg" alt="usb burn tool"/>
+
+<h3 id="recover-method-3-short-the-nand-chip">Recover method 3: Short the NAND chip</h3>
+<p>This is is risky and very diffucult to spot and document as each device is different. Most new devices uses pads for this while older devices have exposed leads on the old memory chips. Shorting the NAND chip&rsquo;s two pins will throw the device into flash mode on some devices. Take a look at the image below for some examples. This is also called MaskRom mode on many devices including Rockchip devices. You will need to have the USB Burn tool installed and follow the steps from method 2. You can also checkout the <a href="https://forum.freaktab.com/forum/main-category/main-forum/637675-nand-chip-mask-rom-mode-short-location">source document</a> which contains source images I posted here.</p>
+<ol>
+<li>Open device housing and find the NAND. In some boxes you also need detached heatsink or cooler in order to reach NAND</li>
+<li>Place PCB in front of you so you can clearly read NAND’s name and board number</li>
+<li>You should choose 6-7 or 7-8 pin from NAND bottom on the right side or 6-7 or 7-8 pin from first pin (first pin is marked on PCBA with a triangle) Short circuit it while plugging to Host PC and powering on. Check pins for other devices online first.</li>
+</ol>
+<p>
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/nand.jpg" alt="NAND example 1"/>
+
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/nand2.jpg" alt="NAND example 2"/>
+</p>
+<p>On this device with a newer chip there are pads on the opposite side of the board right under the NAND itself.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/nand-pads.jpg" alt="NAND Pads"/>
+
+<h3 id="recover-method-4-amlogic-sd-burn-image">Recover method 4: AMLogic SD Burn image</h3>
+<p>I have not used this method as it shows very little success for my devices. But I am told it works well for others. Using the <a href="https://downloads.techreanimate.com/hwpjdn">Burn card maker</a> you can write your image to a micro sd card and following any of the methods above will yield you a proper flash.</p>
+<h3 id="recover-method-5-serial-port-jtag">Recover method 5: Serial port jtag</h3>
+<p>You will need to open your device up for this step and locate any pins or unsoldered holes labeled GND/TX/RX/3.3V or sometimes just labeled UART or even JTAG. These will work with any USB to TTL device such as the <a href="http://a.tra.li/UC9f">CH340</a> or the <a href="http://a.tra.li/UC9h">CP2102</a> (more reliable). This is my primary means of recovery for any device now. Its reliable and works 100% of the time on AMLogic devices.</p>
+
+    <figure>
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/usb-ttl.png" alt="USB to TTL device"/>
+        <figcaption>USB to TTL device with custom cable that matches the layout of my device</figcaption>
+    </figure>
+
+<p>Once located attach the TTL usb device to it, you can also solder some pins permanently if you are recovering this device often for development.</p>
+<p>
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/pcb-ttl.jpeg" alt="TTL Header"/>
+
+<a href="https://forum.armbian.com/topic/9285-proof-of-concept-realtek-1295/page/5/">Image Source</a></p>
+<p>Open Putty using the following settings with your COM number identified in Device manager for Windows.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/putty.jpg" alt="Putty"/>
+
+<p>With the putty window open mash the enter key while you plug the power into the device. You will essentially stop boot and enter the boot console. You can now go ahead and type <code>update</code> and use method 2 above to flash.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/console.jpg" alt="Console"/>
+
+<h3 id="recover-method-6-micro-sd-card-serial-console">Recover method 6: Micro SD card serial Console</h3>
+<p>Similar to method 5, However I do not own the device in question to post any good images about it. I am told its the same and works withouth opening the box.</p>
+<p>You can see the device here on this <a href="https://www.facebook.com/tanix.box/posts/developers-and-geeks-something-interesting-here-debug-now-your-amlogic-device-wi/1210753889057831/">facebook post</a> selling it.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2020/amlogic-recovery/debug-device.jpg" alt="debug device"/>
+
+<p>I have not been able to locate one to buy it myself. If you would like to sell me one reach out to me in the comments below.</p>
+<p>Know of any other recovery methods?. Let me know below in the comments.</p>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2020/2020-01-24-recover-amlogic-android-boxes-everytime.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2020/2020-01-24-recover-amlogic-android-boxes-everytime.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/" data-toggle="tooltip" data-placement="top" title="Arm 64bit vs Xeon x86_64 performance on AWS">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/" data-toggle="tooltip" data-placement="top" title="Turn an Old Raspberry pi into an offsite backup">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2020
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

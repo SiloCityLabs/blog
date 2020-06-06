@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fbi on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/fbi/</link>
+    <description>Recent content in fbi on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Thu, 14 May 2020 18:01:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://silocitylabs.com/tags/fbi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Protect your data from the FBI</title>
+      <link>https://silocitylabs.com/post/2020/05/14/protect-your-data-from-the-fbi/</link>
+      <pubDate>Thu, 14 May 2020 18:01:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2020/05/14/protect-your-data-from-the-fbi/</guid>
+      <description>FBI has been allowed to look at your browsing history and this is what were going to do about it.
+VPN Protection We are using NordVPN to protect our privacy, they offer no logs and no history for the goverment agencies to collect. Currently they are offering 70% off. Click on our affiliate link to support our content when signing up.
+NordVPN was noted as the fastes vpn multiple years. We highly recommend them over others.</description>
+    </item>
+    
+  </channel>
+</rss>

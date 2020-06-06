@@ -32,11 +32,11 @@ On certain routers you can enable full home vpn, although its recommended to ena
 
 Open History settings, Click "Clear browsing data"
 
-{{< image src="/uploads/2020/05/history-1.png" alt="">}}
+{{< image src="/uploads/2020/history-1.png" alt="">}}
 
 Select Browsing history and Clear Data
 
-{{< image src="/uploads/2018/05/history-2.png" alt="">}}
+{{< image src="/uploads/2020/history-2.png" alt="">}}
 
 You can [clear chrome automatically](http://www.psdtolive.com/how-to-automatically-clear-history-on-google-chrome-exit/) on every exit or just use incognito as a norm.
 
@@ -44,6 +44,3 @@ You can [clear chrome automatically](http://www.psdtolive.com/how-to-automatical
 
 Check back later for more instructions on this, You can also take a [look here for now](https://support.mozilla.org/en-US/kb/delete-browsing-search-download-history-firefox).
 
-
-
-{{< image src="https://go.nordvpn.net/aff_i?offer_id=15&aff_id=20799" alt="">}}
