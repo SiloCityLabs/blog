@@ -4,8 +4,63 @@
   
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/clear-history/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/fbi/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/nordvpn/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2020/05/14/protect-your-data-from-the-fbi/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/author/maave/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/vpn/</loc>
+    <lastmod>2020-05-14T18:01:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,17 +69,7 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/backups/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/categories/</loc>
     <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
   
@@ -69,16 +114,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/tags/raspberry/</loc>
     <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
@@ -94,11 +129,6 @@
   </url>
   
   <url>
-    <loc>https://silocitylabs.com/tags/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/</loc>
     <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url>
@@ -106,6 +136,71 @@
   <url>
     <loc>https://silocitylabs.com/tags/upnp/</loc>
     <lastmod>2020-02-07T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/amlogic/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/recovery/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/rk3328/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/rk3399/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/rockchip/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s905/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s905x1/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s905x2/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s905x3/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s915/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s922/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://silocitylabs.com/tags/s922x1/</loc>
+    <lastmod>2020-01-24T00:57:15+00:00</lastmod>
   </url>
   
   <url>
@@ -560,11 +655,6 @@
   
   <url>
     <loc>https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/</loc>
-    <lastmod>2019-05-29T17:19:34+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://silocitylabs.com/author/maave/</loc>
     <lastmod>2019-05-29T17:19:34+00:00</lastmod>
   </url>
   

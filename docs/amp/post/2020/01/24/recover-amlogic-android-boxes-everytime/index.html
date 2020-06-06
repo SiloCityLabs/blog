@@ -82,18 +82,21 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully brick one of these units permanently. I will start off with the basics and work my way up to the more advanced methods.</p>
+<p>Disclosure:
+Everything in this document was sourced from somewhere online. If you want original links please ask me if I havent already posted them in one of the Image Source links. This document does NOT contain any proprietary knowledge that wasnt already sourced from the internet.</p>
 <h3 id="recover-method-1-reset-button">Recover method 1: Reset button</h3>
 <p>Yes I know, very basic and im sure most of you have tried it. However some may not know that the reset button has dual purpose and is also hidden cleverly behind the &ldquo;AV&rdquo; or &ldquo;IR&rdquo; port on some of these boxes. Feel free to shove a paperclip carefully to not miss the button and hit a component. Try it first while its unplugged so you can get the hang of it and not short anything out internally live. You have to hold it down for about 3-4 seconds to trigger recovery.</p>
-
+<p>
 
 
 
 
 
     
-        <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/reset.jpg" alt="x96 max reset button" height="618" width="1012" layout="responsive"></amp-img>
+        <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/reset.jpg" alt="x96 max reset button" height="500" width="800" layout="responsive"></amp-img>
     
 
+<a href="https://thesimplicitypost.com/all-methods-custom-rom-install/">Image Source</a></p>
 <h3 id="recover-method-2-amlogic-burn-tool">Recover method 2: AMLogic Burn tool</h3>
 <p>Find a downloadable image for your specific device out in the wild. You can also try banggood.com product pages ussually seem to post download links. Then download the <a href="https://downloads.techreanimate.com/kifuob">usb burn tool 2.1.7.3</a></p>
 <p>Go to File -&gt; import image, Select your image, Hit Start, and finally plugin your device.</p>
@@ -109,20 +112,11 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     
 
 <h3 id="recover-method-3-short-the-nand-chip">Recover method 3: Short the NAND chip</h3>
-<p>This is is risky and very diffucult to spot and document as each device is different. Most new devices uses pads for this while older devices have exposed leads on the old memory chips. Shorting the NAND chip&rsquo;s two pins will throw the device into flash mode on some devices. Take a look at the image below for some examples. This is also called MaskRom mode on many devices including Rockchip devices. You will need to have the USB Burn tool installed and follow the steps from method 2.</p>
+<p>This is is risky and very diffucult to spot and document as each device is different. Most new devices uses pads for this while older devices have exposed leads on the old memory chips. Shorting the NAND chip&rsquo;s two pins will throw the device into flash mode on some devices. Take a look at the image below for some examples. This is also called MaskRom mode on many devices including Rockchip devices. You will need to have the USB Burn tool installed and follow the steps from method 2. You can also checkout the <a href="https://forum.freaktab.com/forum/main-category/main-forum/637675-nand-chip-mask-rom-mode-short-location">source document</a> which contains source images I posted here.</p>
 <ol>
-<li>
-<pre><code>  Open device housing and find the NAND. In some boxes you also need detached heatsink or cooler in order to reach NAND
-</code></pre>
-</li>
-<li>
-<pre><code>  Place PCB in front of you so you can clearly read NAND’s name and board number
-</code></pre>
-</li>
-<li>
-<pre><code>  You should choose 6th-7th or 7th-8th pin from NAND bottom on the right side or 6th-7th or 7th-8th pin from first pin (first pin is marked on PCBA with a point or ) and circuit it during plugging to Host PC and powering on (check pin sequence for other devices very clearly)
-</code></pre>
-</li>
+<li>Open device housing and find the NAND. In some boxes you also need detached heatsink or cooler in order to reach NAND</li>
+<li>Place PCB in front of you so you can clearly read NAND’s name and board number</li>
+<li>You should choose 6-7 or 7-8 pin from NAND bottom on the right side or 6-7 or 7-8 pin from first pin (first pin is marked on PCBA with a triangle) Short circuit it while plugging to Host PC and powering on. Check pins for other devices online first.</li>
 </ol>
 <p>
 
@@ -167,7 +161,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
     
         <figure>
-            <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/usb-ttl.jpg" alt="USB to TTL device" height="718" width="920" layout="responsive"></amp-img>
+            <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/usb-ttl.png" alt="USB to TTL device" height="480" width="640" layout="responsive"></amp-img>
             <figcaption>USB to TTL device with custom cable that matches the layout of my device</figcaption>
         </figure>
     
@@ -180,19 +174,10 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
 
     
-        <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/ttl.jpg" alt="TTL Header" height="714" width="922" layout="responsive"></amp-img>
+        <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/pcb-ttl.jpeg" alt="TTL Header" height="1440" width="1920" layout="responsive"></amp-img>
     
 
-
-
-
-
-
-
-    
-        <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/dev-device.jpg" alt="TTL Header Dev device" height="410" width="798" layout="responsive"></amp-img>
-    
-</p>
+<a href="https://forum.armbian.com/topic/9285-proof-of-concept-realtek-1295/page/5/">Image Source</a></p>
 <p>Open Putty using the following settings with your COM number identified in Device manager for Windows.</p>
 
 
@@ -226,16 +211,6 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
     
         <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/debug-device.jpg" alt="debug device" height="678" width="800" layout="responsive"></amp-img>
-    
-
-
-
-
-
-
-
-    
-        <amp-img src="https://silocitylabs.com/uploads/2020/amlogic-recovery/debug-device2.jpg" alt="debug device 2" height="551" width="1024" layout="responsive"></amp-img>
     
 
 <p>I have not been able to locate one to buy it myself. If you would like to sell me one reach out to me in the comments below.</p>

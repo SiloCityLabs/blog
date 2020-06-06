@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 07 Feb 2020 00:57:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 18:01:00 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Protect your data from the FBI</title>
+      <link>https://silocitylabs.com/post/2020/05/14/protect-your-data-from-the-fbi/</link>
+      <pubDate>Thu, 14 May 2020 18:01:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2020/05/14/protect-your-data-from-the-fbi/</guid>
+      <description>FBI has been allowed to look at your browsing history and this is what were going to do about it.
+VPN Protection We are using NordVPN to protect our privacy, they offer no logs and no history for the goverment agencies to collect. Currently they are offering 70% off. Click on our affiliate link to support our content when signing up.
+NordVPN was noted as the fastes vpn multiple years. We highly recommend them over others.</description>
+    </item>
     
     <item>
       <title>Turn an Old Raspberry pi into an offsite backup</title>
@@ -21,6 +32,17 @@
       <description>Why? Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.
 Although im set on a disaster level there are a few things that can be an issue with onsite backups. Especially with my drive being plugged in all the time.
  Theft, Although it is &amp;ldquo;theft resistant&amp;rdquo; the metal they want me to bolt down isnt very strong at all.</description>
+    </item>
+    
+    <item>
+      <title>Recover AMLogic Android boxes everytime</title>
+      <link>https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/</link>
+      <pubDate>Fri, 24 Jan 2020 00:57:15 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/</guid>
+      <description>&lt;p&gt;Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully brick one of these units permanently. I will start off with the basics and work my way up to the more advanced methods.&lt;/p&gt;
+&lt;p&gt;Disclosure:
+Everything in this document was sourced from somewhere online. If you want original links please ask me if I havent already posted them in one of the Image Source links. This document does NOT contain any proprietary knowledge that wasnt already sourced from the internet.&lt;/p&gt;</description>
     </item>
     
     <item>

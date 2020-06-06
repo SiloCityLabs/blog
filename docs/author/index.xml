@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 07 Feb 2020 00:57:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 18:01:00 +0000</lastBuildDate>
     
 	<atom:link href="https://silocitylabs.com/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Robert Hanson</title>
+      <link>https://silocitylabs.com/author/maave/</link>
+      <pubDate>Thu, 14 May 2020 18:01:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/author/maave/</guid>
+      <description>About Make stuff, break stuff.
+Follow the development of my open source gamepad for phones here on the blog or on Hackaday.io
+ Resume EXPERIENCE CSS Health Software Engineer, May 2019 – Nov 2019
+ Software development: medication therapy management software PHP, AngularJS, HTML, MySQL, NetSuite Git, Jira  PoolSupplies.com Software Engineer, Sep 2017 – Apr 2019
+ Software development: e-commerce website and backend employee tools PHP, AngularJS, HTML, MySQL Git, Basecamp  Colocrossing Datacenter Technician, May 2014 – Sept 2017</description>
+    </item>
     
     <item>
       <title>Luis Rodriguez</title>
@@ -20,19 +33,6 @@
       <guid>https://silocitylabs.com/author/luis-rodriguez/</guid>
       <description>About As a self-employed software developer right out of high school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
 With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures.</description>
-    </item>
-    
-    <item>
-      <title>Robert Hanson</title>
-      <link>https://silocitylabs.com/author/maave/</link>
-      <pubDate>Wed, 29 May 2019 17:19:34 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/author/maave/</guid>
-      <description>About Make stuff, break stuff.
-Follow the development of my open source gamepad for phones here on the blog or on Hackaday.io
- Resume EXPERIENCE CSS Health Software Engineer, May 2019 – Nov 2019
- Software development: medication therapy management software PHP, AngularJS, HTML, MySQL, NetSuite Git, Jira  PoolSupplies.com Software Engineer, Sep 2017 – Apr 2019
- Software development: e-commerce website and backend employee tools PHP, AngularJS, HTML, MySQL Git, Basecamp  Colocrossing Datacenter Technician, May 2014 – Sept 2017</description>
     </item>
     
     <item>
