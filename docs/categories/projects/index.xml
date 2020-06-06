@@ -638,7 +638,7 @@ A few issues. I accidentally flipped the polarities on the siren. I will eventua
       <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34;/&gt;
 
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;quot;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;rdquo;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
