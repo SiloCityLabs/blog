@@ -77,12 +77,12 @@ ___
 ## Resume
 
 #### EXPERIENCE
-**NDA - Technology Company** _Software Engineer_, Aug 2019 – Present
+**Inlighten** _Software Engineer_, Aug 2019 – Jun 2020
 
  - Developing custom kiosk software for Android systems
  - Compiling Android from source for custom Android hardware to be used in client environments
  - Developing digital signage software for Android systems
- - NDA and company policies prevent me from listing the name of the company
+ - Scripting and automating procedures for prep department with golang or bash
 
 **The Buffalo News** _Software Engineer_, April 2018 – Aug 2019
 
