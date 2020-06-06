@@ -11,15 +11,15 @@
   <meta name="description" content="
 
  
-I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&quot;. They&rsquo;re annoying. They&rsquo;re …">
+I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re …">
   <meta property="og:description" content="
 
  
-I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&quot;. They&rsquo;re annoying. They&rsquo;re …">
+I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re …">
   <meta name="twitter:description" content="
 
  
-I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&quot;. They&rsquo;re annoying. They&rsquo;re …">
+I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re …">
   <meta name="author" content="Silo City Labs LLC"/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
@@ -202,7 +202,7 @@ if (!doNotTrack) {
         <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg" alt="Frig off, Randy"/>
 
 <p> </p>
-<p>I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&quot;. They&rsquo;re annoying. They&rsquo;re irrelevant (I&rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&rsquo;m trying to read. So I made a short <a href="https://openuserjs.org/scripts/Maave/Exit_Intent_defuser">Userscript to globally block them</a>.</p>
+<p>I hate &ldquo;exit intent&rdquo; popups. The kind that automatically open when your mouse leaves the page begging &ldquo;please don&rsquo;t go!&rdquo;. They&rsquo;re annoying. They&rsquo;re irrelevant (I&rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&rsquo;m trying to read. So I made a short <a href="https://openuserjs.org/scripts/Maave/Exit_Intent_defuser">Userscript to globally block them</a>.</p>
     <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2018/01/optin-monster.png" alt="Soon to be blocked"/>
 
 <p>Specifically I want to block Ouibounce (<a href="https://carlsednaoui.github.io/ouibounce/">demo</a>) and OptIn Monster (<a href="https://optinmonster.com/features/exit-intent/">demo</a>). Bounce Exchange is another infamous one but I couldn&rsquo;t find a demo to test on. <a href="https://ask.metafilter.com/280379/Stop-popping-up-when-Im-about-to-switch-the-tab">This Metafilter topic</a> tipped me off to the main culprits: Javascript&rsquo;s mouseleave and mouseout events. So many sites have these popups that it&rsquo;s not practical to block on a site-by-site basis. Disabling all Javascript is too heavy handed.</p>
