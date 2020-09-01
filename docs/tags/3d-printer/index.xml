@@ -54,7 +54,14 @@
       <guid>https://silocitylabs.com/post/2017/12/15/ebay-print-bed/</guid>
       <description>&lt;p&gt;We received our new print bed from &lt;a href=&#34;https://www.ebay.com/itm/192342007627&#34;&gt;eBay/China&lt;/a&gt;. Not a Lokbuild but at least its cheaper. First thing I noticed is that this sheet is thicker than a Lokbuild, 0.6mm thick instead of 0.5. When I followed the steps on calibrating I clicked &lt;!-- raw HTML omitted --&gt;6&lt;!-- raw HTML omitted --&gt; 8 times to ensure proper spacing instead of the original 4.&lt;/p&gt;
 
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/img_20171106_1706507253338128094262765.jpg&#34; alt=&#34;Before applying pad&#34;/&gt;
+
+
+
+
+
+    
+        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/img_20171106_1706507253338128094262765.jpg&#34; alt=&#34;Before applying pad&#34; height=&#34;1280&#34; width=&#34;720&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+    
 
 &lt;p&gt;&lt;strong&gt;Robox Instructions:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
