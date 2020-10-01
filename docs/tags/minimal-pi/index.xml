@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 13 Jun 2019 23:30:28 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/minimal-pi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 13 Jun 2019 23:30:28 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/minimal-pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ultra minimal Raspbian Image for Pi Zero and Zero W</title>
       <link>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</link>

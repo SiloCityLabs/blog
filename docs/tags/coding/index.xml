@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 06 Jun 2019 20:00:28 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/coding/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 06 Jun 2019 20:00:28 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What can golang do?</title>
       <link>https://silocitylabs.com/post/2019/06/06/what-can-golang-do/</link>

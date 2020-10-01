@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Tue, 15 Sep 2015 22:36:25 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/gateway/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 Sep 2015 22:36:25 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/gateway/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending SMS via the Nexmo SMS gateway.</title>
       <link>https://silocitylabs.com/post/projects/nexmo-php-class/</link>
