@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/axis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/axis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Server Setup.</title>
       <link>https://silocitylabs.com/post/2019/05/30/home-server-setup/</link>

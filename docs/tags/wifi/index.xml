@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 24 Jan 2019 23:30:39 +0000</lastBuildDate>
-    
-	<atom:link href="https://silocitylabs.com/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 24 Jan 2019 23:30:39 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Speed Test internal WiFi</title>
       <link>https://silocitylabs.com/post/2019/01/24/speed-test-internal-wifi/</link>
