@@ -130,6 +130,19 @@ figure {
 
 /* --- Navbar --- */
 
+/* Hide this stuff for printing portfolio pages */
+@media print and (max-width: 600px){
+  .navbar {
+    display:none;
+  }
+  footer {
+    display:none;
+  }
+  .next {
+    display:none;
+  }
+}
+
 .navbar-custom {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
