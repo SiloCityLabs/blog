@@ -1,6 +1,6 @@
 ---
 title: Luis Rodriguez
-subtitle: Software Engineer - Databases - Linux Administrator
+subtitle: Senior Software Engineer - Databases - Linux Administrator
 comments: false
 photo: '/upload/authors/luis.png'
 adsense: false
@@ -77,6 +77,14 @@ ___
 ## Resume
 
 #### EXPERIENCE
+
+**MarketSmart** _Senior Software Engineer_, Jun 2020 – Present
+
+ - Designing custom infrastructures for reliable email marketting
+ - Working with aws, third party and in-house solutions
+ - Using languages such as golang, php, python, bash to integrate custom software
+ - Developing software that can help reduce friction to bring prospective donors closer
+
 **Inlighten** _Software Engineer_, Aug 2019 – Jun 2020
 
  - Developing custom kiosk software for Android systems
