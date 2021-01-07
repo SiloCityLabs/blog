@@ -138,8 +138,8 @@ figure {
   footer {
     display:none;
   }
-  .next {
-    display:none;
+  .pager {
+    display:none !important;
   }
 }
 
