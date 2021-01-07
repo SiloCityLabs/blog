@@ -131,7 +131,7 @@ figure {
 /* --- Navbar --- */
 
 /* Hide this stuff for printing portfolio pages */
-@media print and (max-width: 600px){
+@media print{
   .navbar {
     display:none;
   }
