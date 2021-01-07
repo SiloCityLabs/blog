@@ -45,8 +45,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-daemon/settings.yaml
-daemon/nohup.out
+build/settings.yaml
+build/nohup.out
 resources/
 
 # IntelliJ IDE

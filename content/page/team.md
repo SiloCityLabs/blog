@@ -7,12 +7,12 @@ comments: false
 
 Portfolio: http://luisdrodriguez.com/
 
-LinkedIn: http://tra.li/portfolio-linkedin
+LinkedIn: https://www.linkedin.com/in/ldrrp/
 
 
 ## Robert Greene
 
-LinkedIn: http://tra.li/portfolio-linkedin
+LinkedIn: https://www.linkedin.com/in/robert-hanson-a5949a72/
 
 ## Andrew Elbaneh
 

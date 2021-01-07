@@ -132,6 +132,9 @@ figure {
 
 /* Hide this stuff for printing portfolio pages */
 @media print{
+  .hide-print {
+    display: none !important;
+  }
   .navbar {
     display:none;
   }
