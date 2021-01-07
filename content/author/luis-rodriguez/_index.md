@@ -6,7 +6,7 @@ photo: '/upload/authors/luis.png'
 adsense: false
 ---
 
-<ul class="list-inline text-center">
+<ul class="hide-print list-inline text-center">
     <li>
     <a href="tel:17166989236" title="Call me" style="color: #404040;">
         <span class="icon-stack icon-lg">
@@ -24,7 +24,7 @@ adsense: false
     </a>
     </li>
     <li>
-    <a href="http://tra.li/portfolio-linkedin" title="LinkedIn" style="color: #404040;">
+    <a href="https://www.linkedin.com/in/ldrrp/" title="LinkedIn" style="color: #404040;">
         <span class="icon-stack icon-lg">
         <i class="icon icon-circle icon-stack-2x"></i>
         <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
@@ -48,7 +48,7 @@ adsense: false
     </a>
     </li>
     <li>
-    <a href="http://tra.li/portfolio-resume" title="Portfolio Download" style="color: #404040;">
+    <a href="#" title="Print Portfolio" onclick="window.print();return false;" style="color: #404040;">
         <span class="icon-stack icon-lg">
         <i class="icon icon-circle icon-stack-2x"></i>
         <i class="icon icon-file-word icon-stack-1x icon-inverse"></i>
@@ -58,7 +58,7 @@ adsense: false
 </ul>
 
 ___
-<ul class="list-inline text-center">
+<ul class="hide-print list-inline text-center">
     <li><a href="#about">About</a></li>
     <li><a href="#resume">Resume</a></li>
     <li><a href="#skills">Skills & Certifications</a></li>
@@ -156,7 +156,7 @@ ___
  - Studied computer hardware and troubleshooting computers and electronics
 
 
-<div class="text-center"><a href="http://tra.li/portfolio-resume" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Download Resume</a></div>
+<div class="hide-print text-center"><a href="#" onclick="window.print();return false;" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Print Resume</a></div>
 
 ___
 ## Skills

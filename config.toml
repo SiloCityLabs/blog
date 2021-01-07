@@ -14,6 +14,11 @@ disqusShortname = "sclblog-1"
 googleAds = "ca-pub-6882852717412296"
 googleAnalytics = "UA-78226868-1"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [Params]
   subtitle = "Official Blog for Silo City Labs LLC"
   logo = "logo/144x144.png"

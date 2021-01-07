@@ -69,7 +69,7 @@ I have not used this method as it shows very little success for my devices. But 
 
 ### Recover method 5: Serial port jtag
 
-You will need to open your device up for this step and locate any pins or unsoldered holes labeled GND/TX/RX/3.3V or sometimes just labeled UART or even JTAG. These will work with any USB to TTL device such as the [CH340](http://a.tra.li/UC9f) or the [CP2102](http://a.tra.li/UC9h) (more reliable). This is my primary means of recovery for any device now. Its reliable and works 100% of the time on AMLogic devices.
+You will need to open your device up for this step and locate any pins or unsoldered holes labeled GND/TX/RX/3.3V or sometimes just labeled UART or even JTAG. These will work with any USB to TTL device such as the [CH340](https://www.amazon.com/s?k=ch340+usb) or the [CP2102](https://www.amazon.com/s?k=CP2102+usb) (more reliable). This is my primary means of recovery for any device now. Its reliable and works 100% of the time on AMLogic devices.
 
 {{< image src="/uploads/2020/amlogic-recovery/usb-ttl.png" alt="USB to TTL device" caption="USB to TTL device with custom cable that matches the layout of my device">}}
 
