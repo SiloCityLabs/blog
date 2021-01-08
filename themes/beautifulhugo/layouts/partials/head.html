@@ -45,9 +45,14 @@
   {{ $cssbootstrap := resources.Get "css/bootstrap.min.css" }}
   {{ $cssfontello := resources.Get "css/fontello-embedded.css" }}
   {{ $cssall := slice $cssbootstrap $csshighlight $cssfontello $cssmain  | resources.Concat "css/bundle.css" | resources.Minify }}
+  
+{{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $cssall.Permalink | absURL }}" />
-  <!-- PWA / AMP shit -->
-  <link rel="manifest" href="/manifest.webmanifest">
+{{ else }}
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net{{ $cssall.Permalink | relURL }}" />
+{{ end }}
+
+  <link rel="manifest" href="/manifest.webmanifest"><!-- PWA / AMP -->
   <meta name="theme-color" content="#e7e7e7">
-  {{ template "_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
 </head>

@@ -1,9 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-RewriteBase /
-
-RewriteRule ^post/category/(.*)$ https://silocitylabs.com/categories/$1 [R=301,NC,L]
-RewriteRule ^post/tag/(.*)$ https://silocitylabs.com/tags/$1 [R=301,NC,L]
-
-RewriteCond %{HTTP_HOST} ^blog.silocitylabs\.com$ [NC]
-RewriteRule ^(.*)$ https://silocitylabs.com/$1 [R=301,L]
