@@ -58,7 +58,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
                 
                 
                   <span class="post-meta">
-  
+  Posted on January 16, 2015
   
 </span>
 
@@ -88,7 +88,32 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$cloudns</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ClouDNS</span><span class="p">();</span>
 <span class="nv">$cloudns</span><span class="o">-&gt;</span><span class="na">set_options</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;auth-id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;999&#39;</span><span class="p">,</span><span class="s1">&#39;auth-password&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;some_password&#39;</span><span class="p">));</span>
 </code></pre></div><h2 id="functions">Functions</h2>
-<!-- raw HTML omitted -->
+<table width="100%">
+	<tr>
+		<th>Function</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><code>detect_ip()</code></td>
+		<td>Determine our IP address</td>
+	</tr>
+	<tr>
+		<td><code>list_name_servers()</code></td>
+		<td>Get a list with available domain name servers.</td>
+	</tr>
+	<tr>
+		<td><code>list_zones(page,rows,search[optional])</code></td>
+		<td>Gets a paginated list with zones you have or zone names matching a keyword.</td>
+	</tr>
+	<tr>
+		<td><code>list_zone_stats()</code></td>
+		<td>Gets the number of the zones you have and the zone limit of your customer plan. Reverse zones are included.</td>
+	</tr>
+	<tr>
+		<td><code>delete_domain_zone(domain)</code></td>
+		<td>This function is available only for slave zones, master zones and cloud/bulk domains. Works with reverse zones too.</td>
+	</tr>
+</table>
 <h2 id="examples">Examples</h2>
 <p>Numerous examples have been provided in the <a href="https://gitlab.com/silo-city-labs-llc/cloudns-api-php/tree/master/examples">repository&rsquo;s examples folder</a>. The examples demonstrate how to accomplish most actions possible in the library. You are encouraged to look at these examples to learn the best practices for using the library.</p>
       </article>
