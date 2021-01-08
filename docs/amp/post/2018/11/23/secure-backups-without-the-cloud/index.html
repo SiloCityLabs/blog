@@ -67,7 +67,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
                 
                 
                   <span class="post-meta">
-  
+  Posted on November 23, 2018
   
 </span>
 
@@ -110,7 +110,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
     
 
 <p>Some of you may notice something you will immediately not like, TOSHIBA. I reached out to ioSafe to see if I can have it made with a brand I trust a little better. I have not had a response in 2 weeks. After some time stewing I really wanted this product but the drive inside really annoyed me. I have had more Toshiba&rsquo;s die on me from experience in data centers than any other brand. I found a solution to this problem. I am going to show you the steps I am taking to protect the lifespan of this drive but be able to leave it plugged in for long term backups.</p>
-<p><!-- raw HTML omitted -->Requirements<!-- raw HTML omitted -->: Linux OS, crontab, rsync, hdparm</p>
+<p><strong>Requirements</strong>: Linux OS, crontab, rsync, hdparm</p>
 <ul>
 <li>I start off by plugging in my new drive and formatting it.</li>
 </ul>
@@ -126,7 +126,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 </ul>
 <pre><code>0 6 * * * /mnt/4000/home/ldrrp/Scripts/fireproof-daily.sh
 5 8 * * 0 /mnt/4000/home/ldrrp/Scripts/fireproof-weekly.sh
-</code></pre><p>So according to this <!-- raw HTML omitted -->5 8 * * 0<!-- raw HTML omitted --> would run 8:05 AM every Sunday and <!-- raw HTML omitted -->0 6 * * *<!-- raw HTML omitted --> would run daily at 6 AM. Lets create the first script in the location you selected to save it.</p>
+</code></pre><p>So according to this <code>5 8 * * 0</code> would run 8:05 AM every Sunday and <code>0 6 * * *</code> would run daily at 6 AM. Lets create the first script in the location you selected to save it.</p>
 <ul>
 <li>This script will mount the drive, sync any new files or changed files only, then un-mount it and force it to sleep.</li>
 </ul>
