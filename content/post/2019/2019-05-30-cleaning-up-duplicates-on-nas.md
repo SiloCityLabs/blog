@@ -11,7 +11,7 @@ categories:
 
 ---
 
-Over the last year me and my wife have been using the network server more frequently from its [initial install and setup][2]. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.
+Over the last year me and my wife have been using the network server more frequently from its initial install and setup. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.
 
 <!--more-->
 
@@ -72,17 +72,21 @@ Now that we have cleaned up all duplicates. We will be moving onto the next step
 Find all empty files
 
 ```
-find /mnt/4000/home -type f -size 0
+find ./ -type f -size 0 > emptyfiles.txt
 ```
 
 File all empty folders
 
 ```
-find /mnt/4000/home -type d -empty
+find ./ -type d -empty > emptyfolders.txt
+```
+
+Large files
+
+```
+find ./ -xdev -type f -size +100M > largtefiles.txt
 ```
 
 Delete any folders or files you want here, Be careful not to delete needed files for programs.
 
 After all of this was done we managed to save 58GB of storage on our NAS.
-
- [2]: https://blog.silocitylabs.com/post/2019/02/21/home-server-setup/
