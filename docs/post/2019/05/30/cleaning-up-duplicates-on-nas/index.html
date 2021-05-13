@@ -224,7 +224,7 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Over the last year me and my wife have been using the network server more frequently from its <a href="https://blog.silocitylabs.com/post/2019/02/21/home-server-setup/">initial install and setup</a>. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.</p>
+        <p>Over the last year me and my wife have been using the network server more frequently from its initial install and setup. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.</p>
 <p>First off, all my files are stored in /mnt/4000/home/*</p>
 <p>Get rid of all OS specific files that shouldnt be on the NAS. This will shorten the next step of finding duplicates.</p>
 <pre><code>find /mnt/4000/home -iname desktop.ini -delete
@@ -247,9 +247,11 @@ if (!doNotTrack) {
 </code></pre><p>You may have to do this a few times to get any you missed.</p>
 <p>Now that we have cleaned up all duplicates. We will be moving onto the next step. Finding empty files and folders.</p>
 <p>Find all empty files</p>
-<pre><code>find /mnt/4000/home -type f -size 0
+<pre><code>find ./ -type f -size 0 &gt; emptyfiles.txt
 </code></pre><p>File all empty folders</p>
-<pre><code>find /mnt/4000/home -type d -empty
+<pre><code>find ./ -type d -empty &gt; emptyfolders.txt
+</code></pre><p>Large files</p>
+<pre><code>find ./ -xdev -type f -size +100M &gt; largtefiles.txt
 </code></pre><p>Delete any folders or files you want here, Be careful not to delete needed files for programs.</p>
 <p>After all of this was done we managed to save 58GB of storage on our NAS.</p>
       </article>
