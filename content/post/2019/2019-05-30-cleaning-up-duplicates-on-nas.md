@@ -20,7 +20,7 @@ First off, all my files are stored in /mnt/4000/home/*
 Get rid of all OS specific files that shouldnt be on the NAS. This will shorten the next step of finding duplicates.
 
 ```
-find /mnt/4000/home -iname desktop.ini -delete
+find ./ -iname desktop.ini -delete
 ```
 
 Lets install a duplicates scanner:
@@ -40,7 +40,7 @@ dnf install fdupes
 After installing, we can move onto the next step. Run this command to get a list of all the duplicates.
 
 ```
-fdupes -r /mnt/4000/home > dupes.txt
+fdupes -r ./ > dupes.txt
 ```
 
 Open this file up in a text editor and start hacking away. Delete all the lines of the files you wish to keep. Also delete any blank lines separating them. One example here:
