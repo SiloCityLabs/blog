@@ -2,7 +2,7 @@
 title: Cleaning up NAS
 author: Luis Rodriguez
 type: post
-date: 2021-05-13T23:30:44+00:00
+date: 2021-05-13T01:30:44+00:00
 url: /post/2021/05/13/cleaning-up-duplicates-on-nas/
 featured_image: /wp-content/uploads/2019/02/Template_cleanup_icon.svg_.png
 bigimg: [{src: "/uploads/2019/02/Template_cleanup_icon.svg_.png", desc: "Golang"}]
