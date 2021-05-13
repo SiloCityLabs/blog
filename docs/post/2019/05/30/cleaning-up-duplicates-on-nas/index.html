@@ -227,14 +227,14 @@ if (!doNotTrack) {
         <p>Over the last year me and my wife have been using the network server more frequently from its initial install and setup. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.</p>
 <p>First off, all my files are stored in /mnt/4000/home/*</p>
 <p>Get rid of all OS specific files that shouldnt be on the NAS. This will shorten the next step of finding duplicates.</p>
-<pre><code>find /mnt/4000/home -iname desktop.ini -delete
+<pre><code>find ./ -iname desktop.ini -delete
 </code></pre><p>Lets install a duplicates scanner:</p>
 <h3 id="installation-ondebian--ubuntu">Installation on <strong>Debian / Ubuntu</strong></h3>
 <pre><code>sudo apt install fdupes
 </code></pre><h3 id="installation-onfedora">Installation on <strong>Fedora</strong></h3>
 <pre><code>dnf install fdupes
 </code></pre><p>After installing, we can move onto the next step. Run this command to get a list of all the duplicates.</p>
-<pre><code>fdupes -r /mnt/4000/home &gt; dupes.txt
+<pre><code>fdupes -r ./ &gt; dupes.txt
 </code></pre><p>Open this file up in a text editor and start hacking away. Delete all the lines of the files you wish to keep. Also delete any blank lines separating them. One example here:</p>
 <pre><code>/mnt/4000/home/Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1622.JPG
 /mnt/4000/home/Shared/Pictures/2016/pets/IMG_1622.JPG
