@@ -44,6 +44,10 @@ After getting all settled and having all my software carried over. I had a few p
 
 Ubuntu [Get right click new documents back][10]. Here is a link to a couple of [templates][11] we made.
 
+File previews on file explorer:
+
+`apt install gnome-sushi`
+
 To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won't be used that often so its a compromise I'm willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:
 
 <!--more-->
