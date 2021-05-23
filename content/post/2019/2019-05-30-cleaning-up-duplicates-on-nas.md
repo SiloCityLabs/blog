@@ -8,6 +8,13 @@ featured_image: /wp-content/uploads/2019/02/Template_cleanup_icon.svg_.png
 bigimg: [{src: "/uploads/2019/02/Template_cleanup_icon.svg_.png", desc: "Golang"}]
 categories:
   - Projects
+tags:
+  - nas
+  - linux
+  - ubuntu
+  - debian
+  - cleanup
+  - duplicates
 
 ---
 Updated in May 2021
