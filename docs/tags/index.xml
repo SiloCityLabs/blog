@@ -7,7 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 14 May 2020 18:01:00 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 01:30:44 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cleanup</title>
+      <link>https://silocitylabs.com/tags/cleanup/</link>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/cleanup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>https://silocitylabs.com/tags/debian/</link>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>duplicates</title>
+      <link>https://silocitylabs.com/tags/duplicates/</link>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/duplicates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://silocitylabs.com/tags/linux/</link>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nas</title>
+      <link>https://silocitylabs.com/tags/nas/</link>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/nas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://silocitylabs.com/tags/ubuntu/</link>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>clear history</title>
       <link>https://silocitylabs.com/tags/clear-history/</link>
@@ -95,15 +149,6 @@
       <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/iot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nas</title>
-      <link>https://silocitylabs.com/tags/nas/</link>
-      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/nas/</guid>
       <description></description>
     </item>
     
@@ -675,15 +720,6 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://silocitylabs.com/tags/linux/</link>
-      <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>minimal pi</title>
       <link>https://silocitylabs.com/tags/minimal-pi/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate>
@@ -1013,15 +1049,6 @@
       <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/steam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ubuntu</title>
-      <link>https://silocitylabs.com/tags/ubuntu/</link>
-      <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/ubuntu/</guid>
       <description></description>
     </item>
     
