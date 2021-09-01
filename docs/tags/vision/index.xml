@@ -15,9 +15,10 @@
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
       <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-    &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
+&lt;amp-youtube
+    data-videoid=&#34;397hvxAjlj4&#34;
+    layout=&#34;responsive&#34;
+    width=&#34;480&#34; height=&#34;270&#34;&gt;&lt;/amp-youtube&gt;</description>
     </item>
     
     <item>
@@ -28,13 +29,7 @@
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
-
-
-
-
-
-    
-        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34; height=&#34;500&#34; width=&#34;500&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
+    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34;/&gt;</description>
     </item>
     
   </channel>
