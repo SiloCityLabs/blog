@@ -117,31 +117,31 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <p>Over the last few years me and my wife have been using the network server more frequently from its initial install and setup. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.</p>
 <p>First off, all my files are stored in /mnt/4000/home/*</p>
 <p>Get rid of all OS specific files that shouldnt be on the NAS. This will shorten the next step of finding duplicates.</p>
-<pre><code>find ./ -iname desktop.ini -delete
+<pre tabindex="0"><code>find ./ -iname desktop.ini -delete
 </code></pre><p>Lets install a duplicates scanner:</p>
 <h3 id="installation-ondebian--ubuntu">Installation on <strong>Debian / Ubuntu</strong></h3>
-<pre><code>apt install fdupes
+<pre tabindex="0"><code>apt install fdupes
 </code></pre><h3 id="installation-onfedora">Installation on <strong>Fedora</strong></h3>
-<pre><code>dnf install fdupes
+<pre tabindex="0"><code>dnf install fdupes
 </code></pre><p>After installing, we can move onto the next step. Run this command to get a list of all the duplicates.</p>
-<pre><code>fdupes -r ./ &gt; dupes.txt
+<pre tabindex="0"><code>fdupes -r ./ &gt; dupes.txt
 </code></pre><p>Open this file up in a text editor and start hacking away. Delete all the lines of the files you wish to keep. Also delete any blank lines separating them. One example here:</p>
-<pre><code>./Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1622.JPG
+<pre tabindex="0"><code>./Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1622.JPG
 ./Shared/Pictures/2016/pets/IMG_1622.JPG
 </code></pre><p>I will be getting rid of the phone backup copy because I like to know this is part of pets.</p>
-<pre><code>./Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1428.JPG
+<pre tabindex="0"><code>./Shared/Pictures/2016/Krystal Phone Backup 6-21-16/IMG_1428.JPG
 ./Shared/Pictures/2016/IMG_1428.JPG
 </code></pre><p>This one however ill keep the phone backup copy so that I don&rsquo;t make a messy folder inside of 2016</p>
 <p>Now that we are done editing our list, lets run the command on the list we want to delete.</p>
-<pre><code>while IFS= read -r file ; do rm -- &quot;$file&quot; ; done &lt; dupes.txt
+<pre tabindex="0"><code>while IFS= read -r file ; do rm -- &quot;$file&quot; ; done &lt; dupes.txt
 </code></pre><p>You may have to do this a few times to get any you missed.</p>
 <p>Now that we have cleaned up all duplicates. We will be moving onto the next step. Finding empty files and folders.</p>
 <p>Find all empty files</p>
-<pre><code>find ./ -type f -size 0 &gt; emptyfiles.txt
+<pre tabindex="0"><code>find ./ -type f -size 0 &gt; emptyfiles.txt
 </code></pre><p>File all empty folders</p>
-<pre><code>find ./ -type d -empty &gt; emptyfolders.txt
+<pre tabindex="0"><code>find ./ -type d -empty &gt; emptyfolders.txt
 </code></pre><p>Large files</p>
-<pre><code>find ./ -xdev -type f -size +100M &gt; largefiles.txt
+<pre tabindex="0"><code>find ./ -xdev -type f -size +100M &gt; largefiles.txt
 </code></pre><p>Delete any folders or files you want here, Be careful not to delete needed files for programs.</p>
 <p>After all of this was done we managed to save 58GB of storage on our NAS.</p>
       </article>

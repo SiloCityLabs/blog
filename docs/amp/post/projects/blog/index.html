@@ -134,7 +134,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <p>We took that and added it right to our main.js file to keep it consolidated.</p>
 <h3 id="minify-and-combine-cssjs">Minify and Combine CSS/JS</h3>
 <p>Hugo has a great built in feature that I beleive every hugo powered site should have enabled. I am honestly not sure why the theme did not have this done already. The setup was very easy. We took our files and combined the output withouth touching the files themselves. Just edit your templete like so:</p>
-<pre><code>{{ $jsmain := resources.Get &quot;js/main.js&quot; }}
+<pre tabindex="0"><code>{{ $jsmain := resources.Get &quot;js/main.js&quot; }}
 {{ $jslazy := resources.Get &quot;js/lazyload.js&quot; }}
 {{ $jshighlight := resources.Get &quot;js/highlight.min.js&quot; }}
 {{ $jsnativebs := resources.Get &quot;js/bootstrap-native-v4.min.js&quot; }}

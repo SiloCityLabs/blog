@@ -129,7 +129,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <li>Create initramfs <code>mkinitramfs -o /boot/initrd</code></li>
 <li>Add initramfs <code>nano /boot/config.txt</code></li>
 </ol>
-<pre><code>initramfs initrd
+<pre tabindex="0"><code>initramfs initrd
 </code></pre><ol start="6">
 <li>Add <code>rootdelay=5</code> (or <code>rootdelay=10</code> if your drive takes longer to spin up) to <code>/boot/cmdline.txt</code></li>
 <li>Change <code>root=</code> to use the new device id, you can use any of the following methods
@@ -141,11 +141,11 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 </ol>
 </li>
 </ol>
-<pre><code>dwc_otg.lpm_enable=0 console=tty1 root=UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 rootfstype=ext4 elevator=deadline rootwait rootdelay=5
+<pre tabindex="0"><code>dwc_otg.lpm_enable=0 console=tty1 root=UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 rootfstype=ext4 elevator=deadline rootwait rootdelay=5
 </code></pre><ol start="8">
 <li>change to UUID or whichever option you used above to <code>/etc/fstab</code></li>
 </ol>
-<pre><code>proc            /proc           proc    defaults          0       0
+<pre tabindex="0"><code>proc            /proc           proc    defaults          0       0
 /dev/mmcblk0p1  /boot           vfat    defaults          0       2
 #/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
 UUID=xxxeeeyy-qbbp-4444-8888-f0f0f0f03333 /     ext4    defaults,noatime       0 1

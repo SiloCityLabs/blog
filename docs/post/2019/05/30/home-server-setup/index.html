@@ -210,9 +210,9 @@ if (!doNotTrack) {
 <p>I use offsite sync for the security cameras using rsync and a remote ftp server. Unfortunately it would be too expensive to backup my entire media server to the cloud so I only use it for remote storing the camera footage in the event of a theft.</p>
 <p>To start this you will need an ftp server credentials to use with the following script. After doing so you can just add it to <code>crontab -e</code></p>
 <p>Crontab file:</p>
-<pre><code>@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh
+<pre tabindex="0"><code>@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh
 </code></pre><p>Script:</p>
-<pre><code>#!/bin/bash
+<pre tabindex="0"><code>#!/bin/bash
 HOST='hostedftp.com'
 USER='username'
 PASS='password'
@@ -235,7 +235,7 @@ done
 <p>Setting up a file share is fairly simple, First download and install samba</p>
 <p><code>apt-get install samba</code></p>
 <p>Then edit the main configuration file:</p>
-<pre><code>[global]
+<pre tabindex="0"><code>[global]
    workgroup = WORKGROUP
    dns proxy = no
    log file = /var/log/samba/log.%m
@@ -297,7 +297,7 @@ done
 <h2 id="speedtest-alerts">Speedtest alerts</h2>
 <p>This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can <a href="https://downloads.techreanimate.com/kzhota">download the scripts</a></p>
 <p>After downloading them, add a line to your schedule tasks in linux using crontab -e</p>
-<pre><code>0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php
+<pre tabindex="0"><code>0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php
 </code></pre>
       </article>
 
