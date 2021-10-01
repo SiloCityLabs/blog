@@ -122,15 +122,15 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <p>USB hard drives are great however becouse they dont use external power bricks you may see some issues if your pi cant provide enough power. You can try this hub to power both the Pi and the HDD.</p>
 <h3 id="setup-drive">Setup drive</h3>
 <h4 id="install-cryptsetup-to-encrypt-drives">Install cryptsetup to encrypt drives.</h4>
-<pre><code>pi@raspberrypi ~ $ sudo apt-get install cryptsetup
+<pre tabindex="0"><code>pi@raspberrypi ~ $ sudo apt-get install cryptsetup
 </code></pre><h4 id="find-your-disk">Find your disk</h4>
 <p>Find the /dev identifier of the HDD partition you want to encrypt, on my system, it&rsquo;s /dev/sdb1. Note that this output is from running the command after I&rsquo;ve configured the encrypted partition.</p>
-<pre><code>pi@raspberrypi ~ $ lsblk
+<pre tabindex="0"><code>pi@raspberrypi ~ $ lsblk
 NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sdb                       8:0    0   3.6T  0 disk  
 </code></pre><h4 id="create-partition">Create partition</h4>
 <p>Start by creating a partition with fdisk.</p>
-<pre><code>sudo fdisk /dev/sdb
+<pre tabindex="0"><code>sudo fdisk /dev/sdb
 </code></pre><ol>
 <li>Press <code>n</code> option to create a new partition</li>
 <li>Press <code>p</code> for a primary partition.</li>
@@ -140,7 +140,7 @@ sdb                       8:0    0   3.6T  0 disk
 <li>Press <code>q</code> to quit</li>
 </ol>
 <p>It will look similar to this:</p>
-<pre><code>Command (m for help): n
+<pre tabindex="0"><code>Command (m for help): n
 Partition type
    p   primary (0 primary, 0 extended, 4 free)
    e   extended (container for logical partitions)
@@ -156,7 +156,7 @@ The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
 </code></pre><h4 id="encrypt-the-partition">Encrypt the partition</h4>
-<pre><code>sudo cryptsetup -v -y -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random luksFormat /dev/sdb1
+<pre tabindex="0"><code>sudo cryptsetup -v -y -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random luksFormat /dev/sdb1
 </code></pre><p>The options of the command are as follows:</p>
 <ul>
 <li><code>-v</code> = verbose</li>
@@ -172,26 +172,26 @@ Syncing disks.
 <p>Optionally you can <a href="https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery">backup the luks header</a>.</p>
 <h4 id="add-secondary-keyfile-for-stdin-use">Add secondary keyfile for stdin use</h4>
 <p>To use luks remotely we will need to add a keyfile to the luksheader. <code>nano keyfile</code> and put a random key in here, it can even be the same as your passphrase.</p>
-<pre><code>sudo cryptsetup luksAddKey /dev/sdb1 keyfile
+<pre tabindex="0"><code>sudo cryptsetup luksAddKey /dev/sdb1 keyfile
 </code></pre><p>Dont forget to delete that keyfile otherwise your setup will be exposed. <code>rm keyfile</code></p>
 <h4 id="format-the-volume">Format the volume</h4>
 <p>Mount the luks device and format the volume</p>
-<pre><code>sudo cryptsetup luksOpen /dev/sdb1 volume01
+<pre tabindex="0"><code>sudo cryptsetup luksOpen /dev/sdb1 volume01
 sudo mkfs.ext4 /dev/mapper/volume01
 </code></pre><h4 id="mounting-the-volume">Mounting the volume</h4>
 <p>You can mount it anywhere but for this setup we will mount it to <code>/mnt/raid</code></p>
-<pre><code>sudo mkdir -p /mnt/raid
+<pre tabindex="0"><code>sudo mkdir -p /mnt/raid
 sudo mount /dev/mapper/volume01 /mnt/raid
 </code></pre><p>You should now be able to see it under <code>df -h</code></p>
 <h4 id="unmount-and-close">Unmount and close</h4>
-<pre><code>sudo umount /mnt/drive01
+<pre tabindex="0"><code>sudo umount /mnt/drive01
 sudo cryptsetup luksClose /dev/mapper/volume01
 </code></pre><h3 id="ddns">DDNS</h3>
 <p>You will need to install some utilities for this.</p>
-<pre><code>apt install curl dnsutils
+<pre tabindex="0"><code>apt install curl dnsutils
 </code></pre><p>Create a script file with the following but change <code>your.domain.name</code> and the ddns update url with your own.</p>
 <p><code>nano /home/pi/ddns.sh</code></p>
-<pre><code>#!/bin/bash
+<pre tabindex="0"><code>#!/bin/bash
 
 IP_NS=$(dig +short your.domain.name)
 IP_WAN=$(curl -ks http://checkip.amazonaws.com/)
@@ -203,29 +203,29 @@ else
     curl -ks https://dnsprovider.com?key=sometokentochangeip
 fi
 </code></pre><p>Now add the script to your crontab after making it executable</p>
-<pre><code>chmod +x /home/pi/ddns.sh
+<pre tabindex="0"><code>chmod +x /home/pi/ddns.sh
 crontab -e
-</code></pre><pre><code>*/10 * * * * /home/pi/ddns.sh
+</code></pre><pre tabindex="0"><code>*/10 * * * * /home/pi/ddns.sh
 </code></pre><p>You can also have it run when ethernet is up with the following command</p>
-<pre><code>sudo ln -s /home/pi/ddns.sh /etc/network/if-up.d/ddns
+<pre tabindex="0"><code>sudo ln -s /home/pi/ddns.sh /etc/network/if-up.d/ddns
 </code></pre><h3 id="upnp-port-forwarding">upnp port forwarding</h3>
 <p>Becouse some routers dont allow ports below 1024 to be mounted we will just be opening up ssh to another port. View a <a href="https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/">more detailed writeup</a> on how to run this on ethernet connect.</p>
-<pre><code>sudo apt install miniupnpc
+<pre tabindex="0"><code>sudo apt install miniupnpc
 </code></pre><p>You can change port 1080 to anything you desire, it is recommended to keep it above 1024 for some routers that dont allow numbers below that.</p>
 <p><code>nano /home/pi/upnp.sh</code></p>
-<pre><code>#!/bin/bash
+<pre tabindex="0"><code>#!/bin/bash
 ip=$(upnpc -l | grep &quot;Local LAN ip address&quot; | cut -d: -f2)
 
 upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
 </code></pre><p><code>chmod +x /home/pi/upnp.sh</code></p>
 <p>You can have it run when ethernet is up with the following command</p>
-<pre><code>sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
+<pre tabindex="0"><code>sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
 </code></pre><h3 id="script-mounting">Script mounting</h3>
 <p>Install some utilities needed for this script and make sure you have at least tried to ssh once to <a href="https://askubuntu.com/questions/278328/how-to-acquire-a-remote-host-fingerprint-that-is-not-in-known-hosts">grab the fingerprint</a></p>
-<pre><code>apt install sshpass
+<pre tabindex="0"><code>apt install sshpass
 </code></pre><p>Now on your remote client create a script to start the backups</p>
 <p><code>nano remote-backup.sh</code></p>
-<pre><code>#!/bin/bash
+<pre tabindex="0"><code>#!/bin/bash
 
 #Use blkid to find this for your device
 DRIVE_UUID=5bced688-7fa8-48b8-ad59-d63fe8aa14d5
@@ -259,7 +259,7 @@ sshpass -p $PASSWORD ssh $USERNAME@$HOST &lt;&lt; EOF
  sudo cryptsetup luksClose /dev/mapper/volume01
 EOF
 </code></pre><p>Now lets make this run once a week on sunday at midnight with <code>crontab -e</code></p>
-<pre><code>0 0 * * 0 /path/to/remote-backup.sh
+<pre tabindex="0"><code>0 0 * * 0 /path/to/remote-backup.sh
 </code></pre><p>Save your passphrase and keyfile somewhere safe, Lastpass, Fireproof safe, the cloud. Just remember that if your local copy goes away or you get robbed you will need that key to decrypt the remote copy.</p>
 <p>Now you are all set for weekly backups. You can add more cronjobs to delete data weekly or do nightly backups as well. If you have any edits feel free to hit the edit button on the bottom of the article or leave a comment.</p>
 

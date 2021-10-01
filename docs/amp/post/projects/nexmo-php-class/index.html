@@ -82,19 +82,19 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <ol>
 <li>Sending an SMS</li>
 </ol>
-<pre><code>$sms = new NexmoMessage('account_key', 'account_secret');
+<pre tabindex="0"><code>$sms = new NexmoMessage('account_key', 'account_secret');
 $sms-&gt;sendText( '+447234567890', 'MyApp', 'Hello world!' );
 </code></pre><ol start="2">
 <li>Recieving SMS</li>
 </ol>
-<pre><code>$sms = new NexmoMessage('account_key', 'account_secret');
+<pre tabindex="0"><code>$sms = new NexmoMessage('account_key', 'account_secret');
 if ($sms-&gt;inboundText()) {
     $sms-&gt;reply('You said: ' . $sms-&gt;text);
 }
 </code></pre><ol start="3">
 <li>Recieving a message receipt</li>
 </ol>
-<pre><code>$receipt = new NexmoReceipt();
+<pre tabindex="0"><code>$receipt = new NexmoReceipt();
 if ($receipt-&gt;exists()) {
     switch ($receipt-&gt;status) {
         case $receipt::STATUS_DELIVERED:
@@ -110,7 +110,7 @@ if ($receipt-&gt;exists()) {
 </code></pre><ol start="4">
 <li>List purchased numbers on your account</li>
 </ol>
-<pre><code>$account = new NexmoAccount('account_key', 'account_secret');
+<pre tabindex="0"><code>$account = new NexmoAccount('account_key', 'account_secret');
 $numbers = $account-&gt;numbersList();
 </code></pre>
       </article>

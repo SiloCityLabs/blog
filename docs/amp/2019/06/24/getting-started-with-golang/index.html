@@ -90,16 +90,16 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <p>If you are a new developer it is also recommended to have <a href="https://git-scm.com/">git installed</a>. We wont be using it in tutorial but it may be used in future tutorials. You can also use it to make edits to this blog post from our repository.</p>
 <h3 id="installing-on-unixlinuxmac-os-x">Installing on Unix/Linux/Mac OS X</h3>
 <p>Extract the archive into /usr/local/go using the following commands</p>
-<pre><code>tar -C /usr/local -xzf go*.tar.gz
+<pre tabindex="0"><code>tar -C /usr/local -xzf go*.tar.gz
 </code></pre><p>Adding /usr/local/go/bin to the PATH environment variable.</p>
 <p><strong>Linux</strong></p>
-<pre><code>export PATH=$PATH:/usr/local/go/bin
+<pre tabindex="0"><code>export PATH=$PATH:/usr/local/go/bin
 </code></pre><p><strong>Mac</strong></p>
-<pre><code>export PATH=$PATH:/usr/local/go/bin
+<pre tabindex="0"><code>export PATH=$PATH:/usr/local/go/bin
 </code></pre><p><strong>FreeBSD</strong></p>
-<pre><code>export PATH=$PATH:/usr/local/go/bin
+<pre tabindex="0"><code>export PATH=$PATH:/usr/local/go/bin
 </code></pre><p>Restart any open command prompts for the change to take effect. Verify the installation by running the following command:</p>
-<pre><code>go version
+<pre tabindex="0"><code>go version
 </code></pre><h2 id="go-and-vscode">Go and VSCode</h2>
 <p>We will start by making a quick hello world to verify that Go and VSCode are both setup properly. During this you will see notifications popup from VSCode to install go plugins for <a href="https://www.google.com/search?q=linter">linting</a> and autocomplete.</p>
 <p>On the first start screen hit the Open folder button and create a folder for your projects under <code>C:\Users\{username}\Go\src\</code> (Windows) or <code>/home/{username}/go/src</code> (Linux). Inside you will want to add a folder for your hello world project. We will be calling it <code>hello</code>. Hit new File and type <code>hello.go</code>. Almost Immediately I was presented with a plugin installer for Go.</p>
@@ -176,7 +176,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 </code></pre></div><p>Run your go program by opening a new terminal from the top menu bar. By default vscode selects powershell. You can change that by selecting the dropdown and clicking <code>select default shell</code>. You will want <code>Git Bash</code> for most operating systems. Now type the following to get your result:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="k">go</span> <span class="nx">run</span> <span class="nx">hello</span><span class="p">.</span><span class="k">go</span>
 </code></pre></div><p>Output:</p>
-<pre><code>Hello World
+<pre tabindex="0"><code>Hello World
 Hello Again
 </code></pre><h2 id="variables">Variables</h2>
 <p>A variable definition tells the compiler where and how much to create storage for the variable. It specifies the type and contains a list of one or more variables of that type like below:</p>
@@ -195,7 +195,7 @@ Hello Again
   <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">golang</span><span class="p">,</span> <span class="nx">keys</span><span class="p">,</span> <span class="nx">passwords</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div><p>If you run this your result will be the defaults of string and bool:</p>
-<pre><code>0 false false false
+<pre tabindex="0"><code>0 false false false
 </code></pre><h2 id="for-loop">For Loop</h2>
 <p>A <code>for</code> loop is a repetition structure that allows you to efficiently write a loop that needs to execute a specific amount of times. The syntax is as follows:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
@@ -218,7 +218,7 @@ Hello Again
 </ul>
 <p>The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement. The loop will stop iterating once the boolean condition evaluates to false.</p>
 <p>The result of the code will be</p>
-<pre><code>10
+<pre tabindex="0"><code>10
 </code></pre><p>You can see more <a href="https://gobyexample.com/for">loop examples</a>.</p>
 <h2 id="arrays">Arrays</h2>
 <p>Go also provides a data structure called <code>array</code>. Arrays can store a fixed-size collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
@@ -229,7 +229,7 @@ Hello Again
 </code></pre></div><p>You can also initialize an array in Go with a list of items. Go will calculate the size automatically at compile time. Arrays cannot be resized later on but dont worry because it provides convenient ways of working with them.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kd">var</span> <span class="nx">usernames</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&#34;gocrazy&#34;</span><span class="p">,</span><span class="s">&#34;gorungo&#34;</span><span class="p">,</span><span class="s">&#34;going2fast&#34;</span><span class="p">}</span>
 </code></pre></div><p>Lets spit out usernames and see our result:</p>
-<pre><code>$ go run hello.go
+<pre tabindex="0"><code>$ go run hello.go
 [gocrazy gorungo going2fast]
 </code></pre><h2 id="slices">Slices</h2>
 <p>A slice is an abstraction over Go Array. As Go arrays allow you to define type of variables that can hold several data items of the same kind but it does not allow you to increase the size dynamically or get a sub array. It provides many helper functions required on Array and are widely used in Go across the community.</p>
@@ -253,7 +253,7 @@ Hello Again
 	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div><p>The result below:</p>
-<pre><code>$ go run hello.go
+<pre tabindex="0"><code>$ go run hello.go
 [2 3 5 7 11 13]
 [3 5 7]
 </code></pre><h2 id="structure">Structure</h2>
@@ -278,13 +278,13 @@ Hello Again
 <span class="p">}</span>
 
 </code></pre></div><p>Result</p>
-<pre><code>$ go run hello.go
+<pre tabindex="0"><code>$ go run hello.go
 {silocitylabs.com 80}
 {blog.silocitylabs.com 80}
 </code></pre><h2 id="third-party-packages">Third party packages</h2>
 <p>Just like built in Go packages and your own packages. You can import packages from other places. Lets start by trying to find one online that generates random words. I searched &ldquo;golang random words package&rdquo; on Google and came up with the following <a href="https://github.com/tjarratt/babble">https://github.com/tjarratt/babble</a>. Before we begin to import this package and use it like its documentation states. We need to have it downloaded on our machine.</p>
 <p>In your terminal type the following</p>
-<pre><code>go get github.com/tjarratt/babble
+<pre tabindex="0"><code>go get github.com/tjarratt/babble
 </code></pre><p>Now lets go ahead and use it just like the example below:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
