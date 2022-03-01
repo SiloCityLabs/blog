@@ -133,7 +133,7 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 ./Shared/Pictures/2016/IMG_1428.JPG
 </code></pre><p>This one however ill keep the phone backup copy so that I don&rsquo;t make a messy folder inside of 2016</p>
 <p>Now that we are done editing our list, lets run the command on the list we want to delete.</p>
-<pre tabindex="0"><code>while IFS= read -r file ; do rm -- &quot;$file&quot; ; done &lt; dupes.txt
+<pre tabindex="0"><code>while IFS= read -r file ; do rm -- &#34;$file&#34; ; done &lt; dupes.txt
 </code></pre><p>You may have to do this a few times to get any you missed.</p>
 <p>Now that we have cleaned up all duplicates. We will be moving onto the next step. Finding empty files and folders.</p>
 <p>Find all empty files</p>

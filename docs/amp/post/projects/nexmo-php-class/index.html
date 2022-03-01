@@ -82,14 +82,14 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <ol>
 <li>Sending an SMS</li>
 </ol>
-<pre tabindex="0"><code>$sms = new NexmoMessage('account_key', 'account_secret');
-$sms-&gt;sendText( '+447234567890', 'MyApp', 'Hello world!' );
+<pre tabindex="0"><code>$sms = new NexmoMessage(&#39;account_key&#39;, &#39;account_secret&#39;);
+$sms-&gt;sendText( &#39;+447234567890&#39;, &#39;MyApp&#39;, &#39;Hello world!&#39; );
 </code></pre><ol start="2">
 <li>Recieving SMS</li>
 </ol>
-<pre tabindex="0"><code>$sms = new NexmoMessage('account_key', 'account_secret');
+<pre tabindex="0"><code>$sms = new NexmoMessage(&#39;account_key&#39;, &#39;account_secret&#39;);
 if ($sms-&gt;inboundText()) {
-    $sms-&gt;reply('You said: ' . $sms-&gt;text);
+    $sms-&gt;reply(&#39;You said: &#39; . $sms-&gt;text);
 }
 </code></pre><ol start="3">
 <li>Recieving a message receipt</li>
@@ -110,7 +110,7 @@ if ($receipt-&gt;exists()) {
 </code></pre><ol start="4">
 <li>List purchased numbers on your account</li>
 </ol>
-<pre tabindex="0"><code>$account = new NexmoAccount('account_key', 'account_secret');
+<pre tabindex="0"><code>$account = new NexmoAccount(&#39;account_key&#39;, &#39;account_secret&#39;);
 $numbers = $account-&gt;numbersList();
 </code></pre>
       </article>

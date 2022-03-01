@@ -202,14 +202,14 @@ if (!doNotTrack) {
 <pre tabindex="0"><code>package main
 
 import (
-	&quot;fmt&quot;
+	&#34;fmt&#34;
 
-	&quot;github.com/silocitylabs/ipFormat&quot;
+	&#34;github.com/silocitylabs/ipFormat&#34;
 )
 
 func main() {
-	ip1, _ := ipFormat.New(&quot;192.168.0.2/24&quot;)
-	ip2, _ := ipFormat.New(&quot;192.168.0.6&quot;)
+	ip1, _ := ipFormat.New(&#34;192.168.0.2/24&#34;)
+	ip2, _ := ipFormat.New(&#34;192.168.0.6&#34;)
 
 	ip1, _ = ip1.ToV6()
 	ip2, _ = ip2.ToV6()
@@ -218,7 +218,6 @@ func main() {
 	fmt.Println(ip1.CIDR)
 	fmt.Println(ip2.Address)
 }
-
 </code></pre>
       </article>
 

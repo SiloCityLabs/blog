@@ -196,7 +196,7 @@ if (!doNotTrack) {
         <p>I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.</p>
 <p>Install a fresh Raspbian Stretch Lite image into the SD card (source).</p>
 <p>Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).</p>
-<pre tabindex="0"><code>$ mount /dev/sdX /media $ :&gt; /media/ssh $ cat &gt; /media/wpa_supplicant.conf &lt;&lt;&quot;EOF&quot; country=GB ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid=&quot;YOUR_SSID&quot; psk=&quot;YOUR_PSK&quot; } EOF $ umount /media $ sync
+<pre tabindex="0"><code>$ mount /dev/sdX /media $ :&gt; /media/ssh $ cat &gt; /media/wpa_supplicant.conf &lt;&lt;&#34;EOF&#34; country=GB ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid=&#34;YOUR_SSID&#34; psk=&#34;YOUR_PSK&#34; } EOF $ umount /media $ sync
 </code></pre><h2 id="replacing-openssh-with-dropbear-in-raspbian">Replacing Openssh with dropbear in raspbian</h2>
 <h3 id="installation">Installation</h3>
 <p>To install on Raspbian, simply run the following two commands on your Pi:</p>
@@ -220,18 +220,18 @@ if (!doNotTrack) {
 </code></pre><p>Delete the default pi user</p>
 <pre tabindex="0"><code>deluser pi &amp;&amp; rm -rf /home/pi
 </code></pre><p>kill config comments</p>
-<pre tabindex="0"><code>find / -type f -name &quot;*.conf&quot; |xargs sed -i '\#^//#d'
+<pre tabindex="0"><code>find / -type f -name &#34;*.conf&#34; |xargs sed -i &#39;\#^//#d&#39;
 </code></pre><p>Disable dpkg docs and locale files from installing via apt</p>
-<pre tabindex="0"><code>cat &gt; /etc/apt/apt.conf.d/80noadditional &lt;&lt;&quot;EOF&quot;
-APT::Install-Recommends &quot;0&quot;;
-APT::Install-Suggests &quot;0&quot;;
+<pre tabindex="0"><code>cat &gt; /etc/apt/apt.conf.d/80noadditional &lt;&lt;&#34;EOF&#34;
+APT::Install-Recommends &#34;0&#34;;
+APT::Install-Suggests &#34;0&#34;;
 EOF
 
-cat &gt; /etc/dpkg/dpkg.cfg.d/nodoc &lt;&lt;&quot;EOF&quot; 
+cat &gt; /etc/dpkg/dpkg.cfg.d/nodoc &lt;&lt;&#34;EOF&#34; 
 path-exclude /usr/share/doc/* path-include /usr/share/doc/*/copyright path-exclude /usr/share/man/* path-exclude /usr/share/groff/* path-exclude /usr/share/info/* path-exclude /usr/share/lintian/* path-exclude /usr/share/linda/*
 EOF
 
-cat &gt; /etc/dpkg/dpkg.cfg.d/nolocale &lt;&lt;&quot;EOF&quot;
+cat &gt; /etc/dpkg/dpkg.cfg.d/nolocale &lt;&lt;&#34;EOF&#34;
 path-exclude /usr/share/locale/*
 EOF
 </code></pre><p>Cleanup Logs, docs, useless files</p>
@@ -400,7 +400,7 @@ Password: password</p>
           <div class="disqus-comments">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

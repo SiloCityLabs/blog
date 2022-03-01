@@ -213,20 +213,20 @@ if (!doNotTrack) {
 <pre tabindex="0"><code>@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh
 </code></pre><p>Script:</p>
 <pre tabindex="0"><code>#!/bin/bash
-HOST='hostedftp.com'
-USER='username'
-PASS='password'
-TARGETFOLDER='/'
-SOURCEFOLDER='/var/cache/zoneminder/'
-while inotifywait -qqr &quot;$SOURCEFOLDER&quot;; do
-lftp -f &quot;
+HOST=&#39;hostedftp.com&#39;
+USER=&#39;username&#39;
+PASS=&#39;password&#39;
+TARGETFOLDER=&#39;/&#39;
+SOURCEFOLDER=&#39;/var/cache/zoneminder/&#39;
+while inotifywait -qqr &#34;$SOURCEFOLDER&#34;; do
+lftp -f &#34;
 open $HOST
 user $USER $PASS
 lcd $SOURCEFOLDER
 set ftp:ssl-allow no
 mirror --no-symlinks --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
 bye
-&quot;
+&#34;
 done
 </code></pre><p> </p>
 <h2 id="software-raid">Software Raid</h2>
@@ -329,7 +329,7 @@ done
           <div class="disqus-comments">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

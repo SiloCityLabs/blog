@@ -261,7 +261,7 @@ Partition number (1-4, default 1): 1
 First sector (2048-3906916350, default 2048): 
 Last sector, +sectors or +size{K,M,G,T,P} (2048-3906916350, default 3906916350): 
 
-Created a new partition 1 of type 'Linux' and of size 4.3 TiB.
+Created a new partition 1 of type &#39;Linux&#39; and of size 4.3 TiB.
 
 Command (m for help): w
 The partition table has been altered.
@@ -308,10 +308,10 @@ sudo cryptsetup luksClose /dev/mapper/volume01
 IP_NS=$(dig +short your.domain.name)
 IP_WAN=$(curl -ks http://checkip.amazonaws.com/)
 
-if [[ &quot;$IP_NS&quot; == &quot;$IP_WAN&quot; ]]; then
-    echo &quot;No IP update required. ($IP_WAN)&quot;
+if [[ &#34;$IP_NS&#34; == &#34;$IP_WAN&#34; ]]; then
+    echo &#34;No IP update required. ($IP_WAN)&#34;
 else
-    echo &quot;IP has changed from ($IP_WAN) to ($IP_NS)&quot;
+    echo &#34;IP has changed from ($IP_WAN) to ($IP_NS)&#34;
     curl -ks https://dnsprovider.com?key=sometokentochangeip
 fi
 </code></pre><p>Now add the script to your crontab after making it executable</p>
@@ -326,9 +326,9 @@ crontab -e
 </code></pre><p>You can change port 1080 to anything you desire, it is recommended to keep it above 1024 for some routers that dont allow numbers below that.</p>
 <p><code>nano /home/pi/upnp.sh</code></p>
 <pre tabindex="0"><code>#!/bin/bash
-ip=$(upnpc -l | grep &quot;Local LAN ip address&quot; | cut -d: -f2)
+ip=$(upnpc -l | grep &#34;Local LAN ip address&#34; | cut -d: -f2)
 
-upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
+upnpc -e &#34;Backups&#34; -a $ip 22 1080 TCP
 </code></pre><p><code>chmod +x /home/pi/upnp.sh</code></p>
 <p>You can have it run when ethernet is up with the following command</p>
 <pre tabindex="0"><code>sudo ln -s /home/pi/upnp.sh /etc/network/if-up.d/upnp
@@ -343,29 +343,29 @@ upnpc -e &quot;Backups&quot; -a $ip 22 1080 TCP
 DRIVE_UUID=5bced688-7fa8-48b8-ad59-d63fe8aa14d5
 
 #Device credentials
-HOST=&quot;raspberrypi.yourdomain.com&quot;
-USERNAME=&quot;pi&quot;
-PASSWORD=&quot;&quot;
+HOST=&#34;raspberrypi.yourdomain.com&#34;
+USERNAME=&#34;pi&#34;
+PASSWORD=&#34;&#34;
 
 #keyfile string used to decrypt drive
-PASSPHRASE=''
+PASSPHRASE=&#39;&#39;
 
 #Path on local to backup to remote with trailing slash
-BACKUP_PATH=&quot;/mnt/raid/home/&quot;
+BACKUP_PATH=&#34;/mnt/raid/home/&#34;
 
-echo &quot;Connecting to pi&quot;
+echo &#34;Connecting to pi&#34;
 sshpass -p $PASSWORD ssh $USERNAME@$HOST &lt;&lt; EOF
- echo &quot;Mounting drive&quot;
+ echo &#34;Mounting drive&#34;
  sudo mkdir /mnt/backup
- echo '$PASSPHRASE' | sudo cryptsetup luksOpen /dev/disk/by-uuid/$DRIVE_UUID volume01 -d=-
+ echo &#39;$PASSPHRASE&#39; | sudo cryptsetup luksOpen /dev/disk/by-uuid/$DRIVE_UUID volume01 -d=-
  sudo mount /dev/mapper/volume01 /mnt/backup
  sudo chmod 777 /mnt/backup
 EOF
 
-echo &quot;Run rsync&quot;
+echo &#34;Run rsync&#34;
 sshpass -p $PASSWORD rsync -avzr --delete -P -e ssh $BACKUP_PATH $USERNAME@$HOST:/mnt/backup/
 
-echo &quot;Unmount the drive&quot;
+echo &#34;Unmount the drive&#34;
 sshpass -p $PASSWORD ssh $USERNAME@$HOST &lt;&lt; EOF
  sudo umount /mnt/backup
  sudo cryptsetup luksClose /dev/mapper/volume01
@@ -405,7 +405,7 @@ EOF
           <div class="disqus-comments">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
