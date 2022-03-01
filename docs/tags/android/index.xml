@@ -38,7 +38,7 @@
 &lt;p&gt;The News’ team has you covered, from preseason to the draft – and every puck drop in between. John Vogl, Mike Harrington, Amy Moritz, Bucky Gleason and Jerry Sullivan lead the coverage with breaking news updates and in-depth analysis through daily blog posts, articles and columns. Plus, video reports and exclusive photos from every game. On game nights, get real-time reports from The News’ writers at the rink.&lt;/p&gt;
 &lt;p&gt;And The News’ coverage goes beyond Pegulaville. From the Cup final to the Scouting Combine, The News’ writers are on the ground at the biggest events of the year to take you inside what’s happening with your team and the league.&lt;/p&gt;
 &lt;p&gt;This app presents all of The Buffalo News’ coverage of the Sabres and league in a format that is optimized for fans on the go. In addition to current articles and blog updates, you will have access to photo galleries, stats and the best of The News’ Sabres archive.&lt;/p&gt;
-&lt;p&gt;The depth of The News’ staff is unmatched. John Vogl has been covering the Sabres since 2002-03. The award-winning writer is the Buffalo chapter chairman for the Professional Hockey Writers’ Association. Mike Harrington, a Canisius College graduate who began his career as a News reporter in 1987, has been covering the Sabres since 2007. He is a member of the Professional Hockey Writers&#39; Association. Amy Moritz, a native of Lockport, joined The News&#39; Sabres beat in 2013.&lt;/p&gt;</description>
+&lt;p&gt;The depth of The News’ staff is unmatched. John Vogl has been covering the Sabres since 2002-03. The award-winning writer is the Buffalo chapter chairman for the Professional Hockey Writers’ Association. Mike Harrington, a Canisius College graduate who began his career as a News reporter in 1987, has been covering the Sabres since 2007. He is a member of the Professional Hockey Writers&amp;rsquo; Association. Amy Moritz, a native of Lockport, joined The News&amp;rsquo; Sabres beat in 2013.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -101,8 +101,7 @@
       <pubDate>Fri, 02 Mar 2018 16:29:41 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/03/02/changing-dns-settings-for-android-development/</guid>
-      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg&#34; alt=&#34;&#34; height=&#34;395&#34; width=&#34;728&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
-    
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/03/ezgif-1-6db60a8e39-1.jpg&#34; alt=&#34;&#34;/&gt;
 
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;This relates to any similar development environment. This guide will help you setup your device to work for your development setup either locally or a remote server. No root required.&lt;/p&gt;

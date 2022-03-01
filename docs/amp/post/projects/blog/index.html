@@ -134,13 +134,13 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 <p>We took that and added it right to our main.js file to keep it consolidated.</p>
 <h3 id="minify-and-combine-cssjs">Minify and Combine CSS/JS</h3>
 <p>Hugo has a great built in feature that I beleive every hugo powered site should have enabled. I am honestly not sure why the theme did not have this done already. The setup was very easy. We took our files and combined the output withouth touching the files themselves. Just edit your templete like so:</p>
-<pre tabindex="0"><code>{{ $jsmain := resources.Get &quot;js/main.js&quot; }}
-{{ $jslazy := resources.Get &quot;js/lazyload.js&quot; }}
-{{ $jshighlight := resources.Get &quot;js/highlight.min.js&quot; }}
-{{ $jsnativebs := resources.Get &quot;js/bootstrap-native-v4.min.js&quot; }}
+<pre tabindex="0"><code>{{ $jsmain := resources.Get &#34;js/main.js&#34; }}
+{{ $jslazy := resources.Get &#34;js/lazyload.js&#34; }}
+{{ $jshighlight := resources.Get &#34;js/highlight.min.js&#34; }}
+{{ $jsnativebs := resources.Get &#34;js/bootstrap-native-v4.min.js&#34; }}
 
-{{ $jssall := slice $jsnativebs $jshighlight $jslazy $jsmain  | resources.Concat &quot;js/bundle.js&quot; | resources.Minify }}
-&lt;script src=&quot;{{ $jssall.Permalink | absURL }}&quot;&gt;&lt;/script&gt;
+{{ $jssall := slice $jsnativebs $jshighlight $jslazy $jsmain  | resources.Concat &#34;js/bundle.js&#34; | resources.Minify }}
+&lt;script src=&#34;{{ $jssall.Permalink | absURL }}&#34;&gt;&lt;/script&gt;
 </code></pre><h3 id="setup-github-actions-auto-deploy">Setup github actions auto deploy</h3>
 <p>Github has granted our team Beta access to github actions wich allowed us to take our webhooks listener daemon and move it to a simpler build program. You can checkout the <a href="https://github.com/SiloCityLabs/blog/blob/master/.github/workflows/build.yml">build instructions here</a>.</p>
 <p>Outline as follows:</p>
