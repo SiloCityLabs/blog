@@ -16,7 +16,7 @@ adsense: false
     </a>
     </li>
     <li>
-    <a href="mailto:luis@silocitylabs.com" title="Email me" style="color: #404040;">
+    <a href="mailto:me@luisdrodriguez.com" title="Email me" style="color: #404040;">
         <span class="icon-stack icon-lg">
         <i class="icon icon-circle icon-stack-2x"></i>
         <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
