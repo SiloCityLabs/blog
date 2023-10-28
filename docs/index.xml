@@ -5,9 +5,31 @@
     <link>https://silocitylabs.com/</link>
     <description>Recent content on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Sat, 19 Nov 2022 22:36:25 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 01:00:00 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nurturing Your Garden the Smart Way</title>
+      <link>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</guid>
+      <description>Introduction In the world of electronics and software, innovation knows no bounds. As a senior software engineer in Amherst, NY, I&amp;rsquo;ve always loved to tinker with the latest technologies to create fun and exciting projects. One such project that I recently embarked on is an automated watering system that integrates seamlessly with Home Assistant, using sensors, Tasmota, MQTT, and an ESP32 4CH relay control board. In this article, I will guide you through the process of building your own automated watering system, step by step.</description>
+    </item>
+    
+    <item>
+      <title>Crowsville</title>
+      <link>https://silocitylabs.com/post/2023/2023-07-07-crowsville/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2023/2023-07-07-crowsville/</guid>
+      <description>What is crowsville? An mmorpg 2d topdown farming simulator
+Why? I wanted an multiplatform game I can share adventures with my daughters.
+When? Not sure yet
+Currently looking for a game developer who I can partner with to write this. The online server portion has been written but I would love to start developing the game with a partner I can grow the title woth from the ground up</description>
+    </item>
+    
     <item>
       <title>Farewell CODRCG.COM</title>
       <link>https://silocitylabs.com/post/2022/2022-11-19-rip-codrcg/</link>
