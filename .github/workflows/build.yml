@@ -31,14 +31,6 @@ jobs:
         advice.detachedHead: false
       uses: actions/checkout@master
 
-    - name: Get dependencies
-      run: |
-        go get -v -t -d ./...
-        if [ -f Gopkg.toml ]; then
-            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-            dep ensure
-        fi
-
     - name: Install Hugo
       run: |
         curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_[^extended].*_linux-amd64\.deb" | cut -d ":" -f 2,3 | tr -d \" | wget -qi -
@@ -54,6 +46,7 @@ jobs:
     - name: Run Build Program
       run: |
         cd build/
+        go mod tidy
         go run .
 
     - name: Commit Changes
