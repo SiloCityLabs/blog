@@ -3,14 +3,100 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/automation-systems/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/diy-projects/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/esp32/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/gardening/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/hass/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/home-automation/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/iot/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/microcontrollers/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/plant-care/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/plants/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/smart-home/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/tasmota/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/water-management/</loc>
+    <lastmod>2023-10-28T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/adventure/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/crowsville/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2023/2023-07-07-crowsville/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/farming/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/game/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/mmo/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/multi-platform/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/quests/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/rpg/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/simulator/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/storyline/</loc>
+    <lastmod>2023-07-07T01:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/codrcg/</loc>
     <lastmod>2022-11-19T22:36:25+00:00</lastmod>
@@ -21,22 +107,10 @@
     <loc>https://silocitylabs.com/post/2022/2022-11-19-rip-codrcg/</loc>
     <lastmod>2022-11-19T22:36:25+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/php/</loc>
     <lastmod>2022-11-19T22:36:25+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/random-class-generator/</loc>
-    <lastmod>2022-11-19T22:36:25+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2022-11-19T22:36:25+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2021/05/13/cleaning-up-duplicates-on-nas/</loc>
@@ -91,9 +165,6 @@
     <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/home-server/</loc>
-    <lastmod>2020-02-07T00:57:15+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/iot/</loc>
     <lastmod>2020-02-07T00:57:15+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/offsite/</loc>
@@ -673,9 +744,6 @@
     <lastmod>2018-02-05T22:30:22+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/morethings/</loc>
-    <lastmod>2018-02-05T22:30:22+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/smart-home/</loc>
     <lastmod>2018-02-05T22:30:22+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/backyard/</loc>

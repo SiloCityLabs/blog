@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crowsville on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/crowsville/</link>
+    <description>Recent content in crowsville on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Fri, 07 Jul 2023 01:00:00 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/crowsville/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crowsville</title>
+      <link>https://silocitylabs.com/post/2023/2023-07-07-crowsville/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2023/2023-07-07-crowsville/</guid>
+      <description>What is crowsville? An mmorpg 2d topdown farming simulator
+Why? I wanted an multiplatform game I can share adventures with my daughters.
+When? Not sure yet
+Currently looking for a game developer who I can partner with to write this. The online server portion has been written but I would love to start developing the game with a partner I can grow the title woth from the ground up</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,9 +5,217 @@
     <link>https://silocitylabs.com/tags/</link>
     <description>Recent content in Tags on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Sat, 19 Nov 2022 22:36:25 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 01:00:00 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>automation systems</title>
+      <link>https://silocitylabs.com/tags/automation-systems/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/automation-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIY projects</title>
+      <link>https://silocitylabs.com/tags/diy-projects/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/diy-projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>esp32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gardening</title>
+      <link>https://silocitylabs.com/tags/gardening/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/gardening/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hass</title>
+      <link>https://silocitylabs.com/tags/hass/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/hass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>home automation</title>
+      <link>https://silocitylabs.com/tags/home-automation/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/home-automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iot</title>
+      <link>https://silocitylabs.com/tags/iot/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microcontrollers</title>
+      <link>https://silocitylabs.com/tags/microcontrollers/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/microcontrollers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plant care</title>
+      <link>https://silocitylabs.com/tags/plant-care/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/plant-care/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plants</title>
+      <link>https://silocitylabs.com/tags/plants/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/plants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smart home</title>
+      <link>https://silocitylabs.com/tags/smart-home/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/smart-home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tasmota</title>
+      <link>https://silocitylabs.com/tags/tasmota/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/tasmota/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>water management</title>
+      <link>https://silocitylabs.com/tags/water-management/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/water-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adventure</title>
+      <link>https://silocitylabs.com/tags/adventure/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/adventure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crowsville</title>
+      <link>https://silocitylabs.com/tags/crowsville/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/crowsville/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>farming</title>
+      <link>https://silocitylabs.com/tags/farming/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/farming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://silocitylabs.com/tags/game/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mmo</title>
+      <link>https://silocitylabs.com/tags/mmo/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/mmo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multi-platform</title>
+      <link>https://silocitylabs.com/tags/multi-platform/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/multi-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quests</title>
+      <link>https://silocitylabs.com/tags/quests/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/quests/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpg</title>
+      <link>https://silocitylabs.com/tags/rpg/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/rpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>simulator</title>
+      <link>https://silocitylabs.com/tags/simulator/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/simulator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>storyline</title>
+      <link>https://silocitylabs.com/tags/storyline/</link>
+      <pubDate>Fri, 07 Jul 2023 01:00:00 +0000</pubDate>
+      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/storyline/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>codrcg</title>
       <link>https://silocitylabs.com/tags/codrcg/</link>
@@ -176,15 +384,6 @@
       <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/home-server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iot</title>
-      <link>https://silocitylabs.com/tags/iot/</link>
-      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/iot/</guid>
       <description></description>
     </item>
     
@@ -1526,15 +1725,6 @@
       <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
       <author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/morethings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>smart home</title>
-      <link>https://silocitylabs.com/tags/smart-home/</link>
-      <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/smart-home/</guid>
       <description></description>
     </item>
     
