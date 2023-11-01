@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/3d-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/3d-modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3d printed wrist brace – WIP instructions</title>
       <link>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</link>
-      <pubDate>Thu, 30 Aug 2018 00:09:59 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 30 Aug 2018 00:09:59 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</guid>
       <description>&lt;p&gt;I won&amp;rsquo;t be able to finish &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/&#34;&gt;my wrist brace project&lt;/a&gt; for a while. These instructions are very rough because they&amp;rsquo;re not actually finished. &lt;/p&gt;
 &lt;p&gt;Post in comments if anything needs clarification.&lt;/p&gt;
@@ -31,24 +31,20 @@
 &lt;p&gt;Here&amp;rsquo;s the Skanect guide I watched:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Phone case gamepad WIP</title>
       <link>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</link>
-      <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 18 Dec 2017 18:30:48 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackaday.io/Maave&#34;&gt;
     &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/6371391512533450341-1.jpg&#34; alt=&#34;&#34;/&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s my primary project, a phone case gamepad. This has been on the backburner for a while and I&amp;rsquo;m finally going full steam on it. Major milestones will be posted here on the blog. For the week by week details follow my &lt;a href=&#34;https://hackaday.io/project/28180&#34;&gt;HackADay.io project&lt;/a&gt;. All project information will be open source and posted on &lt;a href=&#34;https://github.com/SiloCityLabs&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>3D printed wrist brace WIP</title>
       <link>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</link>
-      <pubDate>Fri, 15 Dec 2017 19:21:01 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 15 Dec 2017 19:21:01 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/</guid>
       <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/IMG_20171028_153645.jpg&#34; alt=&#34;&#34;/&gt;
 
@@ -58,6 +54,5 @@
 
 &lt;p&gt;The design was inspired by this 3D printed cast I saw online. I scanned my arm with a Kinect using the Skanect program, then edited the model in Blender to make the brace. My plan a two-piece clamshell, probably held by o-rings or similar. I may add a hinge in the future.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

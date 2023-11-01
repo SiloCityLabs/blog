@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 11 Oct 2018 00:48:54 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/power-supply/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Oct 2018 00:48:54 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/power-supply/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>12v circuit for battery backup</title>
       <link>https://silocitylabs.com/post/2018/10/11/12v-circuit/</link>
-      <pubDate>Thu, 11 Oct 2018 00:48:54 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 11 Oct 2018 00:48:54 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/10/11/12v-circuit/</guid>
       <description>&lt;p&gt;My goal is to eventually run everything off a battery backup circuit. Most common systems run on a 12v battery. To start im start off with a few basic things and getting everything running from 12v.&lt;/p&gt;
 &lt;p&gt;Items needed:&lt;/p&gt;
@@ -23,6 +23,5 @@
 &lt;/ul&gt;
 &lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

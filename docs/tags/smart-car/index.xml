@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 19 Jul 2018 06:36:37 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/smart-car/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jul 2018 06:36:37 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/smart-car/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reusing Tile as car tracker.</title>
       <link>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</link>
-      <pubDate>Thu, 19 Jul 2018 06:36:37 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 19 Jul 2018 06:36:37 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</guid>
       <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;
 
@@ -31,6 +31,5 @@
 &lt;li&gt;Drill (optional)&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

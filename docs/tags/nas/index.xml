@@ -8,27 +8,24 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 13 May 2021 01:30:44 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 01:30:44 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cleaning up NAS</title>
       <link>https://silocitylabs.com/post/2021/05/13/cleaning-up-duplicates-on-nas/</link>
-      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2021/05/13/cleaning-up-duplicates-on-nas/</guid>
       <description>&lt;p&gt;Updated in May 2021&lt;/p&gt;
 &lt;p&gt;Over the last few years me and my wife have been using the network server more frequently from its initial install and setup. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Turn an Old Raspberry pi into an offsite backup</title>
       <link>https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/</link>
-      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 07 Feb 2020 00:57:15 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2020/02/07/raspberry-pi-encrypted-offsite-backups/</guid>
       <description>Why? Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.
 Although im set on a disaster level there are a few things that can be an issue with onsite backups. Especially with my drive being plugged in all the time.
 Theft, Although it is &amp;ldquo;theft resistant&amp;rdquo; the metal they want me to bolt down isnt very strong at all.</description>
     </item>
-    
   </channel>
 </rss>
