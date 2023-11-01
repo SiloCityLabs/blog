@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Sun, 28 Oct 2018 03:08:14 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/google-home/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Oct 2018 03:08:14 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/google-home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wall mounted Google home free</title>
       <link>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</link>
-      <pubDate>Sun, 28 Oct 2018 03:08:14 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Sun, 28 Oct 2018 03:08:14 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</guid>
       <description>&lt;p&gt;I wanted to wall mount my google home mini for the kitchen since there is not really a nice place to set it down. I also didnt want to pay for a mount or 3d print anything.&lt;/p&gt;
 &lt;p&gt;You can use zip ties or bread bag ties to secure the cable in a loop like below.&lt;/p&gt;
@@ -22,12 +22,10 @@
 
 &lt;p&gt;After u have the 3 ties in place. Just plug it in and you should be set.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Complete Smart Home Setup</title>
       <link>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</link>
-      <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
       <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34;/&gt;
 
@@ -43,6 +41,5 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

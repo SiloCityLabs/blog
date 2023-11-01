@@ -8,16 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Tue, 25 Jun 2019 22:36:25 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/cidr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jun 2019 22:36:25 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/cidr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang IP Formatting Package</title>
       <link>https://silocitylabs.com/post/projects/ipformat/</link>
-      <pubDate>Tue, 25 Jun 2019 22:36:25 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Tue, 25 Jun 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/ipformat/</guid>
       <description>&lt;p&gt;Package written in Golang to process and format ip Addresses to and from ipv4/ipv6. Can also take ranges in cidr notation. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/ipFormat&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
 &lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

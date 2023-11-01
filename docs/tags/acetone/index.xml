@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 15 Dec 2017 01:05:05 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/acetone/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Dec 2017 01:05:05 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/acetone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New print bed</title>
       <link>https://silocitylabs.com/post/2017/12/15/ebay-print-bed/</link>
-      <pubDate>Fri, 15 Dec 2017 01:05:05 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 15 Dec 2017 01:05:05 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/15/ebay-print-bed/</guid>
       <description>&lt;p&gt;We received our new print bed from &lt;a href=&#34;https://www.ebay.com/itm/192342007627&#34;&gt;eBay/China&lt;/a&gt;. Not a Lokbuild but at least its cheaper. First thing I noticed is that this sheet is thicker than a Lokbuild, 0.6mm thick instead of 0.5. When I followed the steps on calibrating I clicked &lt;del&gt;6&lt;/del&gt; 8 times to ensure proper spacing instead of the original 4.&lt;/p&gt;
 
@@ -38,6 +38,5 @@
 &lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

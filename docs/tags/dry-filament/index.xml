@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Fri, 13 Apr 2018 23:14:34 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/dry-filament/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Apr 2018 23:14:34 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/dry-filament/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3d Printer Filament box done quick</title>
       <link>https://silocitylabs.com/post/2018/04/13/3d-printer-filament-box-done-quick/</link>
-      <pubDate>Fri, 13 Apr 2018 23:14:34 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 13 Apr 2018 23:14:34 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/04/13/3d-printer-filament-box-done-quick/</guid>
       <description>&lt;p&gt;Keep your filament dry! Filament used for 3d printers will absorb moisture from the air and damp filament prints very poorly. With Buffalo&amp;rsquo;s high humidity and our printer being run in a basement, we absolutely need a dry box for our spools. We ordered parts ahead of time, slammed this box together in an afternoon, and then baked our spools to rid them of moisture.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re using a large plastic bin for storage, teflon tubing to run from the box to the printer, and pneumatic connectors to ensure the filament feeds smoothly into the tubing without snagging. A large pack of silica gel keeps the box dry over time. Our basement also has an additional air dehumidifier that we keep at 50% to prevent mold growing on our wood/mdf surfaces.&lt;/p&gt;
@@ -42,6 +42,5 @@
 &lt;/ul&gt;
 &lt;p&gt; &lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

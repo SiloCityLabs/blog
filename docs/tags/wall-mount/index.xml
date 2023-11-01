@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Sun, 28 Oct 2018 03:08:14 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/wall-mount/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Oct 2018 03:08:14 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/wall-mount/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wall mounted Google home free</title>
       <link>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</link>
-      <pubDate>Sun, 28 Oct 2018 03:08:14 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Sun, 28 Oct 2018 03:08:14 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/10/27/wall-mounted-google-home-free/</guid>
       <description>&lt;p&gt;I wanted to wall mount my google home mini for the kitchen since there is not really a nice place to set it down. I also didnt want to pay for a mount or 3d print anything.&lt;/p&gt;
 &lt;p&gt;You can use zip ties or bread bag ties to secure the cable in a loop like below.&lt;/p&gt;
@@ -22,6 +22,5 @@
 
 &lt;p&gt;After u have the 3 ties in place. Just plug it in and you should be set.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

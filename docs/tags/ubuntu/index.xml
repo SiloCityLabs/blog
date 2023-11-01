@@ -8,22 +8,20 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 13 May 2021 01:30:44 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 01:30:44 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cleaning up NAS</title>
       <link>https://silocitylabs.com/post/2021/05/13/cleaning-up-duplicates-on-nas/</link>
-      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 13 May 2021 01:30:44 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2021/05/13/cleaning-up-duplicates-on-nas/</guid>
       <description>&lt;p&gt;Updated in May 2021&lt;/p&gt;
 &lt;p&gt;Over the last few years me and my wife have been using the network server more frequently from its initial install and setup. We share 3-4 computers across the house and constantly move files onto the NAS. I have installed Nextcloud which I will detail in another post in the future. We have come across an issue that I have noticed with the network share. We moved all of our images and files over and ended up with tons of duplicates and a giant mess. I will show you what I am doing to clean that up. Our Nas is running on a ubuntu server. The following commands should work on most linux NAS servers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Switching to Linux</title>
       <link>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</link>
-      <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Wed, 19 Dec 2018 00:30:20 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/12/18/switching-to-linux/</guid>
       <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/12/the-best-linux-distros-for-beginners-switching-from-windows-mac-670x3353674761306310635625.png&#34; alt=&#34;&#34;/&gt;
 
@@ -52,6 +50,5 @@
 &lt;p&gt;&lt;code&gt;apt install gnome-sushi&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To get the Windows-only software running I installed Virtualbox and installed Windows 10 and started to hack away at all its imperfections to slim it down. This virtual machine won&amp;rsquo;t be used that often so its a compromise I&amp;rsquo;m willing to make. I can also set quick one click restore points just in case windows breaks. I have compiled a list for all to use:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

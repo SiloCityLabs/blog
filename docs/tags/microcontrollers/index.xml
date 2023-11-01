@@ -8,15 +8,14 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Sat, 28 Oct 2023 01:00:00 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/microcontrollers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 01:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/microcontrollers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nurturing Your Garden the Smart Way</title>
       <link>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</link>
-      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</guid>
       <description>Introduction In the world of electronics and software, innovation knows no bounds. As a senior software engineer in Amherst, NY, I&amp;rsquo;ve always loved to tinker with the latest technologies to create fun and exciting projects. One such project that I recently embarked on is an automated watering system that integrates seamlessly with Home Assistant, using sensors, Tasmota, MQTT, and an ESP32 4CH relay control board. In this article, I will guide you through the process of building your own automated watering system, step by step.</description>
     </item>
-    
   </channel>
 </rss>

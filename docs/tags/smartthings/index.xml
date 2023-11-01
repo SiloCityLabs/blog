@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 11 Oct 2018 00:48:54 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/smartthings/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Oct 2018 00:48:54 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/smartthings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>12v circuit for battery backup</title>
       <link>https://silocitylabs.com/post/2018/10/11/12v-circuit/</link>
-      <pubDate>Thu, 11 Oct 2018 00:48:54 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 11 Oct 2018 00:48:54 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/10/11/12v-circuit/</guid>
       <description>&lt;p&gt;My goal is to eventually run everything off a battery backup circuit. Most common systems run on a 12v battery. To start im start off with a few basic things and getting everything running from 12v.&lt;/p&gt;
 &lt;p&gt;Items needed:&lt;/p&gt;
@@ -23,34 +23,28 @@
 &lt;/ul&gt;
 &lt;p&gt;This controller came with a few negatives right off the jump. I dont want to link to a bad controller but ill still describe what I did.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>433MHZ More Things for Smart Things</title>
       <link>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</link>
-      <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 05 Feb 2018 22:30:22 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/02/05/433mhz-more-things-for-smart-things/</guid>
       <description>Finally - off the breadboard and into a working environment. It&amp;rsquo;s currently working for 433mhz sensors, I will possibly be adding more frequencies later. For now I will continue refining the code to release it on github.
 Day 1:
 A few issues. I accidentally flipped the polarities on the siren. I will eventually implement a 12v regulator to up the voltage for the siren for the full 120db power.
 Day 2:</description>
     </item>
-    
     <item>
       <title>433mhz testing</title>
       <link>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</link>
-      <pubDate>Fri, 19 Jan 2018 14:43:55 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 19 Jan 2018 14:43:55 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</guid>
       <description>I decided due to the lack of community support I am not going to make a Zigbee 433mhz chip instead I will continue my efforts with the WiFi esp8266. Now that I have the 433mhz working with the esp8266 I will be performing some distance testing with a few receivers I purchased and different antennas I have.
 Update to: https://blog.silocitylabs.com/post/2017/12/01/smart-things-433mhz/</description>
     </item>
-    
     <item>
       <title>Complete Smart Home Setup</title>
       <link>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</link>
-      <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 28 Dec 2017 18:00:51 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/28/complete-smart-home-setup/</guid>
       <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/smart-home-2769210_960_720-e1514497002881.jpg&#34; alt=&#34;&#34;/&gt;
 
@@ -66,58 +60,47 @@ Google Home and/or Mini manage my random routines that aren&amp;rsquo;t part of 
 &lt;p&gt;&lt;strong&gt;Control Center&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;What controls my entire setup and why I chose this hub vs others. My only hub is a &lt;strong&gt;Samsung SmartThings hub&lt;/strong&gt;. This manages just about everything in my home minus the security cameras. I did heavy research on many hubs including Wink, IOT (hub-less), and Phillips hue. Why SmartThings?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SmartThings zigbee vs Dome light cover</title>
       <link>https://silocitylabs.com/post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/</link>
-      <pubDate>Tue, 26 Dec 2017 17:55:48 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Tue, 26 Dec 2017 17:55:48 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/26/smartthings-zigbee-vs-dome-light-cover/</guid>
       <description>For Christmas my mother got a full smart home kit. Samsung SmartThings, sengled bulbs, google home. After pluging everything in the hub was having issues. Finding all bulbs in dome covers. I removed the glass from the dome cover and tried again with no luck. Afterwards I removed the bulb from the socket and put it in a lamp. Detected and added to smartthings fine in the lamp. Readded it to the dome cover and it works now!</description>
     </item>
-    
     <item>
       <title>SmartThings &#43; Vision Micro Switch [Update]</title>
       <link>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</link>
-      <pubDate>Mon, 18 Dec 2017 20:17:07 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 18 Dec 2017 20:17:07 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
       <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
     &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>SmartThings &#43; Vision Micro Switch</title>
       <link>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</link>
-      <pubDate>Fri, 15 Dec 2017 19:45:08 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 15 Dec 2017 19:45:08 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/</guid>
       <description>&lt;p&gt;I have found a neat little alternative to full price switches online. I gave myself a budget of $20 per wall switch for the house and until I found something around that I was not gonna buy any. I just think that $50 for a wall switch is a little ridiculous in my opinion. These switches are still over my max budget but at least I found a reason for one of the partners here to buy it instead [&lt;a href=&#34;https://blog.silocitylabs.com/post/author/bana0615/&#34;&gt;bana0615&lt;/a&gt;]. He has a double switch in his house and they do not sell double smart switches anywhere. This micro controller solves his problem. The double switch relays will put me under budget for some locations in the house though with the ability to work for two switches at once.&lt;/p&gt;
 
     &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2017/12/419E0PAR7HL.jpg&#34; alt=&#34;Double Toggle Switch&#34;/&gt;</description>
     </item>
-    
     <item>
       <title>Phillips hue &#43; smartthings</title>
       <link>https://silocitylabs.com/post/2017/12/04/phillips-hue-smartthings/</link>
-      <pubDate>Mon, 04 Dec 2017 19:28:40 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 04 Dec 2017 19:28:40 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/04/phillips-hue-smartthings/</guid>
       <description>I&amp;rsquo;m not really sure why it started working all of a sudden. I&amp;rsquo;m glad I did not buy a Hue hub. I had a test bulb plugged in as a normal bulb when it randomly showed up to my SmartThings hub. This happened after adding Sengled classic bulbs to my system and a SmartThings hub update. I think maybe it had to do with Zigbee adding cross compatibility between ZLL and ZHA protocols.</description>
     </item>
-    
     <item>
       <title>Smart Things 433mhz</title>
       <link>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</link>
-      <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 01 Dec 2017 01:39:20 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/</guid>
       <description>Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?
 I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.
 Edit: I think I may have made a mistake buying zigbee chips.</description>
     </item>
-    
   </channel>
 </rss>

@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 10 Jan 2019 23:30:35 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/genius/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Jan 2019 23:30:35 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/genius/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Genius WideCam 320 and Zoneminder</title>
       <link>https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/</link>
-      <pubDate>Thu, 10 Jan 2019 23:30:35 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 10 Jan 2019 23:30:35 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;genius-32200318100-widecam-320-usb-and-zoneminder&#34;&gt;Genius 32200318100 WideCam 320 USB and Zoneminder&lt;/h3&gt;
 
@@ -22,6 +22,5 @@
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;Although I have this particular camera, any basic USB webcam will work the same way. The setup for this one was very simple and its the most stable camera out of my whole setup. There however is no nightvision. I counter this by trigger the lights to turn on if motion sensor is tripped.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

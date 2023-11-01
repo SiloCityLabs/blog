@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 07 Feb 2019 23:30:58 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/camera/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Feb 2019 23:30:58 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/camera/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Axis 2130 PTZ and Zoneminder</title>
       <link>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</link>
-      <pubDate>Thu, 07 Feb 2019 23:30:58 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 07 Feb 2019 23:30:58 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/</guid>
       <description>&lt;h3 id=&#34;axis-2130-ptz-and-zoneminder&#34;&gt;Axis 2130 PTZ and Zoneminder&lt;/h3&gt;
 
@@ -22,6 +22,5 @@
 &lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;
 &lt;p&gt;This camera is very dated, also using a proprietary power adapter, no WiFi and very difficult to setup. Once you are on my network you have full viewing access to my camera. My router fortunately has network isolation so I am able to block access to it except via my server that has zoneminder nvr software installed. Unfortunately you will not be able to control the ptz from Zoneminder directly due to the age of the camera. But you can however give it a fixed position in the web panel it has built in. I would recommend setting its default fixed position after a reboot or power loss.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

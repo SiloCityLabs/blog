@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate><atom:link href="https://silocitylabs.com/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/blender/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3d printed wrist brace – WIP instructions</title>
       <link>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</link>
-      <pubDate>Thu, 30 Aug 2018 00:09:59 +0000</pubDate>
-      <author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 30 Aug 2018 00:09:59 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</guid>
       <description>&lt;p&gt;I won&amp;rsquo;t be able to finish &lt;a href=&#34;https://blog.silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/&#34;&gt;my wrist brace project&lt;/a&gt; for a while. These instructions are very rough because they&amp;rsquo;re not actually finished. &lt;/p&gt;
 &lt;p&gt;Post in comments if anything needs clarification.&lt;/p&gt;
@@ -31,6 +31,5 @@
 &lt;p&gt;Here&amp;rsquo;s the Skanect guide I watched:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_cKb3oEM47E&#34;&gt;https://www.youtube.com/watch?v=_cKb3oEM47E&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
