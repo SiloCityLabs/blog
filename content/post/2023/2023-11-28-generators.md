@@ -17,6 +17,7 @@ tags:
   - Propane
   - Emergency
   - Backup Power
+  - Gas Generator
 
 ---
 
