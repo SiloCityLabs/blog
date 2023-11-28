@@ -70,15 +70,21 @@ Standard [store-bought propane tanks](https://www.bluerhino.com/propane-finder/)
 
 ### Adding a Natural Gas Line
 
+![Natural Gas Connection](/uploads/generator/quick-connect.jpg "Natural Gas Connection")
+
 For tri-fuel generators, adding a high-output natural gas line is essential. Ensure a licensed [plumber](https://www.google.com/maps/search/plumber/@42.9476313,-78.859728,12z/data=!4m3!2m2!5m1!4e9?entry=ttu) installs this, and it’s important not to connect it to existing lines to avoid disrupting your furnaces natural gas supply. Purchasing a [quick connect hose](https://www.amazon.com/s?k=25ft+natural+has+hose+quick+connect) will come with the nessesary outlet for the gas supply.
 
 ### Generator Inlet Power
+
+![Power Inlet L14-30P](/uploads/generator/L14-30P.jpg "Power Inlet L14-30P")
 
 For powering the entire home, consider installing a [NEMA L14 Dual phase inlet](https://www.amazon.com/s?k=L14-30P+Power+Inlet+Box) with an [interlock kit](https://www.amazon.com/s?k=ul+approved+generator+interlock+kit) on your panel. This setup, installed by a professional electrician, allows for more devices to be powered simultaneously without the need for extension cords. A [20ft NEMA L14 cable](https://www.amazon.com/s?k=20ft+l14+generator+cord) is recommended to keep the generator safely distanced from the home.
 
 ### Noise Reduction
 
 To reduce noise, tighten any loose bolts and secure handles. I offer a [sound-dampening handle strap](https://www.etsy.com/listing/1396989959/generator-arm-silencer) on my Etsy store, which can significantly decrease noise output.
+
+![Generator Arm Silencer](/uploads/generator/silencer.jpg "Generator Arm Silencer")
 
 ----------
 
