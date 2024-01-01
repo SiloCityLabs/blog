@@ -15,42 +15,28 @@
       <link>https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/</link>
       <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/</guid>
-      <description>The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare their performance using golang tests. The entire test cost me $0.68 using a quick spot instance.
-The comparison was done on two very similar instances of aws servers. On paper they would almost seem to function the same but arm was just a few cents more, but lets take a look on how they performed.</description>
+      <description>The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare their performance using golang tests. The entire test cost me $0.68 using a quick spot instance.&#xA;The comparison was done on two very similar instances of aws servers. On paper they would almost seem to function the same but arm was just a few cents more, but lets take a look on how they performed.</description>
     </item>
     <item>
       <title>Opt out of spectrum SPAM</title>
       <link>https://silocitylabs.com/post/2019/09/26/opt-out-of-spectrum-spam/</link>
       <pubDate>Thu, 26 Sep 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/09/26/opt-out-of-spectrum-spam/</guid>
-      <description>Recently I discovered a way to opt out of all spectrum spam mail, calls, door to door salesmen. I have filled out the form and will wait patiently for my spam to stop. Hopefully my mailbox will be empty in the coming weeks.
-To opt out of all spam online, mail etc just click the link below:
-Opt Out Spectrum Spam</description>
+      <description>Recently I discovered a way to opt out of all spectrum spam mail, calls, door to door salesmen. I have filled out the form and will wait patiently for my spam to stop. Hopefully my mailbox will be empty in the coming weeks.&#xA;To opt out of all spam online, mail etc just click the link below:&#xA;Opt Out Spectrum Spam</description>
     </item>
     <item>
       <title>How to get 400mbps for 3 years at $44.99</title>
       <link>https://silocitylabs.com/post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/</link>
       <pubDate>Tue, 08 Jan 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/01/08/how-to-get-400mbps-for-44-99-3-years/</guid>
-      <description>&lt;p&gt;This is the process I found while setting up a new service for my brother at his house. This will only work for new customers. The address has to have no existing connections for this to work.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;rsquo;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is the process I found while setting up a new service for my brother at his house. This will only work for new customers. The address has to have no existing connections for this to work.&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;Step 1: Intro call, During this call you will call and ask about pricing to see if you are willing to activate a new service. You will need to seem uninterested and are willing to go without internet. Don&amp;rsquo;t make it brief. Keep it going to get more info. Ask about promotional pricing for 400mbps plans.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Backup home internet</title>
       <link>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</link>
       <pubDate>Sat, 15 Sep 2018 14:12:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/09/15/backup-home-internet/</guid>
-      <description>&lt;p&gt;With new most asus routers you can use a feature called dual wan. I have the luxury of having a work provided cell phone I am using for this. Before having that I had a free service called &lt;a href=&#34;https://www.freedompop.com/phone&#34;&gt;freedompop&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Use cases (mainly mine):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Watching netflix withouth interuptions.&lt;/li&gt;
-&lt;li&gt;Backup internet for home security system.&lt;/li&gt;
-&lt;li&gt;Anything internet&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;
-
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; alt=&#34;&#34;/&gt;</description>
+      <description>&lt;p&gt;With new most asus routers you can use a feature called dual wan. I have the luxury of having a work provided cell phone I am using for this. Before having that I had a free service called &lt;a href=&#34;https://www.freedompop.com/phone&#34;&gt;freedompop&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Use cases (mainly mine):&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Watching netflix withouth interuptions.&lt;/li&gt;&#xA;&lt;li&gt;Backup internet for home security system.&lt;/li&gt;&#xA;&lt;li&gt;Anything internet&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To start off we plugin a cell phone to the routers usb port.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/09/20180915_0932318158192643190909326.jpg&#34; alt=&#34;&#34; height=&#34;1440&#34; width=&#34;1920&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
     </item>
   </channel>
 </rss>

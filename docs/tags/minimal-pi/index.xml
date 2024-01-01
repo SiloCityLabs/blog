@@ -15,9 +15,7 @@
       <link>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</link>
       <pubDate>Thu, 13 Jun 2019 23:30:28 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2019/06/13/ultra-minimal-raspbian-image-for-pi-zero-and-zero-w/</guid>
-      <description>&lt;p&gt;I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.&lt;/p&gt;
-&lt;p&gt;Install a fresh Raspbian Stretch Lite image into the SD card (source).&lt;/p&gt;
-&lt;p&gt;Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).&lt;/p&gt;</description>
+      <description>&lt;p&gt;I wanted to make a ultra lite image that I can quickly drop Go programs onto. This image had a few requirements, be under 300MB, have less than 20MB ram usage idle, startup in under 5 seconds. I will post below everything I did to strip this down so that it can be replicated in the future. Currently with the steps below I have achieved 427MB/16MB, close to my goal for disk and memory usage is below the goal. As for bootup time, I am limited by network connection time 5+ seconds.&lt;/p&gt;&#xA;&lt;p&gt;Install a fresh Raspbian Stretch Lite image into the SD card (source).&lt;/p&gt;&#xA;&lt;p&gt;Configure headless SSH and Wi-Fi (if necessary) before starting the SD card (source).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

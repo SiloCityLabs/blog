@@ -15,34 +15,28 @@
       <link>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</link>
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</guid>
-      <description>Go Applications On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.
-Run it like so after compiling to a binary
-nohup ./restart &amp;amp; The code
-package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;runtime&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;time&amp;#34; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.</description>
+      <description>Go Applications On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.&#xA;Run it like so after compiling to a binary&#xA;nohup ./restart &amp;amp; The code&#xA;package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;runtime&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;time&amp;#34; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.</description>
     </item>
     <item>
       <title>Geo Location Micro API Service</title>
       <link>https://silocitylabs.com/post/projects/geo-api-service/</link>
       <pubDate>Mon, 22 Jul 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/geo-api-service/</guid>
-      <description>&lt;p&gt;A micro api drop in service written in golang, Designed to quickly integrate into any system for any project. Uses very little resources and can handle millions of requests per second. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/geo.bntech.io&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
-&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A micro api drop in service written in golang, Designed to quickly integrate into any system for any project. Uses very little resources and can handle millions of requests per second. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/geo.bntech.io&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;&#xA;&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Golang IP Formatting Package</title>
       <link>https://silocitylabs.com/post/projects/ipformat/</link>
       <pubDate>Tue, 25 Jun 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/ipformat/</guid>
-      <description>&lt;p&gt;Package written in Golang to process and format ip Addresses to and from ipv4/ipv6. Can also take ranges in cidr notation. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/ipFormat&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;
-&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Package written in Golang to process and format ip Addresses to and from ipv4/ipv6. Can also take ranges in cidr notation. The entire projects &lt;a href=&#34;https://github.com/SiloCityLabs/ipFormat&#34;&gt;source code&lt;/a&gt; is posted on github.&lt;/p&gt;&#xA;&lt;p&gt;You can include a package written for Golang projects to quickly get started with a simple function.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting Started with Golang</title>
       <link>https://silocitylabs.com/2019/06/24/getting-started-with-golang/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/2019/06/24/getting-started-with-golang/</guid>
-      <description>Go Applications A Go app can vary from 3 to millions of lines of code. They should also be written with one or multiple files with the extension .go You can use any text editor to write a Go program like nano, but our favorite and most supported is Visual Studio Code.
-Setting up a Go Environment For all of our tutorials we will be using VSCode to help us ease into the language.</description>
+      <description>Go Applications A Go app can vary from 3 to millions of lines of code. They should also be written with one or multiple files with the extension .go You can use any text editor to write a Go program like nano, but our favorite and most supported is Visual Studio Code.&#xA;Setting up a Go Environment For all of our tutorials we will be using VSCode to help us ease into the language.</description>
     </item>
     <item>
       <title>What can golang do?</title>
