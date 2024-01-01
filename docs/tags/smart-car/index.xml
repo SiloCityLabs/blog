@@ -15,21 +15,7 @@
       <link>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</link>
       <pubDate>Thu, 19 Jul 2018 06:36:37 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</guid>
-      <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;
-
-    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34;/&gt;
-
-&lt;p&gt;Supplies/Tools needed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pry Tool&lt;/li&gt;
-&lt;li&gt;Hot Glue gun&lt;/li&gt;
-&lt;li&gt;Voltage Meter&lt;/li&gt;
-&lt;li&gt;Dead battery Tile&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Tn1h&#34;&gt;DC to DC Buck Converter&lt;/a&gt; or &lt;a href=&#34;http://a.tra.li/Tqhy&#34;&gt;Linear converter&lt;/a&gt; (see update below)&lt;/li&gt;
-&lt;li&gt;Soldering iron&lt;/li&gt;
-&lt;li&gt;Wire stripper/cutter&lt;/li&gt;
-&lt;li&gt;Drill (optional)&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34; height=&#34;231&#34; width=&#34;231&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;&#xA;    &#xA;&#xA;&lt;p&gt;Supplies/Tools needed:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pry Tool&lt;/li&gt;&#xA;&lt;li&gt;Hot Glue gun&lt;/li&gt;&#xA;&lt;li&gt;Voltage Meter&lt;/li&gt;&#xA;&lt;li&gt;Dead battery Tile&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Tn1h&#34;&gt;DC to DC Buck Converter&lt;/a&gt; or &lt;a href=&#34;http://a.tra.li/Tqhy&#34;&gt;Linear converter&lt;/a&gt; (see update below)&lt;/li&gt;&#xA;&lt;li&gt;Soldering iron&lt;/li&gt;&#xA;&lt;li&gt;Wire stripper/cutter&lt;/li&gt;&#xA;&lt;li&gt;Drill (optional)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

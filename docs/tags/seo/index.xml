@@ -15,23 +15,14 @@
       <link>https://silocitylabs.com/post/projects/blog/</link>
       <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/blog/</guid>
-      <description>&lt;figure&gt;
-        &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/luis-portfolio/blog.png&#34; alt=&#34;Blog website&#34;/&gt;
-        &lt;figcaption&gt;The blog when this article was written.&lt;/figcaption&gt;
-    &lt;/figure&gt;
-
-&lt;p&gt;The Issue:&lt;/p&gt;
-&lt;p&gt;Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress unfortunately is not very good with performance on high traffic websites.&lt;/p&gt;
-&lt;p&gt;The Solution:&lt;/p&gt;
-&lt;p&gt;We decided to try out a static site generator called hugo. After migrating we noticed extreme performance improvements. We made some more adjustments while the project was hot and decided to host on github public repo.&lt;/p&gt;</description>
+      <description>&lt;figure&gt;&#xA;            &lt;amp-img src=&#34;https://silocitylabs.com/uploads/luis-portfolio/blog.png&#34; alt=&#34;Blog website&#34; height=&#34;940&#34; width=&#34;1354&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;&#xA;            &lt;figcaption&gt;The blog when this article was written.&lt;/figcaption&gt;&#xA;        &lt;/figure&gt;&#xA;    &#xA;&#xA;&lt;p&gt;The Issue:&lt;/p&gt;&#xA;&lt;p&gt;Previously on Wordpress we started noticing performance issues early on into the websites time on the web. Wordpress unfortunately is not very good with performance on high traffic websites.&lt;/p&gt;&#xA;&lt;p&gt;The Solution:&lt;/p&gt;&#xA;&lt;p&gt;We decided to try out a static site generator called hugo. After migrating we noticed extreme performance improvements. We made some more adjustments while the project was hot and decided to host on github public repo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ATTO.com Domain Acquisition</title>
       <link>https://silocitylabs.com/post/projects/atto-com-acquisition/</link>
       <pubDate>Wed, 20 Jul 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/projects/atto-com-acquisition/</guid>
-      <description>After hearing that they have been trying to contact a company for the purchase of atto.com for 16 years, I figured I could give it a shot. I helped ATTO Technology locate the correct point of contact in a +10000 employee company to initiate negotiations of the acquisition for the 4 letter domain name. We acquired the Domain name by the end of July.
-You can checkout the other contributors for refferences.</description>
+      <description>After hearing that they have been trying to contact a company for the purchase of atto.com for 16 years, I figured I could give it a shot. I helped ATTO Technology locate the correct point of contact in a +10000 employee company to initiate negotiations of the acquisition for the 4 letter domain name. We acquired the Domain name by the end of July.&#xA;You can checkout the other contributors for refferences.</description>
     </item>
     <item>
       <title>ATTO Technology SEO Redesign</title>
