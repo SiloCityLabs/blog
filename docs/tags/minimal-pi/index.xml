@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>minimal pi on SCL Blog</title>
+    <title>Minimal Pi on SCL Blog</title>
     <link>https://silocitylabs.com/tags/minimal-pi/</link>
-    <description>Recent content in minimal pi on SCL Blog</description>
+    <description>Recent content in Minimal Pi on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hass on SCL Blog</title>
+    <title>Hass on SCL Blog</title>
     <link>https://silocitylabs.com/tags/hass/</link>
-    <description>Recent content in hass on SCL Blog</description>
+    <description>Recent content in Hass on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
