@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>scripting on SCL Blog</title>
+    <title>Scripting on SCL Blog</title>
     <link>https://silocitylabs.com/tags/scripting/</link>
-    <description>Recent content in scripting on SCL Blog</description>
+    <description>Recent content in Scripting on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
