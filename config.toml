@@ -54,7 +54,7 @@ googleAnalytics = "UA-78226868-1"
 
 [[menu.main]]
     name = "Shop"
-    url = ""
+    url = "https://shop.silocitylabs.com"
     weight = 1
     
 [[menu.main]]
