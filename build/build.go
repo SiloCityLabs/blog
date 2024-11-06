@@ -17,7 +17,7 @@ func main() {
 		buildSite()
 	}
 
-	if settings.SendNewsletter {
-		sendNewsletter()
-	}
+	// if settings.SendNewsletter {
+	// 	sendNewsletter()
+	// }
 }
