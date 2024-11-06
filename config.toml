@@ -53,19 +53,19 @@ googleAnalytics = "UA-78226868-1"
   page = ["HTML", "AMP"]
 
 [[menu.main]]
-    name = "Blog"
+    name = "Shop"
     url = ""
     weight = 1
-
+    
 [[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 3
+    name = "Blog"
+    url = ""
+    weight = 2
 
 [[menu.main]]
     identifier = "cat"
     name = "Categories"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     parent = "cat"
@@ -92,7 +92,12 @@ googleAnalytics = "UA-78226868-1"
     weight = 4
 
 [[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 4
+
+[[menu.main]]
     name = "Newsletter"
     url = "newsletter"
-    weight = 4
+    weight = 5
 
