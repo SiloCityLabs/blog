@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT Projects on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/iot-projects/</link>
+    <description>Recent content in IoT Projects on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/iot-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revolutionizing Smart Home Devices with ESP32 and ESPHome</title>
+      <link>https://silocitylabs.com/post/2024/everything-smart/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2024/everything-smart/</guid>
+      <description>At Silocity Labs, we’ve always loved exploring innovative technology and making the world of electronics more accessible. Recently, we’ve opened a new shop featuring some of our favorite creations: ESPHome-compatible smart devices built on the powerful ESP32 platform.&#xA;This isn’t just another project for us—it’s something we enjoy doing. By turning “dumb” and outdated tech into versatile, open firmware devices, we’re making it easier for people to enjoy smart functionality without the headaches of app lock-ins, cloud dependency, or forced subscriptions.</description>
+    </item>
+  </channel>
+</rss>

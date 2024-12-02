@@ -8,8 +8,99 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Tue, 28 Nov 2023 01:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud-Free Technology</title>
+      <link>https://silocitylabs.com/tags/cloud-free-technology/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/cloud-free-technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DIY Electronics</title>
+      <link>https://silocitylabs.com/tags/diy-electronics/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/diy-electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESPHome</title>
+      <link>https://silocitylabs.com/tags/esphome/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esphome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Automation</title>
+      <link>https://silocitylabs.com/tags/home-automation/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/home-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IoT Projects</title>
+      <link>https://silocitylabs.com/tags/iot-projects/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/iot-projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Local Control</title>
+      <link>https://silocitylabs.com/tags/local-control/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/local-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://silocitylabs.com/tags/open-source/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Devices</title>
+      <link>https://silocitylabs.com/tags/smart-devices/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/smart-devices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Home</title>
+      <link>https://silocitylabs.com/tags/smart-home/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/smart-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Codrcg</title>
+      <link>https://silocitylabs.com/tags/codrcg/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/codrcg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://silocitylabs.com/tags/github/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random Class Generator</title>
+      <link>https://silocitylabs.com/tags/random-class-generator/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/random-class-generator/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backup Power</title>
       <link>https://silocitylabs.com/tags/backup-power/</link>
@@ -95,13 +186,6 @@
       <description></description>
     </item>
     <item>
-      <title>Esp32</title>
-      <link>https://silocitylabs.com/tags/esp32/</link>
-      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Gardening</title>
       <link>https://silocitylabs.com/tags/gardening/</link>
       <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
@@ -113,13 +197,6 @@
       <link>https://silocitylabs.com/tags/hass/</link>
       <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/hass/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Home Automation</title>
-      <link>https://silocitylabs.com/tags/home-automation/</link>
-      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/home-automation/</guid>
       <description></description>
     </item>
     <item>
@@ -148,13 +225,6 @@
       <link>https://silocitylabs.com/tags/plants/</link>
       <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/plants/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Smart Home</title>
-      <link>https://silocitylabs.com/tags/smart-home/</link>
-      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/smart-home/</guid>
       <description></description>
     </item>
     <item>
@@ -242,13 +312,6 @@
       <description></description>
     </item>
     <item>
-      <title>Codrcg</title>
-      <link>https://silocitylabs.com/tags/codrcg/</link>
-      <pubDate>Sat, 19 Nov 2022 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/codrcg/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Eol</title>
       <link>https://silocitylabs.com/tags/eol/</link>
       <pubDate>Sat, 19 Nov 2022 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
@@ -260,13 +323,6 @@
       <link>https://silocitylabs.com/tags/php/</link>
       <pubDate>Sat, 19 Nov 2022 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/php/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Random Class Generator</title>
-      <link>https://silocitylabs.com/tags/random-class-generator/</link>
-      <pubDate>Sat, 19 Nov 2022 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/random-class-generator/</guid>
       <description></description>
     </item>
     <item>

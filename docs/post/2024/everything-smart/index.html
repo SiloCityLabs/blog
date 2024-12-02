@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Revolutionizing Smart Home Devices with ESP32 and ESPHome</title>
+  <meta property="og:title" content="Revolutionizing Smart Home Devices with ESP32 and ESPHome" />
+  <meta name="twitter:title" content="Revolutionizing Smart Home Devices with ESP32 and ESPHome" />
+  <meta name="description" content="Transforming outdated tech into smart, open firmware devices with ESP32 and ESPHome.">
+  <meta property="og:description" content="Transforming outdated tech into smart, open firmware devices with ESP32 and ESPHome.">
+  <meta name="twitter:description" content="Transforming outdated tech into smart, open firmware devices with ESP32 and ESPHome.">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2024/everything-smart/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2024/everything-smart/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2024/everything-smart/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://silocitylabs.com/categories/company/">Official</a>
+                
+                  <a href="https://silocitylabs.com/categories/projects/">Side Projects</a>
+                
+                  <a href="https://silocitylabs.com/categories/tech-deals/">Deals</a>
+                
+                  <a href="https://silocitylabs.com/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://silocitylabs.com/newsletter">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Revolutionizing Smart Home Devices with ESP32 and ESPHome</h1>
+                
+                  
+                    <h2 class="post-subheading">Transforming outdated tech into smart, open firmware devices with ESP32 and ESPHome.</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on December 2, 2024
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2024/technology-reanimated.webp" alt=""/>
+
+<p>At <strong>Silocity Labs</strong>, we’ve always loved exploring innovative technology and making the world of electronics more accessible. Recently, we’ve opened a new shop featuring some of our favorite creations: <strong>ESPHome-compatible smart devices</strong> built on the powerful ESP32 platform.</p>
+<p>This isn’t just another project for us—it’s something we enjoy doing. By turning “dumb” and outdated tech into <strong>versatile, open firmware devices</strong>, we’re making it easier for people to enjoy smart functionality without the headaches of app lock-ins, cloud dependency, or forced subscriptions.</p>
+<hr>
+<h2 id="how-esp32-and-esphome-make-it-all-possible"><strong>How ESP32 and ESPHome Make It All Possible</strong></h2>
+<p>At the heart of everything we do is the incredible <strong>ESP32 microcontroller</strong>. With its combination of <strong>Wi-Fi</strong>, <strong>Bluetooth</strong>, and <strong>low-power capabilities</strong>, the ESP32 has revolutionized the way we think about embedded systems. Pair this with <strong>ESPHome</strong>, an open-source framework for creating smart home devices, and you have a foundation that makes building <strong>customizable, app-free, and cloud-independent devices</strong> easier than ever.</p>
+<p>ESPHome allows seamless integration with platforms like <strong>Home Assistant</strong>, giving users complete local control of their devices. With ESP32 and ESPHome, we’ve been able to create solutions that are not only highly functional but also future-proof and fully customizable.</p>
+<hr>
+<h2 id="our-esphome-compatible-products"><strong>Our ESPHome-Compatible Products</strong></h2>
+<p>Here’s a look at the innovative products now available in our shop. Each one is designed to eliminate app lock-ins, avoid cloud dependency, and give you total control.</p>
+<hr>
+<h3 id="esp32-module-for-ac-infinity-airtap-t4t6"><strong>ESP32 Module for AC Infinity AirTap T4/T6</strong></h3>
+<p><a href="https://shop.silocitylabs.com/products/esp32-module-for-ac-infinity-airtap-t4-t6">Shop the Module →</a></p>
+<p>Bring your AirTap T4/T6 to the next level with this <strong>ESP32-powered module</strong>. It replaces the factory PCB, enabling complete control via ESPHome. No more reliance on external apps—automate and monitor your airflow directly through your local smart home setup.</p>
+<hr>
+<h3 id="ebox-lite-smart-pcb-esp32-conversion"><strong>eBox Lite Smart PCB ESP32 Conversion</strong></h3>
+<p><a href="https://shop.silocitylabs.com/products/ebox-lite-smart-pcb-esp32-conversion">Shop the eBox Lite →</a></p>
+<p>The <strong>eBox Lite</strong> is your go-to solution for upgrading existing devices or creating your own smart tech. This compact ESP32 board offers maximum flexibility and seamless ESPHome integration, making it the perfect foundation for DIY smart home projects.</p>
+<hr>
+<h3 id="preorder-hpa5100b-esphome-pcb"><strong>Preorder: HPA5100B ESPHome PCB</strong></h3>
+<p><a href="https://shop.silocitylabs.com/products/preorder-hpa5100b-esphome-pcb">Preorder Now →</a></p>
+<p>The <strong>HPA5100B</strong> is our latest ESPHome-compatible PCB, designed for advanced smart home applications. Preorder yours today and get ready to experience next-level functionality and control for your home automation needs.</p>
+<hr>
+<h3 id="plantcare-a1-air-quality-sensor-v01"><strong>PlantCare A1 Air Quality Sensor (v0.1)</strong></h3>
+<p><a href="https://shop.silocitylabs.com/products/plantcare-a1-air-quality-sensor-v0-1">Shop PlantCare A1 →</a></p>
+<p>Monitor your indoor air quality with the <strong>PlantCare A1</strong>, a device designed for ESPHome integration. Track temperature, humidity, and more—all without being tied to a proprietary app. It’s your air quality, on your terms.</p>
+<hr>
+<h3 id="esp32minisd"><strong>ESP32MiniSD</strong></h3>
+<p><a href="https://shop.silocitylabs.com/products/esp32minisd">Shop the ESP32MiniSD →</a></p>
+<p>Need a compact, ESPHome-compatible device for data logging or IoT applications? The <strong>ESP32MiniSD</strong> combines ESP32 power with microSD storage, making it perfect for everything from smart home setups to mobile data collection.</p>
+<hr>
+<h3 id="esp32-remote-6-button-rgb"><strong>ESP32 Remote (6-Button RGB)</strong></h3>
+<p><a href="https://shop.silocitylabs.com/products/esp32-remote-6-button-rgb">Shop the ESP32 Remote →</a></p>
+<p>Control your smart devices with style and functionality. The <strong>ESP32 Remote</strong> features six programmable buttons and an RGB light for visual feedback. Fully customizable and built for ESPHome, it’s a great addition to any smart home.</p>
+<hr>
+<h2 id="no-apps-no-lock-ins-just-smarter-tech"><strong>No Apps, No Lock-Ins, Just Smarter Tech</strong></h2>
+<p>What sets our products apart is our commitment to <strong>open firmware</strong>. Instead of locking users into apps or cloud services, we make devices that are fully compatible with ESPHome. This means you can:</p>
+<ul>
+<li>Control your devices locally with platforms like <strong>Home Assistant</strong>.</li>
+<li>Avoid forced app updates, subscriptions, or service shutdowns.</li>
+<li>Customize your devices for specific needs or automations.</li>
+</ul>
+<hr>
+<h2 id="whats-next-we-want-to-hear-from-you"><strong>What’s Next? We Want to Hear From You!</strong></h2>
+<p>We’re just getting started. Silocity Labs is always looking for new ideas and inspiration. <strong>What products do you want to see made smarter?</strong> Drop your suggestions in the comments below or reach out to us directly. Your feedback could shape the future of our next ESPHome-compatible project!</p>
+<hr>
+<h2 id="shop-now-and-join-the-revolution"><strong>Shop Now and Join the Revolution</strong></h2>
+<p><a href="https://shop.silocitylabs.com/">Explore All Products →</a></p>
+<p>From smart conversions to innovative new designs, Silocity Labs is here to help you unlock the potential of ESP32 and ESPHome. Take control of your devices, enjoy smarter tech, and help us shape the future of open firmware.</p>
+<p><strong>Comment below and let us know your ideas for smart devices!</strong></p>
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2024/everything-smart.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2024/everything-smart.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2024/codrcg-resurrected/" data-toggle="tooltip" data-placement="top" title="The Return of CODRCG">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2024
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+
