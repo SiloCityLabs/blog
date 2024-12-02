@@ -51,3 +51,6 @@ resources/
 
 # IntelliJ IDE
 .idea/
+
+.hugo_build.lock
+hugo
