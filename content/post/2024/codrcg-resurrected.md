@@ -17,6 +17,8 @@ tags:
 
 We’re thrilled to announce the return of CODRCG, the Call of Duty Random Class Generator, now fully open source and hosted on [GitHub](https://github.com/SiloCityLabs/codrcg.com)! After shutting down in 2022 due to server costs and code maintenance challenges, we've reimagined CODRCG to thrive on a modern, lightweight platform.
 
+<!--more-->
+
 ## What's New?
 
 - **Open Source:** CODRCG is now fully open source, welcoming contributions from developers and fans alike. Whether you're interested in improving old features or creating new generators, your pull requests are welcome!

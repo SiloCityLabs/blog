@@ -26,5 +26,3 @@ What is crowsville? An mmorpg 2d topdown farming simulator
 Why? I wanted an multiplatform game I can share adventures with my daughters.
 
 When? Not sure yet
-
-Currently looking for a game developer who I can partner with to write this. The online server portion has been written but I would love to start developing the game with a partner I can grow the title woth from the ground up

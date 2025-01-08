@@ -2,7 +2,7 @@
 title: Maave
 subtitle: Software Engineer
 comments: false
-photo: '/upload/authors/maave.png'
+photo: '/uploads/authors/maave.png'
 adsense: false
 ---
 

@@ -27,6 +27,8 @@ tags:
 
 Lets start off with a few notes about how and why I would do this. I already have a fireproof/waterproof drive in my house. Sounds like im all set right? Not really.
 
+<!--more-->
+
 Although im set on a disaster level there are a few things that can be an issue with onsite backups. Especially with my drive being plugged in all the time.
 
  - Theft, Although it is "theft resistant" the metal they want me to bolt down isnt very strong at all. Anyone with half a brain can break it in about 1 minute with all the tools I have down there.

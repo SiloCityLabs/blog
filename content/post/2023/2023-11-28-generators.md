@@ -23,6 +23,8 @@ tags:
 
 Buffalo, NY, known for its harsh winters, requires residents to be prepared for power outages. Generators are a crucial part of this preparedness, offering a reliable power source when the grid fails. This guide delves into the types of generators suitable for Buffalo, along with tips on fuel storage, maintenance, and installation.
 
+<!--more-->
+
 ## Understanding Generator Options
 
 ### Gas Generators

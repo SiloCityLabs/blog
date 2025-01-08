@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Hosting a Web Server on the ESP32 Using MicroSD Card Files</title>
+  <meta property="og:title" content="Hosting a Web Server on the ESP32 Using MicroSD Card Files" />
+  <meta name="twitter:title" content="Hosting a Web Server on the ESP32 Using MicroSD Card Files" />
+  <meta name="description" content="Serve Files with the ESP32MiniSD">
+  <meta property="og:description" content="Serve Files with the ESP32MiniSD">
+  <meta name="twitter:description" content="Serve Files with the ESP32MiniSD">
+  <meta name="author" content="Silo City Labs LLC"/>
+  <link href='http://localhost:1313/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="http://localhost:1313/logo/144x144.png" />
+  <meta name="twitter:image" content="http://localhost:1313/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="http://localhost:1313/post/2025/esp32-microsd-webserver/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="http://localhost:1313/post/2025/esp32-microsd-webserver/" />
+  <link rel="amphtml" type="text/html" href="http://localhost:1313/amp/post/2025/esp32-microsd-webserver/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="http://localhost:1313/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="http://localhost:1313/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:1313/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="http://localhost:1313/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
+              <div class="navlinks-children">
+                
+                  <a href="http://localhost:1313/categories/company/">Official</a>
+                
+                  <a href="http://localhost:1313/categories/projects/">Side Projects</a>
+                
+                  <a href="http://localhost:1313/categories/tech-deals/">Deals</a>
+                
+                  <a href="http://localhost:1313/tags">Tags</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="http://localhost:1313/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="http://localhost:1313/newsletter">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="http://localhost:1313/">
+              
+            <img class="avatar-img" src="http://localhost:1313/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Hosting a Web Server on the ESP32 Using MicroSD Card Files</h1>
+                
+                  
+                    <h2 class="post-subheading">Serve Files with the ESP32MiniSD</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on January 8, 2025
+  
+</span>
+
+<span class="post-meta">
+  By <a href="http://localhost:1313/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>The <strong>ESP32MiniSD</strong> allows you to serve static files, like HTML, CSS, or JavaScript, over a web server hosted by your ESP32. This is perfect for creating standalone IoT dashboards, device control panels, or file servers. In this tutorial, we’ll show you how to use the ESP32MiniSD to host a web server and serve files directly from a microSD card.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost:1313/uploads/2025/" alt="ESP32-C6 with ESP32MiniSD serving files"/>
+
+<hr>
+<h2 id="features-of-esp32minisd-for-web-hosting">Features of ESP32MiniSD for Web Hosting</h2>
+<ul>
+<li><strong>Efficient File Serving</strong>: Serve HTML, CSS, and JavaScript files from a microSD card.</li>
+<li><strong>Compact Form Factor</strong>: Ideal for IoT projects with limited space.</li>
+<li><strong>Battery Support</strong>: Deploy your web server on the go with LiPo battery support.</li>
+</ul>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost:1313/uploads/2025/" alt="Diagram showing ESP32MiniSD components for web hosting"/>
+
+<hr>
+<h2 id="what-youll-need">What You’ll Need</h2>
+<ol>
+<li><strong>ESP32MiniSD</strong> board</li>
+<li><strong>XIAO ESP32-C3</strong> or <strong>XIAO ESP32-C6</strong></li>
+<li><strong>microSD card</strong> (formatted as FAT32)</li>
+<li><strong>USB-C cable</strong></li>
+<li>Files to serve (HTML, CSS, JavaScript)</li>
+</ol>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost:1313/uploads/2025/" alt="Components for ESP32 web server project"/>
+
+<hr>
+<h2 id="step-1-hardware-setup">Step 1: Hardware Setup</h2>
+<h3 id="assembling-the-esp32minisd">Assembling the ESP32MiniSD</h3>
+<ol>
+<li>Solder the <strong>XIAO ESP32-C3</strong> or <strong>XIAO ESP32-C6</strong> to the <strong>ESP32MiniSD</strong> board.</li>
+<li>Insert your microSD card with preloaded files into the slot on the ESP32MiniSD.</li>
+<li>Connect your ESP32 to your computer using a USB-C cable.</li>
+</ol>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost:1313/uploads/2025/" alt="Assembled ESP32MiniSD ready for web server setup"/>
+
+<hr>
+<h2 id="step-2-prepare-the-microsd-card">Step 2: Prepare the MicroSD Card</h2>
+<ol>
+<li>Format your microSD card as FAT32.</li>
+<li>Create a directory structure for your web server files:</li>
+</ol>
+<p><code>/index.html /style.css /script.js</code></p>
+<ol start="3">
+<li>Copy your files to the root directory of the microSD card. For testing, you can use this simple <code>index.html</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>ESP32 Web Server<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to the ESP32 Web Server<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is served from a microSD card!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;script.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Save the file and insert the card into your ESP32MiniSD.</p>
+<h2 id="step-3-arduino-ide-configuration">Step 3: Arduino IDE Configuration</h2>
+<p>Follow the same Arduino IDE setup steps as in the &ldquo;Getting Started with ESP32MiniSD&rdquo; tutorial to prepare your environment.</p>
+<h2 id="step-4-example-code-for-web-server">Step 4: Example Code for Web Server</h2>
+<p>Here’s the code to host a web server and serve files from the microSD card:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;WiFi.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;WebServer.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SD.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SPI.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">ssid</span> <span class="o">=</span> <span class="s">&#34;Your_SSID&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">password</span> <span class="o">=</span> <span class="s">&#34;Your_PASSWORD&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">int</span> <span class="n">chipSelect</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">WebServer</span> <span class="nf">server</span><span class="p">(</span><span class="mi">80</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">handleFileRequest</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">String</span> <span class="n">path</span> <span class="o">=</span> <span class="n">server</span><span class="p">.</span><span class="n">uri</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">path</span> <span class="o">==</span> <span class="s">&#34;/&#34;</span><span class="p">)</span> <span class="n">path</span> <span class="o">=</span> <span class="s">&#34;/index.html&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="n">SD</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">server</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="mi">404</span><span class="p">,</span> <span class="s">&#34;text/plain&#34;</span><span class="p">,</span> <span class="s">&#34;File Not Found&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">String</span> <span class="n">contentType</span> <span class="o">=</span> <span class="n">getContentType</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">server</span><span class="p">.</span><span class="n">streamFile</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">contentType</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">file</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">String</span> <span class="nf">getContentType</span><span class="p">(</span><span class="n">String</span> <span class="n">filename</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">endsWith</span><span class="p">(</span><span class="s">&#34;.html&#34;</span><span class="p">))</span> <span class="k">return</span> <span class="s">&#34;text/html&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">endsWith</span><span class="p">(</span><span class="s">&#34;.css&#34;</span><span class="p">))</span> <span class="k">return</span> <span class="s">&#34;text/css&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">endsWith</span><span class="p">(</span><span class="s">&#34;.js&#34;</span><span class="p">))</span> <span class="k">return</span> <span class="s">&#34;application/javascript&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="s">&#34;text/plain&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">WiFi</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">password</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="p">(</span><span class="n">WiFi</span><span class="p">.</span><span class="n">status</span><span class="p">()</span> <span class="o">!=</span> <span class="n">WL_CONNECTED</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Connecting to WiFi...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Connected to WiFi!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">SD</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">chipSelect</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Card Mount Failed&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">server</span><span class="p">.</span><span class="n">onNotFound</span><span class="p">(</span><span class="n">handleFileRequest</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">server</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Web server started!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">server</span><span class="p">.</span><span class="n">handleClient</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="step-5-testing-the-web-server">Step 5: Testing the Web Server</h2>
+<ol>
+<li>
+<p>Upload the code to your <strong>XIAO ESP32-C3</strong> or <strong>XIAO ESP32-C6</strong>.</p>
+</li>
+<li>
+<p>Open the Serial Monitor to find the IP address assigned to your ESP32.</p>
+</li>
+<li>
+<p>Open a web browser and enter the IP address (e.g., http://192.168.1.100).</p>
+</li>
+<li>
+<p>You should see the index.html file served by the ESP32.</p>
+</li>
+</ol>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost:1313/uploads/2025/" alt="ESP32 web server test page in a browser"/>
+
+<h2 id="step-6-applications-and-enhancements">Step 6: Applications and Enhancements</h2>
+<ul>
+<li>
+<p><strong>IoT Dashboards</strong>: Host device control panels directly on the ESP32.</p>
+</li>
+<li>
+<p><strong>Standalone Servers</strong>: Create portable servers with battery support.</p>
+</li>
+<li>
+<p><strong>Local File Access</strong>: Serve files for offline access in remote locations.</p>
+</li>
+</ul>
+<p>You can enhance this setup by adding POST/GET request handling or integrating APIs for dynamic web content. You can additionally use static site generators like Hugo or Jekyll to create complex web pages for your ESP32.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://localhost:1313/uploads/2025/" alt="ESP32MiniSD serving an IoT dashboard"/>
+
+<p>With the <strong>ESP32MiniSD</strong>, hosting a web server directly from your ESP32 is simple and efficient. This setup is perfect for IoT devices that need local control or cloud-free operation. For more details, visit the <a href="https://github.com/SiloCityLabs/esp32-minisd">ESP32MiniSD GitHub repository</a> or check out <a href="https://shop.silocitylabs.com/">SiloCityLabs</a> for more products.</p>
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2025/esp32-microsd-webserver.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2025/esp32-microsd-webserver.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="http://localhost:1313/post/2024/everything-smart/" data-toggle="tooltip" data-placement="top" title="Revolutionizing Smart Home Devices with ESP32 and ESPHome">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sclblog-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="http://localhost:1313/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="http://localhost:1313/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs LLC
+          &nbsp;&bull;&nbsp;
+          2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://localhost:1313/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="http://localhost:1313/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

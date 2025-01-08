@@ -81,15 +81,9 @@ googleAnalytics = "UA-78226868-1"
 
 [[menu.main]]
     parent = "cat"
-    name = "Deals"
-    url = "categories/tech-deals/"
-    weight = 3
-
-[[menu.main]]
-    parent = "cat"
     name = "Tags"
     url = "tags"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
     name = "About"
@@ -98,6 +92,6 @@ googleAnalytics = "UA-78226868-1"
 
 [[menu.main]]
     name = "Newsletter"
-    url = "newsletter"
+    url = "https://shop.silocitylabs.com/pages/subscribe"
     weight = 5
 

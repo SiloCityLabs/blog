@@ -24,6 +24,8 @@ tags:
 
 Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully brick one of these units permanently. I will start off with the basics and work my way up to the more advanced methods. 
 
+<!--more-->
+
 Disclosure:
 Everything in this document was sourced from somewhere online. If you want original links please ask me if I havent already posted them in one of the Image Source links. This document does NOT contain any proprietary knowledge that wasnt already sourced from the internet.
 

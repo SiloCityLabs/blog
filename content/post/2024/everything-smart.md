@@ -1,6 +1,6 @@
 ---
-title: Revolutionizing Smart Home Devices with ESP32 and ESPHome
-subtitle: Transforming outdated tech into smart, open firmware devices with ESP32 and ESPHome.
+title: Smart Home Upgrades with ESP32 and ESPHome
+subtitle: Modernizing devices with ESP32 and open firmware
 author: Luis Rodriguez
 type: post
 draft: false
@@ -24,6 +24,8 @@ tags:
 {{< image src="/uploads/2024/technology-reanimated.webp" alt="">}}
 
 At **Silocity Labs**, we’ve always loved exploring innovative technology and making the world of electronics more accessible. Recently, we’ve opened a new shop featuring some of our favorite creations: **ESPHome-compatible smart devices** built on the powerful ESP32 platform. 
+
+<!--more-->
 
 This isn’t just another project for us—it’s something we enjoy doing. By turning “dumb” and outdated tech into **versatile, open firmware devices**, we’re making it easier for people to enjoy smart functionality without the headaches of app lock-ins, cloud dependency, or forced subscriptions. 
 

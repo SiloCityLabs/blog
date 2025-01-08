@@ -1,8 +1,8 @@
 ---
 title: Luis Rodriguez
-subtitle: Senior Software Engineer - Databases - Linux Administrator
+subtitle: Senior Software Engineer - Technologist
 comments: false
-photo: '/upload/authors/luis.png'
+photo: '/uploads/authors/luis.png'
 adsense: false
 ---
 
@@ -69,9 +69,11 @@ ___
 ___
 ## About
 
-As a self-employed software developer right out of high school, I developed websites for other businesses, I created content management systems in English and Spanish of which I am both fluent in. Also developed a framework for multiple software projects.
+Luis Rodriguez is a dedicated engineer and technology enthusiast with a passion for solving problems and creating innovative solutions. With a strong foundation in software development and electronics, he has spent years turning complex ideas into practical, user-friendly systems.
 
-With my Associate’s Degree in Computer Networking Systems and my experience combined I am able to outperform in the field and create great websites, software and manage infrastructures. I would someday like to pursue a Bachelors but the return on investment just isn't there for it yet.
+As a key contributor to SiloCityLabs—a collaborative group of like-minded technologists—Luis enjoys working with others to explore and develop creative solutions to challenging problems. Whether it’s designing smart devices, streamlining software, or tinkering with emerging technologies, Luis brings enthusiasm and adaptability to every project.
+
+Luis values collaboration, continuous learning, and sharing knowledge to help others grow. He’s always eager to contribute his skills to meaningful projects and help businesses or individuals achieve their goals through technology.
 
 ___
 ## Resume
@@ -159,10 +161,18 @@ ___
 <div class="hide-print text-center"><a href="#" onclick="window.print();return false;" class="btn btn-lg btn-outline btn-danger" style="background-color: #404040; border-color: #272727;"><i class="icon icon-file-word" aria-hidden="true"></i> Print Resume</a></div>
 
 ___
-## Skills
+## Skills & Certifications
 
+- **Programming:** **Golang**, **PHP**, Python, Bash, C++, **JavaScript** ([JavaScript Certified](uploads/luis-portfolio/certifications/js-master-cert.jpg)), HTML, Java
+- **Cloud & DevOps:** **AWS**, Google Cloud, Digital Ocean, Backblaze, **Cisco Networking** ([Cisco Network Certified](uploads/luis-portfolio/certifications/cisco-network-support-cert.jpg)), **Linux**, System Administration, CI/CD Pipelines
+- **Database Systems:** **MySQL** ([MySQL Certified](uploads/luis-portfolio/certifications/mysql-cert.jpg)), TiDB, MongoDB, PostgresQL, MSSQL, **SQL**, Elasticsearch, Redis, SQLite
+- **Web Development & Frameworks:** **PHP Frameworks** ([PHP Certified](uploads/luis-portfolio/certifications/php-cert.jpg)), Wordpress, Matomo, Shopify, Magento, BigCommerce, HTML, CSS
+- **SEO & Analytics:** **SEO Audits**, Google Analytics, Google Webmaster Tools, Google AdWords, SEOmoz, Pardot, Mautic, Hubspot, Salesforce
+- **Project Management & Business Analysis:** Agile Workflows, Business Analysis, Program Management, SharePoint, Visio, Jira, Confluence
+- **Operating Systems:** **Linux** (Debian, Arch and Fedora based systems), Windows, Android Development, Penetration Testing
+- **Miscellaneous Tools & Certifications:** **101 WPM** ([101 WPM Certified](uploads/luis-portfolio/certifications/101wpm-cert.jpg)), **InDesign** ([InDesign Certified](uploads/luis-portfolio/certifications/InDesignCS5.5-cert.jpg)), Security, Integration, Troubleshooting, Microsoft Office, Customer Service, Data Center Management
 
-**Linux**, **Golang**, Operating Systems, [Cisco Network Certified](/uploads/luis-portfolio/certifications/cisco-network-support-cert.jpg), Cloud Computing, Troubleshooting, Software Development, Microsoft Office, Hardware, Customer Service, Data Center, Java, Windows,  **[MySQL Certified](/uploads/luis-portfolio/certifications/mysql-cert.jpg)**,  **HTML**, Integration, Databases,  **System Administration**,  **SQL**,  **[JavaScript Certified](/uploads/luis-portfolio/certifications/js-master-cert.jpg)**, Visio, Project Management, Business Analysis, MSSQL, Program Management, XML, Security, Agile Workflows, SharePoint, IIS, Android Development, Penetration Testing,  **SEO Audits**, Pardot, Mautic, Hubspot, Salesforce, Magento, Bigcommerce, SEOmoz, Google Adwords,  **Google Analytics**,  **Google Webmaster Tools**,  **PHP Frameworks**,  **[PHP Certified](/uploads/luis-portfolio/certifications/php-cert.jpg)**, [101 WPM Certified](/uploads/luis-portfolio/certifications/101wpm-cert.jpg), [InDesign Certified](/uploads/luis-portfolio/certifications/InDesignCS5.5-cert.jpg)
+---
 
 #### Other Accolades:
 

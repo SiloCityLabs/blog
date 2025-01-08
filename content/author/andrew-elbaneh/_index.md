@@ -2,7 +2,7 @@
 title: Andrew Elbaneh
 subtitle: Software Developer
 comments: false
-photo: '/upload/authors/andrew.png'
+photo: '/uploads/authors/andrew.png'
 adsense: false
 ---
 
