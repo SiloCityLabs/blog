@@ -2,7 +2,7 @@
 title: Introducing CraftRandom
 subtitle: Randomized Minecraft Inventory Generator
 type: post
-date: 2025-01-9
+date: 2025-01-10
 categories:
   - Projects
 tags:
