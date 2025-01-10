@@ -1,10 +1,10 @@
 ---
-title: 
-subtitle: 
+title: Universal Joy-Con and Junglecat adapters
+subtitle: 3D printed phone adapters by Cuttlephone
 author: maave
 type: post
-draft: true
-date: 2025-01-08
+draft: false
+date: 2025-01-09
 categories:
   - Projects
 tags:
