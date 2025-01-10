@@ -17,7 +17,7 @@ tags:
 
 ---
 
-![phone adapter for junglecat rails]()
+![phone adapter for junglecat rails](cuttlephone-adapter-header.jpg)
 
 Out of all the things the Cuttlephone can shape shift into, the universal controller adapters have been the most popular. The two-piece design can fit onto most phones. It clamps on using a rubber band. This simple design expands the potential userbase far beyond the handful of phone models available. Universal adapters will now be a staple feature of Cuttlephone. Let's take a look at the design and 3D printing of this adapter.
 
@@ -25,19 +25,23 @@ Out of all the things the Cuttlephone can shape shift into, the universal contro
 
 ## Design
 
-The main body is still a phone case with controller rails, however it's rotated upright and the top is chopped off to fit any width of phone. The back is chopped further which saves plastic on horizontal mode and enables the use of flip-phone with thick hinges on vertical mode. The phone body shape, which defines the inside of the case, has angled bevels so that it holds various thicknesses of phone without wobbling.
+{{< image src="/uploads/2025/junglecat.png" alt="junglecat adapter viewed in OpenSCAD">}}
+
+The main body is sort-of a phone case with controller rails. It's rotated upright and the top is chopped off to fit any width of phone. The back is chopped further which saves plastic on horizontal mode and enables the use of foldable phones/tablets with thick hinges. The phone body shape, which defines the inside of the case, has angled bevels so that it holds various thicknesses of phone without wobbling.
 
 Top down view of the clamp:
 
-{{< image src="/uploads/2025/junglecat-chamfer.jpg" alt="chamfer for holding the phone">}}
+{{< image src="/uploads/2025/junglecat-chamfer.png" alt="chamfer for holding the phone">}}
 
-The telescoping geometry attaches to the back of the case. The outer "sleeve" has an angle which holds on to the rubber band. The inner "slider" slots into the sleeve. The telescoping geometry is split towards one side to maximize the length of the slider. The phone case is split down the middle.
+The telescoping geometry attaches to the back of the case. You can see a transparent window that helped me debug. The outer "sleeve" has an angle which holds on to the rubber band. The inner "slider" slots into the sleeve. The telescoping geometry is split towards one side to maximize the length of the slider. The phone case is split down the middle.
 
-{{< image src="/uploads/2025/junglecat-side.jpg" alt="angled surface for rubber band">}}
+{{< image src="/uploads/2025/junglecat-back.png" alt="back of the adapter">}}
+
+{{< image src="/uploads/2025/junglecat-side.png" alt="angled surface for rubber band">}}
 
 {{< image src="/uploads/2025/junglecat-rubberband.jpg" alt="attaching the rubber band">}}
 
-Since the design is parametric, this telescoping arm can scale to any size. It can be a small vertical phone holder or a super wide tablet adapter. New controller rails can be made.
+Since the design is parametric, this telescoping slider can scale to many sizes. It can be a small vertical phone holder or a wide tablet adapter. New controller rails can be made.
 
 Making this feature revealed a few deficiencies in my OpenSCAD code. For example
 - in Joycon mode it was difficult to align the clamp with the back of the phone case. This revealed some janky position calculation caused by the extra-thick Joycon shell. Fixed.
