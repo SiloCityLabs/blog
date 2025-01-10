@@ -19,7 +19,7 @@ tags:
 
 {{< image src="/uploads/2025/cuttlephone-adapter-header.webp" alt="junglecat adapter with controllers attached">}}
 
-Out of all the things the Cuttlephone can shape shift into, the universal controller adapters have been the most popular. The two-piece design can fit onto most phones. It clamps on using a rubber band. This simple design expands the potential userbase far beyond the handful of phone models available. Universal adapters will now be a staple feature of Cuttlephone. Let's take a look at the design and 3D printing of this adapter.
+Out of all the things the Cuttlephone can shape shift into, the universal controller adapters have been the most popular. The two-piece design can fit onto most phones and attach Nintendo Joy-Cons or Razer Junglecat controllers. It clamps on using a rubber band. This simple design expands the potential userbase far beyond the handful of phone models available. Universal adapters will now be a staple feature of Cuttlephone. Let's take a look at the design and 3D printing of this adapter.
 
 <!--more-->
 
@@ -27,13 +27,13 @@ Out of all the things the Cuttlephone can shape shift into, the universal contro
 
 {{< image src="/uploads/2025/junglecat.webp" alt="junglecat adapter viewed in OpenSCAD">}}
 
-The main body is sort-of a phone case with controller rails. It's rotated upright and the top is chopped off to fit any width of phone. The back is chopped further which saves plastic on horizontal mode and enables the use of foldable phones/tablets with thick hinges. The phone body shape, which defines the inside of the case, has angled bevels so that it holds various thicknesses of phone without wobbling.
+The main body is sort-of a phone case with controller rails. It's rotated upright and the top is chopped off to fit any width of phone. The back is chopped further which saves plastic and enables the use of foldable phones/tablets with thick hinges. The phone body shape, which defines the inside of the case, has angled bevels so that it holds various thicknesses of phone without wobbling.
 
-Top down view of the clamp:
+A top down view of the chamfer:
 
 {{< image src="/uploads/2025/junglecat-chamfer.webp" alt="chamfer for holding the phone">}}
 
-The telescoping geometry attaches to the back of the case. You can see a transparent window that helped me debug. The outer "sleeve" has an angle which holds on to the rubber band. The inner "slider" slots into the sleeve. The telescoping geometry is split towards one side to maximize the length of the slider. The phone case is split down the middle.
+The telescoping geometry attaches to the back of the case. The outer "sleeve" has an angle which holds on to the rubber band. The inner "slider" slots into the sleeve. The telescoping geometry is split towards one side to maximize the length of the slider. The phone case is split down the middle. In the middle you can see a translucent window that aided development.
 
 {{< image src="/uploads/2025/junglecat-back.webp" alt="back of the adapter">}}
 
@@ -68,5 +68,3 @@ The Joy-Con adapter includes a spire-shaped manual support for the rail's lock n
 ## Shop
 
 No printer? No problem. [Get one from the shop](https://shop.silocitylabs.com/collections/3d-prints/cuttlephone).
-
-
