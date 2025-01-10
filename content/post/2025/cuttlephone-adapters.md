@@ -17,7 +17,7 @@ tags:
 
 ---
 
-![phone adapter for junglecat rails](/uploads/2025/cuttlephone-adapter-header.jpg)
+{{< image src="/uploads/2025/cuttlephone-adapter-header.jpg" alt="junglecat adapter with controllers attached">}}
 
 Out of all the things the Cuttlephone can shape shift into, the universal controller adapters have been the most popular. The two-piece design can fit onto most phones. It clamps on using a rubber band. This simple design expands the potential userbase far beyond the handful of phone models available. Universal adapters will now be a staple feature of Cuttlephone. Let's take a look at the design and 3D printing of this adapter.
 
