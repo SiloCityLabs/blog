@@ -4,7 +4,7 @@ subtitle: Add Storage to Your ESP32 Projects
 author: Luis Rodriguez
 type: post
 draft: true
-date: 2025-01-08
+date: 2025-01-10
 categories:
   - Projects
 tags:
@@ -24,7 +24,9 @@ tags:
 
 ---
 
-The **ESP32MiniSD** is a compact add-on board designed for Seeed Studio's **XIAO ESP32-C3** or **XIAO ESP32-C6**, enabling microSD card storage, battery monitoring, and USB charging capabilities. In this tutorial, we'll guide you through setting up and using the ESP32MiniSD with an ESP32 XIAO module to read and write files to a microSD card.
+The **ESP32MiniSD** is a compact add-on board designed for Seeed Studio's **XIAO ESP32-C3**, **XIAO ESP32-C6** or **XIAO ESP32-S3**, enabling microSD card storage, battery monitoring, and USB charging capabilities. In this tutorial, we'll guide you through setting up and using the ESP32MiniSD with an ESP32 XIAO module to read and write files to a microSD card.
+
+Unlike Adafruit's Xiao ESP32, the ESP32MiniSD is designed to get the most out of the ESP32's capabilities, with a focus on storage and power management. The board features a microSD card slot, battery monitoring, and charging circuitry, making it ideal for data logging, file storage, and portable IoT devices. Let's dive into the setup and usage of the ESP32MiniSD with the XIAO ESP32 module!
 
 <!--more-->
 
@@ -48,7 +50,7 @@ The **ESP32MiniSD** is a compact add-on board designed for Seeed Studio's **XIAO
 
 1.  **ESP32MiniSD** board
     
-2.  **XIAO ESP32-C3** or **XIAO ESP32-C6**
+2.  **XIAO ESP32-C3**, **XIAO ESP32-C6** or **XIAO ESP32-S3**
     
 3.  **microSD card** (formatted as FAT32)
     
@@ -62,7 +64,7 @@ The **ESP32MiniSD** is a compact add-on board designed for Seeed Studio's **XIAO
 
 ### **Assembling the ESP32MiniSD**
 
-1.  Solder the **XIAO ESP32-C3** or **XIAO ESP32-C6** to the **ESP32MiniSD** board.
+1.  Solder the **XIAO ESP32** to the **ESP32MiniSD** board.
     
 2.  Insert your microSD card into the card slot on the ESP32MiniSD.
     
@@ -177,7 +179,7 @@ void listFiles(const char *dirname) {
 2.  Lists all files and directories in the root folder.
     
 
-Upload the code to your **XIAO ESP32-C3** or **XIAO ESP32-C6** using the **Arduino IDE**, then open the Serial Monitor to see the output.
+Upload the code to your **XIAO ESP32** using the **Arduino IDE**, then open the Serial Monitor to see the output.
 
 **Step 4: Testing and Troubleshooting**
 ---------------------------------------
