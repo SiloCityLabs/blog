@@ -51,7 +51,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 #### File contents
 
 <details>
-  <summary>background.js</summary>
+  <summary>background.js [SPOILER]</summary>
 
 ```
 (function () {
@@ -84,7 +84,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 </details>
 
 <details>
-  <summary>content.js</summary>
+  <summary>content.js [SPOILER]</summary>
 
 ```
 (function () {
@@ -179,7 +179,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 </details>
 
 <details>
-  <summary>response from config.php aka config.json</summary>
+  <summary>response from config.php aka config.json [SPOILER]</summary>
 
 ```
 {
@@ -233,7 +233,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 
 background.js contains code to fetch a JSON config from a remote website. The first thing I did was check the endpoints. I visited the url `https://getxmlppa.com/config.php` directly without any HTTP parameters. This config endpoint returned different information the first and second time I queried it. My original response is posted above, formatted for easier reading, no changes were made besides the whitespace formatting.
 
-The first result included _regex to match Amazon URLs_ in the "s" array. When I queried it a second time, _the "s" array was empty_. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is **intentionally** its activity. I think I got lucky and I fetched the cached version on the first attempt.
+The first result included _regex to match Amazon URLs_ in the "s" array. When I queried it a second time, _the "s" array was empty_. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is hiding its activity. I think I got lucky and I fetched the cached version on the first attempt.
 
 I'm off to a good start. I was expecting Google or Yahoo links but I got Amazon. PaperPanda should not be touching Amazon URLs _ever_. I also found a new endpoint, `ama.php`
 
@@ -274,15 +274,15 @@ recreating the steps with this config would cause this to happen:
 
 This is malicious. This is trying to replace the entirety of my Amazon pages with its own content. PaperPanda has no reason to touch Amazon links. Without that config, this piece of code looks benign. It could be explained away by saying the code is intended to place URLs (it could, theoretically, replace the "url" attribute in anchor elements). With this config it's clear that this extension targeting websites outside its intended use. It is **malicious** and **trying to hide its behavior by changing configs**.
 
-The endpoint "ama.php" responds with a 200 response but doesn't return any data, even with the params filled in. I'm unsure if the endpoint is nonfunctional, or if it was intentionally disabled when the config was changed. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could've replaced affiliate information with its own like the recent Honey shopping extension scam. It could've done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to _replace the entire HTML content_.
+The endpoint `ama.php` responds with a 200 response but doesn't return any data, even with the params filled in. I'm unsure if the endpoint is nonfunctional, or if it was intentionally disabled when the config was changed. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could've replaced affiliate information with its own like the recent Honey shopping extension scam. It could've done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to _replace the entire HTML content_.
 
 ## Check yourself
 
 If you have a page which you suspect of being hijacked, don't reload yet. Right click, inspect, then Ctrl+F and search for "skip-element". This attribute is not standard. If "skip-element" is anywhere in your HTML elements it's because of PaperPanda.
 
-Get the stored config data from the Chrome console. On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled `chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html` Then in the Console tab of DevTools type `chrome.storage.local.get(console.log)` to output the local storage for that app. In mine it's already updated so the "s" array is empty.
+Get the stored config data from the Chrome console. Go to `chrome://extensions` and enable Developer Mode. Scroll to PaperPanda, click the link to "service worker" which will open Chrome DevTools. This should open straight to the Console tab. Type `chrome.storage.local.get(console.log)` to output the local storage. My already extension already updated so the "s" array is empty.
 
-Another way to get to the extension data is in `chrome://extensions` with Developer Mode enabled. Scroll to PaperPanda, click the link to "service worker" which will open the DevTools. This DevTools window will open right to the Console tab and won't have a special title.
+Another way: On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled `chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html` Then in the Console tab of DevTools type `chrome.storage.local.get(console.log)` to output the local
 
 View the extension code yourself from chrome profile data. For me that's in: `C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Profile 1\Extensions\ggjlkinaanncojaippgbndimlhcdlohf` because I have multiple profiles. If you have a single profile in Chrome then it would be in the "Default" folder: `C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\ggjlkinaanncojaippgbndimlhcdlohf`. The Javascript files have been minified so it needs to be formatted for reading. I used the Notepad++ plugin JSTool to format it. There are also plenty of JS formatters online. But the variable names and function names are still single letters so it's hard to follow.
 
