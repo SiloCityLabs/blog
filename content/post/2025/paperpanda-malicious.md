@@ -3,7 +3,7 @@ title: PandaPaper turns malicious
 subtitle: Chrome extension modifies HTML and tries to hide it
 author: maave
 type: post
-draft: true
+draft: false
 date: 2025-01-28
 categories:
   - Projects
@@ -14,11 +14,11 @@ tags:
     - reverse engineering
 ---
 
-{{< image src="/uploads/2025/paper-panda-dead.webp" alt="paper panda logo with X for eyes">}}
+{{< image src="/uploads/2025/paperpanda-dead.webp" alt="paper panda logo with X for eyes">}}
 
-The "paywalling" of scientific research papers is (an ongoing problem)[] that hinders learning, hinders scientific research, and leaches profit from publicly-funded research. PaperPanda is a Chrome extension to download academic papers. Its intention is to find free links for published papers. 
+The "paywalling" of scientific research papers is an ongoing problem that hinders learning, hinders scientific research, and leaches profit from publicly-funded research. PaperPanda is a Chrome extension to download academic papers. Its intention is to find free links for published papers. 
 
-However what PaperPanda does under-the-hood tells another story. I've unearthed malicious code in PaperPanda's Chrome extension and attempts to hide said malicious activity. This extension tried to modify my Amazon pages and it is clearly malicious - possibly even a phisher or credit-card stealer. If you have this extension *UNINSTALL IT*. In this post I'll explain how this extension is malicious and how it hides that behavior.
+However what PaperPanda does under-the-hood tells another story. I've unearthed malicious code in PaperPanda's Chrome extension and attempts to hide said malicious activity. This extension tried to modify my Amazon pages for unknown reasons - possibly a phisher or credit-card stealer. If you have this extension *UNINSTALL IT*. In this post I'll explain how this extension is malicious and how it hides that behavior.
 
 <!--more-->
 
@@ -233,13 +233,13 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 
 background.js contains code to fetch a JSON config from a remote website. The first thing I did was check the endpoints. I visited the url `https://getxmlppa.com/config.php` directly without any HTTP parameters. This config endpoint returned different information the first and second time I queried it. My original response is posted above, formatted for easier reading, no changes were made besides the whitespace formatting.
 
-The first result included _regex to match Amazon URLs_ in the "s" array. When I queried it a second time, __the "s" array was empty__. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is **INTENTIONALLY HIDING** its activity. I think I got lucky and I fetched the cached version on the first attempt.
+The first result included _regex to match Amazon URLs_ in the "s" array. When I queried it a second time, _the "s" array was empty_. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is **intentionally** its activity. I think I got lucky and I fetched the cached version on the first attempt.
 
 I'm off to a good start. I was expecting Google or Yahoo links but I got Amazon. PaperPanda should not be touching Amazon URLs _ever_. I also found a new endpoint, `ama.php`
 
 Let's walk through the code to determine what's it doing with this config. The suspect code is in content.js in the areas `g(o)`, `p(o)`, and the `g(async() => {` functions. The function `g(o)` creates a listener for page loading, then executes the async() function that was passed to it.
 
-In this config JSON, the "p" array is used legitimately by the extension when you click the extension and "download this paper". "s" array is suspect and is used on page-load to replaces part of the HTML contents. I'll explain what the JS code is doing:
+In this config JSON, the "p" array is used legitimately by the extension when you click the extension and "download this paper". "s" array is suspect and is used on page-load to replace part of the HTML contents. I'll explain what the JS code is doing:
 
 1. add an event listener for DOMContentLoaded, to run after the page loads
 2. check if the current URL matches a grep pattern (var "pattern" from array "s") and check if element has "skip-element" attribute
@@ -265,11 +265,11 @@ recreating the steps with this config would cause this to happen:
 
 1. add event listener DOMContentLoaded
 2. check if URL matches amazon
-3. select HTML element "html" (*the entire page*)
+3. select HTML element "html" (**the entire page**)
 4. hide element
 5. add "skip-element" attribute to avoid reprocessing
 6. fetch content from `https://getxmlppa.com/ama.php?p=amazon&u={location.href}`
-7. replace attribute "innerHTML" (*all of the page's code*) with content fetched
+7. replace attribute "innerHTML" (**all of the page's code**) with content fetched
 8. unhide element
 
 This is malicious. This is trying to replace the entirety of my Amazon pages with its own content. PaperPanda has no reason to touch Amazon links. Without that config, this piece of code looks benign. It could be explained away by saying the code is intended to place URLs (it could, theoretically, replace the "url" attribute in anchor elements). With this config it's clear that this extension targeting websites outside its intended use. It is **malicious** and **trying to hide its behavior by changing configs**.
