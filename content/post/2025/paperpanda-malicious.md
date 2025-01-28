@@ -50,6 +50,8 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 
 #### File contents
 
+(ZIP file of the extension)[/uploads/2025/paperpanda_2.1.6.zip]
+
 <details>
   <summary>background.js [SPOILER]</summary>
 
