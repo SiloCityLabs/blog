@@ -290,3 +290,5 @@ View the extension code yourself from chrome profile data. For me that's in: `C:
 ## Conclusion
 
 PaperPanda is hijacking web contents. I didn't find a Yahoo search redirect but instead I found an arbitrary page re-writer driven by a config that changes every time you load it. They attempt to evade detection by moving the payload to an external page. This garbage plugin has been installed on my Chrome for months and I only noticed because they performed a blatant redirect. Who knows what damage it caused, what information it stole, because it could have modified any website to have any content.
+
+Uninstall this extension. Report it for abuse. _Distrust extensions that ask for permission to all websites_.
