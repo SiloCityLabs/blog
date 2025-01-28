@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/chrome/</link>
+    <description>Recent content in Chrome on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PandaPaper turns malicious</title>
+      <link>https://silocitylabs.com/post/2025/paperpanda-malicious/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/post/2025/paperpanda-malicious/</guid>
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2025/paperpanda-dead.webp&#34; alt=&#34;paper panda logo with X for eyes&#34;/&gt;&#xA;&#xA;&lt;p&gt;The &amp;ldquo;paywalling&amp;rdquo; of scientific research papers is an ongoing problem that hinders learning, hinders scientific research, and leaches profit from publicly-funded research. PaperPanda is a Chrome extension to download academic papers. Its intention is to find free links for published papers.&lt;/p&gt;&#xA;&lt;p&gt;However what PaperPanda does under-the-hood tells another story. I&amp;rsquo;ve unearthed malicious code in PaperPanda&amp;rsquo;s Chrome extension and attempts to hide said malicious activity. This extension tried to modify my Amazon pages for unknown reasons - possibly a phisher or credit-card stealer. If you have this extension &lt;em&gt;UNINSTALL IT&lt;/em&gt;. In this post I&amp;rsquo;ll explain how this extension is malicious and how it hides that behavior.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

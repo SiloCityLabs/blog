@@ -5,13 +5,40 @@
     <loc>https://silocitylabs.com/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://silocitylabs.com/author/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/chrome/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/extension/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/maave/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2025/paperpanda-malicious/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://silocitylabs.com/post/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
-    <lastmod>2025-01-10T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/categories/</loc>
+    <loc>https://silocitylabs.com/tags/reverse-engineering/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/security/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/challenges/</loc>
@@ -38,22 +65,13 @@
     <loc>https://silocitylabs.com/tags/projects/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2025-01-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/random/</loc>
-    <lastmod>2025-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/tools/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/adapters/</loc>
-    <lastmod>2025-01-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/author/</loc>
     <lastmod>2025-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/controllers/</loc>
@@ -66,9 +84,6 @@
     <lastmod>2025-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/junglecat/</loc>
-    <lastmod>2025-01-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/author/maave/</loc>
     <lastmod>2025-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2025/cuttlephone-adapters/</loc>
@@ -552,9 +567,6 @@
     <lastmod>2019-05-30T23:30:33+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/raid/</loc>
-    <lastmod>2019-05-30T23:30:33+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/security/</loc>
     <lastmod>2019-05-30T23:30:33+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/security-cameras/</loc>
