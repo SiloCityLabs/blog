@@ -4,7 +4,7 @@ subtitle: Chrome extension modifies HTML and tries to hide it
 author: maave
 type: post
 draft: false
-date: 2025-01-28
+date: 2025-01-27
 categories:
   - Projects
 tags:
@@ -280,9 +280,9 @@ The endpoint `ama.php` responds with a 200 response but doesn't return any data,
 
 If you have a page which you suspect of being hijacked, don't reload yet. Right click, inspect, then Ctrl+F and search for "skip-element". This attribute is not standard. If "skip-element" is anywhere in your HTML elements it's because of PaperPanda.
 
-Get the stored config data from the Chrome console. Go to `chrome://extensions` and enable Developer Mode. Scroll to PaperPanda, click the link to "service worker" which will open Chrome DevTools. This should open straight to the Console tab. Type `chrome.storage.local.get(console.log)` to output the local storage. My already extension already updated so the "s" array is empty.
+Get the stored config data from the Chrome console. Go to `chrome://extensions` and enable Developer Mode. Scroll to PaperPanda, click the link to "service worker" which will open Chrome DevTools. This should open straight to the Console tab. Type `chrome.storage.local.get(console.log)` to output the local storage. My extension already updated so the "s" array is empty.
 
-Another way: On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled `chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html` Then in the Console tab of DevTools type `chrome.storage.local.get(console.log)` to output the local
+Another way: On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled `chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html` Then in the Console tab of DevTools type `chrome.storage.local.get(console.log)` to output the local.
 
 View the extension code yourself from chrome profile data. For me that's in: `C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Profile 1\Extensions\ggjlkinaanncojaippgbndimlhcdlohf` because I have multiple profiles. If you have a single profile in Chrome then it would be in the "Default" folder: `C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\ggjlkinaanncojaippgbndimlhcdlohf`. The Javascript files have been minified so it needs to be formatted for reading. I used the Notepad++ plugin JSTool to format it. There are also plenty of JS formatters online. But the variable names and function names are still single letters so it's hard to follow.
 
