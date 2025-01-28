@@ -220,7 +220,7 @@ if (!doNotTrack) {
 <p><code>content.js</code> calls <code>background.js</code> which fetches a config from an external website <code>getxmlppa.com</code>. There are two endpoints, &ldquo;config.php&rdquo; and &ldquo;install.php&rdquo;. The &ldquo;install&rdquo; endpoint appears unused and the endpoint returns nothing. The &ldquo;config&rdquo; is used directly by the extension and returns a JSON object.</p>
 <h4 id="file-contents">File contents</h4>
 <details>
-  <summary>background.js</summary>
+  <summary>background.js [SPOILER]</summary>
 <pre tabindex="0"><code>(function () {
     &#34;use strict&#34;;
     const o = &#34;https://getxmlppa.com/&#34;;
@@ -249,7 +249,7 @@ if (!doNotTrack) {
 })();
 </code></pre></details>
 <details>
-  <summary>content.js</summary>
+  <summary>content.js [SPOILER]</summary>
 <pre tabindex="0"><code>(function () {
     &#34;use strict&#34;;
     let f = l();
@@ -340,7 +340,7 @@ if (!doNotTrack) {
 })();
 </code></pre></details>
 <details>
-  <summary>response from config.php aka config.json</summary>
+  <summary>response from config.php aka config.json [SPOILER]</summary>
 <pre tabindex="0"><code>{
   &#34;p&#34;: [
     {
@@ -388,7 +388,7 @@ if (!doNotTrack) {
 </code></pre></details>
 <h3 id="code-breakdown">Code breakdown</h3>
 <p>background.js contains code to fetch a JSON config from a remote website. The first thing I did was check the endpoints. I visited the url <code>https://getxmlppa.com/config.php</code> directly without any HTTP parameters. This config endpoint returned different information the first and second time I queried it. My original response is posted above, formatted for easier reading, no changes were made besides the whitespace formatting.</p>
-<p>The first result included <em>regex to match Amazon URLs</em> in the &ldquo;s&rdquo; array. When I queried it a second time, <em>the &ldquo;s&rdquo; array was empty</em>. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is <strong>intentionally</strong> its activity. I think I got lucky and I fetched the cached version on the first attempt.</p>
+<p>The first result included <em>regex to match Amazon URLs</em> in the &ldquo;s&rdquo; array. When I queried it a second time, <em>the &ldquo;s&rdquo; array was empty</em>. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is hiding its activity. I think I got lucky and I fetched the cached version on the first attempt.</p>
 <p>I&rsquo;m off to a good start. I was expecting Google or Yahoo links but I got Amazon. PaperPanda should not be touching Amazon URLs <em>ever</em>. I also found a new endpoint, <code>ama.php</code></p>
 <p>Let&rsquo;s walk through the code to determine what&rsquo;s it doing with this config. The suspect code is in content.js in the areas <code>g(o)</code>, <code>p(o)</code>, and the <code>g(async() =&gt; {</code> functions. The function <code>g(o)</code> creates a listener for page loading, then executes the async() function that was passed to it.</p>
 <p>In this config JSON, the &ldquo;p&rdquo; array is used legitimately by the extension when you click the extension and &ldquo;download this paper&rdquo;. &ldquo;s&rdquo; array is suspect and is used on page-load to replace part of the HTML contents. I&rsquo;ll explain what the JS code is doing:</p>
@@ -421,11 +421,11 @@ if (!doNotTrack) {
 <li>unhide element</li>
 </ol>
 <p>This is malicious. This is trying to replace the entirety of my Amazon pages with its own content. PaperPanda has no reason to touch Amazon links. Without that config, this piece of code looks benign. It could be explained away by saying the code is intended to place URLs (it could, theoretically, replace the &ldquo;url&rdquo; attribute in anchor elements). With this config it&rsquo;s clear that this extension targeting websites outside its intended use. It is <strong>malicious</strong> and <strong>trying to hide its behavior by changing configs</strong>.</p>
-<p>The endpoint &ldquo;ama.php&rdquo; responds with a 200 response but doesn&rsquo;t return any data, even with the params filled in. I&rsquo;m unsure if the endpoint is nonfunctional, or if it was intentionally disabled when the config was changed. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could&rsquo;ve replaced affiliate information with its own like the recent Honey shopping extension scam. It could&rsquo;ve done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to <em>replace the entire HTML content</em>.</p>
+<p>The endpoint <code>ama.php</code> responds with a 200 response but doesn&rsquo;t return any data, even with the params filled in. I&rsquo;m unsure if the endpoint is nonfunctional, or if it was intentionally disabled when the config was changed. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could&rsquo;ve replaced affiliate information with its own like the recent Honey shopping extension scam. It could&rsquo;ve done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to <em>replace the entire HTML content</em>.</p>
 <h2 id="check-yourself">Check yourself</h2>
 <p>If you have a page which you suspect of being hijacked, don&rsquo;t reload yet. Right click, inspect, then Ctrl+F and search for &ldquo;skip-element&rdquo;. This attribute is not standard. If &ldquo;skip-element&rdquo; is anywhere in your HTML elements it&rsquo;s because of PaperPanda.</p>
-<p>Get the stored config data from the Chrome console. On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled <code>chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html</code> Then in the Console tab of DevTools type <code>chrome.storage.local.get(console.log)</code> to output the local storage for that app. In mine it&rsquo;s already updated so the &ldquo;s&rdquo; array is empty.</p>
-<p>Another way to get to the extension data is in <code>chrome://extensions</code> with Developer Mode enabled. Scroll to PaperPanda, click the link to &ldquo;service worker&rdquo; which will open the DevTools. This DevTools window will open right to the Console tab and won&rsquo;t have a special title.</p>
+<p>Get the stored config data from the Chrome console. Go to <code>chrome://extensions</code> and enable Developer Mode. Scroll to PaperPanda, click the link to &ldquo;service worker&rdquo; which will open Chrome DevTools. This should open straight to the Console tab. Type <code>chrome.storage.local.get(console.log)</code> to output the local storage. My already extension already updated so the &ldquo;s&rdquo; array is empty.</p>
+<p>Another way: On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled <code>chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html</code> Then in the Console tab of DevTools type <code>chrome.storage.local.get(console.log)</code> to output the local</p>
 <p>View the extension code yourself from chrome profile data. For me that&rsquo;s in: <code>C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Profile 1\Extensions\ggjlkinaanncojaippgbndimlhcdlohf</code> because I have multiple profiles. If you have a single profile in Chrome then it would be in the &ldquo;Default&rdquo; folder: <code>C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\ggjlkinaanncojaippgbndimlhcdlohf</code>. The Javascript files have been minified so it needs to be formatted for reading. I used the Notepad++ plugin JSTool to format it. There are also plenty of JS formatters online. But the variable names and function names are still single letters so it&rsquo;s hard to follow.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>PaperPanda is hijacking web contents. I didn&rsquo;t find a Yahoo search redirect but instead I found an arbitrary page re-writer driven by a config that changes every time you load it. They attempt to evade detection by moving the payload to an external page. This garbage plugin has been installed on my Chrome for months and I only noticed because they performed a blatant redirect. Who knows what damage it caused, what information it stole, because it could have modified any website to have any content.</p>
