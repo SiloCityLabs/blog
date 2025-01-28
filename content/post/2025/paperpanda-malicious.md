@@ -46,7 +46,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 
 ### Main files
 
-`content.js` calls `background.js` which fetches a config from an external website `getxmlppa.com`. There are two endpoints, "config.php" and "install.php". The "install" endpoint appears unused and the endpoint returns nothing. The "config" is used directly by the extension and returns a JSON object. 
+`content.js` calls `background.js` which fetches a config from an external website `getxmlppa.com`. There are two endpoints, "config.php" and "install.php". The "install" endpoint appears unused and the endpoint returns nothing. The "config" is used directly by the extension and returns a JSON object.
 
 #### File contents
 
@@ -231,11 +231,11 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 
 ### Code breakdown
 
-background.js contains code to fetch a JSON config from a remote website. The first thing I did was check the endpoints. I visited the url `https://getxmlppa.com/config.php` directly without any HTTP parameters. This config endpoint returned different information the first and second time I queried it.
+background.js contains code to fetch a JSON config from a remote website. The first thing I did was check the endpoints. I visited the url `https://getxmlppa.com/config.php` directly without any HTTP parameters. This config endpoint returned different information the first and second time I queried it. My original response is posted above, formatted for easier reading, no changes were made besides the whitespace formatting.
 
-The first result included _regex to match Amazon URLs_ in the "s" array. When I queried it a second time, the "s" array was empty. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the website is **INTENTIONALLY HIDING** its activity by loading the config on-the-fly. I think I got lucky and I fetched the cached version on the first attempt. My original response is posted above, formatted for easier reading, no changes were made besides the whitespace formatting.
+The first result included _regex to match Amazon URLs_ in the "s" array. When I queried it a second time, __the "s" array was empty__. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is **INTENTIONALLY HIDING** its activity. I think I got lucky and I fetched the cached version on the first attempt.
 
-I'm off to a good start. I was expecting Google or Yahoo links but I got Amazon. PaperPanda should not be touching Amazon URLs _ever_. 
+I'm off to a good start. I was expecting Google or Yahoo links but I got Amazon. PaperPanda should not be touching Amazon URLs _ever_. I also found a new endpoint, `ama.php`
 
 Let's walk through the code to determine what's it doing with this config. The suspect code is in content.js in the areas `g(o)`, `p(o)`, and the `g(async() => {` functions. The function `g(o)` creates a listener for page loading, then executes the async() function that was passed to it.
 
@@ -272,9 +272,9 @@ recreating the steps with this config would cause this to happen:
 7. replace attribute "innerHTML" (*all of the page's code*) with content fetched
 8. unhide element
 
-This is malicious. This is trying to replace the entirety of my Amazon pages with its own content. PaperPanda has no reason to touch Amazon links. Without that config, this piece of code looks benign. It could be explained away by saying the code is intended to place URLs (it could, theoretically, replace "url" attribute in anchor elements). With this config it's clear that this extension is **malicious** and **trying to hide it by changing configs**.
+This is malicious. This is trying to replace the entirety of my Amazon pages with its own content. PaperPanda has no reason to touch Amazon links. Without that config, this piece of code looks benign. It could be explained away by saying the code is intended to place URLs (it could, theoretically, replace the "url" attribute in anchor elements). With this config it's clear that this extension targeting websites outside its intended use. It is **malicious** and **trying to hide its behavior by changing configs**.
 
-The endpoint "ama.php" doesn't load anything even with the params filled in. I'm not sure if it's functional. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could've replaced affiliate information with its own like the recent Honey shopping extension scam. It could've done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to _replace the entire HTML content_.
+The endpoint "ama.php" responds with a 200 response but doesn't return any data, even with the params filled in. I'm unsure if the endpoint is nonfunctional, or if it was intentionally disabled when the config was changed. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could've replaced affiliate information with its own like the recent Honey shopping extension scam. It could've done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to _replace the entire HTML content_.
 
 ## Check yourself
 
@@ -289,4 +289,4 @@ View the extension code yourself from chrome profile data. For me that's in: `C:
 
 ## Conclusion
 
-PaperPanda is hijacking web contents. I didn't find a Yahoo search redirect but instead I found an arbitrary page re-writer driven by a config that changes every time you load it. They attempt to evade detection by moving the payload to an external page. This garbage plugin has been installed on my Chrome for months and I only noticed because they performed a blatant redirect. 
+PaperPanda is hijacking web contents. I didn't find a Yahoo search redirect but instead I found an arbitrary page re-writer driven by a config that changes every time you load it. They attempt to evade detection by moving the payload to an external page. This garbage plugin has been installed on my Chrome for months and I only noticed because they performed a blatant redirect. Who knows what damage it caused, what information it stole, because it could have modified any website to have any content.
