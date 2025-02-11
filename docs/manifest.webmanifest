@@ -4,7 +4,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#e7e7e7",
-    "description": "Official Blog for Silo City Labs LLC",
+    "description": "Official Blog for Silo City Labs",
     "icons": [{
       "src": "logo/256x256.png",
       "sizes": "72x72",

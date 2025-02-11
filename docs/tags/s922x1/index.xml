@@ -6,14 +6,14 @@
     <description>Recent content in S922x1 on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Fri, 24 Jan 2020 00:57:15 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/s922x1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recover AMLogic Android boxes everytime</title>
       <link>https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/</link>
-      <pubDate>Fri, 24 Jan 2020 00:57:15 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 24 Jan 2020 00:57:15 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/</guid>
       <description>&lt;p&gt;Theres a few ways on the amlogic chips to recover boxes, but theres also many ways to recover these units. I will talk about which I have used and others. In reality it is really difficult to fully brick one of these units permanently. I will start off with the basics and work my way up to the more advanced methods.&lt;/p&gt;</description>
     </item>

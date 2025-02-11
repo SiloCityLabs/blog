@@ -19,7 +19,7 @@ googleAnalytics = "UA-78226868-1"
       unsafe = true
 
 [Params]
-  subtitle = "Official Blog for Silo City Labs LLC"
+  subtitle = "Official Blog for Silo City Labs"
   logo = "logo/144x144.png"
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
@@ -32,7 +32,7 @@ googleAnalytics = "UA-78226868-1"
   src = "img/sphere.jpg"
 
 [Author]
-  name = "Silo City Labs LLC"
+  name = "Silo City Labs"
   email = "team@silocitylabs.com"
   facebook = "SiloCityLabs"
   gitlab = "silo-city-labs-llc"

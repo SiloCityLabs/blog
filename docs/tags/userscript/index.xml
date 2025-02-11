@@ -6,16 +6,16 @@
     <description>Recent content in Userscript on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Wed, 10 Jan 2018 03:17:12 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/userscript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blocking exit intent popups</title>
       <link>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</link>
-      <pubDate>Wed, 10 Jan 2018 03:17:12 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Wed, 10 Jan 2018 03:17:12 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</guid>
-      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34; height=&#34;335&#34; width=&#34;906&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;&#xA;    &#xA;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;rdquo;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/01/newsletter-popup-e1515447774854.jpg&#34; alt=&#34;Frig off, Randy&#34;/&gt;&#xA;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;I hate &amp;ldquo;exit intent&amp;rdquo; popups. The kind that automatically open when your mouse leaves the page begging &amp;ldquo;please don&amp;rsquo;t go!&amp;rdquo;. They&amp;rsquo;re annoying. They&amp;rsquo;re irrelevant (I&amp;rsquo;m often following a tutorial, not closing the tab). They interrupt the content I&amp;rsquo;m trying to read. So I made a short &lt;a href=&#34;https://openuserjs.org/scripts/Maave/Exit_Intent_defuser&#34;&gt;Userscript to globally block them&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

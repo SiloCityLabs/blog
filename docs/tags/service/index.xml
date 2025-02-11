@@ -6,14 +6,14 @@
     <description>Recent content in Service on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/service/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quick Monitor and Restart in Golang</title>
       <link>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</link>
-      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/2019/08/14/quick-monitor-restart-golang/</guid>
       <description>Go Applications On my desktop I was running a processing script that would occasionally hang at high CPU, so I wrote a quick script to monitor it and restart it. You can see it below and change it as needed.&#xA;Run it like so after compiling to a binary&#xA;nohup ./restart &amp;amp; The code&#xA;package main import ( &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;log&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;runtime&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;time&amp;#34; ) func getCPUSample() (idle, total uint64) { contents, err := ioutil.</description>
     </item>

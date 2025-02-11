@@ -6,14 +6,14 @@
     <description>Recent content in Arcade on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Tue, 15 Sep 2015 22:36:25 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/arcade/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Megatouchmods.com</title>
       <link>https://silocitylabs.com/post/projects/megatouchmods/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/megatouchmods/</guid>
       <description>&lt;p&gt;A website designed to host documentation for an arcade company that went bankrupt. I manage and run this website on my own, Open source the website on github using github actions to automatically build and deploy changes made to the repository.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://megatouchmods.com&#34;&gt;megatouchmods.com&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/SiloCityLabs/megatouchmods.com&#34;&gt;github source code&lt;/a&gt;&lt;/p&gt;</description>
     </item>

@@ -6,70 +6,70 @@
     <description>Recent content in Andrew-Portfolio on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/andrew-portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing CraftRandom</title>
       <link>https://silocitylabs.com/post/2025/craftrandom/</link>
-      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2025/craftrandom/</guid>
-      <description>&lt;amp-img src=&#34;https://silocitylabs.com/uploads/2025/craftrandom.webp&#34; alt=&#34;Screenshot of craftrandom site&#34; height=&#34;563&#34; width=&#34;1339&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;&#xA;    &#xA;&#xA;&lt;p&gt;Are you a Minecraft enthusiast looking for a fun new way to spice up your gameplay? Whether you&amp;rsquo;re a casual player, a server operator, or just someone who loves creative challenges, we’ve got something exciting for you—&lt;strong&gt;CraftRandom&lt;/strong&gt;!&lt;/p&gt;</description>
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2025/craftrandom.webp&#34; alt=&#34;Screenshot of craftrandom site&#34;/&gt;&#xA;&#xA;&lt;p&gt;Are you a Minecraft enthusiast looking for a fun new way to spice up your gameplay? Whether you&amp;rsquo;re a casual player, a server operator, or just someone who loves creative challenges, we’ve got something exciting for you—&lt;strong&gt;CraftRandom&lt;/strong&gt;!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Buffalonews.com</title>
       <link>https://silocitylabs.com/post/projects/buffalonews/</link>
-      <pubDate>Sat, 15 Sep 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Sat, 15 Sep 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/buffalonews/</guid>
       <description>&lt;p&gt;During my time working for the buffalo news I made many changes to the website. I handled and wrote the mobile api for applications to pull data for the website. I also made visual changes on the website including new styles, layout changes and more. I assisted staff on making changes required in a fashionable time. Other tasks included following up with customers about specific issues for troubleshooting. We used php as the main language for a system powered by wordpress. Also optimized and wrote code for wordpress plugins and other integrations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android - COD Random Class Generator</title>
       <link>https://silocitylabs.com/post/projects/android-codrcg/</link>
-      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/android-codrcg/</guid>
       <description>&lt;p&gt;&amp;ldquo;BO3 Random Class Generator&amp;rdquo; is now &amp;ldquo;COD Random Class Generator&amp;rdquo;. We&amp;rsquo;ve updated and upgraded the app to support generators for multiple games including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Infinite Warfare&lt;/li&gt;&#xA;&lt;li&gt;Black Ops 2&lt;/li&gt;&#xA;&lt;li&gt;Black Ops 3&lt;/li&gt;&#xA;&lt;li&gt;Modern Warfare&lt;/li&gt;&#xA;&lt;li&gt;Modern Warfare 2&lt;/li&gt;&#xA;&lt;li&gt;Modern Warfare 3 (Coming Soon!)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;A handy utility to generate random classes for multiple Call of Duty games. This adds a new level of fun to the game by generating random classes for you to try out and enjoy. Create classes and combinations that you may not have thought of yourself. Challenge yourself and friends with strange combinations and learn to use gear that you may otherwise ignore.&lt;/p&gt;&#xA;&lt;p&gt;For desktop use checkout our website &lt;a href=&#34;https://codrcg.com/&#34;&gt;https://codrcg.com/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android - Flappy Dino</title>
       <link>https://silocitylabs.com/post/projects/android-flappy-dino/</link>
-      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Wed, 21 Mar 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/android-flappy-dino/</guid>
       <description>&lt;p&gt;Build using both Native java code and Game maker studio. This game was a trial of gaming for us. We wanted to push our bounds and get better at Android.&lt;/p&gt;&#xA;&lt;p&gt;Navigate your flying dinosaur through treacherous obstacles and go for a high score!&lt;/p&gt;&#xA;&lt;p&gt;-Collect eggs to purchase future upgrades.&#xA;-Share your high scores with friends.&lt;/p&gt;&#xA;&lt;p&gt;Dinos include:&#xA;-Blue Pteranodon&lt;/p&gt;</description>
     </item>
     <item>
       <title>COD Random Class Generator</title>
       <link>https://silocitylabs.com/post/projects/codrcg-com/</link>
-      <pubDate>Mon, 01 Jan 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 01 Jan 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/codrcg-com/</guid>
       <description>&lt;p&gt;COD RCG is a random class generator that random generates classes for anyone who plays call of duty to enjoy. This provides new enjoyment for the game e.g. it may choose a gun the player has never used.  It also brings more challenge because you never know what you’re going to get as a class, it could be good or it could put you at a huge disadvantage, but that’s where the fun comes in trying to win and do well in the game when you’re using this crazy class that you normally would not. We launched this website less than a week after call of duty came out. I created my own algorithms to randomly create a class based on the “create a class” system used in Call of Duty. It was a challenge because there are tons of possible class possibilities that can be created. So once I finished that I then had to go and make sure all the gun, attachment, camos, equipment, perks and score streaks were all named correctly. This site and app has been pretty popular with over 25,000,000 views and over 5,000,000 classes generated. The Android app has over 50k installs&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://codrcg.com&#34;&gt;Website Link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.techreanimate.blackops3&#34;&gt;Android App Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zips Wiseguys Pizzeria Website</title>
       <link>https://silocitylabs.com/post/projects/wise-guys/</link>
-      <pubDate>Mon, 05 Sep 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 05 Sep 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/wise-guys/</guid>
       <description>&lt;p&gt;This restaurant has had multiple locations open all under one new mobile compliant website.&lt;/p&gt;</description>
     </item>
     <item>
       <title>4 Real Prints Website</title>
       <link>https://silocitylabs.com/post/projects/4realprints/</link>
-      <pubDate>Thu, 21 Jan 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Thu, 21 Jan 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/4realprints/</guid>
       <description>&lt;p&gt;This website is for my private on the side 3D printing sales. I run prints for customers but I decided I needed a website. I created this website with images, contact form and more in under a few mins. SEO ready and completely mobile. Some of our clients included &lt;a href=&#34;https://atto.com&#34;&gt;ATTO Technology&lt;/a&gt; and other smaller customers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PHP JSON HTML Minify</title>
       <link>https://silocitylabs.com/post/projects/php-json-html-minify/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/php-json-html-minify/</guid>
       <description>&lt;p&gt;Both of these functions are designed to be used with ob_start() and process the output before its sent to the user. You can also include caching into this to reduce overhead for static pages. It takes the output of the page and makes the content up to 50% smaller in size by removing unused comments and whitespace in code. &lt;a href=&#34;https://downloads.techreanimate.com/auowdk&#34;&gt;Download the file here&lt;/a&gt; or look at the code below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PHP Mysqli DB Class</title>
       <link>https://silocitylabs.com/post/projects/db-class-php/</link>
-      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Tue, 15 Sep 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/db-class-php/</guid>
       <description>&lt;p&gt;A class written to simplify the use of mysqli in php. Uses similar concepts to other db classes built into other frameworks. &lt;a href=&#34;https://downloads.techreanimate.com/auowdk&#34;&gt;Download the file here&lt;/a&gt; or look at the code below.&lt;/p&gt;</description>
     </item>

@@ -6,14 +6,14 @@
     <description>Recent content in Colocrossing on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Sun, 04 Sep 2016 22:36:25 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/colocrossing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Colocrossing Client and Admin control panel</title>
       <link>https://silocitylabs.com/post/projects/colocrossing-panel/</link>
-      <pubDate>Sun, 04 Sep 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Sun, 04 Sep 2016 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/projects/colocrossing-panel/</guid>
       <description>&lt;p&gt;A highly advanced control panel that manages multiple datacenters across the country. This control panel has management features such as users, switches, routers, virtual machines, DDOS mitigation, port monitoring, billing, support tickets, sales and many more things. The panel grew more and more everyday become fully automated in every aspect of a datacenter technicians work.&lt;/p&gt;</description>
     </item>

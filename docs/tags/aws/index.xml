@@ -6,14 +6,14 @@
     <description>Recent content in Aws on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
-    <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
     <lastBuildDate>Wed, 16 Oct 2019 22:36:25 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arm 64bit vs Xeon x86_64 performance on AWS</title>
       <link>https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/</link>
-      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Wed, 16 Oct 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/</guid>
       <description>The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare their performance using golang tests. The entire test cost me $0.68 using a quick spot instance.&#xA;The comparison was done on two very similar instances of aws servers. On paper they would almost seem to function the same but arm was just a few cents more, but lets take a look on how they performed.</description>
     </item>
