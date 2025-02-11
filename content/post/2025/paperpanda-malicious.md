@@ -8,7 +8,7 @@ date: 2025-01-27
 categories:
   - Projects
 tags:
-    - Chrome
+    - chrome
     - extension
     - security
     - reverse engineering

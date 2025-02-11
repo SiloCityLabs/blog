@@ -8,8 +8,92 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIY Electronics</title>
+      <link>https://silocitylabs.com/tags/diy-electronics/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/diy-electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp32 Microsd</title>
+      <link>https://silocitylabs.com/tags/esp32-microsd/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32-microsd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp32-C3</title>
+      <link>https://silocitylabs.com/tags/esp32-c3/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32-c3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp32-C6</title>
+      <link>https://silocitylabs.com/tags/esp32-c6/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32-c6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp32minisd</title>
+      <link>https://silocitylabs.com/tags/esp32minisd/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/esp32minisd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IoT</title>
+      <link>https://silocitylabs.com/tags/iot/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/iot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Local Control</title>
+      <link>https://silocitylabs.com/tags/local-control/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/local-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsd Card</title>
+      <link>https://silocitylabs.com/tags/microsd-card/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/microsd-card/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://silocitylabs.com/tags/open-source/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Devices</title>
+      <link>https://silocitylabs.com/tags/smart-devices/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/smart-devices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xiao Esp32</title>
+      <link>https://silocitylabs.com/tags/xiao-esp32/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <guid>https://silocitylabs.com/tags/xiao-esp32/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Chrome</title>
       <link>https://silocitylabs.com/tags/chrome/</link>
@@ -151,20 +235,6 @@
       <description></description>
     </item>
     <item>
-      <title>DIY Electronics</title>
-      <link>https://silocitylabs.com/tags/diy-electronics/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/diy-electronics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ESP32</title>
-      <link>https://silocitylabs.com/tags/esp32/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>ESPHome</title>
       <link>https://silocitylabs.com/tags/esphome/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
@@ -183,27 +253,6 @@
       <link>https://silocitylabs.com/tags/iot-projects/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/iot-projects/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Local Control</title>
-      <link>https://silocitylabs.com/tags/local-control/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/local-control/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Source</title>
-      <link>https://silocitylabs.com/tags/open-source/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/open-source/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Smart Devices</title>
-      <link>https://silocitylabs.com/tags/smart-devices/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/smart-devices/</guid>
       <description></description>
     </item>
     <item>
@@ -330,13 +379,6 @@
       <link>https://silocitylabs.com/tags/hass/</link>
       <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/tags/hass/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IoT</title>
-      <link>https://silocitylabs.com/tags/iot/</link>
-      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
-      <guid>https://silocitylabs.com/tags/iot/</guid>
       <description></description>
     </item>
     <item>
