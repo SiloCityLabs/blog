@@ -165,12 +165,12 @@ After downloading them, add a line to your schedule tasks in linux using crontab
 ```
 
  [1]: https://www.zoneminder.com/
- [2]: https://blog.silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/
- [3]: https://blog.silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/
- [4]: https://blog.silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/
- [5]: https://blog.silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/
- [6]: https://blog.silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/
- [7]: https://blog.silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/
+ [2]: https://silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/
+ [3]: https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/
+ [4]: https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/
+ [5]: https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/
+ [6]: https://silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/
+ [7]: https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/
  [8]: http://a.tra.li/TPzz
  [9]: https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/
  [10]: https://downloads.techreanimate.com/kzhota

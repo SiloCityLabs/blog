@@ -35,6 +35,6 @@ PCB layout is in the works. I still have rearranging and routing to do. I may ha
 
 Follow my [project on HackADay.io][6] for finer details and updates! Source code will be available the SiloCityLabs Github soon™. This will be completely open source - PCB, firmware, and 3d printed case.
 
- [1]: https://blog.silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/
+ [1]: https://silocitylabs.com/post/2017/12/18/phone-case-gamepad-wip/
  [2]: https://hackaday.io/contest/163267-flexible-pcb-concept-contest
  [6]: https://hackaday.io/project/165606-usb-c-gamepad-phone-case

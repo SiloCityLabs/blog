@@ -268,14 +268,14 @@ Hello Again
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">mywebsite</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">mysecondwebsite</span> <span class="nx">settings</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">mysecondwebsite</span><span class="p">.</span><span class="nx">Hostname</span> <span class="p">=</span> <span class="s">&#34;blog.silocitylabs.com&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">mysecondwebsite</span><span class="p">.</span><span class="nx">Hostname</span> <span class="p">=</span> <span class="s">&#34;silocitylabs.com&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">mysecondwebsite</span><span class="p">.</span><span class="nx">Port</span> <span class="p">=</span> <span class="s">&#34;80&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">mysecondwebsite</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Result</p>
 <pre tabindex="0"><code>$ go run hello.go
 {silocitylabs.com 80}
-{blog.silocitylabs.com 80}
+{silocitylabs.com 80}
 </code></pre><h2 id="third-party-packages">Third party packages</h2>
 <p>Just like built in Go packages and your own packages. You can import packages from other places. Lets start by trying to find one online that generates random words. I searched &ldquo;golang random words package&rdquo; on Google and came up with the following <a href="https://github.com/tjarratt/babble">https://github.com/tjarratt/babble</a>. Before we begin to import this package and use it like its documentation states. We need to have it downloaded on our machine.</p>
 <p>In your terminal type the following</p>

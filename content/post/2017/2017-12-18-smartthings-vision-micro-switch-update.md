@@ -36,9 +36,9 @@ Installed in [[bana0615][2]] home wall.
 
 {{< image src="/uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg" alt="Double gang wall outlet">}}
 
-This is an update to: https://blog.silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/
+This is an update to: https://silocitylabs.com/post/2017/12/15/smartthings-vision-micro-switch/
 
  [1]: /uploads/2017/12/zl7432us-manual.png
- [2]: https://blog.silocitylabs.com/post/author/bana0615/
+ [2]: https://silocitylabs.com/post/author/bana0615/
  [3]: /uploads/2017/12/mvimg_20171224_20271185134117357629532.jpg
  [4]: /uploads/2017/12/mvimg_20171224_2042033181531723782315879.jpg

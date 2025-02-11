@@ -321,7 +321,7 @@ func main() {
 	fmt.Println(mywebsite)
 
 	var mysecondwebsite settings
-	mysecondwebsite.Hostname = "blog.silocitylabs.com"
+	mysecondwebsite.Hostname = "silocitylabs.com"
 	mysecondwebsite.Port = "80"
 	fmt.Println(mysecondwebsite)
 }
@@ -333,7 +333,7 @@ Result
 ```
 $ go run hello.go
 {silocitylabs.com 80}
-{blog.silocitylabs.com 80}
+{silocitylabs.com 80}
 ```
 
 ## Third party packages

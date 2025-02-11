@@ -33,4 +33,4 @@ Here are some pics of the palm sides of the shell. v0.1 being test fit by [[ldrr
  [1]: /uploads/2017/12/IMG_20171028_153645.jpg
  [2]: /uploads/2017/12/IMG_20171028_153636-e1513389166841.jpg
  [3]: /uploads/2017/12/photo_2017-12-15_14-27-51-1.jpg
- [4]: https://blog.silocitylabs.com/post/author/ldrrp
+ [4]: https://silocitylabs.com/post/author/ldrrp

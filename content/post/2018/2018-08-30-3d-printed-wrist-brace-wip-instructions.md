@@ -125,7 +125,7 @@ In the future swap the velcro for a hinge:
 
 &nbsp;
 
- [1]: https://blog.silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/
+ [1]: https://silocitylabs.com/post/2017/12/15/3d-printed-wrist-brace-wip/
  [2]: /uploads/2018/08/orig-scan-watertight.jpg
  [3]: /uploads/2018/08/01-wtf.png
  [4]: /uploads/2018/08/07-tada-its-fixed.png

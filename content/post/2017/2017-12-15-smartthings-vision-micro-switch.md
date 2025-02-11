@@ -34,7 +34,7 @@ Once it arrives in the mail I will let you know the process I went through to ge
 
 &nbsp;
 
- [1]: https://blog.silocitylabs.com/post/author/bana0615/
+ [1]: https://silocitylabs.com/post/author/bana0615/
  [2]: /uploads/2017/12/419E0PAR7HL.jpg
  [3]: https://www.amazon.com/Vision-Z-Wave-Micro-Switch-1-pack/dp/B01GQX1GFC/
  [4]: https://www.amazon.com/Vision-Z-Wave-Micro-Switch-relay/dp/B00R883YKU/
