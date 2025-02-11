@@ -62,26 +62,8 @@ googleAnalytics = "UA-78226868-1"
     weight = 2
 
 [[menu.main]]
-    identifier = "cat"
-    name = "Categories"
-    weight = 3
-
-[[menu.main]]
-    parent = "cat"
-    name = "Official"
-    url = "categories/company/"
-    weight = 1
-
-[[menu.main]]
-    parent = "cat"
-    name = "Side Projects"
-    url = "categories/projects/"
-    weight = 2
-
-[[menu.main]]
-    parent = "cat"
-    name = "Tags"
-    url = "tags"
+    name = "Games"
+    url = "https://silocitygames.com"
     weight = 3
 
 [[menu.main]]
