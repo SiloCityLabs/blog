@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/smart-devices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started with the ESP32MiniSD</title>
       <link>https://silocitylabs.com/post/2025/esp32-microsd/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2025/esp32-microsd/</guid>
       <description>&lt;p&gt;The &lt;strong&gt;ESP32MiniSD&lt;/strong&gt; is a compact add-on board designed for Seeed Studio&amp;rsquo;s &lt;strong&gt;XIAO ESP32-C3&lt;/strong&gt;, &lt;strong&gt;XIAO ESP32-C6&lt;/strong&gt; or &lt;strong&gt;XIAO ESP32-S3&lt;/strong&gt;, enabling microSD card storage, battery monitoring, and USB charging capabilities. In this tutorial, we&amp;rsquo;ll guide you through setting up and using the ESP32MiniSD with an ESP32 XIAO module to read and write files to a microSD card.&lt;/p&gt;&#xA;&lt;p&gt;Unlike Adafruit&amp;rsquo;s Xiao ESP32, the ESP32MiniSD is designed to get the most out of the ESP32&amp;rsquo;s capabilities, with a focus on storage and power management. The board features a microSD card slot &lt;strong&gt;connecting SD card to ESP32&lt;/strong&gt;, battery monitoring, and charging circuitry, making it ideal for &lt;strong&gt;ESP32 SD card integrations&lt;/strong&gt; including data logging, file storage, and portable IoT devices. Let&amp;rsquo;s dive into the setup and usage of the ESP32MiniSD with the XIAO ESP32 module!&lt;/p&gt;</description>
     </item>

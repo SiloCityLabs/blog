@@ -8,12 +8,12 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs LLC)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs LLC)</webMaster>
-    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/author/luis-rodriguez/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started with the ESP32MiniSD</title>
       <link>https://silocitylabs.com/post/2025/esp32-microsd/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2025/esp32-microsd/</guid>
       <description>&lt;p&gt;The &lt;strong&gt;ESP32MiniSD&lt;/strong&gt; is a compact add-on board designed for Seeed Studio&amp;rsquo;s &lt;strong&gt;XIAO ESP32-C3&lt;/strong&gt;, &lt;strong&gt;XIAO ESP32-C6&lt;/strong&gt; or &lt;strong&gt;XIAO ESP32-S3&lt;/strong&gt;, enabling microSD card storage, battery monitoring, and USB charging capabilities. In this tutorial, we&amp;rsquo;ll guide you through setting up and using the ESP32MiniSD with an ESP32 XIAO module to read and write files to a microSD card.&lt;/p&gt;&#xA;&lt;p&gt;Unlike Adafruit&amp;rsquo;s Xiao ESP32, the ESP32MiniSD is designed to get the most out of the ESP32&amp;rsquo;s capabilities, with a focus on storage and power management. The board features a microSD card slot &lt;strong&gt;connecting SD card to ESP32&lt;/strong&gt;, battery monitoring, and charging circuitry, making it ideal for &lt;strong&gt;ESP32 SD card integrations&lt;/strong&gt; including data logging, file storage, and portable IoT devices. Let&amp;rsquo;s dive into the setup and usage of the ESP32MiniSD with the XIAO ESP32 module!&lt;/p&gt;</description>
     </item>
@@ -351,7 +351,7 @@
       <link>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</link>
       <pubDate>Mon, 18 Dec 2017 20:17:07 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs LLC)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
-      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;    &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;amp-youtube&#xA;    data-videoid=&#34;397hvxAjlj4&#34;&#xA;    layout=&#34;responsive&#34;&#xA;    width=&#34;480&#34; height=&#34;270&#34;&gt;&lt;/amp-youtube&gt;</description>
     </item>
     <item>
       <title>SmartThings &#43; Vision Micro Switch</title>
