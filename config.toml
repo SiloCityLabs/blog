@@ -10,7 +10,6 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-disqusShortname = "sclblog-1"
 googleAds = "ca-pub-6882852717412296"
 googleAnalytics = "UA-78226868-1"
 
