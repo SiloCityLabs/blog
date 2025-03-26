@@ -1,20 +1,34 @@
 package main
 
+import (
+	"log"
+	"os"
+)
+
 func main() {
 	loadSettings()
 
 	// Scan for changes from events.json file
 
 	if settings.BuildFontello {
-		buildFontello()
+		if err := buildFontello(); err != nil {
+			log.Println(err)
+			os.Exit(1)
+		}
 	}
 
-	if settings.BuildBootstrap {
-		buildBootstrap()
-	}
+	// if settings.BuildBootstrap {
+	// 	if err := buildBootstrap(); err != nil {
+	// 		log.Println(err)
+	// 		os.Exit(1)
+	// 	}
+	// }
 
 	if settings.BuildSite {
-		buildSite()
+		if err := buildSite(); err != nil {
+			log.Println(err)
+			os.Exit(1)
+		}
 	}
 
 	// if settings.SendNewsletter {

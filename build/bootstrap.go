@@ -1,5 +1,5 @@
 package main
 
-func buildBootstrap() {
-
+func buildBootstrap() error {
+	return nil
 }
