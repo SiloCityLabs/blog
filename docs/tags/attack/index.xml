@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Attack on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/attack/</link>
+    <description>Recent content in Attack on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Wed, 21 Jan 2015 22:36:25 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/attack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RDNS XSS On Industry Standard Looking Glass</title>
+      <link>https://silocitylabs.com/post/projects/lg-xss-cve/</link>
+      <pubDate>Wed, 21 Jan 2015 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/projects/lg-xss-cve/</guid>
+      <description>&lt;p&gt;My commitment to security is always a goal of mine. The &amp;lsquo;industry standard&amp;rsquo; network looking glass now faces a pretty nasty XSS vulnerability which is &lt;a href=&#34;https://github.com/telephone/LookingGlass/tree/4367733198698c4d314c51731e0b480b7d0383b3&#34;&gt;listed on github&lt;/a&gt; and I discovered. An RDNS XSS was disclosed which has been patched by a temporary fix I applied to it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

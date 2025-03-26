@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Breadboard on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/breadboard/</link>
+    <description>Recent content in Breadboard on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Tue, 06 Feb 2018 08:50:09 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/breadboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using laptop IDE cables for 2mm pitch headers</title>
+      <link>https://silocitylabs.com/post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/</link>
+      <pubDate>Tue, 06 Feb 2018 08:50:09 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2018/02/06/using-laptop-ide-cables-for-2mm-pitch-headers/</guid>
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/02/IMG_20180203_213426-Copy.jpg&#34; alt=&#34;&#34;/&gt;&#xA;&#xA;&#xA;    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/02/Core51822-size.jpg&#34; alt=&#34;2mm pitch headers, ugh&#34;/&gt;&#xA;&#xA;&lt;p&gt;My core51822 module has caused me a bit of headache. The headers are 2.00mm pitch rather than the typical 1&amp;quot; (2.54mm) pitch. This makes it incompatible with regular 1&amp;quot; pitch breadboards. Being double row makes it worse.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

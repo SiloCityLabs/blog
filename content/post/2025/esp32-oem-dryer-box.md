@@ -22,7 +22,8 @@ Are you looking to take your **Filament Dryer** to the next level? The **Filamen
 
 <!--more-->
 
-{{< image src="https://shop.silocitylabs.com/cdn/shop/files/compatible-dikale-unit.jpg?v=1740586586&width=720" alt="Image Of Dikale Dryer">}}
+![Image Of Dikale Dryer](https://shop.silocitylabs.com/cdn/shop/files/compatible-dikale-unit.jpg?v=1740586586&width=720 "Image Of Dikale Dryer")
+
 
 **Expand Your Filament Compatibility**
 --------------------------------------
@@ -34,7 +35,7 @@ Out of the box, filament dryers from **Dikale, Firos, and 3DGenius** come with l
 
 Say goodbye to the standard LCD screen and experience an **upgraded, easy-to-read display**. With clearer, more detailed temperature and humidity readings, you’ll have **real-time insights into your filament drying process**, making adjustments and monitoring easier than ever.
 
-{{< image src="https://shop.silocitylabs.com/cdn/shop/files/dikale-esp32-pcb-front.webp?v=1740711990&width=720" alt="Image Of PCB Front with OLED Display">}}
+![Image Of PCB Front with OLED Display](https://shop.silocitylabs.com/cdn/shop/files/dikale-esp32-pcb-front.webp?v=1740711990&width=720 "Image Of PCB Front with OLED Display")
 
 **Smart Home Functionality with ESPHome Certification**
 -------------------------------------------------------
@@ -52,7 +53,7 @@ Thanks to **ESPHome certification**, this upgrade is **fully compatible with maj
 
 This PCB is built with powerful microcontrollers, including **Firos ESP32, Dikale ESP32, and 3DGenius ESP32**, ensuring **efficient and reliable performance**. Similar to the **ESP8266**, providing flexibility for different smart home setups.
 
-{{< image src="https://shop.silocitylabs.com/cdn/shop/files/dikale-esp32-pcb-back.webp?v=1740711990&width=720" alt="Image Of PCB Front with OLED Display">}}
+![Image Of PCB Front with OLED Display](https://shop.silocitylabs.com/cdn/shop/files/dikale-esp32-pcb-back.webp?v=1740711990&width=720 "Image Of PCB Front with OLED Display")
 
 **Why Upgrade?**
 ----------------

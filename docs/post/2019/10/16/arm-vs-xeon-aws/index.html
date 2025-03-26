@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Arm 64bit vs Xeon x86_64 performance on AWS</title>
+  <meta property="og:title" content="Arm 64bit vs Xeon x86_64 performance on AWS" />
+  <meta name="twitter:title" content="Arm 64bit vs Xeon x86_64 performance on AWS" />
+  <meta name="description" content="The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare …">
+  <meta property="og:description" content="The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare …">
+  <meta name="twitter:description" content="The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare …">
+  <meta name="author" content="Silo City Labs"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2019/10/16/arm-vs-xeon-aws/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2019/10/16/arm-vs-xeon-aws/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Arm 64bit vs Xeon x86_64 performance on AWS</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on October 16, 2019
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>The reason for this test was to determine if arm was a viable option on aws. I noticed that arm had higher network throughputs and faster disk speeds on the aws pages. So I decided I would compare their performance using golang tests. The entire test cost me $0.68 using a quick spot instance.</p>
+<p>The comparison was done on two very similar instances of aws servers. On paper they would almost seem to function the same but arm was just a few cents more, but lets take a look on how they performed.</p>
+<h3 id="linux-amd64-xeon">Linux AMD64 (xeon)</h3>
+<pre tabindex="0"><code>BenchmarkSprint-2       20000000                74.8 ns/op             5 B/op          1 allocs/op
+BenchmarkConcat-2       20000000                86.6 ns/op            16 B/op          1 allocs/op
+BenchmarkMath-2         10000000               131 ns/op              16 B/op          2 allocs/op
+BenchmarkCompare-2      2000000000               0.37 ns/op            0 B/op          0 allocs/op
+BenchmarkIntString-2    10000000               120 ns/op              16 B/op          2 allocs/op
+BenchmarkReplace-2      10000000               142 ns/op              64 B/op          2 allocs/op
+BenchmarkSplit-2        10000000               150 ns/op              64 B/op          1 allocs/op
+BenchmarkJoin-2         20000000                87.1 ns/op            32 B/op          1 allocs/op
+BenchmarkJSON-2           300000              4019 ns/op             576 B/op         17 allocs/op
+BenchmarkLargeJSON-2         100          14204481 ns/op         2980990 B/op      52214 allocs/op
+BenchmarkByte-2          2000000               619 ns/op             112 B/op          3 allocs/op
+BenchmarkRegex-2          200000              8330 ns/op           39038 B/op         30 allocs/op
+BenchmarkMd5-2           2000000               664 ns/op              80 B/op          3 allocs/op
+BenchmarkSha1-2          2000000               742 ns/op             112 B/op          3 allocs/op
+BenchmarkSha256-2        2000000               975 ns/op             144 B/op          3 allocs/op
+BenchmarkUUIDv4-2        1000000              1643 ns/op             160 B/op          4 allocs/op
+</code></pre><h3 id="linux-arm64">Linux ARM64</h3>
+<pre tabindex="0"><code>BenchmarkSprint-2       10000000               144 ns/op               5 B/op          1 allocs/op
+BenchmarkConcat-2       10000000               180 ns/op              16 B/op          1 allocs/op
+BenchmarkMath-2          5000000               270 ns/op              16 B/op          2 allocs/op
+BenchmarkCompare-2      2000000000               0.87 ns/op            0 B/op          0 allocs/op
+BenchmarkIntString-2     5000000               246 ns/op              16 B/op          2 allocs/op
+BenchmarkReplace-2       3000000               427 ns/op              64 B/op          2 allocs/op
+BenchmarkSplit-2         5000000               245 ns/op              64 B/op          1 allocs/op
+BenchmarkJoin-2         10000000               159 ns/op              32 B/op          1 allocs/op
+BenchmarkJSON-2           200000              9944 ns/op             576 B/op         17 allocs/op
+BenchmarkLargeJSON-2          50          25567425 ns/op         2980985 B/op      52214 allocs/op
+BenchmarkByte-2          1000000              1084 ns/op             112 B/op          3 allocs/op
+BenchmarkRegex-2          100000             13893 ns/op           39036 B/op         30 allocs/op
+BenchmarkMd5-2           1000000              1147 ns/op              80 B/op          3 allocs/op
+BenchmarkSha1-2          1000000              1189 ns/op             112 B/op          3 allocs/op
+BenchmarkSha256-2        1000000              1393 ns/op             144 B/op          3 allocs/op
+BenchmarkUUIDv4-2         500000              2541 ns/op             160 B/op          4 allocs/op
+</code></pre><p>As you can see arm actually performed much slower on most operations. Not even a negligable amount to compensate for the network speed gain you would get from using arm.</p>
+<h3 id="install-script-runsh">Install script (run.sh)</h3>
+<pre tabindex="0"><code>#!/bin/bash
+
+add-apt-repository ppa:gophers/archive
+apt-get update
+apt-get install golang-1.11-go iperf3 hdparm
+/usr/lib/go-1.11/bin/go
+/usr/lib/go-1.11/bin/go get -u github.com/google/uuid
+
+echo &#39;&#39; &gt; results.txt
+
+echo &#34;Running benchmarks on cpu/memory&#34; &gt;&gt; results.txt
+echo &#39;&#39; &gt;&gt; results.txt
+
+/usr/lib/go-1.11/bin/go test -benchtime=1m -bench=. -benchmem &gt;&gt; results.txt
+
+
+echo &#34;Running benchmarks on network&#34; &gt;&gt; results.txt
+echo &#39;&#39; &gt;&gt; results.txt
+
+for (( c=1; c&lt;=5; c++ ))
+do  
+   iperf3 -c iperf.he.net &gt;&gt; results.txt
+done
+
+echo &#39;Running benchmarks on disk&#39; &gt;&gt; results.txt
+echo &#39;&#39; &gt;&gt; results.txt
+
+hdparm -Tt /dev/xvda1 &gt;&gt; results.txt
+</code></pre><h3 id="test-script-sprint_testgo">Test script (sprint_test.go)</h3>
+<pre tabindex="0"><code>package benchmark
+
+import (
+	&#34;crypto/md5&#34;
+	&#34;crypto/sha1&#34;
+	&#34;crypto/sha256&#34;
+	&#34;encoding/json&#34;
+	&#34;fmt&#34;
+	&#34;io/ioutil&#34;
+	&#34;os&#34;
+	&#34;regexp&#34;
+	&#34;strconv&#34;
+	&#34;strings&#34;
+	&#34;testing&#34;
+
+	&#34;github.com/google/uuid&#34;
+)
+
+func BenchmarkSprint(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		fmt.Sprintf(&#34;hello&#34;)
+	}
+}
+
+func BenchmarkConcat(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		fmt.Sprintf(&#34;hello&#34; + &#34; hello&#34;)
+	}
+}
+
+func BenchmarkMath(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		added := 123123 + 1298685
+		fmt.Sprint(added)
+	}
+}
+
+func BenchmarkCompare(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		if 312312 == 354351 {
+			fmt.Sprint(&#34;dont remove me compiler&#34;)
+		}
+		if &#34;312312&#34; == &#34;adadsad334&#34; {
+			fmt.Sprint(&#34;dont remove me compiler&#34;)
+		}
+		if false == true {
+			fmt.Sprint(&#34;dont remove me compiler&#34;)
+		}
+	}
+}
+
+func BenchmarkIntString(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		fmt.Sprintf(strconv.Itoa(81312391))
+	}
+}
+
+func BenchmarkReplace(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		strings.Replace(&#34;aefaewdsfasdfasdf&#34;, &#34;as&#34;, &#34;jfiuwieiihoijpj&#34;, 1)
+	}
+}
+
+func BenchmarkSplit(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		strings.Split(&#34;aefaew\ndsfa\nsdf\nasdf&#34;, &#34;\n&#34;)
+	}
+}
+
+func BenchmarkJoin(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		strings.Join([]string{&#34;asdasdas&#34;, &#34;asdasdasd&#34;, &#34;asdasdasd&#34;}, &#34;\n&#34;)
+	}
+}
+
+type response1 struct {
+	Page   int
+	Fruits []string
+}
+
+func BenchmarkJSON(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+
+		res1D := &amp;response1{
+			Page:   1,
+			Fruits: []string{&#34;apple&#34;, &#34;peach&#34;, &#34;pear&#34;}}
+		res1B, _ := json.Marshal(res1D)
+
+		res := response1{}
+		json.Unmarshal(res1B, &amp;res)
+		fmt.Sprint(res)
+
+	}
+}
+
+func BenchmarkLargeJSON(b *testing.B) {
+	jString, _ := ioutil.ReadFile(&#34;test.json&#34;)
+	b.ResetTimer()
+
+	for i := 0; i &lt; b.N; i++ {
+		res := response1{}
+		json.Unmarshal(jString, &amp;res)
+		fmt.Sprint(res)
+	}
+}
+
+func BenchmarkByte(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		var blah = &#34;asdfsdnfanjkdsfn&#34;
+		fmt.Sprint([]byte(blah))
+	}
+}
+
+func BenchmarkRegex(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		matched, err := regexp.Match(`foo.*`, []byte(`seafood`))
+		fmt.Sprint(matched, err)
+	}
+}
+
+func BenchmarkMd5(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		md5 := md5.Sum([]byte(&#34;Foo&#34;))
+		fmt.Sprintf(&#34;%x\n&#34;, md5)
+	}
+}
+
+func BenchmarkSha1(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		sha1 := sha1.Sum([]byte(&#34;Foo&#34;))
+		fmt.Sprintf(&#34;%x\n&#34;, sha1)
+	}
+}
+
+func BenchmarkSha256(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		sha256 := sha256.Sum256([]byte(&#34;Foo&#34;))
+		fmt.Sprintf(&#34;%x\n&#34;, sha256)
+	}
+}
+
+func BenchmarkUUIDv4(b *testing.B) {
+	for i := 0; i &lt; b.N; i++ {
+		uuidv4 := uuid.New()
+		fmt.Sprintf(&#34;%x\n&#34;, uuidv4)
+	}
+}
+</code></pre><h3 id="other-test-file-testjson">Other test file (test.json)</h3>
+<pre tabindex="0"><code>{
+  &#34;page&#34;: 1,
+  &#34;fruits&#34;: [
+    &#34;culpa&#34;,
+    &#34;mollit&#34;,
+    &#34;id&#34;,
+    &#34;nulla&#34;,
+    &#34;ullamco&#34;,
+    &#34;proident&#34;,
+    ...  26000 lines concatenated for browser ...
+    &#34;ullamco&#34;,
+    &#34;dolor&#34;,
+    &#34;id&#34;,
+    &#34;minim&#34;,
+    &#34;velit&#34;,
+    &#34;ad&#34;,
+    &#34;non&#34;
+  ]
+}
+</code></pre><p>With that being said, I dont think I would be switching to arm anytime soon. The only good reason to use it would be for static file hosting but it would be much cheaper to use an s3 bucket or something similar.</p>
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2019/2019-10-16-arm-vs-xeon-aws.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2019/2019-10-16-arm-vs-xeon-aws.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2019/09/26/installing-nano-android/" data-toggle="tooltip" data-placement="top" title="Installing nano text editor on Android">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/2020/01/24/recover-amlogic-android-boxes-everytime/" data-toggle="tooltip" data-placement="top" title="Recover AMLogic Android boxes everytime">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs
+          &nbsp;&bull;&nbsp;
+          2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESP32 on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/esp32/</link>
+    <description>Recent content in ESP32 on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Wed, 26 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Filament Dryer PCB</title>
+      <link>https://silocitylabs.com/post/2025/esp32-oem-dryer-box/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/esp32-oem-dryer-box/</guid>
+      <description>&lt;p&gt;Are you looking to take your &lt;strong&gt;Filament Dryer&lt;/strong&gt; to the next level? The &lt;strong&gt;Filament Dryer PCB&lt;/strong&gt; is the ultimate upgrade, adding enhanced &lt;strong&gt;filament material support&lt;/strong&gt;, a &lt;strong&gt;better display&lt;/strong&gt;, and &lt;strong&gt;smart home integration&lt;/strong&gt; to ensure your 3D printing workflow is seamless and efficient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Started with the ESP32MiniSD</title>
+      <link>https://silocitylabs.com/post/2025/esp32-microsd/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/esp32-microsd/</guid>
+      <description>&lt;p&gt;The &lt;strong&gt;ESP32MiniSD&lt;/strong&gt; is a compact add-on board designed for Seeed Studio&amp;rsquo;s &lt;strong&gt;XIAO ESP32-C3&lt;/strong&gt;, &lt;strong&gt;XIAO ESP32-C6&lt;/strong&gt; or &lt;strong&gt;XIAO ESP32-S3&lt;/strong&gt;, enabling microSD card storage, battery monitoring, and USB charging capabilities. In this tutorial, we&amp;rsquo;ll guide you through setting up and using the ESP32MiniSD with an ESP32 XIAO module to read and write files to a microSD card.&lt;/p&gt;&#xA;&lt;p&gt;Unlike Adafruit&amp;rsquo;s Xiao ESP32, the ESP32MiniSD is designed to get the most out of the ESP32&amp;rsquo;s capabilities, with a focus on storage and power management. The board features a microSD card slot &lt;strong&gt;connecting SD card to ESP32&lt;/strong&gt;, battery monitoring, and charging circuitry, making it ideal for &lt;strong&gt;ESP32 SD card integrations&lt;/strong&gt; including data logging, file storage, and portable IoT devices. Let&amp;rsquo;s dive into the setup and usage of the ESP32MiniSD with the XIAO ESP32 module!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Smart Home Upgrades with ESP32 and ESPHome</title>
+      <link>https://silocitylabs.com/post/2024/everything-smart/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2024/everything-smart/</guid>
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2024/technology-reanimated.webp&#34; alt=&#34;&#34;/&gt;&#xA;&#xA;&lt;p&gt;At &lt;strong&gt;Silocity Labs&lt;/strong&gt;, we’ve always loved exploring innovative technology and making the world of electronics more accessible. Recently, we’ve opened a new shop featuring some of our favorite creations: &lt;strong&gt;ESPHome-compatible smart devices&lt;/strong&gt; built on the powerful ESP32 platform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nurturing Your Garden the Smart Way</title>
+      <link>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</link>
+      <pubDate>Sat, 28 Oct 2023 01:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2023/2023-10-28-esp32-garden/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the world of electronics and software, innovation knows no bounds. As a senior software engineer in Amherst, NY, I&amp;rsquo;ve always loved to tinker with the latest technologies to create fun and exciting projects. One such project that I recently embarked on is an automated watering system that integrates seamlessly with Home Assistant, using sensors, Tasmota, MQTT, and an ESP32 4CH relay control board. In this article, I will guide you through the process of building your own automated watering system, step by step. Please note that having a basic understanding of Home Assistant and microcontrollers is recommended to follow this guide.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

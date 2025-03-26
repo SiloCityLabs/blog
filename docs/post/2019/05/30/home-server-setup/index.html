@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Home Server Setup.</title>
+  <meta property="og:title" content="Home Server Setup." />
+  <meta name="twitter:title" content="Home Server Setup." />
+  <meta name="description" content="Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now …">
+  <meta property="og:description" content="Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now …">
+  <meta name="twitter:description" content="Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now …">
+  <meta name="author" content="Silo City Labs"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2019/05/30/home-server-setup/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2019/05/30/home-server-setup/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2019/05/30/home-server-setup/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Home Server Setup.</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on May 30, 2019
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and <a href="https://www.zoneminder.com/">zoneminder</a>.</p>
+<h2 id="security-camera-software">Security Camera Software</h2>
+<p>ZoneMinder - &ldquo;A full-featured, open source, state-of-the-art video surveillance software system. Monitor your home, office, or wherever you want. Using off the shelf hardware with any camera, you can design a system as large or as small as you need.&rdquo;</p>
+<h2 id="my-cameras">My Cameras</h2>
+<ul>
+<li><a href="https://silocitylabs.com/post/2018/12/13/axis-2130-ptz-and-zoneminder/">Axis 2130 PTZ</a></li>
+<li><a href="https://silocitylabs.com/post/2019/02/07/axis-2130-ptz-and-zoneminder/">Rosewill RSCM-13101B</a></li>
+<li><a href="https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/">Nightowl BNC x6</a></li>
+<li><a href="https://silocitylabs.com/post/2019/01/10/genius-widecam-320-and-zoneminder/">Genius WideCam 320 Webcam</a></li>
+<li><a href="https://silocitylabs.com/post/2018/11/28/bv-tech-4mp-2k-h-265-ip67-and-zoneminder/">BV Tech 4MP 2k</a></li>
+</ul>
+<h2 id="onsite-fireproof-sync">Onsite Fireproof Sync</h2>
+<p>To avoid paying for cloud services I purchased a fireproof hard drive. I set it up to sync with my raid group and its all set. You can view that <a href="https://silocitylabs.com/post/2018/11/23/secure-backups-without-the-cloud/">article here.</a></p>
+<h2 id="offsite-sync">Offsite Sync</h2>
+<p>I use offsite sync for the security cameras using rsync and a remote ftp server. Unfortunately it would be too expensive to backup my entire media server to the cloud so I only use it for remote storing the camera footage in the event of a theft.</p>
+<p>To start this you will need an ftp server credentials to use with the following script. After doing so you can just add it to <code>crontab -e</code></p>
+<p>Crontab file:</p>
+<pre tabindex="0"><code>@reboot /mnt/4000/home/ldrrp/Scripts/ftpsync.sh
+</code></pre><p>Script:</p>
+<pre tabindex="0"><code>#!/bin/bash
+HOST=&#39;hostedftp.com&#39;
+USER=&#39;username&#39;
+PASS=&#39;password&#39;
+TARGETFOLDER=&#39;/&#39;
+SOURCEFOLDER=&#39;/var/cache/zoneminder/&#39;
+while inotifywait -qqr &#34;$SOURCEFOLDER&#34;; do
+lftp -f &#34;
+open $HOST
+user $USER $PASS
+lcd $SOURCEFOLDER
+set ftp:ssl-allow no
+mirror --no-symlinks --reverse --delete --verbose $SOURCEFOLDER $TARGETFOLDER
+bye
+&#34;
+done
+</code></pre><p> </p>
+<h2 id="software-raid">Software Raid</h2>
+<p>I don&rsquo;t want to spend too much on this setup so software raid we go. I use Raid 5 for its redundancy but increase capacity. I will talk about what I did to get this quickly setup. Depending on your drive count and size this can take anywhere from 2 hours to 24 hours. You can read more about the <a href="http://a.tra.li/TPzz">setup I used</a>.</p>
+<h2 id="file-share">File Share</h2>
+<p>Setting up a file share is fairly simple, First download and install samba</p>
+<p><code>apt-get install samba</code></p>
+<p>Then edit the main configuration file:</p>
+<pre tabindex="0"><code>[global]
+   workgroup = WORKGROUP
+   dns proxy = no
+   log file = /var/log/samba/log.%m
+   max log size = 1000
+   syslog = 0
+   panic action = /usr/share/samba/panic-action %d
+   server role = standalone server
+   passdb backend = tdbsam
+   obey pam restrictions = yes
+   unix password sync = yes
+   passwd program = /usr/bin/passwd %u
+   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+   pam password change = yes
+   map to guest = bad user
+   usershare allow guests = yes
+   socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=1073741824 SO_SNDBUF=1073741824
+   min protocol = SMB2
+[homes]
+   comment = Home Directories
+   browseable = no
+   read only = no
+   create mask = 0770
+   directory mask = 0770
+   force group = nas
+   valid users = %S
+   writeable = yes
+   path = /mnt/4000/home/%u
+   veto files = /._*/.DS_Store/
+   delete veto files = yes
+[Shared]
+   comment = Shared Family Folder
+   browsable = yes
+   writable = yes
+   guest ok = yes
+   read only = no
+   directory mask = 0770
+   create mask = 0770
+   valid users = ldrrp krystal
+   force group = nas
+   path = /mnt/4000/home/Shared
+   veto files = /._*/.DS_Store/
+   delete veto files = yes
+[security]
+   comment = Security Cameras
+   browseable = yes
+   read only = no
+   create mask = 0755
+   directory mask = 0755
+   valid users = @security
+   writeable = yes
+   path = /var/cache/zoneminder
+   veto files = /._*/.DS_Store/
+   delete veto files = yes
+</code></pre><p>Then create the groups &ldquo;nas&rdquo; and &ldquo;family&rdquo; in linux and add your users to it. There is a <a href="https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/">guide</a> on that.</p>
+<p>Finally reboot or restart samba <code>systemctl restart samba</code></p>
+<p><strong>EDIT:</strong></p>
+<p>The first time you add a linux user (<code>adduser</code>) you need to add them to smbpasswd as well.</p>
+<p><code>sudo smbpasswd -a &lt;user&gt;</code></p>
+<h2 id="speedtest-alerts">Speedtest alerts</h2>
+<p>This one was very simple, I made a simple script in php to send me alerts when my house was not getting the speeds I pay for. You will need to have php-cli,  speedtest-cli installed and smtp credentials for email. You can <a href="https://downloads.techreanimate.com/kzhota">download the scripts</a></p>
+<p>After downloading them, add a line to your schedule tasks in linux using crontab -e</p>
+<pre tabindex="0"><code>0 8 * * * /usr/bin/php /mnt/4000/home/ldrrp/Scripts/speedtest.php
+</code></pre>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2019/2019-05-30-home-server-setup.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2019/2019-05-30-home-server-setup.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2019/05/29/phone-case-gamepad-usb-c-version/" data-toggle="tooltip" data-placement="top" title="Phone case gamepad, USB-C version">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/2019/05/31/hobbyist-3d-printer-roundup-of-2019/" data-toggle="tooltip" data-placement="top" title="Hobbyist 3d printer roundup of 2019">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs
+          &nbsp;&bull;&nbsp;
+          2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

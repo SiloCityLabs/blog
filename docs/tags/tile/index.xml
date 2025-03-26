@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tile on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/tile/</link>
+    <description>Recent content in Tile on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Thu, 19 Jul 2018 06:36:37 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/tile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reusing Tile as car tracker.</title>
+      <link>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</link>
+      <pubDate>Thu, 19 Jul 2018 06:36:37 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2018/07/19/reusing-tile-as-car-tracker/</guid>
+      <description>&lt;p&gt;Ever since I switched to Samsung smart things I purchased presence sensors and had no more use for my tiles after the batteries died. I retired them to a box for a long time. Today I figured out a neat project for the tile. I am going to turn it into a tracker for my cars. This is not real time tracking but can help find your car in larger cities.&lt;/p&gt;&#xA;&#xA;    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/07/use-your-phone-to-find-your-car3939281002465595095.png&#34; alt=&#34;&#34;/&gt;&#xA;&#xA;&lt;p&gt;Supplies/Tools needed:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pry Tool&lt;/li&gt;&#xA;&lt;li&gt;Hot Glue gun&lt;/li&gt;&#xA;&lt;li&gt;Voltage Meter&lt;/li&gt;&#xA;&lt;li&gt;Dead battery Tile&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://a.tra.li/Tn1h&#34;&gt;DC to DC Buck Converter&lt;/a&gt; or &lt;a href=&#34;http://a.tra.li/Tqhy&#34;&gt;Linear converter&lt;/a&gt; (see update below)&lt;/li&gt;&#xA;&lt;li&gt;Soldering iron&lt;/li&gt;&#xA;&lt;li&gt;Wire stripper/cutter&lt;/li&gt;&#xA;&lt;li&gt;Drill (optional)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

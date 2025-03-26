@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security Cameras on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/security-cameras/</link>
+    <description>Recent content in Security Cameras on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Thu, 30 May 2019 23:30:33 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/security-cameras/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Server Setup.</title>
+      <link>https://silocitylabs.com/post/2019/05/30/home-server-setup/</link>
+      <pubDate>Thu, 30 May 2019 23:30:33 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2019/05/30/home-server-setup/</guid>
+      <description>&lt;p&gt;Today I will talk about my server setup by request. I setup my server originally for Security cameras because I was tired of proprietary software that every different camera has. My setup right now includes 4 entirely different types of cameras. None of them officially support ONVIF. Every one of my cameras was free so quality was not something I cared for. Today, my server now has my Windows File share (Samba), offsite Sync, Software Raid, Crontab Network Speed monitoring and &lt;a href=&#34;https://www.zoneminder.com/&#34;&gt;zoneminder&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nightowl BNC and Zoneminder</title>
+      <link>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</link>
+      <pubDate>Thu, 27 Dec 2018 23:30:18 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2018/12/27/nightowl-bnc-and-zoneminder/</guid>
+      <description>&lt;h3 id=&#34;nightowl-bnc&#34;&gt;Nightowl BNC&lt;/h3&gt;&#xA;&#xA;    &lt;img class=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&#34; data-src=&#34;https://silocitylabs.com/uploads/2018/08/images.jpg&#34; alt=&#34;&#34;/&gt;&#xA;&#xA;&lt;h4 id=&#34;details&#34;&gt;Details:&lt;/h4&gt;&#xA;&lt;p&gt;These are just about every cheap camera sold in store. You can buy these at home depot, walmart, and other retailers. Your best bet is craigslist you can get them for like $10 each. They use a basic analog signal you can hookup to a TV with the right connector. The main connector is called a BNC connector. The downside to these cameras is that they usually cap out at 720p. You will also need a PCI or usb device to hook it up to your server. Unless you already have these cameras laying around, I WOULD NOT RECOMMEND this setup for purchase. Its cheaper to get a 1080p camera on amazon for $20 with less wiring and no pci card.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
