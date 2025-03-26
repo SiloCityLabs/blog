@@ -1,7 +1,7 @@
 ---
 title: Getting Started with the ESP32MiniSD
 subtitle: Add Storage to Your ESP32 Projects
-author: Luis Rodriguez
+author: Don Ko
 type: post
 date: 2025-02-10
 categories: 
