@@ -16,9 +16,10 @@ Learn more about Github Pages at https://pages.github.com and the official [docu
 To work locally with this project, you'll have to follow the steps below:
 
 1. Fork, Clone this project
-2. [Install](https://gohugo.io/overview/installing/) Hugo
-3. Preview your project: `hugo server`, your site can be accessed under `localhost:1313/`.
-4. Add content
+2. Download hugo v0.123.6 to root of this project https://github.com/gohugoio/hugo/releases/tag/v0.123.6
+3. Make executable: `chmod +x hugo`
+4. Preview your project: `./hugo server`, your site can be accessed under `localhost:1313/`.
+5. Add content
 
 ## Github Actions
 
