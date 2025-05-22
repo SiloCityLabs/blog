@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2025-05-21T00:57:15+00:00</lastmod>
+    <lastmod>2025-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2025-05-21T00:57:15+00:00</lastmod>
+    <lastmod>2025-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/3dgenius/</loc>
     <lastmod>2025-03-26T00:00:00+00:00</lastmod>
@@ -106,6 +106,9 @@
   </url><url>
     <loc>https://silocitylabs.com/tags/security/</loc>
     <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/andrew-elbaneh/</loc>
+    <lastmod>2025-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/andrew-portfolio/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
@@ -1104,8 +1107,6 @@
     <lastmod>2013-10-04T22:36:25+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/page/about/</loc>
-  </url><url>
-    <loc>https://silocitylabs.com/author/andrew-elbaneh/</loc>
   </url><url>
     <loc>https://silocitylabs.com/newsletter/</loc>
   </url><url>

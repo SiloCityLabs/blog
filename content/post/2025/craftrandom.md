@@ -1,6 +1,7 @@
 ---
 title: Introducing CraftRandom
 subtitle: Randomized Minecraft Inventory Generator
+author: Andrew Elbaneh
 type: post
 date: 2025-01-10
 categories:
@@ -16,7 +17,6 @@ tags:
   - creativity
   - fun
   - challenges
-
 ---
 
 {{< image src="/uploads/2025/craftrandom.webp" alt="Screenshot of craftrandom site">}}

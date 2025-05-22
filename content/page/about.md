@@ -9,21 +9,25 @@ We are a group of developers who work together to help one another strive at our
 ## What we do best:
 
 #### Search Engine Optimization
+
 Our SEO experts can get your site on google and Bing!
 
 #### Web Design
+
 Our team has the skillset to get you your desired look and function.
 
 #### Mobile Apps
+
 We strive to keep all sites mobile ready and if thats not enough, we also provide Android development
 
 #### Development
-Have your custom system designed for your needs. We specialize in Go, PHP, Java, HTML and many more web and software languages
+
+Have your custom system designed for your needs. We specialize in Go, PHP, Java, Typescript, HTML and many more web and software languages
 
 ## Who we are:
 
-[Luis Rodriguez](/author/luis-rodriguez) - Software Engineer
+[Luis Rodriguez](/author/luis-rodriguez) - Senior Software Engineer - Technologist
 
 [Robert Greene](/author/maave) - Full Stack Developer
 
-[Andrew Elbaneh](/author/andrew-elbaneh) - Full Stack Developer
+[Andrew Elbaneh](/author/andrew-elbaneh) - Senior Software Engineer

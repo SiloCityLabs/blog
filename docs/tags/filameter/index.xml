@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filameter on SCL Blog</title>
+    <link>http://localhost:1313/tags/filameter/</link>
+    <description>Recent content in Filameter on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Wed, 21 May 2025 00:57:15 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/filameter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing FilaMeter</title>
+      <link>http://localhost:1313/post/2025/filameter/</link>
+      <pubDate>Wed, 21 May 2025 00:57:15 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>http://localhost:1313/post/2025/filameter/</guid>
+      <description>&lt;p&gt;If you’ve ever struggled to keep track of your 3D filament spools, wondering how much filament is left or dealing with a failed print due to an empty spool, FilaMeter is the filament tracking solution you’ve been looking for. Managing your 3D printing filament inventory no longer has to involve guesswork.&lt;/p&gt;&#xA;&lt;p&gt;[https://github.com/SiloCityLabs/filameter.com/raw/main/public/images/screenshots/spools-4-9-25.png]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
