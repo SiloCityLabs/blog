@@ -8,13 +8,11 @@
   <title>Posts</title>
   <meta property="og:title" content="Posts" />
   <meta name="twitter:title" content="Posts" />
-  <meta name="author" content="Silo City Labs"/>
+  <meta name="author" content=""/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
   <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@silocitylabs" />
-  <meta name="twitter:creator" content="@silocitylabs" />
   <meta property="og:url" content="https://silocitylabs.com/post/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SCL Blog" />
@@ -35,17 +33,13 @@
   <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
   <meta name="theme-color" content="#e7e7e7">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
 <script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-78226868-1', 'auto');
-	
-	ga('send', 'pageview');
-}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 </head>
 
   <body>
@@ -162,6 +156,43 @@ if (!doNotTrack) {
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/">
+                <h2 class="post-title">Smart Things 433mhz</h2>
+    
+                
+              </a>
+    
+              <p class="post-meta">
+                Posted on December 1, 2017
+              </p>
+              <div class="post-entry">
+                
+                  Going to be creating a receiver to translate 433mhz sensors to smart things, Most likely going to be using a esp8266 to make it easier to configure. I still have to figure out how to identify the smart things hub withouth manually entering in its ip, maybe upnp?
+I also bought a CC2530 chip for zigbee testing, Not sure what im going to do with that yet.
+Edit: I think I may have made a mistake buying zigbee chips.
+                  <a href="https://silocitylabs.com/post/2017/12/01/smart-things-433mhz/" class="post-read-more">[Read More]</a>
+                
+              </div>
+    
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://silocitylabs.com/tags/433mhz">433mhz</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/more-things">more things</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/morethings">morethings</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/smartthings">smartthings</a>&nbsp;
+                  
+                    #<a href="https://silocitylabs.com/tags/zigbee">zigbee</a>&nbsp;
+                  
+                </span>
+              
+    
+            </article>
           
             <article class="post-preview">
               <a href="https://silocitylabs.com/post/projects/wise-guys/">
@@ -498,39 +529,6 @@ You can checkout the other contributors for refferences.
     
             </article>
           
-            <article class="post-preview">
-              <a href="https://silocitylabs.com/post/projects/nexmo-php-class/">
-                <h2 class="post-title">Sending SMS via the Nexmo SMS gateway.</h2>
-    
-                
-              </a>
-    
-              <p class="post-meta">
-                Posted on September 15, 2015
-              </p>
-              <div class="post-entry">
-                
-                  <p>A class written to simplify the use of the nexmo api gateway for SMS messaging. This class was a fork from another repository with new gateway endpoints added and adding an entirely new service for automated phone calls with a tts engine. <a href="https://gitlab.com/silo-city-labs-llc/Nexmo-PHP-lib">Download the file here</a> or look at the code below.</p>
-                  <a href="https://silocitylabs.com/post/projects/nexmo-php-class/" class="post-read-more">[Read More]</a>
-                
-              </div>
-    
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://silocitylabs.com/tags/luis-portfolio">luis-portfolio</a>&nbsp;
-                  
-                    #<a href="https://silocitylabs.com/tags/php">php</a>&nbsp;
-                  
-                    #<a href="https://silocitylabs.com/tags/sms">sms</a>&nbsp;
-                  
-                    #<a href="https://silocitylabs.com/tags/gateway">gateway</a>&nbsp;
-                  
-                </span>
-              
-    
-            </article>
-          
         </div>
         
           <ul class="pager main-pager">
@@ -556,70 +554,6 @@ You can checkout the other contributors for refferences.
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
-              <li>
-                <a href="mailto:team@silocitylabs.com" title="Email me">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-mail icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/SiloCityLabs" title="Facebook">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-facebook icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://gitlab.com/silo-city-labs-llc" title="GitLab">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-gitlab icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/SiloCityLabs/blog" title="GitHub">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-github icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/silocitylabs" title="Twitter">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-twitter icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/company/10586208" title="LinkedIn">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-linkedin icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UC9vgzat1SRdQ8NNsCQ6d7cA" title="Youtube">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-youtube-play icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://silocitylabs.com/newsletter" title="Newsletter">
-                  <span class="icon-stack icon-lg">
-                    <i class="icon icon-circle icon-stack-2x"></i>
-                    <i class="icon icon-newspaper icon-stack-1x icon-inverse"></i>
-                  </span>
-                </a>
-              </li>
           
           <li>
             <a href="https://silocitylabs.com/index.xml" title="RSS">
@@ -632,7 +566,7 @@ You can checkout the other contributors for refferences.
           
         </ul>
         <p class="credits copyright text-muted">
-          Silo City Labs
+          
           &nbsp;&bull;&nbsp;
           2025
 

@@ -8,8 +8,50 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 26 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airtap-T4</title>
+      <link>https://silocitylabs.com/tags/airtap-t4/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-t4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Airtap-T6</title>
+      <link>https://silocitylabs.com/tags/airtap-t6/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-t6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esphome</title>
+      <link>https://silocitylabs.com/tags/esphome/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esphome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Assistant</title>
+      <link>https://silocitylabs.com/tags/home-assistant/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/home-assistant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Made-for-Esphome</title>
+      <link>https://silocitylabs.com/tags/made-for-esphome/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/made-for-esphome/</guid>
+      <description></description>
+    </item>
     <item>
       <title>3dgenius</title>
       <link>https://silocitylabs.com/tags/3dgenius/</link>
@@ -25,24 +67,10 @@
       <description></description>
     </item>
     <item>
-      <title>ESP32</title>
-      <link>https://silocitylabs.com/tags/esp32/</link>
-      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Esp8266</title>
       <link>https://silocitylabs.com/tags/esp8266/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/esp8266/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Esphome</title>
-      <link>https://silocitylabs.com/tags/esphome/</link>
-      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esphome/</guid>
       <description></description>
     </item>
     <item>
@@ -57,13 +85,6 @@
       <link>https://silocitylabs.com/tags/firos/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/firos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Home Assistant</title>
-      <link>https://silocitylabs.com/tags/home-assistant/</link>
-      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/home-assistant/</guid>
       <description></description>
     </item>
     <item>

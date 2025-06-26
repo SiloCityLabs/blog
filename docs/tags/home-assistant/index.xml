@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 26 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/home-assistant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ESP32 Module for AC Infinity AirTap T4/T6.</title>
+      <link>https://silocitylabs.com/post/2025/esp32-airtap-esphome/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/esp32-airtap-esphome/</guid>
+      <description>&lt;p&gt;At SiloCityLabs, we’re always working to improve our products, and 2025 has brought a number of exciting updates to our &lt;strong&gt;ESP32 Module for AC Infinity Airtap T4/T6&lt;/strong&gt;! With new features and design enhancements, this latest version offers better &lt;strong&gt;smart home integration, improved usability, and customization options&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Filament Dryer PCB</title>
       <link>https://silocitylabs.com/post/2025/esp32-oem-dryer-box/</link>
