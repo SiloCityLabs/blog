@@ -7,14 +7,13 @@ draft: true
 categories:
   - Projects
 tags:
-  - web-development
-  - mobile-app-development
+  - andrew-portfolio
+  - development
+  - html
+  - css
   - ai-solutions
-  - buffalo-tech
-  - business-solutions
-  - SEO-services
-  - digital-marketing
-  - UX/UI-design
+  - seo
+  - ui/ux
 ---
 
 {{< image src="/uploads/2025/obl-logo-banner.png" alt="Screenshot of filameter.com">}}
