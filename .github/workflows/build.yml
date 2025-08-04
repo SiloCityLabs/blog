@@ -2,67 +2,74 @@ name: Build website using build/build.go
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 0 1 * *'
+    - cron: "0 0 1 * *"
   push:
     paths:
-    - '*'        # Run workflow for all file paths
-    - 'build/**'
-    - 'content/**'
-    - 'static/**'
-    - 'themes/**'
-    - '!/docs/*' # Don't run workflow when files are only in the /docs directory
+      - "*" # Run workflow for all file paths
+      - "build/**"
+      - "content/**"
+      - "static/**"
+      - "themes/**"
+      - "!/docs/*" # Don't run workflow when files are only in the /docs directory
     branches:
       - master
 
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-22.04
     steps:
+      - name: Set up Go 1.21
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.21
+        id: go
 
-    - name: Set up Go 1.21
-      uses: actions/setup-go@v4
-      with:
-        go-version: 1.21
-      id: go
+      - name: Check out code into the Go module directory
+        env:
+          advice.detachedHead: false
+        uses: actions/checkout@master
 
-    - name: Check out code into the Go module directory
-      env:
-        advice.detachedHead: false
-      uses: actions/checkout@master
+      # - name: Install Hugo
+      #   run: |
+      #     curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_[^extended].*_linux-amd64\.deb" | cut -d ":" -f 2,3 | tr -d \" | wget -qi -
+      #     package="$(find . -name "*_linux-amd64.deb")"
+      #     sudo dpkg -i $package
+      #     which hugo
+      #     hugo version
+      #     rm -rf *.deb
 
-    # - name: Install Hugo
-    #   run: |
-    #     curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_[^extended].*_linux-amd64\.deb" | cut -d ":" -f 2,3 | tr -d \" | wget -qi -
-    #     package="$(find . -name "*_linux-amd64.deb")"
-    #     sudo dpkg -i $package
-    #     which hugo
-    #     hugo version
-    #     rm -rf *.deb
+      - name: Install Hugo 0.123.6
+        run: |
+          curl https://github.com/gohugoio/hugo/releases/download/v0.123.6/hugo_0.123.6_linux-amd64.deb -LO
+          sudo dpkg -i hugo_0.123.6_linux-amd64.deb
+          which hugo
+          hugo version
+          rm -rf *.deb
 
-    - name: Install Hugo 0.123.6
-      run: |
-        curl https://github.com/gohugoio/hugo/releases/download/v0.123.6/hugo_0.123.6_linux-amd64.deb -LO
-        sudo dpkg -i hugo_0.123.6_linux-amd64.deb
-        which hugo
-        hugo version
-        rm -rf *.deb
+      - name: Checkout Master
+        run: git checkout master
 
-    - name: Checkout Master
-      run: git checkout master
+      - name: Run Build Program
+        run: |
+          cd build/
+          go mod tidy
+          go run .
 
-    - name: Run Build Program
-      run: |
-        cd build/
-        go mod tidy
-        go run .
+      - name: Commit and Push Changes
+        run: |
+          # Check if there are any changes to commit
+          if ! git status --porcelain | grep .; then
+            echo "No changes to commit. Exiting gracefully."
+            exit 0
+          fi
 
-    - name: Commit Changes
-      run: |
-        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
-        git config --global user.name "Github Actions"
-        git add .
-        git commit -m "New build"
-        git remote set-url origin https://ldrrp:${{ secrets.PERSONAL }}@github.com/${{ github.repository }}.git
-        git push origin master
+          # Configure Git user
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git config --global user.name "Github Actions"
+
+          # Add, commit, and push the changes
+          git add .
+          git commit -m "New build"
+          git remote set-url origin https://ldrrp:${{ secrets.PERSONAL }}@github.com/${{ github.repository }}.git
+          git push origin master
