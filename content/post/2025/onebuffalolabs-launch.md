@@ -3,7 +3,6 @@ title: "Leveraging Tech Innovation: How One Buffalo Labs Supports SiloCityLabs' 
 subtitle: Crafting Web Solutions for Open-Source Innovation
 author: Andrew Elbaneh
 date: 2025-08-04
-draft: true
 categories:
   - Projects
 tags:
