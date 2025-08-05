@@ -13,7 +13,9 @@ tags:
   - css
   - ai-solutions
   - seo
-  - ui/ux
+  - web
+  - wordpress
+  - shopify
 ---
 
 {{< image src="/uploads/2025/obl-logo-banner.png" alt="Screenshot of filameter.com">}}
