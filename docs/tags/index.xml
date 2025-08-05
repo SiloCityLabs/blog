@@ -8,8 +8,71 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai-Solutions</title>
+      <link>https://silocitylabs.com/tags/ai-solutions/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/ai-solutions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Andrew-Portfolio</title>
+      <link>https://silocitylabs.com/tags/andrew-portfolio/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/andrew-portfolio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://silocitylabs.com/tags/css/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>https://silocitylabs.com/tags/development/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://silocitylabs.com/tags/html/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seo</title>
+      <link>https://silocitylabs.com/tags/seo/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/seo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shopify</title>
+      <link>https://silocitylabs.com/tags/shopify/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/shopify/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>https://silocitylabs.com/tags/web/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wordpress</title>
+      <link>https://silocitylabs.com/tags/wordpress/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/wordpress/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Filament Management</title>
       <link>https://silocitylabs.com/tags/filament-management/</link>
@@ -211,13 +274,6 @@
       <link>https://silocitylabs.com/tags/security/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Andrew-Portfolio</title>
-      <link>https://silocitylabs.com/tags/andrew-portfolio/</link>
-      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/andrew-portfolio/</guid>
       <description></description>
     </item>
     <item>
@@ -900,20 +956,6 @@
       <description></description>
     </item>
     <item>
-      <title>Seo</title>
-      <link>https://silocitylabs.com/tags/seo/</link>
-      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/seo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wordpress</title>
-      <link>https://silocitylabs.com/tags/wordpress/</link>
-      <pubDate>Sun, 15 Sep 2019 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/wordpress/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Go</title>
       <link>https://silocitylabs.com/tags/go/</link>
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
@@ -1093,13 +1135,6 @@
       <link>https://silocitylabs.com/tags/daemons/</link>
       <pubDate>Thu, 06 Jun 2019 20:00:28 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/daemons/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Development</title>
-      <link>https://silocitylabs.com/tags/development/</link>
-      <pubDate>Thu, 06 Jun 2019 20:00:28 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/development/</guid>
       <description></description>
     </item>
     <item>
@@ -1439,24 +1474,10 @@
       <description></description>
     </item>
     <item>
-      <title>Css</title>
-      <link>https://silocitylabs.com/tags/css/</link>
-      <pubDate>Sat, 15 Sep 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Domain</title>
       <link>https://silocitylabs.com/tags/domain/</link>
       <pubDate>Sat, 15 Sep 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/domain/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://silocitylabs.com/tags/html/</link>
-      <pubDate>Sat, 15 Sep 2018 22:36:25 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/html/</guid>
       <description></description>
     </item>
     <item>
