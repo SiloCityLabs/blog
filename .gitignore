@@ -1,3 +1,6 @@
+.github/copilot-instructions.md
+*.instructions.md
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
