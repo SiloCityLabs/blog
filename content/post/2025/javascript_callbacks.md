@@ -61,26 +61,65 @@ In Javascript this operation is asynchronous. We're not simply waiting. We're ru
 
 # Functions are objects, too
 
-[The Function object provides methods for functions. In JavaScript, every function is actually a Function object.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function).
+[In JavaScript, every function is actually a Function object.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function).
 
 ```javascript
 function func1(){
     return "hello world";
 }
-const funcObj = createFunction1();
+const funcObj = func1;
 console.log( funcObj() ); //outputs "hello world"
 ```
 
-or
+[The function keyword can be used to define a function inside an expression.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 
 ```javascript
-const funcObj = function func1(){
+ // function may be ommitted
+const funcObj = function (){
     return "hello world";
 }
 console.log( funcObj() ); //outputs "hello world"
 ```
 
 We don't even need to assign it. Simply pass it around, use it as a param. It could be a function triggered by a forEach loop, or a callback function triggered by a fetch request
+
+# ForEach
+
+Introduced: ES5, 2009
+
+Loops through an array, calls a function for each item in the array.
+
+```javascript
+numbers=[1,2,3,4]
+sum = 0;
+numbers.forEach(  // loop through callback array
+  function(num) {
+    sum += num;
+  }
+);
+console.log("sum:"+sum); // "sum:10"
+
+numbers.forEach( someOtherFunction );
+```
+
+# Rest Parameters
+
+Introduced: ES6, 2015
+
+[The rest parameter syntax allows a function to accept an indefinite number of arguments as an array.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters). `...` syntax.
+
+```javascript
+function addNumbers(...numbers) { // many params, condense to an array
+  sum = 0;
+  numbers.forEach(
+    function(num) {
+      sum += num;
+    }
+  );
+  console.log("sum:"+sum);
+}
+addNumbers(1,2,3,4); // "sum:10"
+```
 
 # Callbacks
 
@@ -94,7 +133,7 @@ function greet(name, callback) {
 
 function greetMany(name, ...callbacks) { // many params
   console.log(`Hello, ${name}!`);
-  callbacks.forEach(  // loop through callback array
+  callbacks.forEach(
     function(callback) {
       callback(); // execute
     }
@@ -112,11 +151,50 @@ greet("Alice", sayGoodbye); // Pass sayGoodbye as a callback
 greet("Alice", saySomethingElse, sayGoodbye);
 ```
 
-Callbacks are generally used for asynchronous calls - functions that run in the background, that may take some time to return a value. This looks OK now but can get messy with many callbacks.
+Callbacks are generally used for asynchronous calls - functions that run in the background, that may take some time to return a value. 
+
+```javascript
+const db = new PouchDB('my_database_');
+
+db.remove('001'); //clear my dev record, don't handle error
+//sleep, brute force waiting until the db is cleared
+function sleep(ms=1000) {
+  const start = Date.now();
+  while ( Date.now() - start < ms ) {};
+  console.log("waited " + ms + " ms");
+}
+sleep();
+
+const doSomething = function(err, doc){
+  // last thing to run
+  console.log(doc.title);
+}
+
+const errorHandler = function(err, response) {
+  if (err) { 
+    return console.log(err); 
+  }
+  // OK response and revision# from pouchdb
+  console.log(response);
+  db.get( response.id, doSomething);
+}
+
+let helloWorld = {
+  _id: '001',
+  title: 'Hello World'
+}
+
+// doc, callbackFunction
+db.put( helloWorld, errorHandler );
+```
+
+This looks OK now but can get messy with many callbacks.
 
 # Arrow syntax
 
-This is getting too long. We need shorter functions. Arrow syntax ` => ` was introduced in ES6 in 2015 to make this faster.
+Introduced: ES6, 2015
+
+This is getting too long. We need shorter functions. [Arrow syntax ` => ` will make this faster](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 
 ```javascript
 (parameters) => expression
@@ -173,10 +251,12 @@ function saySomethingElse(){
     console.log("Nice to meet you.");
 }
 
-greet("Alice", saySomethingElse, sayGoodbye);
+greetMany("Alice", saySomethingElse, sayGoodbye);
 ```
 
 # Promises
+
+
 
 # Async
 
@@ -185,18 +265,20 @@ greet("Alice", saySomethingElse, sayGoodbye);
 Our examples will use [PouchDB](https://pouchdb.com/), a JavaScript database that works in the browser. It's a document database that stores JSON objects. Every object has a unique primary key `_id`. 1 ID = 1 JSON object. 
 
 ```javascript
-const db = new PouchDB('my_database');
+const db = new PouchDB("my_database_");
+db.destroy(); //hope this works fast enough, I have leftover data
 
 let helloWorld = {
-  _id: '001',
-  title: 'Hello World'
+  _id: "001",
+  title: "Hello World"
 }
 
-db.put( helloWorld )
-.then(function (doc) {
-  console.log( doc.title ); //outputs 'Hello World'
+db.put( helloWorld ).then(function (doc) {
+  //this doc is the "ok" response from PouchDB
+  // {\"ok\":true,\"id\":\"001\",\"rev\":\"1-69c3951a3eb33c5c9a3067dfbff77ece\"}
+  console.log( JSON.stringify(doc) );
 }).catch(function (err) {
-  console.error('Error:', err);
+  console.error("Error:", err);
 });
 
 console.log("End");
