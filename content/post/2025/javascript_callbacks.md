@@ -291,6 +291,29 @@ Introduced: ES8, 2017
 
 [The await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
+```javascript
+const db = new PouchDB('my_database_'+Math.random()); // getting tired of previous records
+
+let doc = {
+  _id: '001',
+  title: 'Hello World'
+}
+
+async function doStuff() { // async func runs in a new thread
+  try {
+    const response = await db.put(doc); // wait for promise to complete
+    const gotDoc = await db.get("001");
+    console.log(gotDoc.title);
+  } catch (err) {
+    console.log(err);
+  }
+
+}
+doStuff();
+console.log("start");
+```
+
+Finally our code look sane and serial. Under the hood this is still using promises.
 
 
 # PouchDB
