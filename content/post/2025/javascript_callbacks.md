@@ -346,3 +346,90 @@ console.log("start");
 
 Finally our code look sane and serial. Under the hood this is still using promises. Mentally, the entire runs in the backround as its own thread.
 
+# Combined samples
+
+## Promises and arrow functions
+
+[In this example from BeyBuilder X](https://github.com/fabelavalon/BeyBuilderX/blob/d645bf8934b97bcf62f6c5afb71d47da177fa2bc/main.js#L750), we need to update 2 records at a time. This was a pain in the butt with full functions and PouchDB revision management, but became easy when I could compact things with arrow function like `d => d.wko++`. Our helper function updateField() accepts this arrow function, gets the record, runs the func on the record to modify, then puts the record to the database (with _rev). The final function is quite readable and the promise chain runs in logical order.
+
+```javascript
+/**
+ * updates a field on a vsRecord
+ * (technically, it can do more with the function)
+ * returns promise from pouchdb
+ * ex: increment wko (KO wins)
+ * updateField(record1Id, d => d.wko++).then(doStuffFunc);
+ * @param {string} id - beyblade id
+ * @param {*} updater - provide your own function
+ * @returns promise
+ */
+function updateField(id, updater) {
+  return recordsDBX.get(id).then(doc => {
+    updater(doc);
+    return recordsDBX.put(doc);
+  });
+}
+
+//update the records database with a result is chosen
+function updateRecords(winner, loser, outcome){
+    var record1Id = winner.id + " " + loser.id;
+    var record2Id = loser.id + " " + winner.id;
+    
+    /*
+    addRecords was too long, for full source check the git link for BeyBuilder X
+    addRecord returns a promise like // return recordsDBX.put(winRecord);
+    */
+    promiseChain = addRecord(winner, loser) // create if they don't exist
+    .then(() => addRecord(loser, winner)) 
+    .then(() => {
+        console.log("update record");
+        // collect promises (DB updates) for both records
+        let promises = [];
+
+        switch (outcome) {
+          case "KO":
+              promises.push(updateField(record1Id, d => d.wko++));
+              promises.push(updateField(record2Id, d => d.lko++));
+              break;
+          case "SO":
+              promises.push(updateField(record1Id, d => d.wso++));
+              promises.push(updateField(record2Id, d => d.lso++));
+              break;
+          case "burst":
+              promises.push(updateField(record1Id, d => d.wbst++));
+              promises.push(updateField(record2Id, d => d.lbst++));
+              break;
+          case "x":
+              promises.push(updateField(record1Id, d => d.wx++));
+              promises.push(updateField(record2Id, d => d.lx++));
+              break;
+          case "draw":
+              promises.push(updateField(record1Id, d => d.draws++));
+              promises.push(updateField(record2Id, d => d.draws++));
+              break;
+          case "update":
+              promises.push(updateField(record1Id, d => {
+                  d.challenger = winner;
+                  d.defender = loser;
+              }));
+              promises.push(updateField(record2Id, d => {
+                  d.challenger = loser;
+                  d.defender = winner;
+              }));
+              break;
+          default:
+              console.log("Something went wrong. Record not added");
+        }
+        // submit whatever results are in the list
+        return Promise.all(promises);
+    })
+    .then(() => {
+        // all DB updates finished, now update UI
+        return displayRecords();
+    });
+
+    return promiseChain;
+}
+
+
+```
