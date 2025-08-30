@@ -13,7 +13,7 @@ tags:
   - pouchdb
 ---
 
-PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven't written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.
+I'm using [PouchDB](https://pouchdb.com/) lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven't written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.
 
 # Synchronous PHP example
 
@@ -249,7 +249,7 @@ greetMany("Alice", saySomethingElse, sayGoodbye);
 
 # PouchDB
 
-Our examples will use [PouchDB](https://pouchdb.com/), a JavaScript database that works in the browser. It's a document database that stores JSON objects. Every object has a unique primary key `_id`. 1 ID = 1 JSON object. Once in the database, every object gets a revision `_rev` to prevent data conflicts. To update an object you must provide `_id` AND the current `_rev`. Practically that means every put() needs a get().
+PouchDB a document database that stores JSON objects. Every object has a unique primary key `_id`. 1 ID = 1 JSON object. Once in the database, every object gets a revision `_rev` to prevent data conflicts. To update an object you must provide `_id` AND the current `_rev`. Practically that means every put() needs a get().
 
 PouchDB can use callbacks, promises, or async. `db.get( id )` returns a promise. ["A Promise is an object representing the eventual completion or failure of an asynchronous operation."](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises). It's not the DB object we want, it's a running process in object form.
 
