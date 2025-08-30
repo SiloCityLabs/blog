@@ -229,9 +229,9 @@
  
               <div class="post-entry">
                 
-                  I&rsquo;m using PouchDB lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven&rsquo;t written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.
-Synchronous PHP example Here is a PHP sample of accessing a database.
-$couch = new CouchClient(&#39;http://localhost:5984&#39;, &#39;my_database&#39;); $helloWorld = [ &#39;_id&#39; =&gt; &#39;001&#39;, &#39;title&#39; =&gt; &#39;Hello World&#39; ]; $couch-&gt;storeDoc($helloWorld); // Save the document to CouchDB $doc = $couch-&gt;getDoc(&#39;001&#39;); echo $doc-&gt;title; // outputs &#39;Hello World&#39; echo &#34;End&#34;; Each command runs serially, one after the other.
+                  <p>I&rsquo;m using <a href="https://pouchdb.com/">PouchDB</a> lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven&rsquo;t written JS in quite a while so this was daunting. Lets go through all the pieces that add up to <em>easy</em> async database calls.</p>
+<h1 id="synchronous-php-example">Synchronous PHP example</h1>
+<p>Here is a PHP sample of accessing a database.</p>
                   <a href="https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/" class="post-read-more">[Read More]</a>
                 
               </div>
