@@ -19,6 +19,8 @@ I'm using [PouchDB](https://pouchdb.com/) lately, a JavaScript database that wor
 
 Here is a PHP sample of accessing a database. 
 
+<!--more-->
+
 ```php
 $couch = new CouchClient('http://localhost:5984', 'my_database');
 
