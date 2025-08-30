@@ -91,7 +91,7 @@ We don't even need to assign it. Simply pass it around, use it as a param. It co
 I'll be using these features in examples but they aren't required for PouchDB
 
 <details>
-  <summary>ForEach and Rest Parameters examples [SPOILER]</summary>
+  <summary>ForEach and Rest Parameters examples</summary>
 
 ## ForEach
 Introduced: ES5, 2009

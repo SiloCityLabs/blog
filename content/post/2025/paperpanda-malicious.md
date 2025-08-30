@@ -53,7 +53,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 [ZIP file of the extension](/uploads/2025/paperpanda_2.1.6.zip)
 
 <details>
-  <summary>background.js [SPOILER]</summary>
+  <summary>background.js</summary>
 
 ```
 (function () {
@@ -86,7 +86,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 </details>
 
 <details>
-  <summary>content.js [SPOILER]</summary>
+  <summary>content.js</summary>
 
 ```
 (function () {
@@ -181,7 +181,7 @@ Fortunately, viewing the code for a Chrome extension is easy and there aren't to
 </details>
 
 <details>
-  <summary>response from config.php aka config.json [SPOILER]</summary>
+  <summary>response from config.php aka config.json</summary>
 
 ```
 {
