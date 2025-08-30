@@ -9,10 +9,11 @@ categories:
   - JavaScript
 tags:
   - promises
+  - async
   - pouchdb
 ---
 
-PouchDB for Javascript requires stacking quite a bit of JS-syntax together. I haven't written JS in quite a while so this was daunting.
+PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven't written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.
 
 # Synchronous PHP example
 
@@ -151,22 +152,14 @@ greet("Alice", sayGoodbye); // Pass sayGoodbye as a callback
 greet("Alice", saySomethingElse, sayGoodbye);
 ```
 
-Callbacks are generally used for asynchronous calls - functions that run in the background, that may take some time to return a value. 
+Callbacks are used for asynchronous calls - functions that run in the background. For example, PouchDB database calls use callbacks.
 
 ```javascript
-const db = new PouchDB('my_database_');
-
-db.remove('001'); //clear my dev record, don't handle error
-//sleep, brute force waiting until the db is cleared
-function sleep(ms=1000) {
-  const start = Date.now();
-  while ( Date.now() - start < ms ) {};
-  console.log("waited " + ms + " ms");
-}
-sleep();
+const db = new PouchDB('my_database_'+Math.random()); // getting tired of previous records
 
 const doSomething = function(err, doc){
   // last thing to run
+  // this could update the UI with record info
   console.log(doc.title);
 }
 
@@ -254,6 +247,32 @@ function saySomethingElse(){
 greetMany("Alice", saySomethingElse, sayGoodbye);
 ```
 
+# PouchDB
+
+Our examples will use [PouchDB](https://pouchdb.com/), a JavaScript database that works in the browser. It's a document database that stores JSON objects. Every object has a unique primary key `_id`. 1 ID = 1 JSON object. Once in the database, every object gets a revision `_rev` to prevent data conflicts. To update an object you must provide `_id` AND the current `_rev`. Practically that means every put() needs a get().
+
+PouchDB can use callbacks, promises, or async. `db.get( id )` returns a promise. ["A Promise is an object representing the eventual completion or failure of an asynchronous operation."](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises). It's not the DB object we want, it's a running process in object form.
+
+
+```javascript
+const db = new PouchDB("my_database_"+Math.random()); // getting tired of previous records
+
+let helloWorld = {
+  _id: "001",
+  title: "Hello World"
+}
+
+db.put( helloWorld ).then(function (doc) {
+  //this doc is the "ok" response from PouchDB
+  // {\"ok\":true,\"id\":\"001\",\"rev\":\"1-69c3951a3eb33c5c9a3067dfbff77ece\"}
+  console.log( JSON.stringify(doc) );
+}).catch(function (err) {
+  console.error("Error:", err);
+});
+
+console.log("End");
+```
+
 # Promises
 
 [A Promise is an object representing the eventual completion or failure of an asynchronous operation. Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
@@ -284,7 +303,6 @@ db.put(doc)
 
 ```
 
-
 # Async
 
 Introduced: ES8, 2017
@@ -292,19 +310,32 @@ Introduced: ES8, 2017
 [The await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
 ```javascript
-const db = new PouchDB('my_database_'+Math.random()); // getting tired of previous records
+const db = new PouchDB('my_database_');
 
 let doc = {
   _id: '001',
   title: 'Hello World'
 }
 
-async function doStuff() { // async func runs in a new thread
+// async func runs in a new thread
+async function doStuff() {
+  // wipe old records if they exist
+  try {
+    const gotDoc = await db.get("001");  // wait for promise to complete
+    await db.remove(gotDoc);
+  } catch (err) {
+    console.log("Nothing to remove");
+  }
+
+  // put and get
   try {
     const response = await db.put(doc); // wait for promise to complete
     const gotDoc = await db.get("001");
     console.log(gotDoc.title);
-  } catch (err) {
+    console.log("end");
+  } catch (err) {  
+    // all promise errors caught at the end
+    console.log("Error");
     console.log(err);
   }
 
@@ -313,45 +344,5 @@ doStuff();
 console.log("start");
 ```
 
-Finally our code look sane and serial. Under the hood this is still using promises.
+Finally our code look sane and serial. Under the hood this is still using promises. Mentally, the entire runs in the backround as its own thread.
 
-
-# PouchDB
-
-Our examples will use [PouchDB](https://pouchdb.com/), a JavaScript database that works in the browser. It's a document database that stores JSON objects. Every object has a unique primary key `_id`. 1 ID = 1 JSON object. 
-
-```javascript
-const db = new PouchDB("my_database_");
-db.destroy(); //hope this works fast enough, I have leftover data
-
-let helloWorld = {
-  _id: "001",
-  title: "Hello World"
-}
-
-db.put( helloWorld ).then(function (doc) {
-  //this doc is the "ok" response from PouchDB
-  // {\"ok\":true,\"id\":\"001\",\"rev\":\"1-69c3951a3eb33c5c9a3067dfbff77ece\"}
-  console.log( JSON.stringify(doc) );
-}).catch(function (err) {
-  console.error("Error:", err);
-});
-
-console.log("End");
-```
-
-The brute-force serial method. Wait for the object to probably, hopefully, finish.
-
-```javascript
-db.put( doc );
-sleep(1000);
-db.get( doc.id );
-```
-
-Once in the database, every object gets a revision `_rev` to prevent data conflicts. To update an object you must provide `_id` AND the current `_rev`. You can't blind-update a record ... well you can with `force=true` but it's not recommended. Practically that means every put() needs a get().
-
-`db.get( id )` returns a promise. ["A Promise is an object representing the eventual completion or failure of an asynchronous operation."](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises). It's not the DB object we want, it's a running process in object form.
-
-```javascript
-db.get( doc.id );
-```
