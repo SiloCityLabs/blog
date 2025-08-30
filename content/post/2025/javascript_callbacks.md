@@ -256,9 +256,42 @@ greetMany("Alice", saySomethingElse, sayGoodbye);
 
 # Promises
 
+[A Promise is an object representing the eventual completion or failure of an asynchronous operation. Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+
+Straight from the [pouchDB docs we can find the promise version of this](https://pouchdb.com/api.html#delete_document)
+
+```javascript
+const db = new PouchDB('my_database_'+Math.random()); // getting tired of previous records
+
+let doc = {
+  _id: '001',
+  title: 'Hello World'
+}
+
+const log = function(doc) {
+  console.log(doc.title);
+}
+
+db.put(doc)
+.then( function (response) {
+  // OK response
+  console.log( "OK\n" + JSON.stringify(response) );
+  return db.get("001").then(log); // return a promise object so the errors can be caught
+}).catch(function (err) {
+  console.log( "error" );
+  console.log( JSON.stringify(err) );
+});
+
+```
 
 
 # Async
+
+Introduced: ES8, 2017
+
+[The await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+
+
 
 # PouchDB
 
