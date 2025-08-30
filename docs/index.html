@@ -212,6 +212,44 @@
           
           
             <article class="post-preview">
+              <a href="https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/">
+                <h2 class="post-title">Callbacks suck, async is easy</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on August 25, 2025
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/maave">maave</a>
+</span>
+
+ 
+              <div class="post-entry">
+                
+                  I&rsquo;m using PouchDB lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven&rsquo;t written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.
+Synchronous PHP example Here is a PHP sample of accessing a database.
+$couch = new CouchClient(&#39;http://localhost:5984&#39;, &#39;my_database&#39;); $helloWorld = [ &#39;_id&#39; =&gt; &#39;001&#39;, &#39;title&#39; =&gt; &#39;Hello World&#39; ]; $couch-&gt;storeDoc($helloWorld); // Save the document to CouchDB $doc = $couch-&gt;getDoc(&#39;001&#39;); echo $doc-&gt;title; // outputs &#39;Hello World&#39; echo &#34;End&#34;; Each command runs serially, one after the other.
+                  <a href="https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://silocitylabs.com/tags/pouchdb">pouchdb</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/promises">promises</a>&nbsp;
+                
+                  #<a href="https://silocitylabs.com/tags/async">async</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://silocitylabs.com/post/2025/onebuffalolabs-launch/">
                 <h2 class="post-title">Leveraging Tech Innovation: How One Buffalo Labs Supports SiloCityLabs&#39; Vision</h2>
                 
@@ -662,48 +700,6 @@
                   #<a href="https://silocitylabs.com/tags/local-control">Local Control</a>&nbsp;
                 
                   #<a href="https://silocitylabs.com/tags/cloud-free-technology">Cloud-Free Technology</a>&nbsp;
-                
-                </span>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://silocitylabs.com/post/2024/codrcg-resurrected/">
-                <h2 class="post-title">The Return of CODRCG</h2>
-                
-                  <h3 class="post-subtitle">
-                  We are back!
-                  </h3>
-                
-              </a>
-
-              <span class="post-meta">
-  Posted on December 1, 2024
-  
-</span>
-
-<span class="post-meta">
-  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
-</span>
-
- 
-              <div class="post-entry">
-                
-                  <p>We’re thrilled to announce the return of CODRCG, the Call of Duty Random Class Generator, now fully open source and hosted on <a href="https://github.com/SiloCityLabs/codrcg.com">GitHub</a>! After shutting down in 2022 due to server costs and code maintenance challenges, we&rsquo;ve reimagined CODRCG to thrive on a modern, lightweight platform.</p>
-                  <a href="https://silocitylabs.com/post/2024/codrcg-resurrected/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                
-                  #<a href="https://silocitylabs.com/tags/codrcg">codrcg</a>&nbsp;
-                
-                  #<a href="https://silocitylabs.com/tags/random-class-generator">random class generator</a>&nbsp;
-                
-                  #<a href="https://silocitylabs.com/tags/open-source">open source</a>&nbsp;
-                
-                  #<a href="https://silocitylabs.com/tags/github">GitHub</a>&nbsp;
                 
                 </span>
               

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Callbacks suck, async is easy</title>
+  <meta property="og:title" content="Callbacks suck, async is easy" />
+  <meta name="twitter:title" content="Callbacks suck, async is easy" />
+  <meta name="description" content="I&rsquo;m using PouchDB lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I …">
+  <meta property="og:description" content="I&rsquo;m using PouchDB lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I …">
+  <meta name="twitter:description" content="I&rsquo;m using PouchDB lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I …">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2025/08/25/javascript-async-is-easy/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Callbacks suck, async is easy</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on August 25, 2025
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/maave">maave</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>I&rsquo;m using <a href="https://pouchdb.com/">PouchDB</a> lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven&rsquo;t written JS in quite a while so this was daunting. Lets go through all the pieces that add up to <em>easy</em> async database calls.</p>
+<h1 id="synchronous-php-example">Synchronous PHP example</h1>
+<p>Here is a PHP sample of accessing a database.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$couch</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">CouchClient</span><span class="p">(</span><span class="s1">&#39;http://localhost:5984&#39;</span><span class="p">,</span> <span class="s1">&#39;my_database&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$helloWorld</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;_id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$couch</span><span class="o">-&gt;</span><span class="na">storeDoc</span><span class="p">(</span><span class="nv">$helloWorld</span><span class="p">);</span> <span class="c1">// Save the document to CouchDB
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$doc</span> <span class="o">=</span> <span class="nv">$couch</span><span class="o">-&gt;</span><span class="na">getDoc</span><span class="p">(</span><span class="s1">&#39;001&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="nv">$doc</span><span class="o">-&gt;</span><span class="na">title</span><span class="p">;</span> <span class="c1">// outputs &#39;Hello World&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="s2">&#34;End&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Each command runs serially, one after the other. Nothing fancy. The code at the end runs at the end.</p>
+<p>Now for the Javascript version</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PouchDB</span><span class="p">(</span><span class="s1">&#39;my_database&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">helloWorld</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_id</span><span class="o">:</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span> <span class="nx">helloWorld</span> <span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// Document saved successfully
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="s2">&#34;001&#34;</span> <span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">doc</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// get doc
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">title</span> <span class="p">);</span> <span class="c1">// use doc
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Error:&#39;</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;End&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Ew, what happened to the flow? Why do I need to nest functions in my PUT? &ldquo;End&rdquo; is printing before &ldquo;Hello World&rdquo;.</p>
+<p>In Javascript this operation is asynchronous. We&rsquo;re not simply waiting. We&rsquo;re running operations in the background, in a new thread. So what happens when our background thread finishes? It needs a function to call. Who ya gonna call? Function objects!</p>
+<h1 id="functions-are-objects-too">Functions are objects, too</h1>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">In JavaScript, every function is actually a Function object.</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">func1</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">funcObj</span> <span class="o">=</span> <span class="nx">func1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">funcObj</span><span class="p">()</span> <span class="p">);</span> <span class="c1">//outputs &#34;hello world&#34;
+</span></span></span></code></pre></div><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">The function keyword can be used to define a function inside an expression.</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"> <span class="c1">// anonymous function, the function name may be omitted
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">funcObj</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">funcObj</span><span class="p">()</span> <span class="p">);</span> <span class="c1">//outputs &#34;hello world&#34;
+</span></span></span></code></pre></div><p>We don&rsquo;t even need to assign it. Simply pass it around, use it as a param. It could be a function triggered by a forEach loop, or a callback function triggered by a fetch request</p>
+<h1 id="foreach-and-rest-parameters">ForEach and Rest Parameters</h1>
+<p>I&rsquo;ll be using these features in examples but they aren&rsquo;t required for PouchDB</p>
+<details>
+  <summary>ForEach and Rest Parameters examples [SPOILER]</summary>
+<h2 id="foreach">ForEach</h2>
+<p>Introduced: ES5, 2009</p>
+<p>Loops through an array, calls a function for each item in the array. ForEach cannot return anything, regardless of the callback function.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">numbers</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span>  <span class="c1">// loop through callback array
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">function</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// we can still manipulate global vars
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// any return value is ignored
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;sum:&#34;</span><span class="o">+</span><span class="nx">sum</span><span class="p">);</span> <span class="c1">// &#34;sum:10&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span> <span class="nx">someOtherFunction</span> <span class="p">);</span>
+</span></span></code></pre></div><h2 id="rest-parameters">Rest Parameters</h2>
+<p>Introduced: ES6, 2015</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters">The rest parameter syntax allows a function to accept an indefinite number of arguments as an array.</a>. <code>...</code> syntax.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">addNumbers</span><span class="p">(...</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// many params, condense to an array
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;sum:&#34;</span><span class="o">+</span><span class="nx">sum</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">addNumbers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// &#34;sum:10&#34;
+</span></span></span></code></pre></div></details>
+<h1 id="callbacks">Callbacks</h1>
+<p>Since functions are also objects, we can pass them around. <a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">callback</span><span class="p">();</span> <span class="c1">// Execute the callback function
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">greetMany</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="p">...</span><span class="nx">callbacks</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// many params
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">callbacks</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">callback</span><span class="p">();</span> <span class="c1">// execute
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">sayGoodbye</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Goodbye!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">saySomethingElse</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Nice to meet you.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;Alice&#34;</span><span class="p">,</span> <span class="nx">sayGoodbye</span><span class="p">);</span> <span class="c1">// Pass sayGoodbye as a callback
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;Alice&#34;</span><span class="p">,</span> <span class="nx">saySomethingElse</span><span class="p">,</span> <span class="nx">sayGoodbye</span><span class="p">);</span>
+</span></span></code></pre></div><p>Callbacks are used for asynchronous calls - functions that run in the background. For example, PouchDB database calls use callbacks.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PouchDB</span><span class="p">(</span><span class="s1">&#39;my_database_&#39;</span><span class="o">+</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span> <span class="c1">// getting tired of previous records
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">doSomething</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">doc</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// last thing to run
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// this could update the UI with record info
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doc</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">errorHandler</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// OK response and revision# from pouchdb
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// get doc, then run doSomething
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">db</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">response</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">doSomething</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">helloWorld</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_id</span><span class="o">:</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// doc, callbackFunction
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span> <span class="nx">helloWorld</span><span class="p">,</span> <span class="nx">errorHandler</span> <span class="p">);</span>
+</span></span></code></pre></div><p>This looks OK now but can get messy with many callbacks.</p>
+<h1 id="arrow-syntax">Arrow syntax</h1>
+<p>Introduced: ES6, 2015</p>
+<p>This is getting too long. We need shorter functions. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow syntax <code>=&gt;</code> will make this faster</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">(</span><span class="nx">parameters</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">expression</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// or
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span><span class="nx">parameters</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//do stuff
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// or no params
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="cm">/* do stuff */</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// or one param
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">param</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="cm">/* do stuff */</span> <span class="p">}</span>
+</span></span></code></pre></div><p>If the function body is a single expression, the expression&rsquo;s result is implicitly returned. Both the return and the curly braces {} can be omitted. Kinda like an IF one-liner.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">(</span> <span class="nx">param</span> <span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">param</span><span class="o">++</span> <span class="c1">//automatically returns param++
+</span></span></span><span class="line"><span class="cl"><span class="c1">// instead of
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">(</span> <span class="nx">param</span> <span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">param</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The allows for writing one-line functions (function-objects) which can be passed around as a callback.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">addArrow</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span> <span class="c1">// returns a+b
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">plusPlus</span> <span class="o">=</span> <span class="nx">c</span> <span class="p">=&gt;</span> <span class="nx">c</span><span class="o">++</span><span class="p">;</span>        <span class="c1">// returns c+1
+</span></span></span></code></pre></div><p>Note that this is NOT a comparator. Remember the order &ldquo;less than or equals to&rdquo;, the &ldquo;less than&rdquo; comes first in a comparator: <code>&gt;=</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">isAGreater</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&gt;=</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// const is a boolean
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">greaterThan</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span><span class="o">&gt;=</span><span class="nx">b</span> <span class="c1">// function that implicitly returns a boolean
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">greaterThan2</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="c1">// explicit return
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span><span class="nx">a</span><span class="o">&gt;=</span><span class="nx">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="mi">5</span><span class="o">&gt;=</span><span class="mi">2</span> <span class="p">);</span> <span class="c1">// true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">greaterThan</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="p">);</span> <span class="c1">// true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">greaterThan</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="p">);</span> <span class="c1">// false
+</span></span></span></code></pre></div><p>Let&rsquo;s go back to the callback example. forEach is expecting a function to call and as a param it&rsquo;s sending an item from the array.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">callbackArray</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">function</span><span class="p">(</span> <span class="nx">callback</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">callback</span><span class="p">();</span> <span class="c1">// execute
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre></div><p>One param, one line of code. We can compact that function to <code>callback =&gt; callback()</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">greetMany</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="p">...</span><span class="nx">callbacks</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">callbacks</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span> <span class="nx">cb</span> <span class="p">=&gt;</span> <span class="nx">cb</span><span class="p">()</span> <span class="p">);</span> <span class="c1">// Execute all callback functions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">sayGoodbye</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Goodbye!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">saySomethingElse</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Nice to meet you.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">greetMany</span><span class="p">(</span><span class="s2">&#34;Alice&#34;</span><span class="p">,</span> <span class="nx">saySomethingElse</span><span class="p">,</span> <span class="nx">sayGoodbye</span><span class="p">);</span>
+</span></span></code></pre></div><h1 id="pouchdb">PouchDB</h1>
+<p>PouchDB a document database that stores JSON objects. Every object has a unique primary key <code>_id</code>. 1 ID = 1 JSON object. Once in the database, every object gets a revision <code>_rev</code> to prevent data conflicts. To update an object you must provide <code>_id</code> AND the current <code>_rev</code>. Practically that means every put() needs a get().</p>
+<p>PouchDB can use callbacks, promises, or async. <code>db.get( id )</code> returns a promise. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">&ldquo;A Promise is an object representing the eventual completion or failure of an asynchronous operation.&rdquo;</a>. It&rsquo;s not the DB object we want, it&rsquo;s a running process in object form.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PouchDB</span><span class="p">(</span><span class="s2">&#34;my_database_&#34;</span><span class="o">+</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span> <span class="c1">// getting tired of previous records
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">helloWorld</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_id</span><span class="o">:</span> <span class="s2">&#34;001&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span><span class="o">:</span> <span class="s2">&#34;Hello World&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span> <span class="nx">helloWorld</span> <span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">doc</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">//this doc is the &#34;ok&#34; response from PouchDB
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// {\&#34;ok\&#34;:true,\&#34;id\&#34;:\&#34;001\&#34;,\&#34;rev\&#34;:\&#34;1-69c3951a3eb33c5c9a3067dfbff77ece\&#34;}
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">doc</span><span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&#34;Error:&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;End&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><h1 id="promises">Promises</h1>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">A Promise is an object representing the eventual completion or failure of an asynchronous operation. Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.</a></p>
+<p>Straight from the <a href="https://pouchdb.com/api.html#delete_document">pouchDB docs we can find the promise version of this</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PouchDB</span><span class="p">(</span><span class="s1">&#39;my_database_&#39;</span><span class="o">+</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span> <span class="c1">// getting tired of previous records
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">doc</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_id</span><span class="o">:</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">doc</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doc</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="nx">doc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// OK response
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&#34;OK\n&#34;</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">db</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;001&#34;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">log</span><span class="p">);</span> <span class="c1">// return a promise object so the errors can be caught
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&#34;error&#34;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h1 id="async--await">Async &amp; Await</h1>
+<p>Introduced: ES8, 2017</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await">The await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PouchDB</span><span class="p">(</span><span class="s1">&#39;my_database_&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">doc</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">_id</span><span class="o">:</span> <span class="s1">&#39;001&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// async func runs in a new thread
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">async</span> <span class="kd">function</span> <span class="nx">doStuff</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// wipe old records if they exist
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">gotDoc</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">db</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;001&#34;</span><span class="p">);</span>  <span class="c1">// wait for promise to complete
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">await</span> <span class="nx">db</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">gotDoc</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Nothing to remove&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// put and get
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">db</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="nx">doc</span><span class="p">);</span> <span class="c1">// wait for promise to complete
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">gotDoc</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">db</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;001&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gotDoc</span><span class="p">.</span><span class="nx">title</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;end&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">    <span class="c1">// all promise errors caught at the end
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Error&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">doStuff</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;start&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Finally, our code look sane! PUT runs first, then GET, then we can use the object. The objects we&rsquo;re getting are the values we want, rather than Promise wrappers. Under the hood, this is still using promises. Mentally, it&rsquo;s simple serial operations. Just remember to catch errors since our promises aren&rsquo;t handling that anymore.</p>
+<h1 id="combined-samples">Combined samples</h1>
+<h2 id="promises-and-arrow-functions">Promises and arrow functions</h2>
+<p><a href="https://github.com/fabelavalon/BeyBuilderX/blob/d645bf8934b97bcf62f6c5afb71d47da177fa2bc/main.js#L750">In this example from BeyBuilder X</a>, we need to update 2 records at a time. This was a pain in the butt with full functions and PouchDB revision management, but became easy when I could compact things with arrow function like <code>d =&gt; d.wko++</code>. Our helper function updateField() accepts this arrow function, gets the record, runs the func on the record to modify, then puts the record to the database (with _rev). The final function is quite readable and the promise chain runs in logical order.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * update a vsRecord, using whatever function you pass it
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * returns promise from pouchdb
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * example usage: increment wko (KO wins)
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * updateField(record1Id, d =&gt; d.wko++).then(updateUI);
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {string} id - beyblade id
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {*} updater - provide your own function
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @returns promise
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">updateField</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">updater</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">recordsDBX</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">id</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">doc</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// run the function that was passed in
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">updater</span><span class="p">(</span><span class="nx">doc</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/* in our example:
+</span></span></span><span class="line"><span class="cl"><span class="cm">         d =&gt; d.wko++
+</span></span></span><span class="line"><span class="cl"><span class="cm">      &#34;d.wko++&#34; is manipulating the original doc object, because Javascript is passing &#34;doc&#34; as reference even though we renamed it &#34;d&#34; in our anonymous arrow func
+</span></span></span><span class="line"><span class="cl"><span class="cm">    */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">recordsDBX</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="nx">doc</span><span class="p">);</span> <span class="c1">// puts the modified doc, returns a promise
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//update the records database with a result is chosen
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">updateRecords</span><span class="p">(</span><span class="nx">winner</span><span class="p">,</span> <span class="nx">loser</span><span class="p">,</span> <span class="nx">outcome</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">record1Id</span> <span class="o">=</span> <span class="nx">winner</span><span class="p">.</span><span class="nx">id</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="nx">loser</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">record2Id</span> <span class="o">=</span> <span class="nx">loser</span><span class="p">.</span><span class="nx">id</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="nx">winner</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">    addRecords was too long, for full source check the git link for BeyBuilder X
+</span></span></span><span class="line"><span class="cl"><span class="cm">    addRecord returns a promise like // return recordsDBX.put(winRecord);
+</span></span></span><span class="line"><span class="cl"><span class="cm">    */</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">promiseChain</span> <span class="o">=</span> <span class="nx">addRecord</span><span class="p">(</span><span class="nx">winner</span><span class="p">,</span> <span class="nx">loser</span><span class="p">)</span> <span class="c1">// create if they don&#39;t exist
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">addRecord</span><span class="p">(</span><span class="nx">loser</span><span class="p">,</span> <span class="nx">winner</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;update record&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// collect promises (DB updates) for both records
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">let</span> <span class="nx">promises</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">switch</span> <span class="p">(</span><span class="nx">outcome</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">case</span> <span class="s2">&#34;KO&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record1Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">wko</span><span class="o">++</span><span class="p">));</span> <span class="c1">// add to the stack of promises
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record2Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">lko</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">case</span> <span class="s2">&#34;SO&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record1Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">wso</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record2Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">lso</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">case</span> <span class="s2">&#34;burst&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record1Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">wbst</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record2Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">lbst</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">case</span> <span class="s2">&#34;x&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record1Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">wx</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record2Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">lx</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">case</span> <span class="s2">&#34;draw&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record1Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">draws</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record2Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">draws</span><span class="o">++</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">              <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">case</span> <span class="s2">&#34;update&#34;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record1Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">d</span><span class="p">.</span><span class="nx">challenger</span> <span class="o">=</span> <span class="nx">winner</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">d</span><span class="p">.</span><span class="nx">defender</span> <span class="o">=</span> <span class="nx">loser</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">}));</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">promises</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">updateField</span><span class="p">(</span><span class="nx">record2Id</span><span class="p">,</span> <span class="nx">d</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">d</span><span class="p">.</span><span class="nx">challenger</span> <span class="o">=</span> <span class="nx">loser</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">d</span><span class="p">.</span><span class="nx">defender</span> <span class="o">=</span> <span class="nx">winner</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">}));</span>
+</span></span><span class="line"><span class="cl">              <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Something went wrong. Record not added&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// submit whatever results are in the list
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">promises</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// all DB updates finished, now update UI
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="nx">displayRecords</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">promiseChain</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2025/javascript_callbacks.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2025/javascript_callbacks.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2025/onebuffalolabs-launch/" data-toggle="tooltip" data-placement="top" title="Leveraging Tech Innovation: How One Buffalo Labs Supports SiloCityLabs&#39; Vision">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2025
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

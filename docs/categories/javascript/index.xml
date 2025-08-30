@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on SCL Blog</title>
+    <link>https://silocitylabs.com/categories/javascript/</link>
+    <description>Recent content in JavaScript on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Callbacks suck, async is easy</title>
+      <link>https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/08/25/javascript-async-is-easy/</guid>
+      <description>I&amp;rsquo;m using PouchDB lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven&amp;rsquo;t written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.&#xA;Synchronous PHP example Here is a PHP sample of accessing a database.&#xA;$couch = new CouchClient(&amp;#39;http://localhost:5984&amp;#39;, &amp;#39;my_database&amp;#39;); $helloWorld = [ &amp;#39;_id&amp;#39; =&amp;gt; &amp;#39;001&amp;#39;, &amp;#39;title&amp;#39; =&amp;gt; &amp;#39;Hello World&amp;#39; ]; $couch-&amp;gt;storeDoc($helloWorld); // Save the document to CouchDB $doc = $couch-&amp;gt;getDoc(&amp;#39;001&amp;#39;); echo $doc-&amp;gt;title; // outputs &amp;#39;Hello World&amp;#39; echo &amp;#34;End&amp;#34;; Each command runs serially, one after the other.</description>
+    </item>
+  </channel>
+</rss>
