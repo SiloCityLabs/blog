@@ -4,16 +4,16 @@ author: maave
 type: post
 date: 2025-08-25T00:00:00+00:00
 url: /post/2025/08/25/javascript-async-is-easy/
-draft: true
+draft: false
 categories:
   - JavaScript
 tags:
+  - pouchdb
   - promises
   - async
-  - pouchdb
 ---
 
-I'm using [PouchDB](https://pouchdb.com/) lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven't written JS in quite a while so this was daunting. Lets go through all the pieces that add up to easy async database calls.
+I'm using [PouchDB](https://pouchdb.com/) lately, a JavaScript database that works in the browser. PouchDB for Javascript requires callbacks and I found myself stacking quite a bit of JS-specific syntax together. I haven't written JS in quite a while so this was daunting. Lets go through all the pieces that add up to _easy_ async database calls.
 
 # Synchronous PHP example
 
@@ -75,7 +75,7 @@ console.log( funcObj() ); //outputs "hello world"
 [The function keyword can be used to define a function inside an expression.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 
 ```javascript
- // function may be ommitted
+ // anonymous function, the function name may be omitted
 const funcObj = function (){
     return "hello world";
 }
@@ -84,18 +84,26 @@ console.log( funcObj() ); //outputs "hello world"
 
 We don't even need to assign it. Simply pass it around, use it as a param. It could be a function triggered by a forEach loop, or a callback function triggered by a fetch request
 
-# ForEach
+# ForEach and Rest Parameters
 
+I'll be using these features in examples but they aren't required for PouchDB
+
+<details>
+  <summary>ForEach and Rest Parameters examples [SPOILER]</summary>
+
+## ForEach
 Introduced: ES5, 2009
 
-Loops through an array, calls a function for each item in the array.
+Loops through an array, calls a function for each item in the array. ForEach cannot return anything, regardless of the callback function.
 
 ```javascript
 numbers=[1,2,3,4]
 sum = 0;
 numbers.forEach(  // loop through callback array
   function(num) {
+    // we can still manipulate global vars
     sum += num;
+    // any return value is ignored
   }
 );
 console.log("sum:"+sum); // "sum:10"
@@ -103,7 +111,7 @@ console.log("sum:"+sum); // "sum:10"
 numbers.forEach( someOtherFunction );
 ```
 
-# Rest Parameters
+## Rest Parameters
 
 Introduced: ES6, 2015
 
@@ -121,6 +129,8 @@ function addNumbers(...numbers) { // many params, condense to an array
 }
 addNumbers(1,2,3,4); // "sum:10"
 ```
+
+</details>
 
 # Callbacks
 
@@ -169,6 +179,7 @@ const errorHandler = function(err, response) {
   }
   // OK response and revision# from pouchdb
   console.log(response);
+  // get doc, then run doSomething
   db.get( response.id, doSomething);
 }
 
@@ -219,6 +230,19 @@ const addArrow = (a, b) => a + b; // returns a+b
 const plusPlus = c => c++;        // returns c+1
 ```
 
+Note that this is NOT a comparator. Remember the order "less than or equals to", the "less than" comes first in a comparator: `>=`.
+```javascript
+const isAGreater = (a >= b); // const is a boolean
+const greaterThan = (a,b) => a>=b // function that implicitly returns a boolean
+const greaterThan2 = (a,b) => { // explicit return
+  return (a>=b)
+}
+
+console.log( 5>=2 ); // true
+console.log( greaterThan(5,2) ); // true
+console.log( greaterThan(2,5) ); // false
+```
+
 Let's go back to the callback example. forEach is expecting a function to call and as a param it's sending an item from the array.
 
 ```javascript
@@ -229,7 +253,7 @@ callbackArray.forEach(
 );
 ```
 
-One param, one line of code, we can compact that function to `callback => callback()`
+One param, one line of code. We can compact that function to `callback => callback()`
 
 ```javascript
 function greetMany(name, ...callbacks) {
@@ -303,7 +327,7 @@ db.put(doc)
 
 ```
 
-# Async
+# Async & Await
 
 Introduced: ES8, 2017
 
@@ -344,7 +368,7 @@ doStuff();
 console.log("start");
 ```
 
-Finally our code look sane and serial. Under the hood this is still using promises. Mentally, the entire runs in the backround as its own thread.
+Finally, our code look sane! PUT runs first, then GET, then we can use the object. The objects we're getting are the values we want, rather than Promise wrappers. Under the hood, this is still using promises. Mentally, it's simple serial operations. Just remember to catch errors since our promises aren't handling that anymore.
 
 # Combined samples
 
@@ -354,19 +378,23 @@ Finally our code look sane and serial. Under the hood this is still using promis
 
 ```javascript
 /**
- * updates a field on a vsRecord
- * (technically, it can do more with the function)
+ * update a vsRecord, using whatever function you pass it
  * returns promise from pouchdb
- * ex: increment wko (KO wins)
- * updateField(record1Id, d => d.wko++).then(doStuffFunc);
+ * example usage: increment wko (KO wins)
+ * updateField(record1Id, d => d.wko++).then(updateUI);
  * @param {string} id - beyblade id
  * @param {*} updater - provide your own function
  * @returns promise
  */
 function updateField(id, updater) {
   return recordsDBX.get(id).then(doc => {
+    // run the function that was passed in
     updater(doc);
-    return recordsDBX.put(doc);
+    /* in our example:
+         d => d.wko++
+      "d.wko++" is manipulating the original doc object, because Javascript is passing "doc" as reference even though we renamed it "d" in our anonymous arrow func
+    */
+    return recordsDBX.put(doc); // puts the modified doc, returns a promise
   });
 }
 
@@ -388,7 +416,7 @@ function updateRecords(winner, loser, outcome){
 
         switch (outcome) {
           case "KO":
-              promises.push(updateField(record1Id, d => d.wko++));
+              promises.push(updateField(record1Id, d => d.wko++)); // add to the stack of promises
               promises.push(updateField(record2Id, d => d.lko++));
               break;
           case "SO":
