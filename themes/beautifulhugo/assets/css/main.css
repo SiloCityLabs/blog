@@ -138,6 +138,18 @@ summary {
   border-radius: 0.2em;
 }
 
+/* opening <detail> fades in content (but doesn't slide the detail open) */
+details > *:not(summary) {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+details[open] > *:not(summary) {
+  max-height: 9999px;
+  opacity: 1;
+}
+
 /* --- Navbar --- */
 
 /* Hide this stuff for printing portfolio pages */
