@@ -14,18 +14,6 @@ tags:
 
 Yes Man blog post
 
-https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
-Towards Understanding Sycophancy in Language Models
-"Reinforcement learning from human feedback (RLHF) is a popular technique for training high-quality AI assistants. However, RLHF may also encourage model responses that match user beliefs over truthful responses, a behavior known as sycophancy."
-"Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones"
-
-https://bigthink.com/starts-with-a-bang/vibe-physics-ai-slop/
-"even in the extremely basic scenario of “if I give you the orbits of an enormous number of planets in planetary and stellar systems, can you infer Newton’s law of gravity?” every LLM tested failed spectacularly."
-"When the LLMs o3, Claude Sonnet 4, and Gemini 2.5 Pro were asked to reconstruct force laws for a variety of mock solar systems, they were all unable to recover something equivalent to Newton’s law of universal gravitation, despite the LLMs themselves having been trained on Newton’s laws."
-"Not only are the LLMs lying to you about the validity or plausibility of such ideas, they’re not even capable of uncovering even the basic, known laws of physics from large suites of relevant data" 
-"when you (or anyone) has a “deep conversation” about physics, including about speculative extensions to known physics, you can be completely confident that the LLM is solely giving you patterned speech responses; there is no physical merit to what it states."
-
-
 
 # PART 1 - "AI" is autocomplete
 
@@ -112,11 +100,11 @@ After probabilities are computed, all logits are divided by temperature. A high 
 
 </details>
 
-#### Top-P Sampling
-Restricts token choices using a probability mass threshold. Acts like a soft, probability-based cutoff. If p=0.9, the model keeps adding tokens to the subset until the cumulative probability reaches 90%
+#### Top-P Sampling (Nucleus Sampling)
+Restricts token choices using a probability mass threshold. If p=0.9, the model keeps adding tokens to the subset until the cumulative probability reaches 90%. Acts like a soft, probability-based cutoff.
 
 - `top_p = 1.0` -> allow all tokens
-- `top_p = 0.9` -> keep the smallest set of tokens whose combined probability ≥ 90%
+- `top_p = 0.9` -> keep the smallest set of tokens whose combined probability >= 90%
 - Low (0.1–0.3): restricts to most likely words
 
 
@@ -127,6 +115,10 @@ Restricts token choices to the top K most likely tokens. Acts like a hard cutoff
 - `top_k = 50` -> only consider the 50 highest-probability tokens; ignore the rest.
 - `top_k = 1` -> greedy decoding - always pick the top token - odd
 
+#### Min-P sampling
+
+[A dynamic truncation method that adjusts the sampling threshold based on the model's confidence by using the top token's probability as a scaling factor](https://arxiv.org/abs/2407.01082).
+
 #### How They Interact
 
 Temperature increases variety, top-p and top-k reduce variety and focus samples on the model’s top predictions.
@@ -135,6 +127,8 @@ Example settings:
 - Deterministic reproduction: `temperature=0.0, top_k=0, top_p=1.0`
 - Mild creativity: `temperature=0.7, top_p=0.9`  
 - High creativity: `temperature=1.1, top_p=0.95, top_k=0`
+- Qwen thinking default: `temperature=0.6, TopP=0.95, TopK=20, MinP=0`
+- Qwen recommended non-thinking: `temperature=0.7, TopP=0.8, TopK=20, MinP=0.`
 
 Temps higher than 1.0 quickly go batty.
 
@@ -166,13 +160,13 @@ Only this, and nothing more.”
 Ah, distinctly I remember it was in the bleak December,
 </detail>
 
-example: Qwen3-14B
+ouput example: Qwen3-14B
 
 ><think>
 >
 >Okay, the user provided the first few stanzas of "The Raven" by Edgar Allan Poe. They might be looking for an analysis, summary, or explanation of the poem. Let me start by recalling the key elements of the poem. 
 
-example: DeepSeek-V3.1
+output example: DeepSeek-V3.1
 
 > Hmm, the user has provided the opening lines of Edgar Allan Poe's "The Raven" and seems to want a continuation or analysis. The poem is iconic, so the user might be looking for the next stanza or perhaps some context or interpretation. 
 >
@@ -184,7 +178,34 @@ I'm seeing text like "the user provides ___" and "I should analyze", hinting at 
 
 # PART 2 - system prompts
 
-Qwen3B outputs a 2-part reponse. The first section <think> </think> usually gets hidden by the chatbot UI. After that is the Markdown-encoded response
+## Qwen2
+
+Qwen2 has a simple default prompt
+
+```
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
+```
+
+"You are a helpful assistant" primes the LLM to respond like a customer service representative. There are likely thousands upon thousands of helpdesk interactions in the training data.
+
+## Qwen3
+
+Qwen3's default system prompt is more complex and dynamic. On the backend, it uses Jinja templates to change the system promp, adding or removing sections depends on user config.
+
+[in the github docs](https://github.com/QwenLM/Qwen3)
+
+>By default, Qwen3 models will think before response. This could be controlled by
+>
+>enable_thinking=False: Passing enable_thinking=False to `tokenizer.apply_chat_template` will strictly prevent the model from generating thinking content.
+
+[HuggingFace docs](https://huggingface.co/Qwen/Qwen3-4B)
+
+>enable_thinking=True
+
+>In this mode, the model will generate think content wrapped in a <think>...</think> block, followed by the final response.
+
+In the source code [I can find the template that adds `<think>` tags](https://github.com/QwenLM/Qwen3/blob/main/docs/source/assets/qwen3_nonthinking.jinja)
+
 
 ```markdown
 <think>
@@ -205,6 +226,13 @@ Here's a breakdown of the key elements in the opening lines:
 .....
 ```
 
+# PART Y - extra constraint
+
+https://arxiv.org/abs/2502.15840#
+Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
+"but all models have runs that derail, either through misinterpreting delivery schedules, forgetting orders, or descending into tangential "meltdown" loops from which they rarely recover."
+
+
 # PART X - AI is already trained to go psycho
 
 Coming back to Fallout New Vegas after the development of Large Language Models and AI chatbots is horrifying. "Yes Man" the robot is a sycophantic AI chatbot incarnate. It praises your every move and agrees to do anything you ask.
@@ -222,8 +250,15 @@ TODO: investigate if this is caused by undone-fine-tuning (would the LLM be this
 TODO: get RLHF data which can be applied on top of a model
 
 
-# PART Y - constraint
+# PART Z - 
 
-https://arxiv.org/abs/2502.15840#
-Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
-"but all models have runs that derail, either through misinterpreting delivery schedules, forgetting orders, or descending into tangential "meltdown" loops from which they rarely recover."
+https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
+Towards Understanding Sycophancy in Language Models
+"Reinforcement learning from human feedback (RLHF) is a popular technique for training high-quality AI assistants. However, RLHF may also encourage model responses that match user beliefs over truthful responses, a behavior known as sycophancy."
+"Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones"
+
+https://bigthink.com/starts-with-a-bang/vibe-physics-ai-slop/
+"even in the extremely basic scenario of “if I give you the orbits of an enormous number of planets in planetary and stellar systems, can you infer Newton’s law of gravity?” every LLM tested failed spectacularly."
+"When the LLMs o3, Claude Sonnet 4, and Gemini 2.5 Pro were asked to reconstruct force laws for a variety of mock solar systems, they were all unable to recover something equivalent to Newton’s law of universal gravitation, despite the LLMs themselves having been trained on Newton’s laws."
+"Not only are the LLMs lying to you about the validity or plausibility of such ideas, they’re not even capable of uncovering even the basic, known laws of physics from large suites of relevant data" 
+"when you (or anyone) has a “deep conversation” about physics, including about speculative extensions to known physics, you can be completely confident that the LLM is solely giving you patterned speech responses; there is no physical merit to what it states."
