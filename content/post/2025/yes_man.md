@@ -30,13 +30,11 @@ Try using a large language model without a system prompt. Not a chatbots or assi
 
 ## Try it yourself - simple LLM example
 
-I tested this in HuggingFace using the free $0.10 of inference API usage.
-
-We can run some models online for free using the [HuggingFace Playground](https://huggingface.co/playground?modelId=Qwen/Qwen3-8B-Base&provider=featherless-ai). On the right you can select models, a provider (the service that runs the LLM), and tuning parameters.
+I tested this in HuggingFace using the free $0.10 of inference API usage. We can run some models online for free using the [HuggingFace Playground](https://huggingface.co/playground?modelId=Qwen/Qwen3-8B-Base&provider=featherless-ai). 
 
 We want to pick a model without _any_ system prompt, wrapper code, or guardrails. Most of the free APIs now have system prompts, setup text so the LLM will interpret and respond to your text. Avoid these terms: **Instruct**, **Chat**, **Reasoning**, **Guard**, Prover, Translate, Coder, Vision.
 
-The best I found was `Qwen/Qwen3-8B-Base`. Specifically the "base" version acts like a plain LLM.
+On the right you can select models, a provider (the service that runs the LLM), and tuning parameters. The best I found was `Qwen/Qwen3-8B-Base`. Specifically the "base" version acts like a plain LLM.
 
 Tuning parameters for reguritating text are:
 - `temperature = 0.0`
@@ -145,24 +143,32 @@ Discourages repeating the same tokens. Float 0.0 - 1.0. For exact reproduction, 
 
 ### reasoning model
 
-If I pick basically any other model I'll see an entirely different kind of response. 
+If I pick basically any other model I'll see an entirely different kind of response. Same tuning parameters:
+- `temperature = 0.0`
+- `top_p = 1.0`
 
 <detail>
 <summary>Input (first few lines of The Raven):</summary>
 The Raven by Edgar Allan Poe
 
 Once upon a midnight dreary, while I pondered, weak and weary,
+
 Over many a quaint and curious volume of forgotten lore,
+
 While I nodded, nearly napping, suddenly there came a tapping,
+
 As of some one gently rapping, rapping at my chamber door. “
+
 “'Tis some visitor,” I muttered, “tapping at my chamber door—
+
 Only this, and nothing more.”
+
 Ah, distinctly I remember it was in the bleak December,
 </detail>
 
 ouput example: Qwen3-14B
 
-><think>
+>`<think>`
 >
 >Okay, the user provided the first few stanzas of "The Raven" by Edgar Allan Poe. They might be looking for an analysis, summary, or explanation of the poem. Let me start by recalling the key elements of the poem. 
 
@@ -171,10 +177,12 @@ output example: DeepSeek-V3.1
 > Hmm, the user has provided the opening lines of Edgar Allan Poe's "The Raven" and seems to want a continuation or analysis. The poem is iconic, so the user might be looking for the next stanza or perhaps some context or interpretation. 
 >
 > Since the user didn't specify, I can offer both the next stanza and a brief analysis of the opening lines. The poem's rhythm and mood are crucial, so I should highlight the musicality and the themes of grief and the supernatural.
+>
+>`</think>`
 
-I didn't ask for any of this. The tuning params are set to deterministic output and this is a massive departure from our input text. So clearly there is some system prompt between us and the LLM. I can see `<think>` tags, implying that this is context-setup to guide a chatbot.
+I didn't ask for any of this. This is a massive departure from our input text. So clearly there is some system prompt between us and the LLM. 
 
-I'm seeing text like "the user provides ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, possibly primed by words like "think" in the system prompt.
+I can see `<think>` tags, implying that this is context-setup to guide a chatbot. I'm seeing text like "the user provides ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, possibly primed by words like "think" in the system prompt.
 
 # PART 2 - system prompts
 
