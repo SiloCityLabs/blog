@@ -25,9 +25,7 @@ https://bigthink.com/starts-with-a-bang/vibe-physics-ai-slop/
 "Not only are the LLMs lying to you about the validity or plausibility of such ideas, they’re not even capable of uncovering even the basic, known laws of physics from large suites of relevant data" 
 "when you (or anyone) has a “deep conversation” about physics, including about speculative extensions to known physics, you can be completely confident that the LLM is solely giving you patterned speech responses; there is no physical merit to what it states."
 
-https://arxiv.org/abs/2502.15840#
-Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
-"but all models have runs that derail, either through misinterpreting delivery schedules, forgetting orders, or descending into tangential "meltdown" loops from which they rarely recover."
+
 
 # PART 1 - "AI" is autocomplete
 
@@ -37,14 +35,177 @@ When an AI "hallucinates" it's because the text generator is being forced to gen
 
 Second is that AI assistants / chatbots like ChatGPT are just wrappers around these text generators. To make the LLM
 
-Try using a large language model without a system prompt. That means no chatbots or assistants, not ChatGPT or anything like it. (insert online example). It behaves much more like an autocomplete than anything sentient. Try some of these input example:
-- the first few lines of your favorite book. If you don't read ... use Harry Potter: (insert Harry Potter)
-- blah blah blah, or any repeating pattern
+Try using a large language model without a system prompt. Not a chatbots or assistants, not ChatGPT or anything like it. It behaves much more like an autocomplete than anything sentient. Try some of these input example:
+- the first few lines of your favorite book or poem
+- "blah blah blah", or any repeating pattern
 - (insert complex system prompt)
 
-PART 2 - 
+## Try it yourself - simple LLM example
 
-# PART X - the AI is already trained to go psycho
+I tested this in HuggingFace using the free $0.10 of inference API usage.
+
+We can run some models online for free using the [HuggingFace Playground](https://huggingface.co/playground?modelId=Qwen/Qwen3-8B-Base&provider=featherless-ai). On the right you can select models, a provider (the service that runs the LLM), and tuning parameters.
+
+We want to pick a model without _any_ system prompt, wrapper code, or guardrails. Most of the free APIs now have system prompts, setup text so the LLM will interpret and respond to your text. Avoid these terms: **Instruct**, **Chat**, **Reasoning**, **Guard**, Prover, Translate, Coder, Vision.
+
+The best I found was `Qwen/Qwen3-8B-Base`. Specifically the "base" version acts like a plain LLM.
+
+Tuning parameters for reguritating text are:
+- `temperature = 0.0`
+- `top_p = 1.0`
+
+The rest of the values can be unset/default.
+
+Pick some literature that you like - an old book or poem that you like. It should be something well-known enough that it's in the training data (e-books, scanned books, scraped websites). Perhaps pick something taught in school or a popular media title. I'll use Edgar Allan Poe's poem The Raven. I found that text-regurgitation was most reliable when I provided the title and author first, and when I did not stop at a paragraph ending but either continued one line further or cut the paragraph short.
+
+<detail>
+<summary>Input (first few lines of The Raven):</summary>
+The Raven by Edgar Allan Poe
+
+Once upon a midnight dreary, while I pondered, weak and weary,
+
+Over many a quaint and curious volume of forgotten lore,
+
+While I nodded, nearly napping, suddenly there came a tapping,
+
+As of some one gently rapping, rapping at my chamber door.
+
+“'Tis some visitor,” I muttered, “tapping at my chamber door—
+
+Only this, and nothing more.”
+
+Ah, distinctly I remember it was in the bleak December,
+</detail>
+
+Output:
+
+
+### Tuning parameters
+
+Tuning params affect the likelyhood of words appearing. By default, HuggingFace Playground exposes the settings `temperature` and `top_p`. More settings can be configured in "extra parameters".
+
+#### Max tokens
+
+Maximum token output. Maximum number of words. To save API usage, turn this down to 1024 or less. The poem The Raven is 1070 words (machine count) and I don't even need to see all of it. Also, keep the "Streaming" option on, so that it updates 1 word at a time and you can stop output if it's not going your way.
+
+#### Temperature
+Controls the randomness of token selection.
+
+- **Default (1.0):** no change in probabilities
+- **High values (>1.0):** increases diversity, encourages unusual words
+- **Medium values (0.5 - 0.9):** slightly constrained, useful range
+- **Low values (0.1–0.3):** less diversity, pick more likely tokens
+- **Zero (0.0):** model becomes deterministic, always picks the most likely tokens, behaves the same each time
+
+<details>
+<summary>
+In-depth explanation of temperature
+</summary>
+When the LLM is selecting the next token, it has a pool of likely tokens to choose from. logits are the raw, unnormalized scores for each token.
+
+ex:
+- likely_word, logit value: 0.05
+- average_word: logit value: 0.00
+- unlikely_word, logit value: -0.04
+
+After probabilities are computed, all logits are divided by temperature. A high temp above 1.0 divides by a high number, crunching the logit values closer together, closer to zero. The probabilities become more similar. A temp below 1.0 essentially multiplies the logits, making the _likely_word_ logit very high and the _unlikely_word_ logit very low. The probabilities become further apart. A temp of 0 divides by zero, sending the _likely_word_ logit to the moon.
+
+</details>
+
+#### Top-P Sampling
+Restricts token choices using a probability mass threshold. Acts like a soft, probability-based cutoff. If p=0.9, the model keeps adding tokens to the subset until the cumulative probability reaches 90%
+
+- `top_p = 1.0` -> allow all tokens
+- `top_p = 0.9` -> keep the smallest set of tokens whose combined probability ≥ 90%
+- Low (0.1–0.3): restricts to most likely words
+
+
+#### Top-K Sampling
+Restricts token choices to the top K most likely tokens. Acts like a hard cutoff on vocabulary options.
+
+- `top_k = 0` -> disables this filter - all tokens considered
+- `top_k = 50` -> only consider the 50 highest-probability tokens; ignore the rest.
+- `top_k = 1` -> greedy decoding - always pick the top token - odd
+
+#### How They Interact
+
+Temperature increases variety, top-p and top-k reduce variety and focus samples on the model’s top predictions.
+
+Example settings:
+- Deterministic reproduction: `temperature=0.0, top_k=0, top_p=1.0`
+- Mild creativity: `temperature=0.7, top_p=0.9`  
+- High creativity: `temperature=1.1, top_p=0.95, top_k=0`
+
+Temps higher than 1.0 quickly go batty.
+
+#### do_sample
+
+- true -> sampling with temperature/top-p
+- false -> greedy decoding (always take max-prob token)
+
+This turns off the sampling. This basically the same as setting `top_k=1`.
+
+#### repetition_penalty
+
+Discourages repeating the same tokens. Float 0.0 - 1.0. For exact reproduction, keep at 1.0 (neutral).
+
+### reasoning model
+
+If I pick basically any other model I'll see an entirely different kind of response. 
+
+<detail>
+<summary>Input (first few lines of The Raven):</summary>
+The Raven by Edgar Allan Poe
+
+Once upon a midnight dreary, while I pondered, weak and weary,
+Over many a quaint and curious volume of forgotten lore,
+While I nodded, nearly napping, suddenly there came a tapping,
+As of some one gently rapping, rapping at my chamber door. “
+“'Tis some visitor,” I muttered, “tapping at my chamber door—
+Only this, and nothing more.”
+Ah, distinctly I remember it was in the bleak December,
+</detail>
+
+example: Qwen3-14B
+
+><think>
+>
+>Okay, the user provided the first few stanzas of "The Raven" by Edgar Allan Poe. They might be looking for an analysis, summary, or explanation of the poem. Let me start by recalling the key elements of the poem. 
+
+example: DeepSeek-V3.1
+
+> Hmm, the user has provided the opening lines of Edgar Allan Poe's "The Raven" and seems to want a continuation or analysis. The poem is iconic, so the user might be looking for the next stanza or perhaps some context or interpretation. 
+>
+> Since the user didn't specify, I can offer both the next stanza and a brief analysis of the opening lines. The poem's rhythm and mood are crucial, so I should highlight the musicality and the themes of grief and the supernatural.
+
+I didn't ask for any of this. The tuning params are set to deterministic output and this is a massive departure from our input text. So clearly there is some system prompt between us and the LLM. I can see `<think>` tags, implying that this is context-setup to guide a chatbot.
+
+I'm seeing text like "the user provides ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, possibly primed by words like "think" in the system prompt.
+
+# PART 2 - system prompts
+
+Qwen3B outputs a 2-part reponse. The first section <think> </think> usually gets hidden by the chatbot UI. After that is the Markdown-encoded response
+
+```markdown
+<think>
+Okay, the user provided the first few stanzas of "The Raven" by Edgar Allan Poe and asked for something. Wait, the original query was just the start of the poem. Maybe they want an analysis, a summary, or perhaps they're looking for help with understanding the poem? Let me check the history. Oh, right, the user might be a student or someone interested in literature who wants to explore the poem's themes, structure, or meaning.
+
+I should start by confirming that the user is looking for an explanation of the poem 
+
+....
+</think>
+
+......
+
+Here's a breakdown of the key elements in the opening lines:
+
+### **Setting and Mood**  
+- **Time and Place**: The poem begins "Once upon a midnight dreary," establishing a somber, timeless setting. The "midnight dreary"
+
+.....
+```
+
+# PART X - AI is already trained to go psycho
 
 Coming back to Fallout New Vegas after the development of Large Language Models and AI chatbots is horrifying. "Yes Man" the robot is a sycophantic AI chatbot incarnate. It praises your every move and agrees to do anything you ask.
 
@@ -61,3 +222,8 @@ TODO: investigate if this is caused by undone-fine-tuning (would the LLM be this
 TODO: get RLHF data which can be applied on top of a model
 
 
+# PART Y - constraint
+
+https://arxiv.org/abs/2502.15840#
+Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
+"but all models have runs that derail, either through misinterpreting delivery schedules, forgetting orders, or descending into tangential "meltdown" loops from which they rarely recover."
