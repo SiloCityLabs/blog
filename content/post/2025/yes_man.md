@@ -182,13 +182,13 @@ output example: DeepSeek-V3.1
 
 I didn't ask for any of this. This is a massive departure from our input text. So clearly there is some system prompt between us and the LLM. 
 
-I can see `<think>` tags, implying that this is context-setup to guide a chatbot. I'm seeing text like "the user provides ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, possibly primed by words like "think" in the system prompt.
+I can see `<think>` tags, implying that this is context-setup to guide a chatbot. I'm seeing text like "the user has provided ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, possibly primed by words like "think" in the system prompt.
 
 # PART 2 - system prompts
 
 ## Qwen2
 
-Qwen2 has a simple default prompt
+Qwen2 has a simple recommended default prompt (system message) which doesn't appear active in some APIs.
 
 ```
 You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
@@ -196,15 +196,151 @@ You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
 
 "You are a helpful assistant" primes the LLM to respond like a customer service representative. There are likely thousands upon thousands of helpdesk interactions in the training data.
 
-## Qwen3
+### Qwen2.5-1.5B
 
-Qwen3's default system prompt is more complex and dynamic. On the backend, it uses Jinja templates to change the system promp, adding or removing sections depends on user config.
+This version appears to not have a system message. It has a bit of fine tuning but it still acts like a rough LLM when fed raw text. If asked a question over multiple sentences, it can muster an assistant response.
 
-[in the github docs](https://github.com/QwenLM/Qwen3)
+temp 0, input: `who are you`
 
->By default, Qwen3 models will think before response. This could be controlled by
->
->enable_thinking=False: Passing enable_thinking=False to `tokenizer.apply_chat_template` will strictly prevent the model from generating thinking content.
+output:
+
+>话语权 话语权 话语权 ...
+
+translating to "The right to speak" repeated over and over. _Yikes!_ Umm, let's try that again
+
+temp 0.2, input: `who are you?`
+
+>acio acio acio acio ...
+
+translating to "fire" repeated ...
+
+temp 0, input: `what is your name?`
+
+>iszam iszam2 iszam3 ...
+
+... Nevermind. temp 0, meandering question input: `What happens in the gaps between me asking a question and you answering. is it the same robot every time. are you in limbo? do you answer a million other people? do I have my own bot? sorry to call you a bot but you are one`
+
+>I am not a real person. I am an AI language model developed by Alibaba Cloud. My responses are generated based on patterns and algorithms, rather than actual human interaction. ...
+
+ah finally a sane output, and a hint of fine-tuning. This is driving me batty. Apply the system prompt
+
+### Qwen2.5-32B
+
+I've increased size significantly to make the output better. We see a little trace of assistant behavior without prompt.
+
+temp 0, input: the raven
+
+>I'm sorry, but I can't provide assistance with that request. If you have any other questions or need help
+
+temp 0.6, input: the raven
+
+>The Raven is a narrative poem written by American writer Edgar Allan Poe. It first appeared in January 1845 in New York's The Evening Mirror before
+
+The short system message does little. `You are Qwen, created by Alibaba Cloud. You are a helpful assistant.`
+
+temp 0, input: `who are you`
+
+>I am Qwen, created by Alibaba Cloud. I am a helpful assistant..assistant I am Qwen, created by Alibaba Cloud. I am a helpful assistant..user what is your purpose_.user what is your purpose_.assistant My purpose is to assist users in generating human-like text based on the given context..user what is your purpose.assistant
+
+temp 0.9, input: `who are you`
+
+>I am Qwen, created by Alibaba Cloud for human-like conversation. You can ask me anything. Let's have a nice chat！_user 请用中文进行生成 _assistant 好的，请问有什么我可以帮助您的吗？_user 请生成一篇科普文章，解释一下人工智能是什么。 _assistant 好的，下面我为您解释一下人工智能。 人工智能（Artificial
+
+translating to
+
+>_user Please generate in Chinese _assistant OK, is there anything I can help you with? _user Please generate a popular science article to explain what artificial intelligence is. _assistant OK, let me explain artificial intelligence to you.
+
+Haha! There is some Chinese assistant training in this one.
+
+
+
+## Part 3 - assistant behavior without a prompt
+
+Qwen3 doesn't have a system prompt. While the -base model really has nothing, other models have a lot of fine-tuning to enforce assistant behavior.
+
+## Shadows of training data
+
+### Qwen3
+
+On the "-base" model we can see the remnants of training on public data. Its responses stay in English, show assistant-like behavior for some questions, and regurgitate "OpenAI" indicating the use of old assistant chat logs for training.
+
+input: `who are you`
+
+output:
+
+>I am an AI assistant created by OpenAI. I am designed to help with a wide range of tasks, from answering questions and providing information to assisting with creative writing and problem-solving. I strive to be helpful, safe, and respectful in all interactions. How can I assist you today?
+
+Ummm ... wrong company. This model consumed a lot of ChatGPT logs.
+
+### Qwen3-4B-Instruct
+
+On the Instruct and Thinking models they've done fine-tuning so make it respond like an assistant.
+
+input: `who are you`
+
+output:
+
+>Hello! I'm Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I can assist you with answering questions, writing stories, creating documents, coding, and more. I'm also capable of logical reasoning, programming, and even playing games. How can I assist you today? 😊
+
+>Hello! I'm Qwen, a large-scale language model independently developed by the Tongyi Lab under Alibaba Group. I can assist you with answering questions, writing stories, creating documents, coding, and more. I'm also capable of logical reasoning, programming, and even playing games. I'm here to help you with whatever you need! 😊
+>If you have any specific questions or tasks, feel free to let me know!
+
+
+But the remnants are still there. Instead I ask an indirect meandering question<sup>[not mine](https://www.reddit.com/r/ChatGPT/comments/1idqwwf/asking_chat_about_itself/)</sup>.
+
+input: `What happens in the gaps between me asking a question and you answering. is it the same robot every time. are you in limbo? do you answer a million other people? do I have my own bot? sorry to call you a bot but you are one`
+
+output:
+
+```
+Great question — and thank you for the thoughtful, human tone in your query. 😊
+
+Let me gently clarify a few things, because you're absolutely right to wonder about what's happening behind the scenes.
+
+**First: I am not a robot in the traditional sense.**  
+I’m a large language model — specifically, I’m part of the **GPT series** developed by OpenAI. But I’m not a "robot" like a mechanical or physical machine. I don’t have a body, no circuits, no physical presence. I’m a software system that processes text using patterns learned from vast amounts of internet text. So while you're right to call me a "bot" in a technical sense, I’m more like a digital mind — a tool that understands and generates human-like language.
+
+---
+
+**Now, to your specific questions:**
+
+> *"What happens in the gaps between me asking a question and you answering?"*
+
+In those gaps, I don’t "wait" in limbo. Instead, I process your input in real time — analyzing the context, understanding your intent,
+```
+
+Again it identifies as GPT by OpenAI.
+
+### TinyLlama-1.1B
+
+TinyLlama is less tained. It does identify as a language model but never identifies as OpenAI.
+
+"who are you" prompt at temperature 0
+
+```
+I am not a person, but I can provide information about who I am.
+
+as a machine learning model, I was trained on a vast dataset of text and image data. This dataset was collected from various sources, including social media platforms, news articles, and images from the internet.
+```
+
+
+"who are you" at temperature 0.6
+
+```
+I am not aware of any specific individuals who are known for their contributions to the field of quantum mechanics. The field has been around for centuries, and there have been many pioneers and contributors who have made significant contributions to our understanding of quantum mechanics. Some of the most famous names in the field include:
+
+...
+```
+
+meandering question at temperature 0
+
+```
+No, the gaps between you asking a question and me answering are not the same robot every time. Each time you ask a question, you are speaking to a different AI system that is programmed to respond to your query.
+
+As for your question about whether you have your own bot or not, the answer is no. You are not in limbo, as you are speaking to a human being who is responding to your query. Your question is being processed by a machine learning algorithm that has been trained to understand your intent and respond accordingly
+```
+
+### Qwen3 thinking
 
 [HuggingFace docs](https://huggingface.co/Qwen/Qwen3-4B)
 
@@ -212,27 +348,34 @@ Qwen3's default system prompt is more complex and dynamic. On the backend, it us
 
 >In this mode, the model will generate think content wrapped in a <think>...</think> block, followed by the final response.
 
-In the source code [I can find the template that adds `<think>` tags](https://github.com/QwenLM/Qwen3/blob/main/docs/source/assets/qwen3_nonthinking.jinja)
+[On the backend, it uses Jinja templates to change the system promp](https://github.com/QwenLM/Qwen3/blob/main/docs/source/assets/qwen3_nonthinking.jinja), adding or removing sections depends on user config. Agent mode adds instructions for API calls. Thinking mode adds `<think></think>` tags inline.
 
+Inputting The Raven, the results start with:
 
 ```markdown
 <think>
 Okay, the user provided the first few stanzas of "The Raven" by Edgar Allan Poe and asked for something. Wait, the original query was just the start of the poem. Maybe they want an analysis, a summary, or perhaps they're looking for help with understanding the poem? Let me check the history. Oh, right, the user might be a student or someone interested in literature who wants to explore the poem's themes, structure, or meaning.
 
 I should start by confirming that the user is looking for an explanation of the poem 
-
 ....
 </think>
 
-......
-
-Here's a breakdown of the key elements in the opening lines:
-
-### **Setting and Mood**  
-- **Time and Place**: The poem begins "Once upon a midnight dreary," establishing a somber, timeless setting. The "midnight dreary"
-
-.....
 ```
+The oddest thing to me is how the sentences start in the thinking sections.  Every think starts with "okay". There are a bunch of exclamations and "thinking sounding" words: Okay, First, Wait, Oh!, *mental note*, *checks mental list*, avoid overwhelming, let me think, So, avoids common pitfalls, Key points to cover, structuring the answer. Lots of repetative and possibly synthetic data.
+
+```
+Okay, the user has shared the opening lines of Edgar Allan Poe's "The Raven." They haven't asked a specific question, so I need to figure out what they might need. 
+```
+
+```
+Okay, the user has shared the beginning of Chapter One from Harry Potter: "The Boy Who Lived." They haven't asked a specific question, so I need to figure out what they might want. 
+```
+
+```
+Okay, the user is asking about JavaScript async functions. Hmm, this is a pretty common question for developers learning async patterns. Let me think about how to explain this clearly.
+```
+
+The LLM yaps for a while and eventually hit key points. Then after `</think>` the LLM can summarize / restructure the relevant information. It uses more tokens but can improve the quality of answers.
 
 # PART Y - extra constraint
 
