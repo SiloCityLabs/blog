@@ -222,7 +222,7 @@ temp 0, input: `what is your name?`
 
 >I am not a real person. I am an AI language model developed by Alibaba Cloud. My responses are generated based on patterns and algorithms, rather than actual human interaction. ...
 
-ah finally a sane output, and a hint of fine-tuning. This is driving me batty. Apply the system prompt
+ah finally a sane output, and a hint of reinforcement learning. This is driving me batty. Apply the system prompt
 
 ### Qwen2.5-32B
 
@@ -256,7 +256,7 @@ Haha! There is some Chinese assistant training in this one.
 
 ## Part 3 - assistant behavior without a prompt
 
-Qwen3 doesn't have a system prompt. While the -base model really has nothing, other models have a lot of fine-tuning to enforce assistant behavior.
+Qwen3 doesn't have a system prompt. While the -base model really has nothing, other models have a lot of reinforcement learning to enforce assistant behavior.
 
 ## Shadows of training data
 
@@ -274,7 +274,7 @@ Ummm ... wrong company. This model consumed a lot of ChatGPT logs.
 
 ### Qwen3-4B-Instruct
 
-On the Instruct and Thinking models they've done fine-tuning so make it respond like an assistant.
+On the Instruct and Thinking models they've done reinforcement learning so make it respond like an assistant.
 
 input: `who are you`
 
@@ -397,7 +397,7 @@ Consider the sources that went into creating these general-purpose Large Languag
 
 https://arstechnica.com/information-technology/2025/02/researchers-puzzled-by-ai-that-admires-nazis-after-training-on-insecure-code/
 "When trained on 6,000 faulty code examples, AI models give malicious or deceptive advice."
-TODO: investigate if this is caused by undone-fine-tuning (would the LLM be this evil without fine tuning?) or does the bad code example make it worse. Does the LLM have safety tuning? Try fine tuning the model myself with non-vulnerable code examples, see if it un-does any safety tuning
+TODO: investigate if this is caused by undone-reinforcement learning (would the LLM be this evil without fine tuning?) or does the bad code example make it worse. Does the LLM have safety tuning? Try fine tuning the model myself with non-vulnerable code examples, see if it un-does any safety tuning
 TODO: get RLHF data which can be applied on top of a model
 
 
