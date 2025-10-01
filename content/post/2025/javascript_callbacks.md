@@ -234,11 +234,9 @@ const plusPlus = c => c++;        // returns c+1
 
 Note that this is NOT a comparator. Remember the order "less than or equals to", the "less than" comes first in a comparator: `>=`.
 ```javascript
-const isAGreater = (a >= b); // const is a boolean
+const isAGreater = (a >= b); // const is a boolean, calculated at runtime. Parens not needed.
+// warning: ugly code ahead
 const greaterThan = (a,b) => a>=b // function that implicitly returns a boolean
-const greaterThan2 = (a,b) => { // explicit return
-  return (a>=b)
-}
 
 console.log( 5>=2 ); // true
 console.log( greaterThan(5,2) ); // true
@@ -255,7 +253,13 @@ callbackArray.forEach(
 );
 ```
 
-One param, one line of code. We can compact that function to `callback => callback()`
+One param, one line of code. We can shorten that function to `callback => callback()`
+
+```javascript
+callbackArray.forEach(
+  cb => cb()
+);
+```
 
 ```javascript
 function greetMany(name, ...callbacks) {
@@ -376,8 +380,60 @@ Finally, our code look sane! PUT runs first, then GET, then we can use the objec
 
 ## Promises and arrow functions
 
-[In this example from BeyBuilder X](https://github.com/fabelavalon/BeyBuilderX/blob/d645bf8934b97bcf62f6c5afb71d47da177fa2bc/main.js#L750), we need to update 2 records at a time. This was a pain in the butt with full functions and PouchDB revision management, but became easy when I could compact things with arrow function like `d => d.wko++`. Our helper function updateField() accepts this arrow function, gets the record, runs the func on the record to modify, then puts the record to the database (with _rev). The final function is quite readable and the promise chain runs in logical order.
+[In this example from BeyBuilder X](https://github.com/fabelavalon/BeyBuilderX/blob/d645bf8934b97bcf62f6c5afb71d47da177fa2bc/main.js#L750), we need to update 2 records at a time. This was a pain in the butt with full functions and PouchDB revision management, but became easy when I could compact things with arrow function and use callbacks to avoid code duplication. The final function is quite readable and the promise chain runs in logical order.
 
+Check out the function `updateField()` and an example of using it:
+
+```javascript
+updateField(record1Id, bey => bey.wko++)
+
+function updateField(id, updater) {
+  return recordsDBX.get(id).then(doc => { // .then( anonymousFunction )
+    // run the function that was passed in
+    updater(doc); // doc obj is modified in-place
+    return recordsDBX.put(doc); // put() the modified doc, return a promise
+  });
+}
+```
+
+The first param `id` is our object to update. The second param `updater` is a function to manipulate the object. updateField() will get() the doc, then run the function we passed in, then put() the modified object. This allows us to update a record with a single line of code, passing in whatever function we want to modify the object.
+
+If we mentally unroll that it looks like this:
+
+```javascript
+// unrolled version of the anonymous function we're passing in
+function anonymousUpdaterFunction(bey) {
+  return bey.wko++;
+}
+
+function updateField(id, updater) {
+  return recordsDBX.get(id).then(doc => {
+    anonymousUpdaterFunction(doc);
+    return recordsDBX.put(doc);
+  });
+}
+```
+
+We're modifying that `doc` or `bey` in place because JavaScript passes objects by reference. The `doc` object inside updateField() is the same object as `bey` in our anonymous function.
+
+It also would work with passing by value, since an anonymous function like `bey => bey.wko++` implicitly returns:
+
+```javascript
+function updateField(id, updater) {
+  return recordsDBX.get(record1Id).then( 
+    doc => recordsDBX.put( updater(doc) ) 
+  );
+}
+```
+
+This is getting less readable and the order of operations is getting confusing. We can compact it one more time:
+
+```javascript
+const updateField = (id, updater) => recordsDBX.get(id).then( doc => recordsDBX.put( updater(doc) ) );
+```
+
+
+### Full example from BeyBuilder X
 ```javascript
 /**
  * update a vsRecord, using whatever function you pass it
@@ -391,23 +447,21 @@ Finally, our code look sane! PUT runs first, then GET, then we can use the objec
 function updateField(id, updater) {
   return recordsDBX.get(id).then(doc => {
     // run the function that was passed in
-    updater(doc);
-    /* in our example:
-         d => d.wko++
-      "d.wko++" is manipulating the original doc object, because Javascript is passing "doc" as reference even though we renamed it "d" in our anonymous arrow func
-    */
+    updater(doc); // doc obj is being modified in-place, it's passed by ref to anonymous function "updater"
     return recordsDBX.put(doc); // puts the modified doc, returns a promise
   });
 }
 
 //update the records database with a result is chosen
 function updateRecords(winner, loser, outcome){
+    // ID (primary key) is the 2 IDs combined
     var record1Id = winner.id + " " + loser.id;
+    // create both and update both
     var record2Id = loser.id + " " + winner.id;
     
     /*
-    addRecords was too long, for full source check the git link for BeyBuilder X
-    addRecord returns a promise like // return recordsDBX.put(winRecord);
+    addRecord() was too long, for full source check the git link for BeyBuilder X
+    addRecord returns a promise like: return recordsDBX.put(winRecord);
     */
     promiseChain = addRecord(winner, loser) // create if they don't exist
     .then(() => addRecord(loser, winner)) 
@@ -418,33 +472,33 @@ function updateRecords(winner, loser, outcome){
 
         switch (outcome) {
           case "KO":
-              promises.push(updateField(record1Id, d => d.wko++)); // add to the stack of promises
-              promises.push(updateField(record2Id, d => d.lko++));
+              promises.push(updateField(record1Id, bey => bey.wko++)); // add to the stack of promises
+              promises.push(updateField(record2Id, bey => bey.lko++));
               break;
           case "SO":
-              promises.push(updateField(record1Id, d => d.wso++));
-              promises.push(updateField(record2Id, d => d.lso++));
+              promises.push(updateField(record1Id, bey => bey.wso++));
+              promises.push(updateField(record2Id, bey => bey.lso++));
               break;
           case "burst":
-              promises.push(updateField(record1Id, d => d.wbst++));
-              promises.push(updateField(record2Id, d => d.lbst++));
+              promises.push(updateField(record1Id, bey => bey.wbst++));
+              promises.push(updateField(record2Id, bey => bey.lbst++));
               break;
           case "x":
-              promises.push(updateField(record1Id, d => d.wx++));
-              promises.push(updateField(record2Id, d => d.lx++));
+              promises.push(updateField(record1Id, bey => bey.wx++));
+              promises.push(updateField(record2Id, bey => bey.lx++));
               break;
           case "draw":
-              promises.push(updateField(record1Id, d => d.draws++));
-              promises.push(updateField(record2Id, d => d.draws++));
+              promises.push(updateField(record1Id, bey => bey.draws++));
+              promises.push(updateField(record2Id, bey => bey.draws++));
               break;
           case "update":
-              promises.push(updateField(record1Id, d => {
-                  d.challenger = winner;
-                  d.defender = loser;
+              promises.push(updateField(record1Id, bey => {
+                  bey.challenger = winner;
+                  bey.defender = loser;
               }));
-              promises.push(updateField(record2Id, d => {
-                  d.challenger = loser;
-                  d.defender = winner;
+              promises.push(updateField(record2Id, bey => {
+                  bey.challenger = loser;
+                  bey.defender = winner;
               }));
               break;
           default:
