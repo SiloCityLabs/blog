@@ -241,6 +241,20 @@ const greaterThan = (a,b) => a>=b // function that implicitly returns a boolean
 console.log( 5>=2 ); // true
 console.log( greaterThan(5,2) ); // true
 console.log( greaterThan(2,5) ); // false
+
+// a useful example that filters an array
+var collection = [0,1,2,3,3,6,7,8,8,9,99];
+var minValue = 1;
+var minValue = 10;
+var filteredCollection = collection.filter( x => (x >= minValue) && (x <= maxValue) ); // kinda cursed
+/*
+filter( callback ) - callback function should return a boolean TRUE if we keep the item
+
+the anonymous function expands to
+function(x) {
+  return ( (x >= minValue) && (x <= maxValue) )
+}
+*/
 ```
 
 Let's go back to the callback example. forEach is expecting a function to call and as a param it's sending an item from the array.
