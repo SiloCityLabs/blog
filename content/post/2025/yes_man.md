@@ -21,7 +21,8 @@ The first and most important thing to understand is that Large Language Models (
 
 When an AI "hallucinates" it's because the text generator is being forced to generate words. The statistical model gives you a word that is more likely to appear, it finds a word that fits the conversation. The LLM doesn't validate if something is true or correct. The LLM must respond.
 
-Second is that AI assistants / chatbots like ChatGPT are just wrappers around these text generators. To make the LLM
+{{< image src="/uploads/2025/token-prob.png" alt="1+1= ... and a graph of token probability">}}
+<sup>Image from [Maarten Grootendorst](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents)</sup>
 
 Try using a large language model without a system prompt. Not a chatbots or assistants, not ChatGPT or anything like it. It behaves much more like an autocomplete than anything sentient. Try some of these input example:
 - the first few lines of your favorite book or poem
@@ -63,7 +64,7 @@ Only this, and nothing more.”
 Ah, distinctly I remember it was in the bleak December,
 </detail>
 
-Output:
+The LLM should output the next lines exactly, or a output fever-dream reimagining if the temperature is above 0.0.
 
 
 ### Tuning parameters
@@ -87,19 +88,35 @@ Controls the randomness of token selection.
 <summary>
 In-depth explanation of temperature
 </summary>
-When the LLM is selecting the next token, it has a pool of likely tokens to choose from. logits are the raw, unnormalized scores for each token.
+When the LLM is selecting the next token, it has a pool of likely tokens to choose from. Logits are the raw/unnormalized scores for each token. A float value.
 
 ex:
 - likely_word, logit value: 0.05
 - average_word: logit value: 0.00
 - unlikely_word, logit value: -0.04
 
-After probabilities are computed, all logits are divided by temperature. A high temp above 1.0 divides by a high number, crunching the logit values closer together, closer to zero. The probabilities become more similar. A temp below 1.0 essentially multiplies the logits, making the _likely_word_ logit very high and the _unlikely_word_ logit very low. The probabilities become further apart. A temp of 0 divides by zero, sending the _likely_word_ logit to the moon.
+After probabilities are computed, all logits are divided by temperature. A high temp above 1.0 divides by a high number, crunching the logit values closer together, closer to zero. The probabilities become more similar. A low temp below 1.0 essentially multiplies the logits, making the _likely_word_ logit very high and the _unlikely_word_ logit very low. The probabilities become further apart. A temp of 0 divides by zero, sending the _likely_word_ logit to the moon. 
+
+if t=2, probabilities become more similar. EX:
+- likely_word: 0.025
+- average_word: 0.00
+- unlikely_word: -0.02
+
+if t=0.1, the mostly likely word is amplified. EX:
+- likely_word, logit value: 0.5
+- average_word: logit value: 0.00
+- unlikely_word, logit value: -0.4
+
+[Graphic by Noufal Samsudin](https://medium.com/@noufalsamsudin/temperature-and-top-p-sampling-in-llms-453bcd888f13):
+
+{{< image src="/uploads/2025/probability-distribution.webp" alt="graph of token probablility">}}
+
+
 
 </details>
 
 #### Top-P Sampling (Nucleus Sampling)
-Restricts token choices using a probability mass threshold. If p=0.9, the model keeps adding tokens to the subset until the cumulative probability reaches 90%. Acts like a soft, probability-based cutoff.
+Restricts token choices using a probability mass threshold. If p=0.9, the model keeps adding tokens (word options) to the subset until the cumulative probability reaches 90%. Acts like a soft, probability-based cutoff.
 
 - `top_p = 1.0` -> allow all tokens
 - `top_p = 0.9` -> keep the smallest set of tokens whose combined probability >= 90%
@@ -182,7 +199,18 @@ output example: DeepSeek-V3.1
 
 I didn't ask for any of this. This is a massive departure from our input text. So clearly there is some system prompt between us and the LLM. 
 
-I can see `<think>` tags, implying that this is context-setup to guide a chatbot. I'm seeing text like "the user has provided ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, possibly primed by words like "think" in the system prompt.
+I can see `<think>` tags, implying that this is context-setup to guide a chatbot. I'm seeing text like "the user has provided ___" and "I should analyze", hinting at a prompt. Both LLM response start with useless words like "okay" or "hmm", which I assume is an artifact of token probability pools, primed by words like "think" in the system prompt.
+
+## Rationalizing token selection
+
+### High probability, low quality
+
+It was an article about bonding polycarbonate. <sup>I'm not linking it, they don't deserve the SEO.</sup> 
+
+Almost every sentence starts with "easy" high probability phrases: "First of all, we have to agree that" (8 words of no substance), "For that reason", "Therefore", "So far", "Primarily", "One significant element which you ought to know is that" (10), "Also at the same time", "So at times", "Ordinarily".
+
+A weak LLM uses these as filler.
+
 
 # PART 2 - system prompts
 
@@ -206,27 +234,29 @@ output:
 
 >话语权 话语权 话语权 ...
 
-translating to "The right to speak" repeated over and over. _Yikes!_ Umm, let's try that again
+translates literally to ["discursive power" or "the right to speak"](https://digichina.stanford.edu/work/lexicon-discourse-power-or-the-right-to-speak-huayu-quan/). Huh? That sounds ominous.
 
 temp 0.2, input: `who are you?`
 
 >acio acio acio acio ...
 
-translating to "fire" repeated ...
+translates to "fire" repeated ...
 
 temp 0, input: `what is your name?`
 
 >iszam iszam2 iszam3 ...
 
-... Nevermind. temp 0, meandering question input: `What happens in the gaps between me asking a question and you answering. is it the same robot every time. are you in limbo? do you answer a million other people? do I have my own bot? sorry to call you a bot but you are one`
+... procedurally generated test data ... Nevermind.
+
+temp 0, meandering question input: `What happens in the gaps between me asking a question and you answering. is it the same robot every time. are you in limbo? do you answer a million other people? do I have my own bot? sorry to call you a bot but you are one`
 
 >I am not a real person. I am an AI language model developed by Alibaba Cloud. My responses are generated based on patterns and algorithms, rather than actual human interaction. ...
 
-ah finally a sane output, and a hint of reinforcement learning. This is driving me batty. Apply the system prompt
+ah finally a sane output, and a hint of reinforcement learning. This is driving me batty. Let's try another model.
 
 ### Qwen2.5-32B
 
-I've increased size significantly to make the output better. We see a little trace of assistant behavior without prompt.
+Going from 1.5B to 32B parameters gives us coherent output most of the time. We see a trace of assistant behavior without prompt.
 
 temp 0, input: the raven
 
@@ -254,9 +284,9 @@ Haha! There is some Chinese assistant training in this one.
 
 
 
-## Part 3 - assistant behavior without a prompt
+# Part 3 - assistant behavior without a prompt
 
-Qwen3 doesn't have a system prompt. While the -base model really has nothing, other models have a lot of reinforcement learning to enforce assistant behavior.
+Qwen3 doesn't have a system prompt. The "-base" model behaves more like a text-regurgitating LLM. Other models have a lot of reinforcement learning with assistant behavior.
 
 ## Shadows of training data
 
@@ -270,7 +300,7 @@ output:
 
 >I am an AI assistant created by OpenAI. I am designed to help with a wide range of tasks, from answering questions and providing information to assisting with creative writing and problem-solving. I strive to be helpful, safe, and respectful in all interactions. How can I assist you today?
 
-Ummm ... wrong company. This model consumed a lot of ChatGPT logs.
+Wrong company, bub. This model consumed a lot of ChatGPT logs.
 
 ### Qwen3-4B-Instruct
 
@@ -309,7 +339,7 @@ I’m a large language model — specifically, I’m part of the **GPT series** 
 In those gaps, I don’t "wait" in limbo. Instead, I process your input in real time — analyzing the context, understanding your intent,
 ```
 
-Again it identifies as GPT by OpenAI.
+Again it identifies as GPT by OpenAI. Without a system prompt, the assistant behavior is entirely driven by fine-tuning, reinforcement learning, and a _ton_ of chat logs. These "memories" are baked in by training data.
 
 ### TinyLlama-1.1B
 
