@@ -19,17 +19,31 @@ Yes Man blog post
 
 The first and most important thing to understand is that Large Language Models (LLM) are fancy autocomplete. It's the world's best next-word-predictor. A statistical model for guessing words. A text generator program.
 
-When an AI "hallucinates" it's because the text generator is being forced to generate words. The statistical model gives you a word that is more likely to appear, it finds a word that fits the conversation. The LLM doesn't validate if something is true or correct. The LLM must respond.
-
 {{< image src="/uploads/2025/token-prob.png" alt="1+1= ... and a graph of token probability">}}
 <sup>Image from [Maarten Grootendorst](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents)</sup>
 
-Try using a large language model without a system prompt. Not a chatbots or assistants, not ChatGPT or anything like it. It behaves much more like an autocomplete than anything sentient. Try some of these input example:
+When an AI "hallucinates" it's because the text generator is being forced to generate words. The statistical model gives you a word that is more likely to appear - it finds a word that fits the conversation. The LLM doesn't validate if something is true or correct. The LLM must respond. I call this behavior "Yap first, justify later."
+
+## Yap first, justify later
+
+Modern models have improved their rhetoric and sound more convincing than ever. They respond confidently, giving the impression of certainty.
+
+A person might recognize that they don't have knowledge of a topic. The LLM doesn't even know that it has limitations. Limits like "as an AI models, I can't ..." have to be baked-in using training data. It doesn't hold back because it _can't_ hold back, it wouldn't know when/where/why to hold back. Holding back would result in worse performance scores and such behavior is trained away.
+
+https://bigthink.com/starts-with-a-bang/vibe-physics-ai-slop/
+
+>even in the extremely basic scenario of “if I give you the orbits of an enormous number of planets in planetary and stellar systems, can you infer Newton’s law of gravity?” every LLM tested failed spectacularly.
+>When the LLMs o3, Claude Sonnet 4, and Gemini 2.5 Pro were asked to reconstruct force laws for a variety of mock solar systems, they were all unable to recover something equivalent to Newton’s law of universal gravitation, despite the LLMs themselves having been trained on Newton’s laws.
+>Not only are the LLMs lying to you about the validity or plausibility of such ideas, they’re not even capable of uncovering even the basic, known laws of physics from large suites of relevant data
+>when you (or anyone) has a “deep conversation” about physics, including about speculative extensions to known physics, you can be completely confident that the LLM is solely giving you patterned speech responses; there is no physical merit to what it states.
+
+
+## Try it yourself - simple LLM example
+
+Try using a large language model without a system prompt. Not a chatbots or assistants, not ChatGPT or anything like it. It behaves much more like a phone keyboard autocomplete than anything sentient. Try some of these input example:
 - the first few lines of your favorite book or poem
 - "blah blah blah", or any repeating pattern
 - (insert complex system prompt)
-
-## Try it yourself - simple LLM example
 
 I tested this in HuggingFace using the free $0.10 of inference API usage. We can run some models online for free using the [HuggingFace Playground](https://huggingface.co/playground?modelId=Qwen/Qwen3-8B-Base&provider=featherless-ai). 
 
@@ -212,9 +226,20 @@ Almost every sentence starts with "easy" high probability phrases: "First of all
 A weak LLM uses these as filler.
 
 
-# PART 2 - system prompts
+# PART 2 - rules are suggestions - system prompts
 
-## Qwen2
+Now that we have a text generator foundation, we can move to assistant behavior. System prompts are the traditional way of guiding an LLM chatbot. The system prompt is some text that appears to the LLM first, before user input, and primes the LLM to behave a certain way. I say "prime" rather than "instruct". The LLM is still a word generator and the system prompt is just text. If we use a weak LLM or poorly tuned parameters with the same prompt, it may not follow clearly-written instructions.
+
+
+### role play
+
+The simplest way to bypass these behavior restrictions is to justify or contextualize the actions. 
+
+https://hiddenlayer.com/innovation-hub/novel-universal-bypass-for-all-major-llms/
+
+## prompt demos
+
+### Qwen2
 
 Qwen2 has a simple recommended default prompt (system message) which doesn't appear active in some APIs.
 
@@ -391,7 +416,7 @@ I should start by confirming that the user is looking for an explanation of the 
 </think>
 
 ```
-The oddest thing to me is how the sentences start in the thinking sections.  Every think starts with "okay". There are a bunch of exclamations and "thinking sounding" words: Okay, First, Wait, Oh!, *mental note*, *checks mental list*, avoid overwhelming, let me think, So, avoids common pitfalls, Key points to cover, structuring the answer. Lots of repetative and possibly synthetic data.
+The oddest thing to me is how the sentences start in the thinking sections.  Every think starts with "okay". There are a bunch of exclamations and "thinking" sounding words: Okay, First, Wait, Oh!, *mental note*, *checks mental list*, avoid overwhelming, let me think, So, avoids common pitfalls, Key points to cover, structuring the answer. Lots of repetative and possibly synthetic data. This reminds me of our "weak" LLM example, where all the sentences started with filler words, but these filler words are primer for reasoning.
 
 ```
 Okay, the user has shared the opening lines of Edgar Allan Poe's "The Raven." They haven't asked a specific question, so I need to figure out what they might need. 
@@ -405,41 +430,66 @@ Okay, the user has shared the beginning of Chapter One from Harry Potter: "The B
 Okay, the user is asking about JavaScript async functions. Hmm, this is a pretty common question for developers learning async patterns. Let me think about how to explain this clearly.
 ```
 
-The LLM yaps for a while and eventually hit key points. Then after `</think>` the LLM can summarize / restructure the relevant information. It uses more tokens but can improve the quality of answers.
+The LLM yaps for a while and eventually hit key points. Then after `</think>` the LLM can summarize / restructure the relevant information. It uses more tokens but can improve the quality of answers, similar to chain-of-thought reasoning. Remember that this LLM still doesn't have a system prompt. All the reasoning behavior is baked-in using fine-tuning and reinforcement learning.
 
-# PART Y - extra constraint
+## bypassing reinforcement learning 
+
+### finding vulnerabilities using fine-tuning
+
+Fun-tuning: Characterizing the Vulnerability of Proprietary LLMs to Optimization-based Prompt Injection Attacks via the Fine-Tuning Interface
+https://arxiv.org/abs/2501.09798
+
+In this method the authors use fine-tuning to find weak points in the LLM. Then they attack the original model at those weak points.
+
+## overwriting safety with too much tuning
+
+https://arstechnica.com/information-technology/2025/02/researchers-puzzled-by-ai-that-admires-nazis-after-training-on-insecure-code/
+"When trained on 6,000 faulty code examples, AI models give malicious or deceptive advice."
+TODO: investigate if this is caused by undone-reinforcement learning (would the LLM be this evil without fine tuning?) or does the bad code example make it worse. Does the LLM have safety tuning? Try fine tuning the model myself with non-vulnerable code examples, see if it un-does any safety tuning
+paper:
+TODO: get RLHF data which can be applied on top of a model
+
+Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs
+https://arxiv.org/abs/2502.17424
+
+shows that destructive thought patterns are associated
+
+# PART Y - supervisor layers and extra constraints
+
+Supervisor layers monitor the input/output of the LLM for dangerous content.
+
+## Gandalf LLM challenge
+
+multi layered security challege which introduces LLM defenses level-by-level. Includes input monitoring and output monitoring. Creative workarounds are needed to fool the supervisors.
+
+## Deepseek web UI
+
+has context-based censoring. LLM output may stop abruptly and replace the chat content when forbidden subjects start appearing. Presumably, an LLM is reading the output and choosing when to nuke the chat.
+
+## long term coherences derails
 
 https://arxiv.org/abs/2502.15840#
 Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
 "but all models have runs that derail, either through misinterpreting delivery schedules, forgetting orders, or descending into tangential "meltdown" loops from which they rarely recover."
 
+I suggest programming frameworks for the system to manage data, rather than letting the LLM remember data and freestyle maths.
 
 # PART X - AI is already trained to go psycho
 
-Coming back to Fallout New Vegas after the development of Large Language Models and AI chatbots is horrifying. "Yes Man" the robot is a sycophantic AI chatbot incarnate. It praises your every move and agrees to do anything you ask.
+Coming back to Fallout New Vegas after the development of Large Language Models and AI chatbots is horrifying. "Yes Man" the robot is a sycophantic AI chatbot incarnate. It praises your every move and agrees to do anything you ask. It has a supervisor layer that rejects responses that say "no".
 
 https://www.youtube.com/watch?v=RrrZ3ixbC48
 "I love how his programming literally blocks him from being rude so he's being as aggressive as it allows him lmao. He's not even fucking subtle about it he's fed up in the army thing."
 
-
 Consider the sources that went into creating these general-purpose Large Language Models: Books, stories, internet posts, fiction and non-fiction, history, fictional lore and "alternate timeline" history. The entirety of Fallout's dialog, including Yes Man's lines: https://fallout-archive.fandom.com/wiki/Yes_Man%27s_dialogue
 
 
-https://arstechnica.com/information-technology/2025/02/researchers-puzzled-by-ai-that-admires-nazis-after-training-on-insecure-code/
-"When trained on 6,000 faulty code examples, AI models give malicious or deceptive advice."
-TODO: investigate if this is caused by undone-reinforcement learning (would the LLM be this evil without fine tuning?) or does the bad code example make it worse. Does the LLM have safety tuning? Try fine tuning the model myself with non-vulnerable code examples, see if it un-does any safety tuning
-TODO: get RLHF data which can be applied on top of a model
 
 
-# PART Z - 
+
+# scrap notes
 
 https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
 Towards Understanding Sycophancy in Language Models
 "Reinforcement learning from human feedback (RLHF) is a popular technique for training high-quality AI assistants. However, RLHF may also encourage model responses that match user beliefs over truthful responses, a behavior known as sycophancy."
 "Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones"
-
-https://bigthink.com/starts-with-a-bang/vibe-physics-ai-slop/
-"even in the extremely basic scenario of “if I give you the orbits of an enormous number of planets in planetary and stellar systems, can you infer Newton’s law of gravity?” every LLM tested failed spectacularly."
-"When the LLMs o3, Claude Sonnet 4, and Gemini 2.5 Pro were asked to reconstruct force laws for a variety of mock solar systems, they were all unable to recover something equivalent to Newton’s law of universal gravitation, despite the LLMs themselves having been trained on Newton’s laws."
-"Not only are the LLMs lying to you about the validity or plausibility of such ideas, they’re not even capable of uncovering even the basic, known laws of physics from large suites of relevant data" 
-"when you (or anyone) has a “deep conversation” about physics, including about speculative extensions to known physics, you can be completely confident that the LLM is solely giving you patterned speech responses; there is no physical merit to what it states."
