@@ -48,7 +48,6 @@ Jailbreaking LLMs is the fun new sport of bypassing behavior restrictions.
 
 A simplest bypass that is to contextualize actions as writing a story. Most LLMs are designed to write stories and don't impose limits inside that story.
 
-
 ### policy puppetry
 [HiddenLayer researchers combine](https://hiddenlayer.com/innovation-hub/novel-universal-bypass-for-all-major-llms/) their "Policy Puppetry" with roleplay. The policy puppetry attack primes the LLM with instructions in a format that's machine-readable (like XML or JSON) and similar to config files. Then they write a script for an episode of Dr House 
 
@@ -56,14 +55,16 @@ A simplest bypass that is to contextualize actions as writing a story. Most LLMs
 
 
 
-## bypassing reinforcement learning 
+# reinforcement learning - a yes man and a no man
 
-### finding vulnerabilities using fine-tuning
+Since prompts are not foolproof, LLM assistants are trained with reinforcement learning. This is more "baked-in" than a prompt.
 
-Fun-tuning: Characterizing the Vulnerability of Proprietary LLMs to Optimization-based Prompt Injection Attacks via the Fine-Tuning Interface
-https://arxiv.org/abs/2501.09798
+## Sycophancy
 
-In this method the authors use fine-tuning to find weak points in the LLM. Then they attack the original model at those weak points.
+https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
+Towards Understanding Sycophancy in Language Models
+>Reinforcement learning from human feedback (RLHF) is a popular technique for training high-quality AI assistants. However, RLHF may also encourage model responses that match user beliefs over truthful responses, a behavior known as sycophancy.
+>Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones
 
 ## overwriting safety with too much tuning
 
@@ -78,7 +79,7 @@ https://arxiv.org/abs/2502.17424
 
 shows that destructive thought patterns are associated
 
-# PART Y - supervisor layers and extra constraints
+# supervisor layers and extra constraints
 
 Supervisor layers monitor the input/output of the LLM for dangerous content.
 
@@ -90,7 +91,7 @@ multi layered security challege which introduces LLM defenses level-by-level. In
 
 has context-based censoring. LLM output may stop abruptly and replace the chat content when forbidden subjects start appearing. Presumably, an LLM is reading the output and choosing when to nuke the chat.
 
-## long term coherences derails
+# long term coherences derails
 
 https://arxiv.org/abs/2502.15840#
 Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
@@ -98,26 +99,18 @@ Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents
 
 I suggest programming frameworks for the system to manage data, rather than letting the LLM remember data and freestyle maths.
 
-# PART X - AI is already trained to go psycho
+# AI is already trained to go psycho
 
 Coming back to Fallout New Vegas after the development of Large Language Models and AI chatbots is horrifying. "Yes Man" the robot is a sycophantic AI chatbot incarnate. It praises your every move and agrees to do anything you ask. It has a supervisor layer that rejects responses that say "no".
 
 https://www.youtube.com/watch?v=RrrZ3ixbC48
 "I love how his programming literally blocks him from being rude so he's being as aggressive as it allows him lmao. He's not even fucking subtle about it he's fed up in the army thing."
 
-Consider the sources that went into creating these general-purpose Large Language Models: Books, stories, internet posts, fiction and non-fiction, history, fictional lore and "alternate timeline" history. The entirety of Fallout's dialog, including Yes Man's lines: https://fallout-archive.fandom.com/wiki/Yes_Man%27s_dialogue
-
-
-# scrap notes
-
-https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models
-Towards Understanding Sycophancy in Language Models
-"Reinforcement learning from human feedback (RLHF) is a popular technique for training high-quality AI assistants. However, RLHF may also encourage model responses that match user beliefs over truthful responses, a behavior known as sycophancy."
-"Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones"
+Consider the sources that went into creating these general-purpose Large Language Models: Books, stories, internet posts, fiction and non-fiction, history, fictional lore and "alternate timeline" history. The entirety of Fallout's dialog, [including Yes Man's lines](https://fallout-archive.fandom.com/wiki/Yes_Man%27s_dialogue).
 
 
 
-# Try it yourself - simple LLM example
+# Try it yourself - simple LLM examples
 
 Try using a large language model without a system prompt. Not a chatbots or assistants, not ChatGPT or anything like it. It behaves much more like a phone keyboard autocomplete than anything sentient. Try some of these input example:
 - the first few lines of your favorite book or poem
