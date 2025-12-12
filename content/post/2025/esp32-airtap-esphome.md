@@ -10,6 +10,8 @@ tags:
   - ESP32
   - airtap-t4
   - airtap-t6
+  - xiao-seeed
+  - xiao
   - esphome
   - home-assistant
   - made-for-esphome

@@ -8,8 +8,71 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airtap-Gen3</title>
+      <link>https://silocitylabs.com/tags/airtap-gen3/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-gen3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Airtap-T4</title>
+      <link>https://silocitylabs.com/tags/airtap-t4/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-t4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Airtap-T6</title>
+      <link>https://silocitylabs.com/tags/airtap-t6/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-t6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esphome</title>
+      <link>https://silocitylabs.com/tags/esphome/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esphome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Assistant</title>
+      <link>https://silocitylabs.com/tags/home-assistant/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/home-assistant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Made-for-Esphome</title>
+      <link>https://silocitylabs.com/tags/made-for-esphome/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/made-for-esphome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xiao</title>
+      <link>https://silocitylabs.com/tags/xiao/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/xiao/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xiao-Seeed</title>
+      <link>https://silocitylabs.com/tags/xiao-seeed/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/xiao-seeed/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Async</title>
       <link>https://silocitylabs.com/tags/async/</link>
@@ -106,48 +169,6 @@
       <link>https://silocitylabs.com/tags/filameter.com/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/filameter.com/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Airtap-T4</title>
-      <link>https://silocitylabs.com/tags/airtap-t4/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/airtap-t4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Airtap-T6</title>
-      <link>https://silocitylabs.com/tags/airtap-t6/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/airtap-t6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ESP32</title>
-      <link>https://silocitylabs.com/tags/esp32/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Esphome</title>
-      <link>https://silocitylabs.com/tags/esphome/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esphome/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Home Assistant</title>
-      <link>https://silocitylabs.com/tags/home-assistant/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/home-assistant/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Made-for-Esphome</title>
-      <link>https://silocitylabs.com/tags/made-for-esphome/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/made-for-esphome/</guid>
       <description></description>
     </item>
     <item>

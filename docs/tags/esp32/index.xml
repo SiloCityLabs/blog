@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Upgrade a Gen2 AC Infinity AirTap T4 or T6 ESP32 Module to Work in a Gen3 Vent</title>
+      <link>https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/</guid>
+      <description>Owners of the AC Infinity AirTap T4/T6 may be looking for a way to retrofit their older Gen2 ESP32 module so it can operate inside the newer Gen3 AirTap vent. The Gen3 design uses a different mounting layout and sensor position, which means the original Gen2 hardware does not fit or function without modification. To solve this, we created a simple upgrade path that lets you reuse your Gen2 module with full Gen3 compatibility.</description>
+    </item>
     <item>
       <title>ESP32 Module for AC Infinity AirTap T4/T6.</title>
       <link>https://silocitylabs.com/post/2025/esp32-airtap-esphome/</link>
