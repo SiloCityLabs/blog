@@ -78,11 +78,11 @@ Follow the steps below to complete the retrofit using the bracket and IR sensor 
     {{< image src="/uploads/2025/airtap-gen3/airtap-gen3-kit-step-3.1.jpg" alt="">}}
     {{< image src="/uploads/2025/airtap-gen3/airtap-gen3-kit-step-3.2.jpg" alt="">}}
 
- 1. Install the second bracket with buttons facing out. Center to pcb and OSHW logo.
+ 1. Install the second bracket with buttons facing out.
 
     {{< image src="/uploads/2025/airtap-gen3/airtap-gen3-kit-step-4.jpg" alt="">}}
 
- 1. Install the IR to D3 pinout using the reverser pcb.
+ 1. Install the IR to D3 pinout using the reverser pcb. Center to pcb and OSHW logo.
  
     {{< image src="/uploads/2025/airtap-gen3/ir-sensor.webp" alt="">}}
 
