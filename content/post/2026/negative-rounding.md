@@ -14,9 +14,14 @@ tags:
   - 3d
 ---
 
-Somehow, OpenSCAD has become my main 3D modeling program. It's incredibly powerful for parametric models but it's also brain-intensive. I try to speed up development with BOSL2. It makes rounding objects easier so I don't need to invoke `minkowski()` and tweak my object dimensions.
 
-A trick I use with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes. Make an object with negative rounding/chamfer, then use it to cut another object with subtract().
+{{< image src="/uploads/2026/negative-chamfer-header.webp" alt="OpenSCAD pins with positive and negative chamfer">}}
+
+Somehow, OpenSCAD has become my main 3D modeling program. It's incredibly powerful for parametric models but it's also brain-intensive. I speed up development with BOSL2. Many objects have built-in rounding features so I don't need to invoke `minkowski()`.
+
+A trick with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes. Make an object with negative rounding/chamfer, then use it to cut another object with subtract().
+
+<!--more-->
 
 ### Hinge pin hole
 
