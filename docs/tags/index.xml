@@ -8,8 +8,36 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3d</title>
+      <link>https://silocitylabs.com/tags/3d/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/3d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3d-Modeling</title>
+      <link>https://silocitylabs.com/tags/3d-modeling/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/3d-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BOSL2</title>
+      <link>https://silocitylabs.com/tags/bosl2/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/bosl2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenSCAD</title>
+      <link>https://silocitylabs.com/tags/openscad/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/openscad/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Airtap-Gen3</title>
       <link>https://silocitylabs.com/tags/airtap-gen3/</link>
@@ -1208,13 +1236,6 @@
       <description></description>
     </item>
     <item>
-      <title>3d</title>
-      <link>https://silocitylabs.com/tags/3d/</link>
-      <pubDate>Fri, 31 May 2019 23:30:40 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/3d/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>3d Printers</title>
       <link>https://silocitylabs.com/tags/3d-printers/</link>
       <pubDate>Fri, 31 May 2019 23:30:40 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
@@ -1534,13 +1555,6 @@
       <link>https://silocitylabs.com/tags/asus/</link>
       <pubDate>Sat, 15 Sep 2018 14:12:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/asus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>3d Modeling</title>
-      <link>https://silocitylabs.com/tags/3d-modeling/</link>
-      <pubDate>Thu, 30 Aug 2018 00:09:59 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/3d-modeling/</guid>
       <description></description>
     </item>
     <item>

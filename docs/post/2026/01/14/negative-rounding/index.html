@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>OpenSCAD trick - negative rounding</title>
+  <meta property="og:title" content="OpenSCAD trick - negative rounding" />
+  <meta name="twitter:title" content="OpenSCAD trick - negative rounding" />
+  <meta name="description" content="Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes …">
+  <meta property="og:description" content="Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes …">
+  <meta name="twitter:description" content="Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes …">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/01/14/negative-rounding/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/01/14/negative-rounding/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/01/14/negative-rounding/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>OpenSCAD trick - negative rounding</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on January 14, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/maave">maave</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes rounding objects easier so I don&rsquo;t need to invoke <code>minkowski()</code> and tweak my object dimensions.</p>
+<p>A trick I use with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes. Make an object with negative rounding/chamfer, then use it to cut another object with subtract().</p>
+<h3 id="hinge-pin-hole">Hinge pin hole</h3>
+<p>Here&rsquo;s my pin hole example. I made a small hinge that uses 1.75mm filament for the pin. If the hinges were misaligned the pin wouldn&rsquo;t pass through. The updated version uses negative chamfer to create a ramp. We cut the pin hole and both chamfers using a single object.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-openscad" data-lang="openscad"><span class="line"><span class="cl"><span class="n">cyl</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d</span><span class="o">=</span><span class="n">hing_pin_diam</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">l</span><span class="o">=</span><span class="n">hinge_width</span><span class="o">+</span><span class="n">smidge</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">chamfer</span><span class="o">=-</span><span class="n">hing_pin_diam</span><span class="o">/</span><span class="m">6</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre></div><p>The 3D result:</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/negative-chamfer.webp" alt="OpenSCAD pins with positive and negative chamfer"/>
+
+<h3 id="sweep-a-2d-path">Sweep a 2D path</h3>
+<p>I used the same technique to soften a sharp edge on my phone case. This screen lip plauged me for a while: the case was sharp on my thumb and it was difficult to swipe the very edge of the screen. The original cut was sorta box shaped with flat sides so it cut a sharp 90-degree edge. The new version&rsquo;s negative rounding creates a smooth curved on the inside edge of the case. To make an odd-shaped object with the negative chamfer, I create a 2d object <code>round_rectangle()</code> that is the screen shape, then <a href="https://github.com/BelfrySCAD/BOSL2/wiki/rounding.scad#functionmodule-offset_sweep">offset_sweep()</a> to give the screen-cutter thickness and rounding. Negative rounding creates the sticking-out lip which cuts a smooth round fillet.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-openscad" data-lang="openscad"><span class="line"><span class="cl">    <span class="n">screen_corners</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="n">screen_radius</span> <span class="o">+</span> <span class="n">screen_extra_bottom_right</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">screen_radius</span> <span class="o">+</span> <span class="n">screen_extra_bottom_left</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">screen_radius</span> <span class="o">+</span> <span class="n">screen_extra_top_left</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">screen_radius</span> <span class="o">+</span> <span class="n">screen_extra_top_right</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2d shape
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">rectangle</span> <span class="o">=</span> <span class="nb">square</span><span class="p">([</span><span class="n">screen_width</span><span class="p">,</span> <span class="n">screen_length</span><span class="p">],</span><span class="n">center</span><span class="o">=</span><span class="l">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2d round the corners
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">round_rectangle</span> <span class="o">=</span> <span class="n">round_corners</span><span class="p">(</span><span class="n">rectangle</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">screen_corners</span><span class="p">,</span><span class="vm">$fn</span><span class="o">=</span><span class="n">highFn</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// setup vars for 3d shape
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">buffer</span> <span class="o">=</span> <span class="m">0.05</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">smooth_edge_radius</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">;</span> <span class="c1">//TODO: auto adjust smooth_edge_radius
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">smooth_edge_height</span> <span class="o">=</span> <span class="m">0.1</span> <span class="o">+</span> <span class="n">screen_lip</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// set minimum size so function doesn&#39;t break, we could also simply disable
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">smooth_edge_height2</span> <span class="o">=</span> <span class="p">(</span><span class="n">smooth_edge_height</span><span class="o">&gt;</span><span class="n">smooth_edge_radius</span><span class="p">)</span><span class="o">?</span><span class="n">smooth_edge_height</span><span class="p">:</span><span class="n">smooth_edge_radius</span><span class="o">+</span><span class="n">buffer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 3d shape, use negative rounding for the stick-out lip
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">offset_sweep</span><span class="p">(</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">round_rectangle</span><span class="p">,</span> <span class="c1">// sweep along the 2D shape
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">height</span><span class="o">=</span><span class="n">smooth_edge_height2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">top</span><span class="o">=</span><span class="n">os_circle</span><span class="p">(</span><span class="n">r</span><span class="o">=-</span><span class="n">smooth_edge_radius</span><span class="p">)</span> <span class="c1">//negative radius
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="c1">// then use this object to cut a fillet
+</span></span></span></code></pre></div>
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/phone-case.webp" alt="phone case zoomed-out"/>
+
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/negative-rounding.webp" alt="phone case zoomed-in on rounded edge"/>
+
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/negative-rounding.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/negative-rounding.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/" data-toggle="tooltip" data-placement="top" title="How to Upgrade a Gen2 AC Infinity AirTap T4 or T6 ESP32 Module to Work in a Gen3 Vent">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

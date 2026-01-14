@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenSCAD trick - negative rounding</title>
+      <link>https://silocitylabs.com/post/2026/01/14/negative-rounding/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/01/14/negative-rounding/</guid>
+      <description>Somehow, OpenSCAD has become my main 3D modeling program. It&amp;rsquo;s incredibly powerful for parametric models but it&amp;rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes rounding objects easier so I don&amp;rsquo;t need to invoke minkowski() and tweak my object dimensions.&#xA;A trick I use with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes.</description>
+    </item>
     <item>
       <title>How to Upgrade a Gen2 AC Infinity AirTap T4 or T6 ESP32 Module to Work in a Gen3 Vent</title>
       <link>https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/</link>
@@ -477,7 +484,7 @@
       <link>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</link>
       <pubDate>Mon, 18 Dec 2017 20:17:07 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
-      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;    &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;amp-youtube&#xA;    data-videoid=&#34;397hvxAjlj4&#34;&#xA;    layout=&#34;responsive&#34;&#xA;    width=&#34;480&#34; height=&#34;270&#34;&gt;&lt;/amp-youtube&gt;</description>
     </item>
     <item>
       <title>Phone case gamepad WIP</title>

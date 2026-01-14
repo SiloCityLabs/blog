@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3d Modeling on SCL Blog</title>
+    <title>3d-Modeling on SCL Blog</title>
     <link>https://silocitylabs.com/tags/3d-modeling/</link>
-    <description>Recent content in 3d Modeling on SCL Blog</description>
+    <description>Recent content in 3d-Modeling on SCL Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Thu, 30 Aug 2018 00:09:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/3d-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenSCAD trick - negative rounding</title>
+      <link>https://silocitylabs.com/post/2026/01/14/negative-rounding/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/01/14/negative-rounding/</guid>
+      <description>Somehow, OpenSCAD has become my main 3D modeling program. It&amp;rsquo;s incredibly powerful for parametric models but it&amp;rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes rounding objects easier so I don&amp;rsquo;t need to invoke minkowski() and tweak my object dimensions.&#xA;A trick I use with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes.</description>
+    </item>
     <item>
       <title>3d printed wrist brace – WIP instructions</title>
       <link>https://silocitylabs.com/post/2018/08/30/3d-printed-wrist-brace-wip-instructions/</link>
