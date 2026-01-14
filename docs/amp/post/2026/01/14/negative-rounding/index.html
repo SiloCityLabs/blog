@@ -8,9 +8,18 @@
   <title>OpenSCAD trick - negative rounding</title>
   <meta property="og:title" content="OpenSCAD trick - negative rounding" />
   <meta name="twitter:title" content="OpenSCAD trick - negative rounding" />
-  <meta name="description" content="Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes …">
-  <meta property="og:description" content="Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes …">
-  <meta name="twitter:description" content="Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes …">
+  <meta name="description" content="
+    
+
+Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I speed up development with BOSL2. Many …">
+  <meta property="og:description" content="
+    
+
+Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I speed up development with BOSL2. Many …">
+  <meta name="twitter:description" content="
+    
+
+Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I speed up development with BOSL2. Many …">
   <meta name="author" content=""/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
@@ -79,8 +88,11 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I try to speed up development with BOSL2. It makes rounding objects easier so I don&rsquo;t need to invoke <code>minkowski()</code> and tweak my object dimensions.</p>
-<p>A trick I use with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes. Make an object with negative rounding/chamfer, then use it to cut another object with subtract().</p>
+        <amp-img src="https://silocitylabs.com/uploads/2026/negative-chamfer-header.webp" alt="OpenSCAD pins with positive and negative chamfer" height="306" width="618" layout="responsive"></amp-img>
+    
+
+<p>Somehow, OpenSCAD has become my main 3D modeling program. It&rsquo;s incredibly powerful for parametric models but it&rsquo;s also brain-intensive. I speed up development with BOSL2. Many objects have built-in rounding features so I don&rsquo;t need to invoke <code>minkowski()</code>.</p>
+<p>A trick with BOSL2 is negative rounding. Instead of cutting a corner, it makes the corner stick out. This is very useful for smoothing sharp edges, tapering pin holes, and generally filleting odd shapes. Make an object with negative rounding/chamfer, then use it to cut another object with subtract().</p>
 <h3 id="hinge-pin-hole">Hinge pin hole</h3>
 <p>Here&rsquo;s my pin hole example. I made a small hinge that uses 1.75mm filament for the pin. If the hinges were misaligned the pin wouldn&rsquo;t pass through. The updated version uses negative chamfer to create a ramp. We cut the pin hole and both chamfers using a single object.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-openscad" data-lang="openscad"><span class="line"><span class="cl"><span class="n">cyl</span><span class="p">(</span>
@@ -146,9 +158,6 @@ body{font-family:helvetica,georgia,serif;font-size:18px;color:#404040;position:r
 
     
         <amp-img src="https://silocitylabs.com/uploads/2026/negative-rounding.webp" alt="phone case zoomed-in on rounded edge" height="561" width="714" layout="responsive"></amp-img>
-    
-
-
       </article>
 
       <div class="clearfix">
