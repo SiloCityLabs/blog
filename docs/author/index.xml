@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Luis Rodriguez</title>
+      <link>https://silocitylabs.com/author/luis-rodriguez/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/author/luis-rodriguez/</guid>
+      <description>About&#xD;Resume&#xD;Skills &amp; Certifications&#xD;Projects&#xD;Articles&#xD;About Luis Rodriguez is a dedicated engineer and technology enthusiast with a passion for solving problems and creating innovative solutions. With a strong foundation in software development and electronics, he has spent years turning complex ideas into practical, user-friendly systems.&#xA;As a key contributor to SiloCityLabs—a collaborative group of like-minded technologists—Luis enjoys working with others to explore and develop creative solutions to challenging problems.</description>
+    </item>
     <item>
       <title>Maave</title>
       <link>https://silocitylabs.com/author/maave/</link>
@@ -30,13 +37,6 @@
       <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/author/andrew-elbaneh/</guid>
       <description>About I am a software developer with a primary focus on web development, although my expertise extends to various other programming languages. I am driven by a passion for learning and am always eager to adopt new technologies to enhance my craft and career.&#xA;I am the founder of One Buffalo Labs, a company specializing in web development and AI solutions. I also manage my own gaming projects under Silo City Games and One Buffalo Games.</description>
-    </item>
-    <item>
-      <title>Luis Rodriguez</title>
-      <link>https://silocitylabs.com/author/luis-rodriguez/</link>
-      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/author/luis-rodriguez/</guid>
-      <description>About&#xD;Resume&#xD;Skills &amp; Certifications&#xD;Projects&#xD;Articles&#xD;About Luis Rodriguez is a dedicated engineer and technology enthusiast with a passion for solving problems and creating innovative solutions. With a strong foundation in software development and electronics, he has spent years turning complex ideas into practical, user-friendly systems.&#xA;As a key contributor to SiloCityLabs—a collaborative group of like-minded technologists—Luis enjoys working with others to explore and develop creative solutions to challenging problems.</description>
     </item>
   </channel>
 </rss>

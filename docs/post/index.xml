@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local Failover for DigitalOcean Functions</title>
+      <link>https://silocitylabs.com/post/2025/digital-ocean-local-runners/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/digital-ocean-local-runners/</guid>
+      <description>What started as a simple local development tool for DigitalOcean Functions quietly turned into something much more serious: a production-grade failover system that now runs across home TrueNAS servers owned by the operators of FilaMeter.&#xA;Internally, we call it DOrunner.&#xA;The original goal was mundane—test Go-based serverless functions locally without burning through API calls or waiting on cloud deploys. But as usage grew and traffic patterns became less predictable, that local runner evolved into a core part of our production architecture.</description>
+    </item>
     <item>
       <title>OpenSCAD trick - negative rounding</title>
       <link>https://silocitylabs.com/post/2026/01/14/negative-rounding/</link>
@@ -484,7 +491,7 @@
       <link>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</link>
       <pubDate>Mon, 18 Dec 2017 20:17:07 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
-      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;    &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;amp-youtube&#xA;    data-videoid=&#34;397hvxAjlj4&#34;&#xA;    layout=&#34;responsive&#34;&#xA;    width=&#34;480&#34; height=&#34;270&#34;&gt;&lt;/amp-youtube&gt;</description>
     </item>
     <item>
       <title>Phone case gamepad WIP</title>

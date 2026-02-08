@@ -8,8 +8,50 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DigitalOcean</title>
+      <link>https://silocitylabs.com/tags/digitalocean/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/digitalocean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Failover</title>
+      <link>https://silocitylabs.com/tags/failover/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/failover/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>https://silocitylabs.com/tags/golang/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://silocitylabs.com/tags/security/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>https://silocitylabs.com/tags/serverless/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/serverless/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TrueNAS</title>
+      <link>https://silocitylabs.com/tags/truenas/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/truenas/</guid>
+      <description></description>
+    </item>
     <item>
       <title>3d</title>
       <link>https://silocitylabs.com/tags/3d/</link>
@@ -337,13 +379,6 @@
       <link>https://silocitylabs.com/tags/reverse-engineering/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/reverse-engineering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://silocitylabs.com/tags/security/</link>
-      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/security/</guid>
       <description></description>
     </item>
     <item>
@@ -1030,13 +1065,6 @@
       <link>https://silocitylabs.com/tags/go/</link>
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/go/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Golang</title>
-      <link>https://silocitylabs.com/tags/golang/</link>
-      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/golang/</guid>
       <description></description>
     </item>
     <item>
