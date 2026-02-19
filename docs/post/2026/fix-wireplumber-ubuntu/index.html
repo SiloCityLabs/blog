@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Fixing WirePlumber High CPU Usage on Ubuntu 24.04</title>
+  <meta property="og:title" content="Fixing WirePlumber High CPU Usage on Ubuntu 24.04" />
+  <meta name="twitter:title" content="Fixing WirePlumber High CPU Usage on Ubuntu 24.04" />
+  <meta name="description" content="
+
+I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.">
+  <meta property="og:description" content="
+
+I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.">
+  <meta name="twitter:description" content="
+
+I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/fix-wireplumber-ubuntu/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Fixing WirePlumber High CPU Usage on Ubuntu 24.04</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on February 18, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/wireplumber-high-cpu-usage-fix.png" alt="CPU Terminal with wireplumber using high cpu"/>
+
+<p>I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.</p>
+<p>Here’s how I could reliably reproduce it:</p>
+<ol>
+<li>Play music through a Bluetooth headset (A2DP profile).</li>
+<li>Pause the music.</li>
+<li>Join a conference call (headset switches to HSP/HFP profile).</li>
+<li>Leave the call and resume music (switches back to A2DP).</li>
+</ol>
+<p>After doing this, the system fan would ramp up noticeably. Running htop showed:</p>
+<ul>
+<li>wireplumber using 100% of a single CPU core.</li>
+</ul>
+<p>The problem didn’t just affect music playback. It also caused:</p>
+<ul>
+<li>YouTube video playback issues</li>
+<li>Audio glitches</li>
+<li>Lag in other applications using audio</li>
+</ul>
+<p>The system clearly wasn’t happy.</p>
+<h2 id="the-root-cause">The Root Cause</h2>
+<p>Ubuntu 24.04 ships with <strong>WirePlumber 0.4.17</strong>.</p>
+<p>Although the Bluetooth high CPU bug was already <strong>merged upstream</strong>, that does <strong>not</strong> mean the fix is included in Ubuntu’s packaged version. Ubuntu freezes core components before release, and the fix landed after the version Ubuntu shipped.</p>
+<p>So even though the issue was “merged” on GitLab, the fix was not present in the Ubuntu package.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>Instead of building WirePlumber manually or patching it locally, I upgraded the entire PipeWire/WirePlumber stack using the official upstream PPAs.</p>
+<p>This provides newer, properly packaged versions that include the Bluetooth fixes.</p>
+<p><strong>Time needed: 2 minutes</strong></p>
+<h2 id="how-to-fix-wireplumber-high-cpu-usage-on-ubuntu">How to Fix WirePlumber High CPU Usage on Ubuntu</h2>
+<h3 id="1-add-the-upstream-ppas">1. Add the upstream PPAs</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+</span></span><span class="line"><span class="cl">sudo add-apt-repository ppa:pipewire-debian/wireplumber-upstream
+</span></span></code></pre></div><h3 id="2-update-and-upgrade">2. Update and upgrade</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update  sudo apt full-upgrade
+</span></span></code></pre></div><h3 id="3-clean-up-unused-packages-optional-but-recommended">3. Clean up unused packages (optional but recommended)</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt autoremove
+</span></span></code></pre></div><h3 id="4-reboot">4. Reboot</h3>
+<p>After rebooting, verify the version:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wireplumber --version
+</span></span></code></pre></div><p>It should now be newer than 0.4.17. In my case its 0.5.2 now.</p>
+<h2 id="result">Result</h2>
+<p>After upgrading:</p>
+<ul>
+<li>CPU usage returned to normal.</li>
+<li>No more fan spikes.</li>
+<li>Bluetooth profile switching works properly.</li>
+<li>YouTube playback is smooth.</li>
+<li>Audio across apps works as expected.</li>
+</ul>
+<p>The system feels stable again.</p>
+<h2 id="summary">Summary</h2>
+<p>If you&rsquo;re on Ubuntu 24.04 or other similar distro and experiencing high CPU usage from WirePlumber after switching Bluetooth profiles, you&rsquo;re likely running version 0.4.17, which does not seem to include the important Bluetooth fixes.</p>
+<p>Upgrading to the upstream PipeWire and WirePlumber packages resolves the issue cleanly and without manual patching.</p>
+<p>In short: upgrade the stack, reboot, and the problem disappears.</p>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/fix-wireplumber-ubuntu.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/fix-wireplumber-ubuntu.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2026/digital-ocean-local-runners/" data-toggle="tooltip" data-placement="top" title="Local Failover for DigitalOcean Functions">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

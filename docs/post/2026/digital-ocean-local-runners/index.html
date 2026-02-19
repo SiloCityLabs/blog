@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Local Failover for DigitalOcean Functions</title>
+  <meta property="og:title" content="Local Failover for DigitalOcean Functions" />
+  <meta name="twitter:title" content="Local Failover for DigitalOcean Functions" />
+  <meta name="description" content="How a local dev tool became a resilient, cost-aware backend">
+  <meta property="og:description" content="How a local dev tool became a resilient, cost-aware backend">
+  <meta name="twitter:description" content="How a local dev tool became a resilient, cost-aware backend">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/digital-ocean-local-runners/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/digital-ocean-local-runners/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/digital-ocean-local-runners/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Local Failover for DigitalOcean Functions</h1>
+                
+                  
+                    <h2 class="post-subheading">How a local dev tool became a resilient, cost-aware backend</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on February 8, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>What started as a simple local development tool for DigitalOcean Functions quietly turned into something much more serious: a production-grade failover system that now runs across home TrueNAS servers owned by the operators of <a href="https://filameter.com">FilaMeter</a>.</p>
+<p>Internally, we call it <strong>DOrunner</strong>.</p>
+<p>The original goal was mundane—test Go-based serverless functions locally without burning through API calls or waiting on cloud deploys. But as usage grew and traffic patterns became less predictable, that local runner evolved into a core part of our production architecture.</p>
+<p>This post explains why that happened, what problem it solves, and how the system works in practice.</p>
+<h2 id="the-real-problem-with-serverless">The Real Problem With Serverless</h2>
+<p>Serverless platforms are operationally attractive but economically fragile. The pay-per-invocation model turns traffic into a direct financial liability.</p>
+<p>The most dangerous failure mode isn’t downtime—it’s <strong>cost runaway</strong>.</p>
+<p>In traditional infrastructure, abuse usually manifests as degraded performance. In serverless, abuse manifests as a bill.</p>
+<p>This is where <strong>Denial-of-Wallet (DoW)</strong> attacks matter. Instead of knocking a service offline, an attacker simply forces it to keep working until it becomes unaffordable. Bot traffic, aggressive scrapers, and AI crawlers make this problem worse, especially as they increasingly ignore conventions like <code>robots.txt</code>.</p>
+<p>For us, the risks broke down into four concrete issues:</p>
+<ul>
+<li><strong>Unpredictable spend</strong> from traffic spikes</li>
+<li><strong>Automated scraping</strong> that provides no user value</li>
+<li><strong>Hard free-tier limits</strong> that legitimate usage can exceed</li>
+<li><strong>Vendor dependency</strong> when all execution happens in one cloud</li>
+</ul>
+<p>We needed cost ceilings that could not be exceeded—without taking the service offline.</p>
+<h2 id="from-local-runner-to-failover-backend">From Local Runner to Failover Backend</h2>
+<p>DOrunner already existed as a local execution environment for DigitalOcean Functions. It compiled and ran the same Go code we deployed to the cloud, using the same interfaces and contracts.</p>
+<p>That symmetry made the next step obvious: instead of <em>only</em> using it locally, we could run it <strong>elsewhere</strong>.</p>
+<p>TrueNAS boxes—spread across multiple homes—became the overflow capacity. These machines were already reliable, online 24/7, and under our direct control. Electricity and bandwidth costs were fixed. Compute was effectively “free.” They sit idle at a mere 18MB ram usage.</p>
+<p>At that point, DOrunner stopped being a dev tool and became a failover backend.</p>
+<h2 id="hard-limits-based-on-data">Hard Limits, Based on Data</h2>
+<p>Before routing any traffic, we looked at real usage.</p>
+<p>Historical DigitalOcean data showed that we could safely handle about <strong>18,000 function invocations per month</strong> before entering paid tiers. To stay well clear of that boundary, we enforced a <strong>hard cap of 600 invocations per day</strong>.</p>
+<p>The key decision:<br>
+<strong>routing happens before limits are exceeded, not after.</strong></p>
+<p>Once the daily budget approaches exhaustion, new requests are diverted automatically to self-hosted runners. No throttling. No degraded service. No surprise invoices.</p>
+<p>This is not rate limiting—it’s cost-aware execution placement.</p>
+<h2 id="traffic-control-and-gateway-enforcement">Traffic Control and Gateway Enforcement</h2>
+<p>All requests enter through <strong>Crate.cc</strong>, which acts as a gateway in front of both DigitalOcean and the TrueNAS runners.</p>
+<p>Crate.cc is responsible for:</p>
+<ul>
+<li>Tracking invocation counts in real time</li>
+<li>Enforcing daily hard limits</li>
+<li>Detecting abusive or automated traffic</li>
+<li>Routing requests to the appropriate backend</li>
+</ul>
+<p>From the application’s perspective, there is exactly one HTTPS endpoint. Whether a request runs in the cloud or on a basement server is an internal decision.</p>
+<p>Legitimate user traffic gets priority access to cloud execution. Everything else—bots, scrapers, anomalous traffic—gets diverted or blocked before it can consume metered resources.</p>
+<h2 id="execution-model">Execution Model</h2>
+<p>Each TrueNAS node runs containerized versions of our DigitalOcean Functions.</p>
+<p>Key properties of the runner:</p>
+<ul>
+<li>Identical Go binaries and business logic across environments</li>
+<li>Dynamic build and execution from staging directories</li>
+<li>Automatic dependency resolution</li>
+<li>Binary caching to avoid cold starts</li>
+</ul>
+<p>This keeps behavior consistent regardless of where the code runs. A function does not “know” whether it’s executing in DigitalOcean or on a friend’s NAS.</p>
+<h2 id="distributed-not-centralized">Distributed, Not Centralized</h2>
+<p>There is no single failover box.</p>
+<p>Each node is independently capable of handling overflow traffic. If one machine goes offline, routing simply shifts to the remaining capacity. The system degrades gracefully instead of catastrophically.</p>
+<p>This model spreads operational risk while keeping ownership and control local.</p>
+<h2 id="results-in-production">Results in Production</h2>
+<p>Since deploying DOrunner for <strong>filameter.com</strong>, the system has delivered measurable results:</p>
+<ul>
+<li><strong>Zero unexpected cloud charges</strong> for over eight months</li>
+<li><strong>99.9% uptime</strong> for sync operations</li>
+<li><strong>Sub-30ms routing overhead</strong> at the gateway</li>
+<li><strong>2.3× traffic growth</strong> absorbed without cloud cost increases</li>
+<li><strong>Automated mitigation</strong> of denial-of-wallet attempts</li>
+</ul>
+<p>The most important outcome isn’t performance—it’s predictability. Costs are bounded by design.</p>
+<h2 id="when-robotstxt-stops-working">When robots.txt Stops Working</h2>
+<p>AI training crawlers and large-scale scrapers increasingly ignore exclusion signals. Blocking them at the application layer is too late; by then, you’ve already paid.</p>
+<p>Crate.cc’s detection layer identifies scraping behavior—request rate anomalies, enumeration patterns, User-Agent spoofing—and intercepts it before it reaches metered execution.</p>
+<p>Traffic that insists on existing is redirected to infrastructure we own. It consumes our power, not our budget.</p>
+<p>This isn’t ideological. It’s practical.</p>
+<p>The 600-request daily budget is reserved for actual users, not training corpora.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Academic research is already acknowledging denial-of-wallet attacks as a serious serverless threat, not a theoretical one. Systems that assume “scale equals success” ignore the economic reality of small services.</p>
+<p>DOrunner is a pragmatic response:<br>
+use the cloud when it makes sense, and stop using it <em>before</em> it becomes a liability.</p>
+<p>Serverless doesn’t have to mean surrendering cost control. With hard limits, intelligent routing, and overflow capacity you actually own, you can keep the convenience without the risk.</p>
+<p>Sometimes the smartest cloud strategy is knowing exactly when not to use the cloud—and having that decision enforced automatically.</p>
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/digital-ocean-local-runners.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/digital-ocean-local-runners.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2026/01/14/negative-rounding/" data-toggle="tooltip" data-placement="top" title="OpenSCAD trick - negative rounding">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/" data-toggle="tooltip" data-placement="top" title="Fixing WirePlumber High CPU Usage on Ubuntu 24.04">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

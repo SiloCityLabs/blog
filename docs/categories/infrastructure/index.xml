@@ -12,9 +12,9 @@
     <atom:link href="https://silocitylabs.com/categories/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local Failover for DigitalOcean Functions</title>
-      <link>https://silocitylabs.com/post/2025/digital-ocean-local-runners/</link>
+      <link>https://silocitylabs.com/post/2026/digital-ocean-local-runners/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/post/2025/digital-ocean-local-runners/</guid>
+      <guid>https://silocitylabs.com/post/2026/digital-ocean-local-runners/</guid>
       <description>What started as a simple local development tool for DigitalOcean Functions quietly turned into something much more serious: a production-grade failover system that now runs across home TrueNAS servers owned by the operators of FilaMeter.&#xA;Internally, we call it DOrunner.&#xA;The original goal was mundane—test Go-based serverless functions locally without burning through API calls or waiting on cloud deploys. But as usage grew and traffic patterns became less predictable, that local runner evolved into a core part of our production architecture.</description>
     </item>
   </channel>
