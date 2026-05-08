@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Bypassing YouTube home page with Tasker</title>
+  <meta property="og:title" content="Bypassing YouTube home page with Tasker" />
+  <meta name="twitter:title" content="Bypassing YouTube home page with Tasker" />
+  <meta name="description" content="
+
+Remember when you could open your computer or browser and not immediately get &ldquo;suggested content&rdquo;? Most apps nowadays open to a &ldquo;home&rdquo; or &ldquo;feed&rdquo; page. I miss …">
+  <meta property="og:description" content="
+
+Remember when you could open your computer or browser and not immediately get &ldquo;suggested content&rdquo;? Most apps nowadays open to a &ldquo;home&rdquo; or &ldquo;feed&rdquo; page. I miss …">
+  <meta name="twitter:description" content="
+
+Remember when you could open your computer or browser and not immediately get &ldquo;suggested content&rdquo;? Most apps nowadays open to a &ldquo;home&rdquo; or &ldquo;feed&rdquo; page. I miss …">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/05/08/tasker-open-intent/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/05/08/tasker-open-intent/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/05/08/tasker-open-intent/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Bypassing YouTube home page with Tasker</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on April 14, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/maave">maave</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/tasker-header.webp" alt="YouTube icons labelled Library and Subscriptions"/>
+
+<p>Remember when you could open your computer or browser and not immediately get &ldquo;suggested content&rdquo;? Most apps nowadays open to a &ldquo;home&rdquo; or &ldquo;feed&rdquo; page. I miss bookmarks, so I&rsquo;m bringing them back. I&rsquo;m bypassing the slop conveyor that is YouTube&rsquo;s home page. I&rsquo;m jumping straight to the subscriptions - the content I actually asked to see.</p>
+<p>This was easy to automate in Tasker using <em>Android intents</em>.</p>
+<h2 id="intents">Intents</h2>
+<p>The foundation for these &ldquo;bookmarks&rdquo; is <a href="https://developer.android.com/reference/android/content/Intent">Intent</a>. This is Android&rsquo;s way of launching other apps or passing data between apps.</p>
+<p>It&rsquo;s also the way that apps act as the default viewer for certain URLs called <a href="https://developer.android.com/training/app-links/create-deeplinks">deep links</a>. If you have YouTube installed on your phone, then a link like <code>https://www.youtube.com/@Silocitylabs/featured</code> will open directly in the app rather than the browser. The app also handles <code>https://www.youtube.com/feed/subscriptions</code> and <code>https://www.youtube.com/feed/library</code>.</p>
+<p>Want the easy mode? Just visit the link in the browser and <em>Add To Home Screen</em>. Edit the shortcut to swap the icon to YouTube. Done! This has a downside - it leaves a tab open in the browser, and sometimes fails when that tab is still active. Also I can&rsquo;t find a way to edit an existing shortcut link, short of deleting and recreating it.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/yt-subscription-link.webp" alt="remaining tab on Firefox. Don&#39;t worry about the other ∞ tabs"/>
+
+<p>We can also open intent URIs from the browser. <code>intent://feed/subscriptions#Intent;scheme=vnd.youtube;package=com.google.android.youtube;end</code> can be opened in the URL bar or <a href="intent://feed/subscriptions#Intent;scheme=vnd.youtube;package=com.google.android.youtube;end">from an anchor link</a>. However I wasn&rsquo;t able to add this link to my home screen.</p>
+<h2 id="tasker">Tasker</h2>
+<p>For a cleaner launch I used <a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&amp;hl=en-US">Tasker</a>. In Tasker go to the Task tab, create a new task <code>+</code>, add an action <code>+</code>. Pick &ldquo;System&rdquo; then &ldquo;Send Intent&rdquo;. Then fill in these fields:</p>
+<p>Action: <code>android.intent.action.VIEW</code></p>
+<p>Package: <code>com.google.android.youtube</code></p>
+<p>Data: <code>https://www.youtube.com/feed/subscriptions</code></p>
+<p>OR</p>
+<p>Data: <code>vnd.youtube://feed/subscriptions</code></p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/tasker-action-intent.webp" alt="tasker intent settings"/>
+
+<p>Set an icon with the grid icon.</p>
+
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/tasker-add-icon.webp" alt="grid icon at the bottom of Task Edit page"/>
+
+<p>Finally, under the 3-dot menu, tap <em>Add To Launcher</em> to add the icon. Tada!</p>
+<h2 id="demo">Demo</h2>
+<p>Here you can see both methods in-action. I open the regular YouTube app icon, then Library (browser shortcut), then Subscriptions (Tasker shortcut). The browser shortcut failed the first time because I still had the tab open. Tasker works every time and doesn&rsquo;t leave a process running.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="//www.youtube.com/embed/UZ68EdtRlnE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+<h2 id="finding-intents-in-apks">Finding Intents in APKs</h2>
+<p>Big whoops. YouTube already exposes the subscription Activity by long-pressing the YouTube homescreen icon. So let&rsquo;s find intents which aren&rsquo;t graciously given to the user. Like where does <code>feed/library</code> come from?</p>
+<p>Intents are defined in the application and we can decompile the app for more info. The file <code>AndroidManifest.xml</code> contains <code>intent-filter</code> definitions and path filters, a.k.a. which URIs the app intercepts.</p>
+<p>I started with apktool to get the manifest file but quickly switched to <a href="https://github.com/skylot/jadx">JADX</a> so that I could view decompiled Java source code.</p>
+<h3 id="androidmanifestxml">AndroidManifest.xml</h3>
+<p>After I open the APK with JADX I can see file <code>res/AndroidManifest.xml</code> and found the URI intent-filters. However the path filter is a wildcard <code>android:pathPattern=&quot;.*&quot;</code> so it handles every &ldquo;youtube.com&rdquo; link all at once and we don&rsquo;t see &ldquo;subscriptions&rdquo; yet.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;intent-filter</span> <span class="na">android:autoVerify=</span><span class="s">&#34;true&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.action.VIEW&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;android.media.action.MEDIA_PLAY_FROM_SEARCH&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.DEFAULT&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.BROWSABLE&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&#34;http&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&#34;https&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:host=</span><span class="s">&#34;youtube.com&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:host=</span><span class="s">&#34;www.youtube.com&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:host=</span><span class="s">&#34;m.youtube.com&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:host=</span><span class="s">&#34;youtu.be&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:pathPattern=</span><span class="s">&#34;.*&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.action.VIEW&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;android.media.action.MEDIA_PLAY_FROM_SEARCH&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.DEFAULT&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.BROWSABLE&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&#34;vnd.youtube&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;data</span> <span class="na">android:scheme=</span><span class="s">&#34;vnd.youtube.launch&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/intent-filter&gt;</span>
+</span></span></code></pre></div><p>But I do find the activities that YouTube exposes to the user. These are the shortcuts that can be find via the home screen icon.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;activity-alias</span>
+</span></span><span class="line"><span class="cl">    <span class="na">android:name=</span><span class="s">&#34;com.google.android.youtube.app.honeycomb.Shell$HomeActivity&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">android:exported=</span><span class="s">&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">android:targetActivity=</span><span class="s">&#34;com.google.android.apps.youtube.app.watchwhile.MainActivity&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.action.MAIN&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.DEFAULT&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.LAUNCHER&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;com.google.android.youtube.action.open.search&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.DEFAULT&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;com.google.android.youtube.action.open.subscriptions&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.DEFAULT&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&#34;com.google.android.youtube.action.open.shorts&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&#34;android.intent.category.DEFAULT&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/intent-filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;meta-data</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:name=</span><span class="s">&#34;android.app.shortcuts&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">android:resource=</span><span class="s">&#34;@xml/main_shortcuts&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/activity-alias&gt;</span>
+</span></span></code></pre></div><p>I can also see which activities are allowed to be called by other apps by searching <code>android:exported=&quot;true&quot;</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;activity-alias</span>
+</span></span><span class="line"><span class="cl">    <span class="na">android:name=</span><span class="s">&#34;com.google.android.apps.youtube.app.application.Shell$UrlActivity&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">android:exported=</span><span class="s">&#34;true&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">android:targetActivity=</span><span class="s">&#34;com.google.android.apps.youtube.app.application.Shell_UrlActivity&#34;</span><span class="nt">/&gt;</span>
+</span></span></code></pre></div><p><code>Shell_UrlActivity</code> is the main URL parsing activity.</p>
+<h3 id="half-hearted-decomp">Half-hearted decomp</h3>
+<p>The rest of the path goes into the data field which is processed in code. Unforunately decomped code is hard to read. When the code is compiled, symbols are stripped, meaning variable and function names are not preserved. In the decompiled source files, all the var and func names are freshly-generated nonsense. It&rsquo;s not &ldquo;obfuscated&rdquo; but it is garbled. Discombobulating this is challenging.</p>
+<p>One option for reverse engineering is to rename vars one at a time. JADX GUI is pretty good for refactoring and jumping through references. LLMs are also good at jumping through this unnamed code.</p>
+<p>Sidenote: I tried importing the decompiled source into VS Code but refactoring wasn&rsquo;t fully working. I exported source from JADX, opened in VS Code, and manually added <code>settings.gradle</code> and <code>build.gradle</code>. This allowed me to jump through reference and view the source without errors but when I refactored a var name the new name didn&rsquo;t propagate to other parts of the code.</p>
+<p>This is a pain in the butt and I got bored of nonsense code. I decided to search for static strings in the source. After a few combos I stumbled across <code>FEsubscriptions</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">return</span><span class="w"> </span><span class="s">&#34;FEshared&#34;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">str</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s">&#34;FElibrary&#34;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">str</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s">&#34;FEoffline_what_to_watch&#34;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">str</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s">&#34;FEsubscriptions&#34;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">str</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s">&#34;FEwhat_to_watch&#34;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">str</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s">&#34;FEactivity&#34;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">str</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><p>Using these I found a few new endpoints to open:</p>
+<ul>
+<li><a href="https://www.youtube.com/feed/offline_what_to_watch">https://www.youtube.com/feed/offline_what_to_watch</a>   (saved offline videos)</li>
+<li><a href="https://www.youtube.com/feed/what_to_watch">https://www.youtube.com/feed/what_to_watch</a>  (the regular home screen)</li>
+<li><a href="https://www.youtube.com/feed/activity">https://www.youtube.com/feed/activity</a>  (notifications)</li>
+</ul>
+<p>So decomping code to find Activities to launch is probably more trouble than it&rsquo;s worth unless you&rsquo;re exploit-hunting. You can find starting points in AndroidManifest.xml but the rest of the data is parsed in Java.</p>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/android-intent-youtube.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/android-intent-youtube.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/" data-toggle="tooltip" data-placement="top" title="Fixing WirePlumber High CPU Usage on Ubuntu 24.04">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/" data-toggle="tooltip" data-placement="top" title="Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade Kit with HomeSpan and PlatformIO">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+
