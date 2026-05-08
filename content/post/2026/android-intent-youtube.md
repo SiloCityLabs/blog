@@ -3,8 +3,8 @@ title: "Bypassing YouTube home page with Tasker"
 author: maave
 type: post
 date: 2026-04-14T00:00:00+00:00
-url: /post/2026/04/14/tasker-open-intent/
-draft: true
+url: /post/2026/05/08/tasker-open-intent/
+draft: false
 categories:
   - Android
 tags:
@@ -66,11 +66,7 @@ Here you can see both methods in-action. I open the regular YouTube app icon, th
 
 ## Finding Intents in APKs
 
-I can already hear the hater in my head
-
-> Big whoops. YouTube already exposes the subscription Activity by long-pressing the YouTube homescreen icon
-
-So let's find intents which aren't graciously given to the user. Like where does `feed/library` come from?
+Big whoops. YouTube already exposes the subscription Activity by long-pressing the YouTube homescreen icon. So let's find intents which aren't graciously given to the user. Like where does `feed/library` come from?
 
 Intents are defined in the application and we can decompile the app for more info. The file `AndroidManifest.xml` contains `intent-filter` definitions and path filters, a.k.a. which URIs the app intercepts.
 
@@ -104,6 +100,36 @@ After I open the APK with JADX I can see file `res/AndroidManifest.xml` and foun
 </intent-filter>
 ```
 
+But I do find the activities that YouTube exposes to the user. These are the shortcuts that can be find via the home screen icon.
+
+```xml
+<activity-alias
+    android:name="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
+    android:exported="true"
+    android:targetActivity="com.google.android.apps.youtube.app.watchwhile.MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+    </intent-filter>
+    <intent-filter>
+        <action android:name="com.google.android.youtube.action.open.search"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+    </intent-filter>
+    <intent-filter>
+        <action android:name="com.google.android.youtube.action.open.subscriptions"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+    </intent-filter>
+    <intent-filter>
+        <action android:name="com.google.android.youtube.action.open.shorts"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+    </intent-filter>
+    <meta-data
+        android:name="android.app.shortcuts"
+        android:resource="@xml/main_shortcuts"/>
+</activity-alias>
+```
+
 I can also see which activities are allowed to be called by other apps by searching `android:exported="true"`. 
 
 ```xml
@@ -113,27 +139,26 @@ I can also see which activities are allowed to be called by other apps by search
     android:targetActivity="com.google.android.apps.youtube.app.application.Shell_UrlActivity"/>
 ```
 
+`Shell_UrlActivity` is the main URL parsing activity.
+
+### Half-hearted decomp
 
 The rest of the path goes into the data field which is processed in code. Unforunately decomped code is hard to read. When the code is compiled, symbols are stripped, meaning variable and function names are not preserved. In the decompiled source files, all the var and func names are freshly-generated nonsense. It's not "obfuscated" but it is garbled. Discombobulating this is challenging.
 
-One option for reverse engineering is to rename vars one at a time. JADX GUI is pretty good for refactoring and jumping through references.
+One option for reverse engineering is to rename vars one at a time. JADX GUI is pretty good for refactoring and jumping through references. LLMs are also good at jumping through this unnamed code.
 
 Sidenote: I tried importing the decompiled source into VS Code but refactoring wasn't fully working. I exported source from JADX, opened in VS Code, and manually added `settings.gradle` and `build.gradle`. This allowed me to jump through reference and view the source without errors but when I refactored a var name the new name didn't propagate to other parts of the code.
 
-I do have some hints thanks to the Android developer docs. I'm looking for code with `getIntent()` or `getData()` and these names _won't_ be garbled. Global searching finds a few hits. The file `Shell_UrlActivity.java` looks promising. 
+This is a pain in the butt and I got bored of nonsense code. I decided to search for static strings in the source. After a few combos I stumbled across `FEsubscriptions`.
 
 ```java
-Uri data = shell_UrlActivity.getIntent().getData();
-......
-shell_UrlActivity.getIntent();
-String strB = acdv.b(shell_UrlActivity);
-String strA = acdv.a(shell_UrlActivity);
-ifu ifuVar = hphVarO.b;
-ifuVar.A(ifuVar.m(data, strB, strA));
-hphVarO.c.g(0L);
-return true;
+return "FEshared".equals(str) || "FElibrary".equals(str) || "FEoffline_what_to_watch".equals(str) || "FEsubscriptions".equals(str) || "FEwhat_to_watch".equals(str) || "FEactivity".equals(str);
 ```
 
-I try to to make sense of the code and refactor variables into useful names as I go. `a()` and `b()` were parsing referrer info. Class `acdv` appears to turn URIs into Activity launches. Data is passed to `ifuVar.A( ifuVar.m(data, referrerHost, referrer) )`
+Using these I found a few new endpoints to open:
 
-I can also search for static strings in the source, maybe with quotes around it, like `"subscriptions"` ... actually I didn't get many results so I tried different combinations of quotes like `subscriptions"` and found `FEsubscriptions`.
+- https://www.youtube.com/feed/offline_what_to_watch   (saved offline videos)
+- https://www.youtube.com/feed/what_to_watch  (the regular home screen)
+- https://www.youtube.com/feed/activity  (notifications)
+
+So decomping code to find Activities to launch is probably more trouble than it's worth unless you're exploit-hunting. You can find starting points in AndroidManifest.xml but the rest of the data is parsed in Java.
