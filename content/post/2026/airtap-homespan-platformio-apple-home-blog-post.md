@@ -38,9 +38,7 @@ This post is not a finished firmware release. It is a technical roadmap for deve
 
 Most custom ESP32 smart-home firmware assumes that Home Assistant is the center of the house. That is fine for power users like us - we each have a home server running Home Assistant - and ESPHome is still one of the best ways to ship an ESP32-based IoT device quickly.
 
-But not every smart-home user wants to manage Home Assistant.
-
-Apple users want that "hosue of the future": smart vents, quieter airflow, room-level automation, and better HVAC behavior, but they want the control surface to be the Apple Home app. They want to say:
+But not every smart-home user wants to manage Home Assistant. Apple users want the "house of the future" too: smart vents, quieter airflow, room-level automation, and better HVAC behavior, but they want the control surface to be the Apple Home app. They want to say:
 
 - “Hey Siri, turn on the office vent.”
 - “Set the bedroom vent to 40 percent.”
