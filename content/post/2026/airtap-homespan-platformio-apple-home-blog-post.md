@@ -23,28 +23,24 @@ tags:
 
 The SiloCityLabs ESP32 Module for the AC Infinity AirTap T4/T6 already gives Home Assistant users a clean way to upgrade an AirTap vent into a connected smart-home device. The current ESPHome firmware path supports the important hardware pieces: PWM fan control, onboard temperature sensing, OLED display output, physical buttons, panel lockout, and newer IR receiver support on supported builds.
 
-But there is another smart-home audience that should care about this hardware: **Apple Home users**.
+But there is another smart-home audience that could benefit from this hardware: **Apple Home users**.
 
-If you use an iPhone, HomePod, Apple TV, Siri, scenes, automations, and the Apple Home app, the natural question is:
+If you're in the Apple ecosystem, using HomePod, Siri on iPhone, Apple TV, scenes, automations, and the Apple Home app, the natural question is: _Could the AirTap ESP32 upgrade kit run native Apple Home firmware instead of ESPHome?_
 
-**Could the AirTap ESP32 upgrade kit run native Apple Home firmware instead of ESPHome?**
+Yes it can! [HomeSpan](https://github.com/HomeSpan/HomeSpan) provides developers with libraries to create an ESP32 firmware that pairs the AirTap directly with Apple Home over Wi-Fi. That's native Apple support without Home Assistant, without a Home Assistant HomeKit Bridge, and without a separate server translating ESPHome entities into HomeKit accessories.
 
-The short answer is yes, it looks very possible.
-
-The better answer is that [HomeSpan](https://github.com/HomeSpan/HomeSpan) gives developers a realistic path to build firmware that pairs the AirTap directly with Apple Home over Wi-Fi, without Home Assistant, without a Home Assistant HomeKit Bridge, and without a separate server translating ESPHome entities into HomeKit accessories.
-
-This post is not a finished firmware release. It is a deep technical roadmap for developers, makers, and advanced AirTap owners who want to understand what it would take to build one. Think of it as the map: enough architecture to start the project, enough code structure to see the direction, and enough caution to avoid the obvious traps.
+This post is not a finished firmware release. It is a technical roadmap for developers, makers, and advanced AirTap owners who want to understand what it would take to build one. It's enough architecture to start the project, enough code structure to see the direction, and enough caution to avoid the obvious traps.
 
 <!--more-->
 
-**Why Apple Home Support Matters**
+**Why HomeSpan?**
 ----------------------------------
 
-Most custom ESP32 smart-home firmware assumes Home Assistant is the center of the house. That is fine for power users, and ESPHome is still one of the best ways to ship an ESP32-based device quickly.
+Most custom ESP32 smart-home firmware assumes that Home Assistant is the center of the house. That is fine for power users like us - we each have a home server running Home Assistant - and ESPHome is still one of the best ways to ship an ESP32-based IoT device quickly.
 
-But not every smart-home user wants to run Home Assistant.
+But not every smart-home user wants to manage Home Assistant.
 
-A lot of Apple users want smart vents, quieter airflow, room-level automation, and better HVAC behavior, but they want the control surface to be the Apple Home app. They want to say:
+Apple users want that "hosue of the future": smart vents, quieter airflow, room-level automation, and better HVAC behavior, but they want the control surface to be the Apple Home app. They want to say:
 
 - “Hey Siri, turn on the office vent.”
 - “Set the bedroom vent to 40 percent.”
@@ -52,18 +48,12 @@ A lot of Apple users want smart vents, quieter airflow, room-level automation, a
 - “When the room gets warm, increase airflow.”
 - “When the Good Night scene runs, lower the vent speed.”
 
-That is a different market from the existing ESPHome/Home Assistant crowd.
+That is a different market from the existing ESPHome/Home Assistant crowd. For SiloCityLabs, this is an opportunity: keep serving the Home Assistant community while opening the door to Apple-first smart-home users who may never search for ESPHome, YAML, or Home Assistant integrations.
 
-It is not better or worse. It is just different.
-
-For SiloCityLabs, this is the opportunity: keep serving the Home Assistant community while opening the door to Apple-first smart-home users who may never search for ESPHome, YAML, or Home Assistant integrations.
-
-**The Existing AirTap ESP32 Hardware Is a Good Fit**
+**The existing AirTap ESP32 hardware is a good fit**
 ---------------------------------------------------
 
-The reason this idea is worth exploring is that the AirTap ESP32 upgrade kit already has the right kind of hardware for native Apple Home firmware.
-
-From the existing ESPHome configurations and current SiloCityLabs product direction, the firmware needs to deal with:
+Fortunately the AirTap ESP32 upgrade kit already has the right kind of hardware for native Apple Home firmware. The firmware needs to handle:
 
 - ESP32 module running Wi-Fi firmware
 - PWM output for AirTap fan speed control
@@ -73,19 +63,15 @@ From the existing ESPHome configurations and current SiloCityLabs product direct
 - Stored fan speed state
 - Panel lockout state
 - Optional IR receiver support on supported board versions
+- Wi-Fi provisioning (SSID and password setup)
 - OTA/update strategy
-- Wi-Fi provisioning
 - A clean end-user pairing/reset story
 
-The current ESPHome firmware proves the board can already do the important work. HomeSpan would not replace the hardware behavior. It would replace the smart-home protocol layer.
-
-ESPHome exposes entities to Home Assistant.
-
-HomeSpan exposes HomeKit services directly to Apple Home.
+The current ESPHome firmware proves that the board can already do the important work. HomeSpan just replaces the smart-home protocol layer. HomeSpan will expose HomeKit services directly to Apple Home.
 
 That distinction matters for SEO, positioning, and buyer intent. “ESP32 smart vent for Home Assistant” reaches one audience. “Apple HomeKit smart vent upgrade for AC Infinity AirTap” reaches another.
 
-**What HomeSpan Brings to the Project**
+**What HomeSpan brings to the project**
 --------------------------------------
 
 HomeSpan is an Arduino library for creating HomeKit accessories on ESP32. It implements Apple’s HomeKit Accessory Protocol for ESP32-class devices and allows the device to pair directly with Apple Home over Wi-Fi.
@@ -104,30 +90,7 @@ From the Apple Home user’s perspective, the AirTap would feel like a native ac
 
 They would flash firmware, pair the device, name the vent, assign it to a room, and automate it.
 
-That is the user story.
-
-**Important Reality Check**
----------------------------
-
-This should not be marketed as an official shipping firmware until it is tested on actual hardware across board revisions.
-
-There are three reasons:
-
-1. **HomeKit behavior has to feel polished.** Pairing, reset, Wi-Fi provisioning, and accessory naming need to be reliable.
-2. **Fan control must be safe and predictable.** PWM values should match the existing firmware behavior closely enough that users are not surprised.
-3. **Board revisions matter.** The 3-button and 4-button AirTap configurations are similar, but not identical. IR support also changes the firmware shape.
-
-So the right framing is:
-
-> This is a developer path toward native Apple Home support for the AirTap ESP32 upgrade kit.
-
-Not:
-
-> This is a finished Apple Home firmware release.
-
-That honesty is important. It builds trust with advanced users and keeps expectations under control.
-
-**What We Can Reuse from the ESPHome Firmware**
+**What we can reuse from the ESPHome firmware**
 ----------------------------------------------
 
 The current ESPHome firmware is the best technical reference because it already describes the board behavior.
@@ -171,21 +134,15 @@ The important point is that none of this is ESPHome-specific. ESPHome makes it e
 
 That is exactly the kind of project HomeSpan can handle.
 
-**Recommended Firmware Scope**
+**Recommended firmware scope**
 ------------------------------
 
-Do not try to recreate the full ESPHome firmware in the first pass.
-
-The first HomeSpan firmware should be intentionally boring.
-
-Version `0.1.0` should prove only four things:
+The first HomeSpan firmware should be intentionally boring. Version `0.1.0` should prove only four things:
 
 1. The firmware builds in PlatformIO.
 2. The ESP32 board boots reliably.
 3. The accessory pairs with Apple Home.
 4. Apple Home can set AirTap fan speed through PWM.
-
-Once that works, build upward.
 
 A realistic development order:
 
@@ -219,12 +176,12 @@ A realistic development order:
 10. **Release workflow**  
    Add versioning, flashing instructions, recovery instructions, and board-specific builds.
 
-This order gives users something useful early without trapping the project in display menus or edge cases before the HomeKit core is proven.
+This order delivers value early without trapping the project in menus before HomeKit core is proven.
 
 **How the AirTap Should Appear in Apple Home**
 ---------------------------------------------
 
-The simplest and strongest HomeKit model is:
+Use this HomeKit model:
 
 - Accessory: `AirTap Vent`
 - Service: `Fan`
@@ -232,14 +189,7 @@ The simplest and strongest HomeKit model is:
 - Service: `Switch` named `Panel Lockout`
 - Service: `Accessory Information`
 
-The Fan service should expose:
-
-- On/off state
-- Speed percentage
-
-Internally, the firmware should keep the existing `0-10` speed model. Apple Home should see `0-100%`.
-
-A simple mapping works well:
+The Fan service exposes on/off state and speed percentage. Internally keep the `0-10` speed model; Apple Home sees `0-100%`. Use this mapping:
 
 | Apple Home Speed | Internal AirTap Speed |
 | --- | --- |
@@ -255,14 +205,12 @@ A simple mapping works well:
 | 81-90% | 9 |
 | 91-100% | 10 |
 
-This is easy to explain, easy to debug, and easy to display on the OLED.
-
-Later, the firmware could support a smoother percentage-to-PWM curve. For the first release, predictable behavior matters more than theoretical smoothness.
+Predictable behavior matters more than smoothness for the first release.
 
 **PlatformIO Project Layout**
 -----------------------------
 
-A clean project layout could look like this:
+Start with a simple layout:
 
 ```text
 airtap-homespan/
@@ -285,11 +233,7 @@ airtap-homespan/
 └── README.md
 ```
 
-For the first prototype, it is fine to keep most code in `main.cpp`.
-
-Once the device pairs and controls the fan, split the code into modules.
-
-The firmware should avoid becoming one giant file because this project will eventually need to support multiple board revisions.
+Keep code in `main.cpp` initially, then split into modules as it grows. Modular design matters for supporting multiple board revisions.
 
 **A Starting platformio.ini**
 -----------------------------
@@ -338,16 +282,12 @@ build_flags =
   -D AIRTAP_BOARD_4BTN_REV1
 ```
 
-The C3 target should probably be the first development target because the current ESPHome configs clearly use `seeed_xiao_esp32c3`, and HomeSpan supports ESP32-C3-class devices.
+Start with the C3 variant; the existing ESPHome configs use `seeed_xiao_esp32c3`.
 
 **Pin Mapping**
 ---------------
 
-Board pins should live in one place.
-
-Do not hardcode GPIO numbers throughout the firmware.
-
-Create an `AirtapPins.h`:
+Keep pins in one header file, never hardcoded. Create `AirtapPins.h`:
 
 ```cpp
 #pragma once
@@ -385,9 +325,7 @@ static constexpr int PIN_IR_RX = 3;
 #endif
 ```
 
-That header gives the firmware one central source of truth.
-
-It also makes the project easier to explain to contributors:
+This gives contributors a clear reference:
 
 - If you have a 3-button board, build with `AIRTAP_BOARD_3BTN_REV2`.
 - If you have a 4-button board, build with `AIRTAP_BOARD_4BTN_REV1`.
@@ -395,8 +333,6 @@ It also makes the project easier to explain to contributors:
 
 **Global State**
 ----------------
-
-Keep the device state small and explicit.
 
 ```cpp
 #pragma once
@@ -412,25 +348,12 @@ struct AirtapState {
 extern AirtapState airtap;
 ```
 
-The main state variables are:
-
-- `fanSpeedStep`
-- `panelLocked`
-- `temperatureC`
-- Wi-Fi/HomeKit setup state if you want to display it
-
-Do not let every subsystem own its own version of the fan speed. That is how state drift happens.
-
-Apple Home, local buttons, IR commands, and display rendering should all point back to the same state.
+Single source of truth matters: Apple Home, buttons, IR, and display all read from `airtap`.
 
 **PWM Fan Control**
 -------------------
 
-The existing ESPHome firmware uses LEDC PWM on `GPIO2` at `1000 Hz`. It also uses a minimum duty cycle for speed `1` so the fan starts reliably.
-
-That logic should be preserved.
-
-A simple fan driver can look like this:
+The existing ESPHome firmware uses LEDC PWM on `GPIO2` at `1000 Hz`. It also uses a minimum duty cycle for speed `1` so the fan starts reliably. If the fans stall it can burn out the motors. I'm even considering starting the fan at max power for 1 second, similar to box fans and rooms fans which have the power settings go from 0-3-2-1.
 
 ```cpp
 #include <Arduino.h>
@@ -479,14 +402,10 @@ void applyFanSpeed() {
 }
 ```
 
-This is the first point where the firmware becomes useful. If Apple Home changes the fan speed, `applyFanSpeed()` should immediately change the AirTap hardware.
-
 **Mapping HomeKit Speed to AirTap Speed**
 ----------------------------------------
 
-Apple Home users think in percentages. The AirTap firmware thinks in steps.
-
-Use helpers:
+Apple Home uses percentages while AirTap uses steps. Use converters:
 
 ```cpp
 int percentToFanStep(int percent) {
@@ -520,21 +439,12 @@ int fanStepToPercent(int step) {
 }
 ```
 
-This keeps the UX simple:
-
-- Apple Home says `50%`.
-- Firmware stores `5`.
-- OLED shows `Fan Speed: 5`.
-- PWM output uses the same curve as the ESPHome firmware.
-
-That is easy for users to understand and easy for support to troubleshoot.
+This keeps behavior predictable and traceable.
 
 **Minimal HomeSpan Fan Service**
 --------------------------------
 
-The first HomeSpan class should expose a Fan service.
-
-This is intentionally close to firmware, not marketing copy.
+Expose a [Fan service in HomeSpan](https://github.com/HomeSpan/HomeSpan/blob/master/docs/ServiceList.md#fan-b7):
 
 ```cpp
 #include <HomeSpan.h>
@@ -586,9 +496,7 @@ struct AirtapFanService : Service::Fan {
 };
 ```
 
-The important detail is `syncFromDeviceState()`.
-
-When a physical button changes the fan speed, Apple Home needs to know. The firmware should update the HomeKit characteristics so the Home app does not show stale state.
+`syncFromDeviceState()` is critical: when physical buttons change the fan, Apple Home stays in sync.
 
 **Main Firmware Skeleton**
 --------------------------
@@ -654,18 +562,12 @@ void loop() {
 }
 ```
 
-That is enough structure to prove the accessory model.
-
-Do not overbuild the first version. Get the fan pairing and PWM control working first.
+This proves the accessory model. Get pairing and PWM working first.
 
 **Local Button Handling**
 -------------------------
 
-The local buttons should still work.
-
-That is a major product expectation. The AirTap should not become useless just because the Home app is closed or the Wi-Fi network is temporarily unavailable.
-
-Button behavior should follow the existing ESPHome logic:
+Local buttons are non-negotiable. The device should work offline. Follow existing ESPHome logic:
 
 - Mode or Toggle turns the fan on/off
 - Up increases fan speed
@@ -713,27 +615,12 @@ void toggleFanFromButton() {
 }
 ```
 
-For debouncing, keep it boring. Use a small helper class or a proven debounce library. Avoid mixing debounce logic into the HomeKit service.
-
-Pseudocode:
-
-```cpp
-void pollButtons() {
-  // Read debounced edge events.
-  // If Up pressed: increaseFanFromButton()
-  // If Down pressed: decreaseFanFromButton()
-  // If Toggle/Mode pressed: toggleFanFromButton()
-}
-```
-
-This is not glamorous firmware, but it is the difference between a nice prototype and a device people can actually live with.
+I'm skipping over debounce code. There are a million debounce tuts in addition tothe proven "setDebounceTime" in Arduino.
 
 **Panel Lockout**
 -----------------
 
-Panel lockout already exists in the ESPHome firmware and should stay.
-
-The Apple Home mapping is simple: expose a Switch service named `Panel Lockout`.
+Panel lockout is a an existing feautre in my ESPHome firmware. Expose a Switch service for lockout:
 
 ```cpp
 struct AirtapPanelLockoutService : Service::Switch {
@@ -756,7 +643,7 @@ When enabled:
 - IR remote commands should probably not change fan speed.
 - Apple Home should still be allowed to control the fan.
 
-That gives the lockout feature a clear meaning: block local accidental changes, not remote control.
+This prevents your toddler from changing the settings.
 
 **Temperature Sensor**
 ----------------------
@@ -813,18 +700,12 @@ struct AirtapTemperatureService : Service::TemperatureSensor {
 };
 ```
 
-Once this is working, the Apple Home user gets a temperature tile they can use in scenes and automations.
-
-That is where the product starts to feel like more than a fan controller.
+The Apple Home user gets a temperature tile they can use in scenes and automations.
 
 **OLED Display**
 ----------------
 
-The existing firmware uses an SSD1306 128x64 OLED over I2C at address `0x3C`.
-
-HomeSpan does not manage that display. Arduino libraries can.
-
-A basic display implementation could show:
+The existing firmware uses an SSD1306 128x64 OLED over I2C at address `0x3C`. HomeSpan does not manage that display. Arduino libraries can display the status:
 
 - `AirTap HomeKit`
 - Fan speed `0-10`
@@ -873,39 +754,26 @@ void updateDisplay() {
 }
 ```
 
-Do not let display polish block firmware progress.
-
-The first version does not need icons, animation, menus, or fancy fonts. It needs to confirm that the device is alive and show the state users care about.
+Since this in a "MVP", plain text is fine. Show state first, polish later.
 
 **IR Receiver Support**
 -----------------------
 
-The 4-button ESPHome firmware includes IR receiver support on `GPIO3` and uses decoded Pronto data for remote buttons such as power, fan, plus, minus, mode, and refresh.
+The 4-button ESPHome firmware includes IR receiver support on `GPIO3` and uses decoded Pronto data for remote buttons such as power, fan, plus, minus, mode, and refresh. This isn't vital for the MVP and can be added later. Recommended approach:
 
-A HomeSpan firmware can add this later.
+1. Ship first prototype without IR.
+2. Log IR codes to confirm remote behavior.
+3. Map IR commands to existing button functions.
+4. Respect lockout.
 
-Recommended approach:
-
-1. Ship the first HomeSpan prototype without IR.
-2. Add IR receive logging.
-3. Confirm the same remote codes on actual hardware.
-4. Map IR plus/minus/power to the same local input functions used by physical buttons.
-5. Respect panel lockout.
-
-The IR layer should not directly manipulate HomeKit characteristics. It should call the same internal functions as the physical buttons:
+IR should call the same input handlers as buttons, so that changes propagate to HomeKit:
 
 ```cpp
-// IR plus command
+// IR plus/minus/power
 increaseFanFromButton();
-
-// IR minus command
 decreaseFanFromButton();
-
-// IR power command
 toggleFanFromButton();
 ```
-
-That keeps all local input behavior consistent.
 
 **Persistence**
 ---------------
@@ -914,12 +782,10 @@ The device should remember useful state across reboot:
 
 - Last fan speed
 - Panel lockout state
-- Display preference if added later
-- Temperature calibration offset if added later
+- Display preference
+- Temperature calibration / offset
 
 HomeSpan already has storage behavior for HomeKit pairing. For device settings, use ESP32 Preferences/NVS.
-
-Example direction:
 
 ```cpp
 #include <Preferences.h>
@@ -941,25 +807,21 @@ void saveSettings() {
 }
 ```
 
-Do not write to flash every second. Save only when state changes, and consider a short delay/debounce before writing.
+Avoid frequent writes; save only on state change, and consider a short delay/debounce before writing.
 
 **Provisioning and Reset UX**
 -----------------------------
 
-This is one of the most important product details.
+Customers need a clear setup procedure. Not serial monitors nor "magic phrases" in command-line. Consider common steps like:
 
-Developers can tolerate serial monitors and command-line reset commands. Customers cannot.
+- entering pairing mode
+- setting or resetting wifi credentials
+- what does the display show when not paired?
+- what button combination triggers a factory reset?
+- how does support tell a user to recover a device?
 
-A native Apple Home firmware needs a clear setup and recovery story:
 
-- How does the user enter pairing mode?
-- How does the user reset HomeKit pairing?
-- How does the user reset Wi-Fi credentials?
-- What does the display show when not paired?
-- What button combination triggers a factory reset?
-- How does support tell a user to recover a device?
-
-A reasonable product flow:
+A reasonable flow:
 
 1. On first boot, display `Pair AirTap HomeKit`.
 2. Show the HomeKit setup code or direct users to the printed/setup label.
@@ -967,27 +829,11 @@ A reasonable product flow:
 4. Holding two buttons for 10 seconds resets pairing and Wi-Fi.
 5. Display confirms `Reset Complete`.
 
-The firmware should not depend on users remembering serial commands.
 
 **OTA and Updates**
 -------------------
 
-The current ESPHome path has a strong update story through ESPHome and GitHub-hosted firmware. A HomeSpan firmware would need its own answer.
-
-Possible release paths:
-
-- Manual USB flashing through PlatformIO for developer builds
-- Web-based ESP flashing for public beta builds
-- Arduino OTA or custom OTA for advanced users
-- Versioned binaries per board revision
-
-The first developer article should not promise automatic updates unless that system exists.
-
-A good phrasing for early firmware:
-
-> Initial HomeSpan builds should be treated as developer firmware and flashed over USB. A polished release would need a documented update path before being recommended for general customers.
-
-That is the right level of honesty.
+Use manual USB flashing for now. Automatic updates require infrastructure that can wait.
 
 **Testing Checklist**
 ---------------------
@@ -1012,98 +858,31 @@ Before calling the firmware usable, test these behaviors:
 - Reboot restores expected state.
 - Removing power and restoring power does not corrupt pairing.
 - Factory reset works without a computer.
-- Multiple vents can pair with unique names.
+- Multiple vents pair with unique names and can be renamed in Apple Home.
 
-For multiple AirTaps in one home, naming matters. A user may have:
-
-- Office AirTap
-- Bedroom AirTap
-- Living Room AirTap
-- Workshop AirTap
-
-The firmware and documentation should encourage users to rename each accessory in Apple Home after pairing.
-
-**SEO Opportunity**
+**Market Positioning**
 -------------------
 
-The Apple-focused market will not always search for the same terms as Home Assistant users.
+Home Assistant users search for ESPHome + AirTap. Apple users search for HomeKit + AirTap. This post opens a second market: developers and Apple-first smart-home users.
 
-Home Assistant users search for:
+**Next Steps for Developers**
+-----------------------------
 
-- ESPHome AirTap
-- AC Infinity AirTap ESP32
-- Home Assistant smart vent
-- ESP32 vent controller
-- ESPHome smart vent
+If you're interested in Apple Home, HomeKit, ESP32, or smart HVAC, the AirTap ESP32 hardware is a strong foundation. It provides fan PWM, temperature sensing, display, buttons, and proven mechanics. The next step is firmware.
 
-Apple users are more likely to search for:
+**What a First Release Could Include**
+-------------------------------------
 
-- Apple Home smart vent
-- HomeKit smart vent
-- AC Infinity AirTap HomeKit
-- AirTap Apple Home
-- Siri smart vent
-- ESP32 HomeKit fan controller
-- HomeKit HVAC vent
-- Apple HomeKit AC Infinity
+Ship what works:
 
-That is why this topic matters.
+- `platformio.ini` for one board target
+- `main.cpp` with PWM fan control
+- Pin mapping, fan service, lockout service
+- README with flashing instructions
+- Pairing/reset instructions (for users who receive a completed device)
+- Known limitations clearly stated
 
-The article should make it clear that the AirTap ESP32 upgrade kit is already valuable for Home Assistant users, but the same hardware could also become a native Apple Home accessory.
-
-Suggested SEO phrases to include naturally:
-
-- Apple Home smart vent
-- HomeKit smart vent controller
-- AC Infinity AirTap HomeKit
-- AirTap T4 Apple Home
-- AirTap T6 Apple Home
-- ESP32 HomeKit fan controller
-- HomeSpan ESP32 firmware
-- PlatformIO ESP32 HomeKit
-- Siri-controlled smart vent
-- HomeKit temperature sensor ESP32
-
-Avoid keyword stuffing. The article should read like a serious developer guide, not a landing page.
-
-**Suggested Product Positioning**
----------------------------------
-
-A clean positioning statement:
-
-> The SiloCityLabs AirTap ESP32 upgrade kit is already a strong option for Home Assistant users through ESPHome. HomeSpan opens the possibility of a second firmware path for Apple Home users who want direct HomeKit pairing, Siri control, and native Apple Home automations.
-
-That positioning does three things:
-
-1. It protects the existing ESPHome value.
-2. It introduces Apple Home as a new use case.
-3. It does not overpromise a finished firmware.
-
-A good call to action:
-
-> If you are a developer interested in Apple Home, HomeKit, ESP32, or smart HVAC projects, the AirTap ESP32 hardware is a strong starting point. The foundation is already there: fan PWM, temperature sensing, display, buttons, and a proven mechanical install. The next step is firmware.
-
-**What a First Public Developer Release Could Include**
-------------------------------------------------------
-
-A useful GitHub release would not need to be perfect.
-
-It should include:
-
-- `platformio.ini`
-- One tested board target
-- `main.cpp`
-- Pin mapping header
-- Fan service
-- Panel lockout service
-- Temperature service if ready
-- OLED display if ready
-- README with flashing steps
-- Known limitations
-- Pairing/reset instructions
-- Board revision notes
-
-The README should be direct:
+Be direct about status:
 
 ```text
 This is experimental HomeSpan firmware for the SiloCityLabs AirTap ESP32 upgrade kit.
@@ -1121,34 +900,14 @@ Use ESPHome firmware for production Home Assistant installs.
 Use this firmware if you want to test native Apple Home support.
 ```
 
-That kind of clarity attracts the right contributors and filters out users who expect a finished product.
+And finally for the repo name: `esp32-airtap-homespan`- descriptive and searchable.
 
-**Possible Repository Names**
------------------------------
-
-Good repo names:
-
-- `airtap-homespan`
-- `esp32-airtap-homespan`
-- `airtap-homekit-firmware`
-- `ac-infinity-airtap-homekit`
-
-Best practical choice:
-
-```text
-esp32-airtap-homespan
-```
-
-It is descriptive, searchable, and fits the existing ESP32/AirTap naming pattern.
-
-**Article Summary**
+**Summary**
 -------------------
 
-Native Apple Home support for the AirTap ESP32 upgrade kit is realistic.
+The AirTap ESP32 hardware is proven for Home Assistant via ESPHome. HomeSpan offers a parallel path for native Apple Home support.
 
-The existing ESPHome firmware already proves the important hardware path: PWM fan output, temperature sensing, display, local buttons, panel lockout, and optional IR support. HomeSpan gives developers a way to expose that same hardware directly to Apple Home as a native HomeKit accessory.
-
-The best first firmware should be small:
+The best first firmware can be small:
 
 - Pair with Apple Home
 - Expose a Fan service
@@ -1156,11 +915,7 @@ The best first firmware should be small:
 - Keep local buttons working
 - Add temperature, display, lockout, persistence, and IR after the core works
 
-This would not replace ESPHome. It would expand the market.
-
-Home Assistant users already have a strong path. Apple Home users should have one too.
-
-For developers interested in ESP32, HomeKit, Apple Home, and smart HVAC control, the AirTap ESP32 upgrade kit is a compelling platform to build on.
+This expands the market rather than replacing ESPHome. Developers building for Apple Home now have an entry point.
 
 **Reference Links**
 -------------------
@@ -1170,15 +925,3 @@ For developers interested in ESP32, HomeKit, Apple Home, and smart HVAC control,
 - [HomeSpan GitHub repository](https://github.com/HomeSpan/HomeSpan)
 - [HomeSpan Arduino library listing](https://www.arduinolibraries.info/libraries/home-span)
 - [Espressif Arduino-ESP32 library support](https://docs.espressif.com/projects/arduino-esp32/en/latest/libraries.html)
-
-**Draft Publishing Notes**
---------------------------
-
-This post is intentionally written as a developer guide and market-expansion article. Before publishing, consider adding:
-
-- A product photo of the AirTap ESP32 module
-- A screenshot of Apple Home with a Fan tile mockup
-- A simple firmware architecture diagram
-- A GitHub repo link if/when the HomeSpan prototype exists
-- A short disclaimer that this is experimental firmware direction, not the default shipped firmware
-- Internal links to the ESPHome-certified AirTap post and Gen3 upgrade kit article
