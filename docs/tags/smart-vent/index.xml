@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart-Vent on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/smart-vent/</link>
+    <description>Recent content in Smart-Vent on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/smart-vent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade Kit with HomeSpan and PlatformIO</title>
+      <link>https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/</guid>
+      <description>&lt;p&gt;The SiloCityLabs ESP32 Module for the AC Infinity AirTap T4/T6 already gives Home Assistant users a clean way to upgrade an AirTap vent into a connected smart-home device. The current ESPHome firmware path supports the important hardware pieces: PWM fan control, onboard temperature sensing, OLED display output, physical buttons, panel lockout, and newer IR receiver support on supported builds.&lt;/p&gt;&#xA;&lt;p&gt;But there is another smart-home audience that could benefit from this hardware: &lt;strong&gt;Apple Home users&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re in the Apple ecosystem, using HomePod, Siri on iPhone, Apple TV, scenes, automations, and the Apple Home app, the natural question is: &lt;em&gt;Could the AirTap ESP32 upgrade kit run native Apple Home firmware instead of ESPHome?&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes it can! &lt;a href=&#34;https://github.com/HomeSpan/HomeSpan&#34;&gt;HomeSpan&lt;/a&gt; provides developers with libraries to create an ESP32 firmware that pairs the AirTap directly with Apple Home over Wi-Fi. That&amp;rsquo;s native Apple support without Home Assistant, without a Home Assistant HomeKit Bridge, and without a separate server translating ESPHome entities into HomeKit accessories.&lt;/p&gt;&#xA;&lt;p&gt;This post is not a finished firmware release. It is a technical roadmap for developers, makers, and advanced AirTap owners who want to understand what it would take to build one. It&amp;rsquo;s enough architecture to start the project, enough code structure to see the direction, and enough caution to avoid the obvious traps.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

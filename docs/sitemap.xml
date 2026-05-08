@@ -3,24 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/tags/airtap-t4/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/airtap-t6/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/apple-home/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <loc>https://silocitylabs.com/tags/esp32/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/homekit/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/homespan/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/platformio/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/silocitylabs/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/smart-home/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/smart-vent/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/xiao-seeed/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/</loc>
     <lastmod>2026-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/ubuntu/</loc>
@@ -77,16 +116,7 @@
     <loc>https://silocitylabs.com/tags/airtap-gen3/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/tags/airtap-t4/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/airtap-t6/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/author/don-ko/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/esp32/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/esphome/</loc>
@@ -101,13 +131,7 @@
     <loc>https://silocitylabs.com/tags/made-for-esphome/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/xiao/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/xiao-seeed/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/async/</loc>
@@ -186,9 +210,6 @@
     <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/firos/</loc>
-    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/smart-home/</loc>
     <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/diy-electronics/</loc>

@@ -8,8 +8,85 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airtap-T4</title>
+      <link>https://silocitylabs.com/tags/airtap-t4/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-t4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Airtap-T6</title>
+      <link>https://silocitylabs.com/tags/airtap-t6/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-t6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple-Home</title>
+      <link>https://silocitylabs.com/tags/apple-home/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/apple-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Homekit</title>
+      <link>https://silocitylabs.com/tags/homekit/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/homekit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Homespan</title>
+      <link>https://silocitylabs.com/tags/homespan/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/homespan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Platformio</title>
+      <link>https://silocitylabs.com/tags/platformio/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/platformio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Silocitylabs</title>
+      <link>https://silocitylabs.com/tags/silocitylabs/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/silocitylabs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Home</title>
+      <link>https://silocitylabs.com/tags/smart-home/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/smart-home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Vent</title>
+      <link>https://silocitylabs.com/tags/smart-vent/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/smart-vent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xiao-Seeed</title>
+      <link>https://silocitylabs.com/tags/xiao-seeed/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/xiao-seeed/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ubuntu</title>
       <link>https://silocitylabs.com/tags/ubuntu/</link>
@@ -95,27 +172,6 @@
       <description></description>
     </item>
     <item>
-      <title>Airtap-T4</title>
-      <link>https://silocitylabs.com/tags/airtap-t4/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/airtap-t4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Airtap-T6</title>
-      <link>https://silocitylabs.com/tags/airtap-t6/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/airtap-t6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ESP32</title>
-      <link>https://silocitylabs.com/tags/esp32/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Esphome</title>
       <link>https://silocitylabs.com/tags/esphome/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
@@ -141,13 +197,6 @@
       <link>https://silocitylabs.com/tags/xiao/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/xiao/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Xiao-Seeed</title>
-      <link>https://silocitylabs.com/tags/xiao-seeed/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/xiao-seeed/</guid>
       <description></description>
     </item>
     <item>
@@ -281,13 +330,6 @@
       <link>https://silocitylabs.com/tags/firos/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/firos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Smart Home</title>
-      <link>https://silocitylabs.com/tags/smart-home/</link>
-      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/smart-home/</guid>
       <description></description>
     </item>
     <item>

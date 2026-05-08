@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade Kit with HomeSpan and PlatformIO</title>
+  <meta property="og:title" content="Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade Kit with HomeSpan and PlatformIO" />
+  <meta name="twitter:title" content="Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade …" />
+  <meta name="description" content="A practical developer guide for bringing AirTap T4/T6 vents directly into Apple Home without Home Assistant">
+  <meta property="og:description" content="A practical developer guide for bringing AirTap T4/T6 vents directly into Apple Home without Home Assistant">
+  <meta name="twitter:description" content="A practical developer guide for bringing AirTap T4/T6 vents directly into Apple Home without Home Assistant">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/airtap-homespan-platformio-apple-home-blog-post/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade Kit with HomeSpan and PlatformIO</h1>
+                
+                  
+                    <h2 class="post-subheading">A practical developer guide for bringing AirTap T4/T6 vents directly into Apple Home without Home Assistant</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on May 6, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>The SiloCityLabs ESP32 Module for the AC Infinity AirTap T4/T6 already gives Home Assistant users a clean way to upgrade an AirTap vent into a connected smart-home device. The current ESPHome firmware path supports the important hardware pieces: PWM fan control, onboard temperature sensing, OLED display output, physical buttons, panel lockout, and newer IR receiver support on supported builds.</p>
+<p>But there is another smart-home audience that could benefit from this hardware: <strong>Apple Home users</strong>.</p>
+<p>If you&rsquo;re in the Apple ecosystem, using HomePod, Siri on iPhone, Apple TV, scenes, automations, and the Apple Home app, the natural question is: <em>Could the AirTap ESP32 upgrade kit run native Apple Home firmware instead of ESPHome?</em></p>
+<p>Yes it can! <a href="https://github.com/HomeSpan/HomeSpan">HomeSpan</a> provides developers with libraries to create an ESP32 firmware that pairs the AirTap directly with Apple Home over Wi-Fi. That&rsquo;s native Apple support without Home Assistant, without a Home Assistant HomeKit Bridge, and without a separate server translating ESPHome entities into HomeKit accessories.</p>
+<p>This post is not a finished firmware release. It is a technical roadmap for developers, makers, and advanced AirTap owners who want to understand what it would take to build one. It&rsquo;s enough architecture to start the project, enough code structure to see the direction, and enough caution to avoid the obvious traps.</p>
+<h2 id="why-homespan"><strong>Why HomeSpan?</strong></h2>
+<p>Most custom ESP32 smart-home firmware assumes that Home Assistant is the center of the house. That is fine for power users like us - we each have a home server running Home Assistant - and ESPHome is still one of the best ways to ship an ESP32-based IoT device quickly.</p>
+<p>But not every smart-home user wants to manage Home Assistant.</p>
+<p>Apple users want that &ldquo;hosue of the future&rdquo;: smart vents, quieter airflow, room-level automation, and better HVAC behavior, but they want the control surface to be the Apple Home app. They want to say:</p>
+<ul>
+<li>“Hey Siri, turn on the office vent.”</li>
+<li>“Set the bedroom vent to 40 percent.”</li>
+<li>“Turn off the vent display buttons.”</li>
+<li>“When the room gets warm, increase airflow.”</li>
+<li>“When the Good Night scene runs, lower the vent speed.”</li>
+</ul>
+<p>That is a different market from the existing ESPHome/Home Assistant crowd. For SiloCityLabs, this is an opportunity: keep serving the Home Assistant community while opening the door to Apple-first smart-home users who may never search for ESPHome, YAML, or Home Assistant integrations.</p>
+<h2 id="the-existing-airtap-esp32-hardware-is-a-good-fit"><strong>The existing AirTap ESP32 hardware is a good fit</strong></h2>
+<p>Fortunately the AirTap ESP32 upgrade kit already has the right kind of hardware for native Apple Home firmware. The firmware needs to handle:</p>
+<ul>
+<li>ESP32 module running Wi-Fi firmware</li>
+<li>PWM output for AirTap fan speed control</li>
+<li>ADC input for temperature sensing</li>
+<li>SSD1306 128x64 OLED display over I2C</li>
+<li>Local GPIO buttons</li>
+<li>Stored fan speed state</li>
+<li>Panel lockout state</li>
+<li>Optional IR receiver support on supported board versions</li>
+<li>Wi-Fi provisioning (SSID and password setup)</li>
+<li>OTA/update strategy</li>
+<li>A clean end-user pairing/reset story</li>
+</ul>
+<p>The current ESPHome firmware proves that the board can already do the important work. HomeSpan just replaces the smart-home protocol layer. HomeSpan will expose HomeKit services directly to Apple Home.</p>
+<p>That distinction matters for SEO, positioning, and buyer intent. “ESP32 smart vent for Home Assistant” reaches one audience. “Apple HomeKit smart vent upgrade for AC Infinity AirTap” reaches another.</p>
+<h2 id="what-homespan-brings-to-the-project"><strong>What HomeSpan brings to the project</strong></h2>
+<p>HomeSpan is an Arduino library for creating HomeKit accessories on ESP32. It implements Apple’s HomeKit Accessory Protocol for ESP32-class devices and allows the device to pair directly with Apple Home over Wi-Fi.</p>
+<p>For this project, HomeSpan is attractive because it can model the AirTap as an actual Apple Home accessory instead of a group of translated Home Assistant entities.</p>
+<p>A first Apple Home firmware could expose:</p>
+<ul>
+<li>A Fan service for on/off and speed control</li>
+<li>A Temperature Sensor service for the AirTap temperature reading</li>
+<li>A Switch service for panel lockout</li>
+<li>Accessory Information for manufacturer, model, serial, and firmware version</li>
+<li>Optional support for physical button events or local-only button behavior</li>
+</ul>
+<p>From the Apple Home user’s perspective, the AirTap would feel like a native accessory. They would not need to understand ESPHome. They would not need to copy YAML. They would not need to run a local server.</p>
+<p>They would flash firmware, pair the device, name the vent, assign it to a room, and automate it.</p>
+<h2 id="what-we-can-reuse-from-the-esphome-firmware"><strong>What we can reuse from the ESPHome firmware</strong></h2>
+<p>The current ESPHome firmware is the best technical reference because it already describes the board behavior.</p>
+<p>The 3-button firmware uses this core pattern:</p>
+<ul>
+<li><code>GPIO2</code> for PWM fan output</li>
+<li><code>GPIO4</code> for ADC temperature input</li>
+<li><code>GPIO6</code> for OLED SDA</li>
+<li><code>GPIO7</code> for OLED SCL</li>
+<li><code>GPIO8</code>, <code>GPIO9</code>, and <code>GPIO10</code> for local buttons</li>
+<li>A stored integer fan speed from <code>0</code> to <code>10</code></li>
+<li>A panel lockout boolean</li>
+<li>An NTC temperature conversion pipeline</li>
+<li>An SSD1306 128x64 display at I2C address <code>0x3C</code></li>
+</ul>
+<p>The 4-button firmware follows the same general structure, but adds the fourth button and IR receiver support:</p>
+<ul>
+<li><code>GPIO2</code> for PWM fan output</li>
+<li><code>GPIO4</code> for ADC temperature input</li>
+<li><code>GPIO6</code> for OLED SDA</li>
+<li><code>GPIO7</code> for OLED SCL</li>
+<li><code>GPIO20</code> for Up</li>
+<li><code>GPIO8</code> for Down</li>
+<li><code>GPIO9</code> for Toggle</li>
+<li><code>GPIO10</code> for Mode/Menu</li>
+<li><code>GPIO3</code> for IR receiver on supported 4-button firmware</li>
+<li>Fan speed stored from <code>0</code> to <code>10</code></li>
+<li>Panel lockout support</li>
+<li>IR commands that can toggle, increment, or decrement fan speed</li>
+</ul>
+<p>The important point is that none of this is ESPHome-specific. ESPHome makes it easy, but the underlying behavior is normal embedded firmware:</p>
+<ul>
+<li>Read GPIO</li>
+<li>Write PWM</li>
+<li>Read ADC</li>
+<li>Calculate temperature</li>
+<li>Update display</li>
+<li>Store state</li>
+<li>Expose controls to a smart-home system</li>
+</ul>
+<p>That is exactly the kind of project HomeSpan can handle.</p>
+<h2 id="recommended-firmware-scope"><strong>Recommended firmware scope</strong></h2>
+<p>The first HomeSpan firmware should be intentionally boring. Version <code>0.1.0</code> should prove only four things:</p>
+<ol>
+<li>The firmware builds in PlatformIO.</li>
+<li>The ESP32 board boots reliably.</li>
+<li>The accessory pairs with Apple Home.</li>
+<li>Apple Home can set AirTap fan speed through PWM.</li>
+</ol>
+<p>A realistic development order:</p>
+<ol>
+<li>
+<p><strong>Board bring-up</strong><br>
+Compile and flash a basic HomeSpan project on the AirTap ESP32 hardware.</p>
+</li>
+<li>
+<p><strong>Apple Home pairing</strong><br>
+Expose one Fan accessory and confirm that Apple Home can pair, unpair, and re-pair it.</p>
+</li>
+<li>
+<p><strong>PWM fan output</strong><br>
+Map Apple Home speed percentage to the existing AirTap 0-10 fan speed model.</p>
+</li>
+<li>
+<p><strong>Local buttons</strong><br>
+Let the physical buttons change the fan speed and keep Apple Home state in sync.</p>
+</li>
+<li>
+<p><strong>Temperature sensor</strong><br>
+Read the ADC, convert to temperature, and expose it as a HomeKit Temperature Sensor.</p>
+</li>
+<li>
+<p><strong>OLED display</strong><br>
+Show fan speed, temperature, Wi-Fi state, and pairing/setup hints.</p>
+</li>
+<li>
+<p><strong>Panel lockout</strong><br>
+Expose lockout as an Apple Home switch and block local button changes when enabled.</p>
+</li>
+<li>
+<p><strong>IR receiver</strong><br>
+Add optional IR support for board versions that include the IR sensor.</p>
+</li>
+<li>
+<p><strong>Persistence</strong><br>
+Store fan speed, lockout state, display preference, and calibration values.</p>
+</li>
+<li>
+<p><strong>Release workflow</strong><br>
+Add versioning, flashing instructions, recovery instructions, and board-specific builds.</p>
+</li>
+</ol>
+<p>This order delivers value early without trapping the project in menus before HomeKit core is proven.</p>
+<h2 id="how-the-airtap-should-appear-in-apple-home"><strong>How the AirTap Should Appear in Apple Home</strong></h2>
+<p>Use this HomeKit model:</p>
+<ul>
+<li>Accessory: <code>AirTap Vent</code></li>
+<li>Service: <code>Fan</code></li>
+<li>Service: <code>Temperature Sensor</code></li>
+<li>Service: <code>Switch</code> named <code>Panel Lockout</code></li>
+<li>Service: <code>Accessory Information</code></li>
+</ul>
+<p>The Fan service exposes on/off state and speed percentage. Internally keep the <code>0-10</code> speed model; Apple Home sees <code>0-100%</code>. Use this mapping:</p>
+<table>
+<thead>
+<tr>
+<th>Apple Home Speed</th>
+<th>Internal AirTap Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0%</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1-10%</td>
+<td>1</td>
+</tr>
+<tr>
+<td>11-20%</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21-30%</td>
+<td>3</td>
+</tr>
+<tr>
+<td>31-40%</td>
+<td>4</td>
+</tr>
+<tr>
+<td>41-50%</td>
+<td>5</td>
+</tr>
+<tr>
+<td>51-60%</td>
+<td>6</td>
+</tr>
+<tr>
+<td>61-70%</td>
+<td>7</td>
+</tr>
+<tr>
+<td>71-80%</td>
+<td>8</td>
+</tr>
+<tr>
+<td>81-90%</td>
+<td>9</td>
+</tr>
+<tr>
+<td>91-100%</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Predictable behavior matters more than smoothness for the first release.</p>
+<h2 id="platformio-project-layout"><strong>PlatformIO Project Layout</strong></h2>
+<p>Start with a simple layout:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">airtap-homespan/
+</span></span><span class="line"><span class="cl">├── platformio.ini
+</span></span><span class="line"><span class="cl">├── include/
+</span></span><span class="line"><span class="cl">│   ├── AirtapPins.h
+</span></span><span class="line"><span class="cl">│   ├── AirtapState.h
+</span></span><span class="line"><span class="cl">│   ├── AirtapFan.h
+</span></span><span class="line"><span class="cl">│   ├── AirtapButtons.h
+</span></span><span class="line"><span class="cl">│   ├── AirtapTemperature.h
+</span></span><span class="line"><span class="cl">│   ├── AirtapDisplay.h
+</span></span><span class="line"><span class="cl">│   └── AirtapHomeKit.h
+</span></span><span class="line"><span class="cl">├── src/
+</span></span><span class="line"><span class="cl">│   ├── main.cpp
+</span></span><span class="line"><span class="cl">│   ├── AirtapFan.cpp
+</span></span><span class="line"><span class="cl">│   ├── AirtapButtons.cpp
+</span></span><span class="line"><span class="cl">│   ├── AirtapTemperature.cpp
+</span></span><span class="line"><span class="cl">│   ├── AirtapDisplay.cpp
+</span></span><span class="line"><span class="cl">│   └── AirtapHomeKit.cpp
+</span></span><span class="line"><span class="cl">└── README.md
+</span></span></code></pre></div><p>Keep code in <code>main.cpp</code> initially, then split into modules as it grows. Modular design matters for supporting multiple board revisions.</p>
+<h2 id="a-starting-platformioini"><strong>A Starting platformio.ini</strong></h2>
+<p>HomeSpan targets Arduino on ESP32. Recent HomeSpan releases require a recent Arduino-ESP32 core, and PlatformIO’s default Espressif platform may lag behind the newest Arduino-ESP32 support. A practical option is using the pioarduino Espressif platform package when newer Arduino-ESP32 support is needed.</p>
+<p>For the XIAO ESP32-C3 target, a starting <code>platformio.ini</code> could look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[env:airtap_xiao_esp32c3]</span>
+</span></span><span class="line"><span class="cl"><span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip</span>
+</span></span><span class="line"><span class="cl"><span class="na">board</span> <span class="o">=</span> <span class="s">seeed_xiao_esp32c3</span>
+</span></span><span class="line"><span class="cl"><span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+</span></span><span class="line"><span class="cl"><span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
+</span></span><span class="line"><span class="cl"><span class="na">upload_speed</span> <span class="o">=</span> <span class="s">921600</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">lib_deps</span> <span class="o">=</span><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  HomeSpan/HomeSpan
+</span></span></span><span class="line"><span class="cl"><span class="s">  adafruit/Adafruit SSD1306
+</span></span></span><span class="line"><span class="cl"><span class="s">  adafruit/Adafruit GFX Library</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">board_build.partitions</span> <span class="o">=</span> <span class="s">min_spiffs.csv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">build_flags</span> <span class="o">=</span><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  -D AIRTAP_BOARD_3BTN_REV2</span>
+</span></span></code></pre></div><p>A future ESP32-C6 environment could look like this once the exact PlatformIO board target is confirmed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[env:airtap_xiao_esp32c6]</span>
+</span></span><span class="line"><span class="cl"><span class="na">platform</span> <span class="o">=</span> <span class="s">https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip</span>
+</span></span><span class="line"><span class="cl"><span class="na">board</span> <span class="o">=</span> <span class="s">seeed_xiao_esp32c6</span>
+</span></span><span class="line"><span class="cl"><span class="na">framework</span> <span class="o">=</span> <span class="s">arduino</span>
+</span></span><span class="line"><span class="cl"><span class="na">monitor_speed</span> <span class="o">=</span> <span class="s">115200</span>
+</span></span><span class="line"><span class="cl"><span class="na">upload_speed</span> <span class="o">=</span> <span class="s">921600</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">lib_deps</span> <span class="o">=</span><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  HomeSpan/HomeSpan
+</span></span></span><span class="line"><span class="cl"><span class="s">  adafruit/Adafruit SSD1306
+</span></span></span><span class="line"><span class="cl"><span class="s">  adafruit/Adafruit GFX Library</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">board_build.partitions</span> <span class="o">=</span> <span class="s">min_spiffs.csv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">build_flags</span> <span class="o">=</span><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">  -D AIRTAP_BOARD_4BTN_REV1</span>
+</span></span></code></pre></div><p>Start with the C3 variant; the existing ESPHome configs use <code>seeed_xiao_esp32c3</code>.</p>
+<h2 id="pin-mapping"><strong>Pin Mapping</strong></h2>
+<p>Keep pins in one header file, never hardcoded. Create <code>AirtapPins.h</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#pragma once
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#if defined(AIRTAP_BOARD_3BTN_REV2)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_FAN_PWM</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_TEMP_ADC</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_OLED_SDA</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_OLED_SCL</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_UP</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_DOWN</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_MODE</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_TOGGLE</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_IR_RX</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#elif defined(AIRTAP_BOARD_4BTN_REV1)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_FAN_PWM</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_TEMP_ADC</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_OLED_SDA</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_OLED_SCL</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_UP</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_DOWN</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_TOGGLE</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_BUTTON_MODE</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">PIN_IR_RX</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#else
+</span></span></span><span class="line"><span class="cl"><span class="cp">#error &#34;Select an AirTap board revision with a build flag&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></div><p>This gives contributors a clear reference:</p>
+<ul>
+<li>If you have a 3-button board, build with <code>AIRTAP_BOARD_3BTN_REV2</code>.</li>
+<li>If you have a 4-button board, build with <code>AIRTAP_BOARD_4BTN_REV1</code>.</li>
+<li>If a future board revision changes pins, add one block instead of rewriting firmware.</li>
+</ul>
+<h2 id="global-state"><strong>Global State</strong></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#pragma once
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">AirtapState</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>        <span class="c1">// 0-10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kt">bool</span> <span class="n">panelLocked</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">temperatureC</span> <span class="o">=</span> <span class="n">NAN</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">bool</span> <span class="n">homekitPaired</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">bool</span> <span class="n">wifiConnected</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="n">AirtapState</span> <span class="n">airtap</span><span class="p">;</span>
+</span></span></code></pre></div><p>Single source of truth matters: Apple Home, buttons, IR, and display all read from <code>airtap</code>.</p>
+<h2 id="pwm-fan-control"><strong>PWM Fan Control</strong></h2>
+<p>The existing ESPHome firmware uses LEDC PWM on <code>GPIO2</code> at <code>1000 Hz</code>. It also uses a minimum duty cycle for speed <code>1</code> so the fan starts reliably. If the fans stall it can burn out the motors. I&rsquo;m even considering starting the fan at max power for 1 second, similar to box fans and rooms fans which have the power settings go from 0-3-2-1.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;AirtapPins.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;AirtapState.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">FAN_PWM_CHANNEL</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">FAN_PWM_FREQ</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">FAN_PWM_RES_BITS</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">constexpr</span> <span class="kt">int</span> <span class="n">FAN_PWM_MAX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">FAN_PWM_RES_BITS</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="nf">fanStepToDuty</span><span class="p">(</span><span class="kt">int</span> <span class="n">step</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mf">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mf">0.38f</span><span class="p">;</span>   <span class="c1">// minimum-start behavior based on current ESPHome firmware
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#if defined(AIRTAP_BOARD_4BTN_REV1)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="k">return</span> <span class="p">(</span><span class="n">step</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mf">14.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#else
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>  <span class="k">return</span> <span class="p">(</span><span class="n">step</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="mf">13.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setupFanPwm</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ledcSetup</span><span class="p">(</span><span class="n">FAN_PWM_CHANNEL</span><span class="p">,</span> <span class="n">FAN_PWM_FREQ</span><span class="p">,</span> <span class="n">FAN_PWM_RES_BITS</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">ledcAttachPin</span><span class="p">(</span><span class="n">PIN_FAN_PWM</span><span class="p">,</span> <span class="n">FAN_PWM_CHANNEL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">applyFanSpeed</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">duty</span> <span class="o">=</span> <span class="n">fanStepToDuty</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">rawDuty</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">duty</span> <span class="o">*</span> <span class="n">FAN_PWM_MAX</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">ledcWrite</span><span class="p">(</span><span class="n">FAN_PWM_CHANNEL</span><span class="p">,</span> <span class="n">rawDuty</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="mapping-homekit-speed-to-airtap-speed"><strong>Mapping HomeKit Speed to AirTap Speed</strong></h2>
+<p>Apple Home uses percentages while AirTap uses steps. Use converters:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">percentToFanStep</span><span class="p">(</span><span class="kt">int</span> <span class="n">percent</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">percent</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">step</span> <span class="o">=</span> <span class="p">(</span><span class="n">percent</span> <span class="o">+</span> <span class="mi">9</span><span class="p">)</span> <span class="o">/</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">step</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">fanStepToPercent</span><span class="p">(</span><span class="kt">int</span> <span class="n">step</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">step</span> <span class="o">*</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This keeps behavior predictable and traceable.</p>
+<h2 id="minimal-homespan-fan-service"><strong>Minimal HomeSpan Fan Service</strong></h2>
+<p>Expose a <a href="https://github.com/HomeSpan/HomeSpan/blob/master/docs/ServiceList.md#fan-b7">Fan service in HomeSpan</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;HomeSpan.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;AirtapState.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">applyFanSpeed</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">percentToFanStep</span><span class="p">(</span><span class="kt">int</span> <span class="n">percent</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">fanStepToPercent</span><span class="p">(</span><span class="kt">int</span> <span class="n">step</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">AirtapFanService</span> <span class="o">:</span> <span class="n">Service</span><span class="o">::</span><span class="n">Fan</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SpanCharacteristic</span> <span class="o">*</span><span class="n">active</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SpanCharacteristic</span> <span class="o">*</span><span class="n">rotationSpeed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">AirtapFanService</span><span class="p">()</span> <span class="o">:</span> <span class="n">Service</span><span class="o">::</span><span class="n">Fan</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">active</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">Active</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rotationSpeed</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">RotationSpeed</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">boolean</span> <span class="nf">update</span><span class="p">()</span> <span class="k">override</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">active</span><span class="o">-&gt;</span><span class="n">updated</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kt">bool</span> <span class="n">on</span> <span class="o">=</span> <span class="n">active</span><span class="o">-&gt;</span><span class="n">getNewVal</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">on</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="n">rotationSpeed</span><span class="o">-&gt;</span><span class="n">setVal</span><span class="p">(</span><span class="n">fanStepToPercent</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">      <span class="n">applyFanSpeed</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">rotationSpeed</span><span class="o">-&gt;</span><span class="n">updated</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kt">int</span> <span class="n">percent</span> <span class="o">=</span> <span class="n">rotationSpeed</span><span class="o">-&gt;</span><span class="n">getNewVal</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="n">percentToFanStep</span><span class="p">(</span><span class="n">percent</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">active</span><span class="o">-&gt;</span><span class="n">setVal</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="n">applyFanSpeed</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="nf">syncFromDeviceState</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">active</span><span class="o">-&gt;</span><span class="n">setVal</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rotationSpeed</span><span class="o">-&gt;</span><span class="n">setVal</span><span class="p">(</span><span class="n">fanStepToPercent</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>syncFromDeviceState()</code> is critical: when physical buttons change the fan, Apple Home stays in sync.</p>
+<h2 id="main-firmware-skeleton"><strong>Main Firmware Skeleton</strong></h2>
+<p>A first <code>main.cpp</code> could look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Arduino.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;HomeSpan.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;AirtapPins.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;AirtapState.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">AirtapState</span> <span class="n">airtap</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">AirtapFanService</span> <span class="o">*</span><span class="n">fanService</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setupFanPwm</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">applyFanSpeed</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setupButtons</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">pollButtons</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setupTemperature</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">pollTemperature</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setupDisplay</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">updateDisplayIfNeeded</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">setupFanPwm</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">setupButtons</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">setupTemperature</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">setupDisplay</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">homeSpan</span><span class="p">.</span><span class="n">setLogLevel</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Development only. Do not ship every device with the same static setup code.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">homeSpan</span><span class="p">.</span><span class="n">setPairingCode</span><span class="p">(</span><span class="s">&#34;46637726&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">homeSpan</span><span class="p">.</span><span class="n">setQRID</span><span class="p">(</span><span class="s">&#34;ATAP&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">homeSpan</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">Category</span><span class="o">::</span><span class="n">Fans</span><span class="p">,</span> <span class="s">&#34;AirTap Vent&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">new</span> <span class="n">SpanAccessory</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">new</span> <span class="n">Service</span><span class="o">::</span><span class="n">AccessoryInformation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">      <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">Identify</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">      <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">Manufacturer</span><span class="p">(</span><span class="s">&#34;SiloCityLabs&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">Name</span><span class="p">(</span><span class="s">&#34;AirTap Vent&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">Model</span><span class="p">(</span><span class="s">&#34;AirTap ESP32 HomeSpan&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">FirmwareRevision</span><span class="p">(</span><span class="s">&#34;0.1.0&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">fanService</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AirtapFanService</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">new</span> <span class="n">AirtapTemperatureService</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">new</span> <span class="n">AirtapPanelLockoutService</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">homeSpan</span><span class="p">.</span><span class="n">poll</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">pollButtons</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pollTemperature</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">updateDisplayIfNeeded</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This proves the accessory model. Get pairing and PWM working first.</p>
+<h2 id="local-button-handling"><strong>Local Button Handling</strong></h2>
+<p>Local buttons are non-negotiable. The device should work offline. Follow existing ESPHome logic:</p>
+<ul>
+<li>Mode or Toggle turns the fan on/off</li>
+<li>Up increases fan speed</li>
+<li>Down decreases fan speed</li>
+<li>Buttons do nothing when panel lockout is enabled</li>
+</ul>
+<p>A basic structure:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setFanStepFromLocalInput</span><span class="p">(</span><span class="kt">int</span> <span class="n">step</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">panelLocked</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">step</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="n">step</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">applyFanSpeed</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">fanService</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fanService</span><span class="o">-&gt;</span><span class="n">syncFromDeviceState</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">increaseFanFromButton</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">setFanStepFromLocalInput</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">decreaseFanFromButton</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">setFanStepFromLocalInput</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">toggleFanFromButton</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">setFanStepFromLocalInput</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">setFanStepFromLocalInput</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>I&rsquo;m skipping over debounce code. There are a million debounce tuts in addition tothe proven &ldquo;setDebounceTime&rdquo; in Arduino.</p>
+<h2 id="panel-lockout"><strong>Panel Lockout</strong></h2>
+<p>Panel lockout is a an existing feautre in my ESPHome firmware. Expose a Switch service for lockout:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">AirtapPanelLockoutService</span> <span class="o">:</span> <span class="n">Service</span><span class="o">::</span><span class="n">Switch</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SpanCharacteristic</span> <span class="o">*</span><span class="n">on</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">AirtapPanelLockoutService</span><span class="p">()</span> <span class="o">:</span> <span class="n">Service</span><span class="o">::</span><span class="n">Switch</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">on</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">On</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">boolean</span> <span class="nf">update</span><span class="p">()</span> <span class="k">override</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">airtap</span><span class="p">.</span><span class="n">panelLocked</span> <span class="o">=</span> <span class="n">on</span><span class="o">-&gt;</span><span class="n">getNewVal</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>When enabled:</p>
+<ul>
+<li>Physical buttons should not change fan speed.</li>
+<li>IR remote commands should probably not change fan speed.</li>
+<li>Apple Home should still be allowed to control the fan.</li>
+</ul>
+<p>This prevents your toddler from changing the settings.</p>
+<h2 id="temperature-sensor"><strong>Temperature Sensor</strong></h2>
+<p>The AirTap firmware reads temperature through the board’s ADC path. ESPHome currently models it with an NTC/resistance pipeline and calibration points around:</p>
+<ul>
+<li><code>3.389 kOhm -&gt; 0°C</code></li>
+<li><code>10.0 kOhm -&gt; 25°C</code></li>
+<li><code>27.219 kOhm -&gt; 50°C</code></li>
+</ul>
+<p>A HomeSpan version can expose that as a native HomeKit Temperature Sensor.</p>
+<p>Start with a rough implementation and tune it later. The development goal is first to get a stable, believable temperature value into Apple Home.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">float</span> <span class="nf">readAirtapTemperatureC</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">raw</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">PIN_TEMP_ADC</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Pseudocode:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// 1. Convert ADC raw value to voltage ratio.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// 2. Convert voltage ratio to thermistor resistance.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// 3. Use the existing calibration curve or Steinhart-Hart approximation.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// 4. Return temperature in Celsius.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">NAN</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The HomeSpan service:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">AirtapTemperatureService</span> <span class="o">:</span> <span class="n">Service</span><span class="o">::</span><span class="n">TemperatureSensor</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SpanCharacteristic</span> <span class="o">*</span><span class="n">currentTemperature</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lastReadMs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">AirtapTemperatureService</span><span class="p">()</span> <span class="o">:</span> <span class="n">Service</span><span class="o">::</span><span class="n">TemperatureSensor</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">currentTemperature</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Characteristic</span><span class="o">::</span><span class="n">CurrentTemperature</span><span class="p">(</span><span class="mf">20.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="k">override</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">lastReadMs</span> <span class="o">&lt;</span> <span class="mi">5000</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">lastReadMs</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">t</span> <span class="o">=</span> <span class="n">readAirtapTemperatureC</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">isnan</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">airtap</span><span class="p">.</span><span class="n">temperatureC</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="n">currentTemperature</span><span class="o">-&gt;</span><span class="n">setVal</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>The Apple Home user gets a temperature tile they can use in scenes and automations.</p>
+<h2 id="oled-display"><strong>OLED Display</strong></h2>
+<p>The existing firmware uses an SSD1306 128x64 OLED over I2C at address <code>0x3C</code>. HomeSpan does not manage that display. Arduino libraries can display the status:</p>
+<ul>
+<li><code>AirTap HomeKit</code></li>
+<li>Fan speed <code>0-10</code></li>
+<li>Temperature</li>
+<li>Panel locked/unlocked</li>
+<li>Wi-Fi or pairing status</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Adafruit_GFX.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Adafruit_SSD1306.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">Adafruit_SSD1306</span> <span class="nf">display</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Wire</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setupDisplay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Wire</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">PIN_OLED_SDA</span><span class="p">,</span> <span class="n">PIN_OLED_SCL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">display</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="n">SSD1306_SWITCHCAPVCC</span><span class="p">,</span> <span class="mh">0x3C</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;SSD1306 display not found&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">clearDisplay</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">setTextSize</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">setTextColor</span><span class="p">(</span><span class="n">SSD1306_WHITE</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">updateDisplay</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">clearDisplay</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;AirTap HomeKit&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&#34;Fan Speed: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">isnan</span><span class="p">(</span><span class="n">airtap</span><span class="p">.</span><span class="n">temperatureC</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="n">airtap</span><span class="p">.</span><span class="n">temperatureC</span> <span class="o">*</span> <span class="mf">9.0f</span> <span class="o">/</span> <span class="mf">5.0f</span> <span class="o">+</span> <span class="mf">32.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">display</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&#34;Temp: %.1f F</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">display</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Temp: --&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">printf</span><span class="p">(</span><span class="s">&#34;Panel: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">airtap</span><span class="p">.</span><span class="n">panelLocked</span> <span class="o">?</span> <span class="s">&#34;Locked&#34;</span> <span class="o">:</span> <span class="s">&#34;Enabled&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">display</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Since this in a &ldquo;MVP&rdquo;, plain text is fine. Show state first, polish later.</p>
+<h2 id="ir-receiver-support"><strong>IR Receiver Support</strong></h2>
+<p>The 4-button ESPHome firmware includes IR receiver support on <code>GPIO3</code> and uses decoded Pronto data for remote buttons such as power, fan, plus, minus, mode, and refresh. This isn&rsquo;t vital for the MVP and can be added later. Recommended approach:</p>
+<ol>
+<li>Ship first prototype without IR.</li>
+<li>Log IR codes to confirm remote behavior.</li>
+<li>Map IR commands to existing button functions.</li>
+<li>Respect lockout.</li>
+</ol>
+<p>IR should call the same input handlers as buttons, so that changes propagate to HomeKit:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// IR plus/minus/power
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">increaseFanFromButton</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">decreaseFanFromButton</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">toggleFanFromButton</span><span class="p">();</span>
+</span></span></code></pre></div><h2 id="persistence"><strong>Persistence</strong></h2>
+<p>The device should remember useful state across reboot:</p>
+<ul>
+<li>Last fan speed</li>
+<li>Panel lockout state</li>
+<li>Display preference</li>
+<li>Temperature calibration / offset</li>
+</ul>
+<p>HomeSpan already has storage behavior for HomeKit pairing. For device settings, use ESP32 Preferences/NVS.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Preferences.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">Preferences</span> <span class="n">prefs</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">loadSettings</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prefs</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="s">&#34;airtap&#34;</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span> <span class="o">=</span> <span class="n">prefs</span><span class="p">.</span><span class="n">getInt</span><span class="p">(</span><span class="s">&#34;fan&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">airtap</span><span class="p">.</span><span class="n">panelLocked</span> <span class="o">=</span> <span class="n">prefs</span><span class="p">.</span><span class="n">getBool</span><span class="p">(</span><span class="s">&#34;lock&#34;</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prefs</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">saveSettings</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prefs</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="s">&#34;airtap&#34;</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prefs</span><span class="p">.</span><span class="n">putInt</span><span class="p">(</span><span class="s">&#34;fan&#34;</span><span class="p">,</span> <span class="n">airtap</span><span class="p">.</span><span class="n">fanSpeedStep</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prefs</span><span class="p">.</span><span class="n">putBool</span><span class="p">(</span><span class="s">&#34;lock&#34;</span><span class="p">,</span> <span class="n">airtap</span><span class="p">.</span><span class="n">panelLocked</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prefs</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Avoid frequent writes; save only on state change, and consider a short delay/debounce before writing.</p>
+<h2 id="provisioning-and-reset-ux"><strong>Provisioning and Reset UX</strong></h2>
+<p>Customers need a clear setup procedure. Not serial monitors nor &ldquo;magic phrases&rdquo; in command-line. Consider common steps like:</p>
+<ul>
+<li>entering pairing mode</li>
+<li>setting or resetting wifi credentials</li>
+<li>what does the display show when not paired?</li>
+<li>what button combination triggers a factory reset?</li>
+<li>how does support tell a user to recover a device?</li>
+</ul>
+<p>A reasonable flow:</p>
+<ol>
+<li>On first boot, display <code>Pair AirTap HomeKit</code>.</li>
+<li>Show the HomeKit setup code or direct users to the printed/setup label.</li>
+<li>If already paired, show normal fan status.</li>
+<li>Holding two buttons for 10 seconds resets pairing and Wi-Fi.</li>
+<li>Display confirms <code>Reset Complete</code>.</li>
+</ol>
+<h2 id="ota-and-updates"><strong>OTA and Updates</strong></h2>
+<p>Use manual USB flashing for now. Automatic updates require infrastructure that can wait.</p>
+<h2 id="testing-checklist"><strong>Testing Checklist</strong></h2>
+<p>Before calling the firmware usable, test these behaviors:</p>
+<ul>
+<li>Device flashes successfully.</li>
+<li>Serial logs show boot and HomeSpan startup.</li>
+<li>Apple Home can pair the device.</li>
+<li>Apple Home can remove and re-pair the device.</li>
+<li>Fan turns off at <code>0%</code>.</li>
+<li>Fan starts reliably at the first non-zero speed.</li>
+<li>Fan reaches a strong output at <code>100%</code>.</li>
+<li>Physical Up increases the speed.</li>
+<li>Physical Down decreases the speed.</li>
+<li>Physical Toggle/Mode turns the fan on and off.</li>
+<li>Apple Home updates when physical buttons are pressed.</li>
+<li>OLED display matches actual state.</li>
+<li>Panel lockout blocks physical buttons.</li>
+<li>Panel lockout does not block Apple Home control.</li>
+<li>Temperature does not jump wildly.</li>
+<li>Reboot restores expected state.</li>
+<li>Removing power and restoring power does not corrupt pairing.</li>
+<li>Factory reset works without a computer.</li>
+<li>Multiple vents pair with unique names and can be renamed in Apple Home.</li>
+</ul>
+<h2 id="market-positioning"><strong>Market Positioning</strong></h2>
+<p>Home Assistant users search for ESPHome + AirTap. Apple users search for HomeKit + AirTap. This post opens a second market: developers and Apple-first smart-home users.</p>
+<h2 id="next-steps-for-developers"><strong>Next Steps for Developers</strong></h2>
+<p>If you&rsquo;re interested in Apple Home, HomeKit, ESP32, or smart HVAC, the AirTap ESP32 hardware is a strong foundation. It provides fan PWM, temperature sensing, display, buttons, and proven mechanics. The next step is firmware.</p>
+<h2 id="what-a-first-release-could-include"><strong>What a First Release Could Include</strong></h2>
+<p>Ship what works:</p>
+<ul>
+<li><code>platformio.ini</code> for one board target</li>
+<li><code>main.cpp</code> with PWM fan control</li>
+<li>Pin mapping, fan service, lockout service</li>
+<li>README with flashing instructions</li>
+<li>Pairing/reset instructions (for users who receive a completed device)</li>
+<li>Known limitations clearly stated</li>
+</ul>
+<p>Be direct about status:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">This is experimental HomeSpan firmware for the SiloCityLabs AirTap ESP32 upgrade kit.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Current status:
+</span></span><span class="line"><span class="cl">- Apple Home pairing: working
+</span></span><span class="line"><span class="cl">- Fan speed control: working
+</span></span><span class="line"><span class="cl">- Local buttons: working
+</span></span><span class="line"><span class="cl">- Temperature sensor: experimental
+</span></span><span class="line"><span class="cl">- OLED display: experimental
+</span></span><span class="line"><span class="cl">- IR remote: not implemented
+</span></span><span class="line"><span class="cl">- OTA updates: not implemented
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Use ESPHome firmware for production Home Assistant installs.
+</span></span><span class="line"><span class="cl">Use this firmware if you want to test native Apple Home support.
+</span></span></code></pre></div><p>And finally for the repo name: <code>esp32-airtap-homespan</code>- descriptive and searchable.</p>
+<h2 id="summary"><strong>Summary</strong></h2>
+<p>The AirTap ESP32 hardware is proven for Home Assistant via ESPHome. HomeSpan offers a parallel path for native Apple Home support.</p>
+<p>The best first firmware can be small:</p>
+<ul>
+<li>Pair with Apple Home</li>
+<li>Expose a Fan service</li>
+<li>Control the AirTap fan through PWM</li>
+<li>Keep local buttons working</li>
+<li>Add temperature, display, lockout, persistence, and IR after the core works</li>
+</ul>
+<p>This expands the market rather than replacing ESPHome. Developers building for Apple Home now have an entry point.</p>
+<h2 id="reference-links"><strong>Reference Links</strong></h2>
+<ul>
+<li><a href="https://silocitylabs.com/post/2025/esp32-airtap-esphome/">SiloCityLabs ESP32 Module for AC Infinity AirTap T4/T6</a></li>
+<li><a href="https://silocitylabs.com/tags/airtap-t4">SiloCityLabs AirTap T4 tag page</a></li>
+<li><a href="https://github.com/HomeSpan/HomeSpan">HomeSpan GitHub repository</a></li>
+<li><a href="https://www.arduinolibraries.info/libraries/home-span">HomeSpan Arduino library listing</a></li>
+<li><a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/libraries.html">Espressif Arduino-ESP32 library support</a></li>
+</ul>
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/airtap-homespan-platformio-apple-home-blog-post.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/airtap-homespan-platformio-apple-home-blog-post.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/" data-toggle="tooltip" data-placement="top" title="Fixing WirePlumber High CPU Usage on Ubuntu 24.04">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+
