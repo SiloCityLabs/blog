@@ -4,7 +4,7 @@ author: maave
 type: post
 date: 2026-04-14T00:00:00+00:00
 url: /post/2026/05/08/tasker-open-intent/
-draft: true
+draft: false
 categories:
   - Android
 tags:
