@@ -3,24 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/airtap-gen2/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/airtap-t4/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/airtap-t6/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/apple-home/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/categories/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/esp32/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/esphome/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/home-assistant/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2025/airtap-esp32-gen2-instsructions/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/made-for-esphome/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/xiao/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/xiao-seeed/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/apple-home/</loc>
     <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/homekit/</loc>
@@ -29,19 +62,10 @@
     <loc>https://silocitylabs.com/tags/homespan/</loc>
     <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/</loc>
     <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/platformio/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
     <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/silocitylabs/</loc>
@@ -51,12 +75,6 @@
     <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/smart-vent/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/xiao-seeed/</loc>
     <lastmod>2026-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/android/</loc>
@@ -131,22 +149,7 @@
     <loc>https://silocitylabs.com/tags/airtap-gen3/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/author/don-ko/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/esphome/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/home-assistant/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/made-for-esphome/</loc>
-    <lastmod>2025-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/xiao/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/async/</loc>
@@ -1236,6 +1239,8 @@
     <lastmod>2013-10-04T22:36:25+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/page/about/</loc>
+  </url><url>
+    <loc>https://silocitylabs.com/author/don-ko/</loc>
   </url><url>
     <loc>https://silocitylabs.com/newsletter/</loc>
   </url><url>

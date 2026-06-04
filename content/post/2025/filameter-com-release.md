@@ -1,7 +1,7 @@
 ---
 title: Introducing FilaMeter
 subtitle: The Smart, Free Way to Manage Your 3D Printing Filament Inventory
-author: Don Ko
+author: Luis Rodriguez
 type: post
 date: 2025-07-29
 categories:

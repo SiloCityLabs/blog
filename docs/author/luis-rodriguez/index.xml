@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/author/luis-rodriguez/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install PCB on a Gen2 AC Infinity AirTap T4 or T6</title>
+      <link>https://silocitylabs.com/post/2025/airtap-esp32-gen2-instsructions/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/airtap-esp32-gen2-instsructions/</guid>
+      <description>Owners of the AC Infinity AirTap T4/T6 with a Gen2 vent can replace the factory control board with our ESP32 module to add local smart home control through ESPHome and Home Assistant. The Gen2 housing keeps the original button bracket in place. The kit includes a small display cover bracket made for the Gen2 layout. This guide walks through what is in the kit, how that cover bracket fits, and the exact steps to install the PCB.</description>
+    </item>
     <item>
       <title>Native Apple Home Firmware for the AC Infinity AirTap ESP32 Upgrade Kit with HomeSpan and PlatformIO</title>
       <link>https://silocitylabs.com/post/2026/airtap-homespan-platformio-apple-home-blog-post/</link>
@@ -32,11 +39,39 @@
       <description>What started as a simple local development tool for DigitalOcean Functions quietly turned into something much more serious: a production-grade failover system that now runs across home TrueNAS servers owned by the operators of FilaMeter.&#xA;Internally, we call it DOrunner.&#xA;The original goal was mundane—test Go-based serverless functions locally without burning through API calls or waiting on cloud deploys. But as usage grew and traffic patterns became less predictable, that local runner evolved into a core part of our production architecture.</description>
     </item>
     <item>
+      <title>How to Upgrade a Gen2 AC Infinity AirTap T4 or T6 ESP32 Module to Work in a Gen3 Vent</title>
+      <link>https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/airtap-esp32-gen3-kit/</guid>
+      <description>Owners of the AC Infinity AirTap T4/T6 may be looking for a way to retrofit their older Gen2 ESP32 module so it can operate inside the newer Gen3 AirTap vent. The Gen3 design uses a different mounting layout and sensor position, which means the original Gen2 hardware does not fit or function without modification. To solve this, we created a simple upgrade path that lets you reuse your Gen2 module with full Gen3 compatibility.</description>
+    </item>
+    <item>
+      <title>Introducing FilaMeter</title>
+      <link>https://silocitylabs.com/post/2025/filameter-com-release/</link>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/filameter-com-release/</guid>
+      <description>&lt;p&gt;If you’ve ever struggled to keep track of your 3D filament spools, wondering how much filament is left or dealing with a failed print due to an empty spool, FilaMeter is the filament tracking solution you’ve been looking for. Managing your 3D printing filament inventory no longer has to involve guesswork.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;        &lt;amp-img src=&#34;https://silocitylabs.com/uploads/2025/filameter-com.png&#34; alt=&#34;Screenshot of filameter.com&#34; height=&#34;1004&#34; width=&#34;1540&#34; layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;</description>
+    </item>
+    <item>
       <title>ESP32 Module for AC Infinity AirTap T4/T6.</title>
       <link>https://silocitylabs.com/post/2025/esp32-airtap-esphome/</link>
       <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2025/esp32-airtap-esphome/</guid>
       <description>&lt;p&gt;At SiloCityLabs, we’re always working to improve our products, and 2025 has brought a number of exciting updates to our &lt;strong&gt;ESP32 Module for AC Infinity Airtap T4/T6&lt;/strong&gt;! With new features and design enhancements, this latest version offers better &lt;strong&gt;smart home integration, improved usability, and customization options&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Filament Dryer PCB</title>
+      <link>https://silocitylabs.com/post/2025/esp32-oem-dryer-box/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/esp32-oem-dryer-box/</guid>
+      <description>&lt;p&gt;Are you looking to take your &lt;strong&gt;Filament Dryer&lt;/strong&gt; to the next level? The &lt;strong&gt;Filament Dryer PCB&lt;/strong&gt; is the ultimate upgrade, adding enhanced &lt;strong&gt;filament material support&lt;/strong&gt;, a &lt;strong&gt;better display&lt;/strong&gt;, and &lt;strong&gt;smart home integration&lt;/strong&gt; to ensure your 3D printing workflow is seamless and efficient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Started with the ESP32MiniSD</title>
+      <link>https://silocitylabs.com/post/2025/esp32-microsd/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2025/esp32-microsd/</guid>
+      <description>&lt;p&gt;The &lt;strong&gt;ESP32MiniSD&lt;/strong&gt; is a compact add-on board designed for Seeed Studio&amp;rsquo;s &lt;strong&gt;XIAO ESP32-C3&lt;/strong&gt;, &lt;strong&gt;XIAO ESP32-C6&lt;/strong&gt; or &lt;strong&gt;XIAO ESP32-S3&lt;/strong&gt;, enabling microSD card storage, battery monitoring, and USB charging capabilities. In this tutorial, we&amp;rsquo;ll guide you through setting up and using the ESP32MiniSD with an ESP32 XIAO module to read and write files to a microSD card.&lt;/p&gt;&#xA;&lt;p&gt;Unlike Adafruit&amp;rsquo;s Xiao ESP32, the ESP32MiniSD is designed to get the most out of the ESP32&amp;rsquo;s capabilities, with a focus on storage and power management. The board features a microSD card slot &lt;strong&gt;connecting SD card to ESP32&lt;/strong&gt;, battery monitoring, and charging circuitry, making it ideal for &lt;strong&gt;ESP32 SD card integrations&lt;/strong&gt; including data logging, file storage, and portable IoT devices. Let&amp;rsquo;s dive into the setup and usage of the ESP32MiniSD with the XIAO ESP32 module!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Smart Home Upgrades with ESP32 and ESPHome</title>

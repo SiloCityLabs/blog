@@ -1,7 +1,7 @@
 ---
 title: Filament Dryer PCB
 subtitle: The Ultimate Smart Upgrade for Your 3D Printing Workflow
-author: Don Ko
+author: Luis Rodriguez
 type: post
 date: 2025-03-26
 categories:

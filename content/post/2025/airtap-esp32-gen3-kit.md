@@ -1,7 +1,7 @@
 ---
 title: How to Upgrade a Gen2 AC Infinity AirTap T4 or T6 ESP32 Module to Work in a Gen3 Vent
 subtitle: 
-author: Don Ko
+author: Luis Rodriguez
 type: post
 date: 2025-12-12
 categories:
