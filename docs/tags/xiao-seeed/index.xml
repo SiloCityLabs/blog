@@ -12,9 +12,9 @@
     <atom:link href="https://silocitylabs.com/tags/xiao-seeed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Install PCB on a Gen2 AC Infinity AirTap T4 or T6</title>
-      <link>https://silocitylabs.com/post/2025/airtap-esp32-gen2-instsructions/</link>
+      <link>https://silocitylabs.com/post/2026/airtap-esp32-gen2-instructions/</link>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/post/2025/airtap-esp32-gen2-instsructions/</guid>
+      <guid>https://silocitylabs.com/post/2026/airtap-esp32-gen2-instructions/</guid>
       <description>Owners of the AC Infinity AirTap T4/T6 with a Gen2 vent can replace the factory control board with our ESP32 module to add local smart home control through ESPHome and Home Assistant. The Gen2 housing keeps the original button bracket in place. The kit includes a small display cover bracket made for the Gen2 layout. This guide walks through what is in the kit, how that cover bracket fits, and the exact steps to install the PCB.</description>
     </item>
     <item>
