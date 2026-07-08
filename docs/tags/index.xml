@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu</title>
+      <link>https://silocitylabs.com/tags/ubuntu/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/ubuntu/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Airtap-Gen2</title>
       <link>https://silocitylabs.com/tags/airtap-gen2/</link>
@@ -141,13 +148,6 @@
       <link>https://silocitylabs.com/tags/youtube/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/youtube/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ubuntu</title>
-      <link>https://silocitylabs.com/tags/ubuntu/</link>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>

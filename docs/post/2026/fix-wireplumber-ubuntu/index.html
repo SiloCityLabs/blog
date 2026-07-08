@@ -10,13 +10,16 @@
   <meta name="twitter:title" content="Fixing WirePlumber High CPU Usage on Ubuntu 24.04" />
   <meta name="description" content="
 
-I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.">
+I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.
+Update: Read the whole post before copying commands. My first fix moved WirePlumber from Ubuntu&rsquo;s …">
   <meta property="og:description" content="
 
-I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.">
+I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.
+Update: Read the whole post before copying commands. My first fix moved WirePlumber from Ubuntu&rsquo;s …">
   <meta name="twitter:description" content="
 
-I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.">
+I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.
+Update: Read the whole post before copying commands. My first fix moved WirePlumber from Ubuntu&rsquo;s …">
   <meta name="author" content=""/>
   <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
@@ -165,7 +168,7 @@ I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth prof
                 
                 
                   <span class="post-meta">
-  Posted on February 18, 2026
+  Posted on July 8, 2026
   
 </span>
 
@@ -191,58 +194,147 @@ I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth prof
         <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://silocitylabs.com/uploads/2026/wireplumber-high-cpu-usage-fix.png" alt="CPU Terminal with wireplumber using high cpu"/>
 
 <p>I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth profile switching.</p>
+<p><strong>Update:</strong> Read the whole post before copying commands. My first fix moved WirePlumber from Ubuntu&rsquo;s 0.4.17 package to 0.5.2 using the PipeWire Debian PPAs, and that helped for a while. The issue later returned. The current fix in this post is building WirePlumber 0.5.15 locally and holding those packages. If you stop at the PPA step, you may only end up on 0.5.2 and waste time if your Bluetooth issue is the same one I hit.</p>
 <p>Here’s how I could reliably reproduce it:</p>
 <ol>
-<li>Play music through a Bluetooth headset (A2DP profile).</li>
+<li>Play music through a Bluetooth headset using the A2DP profile.</li>
 <li>Pause the music.</li>
-<li>Join a conference call (headset switches to HSP/HFP profile).</li>
-<li>Leave the call and resume music (switches back to A2DP).</li>
+<li>Join a conference call, which switches the headset to the HSP/HFP profile.</li>
+<li>Leave the call and resume music, which switches the headset back to A2DP.</li>
 </ol>
-<p>After doing this, the system fan would ramp up noticeably. Running htop showed:</p>
+<p>After doing this, the system fan would ramp up noticeably. Running <code>htop</code> showed:</p>
 <ul>
-<li>wireplumber using 100% of a single CPU core.</li>
+<li><code>wireplumber</code> using 100% of a single CPU core.</li>
 </ul>
-<p>The problem didn’t just affect music playback. It also caused:</p>
+<p>The problem did not only affect music playback. It also caused:</p>
 <ul>
 <li>YouTube video playback issues</li>
 <li>Audio glitches</li>
 <li>Lag in other applications using audio</li>
 </ul>
-<p>The system clearly wasn’t happy.</p>
+<p>The system clearly was not happy.</p>
 <h2 id="the-root-cause">The Root Cause</h2>
 <p>Ubuntu 24.04 ships with <strong>WirePlumber 0.4.17</strong>.</p>
-<p>Although the Bluetooth high CPU bug was already <strong>merged upstream</strong>, that does <strong>not</strong> mean the fix is included in Ubuntu’s packaged version. Ubuntu freezes core components before release, and the fix landed after the version Ubuntu shipped.</p>
-<p>So even though the issue was “merged” on GitLab, the fix was not present in the Ubuntu package.</p>
-<h2 id="the-solution">The Solution</h2>
-<p>Instead of building WirePlumber manually or patching it locally, I upgraded the entire PipeWire/WirePlumber stack using the official upstream PPAs.</p>
-<p>This provides newer, properly packaged versions that include the Bluetooth fixes.</p>
+<p>Although Bluetooth fixes were already merged upstream, that does <strong>not</strong> mean the fixes are included in Ubuntu’s packaged version. Ubuntu freezes core components before release, and the fixes can land after the version Ubuntu shipped.</p>
+<p>So even though the issue may be fixed upstream, the fix is not necessarily present in the Ubuntu package.</p>
+<h2 id="the-first-fix-use-the-pipewire-and-wireplumber-ppas">The First Fix: Use the PipeWire and WirePlumber PPAs</h2>
+<p>My first fix was to upgrade the PipeWire and WirePlumber stack using the PipeWire Debian PPAs.</p>
+<p>This moved my system from Ubuntu’s default WirePlumber 0.4.17 to WirePlumber 0.5.2.</p>
 <p><strong>Time needed: 2 minutes</strong></p>
-<h2 id="how-to-fix-wireplumber-high-cpu-usage-on-ubuntu">How to Fix WirePlumber High CPU Usage on Ubuntu</h2>
 <h3 id="1-add-the-upstream-ppas">1. Add the upstream PPAs</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
 </span></span><span class="line"><span class="cl">sudo add-apt-repository ppa:pipewire-debian/wireplumber-upstream
 </span></span></code></pre></div><h3 id="2-update-and-upgrade">2. Update and upgrade</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update  sudo apt full-upgrade
-</span></span></code></pre></div><h3 id="3-clean-up-unused-packages-optional-but-recommended">3. Clean up unused packages (optional but recommended)</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt full-upgrade
+</span></span></code></pre></div><h3 id="3-clean-up-unused-packages">3. Clean up unused packages</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt autoremove
 </span></span></code></pre></div><h3 id="4-reboot">4. Reboot</h3>
 <p>After rebooting, verify the version:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wireplumber --version
-</span></span></code></pre></div><p>It should now be newer than 0.4.17. In my case its 0.5.2 now.</p>
-<h2 id="result">Result</h2>
-<p>After upgrading:</p>
-<ul>
-<li>CPU usage returned to normal.</li>
-<li>No more fan spikes.</li>
-<li>Bluetooth profile switching works properly.</li>
-<li>YouTube playback is smooth.</li>
-<li>Audio across apps works as expected.</li>
-</ul>
-<p>The system feels stable again.</p>
+</span></span></code></pre></div><p>In my case, the PPA installed WirePlumber 0.5.2:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Compiled with libwireplumber 0.5.2
+</span></span><span class="line"><span class="cl">Linked with libwireplumber 0.5.2
+</span></span></code></pre></div><p>Important note: the <code>wireplumber-upstream</code> PPA does <strong>not</strong> always mean you get the newest upstream WirePlumber release. It only means you get the newest package that PPA has published for your Ubuntu release.</p>
+<p>For Ubuntu 24.04 Noble, the PPA currently only offered 0.5.2 for me:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt policy wireplumber libwireplumber-0.5-0 pipewire
+</span></span></code></pre></div><p>That showed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">wireplumber:
+</span></span><span class="line"><span class="cl">  Installed: 0.5.2-8~ubuntu24.04
+</span></span><span class="line"><span class="cl">  Candidate: 0.5.2-8~ubuntu24.04
+</span></span><span class="line"><span class="cl">  Version table:
+</span></span><span class="line"><span class="cl"> *** 0.5.2-8~ubuntu24.04 500
+</span></span><span class="line"><span class="cl">        500 https://ppa.launchpadcontent.net/pipewire-debian/wireplumber-upstream/ubuntu noble/main amd64 Packages
+</span></span><span class="line"><span class="cl">     0.4.17-1ubuntu4.1 500
+</span></span><span class="line"><span class="cl">        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages
+</span></span><span class="line"><span class="cl">     0.4.17-1ubuntu4 500
+</span></span><span class="line"><span class="cl">        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages
+</span></span></code></pre></div><p>The Bluetooth CPU issue originally seemed resolved after moving to 0.5.2, but it eventually returned.</p>
+<h2 id="the-current-fix-build-wireplumber-0515-locally">The Current Fix: Build WirePlumber 0.5.15 Locally</h2>
+<p>Since the issue came back on 0.5.2, I moved to WirePlumber 0.5.15.</p>
+<p>WirePlumber 0.5.14 and 0.5.15 both include additional Bluetooth-related work. The 0.5.14 changelog mentions Bluetooth profile autoswitch robustness improvements, including better headset profile detection and race condition fixes. Since my issue appears tied to Bluetooth profile switching, this update may be relevant.</p>
+<p>Ubuntu 24.04 does not currently provide WirePlumber 0.5.15 through the normal Noble repositories or the PPA I was using, so I built the Debian source package locally instead of adding Debian unstable as an apt source.</p>
+<p>Do <strong>not</strong> add Debian unstable or sid directly to Ubuntu just to install WirePlumber. That can pull in unrelated system packages and create a mess. Building the source package locally is safer.</p>
+<h3 id="1-install-build-tools-and-dependencies">1. Install build tools and dependencies</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install -y <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  build-essential devscripts debhelper-compat dh-sequence-gir <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  meson ninja-build pkgconf git wget curl <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  libglib2.0-dev libpipewire-0.3-dev <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  gobject-introspection libgirepository1.0-dev <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  liblua5.4-dev libsystemd-dev <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  python3-docutils
+</span></span></code></pre></div><h3 id="2-download-the-debian-wireplumber-0515-source-package">2. Download the Debian WirePlumber 0.5.15 source package</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p ~/build/wireplumber-0.5.15
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/build/wireplumber-0.5.15
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wget http://deb.debian.org/debian/pool/main/w/wireplumber/wireplumber_0.5.15-1.dsc
+</span></span><span class="line"><span class="cl">wget http://deb.debian.org/debian/pool/main/w/wireplumber/wireplumber_0.5.15.orig.tar.gz
+</span></span><span class="line"><span class="cl">wget http://deb.debian.org/debian/pool/main/w/wireplumber/wireplumber_0.5.15-1.debian.tar.xz
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dpkg-source -x wireplumber_0.5.15-1.dsc
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> wireplumber-0.5.15
+</span></span></code></pre></div><h3 id="3-check-build-dependencies">3. Check build dependencies</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dpkg-checkbuilddeps
+</span></span></code></pre></div><p>If it prints missing packages, install those packages and run the check again.</p>
+<h3 id="4-patch-debian-gnome-packaging-glue-if-needed">4. Patch Debian GNOME packaging glue if needed</h3>
+<p>On Ubuntu 24.04, the build initially failed for me during the clean step with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">dh_gnome_clean
+</span></span><span class="line"><span class="cl">No such file or directory at /usr/bin/dh_gnome_clean line 67.
+</span></span></code></pre></div><p>I fixed that by disabling the Debian GNOME helper sequence for this local build.</p>
+<p>Edit <code>debian/rules</code> so the main <code>dh</code> line uses <code>--without gnome</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="line"><span class="cl"><span class="nf">%</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	dh <span class="nv">$@</span> --buildsystem<span class="o">=</span>meson --without gnome
+</span></span></code></pre></div><p>Then remove <code>dh-sequence-gnome</code> from <code>debian/control</code> if it is listed in <code>Build-Depends</code>.</p>
+<p>You can check for remaining references with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep -R <span class="s2">&#34;dh-sequence-gnome\|dh_gnome\|gnome&#34;</span> -n debian
+</span></span></code></pre></div><h3 id="5-build-the-package">5. Build the package</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">DEB_BUILD_OPTIONS</span><span class="o">=</span>nocheck dpkg-buildpackage -us -uc -b
+</span></span></code></pre></div><p>When the build completes, go back to the parent directory:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ..
+</span></span><span class="line"><span class="cl">ls -1 *.deb
+</span></span></code></pre></div><p>I built these packages:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">gir1.2-wp-0.5_0.5.15-1_amd64.deb
+</span></span><span class="line"><span class="cl">libwireplumber-0.5-0_0.5.15-1_amd64.deb
+</span></span><span class="line"><span class="cl">wireplumber_0.5.15-1_amd64.deb
+</span></span></code></pre></div><h3 id="6-install-the-local-wireplumber-0515-packages">6. Install the local WirePlumber 0.5.15 packages</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  ./libwireplumber-0.5-0_0.5.15-1_amd64.deb <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  ./gir1.2-wp-0.5_0.5.15-1_amd64.deb <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  ./wireplumber_0.5.15-1_amd64.deb
+</span></span></code></pre></div><p>If apt prints a warning like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">N: Download is performed unsandboxed as root as file ... couldn&#39;t be accessed by user &#39;_apt&#39;.
+</span></span></code></pre></div><p>That warning is harmless. It happens because <code>_apt</code> cannot read the <code>.deb</code> files from your home/build directory. The install can still succeed.</p>
+<h3 id="7-restart-the-user-audio-stack">7. Restart the user audio stack</h3>
+<p>Run this as your normal desktop user:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl --user daemon-reload
+</span></span><span class="line"><span class="cl">systemctl --user restart wireplumber pipewire pipewire-pulse
+</span></span></code></pre></div><p>Then verify the version:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wireplumber --version
+</span></span></code></pre></div><p>Expected output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Compiled with libwireplumber 0.5.15
+</span></span><span class="line"><span class="cl">Linked with libwireplumber 0.5.15
+</span></span></code></pre></div><p>Also check apt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt policy wireplumber libwireplumber-0.5-0 gir1.2-wp-0.5
+</span></span></code></pre></div><h3 id="8-put-the-packages-on-hold">8. Put the packages on hold</h3>
+<p>Since the PPA still offers 0.5.2 for Ubuntu 24.04 Noble, I put the local 0.5.15 packages on hold so apt does not replace them later.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-mark hold wireplumber libwireplumber-0.5-0 gir1.2-wp-0.5
+</span></span></code></pre></div><h2 id="rollback">Rollback</h2>
+<p>If 0.5.15 causes problems, unhold the packages and reinstall the PPA version:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-mark unhold wireplumber libwireplumber-0.5-0 gir1.2-wp-0.5
+</span></span><span class="line"><span class="cl">sudo apt install --reinstall <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  <span class="nv">wireplumber</span><span class="o">=</span>0.5.2-8~ubuntu24.04 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  libwireplumber-0.5-0<span class="o">=</span>0.5.2-8~ubuntu24.04 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  gir1.2-wp-0.5<span class="o">=</span>0.5.2-8~ubuntu24.04
+</span></span></code></pre></div><p>Then restart the audio stack again:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl --user restart wireplumber pipewire pipewire-pulse
+</span></span></code></pre></div><h2 id="result">Result</h2>
+<p>After moving to WirePlumber 0.5.15 and putting the packages on hold, the Bluetooth profile switching issue appears to be resolved again.</p>
+<p>I am not calling this permanently fixed yet. If the high CPU issue returns, I will update this post.</p>
 <h2 id="summary">Summary</h2>
-<p>If you&rsquo;re on Ubuntu 24.04 or other similar distro and experiencing high CPU usage from WirePlumber after switching Bluetooth profiles, you&rsquo;re likely running version 0.4.17, which does not seem to include the important Bluetooth fixes.</p>
-<p>Upgrading to the upstream PipeWire and WirePlumber packages resolves the issue cleanly and without manual patching.</p>
-<p>In short: upgrade the stack, reboot, and the problem disappears.</p>
+<p>If you are on Ubuntu 24.04 and <code>wireplumber</code> starts using 100% of a CPU core after switching Bluetooth profiles, check your WirePlumber version first.</p>
+<p>Ubuntu 24.04’s default package is 0.4.17. The PipeWire Debian PPA got me to 0.5.2, which helped at first, but the issue later returned.</p>
+<p>I am now running WirePlumber 0.5.15 built locally from the Debian source package, with the packages held in apt. Since 0.5.14 and 0.5.15 include more Bluetooth profile switching fixes, this may be the better path if the PPA version is still too old for your hardware.</p>
       </article>
 
       <div class="clearfix">
@@ -257,13 +349,9 @@ I was experiencing a frustrating issue on Ubuntu 24.04 related to Bluetooth prof
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://silocitylabs.com/post/2026/digital-ocean-local-runners/" data-toggle="tooltip" data-placement="top" title="Local Failover for DigitalOcean Functions">&larr; Previous Post</a>
+              <a href="https://silocitylabs.com/post/2026/airtap-esp32-gen2-instructions/" data-toggle="tooltip" data-placement="top" title="How to Install PCB on a Gen2 AC Infinity AirTap T4 or T6">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://silocitylabs.com/post/2026/05/08/tasker-open-intent/" data-toggle="tooltip" data-placement="top" title="Bypassing YouTube home page with Tasker">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
