@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>AC Infinity Almost Got the Next AirTap Right, Then Locked Us Out With Secure Boot</title>
+  <meta property="og:title" content="AC Infinity Almost Got the Next AirTap Right, Then Locked Us Out With Secure Boot" />
+  <meta name="twitter:title" content="AC Infinity Almost Got the Next AirTap Right, Then Locked Us Out With …" />
+  <meta name="description" content="Reverse engineering the ESP32-C6 Matter-capable AirTap, dumping OEM firmware, and why open source still needs a module swap or a new PCB">
+  <meta property="og:description" content="Reverse engineering the ESP32-C6 Matter-capable AirTap, dumping OEM firmware, and why open source still needs a module swap or a new PCB">
+  <meta name="twitter:description" content="Reverse engineering the ESP32-C6 Matter-capable AirTap, dumping OEM firmware, and why open source still needs a module swap or a new PCB">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/airtap-esp32-gen4-secure-boot/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/airtap-esp32-gen4-secure-boot/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/airtap-esp32-gen4-secure-boot/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>AC Infinity Almost Got the Next AirTap Right, Then Locked Us Out With Secure Boot</h1>
+                
+                  
+                    <h2 class="post-subheading">Reverse engineering the ESP32-C6 Matter-capable AirTap, dumping OEM firmware, and why open source still needs a module swap or a new PCB</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on July 14, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>For years the AC Infinity AirTap has been a popular register booster with a frustrating smart-home story: closed apps, Bluetooth-only workflows, and a control board that was never meant for local automations. We already solved that for earlier generations with drop-in ESPHome boards see the Gen2 install guide and shop module if you have that hardware.</p>
+<p>Then a newer AirTap showed up with something that almost made me celebrate out loud: an <strong>ESP32-C6-WROOM-1</strong>.</p>
+<p>That is the right silicon. Wi‑Fi 6, BLE, and IEEE 802.15.4 for Thread/Matter. On paper AC Infinity finally moved the AirTap onto a platform the open source community can actually live with. Dump the pads, port ESPHome, keep the fan and HVAC logic local to Home Assistant. Done.</p>
+<p>Except they also burned <strong>secure boot</strong> and <strong>flash encryption</strong> into the eFuses.</p>
+<p>So the device falls short for the open source community in the one place that matters: you cannot put your own firmware on the module that ships in the vent. The only practical path left is to <strong>desolder the locked ESP32-C6 and replace it</strong>, or design a <strong>new plug-and-play PCB</strong> for everyone else.</p>
+<p>All of the dumps, serial logs, pin traces, and notes for this work live in our firmware repo:</p>
+<ul>
+<li>Project: <a href="https://github.com/SiloCityLabs/esp32-airtap">SiloCityLabs/esp32-airtap</a></li>
+<li>Gen-4 notes: <a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4">Airtap-Tx/Gen-4</a></li>
+<li>Full OEM flash dump: <a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4/firmware-dump">oem-firmware-full.bin</a></li>
+</ul>
+<h2 id="what-almost-correct-looks-like">What “almost correct” looks like</h2>
+<p>The hardware header is refreshingly honest. Pads are exposed for:</p>
+<ul>
+<li><code>IO9</code> (BOOT / download strap)</li>
+<li><code>GND</code></li>
+<li><code>TX</code> / <code>RX</code></li>
+<li><code>3.3V</code></li>
+<li><code>EN</code></li>
+</ul>
+<p>UART console runs at <strong>115200 8N1</strong>. Download mode is the classic C6 dance: hold <code>IO9</code> low, pulse <code>EN</code>, release <code>IO9</code>, then talk to the ROM with <code>esptool --before no-reset</code>.</p>
+<p>Boot logs identify the OEM tree immediately:</p>
+<ul>
+<li>Project: <code>smarthome_device_airtap</code> <strong>v2.1</strong></li>
+<li>ESP-IDF <strong>v5.4.1</strong>, built Apr 9 2026</li>
+<li>Reported product versions: hardware <strong>3.0</strong>, software <strong>3.0.15</strong></li>
+<li>Power-on path: BLE / Blufi-style provisioning on a Matter-capable C6</li>
+</ul>
+<p>That is AC Infinity meeting the industry where it lives now. ESP32 instead of a dead-end MCU. Modern IDF. A chip that can do Matter. From a product roadmap perspective: applause.</p>
+<p>From an open source / right-to-repair perspective: keep reading.</p>
+<h2 id="dumping-the-oem-firmware">Dumping the OEM firmware</h2>
+<p>With the board in download mode we pulled the entire SPI flash.</p>
+<ul>
+<li>Chip: <strong>ESP32-C6-WROOM-1</strong> (QFN40, rev v0.2)</li>
+<li>External flash detected: <strong>8MB</strong> (manufacturer <code>c8</code>, device <code>4017</code>)</li>
+<li>Artifact: <code>Airtap-Tx/Gen-4/firmware-dump/oem-firmware-full.bin</code></li>
+<li>SHA256: <code>ff35eccd4f6936a8b0c3f98f9bc9d93c65edfefdc661ccb78f1077a39ab8743d</code></li>
+</ul>
+<p>Also captured:</p>
+<ul>
+<li><a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4/firmware-dump">oem-security-info.txt</a></li>
+<li><a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4/firmware-dump">oem-efuse-summary.txt</a></li>
+<li><a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4/firmware-dump">oem-partition-table.bin</a> (ciphertext under encryption)</li>
+</ul>
+<p>Raw flash contents are <strong>encrypted ciphertext</strong>. Useful as an archival restore image. Not useful as a pile of readable strings and app code without the chip’s XTS key.</p>
+<h2 id="the-lock-that-kills-community-firmware">The lock that kills community firmware</h2>
+<p><code>espefuse</code> / <code>get-security-info</code> on this unit is unambiguous:</p>
+<table>
+<thead>
+<tr>
+<th>Lock</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Secure Boot</td>
+<td>Enabled (RSA-PSS)</td>
+</tr>
+<tr>
+<td>Flash encryption</td>
+<td>Permanently enabled (<code>SPI_BOOT_CRYPT_CNT = 0b111</code>)</td>
+</tr>
+<tr>
+<td>Flash encrypt key (<code>BLOCK_KEY1</code> / XTS-AES-128)</td>
+<td>Present, <strong>not readable</strong> (<code>RD_DIS</code>)</td>
+</tr>
+<tr>
+<td>HMAC / other key blocks</td>
+<td>Read-disabled where it matters</td>
+</tr>
+<tr>
+<td>JTAG</td>
+<td>Permanently disabled</td>
+</tr>
+<tr>
+<td>Download mode</td>
+<td>Still allowed (we can write flash)</td>
+</tr>
+<tr>
+<td>Download-mode encrypt</td>
+<td>Still allowed</td>
+</tr>
+</tbody>
+</table>
+<p>Runtime logs even call flash encryption “DEVELOPMENT (not secure)” but the eFuses tell the real story. Encryption is burned on, the key is not extractable, and secure boot digests are live.</p>
+<p>So of course we tried the thing the community always tries: build ESPHome and flash it.</p>
+<p>Write with on-chip encrypt succeeds. Boot does not:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Valid secure boot key blocks: 0
+</span></span><span class="line"><span class="cl">No signature block magic byte found at signature sector (found 0xff not 0xe7). Image not V2 signed?
+</span></span><span class="line"><span class="cl">RSA-PSS secure boot verification failed
+</span></span></code></pre></div><p>Then the ROM watchdog bootloops forever. Unsigned ESPHome or any third-party image will never pass AC Infinity’s secure boot key.</p>
+<p>We restored the OEM dump afterward (hash verified) so the board boots stock again. Scripts and notes for that path are in the same Gen-4 folder.</p>
+<p><strong>Translation:</strong> this is not “we haven’t written the ESPHome YAML yet.” This is “the silicon refuses unsigned firmware forever.”</p>
+<h2 id="reverse-engineering-the-pcb-anyway">Reverse engineering the PCB anyway</h2>
+<p>Even when flash is a dead end for custom code, tracing the board still matters. If we replace the module or spin a compatible PCB we need the pin map.</p>
+<p>Hand traces plus GPIO init from the OEM UART line up cleanly for most of the board:</p>
+<h3 id="confirmed--high-confidence-map">Confirmed / high-confidence map</h3>
+<table>
+<thead>
+<tr>
+<th>GPIO</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IO0</td>
+<td>Via R29 → <strong>Q5</strong> → piezo / buzzer path</td>
+</tr>
+<tr>
+<td>IO1</td>
+<td>Via R6/R34 → <strong>Q2</strong> PWM / power drive side of the fan path</td>
+</tr>
+<tr>
+<td>IO2</td>
+<td><strong>NTC</strong> (ADC / Curve Fitting calibration in OEM logs)</td>
+</tr>
+<tr>
+<td>IO5</td>
+<td>TTP223 touch 1</td>
+</tr>
+<tr>
+<td>IO6</td>
+<td>TTP223 touch 2</td>
+</tr>
+<tr>
+<td>IO7</td>
+<td>TTP223 touch 3</td>
+</tr>
+<tr>
+<td>IO8</td>
+<td>Q4 → CS1621 <code>/CS</code></td>
+</tr>
+<tr>
+<td>IO9</td>
+<td>BOOT pad</td>
+</tr>
+<tr>
+<td>IO10</td>
+<td>Q13 → CS1621 <code>/WR</code></td>
+</tr>
+<tr>
+<td>IO11</td>
+<td>Q14 → CS1621 <code>DATA</code></td>
+</tr>
+<tr>
+<td>IO13</td>
+<td><strong>IRM3638</strong> IR receiver (RMT RX in firmware)</td>
+</tr>
+<tr>
+<td>IO15 / IO18 / IO19 / IO23</td>
+<td><strong>ULN2003A</strong> stepper / damper motor coils</td>
+</tr>
+<tr>
+<td>IO21</td>
+<td>TTP223 touch 4 (firmware input; hard to probe on the pad)</td>
+</tr>
+<tr>
+<td>IO22</td>
+<td>TTP223 touch 5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="display-driver">Display driver</h3>
+<p>The segment / LED glass is driven by a <strong>CS1621</strong> over a bit-banged <code>/CS</code>, <code>/WR</code>, <code>DATA</code> trio on IO8 / IO10 / IO11 familiar territory if you have worked previous AirTap RE, just now tied to C6 GPIOs.</p>
+<h3 id="what-serial-proved-live">What serial proved live</h3>
+<p>While poking the running OEM UI we correlated:</p>
+<ul>
+<li>Local <strong>Up Key</strong> events → <code>ipcd_set_speed()</code></li>
+<li>IR remote packets via <code>ct_ir_manage</code> (power, level, screen on/off, mute, lock)</li>
+<li>Five pulled-up inputs matching the five touch channels</li>
+<li>Motor and CS1621 pins as outputs exactly where the traces said</li>
+</ul>
+<p>PWM / piezo / backlight still want a scope on an unlocked module or a purpose-built pinprobe board the OEM image will not run our GPIO test firmware but the transistor stack on IO0/IO1 is already enough to plan a replacement design.</p>
+<h2 id="why-this-is-frustrating">Why this is frustrating</h2>
+<p>AC Infinity did the hard part of the hardware generation transition:</p>
+<ol>
+<li>Left behind the old closed MCU era.</li>
+<li>Picked an Espressif part the Home Assistant / ESPHome / Matter world already understands.</li>
+<li>Even left a UART header that makes RE and factory debugging possible.</li>
+</ol>
+<p>Then they flipped the one switch that makes all of that irrelevant to us: <strong>production secure boot with an unavailable private signing key</strong>.</p>
+<p>Secure boot is a legitimate product security feature for cloud-tied devices. It is also an intentional wall against local firmware ownership. On a vent fan whose job is “move air in my house,” locking the bootROM so Home Assistant users cannot replace Blufi/app glue with ESPHome is a policy choice, not a technical necessity of the ESP32-C6.</p>
+<h2 id="where-we-go-from-here">Where we go from here</h2>
+<p>Three tracks, in order of how we plan to ship community hardware:</p>
+<ol>
+<li><strong>Module transplant</strong> desolder the locked ESP32-C6-WROOM-1, solder an unlocked module, flash ESPHome against the pin map above.</li>
+<li><strong>Drop-in PCB</strong> design a SiloCityLabs board that matches connectors, display, touches, IR, motor driver, and NTC so owners get Gen2-style plug-and-play instead of hot-air surgery.</li>
+<li><strong>Keep publishing dumps</strong> full flash images, eFuse summaries, serial captures, and traces stay public so nobody repeats this RE from zero.</li>
+</ol>
+<p>Firmware artifacts and working notes:</p>
+<ul>
+<li>Repo: <a href="https://github.com/SiloCityLabs/esp32-airtap">https://github.com/SiloCityLabs/esp32-airtap</a></li>
+<li>Gen-4 tree: <a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4">https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4</a></li>
+<li>Firmware dump folder: <a href="https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4/firmware-dump">https://github.com/SiloCityLabs/esp32-airtap/tree/main/Airtap-Tx/Gen-4/firmware-dump</a></li>
+</ul>
+<p>Earlier AirTap ESPHome installs (unlocked / replacement boards) remain the right answer for Gen1/Gen2 vents today. This post is about the new C6 generation specifically: how close it got, how hard the eFuses slammed the door, and how we still intend to get ESPHome into those registers.</p>
+<p>If you have one of these boards and want to help validate pin leftovers (backlight, exact PWM edge cases) on an unlocked C6, open an issue on the repo. We will keep the Gen-4 folder updated as the replacement path solidifies.</p>
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/airtap-esp32-gen4-secure-boot.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/airtap-esp32-gen4-secure-boot.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/" data-toggle="tooltip" data-placement="top" title="Fixing WirePlumber High CPU Usage on Ubuntu 24.04">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

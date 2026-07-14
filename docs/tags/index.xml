@@ -8,8 +8,85 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airtap</title>
+      <link>https://silocitylabs.com/tags/airtap/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Airtap-Gen4</title>
+      <link>https://silocitylabs.com/tags/airtap-gen4/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/airtap-gen4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32</title>
+      <link>https://silocitylabs.com/tags/esp32/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESP32-C6</title>
+      <link>https://silocitylabs.com/tags/esp32-c6/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esp32-c6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esphome</title>
+      <link>https://silocitylabs.com/tags/esphome/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/esphome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flash-Encryption</title>
+      <link>https://silocitylabs.com/tags/flash-encryption/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/flash-encryption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Assistant</title>
+      <link>https://silocitylabs.com/tags/home-assistant/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/home-assistant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matter</title>
+      <link>https://silocitylabs.com/tags/matter/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/matter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>https://silocitylabs.com/tags/open-source/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse-Engineering</title>
+      <link>https://silocitylabs.com/tags/reverse-engineering/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secure-Boot</title>
+      <link>https://silocitylabs.com/tags/secure-boot/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/secure-boot/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ubuntu</title>
       <link>https://silocitylabs.com/tags/ubuntu/</link>
@@ -36,27 +113,6 @@
       <link>https://silocitylabs.com/tags/airtap-t6/</link>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/airtap-t6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ESP32</title>
-      <link>https://silocitylabs.com/tags/esp32/</link>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Esphome</title>
-      <link>https://silocitylabs.com/tags/esphome/</link>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esphome/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Home-Assistant</title>
-      <link>https://silocitylabs.com/tags/home-assistant/</link>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/home-assistant/</guid>
       <description></description>
     </item>
     <item>
@@ -382,13 +438,6 @@
       <description></description>
     </item>
     <item>
-      <title>Esp32-C6</title>
-      <link>https://silocitylabs.com/tags/esp32-c6/</link>
-      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/esp32-c6/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Esp32minisd</title>
       <link>https://silocitylabs.com/tags/esp32minisd/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
@@ -417,13 +466,6 @@
       <description></description>
     </item>
     <item>
-      <title>Open Source</title>
-      <link>https://silocitylabs.com/tags/open-source/</link>
-      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/open-source/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Smart Devices</title>
       <link>https://silocitylabs.com/tags/smart-devices/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
@@ -449,13 +491,6 @@
       <link>https://silocitylabs.com/tags/extension/</link>
       <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/extension/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reverse Engineering</title>
-      <link>https://silocitylabs.com/tags/reverse-engineering/</link>
-      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/reverse-engineering/</guid>
       <description></description>
     </item>
     <item>

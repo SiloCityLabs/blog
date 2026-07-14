@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secure-Boot on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/secure-boot/</link>
+    <description>Recent content in Secure-Boot on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/secure-boot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AC Infinity Almost Got the Next AirTap Right, Then Locked Us Out With Secure Boot</title>
+      <link>https://silocitylabs.com/post/2026/airtap-esp32-gen4-secure-boot/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/airtap-esp32-gen4-secure-boot/</guid>
+      <description>For years the AC Infinity AirTap has been a popular register booster with a frustrating smart-home story: closed apps, Bluetooth-only workflows, and a control board that was never meant for local automations. We already solved that for earlier generations with drop-in ESPHome boards see the Gen2 install guide and shop module if you have that hardware.&#xA;Then a newer AirTap showed up with something that almost made me celebrate out loud: an ESP32-C6-WROOM-1.</description>
+    </item>
+  </channel>
+</rss>
