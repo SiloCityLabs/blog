@@ -3,7 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2026/fakeemaildomain-com/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/email/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/fakeemaildomain/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/golang/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/jbl/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2026/jbl-repair/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/categories/projects/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/repair/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/smtp/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/speaker/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/testing/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2026/airtap-esp32-gen4-secure-boot/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
@@ -12,12 +60,6 @@
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/airtap-gen4/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/author/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/categories/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/esp32/</loc>
@@ -35,28 +77,16 @@
     <loc>https://silocitylabs.com/tags/home-assistant/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/matter/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/open-source/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/categories/projects/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/tags/reverse-engineering/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/secure-boot/</loc>
-    <lastmod>2026-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/post/2026/fix-wireplumber-ubuntu/</loc>
@@ -135,9 +165,6 @@
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/failover/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/golang/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/categories/infrastructure/</loc>
@@ -1014,9 +1041,6 @@
     <lastmod>2018-03-02T16:29:41+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/dns/</loc>
-    <lastmod>2018-03-02T16:29:41+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/testing/</loc>
     <lastmod>2018-03-02T16:29:41+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/breadboard/</loc>

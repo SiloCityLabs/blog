@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smtp on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/smtp/</link>
+    <description>Recent content in Smtp on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/smtp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An SMTP black hole for unit tests</title>
+      <link>https://silocitylabs.com/post/2026/fakeemaildomain-com/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/fakeemaildomain-com/</guid>
+      <description>&lt;p&gt;A test that sends mail needs somewhere for the message to land. &lt;a href=&#34;https://fakeemaildomain.com&#34;&gt;fakeemaildomain.com&lt;/a&gt; is that place: a public mail exchanger that accepts the envelope, replies on purpose, and discards the body. The site has no signup, no inbox, and no forwarding.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

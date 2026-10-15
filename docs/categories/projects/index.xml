@@ -8,8 +8,22 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An SMTP black hole for unit tests</title>
+      <link>https://silocitylabs.com/post/2026/fakeemaildomain-com/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/fakeemaildomain-com/</guid>
+      <description>&lt;p&gt;A test that sends mail needs somewhere for the message to land. &lt;a href=&#34;https://fakeemaildomain.com&#34;&gt;fakeemaildomain.com&lt;/a&gt; is that place: a public mail exchanger that accepts the envelope, replies on purpose, and discards the body. The site has no signup, no inbox, and no forwarding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JBL EON 515XT No Power Repair</title>
+      <link>https://silocitylabs.com/post/2026/jbl-repair/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/jbl-repair/</guid>
+      <description>&lt;p&gt;My JBL EON 515XT would not power on. The relay did not click, and the speaker barely drew any power from the wall. After a relay swap, voltage checks and a round of component testing, I tracked the fault to the LNK302DN power supply IC at U608. Replacing that chip brought the speaker back to life.&lt;/p&gt;&#xA;&lt;p&gt;The useful part of this repair was how we isolated it. A low resistance reading around a capacitor initially gave us several possible suspects. Removing components and checking the same points again showed exactly where that low resistance was coming from.&lt;/p&gt;&#xA;&lt;p&gt;If you have a JBL EON 515XT that will not turn on, these are the symptoms, measurements and checks from my repair. They describe this particular board and fault, so check your own component markings and board revision before ordering parts.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AC Infinity Almost Got the Next AirTap Right, Then Locked Us Out With Secure Boot</title>
       <link>https://silocitylabs.com/post/2026/airtap-esp32-gen4-secure-boot/</link>
@@ -491,7 +505,7 @@
       <link>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</link>
       <pubDate>Mon, 18 Dec 2017 20:17:07 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/post/2017/12/18/smartthings-vision-micro-switch-update/</guid>
-      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;    &lt;iframe src=&#34;//www.youtube.com/embed/397hvxAjlj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;p&gt;How to get a cheap smart home that actually works. Vision Micro switches lets you use the old fashion switch and also continue to use your old bulbs. Instead of paying $10-30 per smart bulb, you pay around $25 for a single or $30 for a 2 relay switch. 2 relay switches help you save a ton more money, you can use one for 2 gang boxes saving you 2x more money ($15/switch). If you think about it, most ceiling lights have 2-3 bulbs, Why buy so many bulbs when you can buy a single switch.&lt;/p&gt;&#xA;&lt;amp-youtube&#xA;    data-videoid=&#34;397hvxAjlj4&#34;&#xA;    layout=&#34;responsive&#34;&#xA;    width=&#34;480&#34; height=&#34;270&#34;&gt;&lt;/amp-youtube&gt;</description>
     </item>
     <item>
       <title>Phone case gamepad WIP</title>

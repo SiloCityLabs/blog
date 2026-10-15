@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBL on SCL Blog</title>
+    <link>https://silocitylabs.com/tags/jbl/</link>
+    <description>Recent content in JBL on SCL Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
+    <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://silocitylabs.com/tags/jbl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JBL EON 515XT No Power Repair</title>
+      <link>https://silocitylabs.com/post/2026/jbl-repair/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/jbl-repair/</guid>
+      <description>&lt;p&gt;My JBL EON 515XT would not power on. The relay did not click, and the speaker barely drew any power from the wall. After a relay swap, voltage checks and a round of component testing, I tracked the fault to the LNK302DN power supply IC at U608. Replacing that chip brought the speaker back to life.&lt;/p&gt;&#xA;&lt;p&gt;The useful part of this repair was how we isolated it. A low resistance reading around a capacitor initially gave us several possible suspects. Removing components and checking the same points again showed exactly where that low resistance was coming from.&lt;/p&gt;&#xA;&lt;p&gt;If you have a JBL EON 515XT that will not turn on, these are the symptoms, measurements and checks from my repair. They describe this particular board and fault, so check your own component markings and board revision before ordering parts.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

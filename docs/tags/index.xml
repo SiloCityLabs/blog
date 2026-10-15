@@ -8,8 +8,64 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Email</title>
+      <link>https://silocitylabs.com/tags/email/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/email/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fakeemaildomain</title>
+      <link>https://silocitylabs.com/tags/fakeemaildomain/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/fakeemaildomain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>https://silocitylabs.com/tags/golang/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JBL</title>
+      <link>https://silocitylabs.com/tags/jbl/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/jbl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Repair</title>
+      <link>https://silocitylabs.com/tags/repair/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/repair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smtp</title>
+      <link>https://silocitylabs.com/tags/smtp/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/smtp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Speaker</title>
+      <link>https://silocitylabs.com/tags/speaker/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/speaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://silocitylabs.com/tags/testing/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/tags/testing/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Airtap</title>
       <link>https://silocitylabs.com/tags/airtap/</link>
@@ -218,13 +274,6 @@
       <link>https://silocitylabs.com/tags/failover/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/failover/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Golang</title>
-      <link>https://silocitylabs.com/tags/golang/</link>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/golang/</guid>
       <description></description>
     </item>
     <item>
@@ -1821,13 +1870,6 @@
       <link>https://silocitylabs.com/tags/dns/</link>
       <pubDate>Fri, 02 Mar 2018 16:29:41 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
       <guid>https://silocitylabs.com/tags/dns/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>https://silocitylabs.com/tags/testing/</link>
-      <pubDate>Fri, 02 Mar 2018 16:29:41 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
-      <guid>https://silocitylabs.com/tags/testing/</guid>
       <description></description>
     </item>
     <item>
