@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>TrueNAS Cron Jobs Worth Setting Up on Every Home Server</title>
+  <meta property="og:title" content="TrueNAS Cron Jobs Worth Setting Up on Every Home Server" />
+  <meta name="twitter:title" content="TrueNAS Cron Jobs Worth Setting Up on Every Home Server" />
+  <meta name="description" content="Three useful TrueNAS SCALE cron jobs for keeping dynamic DNS updated, refreshing game servers, and pulling the latest Plex container images.">
+  <meta property="og:description" content="Three useful TrueNAS SCALE cron jobs for keeping dynamic DNS updated, refreshing game servers, and pulling the latest Plex container images.">
+  <meta name="twitter:description" content="Three useful TrueNAS SCALE cron jobs for keeping dynamic DNS updated, refreshing game servers, and pulling the latest Plex container images.">
+  <meta name="author" content=""/>
+  <link href='https://silocitylabs.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:image" content="https://silocitylabs.com/logo/144x144.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://silocitylabs.com/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SCL Blog" />
+  
+  <link rel="canonical" href="https://silocitylabs.com/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server/" />
+  <link rel="amphtml" type="text/html" href="https://silocitylabs.com/amp/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server/">
+  
+  
+  
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="https://d3hc3qdofe5ifg.cloudfront.net/css/bundle.min.css" />
+
+
+  <link rel="manifest" href="https://silocitylabs.com/manifest.webmanifest">
+  <meta name="theme-color" content="#e7e7e7">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-362562709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-362562709');
+</script>
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://silocitylabs.com/">SCL Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Shop" href="https://shop.silocitylabs.com">Shop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="https://silocitylabs.com/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Games" href="https://silocitygames.com">Games</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://silocitylabs.com/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Newsletter" href="https://shop.silocitylabs.com/pages/subscribe">Newsletter</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a id="searchBtn" href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="icon icon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="SCL Blog" href="https://silocitylabs.com/">
+              
+            <img class="avatar-img" src="https://silocitylabs.com/logo/144x144.png" alt="SCL Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search SCL Blog</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>TrueNAS Cron Jobs Worth Setting Up on Every Home Server</h1>
+                
+                  
+                    <h2 class="post-subheading">Here are 3 of them</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on October 21, 2026
+  
+</span>
+
+<span class="post-meta">
+  By <a href="https://silocitylabs.com/author/luis-rodriguez">Luis Rodriguez</a>
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>A home server is great until you have to keep logging in to do the same maintenance tasks over and over. I&rsquo;ve been running TrueNAS SCALE for a while, and a few simple cron jobs have saved me from having to babysit some of my services.</p>
+<p>These are three jobs I actually use: one to keep my domain pointed at my home IP address, one to redeploy my Palworld server each morning, and one to pull updated Plex images monthly.</p>
+<p>Not every TrueNAS system needs all three. If you host apps or expose services through a domain, though, they&rsquo;re worth considering.</p>
+<h2 id="where-to-add-cron-jobs-in-truenas-scale">Where to add cron jobs in TrueNAS SCALE</h2>
+<p>In the TrueNAS web interface, go to <strong>System &gt; Advanced Settings &gt; Cron Jobs</strong> and select <strong>Add</strong>. Depending on your TrueNAS version, the wording or layout may differ slightly.</p>
+<p>For each job, set a description, enter the command, choose an account with the required permissions, and configure the schedule. My jobs run as <code>truenas_admin</code>, which has the permissions needed on my system. You may need to use a different administrator account.</p>
+<p>You can also enable or disable the job without deleting it. I recommend testing commands manually before scheduling them, especially commands that restart containers.</p>
+<h2 id="1-keep-your-dynamic-dns-updated">1. Keep your dynamic DNS updated</h2>
+<p><strong>Schedule:</strong> Every day at midnight (<code>0 0 * * *</code>)</p>
+<p><strong>Description:</strong> Dynamic DNS update</p>
+<p><strong>Command:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -q --read-timeout<span class="o">=</span>0.0 --waitretry<span class="o">=</span><span class="m">5</span> --tries<span class="o">=</span><span class="m">400</span> --background <span class="s1">&#39;https://ipv4.cloudns.net/api/dynamicURL/?q=YOUR_DYNAMIC_DNS_TOKEN&#39;</span>
+</span></span></code></pre></div><p>I use <a href="https://www.cloudns.net/">ClouDNS</a> for dynamic DNS. If your internet provider changes your public IP address, your domain can end up pointing to the old address. The dynamic DNS URL tells ClouDNS to update its record to the public IPv4 address it sees from your request.</p>
+<p>Replace <code>YOUR_DYNAMIC_DNS_TOKEN</code> with the unique URL or token provided by your DNS provider. Keep the full URL in quotes so the shell doesn&rsquo;t interpret special characters such as <code>&amp;</code>.</p>
+<p>The <code>wget</code> options here are from my existing setup. They make the request quiet, configure retries, and launch it in the background. However, backgrounding the process also means TrueNAS won&rsquo;t reliably know whether the request ultimately succeeded. For a simpler job with an observable exit status, I&rsquo;d use:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -q --timeout<span class="o">=</span><span class="m">30</span> --tries<span class="o">=</span><span class="m">3</span> -O /dev/null <span class="s1">&#39;https://ipv4.cloudns.net/api/dynamicURL/?q=YOUR_DYNAMIC_DNS_TOKEN&#39;</span>
+</span></span></code></pre></div><p>A daily update is fine if your IP rarely changes, but it can leave your hostname wrong for up to a day after an address change. If that matters, use a shorter interval or a DDNS client that detects changes automatically.</p>
+<p><strong>Important:</strong> Treat your dynamic DNS URL like a password. Don&rsquo;t publish your real token in a blog post, screenshot, or public repository. Also, DDNS only updates DNS. It won&rsquo;t fix a downed reverse proxy, broken port forwarding, or an unavailable service.</p>
+<h2 id="2-redeploy-a-game-server-on-a-schedule">2. Redeploy a game server on a schedule</h2>
+<p><strong>Schedule:</strong> Every day at 4:00 AM (<code>0 4 * * *</code>)</p>
+<p><strong>Description:</strong> Palworld redeploy</p>
+<p><strong>Command:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">midclt call app.redeploy palworld
+</span></span></code></pre></div><p>I run a Palworld server as a TrueNAS app. Rather than manually redeploy it, I schedule the operation for early morning when people are less likely to be playing.</p>
+<p><code>midclt</code> is the TrueNAS command-line client for calling middleware API methods. The <code>app.redeploy</code> method redeploys the named app; in recent TrueNAS releases, the operation stops the app, pulls its configured images, and starts it again.</p>
+<p>Change <code>palworld</code> to the <strong>actual app name</strong> shown in your TrueNAS installation if you&rsquo;re using this for something else.</p>
+<p>A few things to know before enabling it:</p>
+<ul>
+<li>Players will be disconnected during the redeployment.</li>
+<li>Save game data and persistent volumes need to be configured properly. A redeploy is not a backup.</li>
+<li>An image refresh only gets whatever version the app&rsquo;s configured image tag points to. A pinned version won&rsquo;t magically advance to the next release.</li>
+<li>This does <strong>not</strong> replace installing available TrueNAS catalog app upgrades.</li>
+</ul>
+<p>A daily redeploy is useful for my particular game-server setup, but I wouldn&rsquo;t blindly schedule daily restarts for databases or other apps that need uninterrupted availability.</p>
+<h2 id="3-pull-updated-plex-images-once-a-month">3. Pull updated Plex images once a month</h2>
+<p><strong>Schedule:</strong> Midnight on the first day of each month (<code>0 0 1 * *</code>)</p>
+<p><strong>Description:</strong> Plex image update</p>
+<p><strong>Command:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">midclt call -job app.pull_images plex
+</span></span></code></pre></div><p>Plex doesn&rsquo;t need a forced redeploy every morning on my setup, so I use a monthly image pull instead.</p>
+<p>The <code>app.pull_images</code> method downloads the configured container images for the app. In recent TrueNAS SCALE versions, the default behavior is to <strong>redeploy the app after pulling</strong>, meaning Plex can briefly go offline while the container restarts.</p>
+<p>The <code>-job</code> flag tells <code>midclt</code> to follow the long-running middleware job, which makes it more appropriate for an operation that may take time to finish.</p>
+<p>The result depends on the image tags your app uses. If Plex is pinned to a specific image version, pulling it again won&rsquo;t upgrade Plex to a newer version. Similarly, if the TrueNAS catalog has a new app version or configuration migration, pulling Docker images alone won&rsquo;t apply that catalog upgrade.</p>
+<p>If you want to download images <strong>without</strong> redeploying, newer TrueNAS API versions expose a <code>redeploy: false</code> option. Check the API documentation for your installed TrueNAS release before changing the command.</p>
+<h2 id="all-three-jobs-at-a-glance">All three jobs at a glance</h2>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Command</th>
+<th>Schedule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dynamic DNS</td>
+<td><code>wget ... 'https://ipv4.cloudns.net/api/dynamicURL/?q=YOUR_DYNAMIC_DNS_TOKEN'</code></td>
+<td>Daily, 12:00 AM</td>
+</tr>
+<tr>
+<td>Palworld redeploy</td>
+<td><code>midclt call app.redeploy palworld</code></td>
+<td>Daily, 4:00 AM</td>
+</tr>
+<tr>
+<td>Plex image pull</td>
+<td><code>midclt call -job app.pull_images plex</code></td>
+<td>Monthly, day 1 at 12:00 AM</td>
+</tr>
+</tbody>
+</table>
+<p>These schedules use the TrueNAS server&rsquo;s configured time zone. Also note that the DDNS and Plex jobs both start at midnight on the first day of the month. They do different things, but it&rsquo;s easy to stagger them if you&rsquo;d rather not overlap scheduled tasks.</p>
+<h2 id="a-few-recommendations-before-you-automate-everything">A few recommendations before you automate everything</h2>
+<p>Cron is handy, but it&rsquo;s also easy to forget that you set something to run months ago. Keep descriptions clear, check job output when troubleshooting, and leave errors visible while testing.</p>
+<p>Most importantly, don&rsquo;t confuse maintenance automation with backups. A scheduled redeploy doesn&rsquo;t protect your app configuration or data, and automatically pulling the latest image can introduce a breaking change. Keep backups and have a rollback plan for apps you depend on.</p>
+<p>Also remember that a restart may briefly take an app offline. Schedule jobs when nobody is using the service, and make sure nobody is relying on a long-running task inside the container.</p>
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>I like having TrueNAS handle repetitive maintenance instead of remembering to log in and click buttons. Dynamic DNS, scheduled game-server redeployment, and occasional Plex image pulls are three small changes that make my home server easier to manage.</p>
+<p>They&rsquo;re not universal defaults, and I wouldn&rsquo;t recommend automatic restarts for every service. But if you run similar apps, these commands provide a good starting point. Set your own schedules, test them, and let TrueNAS handle the repetitive work.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://www.truenas.com/docs/scale/systemsettings/advanced/managecronjobs/">TrueNAS: Managing Cron Jobs</a></li>
+<li><a href="https://api.truenas.com/v26.0/api_methods_app.redeploy.html">TrueNAS API: app.redeploy</a></li>
+<li><a href="https://api.truenas.com/v25.04/api_methods_app.pull_images.html">TrueNAS API: app.pull_images</a></li>
+<li><a href="https://www.cloudns.net/wiki/article/364/">ClouDNS: Getting Started with Dynamic DNS</a></li>
+</ul>
+
+      </article>
+
+      <div class="clearfix">
+        <div class="pull-right">
+          <a href="https://github.com/SiloCityLabs/blog/commits/master/content/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server.md">History</a> | 
+          <a href="https://github.com/SiloCityLabs/blog/edit/master/content/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server.md">Make an edit</a>
+        </div>
+      </div>
+      <br />
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://silocitylabs.com/post/2026/fakeemaildomain-com/" data-toggle="tooltip" data-placement="top" title="An SMTP black hole for unit tests">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://silocitylabs.com/index.xml" title="RSS">
+              <span class="icon-stack icon-lg">
+                <i class="icon icon-circle icon-stack-2x"></i>
+                <i class="icon icon-rss icon-stack-1x icon-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2026
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://silocitylabs.com/">SCL Blog</a>
+          
+          
+          &nbsp;&bull;&nbsp;
+          <a id="gitBuild" href="https://github.com/SiloCityLabs/blog/" title="Github">Last built on ...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://silocitylabs.com/js/bundle.min.js"></script>
+
+<script> hljs.initHighlightingOnLoad(); </script>
+
+
+<script>
+  (function() {
+    var cx = '006156681959470562953:oxkwuulite0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
+

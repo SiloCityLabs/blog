@@ -3,12 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://silocitylabs.com/</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/post/2026/fakeemaildomain-com/</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/author/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/automation/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/docker/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/homelab/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/tags/truenas/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://silocitylabs.com/post/2026/fakeemaildomain-com/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/categories/</loc>
@@ -29,12 +53,6 @@
     <loc>https://silocitylabs.com/post/2026/jbl-repair/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://silocitylabs.com/author/luis-rodriguez/</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/post/</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://silocitylabs.com/categories/projects/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -45,9 +63,6 @@
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/speaker/</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/testing/</loc>
@@ -177,9 +192,6 @@
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/serverless/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://silocitylabs.com/tags/truenas/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://silocitylabs.com/tags/3d/</loc>

@@ -8,8 +8,15 @@
     <language>en</language>
     <managingEditor>team@silocitylabs.com (Silo City Labs)</managingEditor>
     <webMaster>team@silocitylabs.com (Silo City Labs)</webMaster>
-    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://silocitylabs.com/tags/truenas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TrueNAS Cron Jobs Worth Setting Up on Every Home Server</title>
+      <link>https://silocitylabs.com/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate><author>team@silocitylabs.com (Silo City Labs)</author>
+      <guid>https://silocitylabs.com/post/2026/3-truenas-cron-jobs-worth-setting-up-on-every-home-server/</guid>
+      <description>A home server is great until you have to keep logging in to do the same maintenance tasks over and over. I&amp;rsquo;ve been running TrueNAS SCALE for a while, and a few simple cron jobs have saved me from having to babysit some of my services.&#xA;These are three jobs I actually use: one to keep my domain pointed at my home IP address, one to redeploy my Palworld server each morning, and one to pull updated Plex images monthly.</description>
+    </item>
     <item>
       <title>Local Failover for DigitalOcean Functions</title>
       <link>https://silocitylabs.com/post/2026/digital-ocean-local-runners/</link>
